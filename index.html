@@ -253,6 +253,9 @@ ol.roman li{padding-left:2px;line-height:1.45}
 .res .n-corp{background:#c92a2a;color:#fff}.res .n-tcp{background:#e8590c;color:#fff}.res .n-alca{background:#b08900;color:#fff}.res .n-tcd{background:#2b8a3e;color:#fff}.res .n-col{background:#1c7ed6;color:#fff}.res .n-uro{background:#7048e8;color:#fff}
 .res td.g-corp,.res td.g-tcp,.res td.g-alca,.res td.g-tcd,.res td.g-col,.res td.g-uro{font-weight:700;color:var(--gtx)}
 .res td.g-corp{background:var(--grvas,#ffe3e3)}.res td.g-tcp{background:var(--gvias)}.res td.g-alca{background:var(--gure)}.res td.g-tcd{background:var(--gglan)}.res td.g-col{background:var(--gtest)}.res td.g-uro{background:var(--gpen)}
+.res .n-hte{background:#c2255c;color:#fff}.res .n-hse{background:#e8590c;color:#fff}.res .n-hle{background:#b08900;color:#fff}.res .n-hdu{background:#2b8a3e;color:#fff}.res .n-hgl{background:#7048e8;color:#fff}.res .n-hpe{background:#1c7ed6;color:#fff}
+.res td.g-hte,.res td.g-hse,.res td.g-hle,.res td.g-hdu,.res td.g-hgl,.res td.g-hpe{font-weight:700;color:var(--gtx)}
+.res td.g-hte{background:var(--gesc)}.res td.g-hse{background:var(--gvias)}.res td.g-hle{background:var(--gure)}.res td.g-hdu{background:var(--gglan)}.res td.g-hgl{background:var(--gpen)}.res td.g-hpe{background:var(--gtest)}
 .res .note{font-size:14px;color:var(--muted)}
 .res .tag{font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
 .res .tag.plain{color:var(--muted)}
@@ -359,7 +362,1367 @@ a.btn.hl{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc-soft)}
 
   <main id="main"></main>
 
-  <template id="tpl-huri">
+  <template id="tpl-hmasc">
+<!-- ============================== CAPA ============================== -->
+<section class="cover">
+  <div class="kicker">Resumo de estudo · Histologia · Medicina</div>
+  <h1>Histologia do Aparelho<br>Reprodutor Masculino</h1>
+  <div class="rainbow hmasc"></div>
+  <p class="sub">Testículo, epitélio seminífero e espermatogênese, células de Sertoli e barreira hematotesticular, células de Leydig e controle hormonal, ductos genitais, vesícula seminal, próstata, glândulas bulbouretrais, uretra e pênis</p>
+  <p class="meta">Baseado nos slides da aula <em>Histologia do Aparelho Reprodutor Masculino</em> (Profa. Renata Leitão, Departamento de Morfologia). As figuras são as dos slides; o texto foi completado com Junqueira e Carneiro <em>Histologia Básica</em> e Ross e Pawlina <em>Histologia: texto e atlas</em>. Os boxes “Cai na prova” foram montados com as questões da T137, da T136 e dos compilados sobre a histologia e a fisiologia do aparelho reprodutor masculino, e as perguntas da prova prática saíram das lâminas da gincana e da revisão.</p>
+
+  <div class="cover-grid">
+    <div class="box key">
+      <div class="tag">Como usar este resumo</div>
+      <ol>
+        <li>Siga o caminho do espermatozoide: <b>túbulo seminífero → túbulo reto → rede testicular → ductos eferentes → epidídimo → ducto deferente → ducto ejaculatório → uretra</b>.</li>
+        <li>No túbulo seminífero, saiba <b>quem é quem</b>: espermatogônia, espermatócito, espermátide, Sertoli, mioide e, fora do túbulo, Leydig.</li>
+        <li>Para a prova prática, treine a figura da seção 9: <b>túbulo seminífero, eferentes, epidídimo, deferente, vesícula seminal e próstata</b>.</li>
+        <li>Na véspera, revise o <b>mapa-mestre</b> (seção 10), os vinte pontos e os mnemônicos, depois faça as questões.</li>
+      </ol>
+    </div>
+    <div class="legend">
+      <div class="tag plain">Código de cores dos esquemas</div>
+      <div class="chips">
+        <span class="chip o" style="--c:#c2255c;--f:#ffdeeb">Testículo e túbulos</span>
+        <span class="chip o" style="--c:#e8590c;--f:#ffe8cc">Sertoli e barreira</span>
+        <span class="chip o" style="--c:#b08900;--f:#fff3bf">Leydig e hormônios</span>
+        <span class="chip o" style="--c:#2b8a3e;--f:#d3f9d8">Ductos genitais</span>
+        <span class="chip o" style="--c:#7048e8;--f:#e5dbff">Glândulas acessórias</span>
+        <span class="chip o" style="--c:#1c7ed6;--f:#d0ebff">Uretra e pênis</span>
+      </div>
+      <div class="boxlegend">
+        <span class="mini key">Em uma frase</span>
+        <span class="mini prova">Cai na prova</span>
+        <span class="mini clin">Correlação clínica</span>
+        <span class="mini deep">Aprofundamento</span>
+        <span class="mini mnem">Mnemônico</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ideias"><div class="tag plain">As cinco ideias que organizam toda a matéria</div>
+  <ol class="tight">
+    <li><b>O testículo tem dois compartimentos</b>: os <b>túbulos seminíferos</b>, que fazem os espermatozoides, e o <b>interstício</b>, com as <b>células de Leydig</b>, que fazem a testosterona.</li>
+    <li><b>Dentro do túbulo, as células germinativas sobem da base para a luz</b> conforme amadurecem: espermatogônia na base, espermatócitos no meio, espermátides e espermatozoides perto da luz.</li>
+    <li><b>A célula de Sertoli comanda o túbulo</b>: sustenta e nutre as germinativas, fagocita os restos, secreta fluido, ABP, inibina e AMH, e suas <b>junções de oclusão</b> formam a <b>barreira hematotesticular</b>.</li>
+    <li><b>O espermatozoide sai do testículo imóvel</b>: é levado passivamente até o epidídimo, onde <b>amadurece e ganha motilidade</b>; o ducto deferente, com muscular muito espessa, o expulsa na ejaculação.</li>
+    <li><b>O sêmen é quase todo feito pelas glândulas</b>: a <b>vesícula seminal</b> dá a maior parte do volume (frutose), a <b>próstata</b> dá citrato, zinco, fosfatase ácida e enzimas, e as <b>bulbouretrais</b> dão o muco lubrificante.</li>
+  </ol></div>
+
+  <div class="toc">
+    <div class="tag plain">Sumário</div>
+    <ol class="toc2">
+      <li><b>Visão geral</b></li>
+      <li><b>Testículo</b>: envoltórios e organização</li>
+      <li><b>Epitélio seminífero</b> e espermatogênese</li>
+      <li><b>Células de Sertoli</b> e barreira hematotesticular</li>
+      <li><b>Células de Leydig</b> e controle hormonal</li>
+      <li><b>Ductos genitais</b></li>
+      <li><b>Glândulas acessórias</b></li>
+      <li><b>Uretra</b> e pênis</li>
+      <li><b>Reconhecer na lâmina</b></li>
+      <li><b>Revisão final</b></li>
+      <li><b>Questões</b> com gabarito comentado</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================== 1 VISÃO GERAL ============================== -->
+<section class="sec">
+<h2><span class="num n-hte">1</span>Visão geral</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+O aparelho reprodutor masculino é formado pelos <b>testículos</b>, pelos <b>ductos genitais</b>, pelas <b>glândulas acessórias</b> e pelo <b>pênis</b> (aula). Os testículos produzem <b>hormônios e espermatozoides</b>; os ductos e as glândulas produzem as <b>secreções que transportam os espermatozoides</b>. O <b>sêmen</b> é a soma dos espermatozoides com essas secreções.
+</div>
+<div class="grid2">
+<table class="dense">
+<thead><tr><th>Parte</th><th>Componentes</th><th>Função</th></tr></thead>
+<tbody>
+<tr><td class="g-hte">Testículos</td><td>Túbulos seminíferos e interstício</td><td>Espermatozoides e testosterona</td></tr>
+<tr><td class="g-hdu">Ductos genitais</td><td>Túbulos retos, rede testicular, ductos eferentes, epidídimo, ducto deferente, ducto ejaculatório</td><td>Transporte, maturação e armazenamento</td></tr>
+<tr><td class="g-hgl">Glândulas acessórias</td><td>Vesículas seminais, próstata, bulbouretrais</td><td>Plasma seminal</td></tr>
+<tr><td class="g-hpe">Pênis</td><td>Corpos cavernosos, corpo esponjoso e uretra</td><td>Cópula e micção</td></tr>
+</tbody></table>
+<figure class="img sm"><img src="res/hmasc/testiculo_esq.webp" alt="testiculo_esq"><figcaption><b>Figura 1.</b> Testículo e epidídimo em esquema (aula): túbulos seminíferos dentro dos lóbulos testiculares, separados por septos; túbulos retos, rede testicular e dúctulos eferentes levando ao ducto do epidídimo, que continua como canal deferente; por fora, a túnica albugínea e a túnica vaginal.</figcaption></figure>
+</div>
+<div class="box prova"><div class="tag">Cai na prova · composição (compilados)</div>
+“O aparelho reprodutor masculino é composto pelos testículos, ductos genitais, glândulas acessórias e pênis.” <b>Verdadeiro.</b> “Os testículos servem exclusivamente para a produção hormonal” é <b>falso</b>: também produzem os espermatozoides.
+</div>
+</section>
+
+<!-- ============================== 2 TESTÍCULO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-hte">2</span>Testículo: envoltórios e organização</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+O testículo fica no escroto, <b>suspenso na extremidade do funículo espermático</b> e recoberto pela <b>túnica vaginal</b> (aula). Por baixo dela, a <b>túnica albugínea</b>, de conjuntivo denso, manda <b>septos</b> que dividem o órgão em cerca de 250 <b>lóbulos</b>, cada um com 1 a 4 <b>túbulos seminíferos</b> enovelados. Entre os túbulos fica o <b>interstício</b>.
+</div>
+<div class="grid2">
+<table class="dense">
+<thead><tr><th>Estrutura</th><th>Como é</th></tr></thead>
+<tbody>
+<tr><td class="g-hte">Túnica vaginal</td><td>Saco de peritônio com lâmina <b>parietal</b> (forra o escroto) e <b>visceral</b> (cobre o testículo)</td></tr>
+<tr><td class="g-hte">Túnica albugínea</td><td>Cápsula espessa de <b>conjuntivo denso</b>; atrás se espessa no <b>mediastino testicular</b>, de onde saem os septos</td></tr>
+<tr><td class="g-hte">Túnica vasculosa</td><td>Conjuntivo frouxo com vasos, por dentro da albugínea</td></tr>
+<tr><td class="g-hte">Lóbulos</td><td>~250, separados por <b>septos incompletos</b>; 1 a 4 túbulos seminíferos em cada</td></tr>
+<tr><td class="g-hte">Túbulos seminíferos</td><td><b>Epitélio seminífero</b> (“epitélio incomum”, aula) circundado por conjuntivo: lâmina basal, fibroblastos e <b>células mioides</b></td></tr>
+<tr><td class="g-hle">Interstício</td><td>Conjuntivo frouxo com vasos, linfáticos, nervos e as <b>células de Leydig</b></td></tr>
+<tr><td class="g-hdu">Mediastino</td><td>Onde ficam a <b>rede testicular</b> e os túbulos retos</td></tr>
+</tbody></table>
+<figure class="img sm"><img src="res/hmasc/tubulos_sem.webp" alt="tubulos_sem"><figcaption><b>Figura 2.</b> Túbulos seminíferos (aula): A, vários túbulos cortados sob a cápsula (albugínea); B, um túbulo com o epitélio seminífero grosso em volta da luz e, entre os túbulos, o interstício.</figcaption></figure>
+</div>
+<figure class="img"><img src="res/hmasc/testiculo.webp" alt="testiculo"><figcaption><b>Figura 3.</b> Testículo (aula): no esquema, a cabeça, o corpo e a cauda do epidídimo, os dúctulos eferentes, o ducto deferente, os septos e lóbulos, o mediastino com a rede do testículo e os túbulos retos; no corte, a túnica albugínea, a túnica vaginal, o parênquima cheio de túbulos e a cabeça do epidídimo.</figcaption></figure>
+<div class="grid2">
+<figure class="img sm"><img src="res/hmasc/albuginea_leydig.webp" alt="albuginea_leydig"><figcaption><b>Figura 4.</b> A, a túnica albugínea com vasos sanguíneos e um septo entrando entre os túbulos seminíferos; B, túbulos seminíferos e, no espaço entre eles, as células de Leydig (aula).</figcaption></figure>
+<div class="box prova"><div class="tag">Cai na prova · testículo (compilados)</div>
+“A túnica albugínea é uma cápsula de tecido conjuntivo denso da qual partem septos incompletos que dividem o testículo em lóbulos.” <b>Correta.</b> Os erros da mesma questão: testosterona “produzida pela Sertoli” (é a <b>Leydig</b>); túbulo seminífero com epitélio “pseudoestratificado estereociliado” (esse é do epidídimo); testículo formado na parede <u>ventral</u> do abdome (é na <b>dorsal</b>). Fotomicrografias: “A, testículo; B, epidídimo; a seta aponta a <b>túnica albugínea</b>”. Na cirurgia, a última camada antes da superfície do testículo é a <b>túnica vaginal</b> (lâmina visceral).
+</div>
+</div>
+</section>
+
+<!-- ============================== 3 EPITÉLIO SEMINÍFERO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-hte">3</span>Epitélio seminífero e espermatogênese</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+O epitélio seminífero é <b>complexo e estratificado</b>: tem as <b>células de Sertoli</b>, que vão da base à luz, e as células da <b>linhagem espermatogênica</b> em várias fases, que <b>sobem da lâmina basal para a luz</b> conforme amadurecem. Por fora fica a lâmina basal com as <b>células mioides</b>.
+</div>
+<figure class="img"><img src="res/hmasc/epitelio_esq.webp" alt="epitelio_esq"><figcaption><b>Figura 5.</b> Desenho esquemático do túbulo seminífero (aula): espermatogônias na lâmina basal, espermatócitos primários e secundários (um em meiose), espermátides iniciais e espermatozoides perto da luz, todos encaixados nas células de Sertoli e unidos por pontes citoplasmáticas; fora do túbulo, células mioides, capilares e células intersticiais (de Leydig).</figcaption></figure>
+<figure class="fig"><svg role="img" aria-label="espermatogenese" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" font-family="Inter, Helvetica, Arial, sans-serif">
+<rect x="20" y="292" width="266" height="56" fill="#fde8ef"/>
+<ellipse cx="78" cy="326" rx="30" ry="12" fill="#fff" stroke="#e03131" stroke-width="2"/><ellipse cx="70" cy="326" rx="6" ry="4" fill="#e03131"/><ellipse cx="86" cy="327" rx="6" ry="4" fill="#e03131"/>
+<path d="M157 315 L177 313 L180 328 L160 331 Z" fill="#f08cad" stroke="#c2255c" stroke-width=".7"/><circle cx="168" cy="322" r="4" fill="#5b3a8e"/>
+<path d="M185 323 L205 321 L208 336 L188 339 Z" fill="#f08cad" stroke="#c2255c" stroke-width=".7"/><circle cx="196" cy="330" r="4" fill="#5b3a8e"/>
+<path d="M205 315 L225 313 L228 328 L208 331 Z" fill="#f08cad" stroke="#c2255c" stroke-width=".7"/><circle cx="216" cy="322" r="4" fill="#5b3a8e"/>
+<path d="M233 323 L253 321 L256 336 L236 339 Z" fill="#f08cad" stroke="#c2255c" stroke-width=".7"/><circle cx="244" cy="330" r="4" fill="#5b3a8e"/>
+<text x="196" y="345" font-size="8.4" font-weight="700" fill="#a61e4d" text-anchor="middle">células de Leydig</text>
+<text x="78" y="345" font-size="8.4" font-weight="700" fill="#a61e1e" text-anchor="middle">capilar</text>
+<ellipse cx="54" cy="299" rx="20" ry="2.6" fill="#b4627f"/>
+<ellipse cx="110" cy="299" rx="20" ry="2.6" fill="#b4627f"/>
+<ellipse cx="166" cy="299" rx="20" ry="2.6" fill="#b4627f"/>
+<ellipse cx="222" cy="299" rx="20" ry="2.6" fill="#b4627f"/>
+<ellipse cx="278" cy="299" rx="20" ry="2.6" fill="#b4627f"/>
+<text x="282" y="310" font-size="8" font-weight="700" fill="#7a3b5a" text-anchor="end">células mioides</text>
+<line x1="20" y1="292" x2="286" y2="292" stroke="#5c3c50" stroke-width="2"/>
+<rect x="20" y="20" width="266" height="34" fill="#ffffff"/>
+<text x="26" y="30" font-size="8.4" font-weight="700" fill="#868e96" text-anchor="start">luz do túbulo</text>
+<rect x="20" y="54" width="266" height="238" fill="#fdf0f4"/>
+<path d="M66 292 L78 58 Q92 40 106 58 L118 292 Z" fill="#fff4e6" stroke="#e8a15a" stroke-width="1"/>
+<path d="M85 262 L100 258 L94 276 Z" fill="#ffe8cc" stroke="#d9480f" stroke-width="1.2"/><circle cx="93" cy="265" r="2" fill="#d9480f"/>
+<path d="M202 292 L214 58 Q228 40 242 58 L254 292 Z" fill="#fff4e6" stroke="#e8a15a" stroke-width="1"/>
+<path d="M221 262 L236 258 L230 276 Z" fill="#ffe8cc" stroke="#d9480f" stroke-width="1.2"/><circle cx="229" cy="265" r="2" fill="#d9480f"/>
+<text x="92" y="252" font-size="8.4" font-weight="800" fill="#d9480f" text-anchor="middle">Sertoli</text>
+<line x1="20" y1="234" x2="286" y2="234" stroke="#e03131" stroke-width="1.4" stroke-dasharray="5 3"/>
+<rect x="55" y="231" width="10" height="6" fill="#e03131"/>
+<rect x="155" y="231" width="10" height="6" fill="#e03131"/>
+<rect x="255" y="231" width="10" height="6" fill="#e03131"/>
+<circle cx="50" cy="281" r="10" fill="#d3f9d8" stroke="#2b8a3e"/><circle cx="50" cy="281" r="5.5" fill="#5b3a8e"/>
+<circle cx="140" cy="281" r="10" fill="#d3f9d8" stroke="#2b8a3e"/><circle cx="140" cy="281" r="5.5" fill="#5b3a8e"/>
+<circle cx="180" cy="281" r="10" fill="#d3f9d8" stroke="#2b8a3e"/><circle cx="180" cy="281" r="5.5" fill="#5b3a8e"/>
+<circle cx="270" cy="281" r="10" fill="#d3f9d8" stroke="#2b8a3e"/><circle cx="270" cy="281" r="5.5" fill="#5b3a8e"/>
+<circle cx="48" cy="210" r="15" fill="#fff3bf" stroke="#b08900"/><circle cx="48" cy="210" r="9" fill="#e9d8fd" stroke="#3d2466"/>
+<path d="M42 206 q -3.9 4 -1 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M45 206 q -3.9 4 0 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M48 206 q 3.9 4 1 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M51 206 q 3.9 4 2 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<circle cx="160" cy="214" r="15" fill="#fff3bf" stroke="#b08900"/><circle cx="160" cy="214" r="9" fill="#e9d8fd" stroke="#3d2466"/>
+<path d="M154 210 q -3.4 4 -1 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M157 210 q -2.6 4 0 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M160 210 q -1.9 4 1 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M163 210 q 2.3 4 2 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<circle cx="140" cy="176" r="15" fill="#fff3bf" stroke="#b08900"/><circle cx="140" cy="176" r="9" fill="#e9d8fd" stroke="#3d2466"/>
+<path d="M134 172 q -1.2 4 -1 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M137 172 q -1.2 4 0 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M140 172 q -0.9 4 1 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M143 172 q 3.5 4 2 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<circle cx="272" cy="206" r="15" fill="#fff3bf" stroke="#b08900"/><circle cx="272" cy="206" r="9" fill="#e9d8fd" stroke="#3d2466"/>
+<path d="M266 202 q 0.9 4 -1 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M269 202 q 1.4 4 0 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M272 202 q -2.5 4 1 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M275 202 q -4.0 4 2 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<circle cx="182" cy="182" r="15" fill="#fff3bf" stroke="#b08900"/><circle cx="182" cy="182" r="9" fill="#e9d8fd" stroke="#3d2466"/>
+<path d="M176 178 q -3.9 4 -1 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M179 178 q -0.5 4 0 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M182 178 q 0.8 4 1 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<path d="M185 178 q 2.7 4 2 8" fill="none" stroke="#5b3a8e" stroke-width="1.4"/>
+<circle cx="270" cy="150" r="11" fill="#ffe8cc" stroke="#e8590c"/><circle cx="270" cy="150" r="6" fill="#5b3a8e"/>
+<circle cx="46" cy="140" r="8" fill="#e7f5ff" stroke="#1c7ed6"/><circle cx="46" cy="140" r="4" fill="#5b3a8e"/>
+<circle cx="66" cy="120" r="8" fill="#e7f5ff" stroke="#1c7ed6"/><circle cx="66" cy="120" r="4" fill="#5b3a8e"/>
+<circle cx="150" cy="120" r="8" fill="#e7f5ff" stroke="#1c7ed6"/><circle cx="150" cy="120" r="4" fill="#5b3a8e"/>
+<circle cx="168" cy="100" r="8" fill="#e7f5ff" stroke="#1c7ed6"/><circle cx="168" cy="100" r="4" fill="#5b3a8e"/>
+<circle cx="250" cy="110" r="8" fill="#e7f5ff" stroke="#1c7ed6"/><circle cx="250" cy="110" r="4" fill="#5b3a8e"/>
+<circle cx="130" cy="140" r="8" fill="#e7f5ff" stroke="#1c7ed6"/><circle cx="130" cy="140" r="4" fill="#5b3a8e"/>
+<ellipse cx="84" cy="68" rx="2.6" ry="6" fill="#3d2466"/><path d="M84 62 q 3 -8 -1 -16" fill="none" stroke="#495057" stroke-width=".8"/>
+<ellipse cx="92" cy="68" rx="2.6" ry="6" fill="#3d2466"/><path d="M92 62 q 3 -8 -1 -16" fill="none" stroke="#495057" stroke-width=".8"/>
+<ellipse cx="100" cy="68" rx="2.6" ry="6" fill="#3d2466"/><path d="M100 62 q 3 -8 -1 -16" fill="none" stroke="#495057" stroke-width=".8"/>
+<ellipse cx="220" cy="68" rx="2.6" ry="6" fill="#3d2466"/><path d="M220 62 q 3 -8 -1 -16" fill="none" stroke="#495057" stroke-width=".8"/>
+<ellipse cx="228" cy="68" rx="2.6" ry="6" fill="#3d2466"/><path d="M228 62 q 3 -8 -1 -16" fill="none" stroke="#495057" stroke-width=".8"/>
+<ellipse cx="236" cy="68" rx="2.6" ry="6" fill="#3d2466"/><path d="M236 62 q 3 -8 -1 -16" fill="none" stroke="#495057" stroke-width=".8"/>
+<ellipse cx="150" cy="32" rx="2.4" ry="5" fill="#3d2466" transform="rotate(20 150 32)"/><path d="M152 37 q 6 6 0 14" fill="none" stroke="#495057" stroke-width=".8"/>
+<ellipse cx="170" cy="32" rx="2.4" ry="5" fill="#3d2466" transform="rotate(20 170 32)"/><path d="M172 37 q 6 6 0 14" fill="none" stroke="#495057" stroke-width=".8"/>
+<ellipse cx="192" cy="32" rx="2.4" ry="5" fill="#3d2466" transform="rotate(20 192 32)"/><path d="M194 37 q 6 6 0 14" fill="none" stroke="#495057" stroke-width=".8"/>
+<text x="292" y="270" font-size="8.4" font-weight="800" fill="#2b8a3e" text-anchor="start">basal</text>
+<text x="292" y="228" font-size="8.4" font-weight="800" fill="#c92a2a" text-anchor="start">adluminal</text>
+<path d="M289 290 L289 236" stroke="#2b8a3e" stroke-width="2"/><path d="M289 232 L289 48" stroke="#c92a2a" stroke-width="2"/>
+<rect x="342" y="22" width="330" height="46" rx="8" fill="#d3f9d8" stroke="#2b8a3e"/>
+<text x="352" y="38" font-size="10.2" font-weight="800" fill="#2b8a3e" text-anchor="start">Espermatogônia</text>
+<text x="352" y="51" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">2n · na lâmina basal (compartimento basal)</text>
+<text x="352" y="62" font-size="8.6" font-weight="400" fill="#495057" text-anchor="start">mitoses: tipo A (tronco) e tipo B (vão diferenciar)</text>
+<path d="M507 69 L507 76" stroke="#868e96" stroke-width="2"/><path d="M502 74 L507 80 L512 74 Z" fill="#868e96"/>
+<rect x="342" y="78" width="330" height="46" rx="8" fill="#fff3bf" stroke="#b08900"/>
+<text x="352" y="94" font-size="10.2" font-weight="800" fill="#b08900" text-anchor="start">Espermatócito primário</text>
+<text x="352" y="107" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">2n, DNA duplicado · o maior, cromatina em fios</text>
+<text x="352" y="118" font-size="8.6" font-weight="400" fill="#495057" text-anchor="start">meiose I longa (~3 semanas): a célula mais vista</text>
+<path d="M507 125 L507 132" stroke="#868e96" stroke-width="2"/><path d="M502 130 L507 136 L512 130 Z" fill="#868e96"/>
+<rect x="342" y="134" width="330" height="46" rx="8" fill="#ffe8cc" stroke="#e8590c"/>
+<text x="352" y="150" font-size="10.2" font-weight="800" fill="#e8590c" text-anchor="start">Espermatócito secundário</text>
+<text x="352" y="163" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">n · meiose II muito rápida</text>
+<text x="352" y="174" font-size="8.6" font-weight="400" fill="#495057" text-anchor="start">quase nunca aparece no corte</text>
+<path d="M507 181 L507 188" stroke="#868e96" stroke-width="2"/><path d="M502 186 L507 192 L512 186 Z" fill="#868e96"/>
+<rect x="342" y="190" width="330" height="46" rx="8" fill="#e7f5ff" stroke="#1c7ed6"/>
+<text x="352" y="206" font-size="10.2" font-weight="800" fill="#1c7ed6" text-anchor="start">Espermátide</text>
+<text x="352" y="219" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">n · pequena, perto da luz</text>
+<text x="352" y="230" font-size="8.6" font-weight="400" fill="#495057" text-anchor="start">espermiogênese: vira espermatozoide sem dividir</text>
+<path d="M507 237 L507 244" stroke="#868e96" stroke-width="2"/><path d="M502 242 L507 248 L512 242 Z" fill="#868e96"/>
+<rect x="342" y="246" width="330" height="46" rx="8" fill="#f1f3f5" stroke="#495057"/>
+<text x="352" y="262" font-size="10.2" font-weight="800" fill="#212529" text-anchor="start">Espermatozoide</text>
+<text x="352" y="275" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">liberado na luz (espermiação)</text>
+<text x="352" y="286" font-size="8.6" font-weight="400" fill="#495057" text-anchor="start">ainda imóvel: ganha motilidade no epidídimo</text>
+<text x="352" y="316" font-size="8.6" font-weight="700" fill="#343a40" text-anchor="start">espermatogônia → espermatócitos = espermatocitogênese + meiose</text>
+<text x="352" y="330" font-size="8.6" font-weight="700" fill="#343a40" text-anchor="start">espermátide → espermatozoide = espermiogênese</text>
+<text x="352" y="344" font-size="8.6" font-weight="400" fill="#495057" text-anchor="start">as células-filhas ficam unidas por pontes citoplasmáticas</text>
+<text x="170" y="16" font-size="8" font-weight="700" fill="#c92a2a" text-anchor="middle">barreira hematotesticular (junções de oclusão entre Sertoli) = linha vermelha</text>
+</svg><figcaption><b>Figura 6.</b> A espermatogênese no epitélio: cada etapa, onde ela fica e a barreira hematotesticular entre os compartimentos basal e adluminal.</figcaption></figure>
+<table class="dense">
+<thead><tr><th>Célula</th><th>Onde fica</th><th>Como é no corte</th><th>Divisão</th></tr></thead>
+<tbody>
+<tr><td class="g-hdu">Espermatogônia</td><td>Sobre a lâmina basal (compartimento basal)</td><td>Pequena, redonda, núcleo escuro</td><td><b>Mitose</b>: as de tipo A renovam o estoque; as de tipo B entram em diferenciação</td></tr>
+<tr><td class="g-hle">Espermatócito primário</td><td>Logo acima, já no compartimento adluminal</td><td><b>A maior</b> da linhagem, cromatina em fios (prófase longa): <b>a mais vista</b></td><td><b>Meiose I</b></td></tr>
+<tr><td class="g-hse">Espermatócito secundário</td><td>Mais acima</td><td>Menor; <b>raro no corte</b>, porque vive pouco</td><td><b>Meiose II</b>, rápida</td></tr>
+<tr><td class="g-hpe">Espermátide</td><td>Perto da luz</td><td>Pequena; primeiro redonda, depois com núcleo alongado e escuro</td><td><b>Não se divide</b>: sofre espermiogênese</td></tr>
+<tr><td class="g-hte">Espermatozoide</td><td>Solto na luz (espermiação)</td><td>Cabeça escura e flagelo</td><td>—</td></tr>
+</tbody></table>
+<div class="grid2">
+<div>
+<h4>Espermiogênese (aula)</h4>
+<p>É a transformação da espermátide em espermatozoide, <b>sem divisão</b>: formação do <b>acrossomo</b> (a partir do complexo de Golgi: grânulo, vesícula e capuz acrossômico), <b>condensação e alongamento do núcleo</b>, desenvolvimento do <b>flagelo</b> (a partir dos centríolos) com as mitocôndrias em volta da peça intermediária, e perda da maior parte do citoplasma, os <b>corpos residuais</b>, que são <b>fagocitados pelas células de Sertoli</b>.</p>
+<h4>O espermatozoide</h4>
+<ul class="tight">
+<li><b>Cabeça</b> (~5 µm): núcleo condensado coberto pelo acrossomo, com enzimas que abrem caminho na zona pelúcida.</li>
+<li><b>Peça intermediária</b> (~5 µm): mitocôndrias em hélice, a energia do movimento.</li>
+<li><b>Peça principal</b> (~50 µm) e <b>peça final</b> (~5 µm): o flagelo.</li>
+</ul>
+<p>O ciclo completo, da espermatogônia ao espermatozoide, leva cerca de <b>dois meses</b> (~64 dias), e as células-filhas de cada espermatogônia ficam ligadas por <b>pontes citoplasmáticas</b>, o que sincroniza a maturação.</p>
+</div>
+<figure class="img sm"><img src="res/hmasc/espermiogenese.webp" alt="espermiogenese"><figcaption><b>Figura 7.</b> Espermiogênese (aula): A, o grânulo acrossômico nasce do Golgi, vira vesícula e capuz e cobre o núcleo, que se alonga; o flagelo cresce, as mitocôndrias se juntam na peça intermediária e o excesso de citoplasma sai como corpo residual. B, o espermatozoide: cabeça, peça intermediária, peça principal e peça final.</figcaption></figure>
+</div>
+<figure class="img"><img src="res/hmasc/epitelio_germ.webp" alt="epitelio_germ"><figcaption><b>Figura 8.</b> Epitélio germinativo (aula): à esquerda, vários túbulos seminíferos; à direita, o epitélio com as células de Sertoli indo da base à luz, espermatogônias junto à lâmina basal, espermatócitos acima, flagelos na luz e, por fora, a célula mioide e a albugínea.</figcaption></figure>
+<div class="grid2">
+<div class="box prova"><div class="tag">Cai na prova · epitélio seminífero (T136, compilados)</div>
+“O epitélio seminífero é complexo e estratificado, composto por células de Sertoli e células espermatogênicas em diferentes estágios.” <b>Correta</b> (T136). Os erros: epitélio “pseudoestratificado só com células espermatogênicas”; Sertoli “cúbicas, restritas à base, que se dividem a vida toda”; “espermátides perto da lâmina basal”. Na prática: espermatogônia = <b>mitose</b>; espermatócito = <b>meiose</b>; espermátide → <b>espermatozoide</b> (espermiogênese). “Epitélio constituído por células germinativas e de Sertoli” = <b>epitélio germinativo</b>.
+</div>
+<div class="box clin"><div class="tag">Correlação clínica · temperatura e criptorquidia</div>
+A espermatogênese precisa de uma temperatura <b>2 a 3 °C abaixo</b> da do corpo, mantida pelo escroto (músculo dartos, cremaster e plexo pampiniforme). No testículo que não desceu (<b>criptorquidia</b>) o epitélio seminífero se atrofia: <b>infertilidade</b> e mais risco de <b>câncer de testículo</b>.
+</div>
+</div>
+</section>
+
+<!-- ============================== 4 SERTOLI ============================== -->
+<section class="sec flow">
+<h2><span class="num n-hse">4</span>Células de Sertoli e barreira hematotesticular</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+As células de Sertoli são <b>colunares altas</b>, apoiadas na lâmina basal e chegando até a luz, com as células germinativas encaixadas nas suas reentrâncias. O núcleo é <b>claro, triangular ou irregular, com nucléolo evidente</b>. Depois da puberdade <b>não se dividem mais</b>.
+</div>
+<div class="grid2">
+<div>
+<h4>Funções (aula)</h4>
+<ul class="tight">
+<li><b>Suporte, proteção e suprimento nutricional</b> das células germinativas.</li>
+<li><b>Fagocitose</b> dos corpos residuais e das células que degeneram.</li>
+<li><b>Secreção do fluido testicular</b>, que leva os espermatozoides pelos ductos.</li>
+<li><b>Proteína ligante de andrógeno (ABP)</b>: mantém a testosterona alta dentro do túbulo.</li>
+<li><b>Barreira hematotesticular.</b></li>
+<li><b>Hormônio antimülleriano (AMH)</b>, no embrião: faz regredir os ductos de Müller.</li>
+<li>Também secretam <b>inibina</b>, que freia o FSH, e respondem ao <b>FSH</b>.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hmasc/barreira_ht.webp" alt="barreira_ht"><figcaption><b>Figura 9.</b> Célula de Sertoli e barreira hematotesticular (aula): as especializações juncionais entre Sertoli vizinhas separam o compartimento basal (espermatogônia) do luminal (espermatócitos e espermátides); a Sertoli tem RER, REL, Golgi, microtúbulos e filamentos de actina que seguram as espermátides.</figcaption></figure>
+</div>
+<div class="grid2">
+<div class="box key"><div class="tag">Barreira hematotesticular (aula)</div>
+É formada por <b>junções oclusivas entre células de Sertoli vizinhas</b>, que dividem o túbulo em dois compartimentos: o <b>basal</b>, com as espermatogônias, em contato com o que vem do sangue, e o <b>adluminal</b>, com espermatócitos, espermátides e espermatozoides. Isolados do plasma, eles <b>dependem das Sertoli</b> para trocar nutrientes e metabólitos (aula). A barreira esconde do sistema imune as células haploides, que surgem depois da puberdade e têm antígenos “estranhos”.
+</div>
+<div class="box deep"><div class="tag">Aprofundamento · como o espermatócito atravessa</div>
+A barreira não é fixa: quando o espermatócito primário sobe, <b>novas junções se formam abaixo dele antes que as de cima se abram</b>. Ele passa ao compartimento adluminal sem que a barreira fique aberta. Quem atravessa é o espermatócito <b>primário</b>, não o secundário (T137).
+</div>
+</div>
+<div class="box prova"><div class="tag">Cai na prova · Sertoli e barreira (T137, T136, compilados)</div>
+“A barreira hematotesticular é formada por <b>junções de oclusão entre as células de Sertoli</b>; durante a espermatogênese elas se reorganizam e deixam os <b>espermatócitos primários</b> migrarem para o compartimento adluminal” (T137). Os erros: barreira entre Sertoli e <u>mioides</u>; barreira que impede o contato das <u>Leydig</u> com os capilares; barreira feita de lâmina basal e hemidesmossomos. “Complexo juncional entre Sertoli divide o epitélio em compartimentos basal e luminal e isola as células pós-meióticas do sistema imune” (T136). A <b>ABP</b> concentra testosterona para a <b>espermatogênese</b>, não para a barreira. Sertoli: vão da lâmina basal à luz, nutrem, são <b>secretoras e fagocíticas</b> (todas corretas); respondem ao <b>FSH</b>, produzem <b>inibina e ABP</b>. “Função das células de Sertoli”: <b>manutenção da barreira hematotesticular</b> (várias vezes). AMH: <b>Sertoli, depois que a gônada vira testículo</b> (T137).
+</div>
+</section>
+
+<!-- ============================== 5 LEYDIG ============================== -->
+<section class="sec flow">
+<h2><span class="num n-hle">5</span>Células de Leydig e controle hormonal</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+As <b>células de Leydig</b> (intersticiais) ficam em grupos no <b>tecido conjuntivo entre os túbulos</b>, junto aos capilares, e produzem a <b>testosterona</b> sob estímulo do <b>LH</b>. Não fazem parte do epitélio seminífero.
+</div>
+<div class="grid2">
+<div>
+<h4>Como reconhecer</h4>
+<ul class="tight">
+<li>Células <b>poliédricas</b>, em grupos, com <b>núcleo redondo</b> e citoplasma <b>bem acidófilo</b>.</li>
+<li>Por fazerem <b>hormônio esteroide</b>: muito <b>REL</b>, mitocôndrias de cristas tubulares e gotículas de lipídio (às vezes cristais de Reinke).</li>
+</ul>
+<h4>Células mioides</h4>
+<p>Células achatadas, <b>contráteis</b>, em volta da lâmina basal do túbulo, <b>por fora</b> do epitélio. Suas contrações ajudam a empurrar o fluido e os espermatozoides, que ainda não nadam.</p>
+</div>
+<figure class="img sm"><img src="res/hmasc/epitelio_leydig.webp" alt="epitelio_leydig"><figcaption><b>Figura 10.</b> Epitélio seminífero e células de Leydig (aula): as setas marcam a lâmina basal do túbulo; embaixo, no interstício, as células de Leydig, poliédricas, de citoplasma rosa e núcleo redondo.</figcaption></figure>
+</div>
+<div class="grid2">
+<div>
+<h4>Controle hipofisário (aula)</h4>
+<ul class="tight">
+<li>O hipotálamo libera <b>GnRH</b>, que faz a hipófise (<i>pars distalis</i>) liberar <b>LH e FSH</b>.</li>
+<li><b>LH → células de Leydig → testosterona.</b></li>
+<li><b>FSH → células de Sertoli</b> → ABP e inibina. A ABP liga a testosterona e a mantém alta no túbulo: andrógeno + FSH sustentam a espermatogênese.</li>
+<li>Retroalimentação negativa: a <b>testosterona</b> freia o hipotálamo e a hipófise (LH e FSH); a <b>inibina</b> freia o FSH.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hmasc/controle.webp" alt="controle"><figcaption><b>Figura 11.</b> Controle hipofisário do testículo (aula): LH estimula as células intersticiais (Leydig) a fazer andrógeno; FSH age na célula de Sertoli, que faz ABP; o andrógeno com a ABP chega às células da linhagem espermatogênica; testosterona e inibina fazem retroalimentação negativa.</figcaption></figure>
+</div>
+<div class="grid2">
+<div class="box clin"><div class="tag">Correlação clínica · testosterona de fora</div>
+O uso de testosterona em doses altas (anabolizantes) <b>baixa o LH e o FSH</b> pela retroalimentação: as Leydig param, a testosterona <b>dentro do testículo</b> cai e a espermatogênese também. Resultado: testículos menores e <b>infertilidade</b> (T137).
+</div>
+<div class="box prova"><div class="tag">Cai na prova · Leydig e hormônios (T137, T136, compilados)</div>
+Leydig: no <b>interstício entre os túbulos</b>, produzem <b>testosterona em resposta ao LH</b>; <u>não</u> fazem parte do epitélio seminífero. Mioides: <b>por fora da lâmina basal</b>, contráteis (T137). “LH – FSH – célula de Leydig – célula de Sertoli” na figura do controle hormonal. A testosterona das Leydig faz <b>retroalimentação negativa sobre LH e FSH</b> (T136 e compilados, várias vezes). Leydig com REL e mitocôndrias abundantes, citoplasma eosinofílico: <b>verdadeiro</b>.
+</div>
+</div>
+</section>
+
+<!-- ============================== 6 DUCTOS ============================== -->
+<section class="sec flow">
+<h2><span class="num n-hdu">6</span>Ductos genitais</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+Os espermatozoides saem dos túbulos seminíferos <b>imóveis</b> e são levados passivamente pelos ductos <b>intratesticulares</b> (túbulos retos, rede testicular, ductos eferentes) até os <b>extratesticulares</b> (epidídimo, ducto deferente, ducto ejaculatório e uretra). No epidídimo eles <b>amadurecem e ganham motilidade</b>.
+</div>
+<figure class="fig"><svg role="img" aria-label="vias" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 270" font-family="Inter, Helvetica, Arial, sans-serif">
+<text x="12" y="24" font-size="9.4" font-weight="800" fill="#a61e4d" text-anchor="start">INTRATESTICULARES (1 a 4)</text>
+<text x="12" y="156" font-size="9.4" font-weight="800" fill="#1864ab" text-anchor="start">EXTRATESTICULARES (5 a 8)</text>
+<rect x="12" y="40" width="158" height="84" rx="9" fill="#ffdeeb" stroke="#c2255c" stroke-width="1.4"/>
+<text x="21" y="58" font-size="9.6" font-weight="800" fill="#c2255c" text-anchor="start">1 · Túbulos seminíferos</text>
+<text x="21" y="76" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">epitélio seminífero</text>
+<text x="21" y="90" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">(Sertoli + linhagem germinativa)</text>
+<text x="21" y="104" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">produz espermatozoides imóveis</text>
+<path d="M171 82.0 L179 82.0" stroke="#868e96" stroke-width="2"/><path d="M177 78.0 L182 82.0 L177 86.0 Z" fill="#868e96"/>
+<rect x="182" y="40" width="158" height="84" rx="9" fill="#ffe8cc" stroke="#e8590c" stroke-width="1.4"/>
+<text x="191" y="58" font-size="9.6" font-weight="800" fill="#e8590c" text-anchor="start">2 · Túbulos retos</text>
+<text x="191" y="76" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">no começo só Sertoli,</text>
+<text x="191" y="90" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">depois cúbico simples</text>
+<text x="191" y="104" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">saem para o mediastino</text>
+<path d="M341 82.0 L349 82.0" stroke="#868e96" stroke-width="2"/><path d="M347 78.0 L352 82.0 L347 86.0 Z" fill="#868e96"/>
+<rect x="352" y="40" width="158" height="84" rx="9" fill="#ffe8cc" stroke="#e8590c" stroke-width="1.4"/>
+<text x="361" y="58" font-size="9.6" font-weight="800" fill="#e8590c" text-anchor="start">3 · Rede testicular</text>
+<text x="361" y="76" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">canais no conjuntivo</text>
+<text x="361" y="90" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">do mediastino</text>
+<text x="361" y="104" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">cúbico simples</text>
+<path d="M511 82.0 L519 82.0" stroke="#868e96" stroke-width="2"/><path d="M517 78.0 L522 82.0 L517 86.0 Z" fill="#868e96"/>
+<rect x="522" y="40" width="158" height="84" rx="9" fill="#fff3bf" stroke="#b08900" stroke-width="1.4"/>
+<text x="531" y="58" font-size="9.6" font-weight="800" fill="#b08900" text-anchor="start">4 · Ductos eferentes (12–20)</text>
+<text x="531" y="76" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">células cúbicas e colunares</text>
+<text x="531" y="90" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">ciliadas alternadas:</text>
+<text x="531" y="104" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">luz “serrilhada”; absorvem fluido</text>
+<rect x="12" y="168" width="158" height="84" rx="9" fill="#d3f9d8" stroke="#2b8a3e" stroke-width="1.4"/>
+<text x="21" y="186" font-size="9.6" font-weight="800" fill="#2b8a3e" text-anchor="start">5 · Ducto do epidídimo</text>
+<text x="21" y="204" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">pseudoestratificado colunar</text>
+<text x="21" y="218" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">com estereocílios</text>
+<text x="21" y="232" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">4–6 m enovelado: maturação</text>
+<path d="M171 210.0 L179 210.0" stroke="#868e96" stroke-width="2"/><path d="M177 206.0 L182 210.0 L177 214.0 Z" fill="#868e96"/>
+<rect x="182" y="168" width="158" height="84" rx="9" fill="#d0ebff" stroke="#1c7ed6" stroke-width="1.4"/>
+<text x="191" y="186" font-size="9.6" font-weight="800" fill="#1c7ed6" text-anchor="start">6 · Ducto deferente</text>
+<text x="191" y="204" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">pseudoestratificado com</text>
+<text x="191" y="218" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">estereocílios; muscular muito</text>
+<text x="191" y="232" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">espessa (3 camadas), luz estrelada</text>
+<path d="M341 210.0 L349 210.0" stroke="#868e96" stroke-width="2"/><path d="M347 206.0 L352 210.0 L347 214.0 Z" fill="#868e96"/>
+<rect x="352" y="168" width="158" height="84" rx="9" fill="#e5dbff" stroke="#7048e8" stroke-width="1.4"/>
+<text x="361" y="186" font-size="9.6" font-weight="800" fill="#7048e8" text-anchor="start">7 · Ducto ejaculatório</text>
+<text x="361" y="204" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">ampola + ducto da vesícula</text>
+<text x="361" y="218" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">seminal; atravessa a próstata</text>
+<text x="361" y="232" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">abre no colículo seminal</text>
+<path d="M511 210.0 L519 210.0" stroke="#868e96" stroke-width="2"/><path d="M517 206.0 L522 210.0 L517 214.0 Z" fill="#868e96"/>
+<rect x="522" y="168" width="158" height="84" rx="9" fill="#f1f3f5" stroke="#495057" stroke-width="1.4"/>
+<text x="531" y="186" font-size="9.6" font-weight="800" fill="#212529" text-anchor="start">8 · Uretra</text>
+<text x="531" y="204" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">prostática (transição),</text>
+<text x="531" y="218" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">membranosa e esponjosa</text>
+<text x="531" y="232" font-size="8.6" font-weight="400" fill="#343a40" text-anchor="start">(pseudoestratificado colunar)</text>
+<path d="M601.0 124 L601.0 140 L91.0 140 L91.0 164" fill="none" stroke="#868e96" stroke-width="2"/>
+<path d="M87.0 161 L91.0 167 L95.0 161 Z" fill="#868e96"/>
+<text x="340" y="136" font-size="8.4" font-weight="700" fill="#495057" text-anchor="middle">saem do testículo e entram na cabeça do epidídimo</text>
+</svg><figcaption><b>Figura 12.</b> O caminho do espermatozoide e o epitélio de cada ducto.</figcaption></figure>
+<div class="grid2">
+<div>
+<h4>Ductos intratesticulares (aula)</h4>
+<ul class="tight">
+<li><b>Túbulos retos</b>: ligam o fim de cada túbulo seminífero à rede testicular. No começo só têm células de Sertoli; depois, epitélio cúbico simples.</li>
+<li><b>Rede testicular</b>: rede de espaços dentro do conjuntivo do <b>mediastino</b>, revestida por <b>epitélio cúbico simples</b>.</li>
+<li><b>Ductos eferentes</b>: cerca de <b>12 a 20</b>, de trajeto enovelado, saem da rede e vão para a cabeça do epidídimo. Epitélio com grupos de células <b>cúbicas</b> (absorvem o fluido) alternados com grupos de <b>colunares ciliadas</b> (empurram): a luz fica <b>serrilhada</b>. Têm uma fina camada de músculo liso.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hmasc/ductos.webp" alt="ductos"><figcaption><b>Figura 13.</b> Ductos genitais (aula): 1, túbulos retos; 2, rede testicular; 3, ductos eferentes; 4, epidídimo; 5, ducto deferente; e as túnicas do testículo (albugínea, vaginal e vasculosa).</figcaption></figure>
+</div>
+<div class="grid2">
+<div>
+<h4>Epidídimo (aula: lâmina 80)</h4>
+<ul class="tight">
+<li>Os ductos eferentes confluem num <b>único ducto do epidídimo</b>, espiralado (~4 a 6 m), com cabeça, corpo e cauda. No corte, o mesmo ducto aparece <b>várias vezes</b>.</li>
+<li><b>Epitélio pseudoestratificado cilíndrico (colunar) estereociliado</b> (aula): <b>células principais</b>, altas, com estereocílios, e <b>células basais</b>, pequenas, na base.</li>
+<li>As células <b>absorvem e secretam</b> (aula): retiram o fluido que sobrou e os restos, e secretam substâncias que fazem a maturação.</li>
+<li>Em volta, <b>músculo liso</b>, que aumenta em direção à cauda e faz o peristaltismo; a cauda armazena os espermatozoides.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hmasc/epididimo_det.webp" alt="epididimo_det"><figcaption><b>Figura 14.</b> Ducto do epidídimo (aula): epitélio pseudoestratificado com as células principais altas e as células basais, os estereocílios voltados para a luz cheia de espermatozoides, o músculo liso e o conjuntivo em volta.</figcaption></figure>
+</div>
+<figure class="img"><img src="res/hmasc/epididimo.webp" alt="epididimo"><figcaption><b>Figura 15.</b> Epidídimo, lâmina 80 (aula): A, o mesmo ducto cortado várias vezes, com luz redonda e lisa e epitélio alto; B, em detalhe, os estereocílios (setas) e a luz cheia de espermatozoides.</figcaption></figure>
+<div class="grid2">
+<div>
+<h4>Ducto deferente (aula: lâmina 27)</h4>
+<ul class="tight">
+<li>Tubo muscular contínuo com o ducto do epidídimo; é o <b>principal componente do funículo espermático</b>.</li>
+<li>Epitélio <b>pseudoestratificado cilíndrico estereociliado</b>, como o do epidídimo.</li>
+<li>Lâmina própria de conjuntivo <b>rico em fibras elásticas</b>.</li>
+<li><b>Muscular muito espessa</b>: <b>longitudinal interna, circular média e longitudinal externa</b> (aula). Ela se contrai na fixação e deixa a <b>luz estrelada</b>. Por fora, adventícia.</li>
+<li>Termina na <b>ampola</b>, dilatada, que se junta ao ducto da vesícula seminal: <b>ampola + ducto excretor da vesícula seminal = ducto ejaculatório</b> (aula).</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hmasc/deferente.webp" alt="deferente"><figcaption><b>Figura 16.</b> Ducto deferente (aula): a luz pequena e pregueada com o epitélio, envolvida por uma camada muito grossa de músculo liso; em cima, vasos do funículo espermático.</figcaption></figure>
+</div>
+<div class="grid2">
+<div>
+<h4>Ducto ejaculatório (aula)</h4>
+<p>Cada vesícula seminal se une ao deferente do mesmo lado e forma o <b>ducto ejaculatório</b>, que atravessa a próstata e se abre na <b>parede posterior da uretra prostática</b>, no colículo seminal. Epitélio simples ou pseudoestratificado colunar, <b>sem camada muscular própria</b>: o músculo da próstata faz esse papel.</p>
+<h4>Funículo espermático (aula)</h4>
+<p>Além do ducto deferente, contém a <b>artéria testicular</b>, pequenas artérias do deferente e do cremaster, o <b>plexo pampiniforme</b>, vasos linfáticos, fibras simpáticas e o ramo genital do nervo genitofemoral. A <b>vasectomia</b> (deferentectomia) corta e liga o ducto deferente no escroto.</p>
+</div>
+<figure class="img sm"><img src="res/hmasc/ejaculatorios.webp" alt="ejaculatorios"><figcaption><b>Figura 17.</b> Ductos ejaculatórios (aula): no corte, os dois ductos atravessando a próstata; no esquema, o canal deferente com a ampola e a vesícula seminal formando o ducto ejaculatório, que se abre na uretra prostática.</figcaption></figure>
+</div>
+<div class="grid2">
+<div class="box deep"><div class="tag">Aprofundamento · de onde vem cada ducto</div>
+<b>Túbulos seminíferos, túbulos retos e rede</b>: cordões sexuais da gônada. <b>Ductos eferentes</b>: túbulos mesonéfricos. <b>Epidídimo, ducto deferente, vesícula seminal e ducto ejaculatório</b>: <b>ducto mesonéfrico (de Wolff)</b>, mantido pela testosterona. <b>Próstata e bulbouretrais</b>: brotos do <b>endoderma do seio urogenital</b> (uretra). Os ductos de Müller regridem pelo AMH das Sertoli.
+</div>
+<div class="box prova"><div class="tag">Cai na prova · ductos (T137, T136, compilados)</div>
+O trajeto do túbulo seminífero ao epidídimo é <b>passivo</b>, e a passagem do testículo para o epidídimo é feita pelos <b>dúctulos eferentes</b> (T137; caiu mais três vezes). Motilidade própria: <b>epidídimo</b> (T136). Ducto deferente: <b>epitélio colunar pseudoestratificado, como o do epidídimo</b> (T136); <b>pseudoestratificado cilíndrico estereociliado</b>, com muscular espessa (não “estreita” nem “só circular”). Último ducto antes da uretra: <b>ducto ejaculador</b>. Vesícula seminal vem do <b>ducto mesonéfrico</b>.
+</div>
+</div>
+</section>
+
+<!-- ============================== 7 GLÂNDULAS ============================== -->
+<section class="sec flow">
+<h2><span class="num n-hgl">7</span>Glândulas acessórias</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+As <b>vesículas seminais</b>, a <b>próstata</b> e as <b>glândulas bulbouretrais</b> fazem quase todo o volume do sêmen. As três dependem da testosterona.
+</div>
+<div class="grid2">
+<div>
+<h4>Vesícula seminal</h4>
+<ul class="tight">
+<li>Dois tubos muito enovelados atrás da bexiga; o ducto de cada uma se junta à ampola do deferente.</li>
+<li>Mucosa com <b>pregas finas e ramificadas</b> (aspecto de “favo de mel”), epitélio <b>pseudoestratificado colunar</b> ou cúbico, cheio de grânulos de secreção; em volta, músculo liso.</li>
+<li>Secreção viscosa e amarelada, rica em <b>frutose</b> (a energia dos espermatozoides), prostaglandinas e proteínas da coagulação do sêmen.</li>
+<li>Dá <b>a maior parte do volume do sêmen</b> (cerca de 70%). Por isso o volume ejaculado quase não muda depois da vasectomia.</li>
+</ul>
+<h4>Glândulas bulbouretrais (de Cowper) (aula)</h4>
+<ul class="tight">
+<li>Situam-se na <b>porção membranosa da uretra</b>, no diafragma urogenital; os ductos abrem na uretra esponjosa.</li>
+<li>Túbuloalveolares, revestidas por <b>epitélio cúbico simples secretor de muco</b>, que age como <b>lubrificante</b> antes da ejaculação.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hmasc/prostata_zonas.webp" alt="prostata_zonas"><figcaption><b>Figura 18.</b> Zonas da próstata (aula): a zona periférica, maior e por fora; a zona de transição, em volta da uretra prostática; e a zona central, ao redor dos ductos ejaculatórios.</figcaption></figure>
+</div>
+<div class="grid2">
+<div>
+<h4>Próstata (aula: lâmina 62)</h4>
+<ul class="tight">
+<li>Conjunto de <b>30 a 50 glândulas túbuloalveolares ramificadas</b> em torno da <b>uretra prostática</b>, onde os ductos se abrem.</li>
+<li>Epitélio <b>cilíndrico simples</b> (às vezes pseudoestratificado), com <b>pregas</b> que entram na luz.</li>
+<li><b>Estroma fibromuscular</b> rico em <b>músculo liso e fibras elásticas</b>; a parte glandular é cerca de <b>2/3</b> do órgão e o outro <b>1/3 é fibromuscular</b> (aula).</li>
+<li>Envolvida por uma <b>cápsula fibroelástica rica em músculo liso</b>.</li>
+<li><b>Concreções prostáticas</b> (corpos amiláceos ou calcoforitos): corpos esféricos e lamelados de <b>glicoproteínas</b> na luz das glândulas, que podem calcificar e <b>aumentam com a idade</b>.</li>
+<li>Secreções (aula): <b>citrato</b> (fonte de energia), <b>fibrinolisina</b> (anticoagulante, liquefaz o sêmen e ajuda a mobilidade), cálcio, <b>zinco</b>, <b>fosfatase ácida</b> e PSA.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hmasc/concrecoes.webp" alt="concrecoes"><figcaption><b>Figura 19.</b> Concreções prostáticas (C) na luz das glândulas, entre o epitélio pregueado e o estroma (aula).</figcaption></figure>
+</div>
+<figure class="img"><img src="res/hmasc/prostata_lam.webp" alt="prostata_lam"><figcaption><b>Figura 20.</b> Próstata, lâmina 62 (aula): o estroma fibromuscular (tecido conjuntivo rico em fibras musculares lisas e fibras elásticas) repleto de glândulas túbuloalveolares ramificadas, com concreções amiláceas na luz.</figcaption></figure>
+<div class="grid2">
+<table class="dense">
+<thead><tr><th>Zona</th><th>Onde</th><th>Doença</th></tr></thead>
+<tbody>
+<tr><td class="g-hgl">Periférica</td><td>A maior (~70%), atrás e dos lados; é a que se toca no <b>toque retal</b></td><td><b>Adenocarcinoma</b> (a maioria)</td></tr>
+<tr><td class="g-hgl">Central</td><td>~25%, em volta dos ductos ejaculatórios</td><td>Pouco acometida</td></tr>
+<tr><td class="g-hgl">De transição</td><td>~5%, em volta da uretra prostática</td><td><b>Hiperplasia prostática benigna</b>: aperta a uretra</td></tr>
+</tbody></table>
+<figure class="img sm"><img src="res/hmasc/prostata_gland.webp" alt="prostata_gland"><figcaption><b>Figura 21.</b> Próstata (aula): glândulas túbuloalveolares ramificadas com o epitélio formando pregas para dentro da luz; embaixo, em maior aumento, o epitélio cilíndrico.</figcaption></figure>
+</div>
+<div class="grid2">
+<div class="box deep"><div class="tag">Atenção · o pH da secreção prostática</div>
+O slide diz “<b>pH alcalino</b> (neutralização do pH ácido do líquido dos túbulos seminíferos)”, e uma questão dos compilados aceitou “fluido alcalino que neutraliza a acidez da vagina e da uretra”. Os livros descrevem a secreção da próstata como <b>levemente ácida</b> (pH ~6,5) e atribuem a alcalinidade do sêmen sobretudo à <b>vesícula seminal</b>. Na prova, siga a aula; se a questão pedir de onde vem a alcalinidade do sêmen, a resposta mais segura é a vesícula seminal.
+</div>
+<div class="box prova"><div class="tag">Cai na prova · glândulas (T137, compilados)</div>
+Próstata: <b>estroma fibromuscular</b> (músculo liso + fibras elásticas) é a característica principal; <b>concreções</b> aumentam com a idade e <b>não</b> indicam doença; a uretra prostática tem <b>epitélio de transição</b> (vem do <b>endoderma</b>, não do mesoderma); as glândulas são <b>túbuloalveolares</b>, não “tubulares compostas”. HPB: glândulas aumentadas, epitélio cúbico a colunar, estroma com músculo que também cresce, corpos amiláceos na luz; a HPB nasce na <b>zona de transição</b> e o câncer na <b>periférica</b> (Gleason). Dentro da próstata passam <b>uretra, ductos ejaculatórios e ductos prostáticos</b> (T137). Maior volume do sêmen: <b>vesícula seminal</b>; secreção nutritiva = vesículas seminais; bulbouretral = muco lubrificante.
+</div>
+</div>
+</section>
+
+<!-- ============================== 8 URETRA E PÊNIS ============================== -->
+<section class="sec flow">
+<h2><span class="num n-hpe">8</span>Uretra e pênis</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+A uretra masculina tem três partes, cada uma com um epitélio (aula), e corre dentro do <b>corpo esponjoso</b>. O pênis tem <b>três cilindros de tecido erétil</b>: dois <b>corpos cavernosos</b> e um <b>corpo esponjoso</b>, cada um envolvido por túnica albugínea.
+</div>
+<table class="dense">
+<thead><tr><th>Uretra (aula)</th><th>Epitélio</th><th>Detalhes</th></tr></thead>
+<tbody>
+<tr><td class="g-hpe">Prostática</td><td><b>Epitélio de transição</b></td><td>Onde desembocam os dois <b>ductos ejaculatórios</b> e os ductos da próstata</td></tr>
+<tr><td class="g-hpe">Membranosa</td><td><b>Pseudoestratificado cilíndrico</b></td><td>Cerca de <b>1 cm</b>; atravessa o diafragma urogenital (esfíncter externo); as bulbouretrais ficam ao lado</td></tr>
+<tr><td class="g-hpe">Esponjosa (cavernosa)</td><td><b>Pseudoestratificado cilíndrico</b>, com áreas de <b>estratificado pavimentoso</b> perto da glande</td><td>No corpo esponjoso do pênis; glândulas de Littré (mucosas)</td></tr>
+</tbody></table>
+<div class="grid2">
+<div>
+<h4>Tecido erétil (aula)</h4>
+<ul class="tight">
+<li>Tem uma grande quantidade de <b>espaços vasculares</b> (cavernas, revestidas por endotélio) separados por <b>trabéculas de fibras de conjuntivo e células musculares lisas</b>.</li>
+<li>A <b>túnica albugínea</b> é grossa nos corpos cavernosos e fina no esponjoso; entre os cavernosos há um <b>septo</b>.</li>
+<li>No centro de cada corpo cavernoso corre a <b>artéria profunda do pênis</b>, com as artérias helicinas.</li>
+<li><b>Ereção</b>: o parassimpático libera óxido nítrico, o músculo liso das trabéculas e das artérias relaxa, o sangue enche os espaços e comprime as veias contra a albugínea. No esponjoso a albugínea é fina, e a uretra continua aberta para o sêmen passar.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hmasc/penis_esq.webp" alt="penis_esq"><figcaption><b>Figura 22.</b> Pênis em corte transversal (aula): os dois corpos cavernosos, cada um com a artéria profunda, separados por septo; embaixo, o corpo esponjoso com a uretra peniana; a túnica albugínea, a fáscia (envelope fibroso) e, no dorso, as veias dorsais superficial e profunda, as artérias dorsais e os nervos dorsais.</figcaption></figure>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/hmasc/penis_corte.webp" alt="penis_corte"><figcaption><b>Figura 23.</b> Pênis em corte histológico (aula): corpos cavernosos com sua albugínea, septo do pênis, artéria profunda, corpo esponjoso com a uretra e a albugínea dele, e a pele (epiderme, derme, músculo cutâneo e veia superficial).</figcaption></figure>
+<figure class="img sm"><img src="res/hmasc/eretil.webp" alt="eretil"><figcaption><b>Figura 24.</b> Tecido erétil (aula): os espaços vasculares (asteriscos) entre trabéculas de conjuntivo e músculo liso, e a túnica albugínea por fora.</figcaption></figure>
+</div>
+<div class="box clin"><div class="tag">Correlação clínica · disfunção erétil</div>
+Os inibidores da fosfodiesterase tipo 5 (sildenafila e parecidos) mantêm o GMP cíclico que o óxido nítrico produz no músculo liso das trabéculas: o relaxamento dura mais e a ereção se mantém. Não causam ereção sem estímulo sexual.
+</div>
+</section>
+
+<!-- ============================== 9 RECONHECER ============================== -->
+<section class="sec flow">
+<h2><span class="num n-hdu">9</span>Reconhecer na lâmina</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+Na prova prática, o órgão se reconhece pelo <b>epitélio</b>, pelo <b>formato da luz</b> e pela <b>espessura da parede muscular</b>. A pergunta que segue costuma ser a célula apontada, a sua função ou a origem embrionária.
+</div>
+<figure class="fig"><svg role="img" aria-label="reconhecer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" font-family="Inter, Helvetica, Arial, sans-serif">
+<rect x="7" y="18" width="212" height="170" rx="10" fill="#fff5f8" stroke="#f1c7d6"/>
+<rect x="29" y="-1" width="168" height="19" rx="9.5" fill="#c2255c"/><text x="113" y="13" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">Túbulo seminífero</text>
+<path d="M21 36 l12 -4 l10 8 l-4 12 l-14 2 Z" fill="#f08cad" stroke="#c2255c" stroke-width=".7"/><circle cx="30" cy="40" r="3" fill="#5b3a8e"/>
+<path d="M185 158 l12 -4 l10 8 l-4 12 l-14 2 Z" fill="#f08cad" stroke="#c2255c" stroke-width=".7"/><circle cx="194" cy="162" r="3" fill="#5b3a8e"/>
+<path d="M23 168 l12 -4 l10 8 l-4 12 l-14 2 Z" fill="#f08cad" stroke="#c2255c" stroke-width=".7"/><circle cx="32" cy="172" r="3" fill="#5b3a8e"/>
+<path d="M191 40 l12 -4 l10 8 l-4 12 l-14 2 Z" fill="#f08cad" stroke="#c2255c" stroke-width=".7"/><circle cx="200" cy="44" r="3" fill="#5b3a8e"/>
+<circle cx="113" cy="102" r="66" fill="#f7c6da" stroke="#9c3667" stroke-width="2"/>
+<circle cx="113" cy="102" r="18" fill="#fff"/>
+<circle cx="55.9" cy="83.7" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="61.9" cy="70.6" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="70.9" cy="59.2" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="82.4" cy="50.4" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="95.6" cy="44.6" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="109.8" cy="42.1" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="124.3" cy="43.1" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="138.0" cy="47.5" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="150.4" cy="55.1" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="160.5" cy="65.4" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="167.9" cy="77.8" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="172.1" cy="91.6" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="172.9" cy="106.1" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="170.1" cy="120.3" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="164.1" cy="133.4" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="155.1" cy="144.8" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="143.6" cy="153.6" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="130.4" cy="159.4" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="116.2" cy="161.9" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="101.7" cy="160.9" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="88.0" cy="156.5" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="75.6" cy="148.9" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="65.5" cy="138.6" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="58.1" cy="126.2" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="53.9" cy="112.4" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="53.1" cy="97.9" r="4.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="161.2" cy="88.9" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="163.0" cy="103.0" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="160.7" cy="117.0" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="154.5" cy="129.9" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="145.0" cy="140.4" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="132.9" cy="147.9" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="119.1" cy="151.6" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="104.9" cy="151.3" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="91.3" cy="147.1" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="79.5" cy="139.1" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="70.4" cy="128.2" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="64.8" cy="115.1" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="63.0" cy="101.0" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="65.3" cy="87.0" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="71.5" cy="74.1" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="81.0" cy="63.6" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="93.1" cy="56.1" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="106.9" cy="52.4" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="121.1" cy="52.7" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="134.7" cy="56.9" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="146.5" cy="64.9" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="155.6" cy="75.8" r="5.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="86.3" cy="131.8" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="77.7" cy="120.9" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="73.4" cy="107.7" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="73.8" cy="93.8" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="79.0" cy="80.9" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="88.3" cy="70.6" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="100.5" cy="64.0" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="114.3" cy="62.0" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="127.9" cy="64.9" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="139.7" cy="72.2" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="148.3" cy="83.1" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="152.6" cy="96.3" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="152.2" cy="110.2" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="147.0" cy="123.1" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="137.7" cy="133.4" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="125.5" cy="140.0" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="111.7" cy="142.0" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="98.1" cy="139.1" r="5.2" fill="#5b3a8e" opacity=".9"/>
+<circle cx="141.4" cy="89.5" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="144.0" cy="102.1" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="141.3" cy="114.7" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="133.7" cy="125.1" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="122.5" cy="131.5" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="109.7" cy="132.8" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="97.4" cy="128.8" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="87.9" cy="120.1" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="82.7" cy="108.4" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="82.7" cy="95.5" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="88.0" cy="83.7" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="97.6" cy="75.1" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="109.9" cy="71.2" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="122.7" cy="72.5" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="133.8" cy="79.0" r="3.6" fill="#5b3a8e" opacity=".9"/>
+<circle cx="123.2" cy="80.3" r="2.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="132.7" cy="88.3" r="2.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="136.9" cy="99.9" r="2.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="134.7" cy="112.2" r="2.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="126.7" cy="121.7" r="2.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="115.1" cy="125.9" r="2.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="102.8" cy="123.7" r="2.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="93.3" cy="115.7" r="2.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="89.1" cy="104.1" r="2.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="91.3" cy="91.8" r="2.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="99.3" cy="82.3" r="2.4" fill="#5b3a8e" opacity=".9"/>
+<circle cx="110.9" cy="78.1" r="2.4" fill="#5b3a8e" opacity=".9"/>
+<line x1="131.0" y1="102.0" x2="120.0" y2="105.8" stroke="#868e96" stroke-width=".7"/>
+<line x1="127.6" y1="112.6" x2="116.4" y2="109.2" stroke="#868e96" stroke-width=".7"/>
+<line x1="118.6" y1="119.1" x2="111.5" y2="109.9" stroke="#868e96" stroke-width=".7"/>
+<line x1="107.4" y1="119.1" x2="107.2" y2="107.5" stroke="#868e96" stroke-width=".7"/>
+<line x1="98.4" y1="112.6" x2="105.1" y2="103.0" stroke="#868e96" stroke-width=".7"/>
+<line x1="95.0" y1="102.0" x2="106.0" y2="98.2" stroke="#868e96" stroke-width=".7"/>
+<line x1="98.4" y1="91.4" x2="109.6" y2="94.8" stroke="#868e96" stroke-width=".7"/>
+<line x1="107.4" y1="84.9" x2="114.5" y2="94.1" stroke="#868e96" stroke-width=".7"/>
+<line x1="118.6" y1="84.9" x2="118.8" y2="96.5" stroke="#868e96" stroke-width=".7"/>
+<line x1="127.6" y1="91.4" x2="120.9" y2="101.0" stroke="#868e96" stroke-width=".7"/>
+<text x="195" y="180" font-size="8" font-weight="700" fill="#a61e4d" text-anchor="end">Leydig</text>
+<text x="113" y="206.0" font-size="8.8" font-weight="700" fill="#212529" text-anchor="middle">Epitélio muito grosso,</text>
+<text x="113" y="218.4" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">várias camadas de células redondas</text>
+<text x="113" y="230.8" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">(germinativas) em mitose e meiose;</text>
+<text x="113" y="243.2" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">Leydig entre os túbulos</text>
+<rect x="234" y="18" width="212" height="170" rx="10" fill="#fff5f8" stroke="#f1c7d6"/>
+<rect x="256" y="-1" width="168" height="19" rx="9.5" fill="#b08900"/><text x="340" y="13" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">Ductos eferentes</text>
+<path d="M344.0 88.0 A44 44 0 0 1 340.7 104.8 L317.1 95.1 A18.48 18.48 0 0 0 318.5 88.0 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="329.4" cy="93.8" rx="3.2" ry="2.6" transform="rotate(11 329.4 93.8)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="318.4" y1="89.8" x2="313.4" y2="89.3" stroke="#7048e8" stroke-width=".8"/>
+<line x1="318.1" y1="91.6" x2="313.2" y2="90.6" stroke="#7048e8" stroke-width=".8"/>
+<line x1="317.7" y1="93.4" x2="312.9" y2="91.9" stroke="#7048e8" stroke-width=".8"/>
+<path d="M340.7 104.8 A44 44 0 0 1 331.1 119.1 L313.1 101.1 A18.48 18.48 0 0 0 317.1 95.1 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="324.9" cy="104.6" rx="3.2" ry="2.6" transform="rotate(34 324.9 104.6)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="316.3" y1="96.7" x2="311.9" y2="94.4" stroke="#7048e8" stroke-width=".8"/>
+<line x1="315.4" y1="98.3" x2="311.2" y2="95.5" stroke="#7048e8" stroke-width=".8"/>
+<line x1="314.3" y1="99.7" x2="310.4" y2="96.6" stroke="#7048e8" stroke-width=".8"/>
+<path d="M331.1 119.1 A44 44 0 0 1 316.8 128.7 L311.1 114.8 A29.040000000000003 29.040000000000003 0 0 0 320.5 108.5 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="319.9" cy="117.7" rx="3.2" ry="2.6" transform="rotate(56 319.9 117.7)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M316.8 128.7 A44 44 0 0 1 300.0 132.0 L300.0 117.0 A29.040000000000003 29.040000000000003 0 0 0 311.1 114.8 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="307.0" cy="123.1" rx="3.2" ry="2.6" transform="rotate(79 307.0 123.1)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M300.0 132.0 A44 44 0 0 1 283.2 128.7 L292.9 105.1 A18.48 18.48 0 0 0 300.0 106.5 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="294.2" cy="117.4" rx="3.2" ry="2.6" transform="rotate(101 294.2 117.4)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="298.2" y1="106.4" x2="298.7" y2="101.4" stroke="#7048e8" stroke-width=".8"/>
+<line x1="296.4" y1="106.1" x2="297.4" y2="101.2" stroke="#7048e8" stroke-width=".8"/>
+<line x1="294.6" y1="105.7" x2="296.1" y2="100.9" stroke="#7048e8" stroke-width=".8"/>
+<path d="M283.2 128.7 A44 44 0 0 1 268.9 119.1 L286.9 101.1 A18.48 18.48 0 0 0 292.9 105.1 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="283.4" cy="112.9" rx="3.2" ry="2.6" transform="rotate(124 283.4 112.9)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="291.3" y1="104.3" x2="293.6" y2="99.9" stroke="#7048e8" stroke-width=".8"/>
+<line x1="289.7" y1="103.4" x2="292.5" y2="99.2" stroke="#7048e8" stroke-width=".8"/>
+<line x1="288.3" y1="102.3" x2="291.4" y2="98.4" stroke="#7048e8" stroke-width=".8"/>
+<path d="M268.9 119.1 A44 44 0 0 1 259.3 104.8 L273.2 99.1 A29.040000000000003 29.040000000000003 0 0 0 279.5 108.5 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="270.3" cy="107.9" rx="3.2" ry="2.6" transform="rotate(146 270.3 107.9)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M259.3 104.8 A44 44 0 0 1 256.0 88.0 L271.0 88.0 A29.040000000000003 29.040000000000003 0 0 0 273.2 99.1 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="264.9" cy="95.0" rx="3.2" ry="2.6" transform="rotate(169 264.9 95.0)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M256.0 88.0 A44 44 0 0 1 259.3 71.2 L282.9 80.9 A18.48 18.48 0 0 0 281.5 88.0 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="270.6" cy="82.2" rx="3.2" ry="2.6" transform="rotate(191 270.6 82.2)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="281.6" y1="86.2" x2="286.6" y2="86.7" stroke="#7048e8" stroke-width=".8"/>
+<line x1="281.9" y1="84.4" x2="286.8" y2="85.4" stroke="#7048e8" stroke-width=".8"/>
+<line x1="282.3" y1="82.6" x2="287.1" y2="84.1" stroke="#7048e8" stroke-width=".8"/>
+<path d="M259.3 71.2 A44 44 0 0 1 268.9 56.9 L286.9 74.9 A18.48 18.48 0 0 0 282.9 80.9 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="275.1" cy="71.4" rx="3.2" ry="2.6" transform="rotate(214 275.1 71.4)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="283.7" y1="79.3" x2="288.1" y2="81.6" stroke="#7048e8" stroke-width=".8"/>
+<line x1="284.6" y1="77.7" x2="288.8" y2="80.5" stroke="#7048e8" stroke-width=".8"/>
+<line x1="285.7" y1="76.3" x2="289.6" y2="79.4" stroke="#7048e8" stroke-width=".8"/>
+<path d="M268.9 56.9 A44 44 0 0 1 283.2 47.3 L288.9 61.2 A29.040000000000003 29.040000000000003 0 0 0 279.5 67.5 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="280.1" cy="58.3" rx="3.2" ry="2.6" transform="rotate(236 280.1 58.3)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M283.2 47.3 A44 44 0 0 1 300.0 44.0 L300.0 59.0 A29.040000000000003 29.040000000000003 0 0 0 288.9 61.2 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="293.0" cy="52.9" rx="3.2" ry="2.6" transform="rotate(259 293.0 52.9)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M300.0 44.0 A44 44 0 0 1 316.8 47.3 L307.1 70.9 A18.48 18.48 0 0 0 300.0 69.5 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="305.8" cy="58.6" rx="3.2" ry="2.6" transform="rotate(281 305.8 58.6)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="301.8" y1="69.6" x2="301.3" y2="74.6" stroke="#7048e8" stroke-width=".8"/>
+<line x1="303.6" y1="69.9" x2="302.6" y2="74.8" stroke="#7048e8" stroke-width=".8"/>
+<line x1="305.4" y1="70.3" x2="303.9" y2="75.1" stroke="#7048e8" stroke-width=".8"/>
+<path d="M316.8 47.3 A44 44 0 0 1 331.1 56.9 L313.1 74.9 A18.48 18.48 0 0 0 307.1 70.9 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="316.6" cy="63.1" rx="3.2" ry="2.6" transform="rotate(304 316.6 63.1)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="308.7" y1="71.7" x2="306.4" y2="76.1" stroke="#7048e8" stroke-width=".8"/>
+<line x1="310.3" y1="72.6" x2="307.5" y2="76.8" stroke="#7048e8" stroke-width=".8"/>
+<line x1="311.7" y1="73.7" x2="308.6" y2="77.6" stroke="#7048e8" stroke-width=".8"/>
+<path d="M331.1 56.9 A44 44 0 0 1 340.7 71.2 L326.8 76.9 A29.040000000000003 29.040000000000003 0 0 0 320.5 67.5 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="329.7" cy="68.1" rx="3.2" ry="2.6" transform="rotate(326 329.7 68.1)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M340.7 71.2 A44 44 0 0 1 344.0 88.0 L329.0 88.0 A29.040000000000003 29.040000000000003 0 0 0 326.8 76.9 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="335.1" cy="81.0" rx="3.2" ry="2.6" transform="rotate(349 335.1 81.0)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M424.0 124.0 A40 40 0 0 1 421.0 139.3 L399.5 130.4 A16.8 16.8 0 0 0 400.8 124.0 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="410.7" cy="129.3" rx="3.2" ry="2.6" transform="rotate(11 410.7 129.3)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="400.7" y1="125.6" x2="395.7" y2="125.2" stroke="#7048e8" stroke-width=".8"/>
+<line x1="400.5" y1="127.3" x2="395.6" y2="126.3" stroke="#7048e8" stroke-width=".8"/>
+<line x1="400.1" y1="128.9" x2="395.3" y2="127.4" stroke="#7048e8" stroke-width=".8"/>
+<path d="M421.0 139.3 A40 40 0 0 1 412.3 152.3 L395.9 135.9 A16.8 16.8 0 0 0 399.5 130.4 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="406.6" cy="139.1" rx="3.2" ry="2.6" transform="rotate(34 406.6 139.1)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="398.8" y1="131.9" x2="394.4" y2="129.6" stroke="#7048e8" stroke-width=".8"/>
+<line x1="398.0" y1="133.3" x2="393.8" y2="130.6" stroke="#7048e8" stroke-width=".8"/>
+<line x1="397.0" y1="134.7" x2="393.1" y2="131.5" stroke="#7048e8" stroke-width=".8"/>
+<path d="M412.3 152.3 A40 40 0 0 1 399.3 161.0 L394.1 148.4 A26.400000000000002 26.400000000000002 0 0 0 402.7 142.7 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="402.1" cy="151.0" rx="3.2" ry="2.6" transform="rotate(56 402.1 151.0)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M399.3 161.0 A40 40 0 0 1 384.0 164.0 L384.0 150.4 A26.400000000000002 26.400000000000002 0 0 0 394.1 148.4 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="390.3" cy="155.9" rx="3.2" ry="2.6" transform="rotate(79 390.3 155.9)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M384.0 164.0 A40 40 0 0 1 368.7 161.0 L377.6 139.5 A16.8 16.8 0 0 0 384.0 140.8 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="378.7" cy="150.7" rx="3.2" ry="2.6" transform="rotate(101 378.7 150.7)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="382.4" y1="140.7" x2="382.8" y2="135.7" stroke="#7048e8" stroke-width=".8"/>
+<line x1="380.7" y1="140.5" x2="381.7" y2="135.6" stroke="#7048e8" stroke-width=".8"/>
+<line x1="379.1" y1="140.1" x2="380.6" y2="135.3" stroke="#7048e8" stroke-width=".8"/>
+<path d="M368.7 161.0 A40 40 0 0 1 355.7 152.3 L372.1 135.9 A16.8 16.8 0 0 0 377.6 139.5 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="368.9" cy="146.6" rx="3.2" ry="2.6" transform="rotate(124 368.9 146.6)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="376.1" y1="138.8" x2="378.4" y2="134.4" stroke="#7048e8" stroke-width=".8"/>
+<line x1="374.7" y1="138.0" x2="377.4" y2="133.8" stroke="#7048e8" stroke-width=".8"/>
+<line x1="373.3" y1="137.0" x2="376.5" y2="133.1" stroke="#7048e8" stroke-width=".8"/>
+<path d="M355.7 152.3 A40 40 0 0 1 347.0 139.3 L359.6 134.1 A26.400000000000002 26.400000000000002 0 0 0 365.3 142.7 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="357.0" cy="142.1" rx="3.2" ry="2.6" transform="rotate(146 357.0 142.1)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M347.0 139.3 A40 40 0 0 1 344.0 124.0 L357.6 124.0 A26.400000000000002 26.400000000000002 0 0 0 359.6 134.1 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="352.1" cy="130.3" rx="3.2" ry="2.6" transform="rotate(169 352.1 130.3)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M344.0 124.0 A40 40 0 0 1 347.0 108.7 L368.5 117.6 A16.8 16.8 0 0 0 367.2 124.0 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="357.3" cy="118.7" rx="3.2" ry="2.6" transform="rotate(191 357.3 118.7)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="367.3" y1="122.4" x2="372.3" y2="122.8" stroke="#7048e8" stroke-width=".8"/>
+<line x1="367.5" y1="120.7" x2="372.4" y2="121.7" stroke="#7048e8" stroke-width=".8"/>
+<line x1="367.9" y1="119.1" x2="372.7" y2="120.6" stroke="#7048e8" stroke-width=".8"/>
+<path d="M347.0 108.7 A40 40 0 0 1 355.7 95.7 L372.1 112.1 A16.8 16.8 0 0 0 368.5 117.6 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="361.4" cy="108.9" rx="3.2" ry="2.6" transform="rotate(214 361.4 108.9)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="369.2" y1="116.1" x2="373.6" y2="118.4" stroke="#7048e8" stroke-width=".8"/>
+<line x1="370.0" y1="114.7" x2="374.2" y2="117.4" stroke="#7048e8" stroke-width=".8"/>
+<line x1="371.0" y1="113.3" x2="374.9" y2="116.5" stroke="#7048e8" stroke-width=".8"/>
+<path d="M355.7 95.7 A40 40 0 0 1 368.7 87.0 L373.9 99.6 A26.400000000000002 26.400000000000002 0 0 0 365.3 105.3 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="365.9" cy="97.0" rx="3.2" ry="2.6" transform="rotate(236 365.9 97.0)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M368.7 87.0 A40 40 0 0 1 384.0 84.0 L384.0 97.6 A26.400000000000002 26.400000000000002 0 0 0 373.9 99.6 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="377.7" cy="92.1" rx="3.2" ry="2.6" transform="rotate(259 377.7 92.1)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M384.0 84.0 A40 40 0 0 1 399.3 87.0 L390.4 108.5 A16.8 16.8 0 0 0 384.0 107.2 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="389.3" cy="97.3" rx="3.2" ry="2.6" transform="rotate(281 389.3 97.3)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="385.6" y1="107.3" x2="385.2" y2="112.3" stroke="#7048e8" stroke-width=".8"/>
+<line x1="387.3" y1="107.5" x2="386.3" y2="112.4" stroke="#7048e8" stroke-width=".8"/>
+<line x1="388.9" y1="107.9" x2="387.4" y2="112.7" stroke="#7048e8" stroke-width=".8"/>
+<path d="M399.3 87.0 A40 40 0 0 1 412.3 95.7 L395.9 112.1 A16.8 16.8 0 0 0 390.4 108.5 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="399.1" cy="101.4" rx="3.2" ry="2.6" transform="rotate(304 399.1 101.4)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="391.9" y1="109.2" x2="389.6" y2="113.6" stroke="#7048e8" stroke-width=".8"/>
+<line x1="393.3" y1="110.0" x2="390.6" y2="114.2" stroke="#7048e8" stroke-width=".8"/>
+<line x1="394.7" y1="111.0" x2="391.5" y2="114.9" stroke="#7048e8" stroke-width=".8"/>
+<path d="M412.3 95.7 A40 40 0 0 1 421.0 108.7 L408.4 113.9 A26.400000000000002 26.400000000000002 0 0 0 402.7 105.3 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="411.0" cy="105.9" rx="3.2" ry="2.6" transform="rotate(326 411.0 105.9)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<path d="M421.0 108.7 A40 40 0 0 1 424.0 124.0 L410.4 124.0 A26.400000000000002 26.400000000000002 0 0 0 408.4 113.9 Z" fill="#f9d5e3" stroke="#d9a3b8" stroke-width="0.5"/>
+<ellipse cx="415.9" cy="117.7" rx="3.2" ry="2.6" transform="rotate(349 415.9 117.7)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<text x="340" y="206.0" font-size="8.8" font-weight="700" fill="#212529" text-anchor="middle">Luz “serrilhada”:</text>
+<text x="340" y="218.4" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">grupos de células altas (com cílios)</text>
+<text x="340" y="230.8" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">alternados com grupos baixos</text>
+<text x="340" y="243.2" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">na cabeça do epidídimo</text>
+<rect x="461" y="18" width="212" height="170" rx="10" fill="#fff5f8" stroke="#f1c7d6"/>
+<rect x="483" y="-1" width="168" height="19" rx="9.5" fill="#2b8a3e"/><text x="567" y="13" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">Epidídimo</text>
+<circle cx="529" cy="88" r="49.0" fill="none" stroke="#f3b6cd" stroke-width="6"/>
+<path d="M575.0 88.0 A46 46 0 0 1 572.2 103.7 L553.4 96.9 A26.0 26.0 0 0 0 555.0 88.0 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M572.2 103.7 A46 46 0 0 1 564.2 117.6 L548.9 104.7 A26.0 26.0 0 0 0 553.4 96.9 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M564.2 117.6 A46 46 0 0 1 552.0 127.8 L542.0 110.5 A26.0 26.0 0 0 0 548.9 104.7 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M552.0 127.8 A46 46 0 0 1 537.0 133.3 L533.5 113.6 A26.0 26.0 0 0 0 542.0 110.5 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M537.0 133.3 A46 46 0 0 1 521.0 133.3 L524.5 113.6 A26.0 26.0 0 0 0 533.5 113.6 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M521.0 133.3 A46 46 0 0 1 506.0 127.8 L516.0 110.5 A26.0 26.0 0 0 0 524.5 113.6 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M506.0 127.8 A46 46 0 0 1 493.8 117.6 L509.1 104.7 A26.0 26.0 0 0 0 516.0 110.5 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M493.8 117.6 A46 46 0 0 1 485.8 103.7 L504.6 96.9 A26.0 26.0 0 0 0 509.1 104.7 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M485.8 103.7 A46 46 0 0 1 483.0 88.0 L503.0 88.0 A26.0 26.0 0 0 0 504.6 96.9 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M483.0 88.0 A46 46 0 0 1 485.8 72.3 L504.6 79.1 A26.0 26.0 0 0 0 503.0 88.0 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M485.8 72.3 A46 46 0 0 1 493.8 58.4 L509.1 71.3 A26.0 26.0 0 0 0 504.6 79.1 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M493.8 58.4 A46 46 0 0 1 506.0 48.2 L516.0 65.5 A26.0 26.0 0 0 0 509.1 71.3 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M506.0 48.2 A46 46 0 0 1 521.0 42.7 L524.5 62.4 A26.0 26.0 0 0 0 516.0 65.5 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M521.0 42.7 A46 46 0 0 1 537.0 42.7 L533.5 62.4 A26.0 26.0 0 0 0 524.5 62.4 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M537.0 42.7 A46 46 0 0 1 552.0 48.2 L542.0 65.5 A26.0 26.0 0 0 0 533.5 62.4 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M552.0 48.2 A46 46 0 0 1 564.2 58.4 L548.9 71.3 A26.0 26.0 0 0 0 542.0 65.5 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M564.2 58.4 A46 46 0 0 1 572.2 72.3 L553.4 79.1 A26.0 26.0 0 0 0 548.9 71.3 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M572.2 72.3 A46 46 0 0 1 575.0 88.0 L555.0 88.0 A26.0 26.0 0 0 0 553.4 79.1 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<ellipse cx="560.9" cy="90.3" rx="2.6" ry="2.2" transform="rotate(4 560.9 90.3)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="556.0" cy="105.2" rx="2.6" ry="2.2" transform="rotate(33 556.0 105.2)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="550.5" cy="111.7" rx="2.6" ry="2.2" transform="rotate(48 550.5 111.7)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="540.6" cy="117.8" rx="2.6" ry="2.2" transform="rotate(69 540.6 117.8)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="526.4" cy="119.9" rx="2.6" ry="2.2" transform="rotate(95 526.4 119.9)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="521.6" cy="119.1" rx="2.6" ry="2.2" transform="rotate(103 521.6 119.1)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="511.1" cy="114.5" rx="2.6" ry="2.2" transform="rotate(124 511.1 114.5)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="499.8" cy="101.2" rx="2.6" ry="2.2" transform="rotate(156 499.8 101.2)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="497.5" cy="93.5" rx="2.6" ry="2.2" transform="rotate(170 497.5 93.5)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="497.1" cy="85.6" rx="2.6" ry="2.2" transform="rotate(184 497.1 85.6)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="503.3" cy="68.9" rx="2.6" ry="2.2" transform="rotate(217 503.3 68.9)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="511.2" cy="61.4" rx="2.6" ry="2.2" transform="rotate(236 511.2 61.4)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="515.3" cy="59.1" rx="2.6" ry="2.2" transform="rotate(245 515.3 59.1)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="528.4" cy="56.0" rx="2.6" ry="2.2" transform="rotate(269 528.4 56.0)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="537.3" cy="57.1" rx="2.6" ry="2.2" transform="rotate(285 537.3 57.1)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="548.4" cy="62.6" rx="2.6" ry="2.2" transform="rotate(307 548.4 62.6)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="557.2" cy="72.8" rx="2.6" ry="2.2" transform="rotate(332 557.2 72.8)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="560.0" cy="79.9" rx="2.6" ry="2.2" transform="rotate(345 560.0 79.9)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="555.0" y1="88.0" x2="549.0" y2="88.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="554.9" y1="90.7" x2="548.9" y2="90.1" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="554.4" y1="93.4" x2="548.6" y2="92.2" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="553.7" y1="96.0" x2="548.0" y2="94.2" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="552.8" y1="98.6" x2="547.3" y2="96.1" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="551.5" y1="101.0" x2="546.3" y2="98.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="550.0" y1="103.3" x2="545.2" y2="99.8" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="548.3" y1="105.4" x2="543.9" y2="101.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="546.4" y1="107.3" x2="542.4" y2="102.9" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="544.3" y1="109.0" x2="540.8" y2="104.2" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="542.0" y1="110.5" x2="539.0" y2="105.3" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="539.6" y1="111.8" x2="537.1" y2="106.3" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="537.0" y1="112.7" x2="535.2" y2="107.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="534.4" y1="113.4" x2="533.2" y2="107.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="531.7" y1="113.9" x2="531.1" y2="107.9" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="529.0" y1="114.0" x2="529.0" y2="108.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="526.3" y1="113.9" x2="526.9" y2="107.9" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="523.6" y1="113.4" x2="524.8" y2="107.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="521.0" y1="112.7" x2="522.8" y2="107.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="518.4" y1="111.8" x2="520.9" y2="106.3" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="516.0" y1="110.5" x2="519.0" y2="105.3" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="513.7" y1="109.0" x2="517.2" y2="104.2" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="511.6" y1="107.3" x2="515.6" y2="102.9" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="509.7" y1="105.4" x2="514.1" y2="101.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="508.0" y1="103.3" x2="512.8" y2="99.8" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="506.5" y1="101.0" x2="511.7" y2="98.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="505.2" y1="98.6" x2="510.7" y2="96.1" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="504.3" y1="96.0" x2="510.0" y2="94.2" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="503.6" y1="93.4" x2="509.4" y2="92.2" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="503.1" y1="90.7" x2="509.1" y2="90.1" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="503.0" y1="88.0" x2="509.0" y2="88.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="503.1" y1="85.3" x2="509.1" y2="85.9" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="503.6" y1="82.6" x2="509.4" y2="83.8" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="504.3" y1="80.0" x2="510.0" y2="81.8" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="505.2" y1="77.4" x2="510.7" y2="79.9" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="506.5" y1="75.0" x2="511.7" y2="78.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="508.0" y1="72.7" x2="512.8" y2="76.2" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="509.7" y1="70.6" x2="514.1" y2="74.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="511.6" y1="68.7" x2="515.6" y2="73.1" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="513.7" y1="67.0" x2="517.2" y2="71.8" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="516.0" y1="65.5" x2="519.0" y2="70.7" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="518.4" y1="64.2" x2="520.9" y2="69.7" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="521.0" y1="63.3" x2="522.8" y2="69.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="523.6" y1="62.6" x2="524.8" y2="68.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="526.3" y1="62.1" x2="526.9" y2="68.1" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="529.0" y1="62.0" x2="529.0" y2="68.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="531.7" y1="62.1" x2="531.1" y2="68.1" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="534.4" y1="62.6" x2="533.2" y2="68.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="537.0" y1="63.3" x2="535.2" y2="69.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="539.6" y1="64.2" x2="537.1" y2="69.7" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="542.0" y1="65.5" x2="539.0" y2="70.7" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="544.3" y1="67.0" x2="540.8" y2="71.8" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="546.4" y1="68.7" x2="542.4" y2="73.1" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="548.3" y1="70.6" x2="543.9" y2="74.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="550.0" y1="72.7" x2="545.2" y2="76.2" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="551.5" y1="75.0" x2="546.3" y2="78.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="552.8" y1="77.4" x2="547.3" y2="79.9" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="553.7" y1="80.0" x2="548.0" y2="81.8" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="554.4" y1="82.6" x2="548.6" y2="83.8" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="554.9" y1="85.3" x2="548.9" y2="85.9" stroke="#2b8a3e" stroke-width=".6"/>
+<circle cx="524.0" cy="78.9" r="1.5" fill="#3d2466"/>
+<circle cx="533.3" cy="76.9" r="1.5" fill="#3d2466"/>
+<circle cx="530.0" cy="84.5" r="1.5" fill="#3d2466"/>
+<circle cx="516.4" cy="88.2" r="1.5" fill="#3d2466"/>
+<circle cx="515.8" cy="86.3" r="1.5" fill="#3d2466"/>
+<circle cx="516.7" cy="77.4" r="1.5" fill="#3d2466"/>
+<circle cx="526.8" cy="96.5" r="1.5" fill="#3d2466"/>
+<circle cx="518.2" cy="80.8" r="1.5" fill="#3d2466"/>
+<circle cx="532.6" cy="99.6" r="1.5" fill="#3d2466"/>
+<circle cx="531.2" cy="85.3" r="1.5" fill="#3d2466"/>
+<circle cx="542.6" cy="76.2" r="1.5" fill="#3d2466"/>
+<circle cx="539.3" cy="82.5" r="1.5" fill="#3d2466"/>
+<circle cx="518.8" cy="78.1" r="1.5" fill="#3d2466"/>
+<circle cx="523.5" cy="96.2" r="1.5" fill="#3d2466"/>
+<circle cx="519.9" cy="90.1" r="1.5" fill="#3d2466"/>
+<circle cx="533.0" cy="84.7" r="1.5" fill="#3d2466"/>
+<circle cx="611" cy="134" r="45.0" fill="none" stroke="#f3b6cd" stroke-width="6"/>
+<path d="M653.0 134.0 A42 42 0 0 1 650.5 148.4 L633.6 142.2 A24.0 24.0 0 0 0 635.0 134.0 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M650.5 148.4 A42 42 0 0 1 643.2 161.0 L629.4 149.4 A24.0 24.0 0 0 0 633.6 142.2 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M643.2 161.0 A42 42 0 0 1 632.0 170.4 L623.0 154.8 A24.0 24.0 0 0 0 629.4 149.4 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M632.0 170.4 A42 42 0 0 1 618.3 175.4 L615.2 157.6 A24.0 24.0 0 0 0 623.0 154.8 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M618.3 175.4 A42 42 0 0 1 603.7 175.4 L606.8 157.6 A24.0 24.0 0 0 0 615.2 157.6 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M603.7 175.4 A42 42 0 0 1 590.0 170.4 L599.0 154.8 A24.0 24.0 0 0 0 606.8 157.6 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M590.0 170.4 A42 42 0 0 1 578.8 161.0 L592.6 149.4 A24.0 24.0 0 0 0 599.0 154.8 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M578.8 161.0 A42 42 0 0 1 571.5 148.4 L588.4 142.2 A24.0 24.0 0 0 0 592.6 149.4 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M571.5 148.4 A42 42 0 0 1 569.0 134.0 L587.0 134.0 A24.0 24.0 0 0 0 588.4 142.2 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M569.0 134.0 A42 42 0 0 1 571.5 119.6 L588.4 125.8 A24.0 24.0 0 0 0 587.0 134.0 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M571.5 119.6 A42 42 0 0 1 578.8 107.0 L592.6 118.6 A24.0 24.0 0 0 0 588.4 125.8 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M578.8 107.0 A42 42 0 0 1 590.0 97.6 L599.0 113.2 A24.0 24.0 0 0 0 592.6 118.6 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M590.0 97.6 A42 42 0 0 1 603.7 92.6 L606.8 110.4 A24.0 24.0 0 0 0 599.0 113.2 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M603.7 92.6 A42 42 0 0 1 618.3 92.6 L615.2 110.4 A24.0 24.0 0 0 0 606.8 110.4 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M618.3 92.6 A42 42 0 0 1 632.0 97.6 L623.0 113.2 A24.0 24.0 0 0 0 615.2 110.4 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M632.0 97.6 A42 42 0 0 1 643.2 107.0 L629.4 118.6 A24.0 24.0 0 0 0 623.0 113.2 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M643.2 107.0 A42 42 0 0 1 650.5 119.6 L633.6 125.8 A24.0 24.0 0 0 0 629.4 118.6 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<path d="M650.5 119.6 A42 42 0 0 1 653.0 134.0 L635.0 134.0 A24.0 24.0 0 0 0 633.6 125.8 Z" fill="#f7cfe0" stroke="#e7a3bd" stroke-width="0.4"/>
+<ellipse cx="640.3" cy="136.1" rx="2.6" ry="2.2" transform="rotate(4 640.3 136.1)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="635.8" cy="149.8" rx="2.6" ry="2.2" transform="rotate(33 635.8 149.8)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="630.8" cy="155.8" rx="2.6" ry="2.2" transform="rotate(48 630.8 155.8)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="621.7" cy="161.4" rx="2.6" ry="2.2" transform="rotate(69 621.7 161.4)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="608.6" cy="163.3" rx="2.6" ry="2.2" transform="rotate(95 608.6 163.3)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="604.2" cy="162.6" rx="2.6" ry="2.2" transform="rotate(103 604.2 162.6)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="594.6" cy="158.4" rx="2.6" ry="2.2" transform="rotate(124 594.6 158.4)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="584.2" cy="146.1" rx="2.6" ry="2.2" transform="rotate(156 584.2 146.1)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="582.0" cy="139.0" rx="2.6" ry="2.2" transform="rotate(170 582.0 139.0)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="581.7" cy="131.8" rx="2.6" ry="2.2" transform="rotate(184 581.7 131.8)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="587.4" cy="116.4" rx="2.6" ry="2.2" transform="rotate(217 587.4 116.4)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="594.6" cy="109.6" rx="2.6" ry="2.2" transform="rotate(236 594.6 109.6)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="598.4" cy="107.4" rx="2.6" ry="2.2" transform="rotate(245 598.4 107.4)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="610.5" cy="104.6" rx="2.6" ry="2.2" transform="rotate(269 610.5 104.6)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="618.6" cy="105.6" rx="2.6" ry="2.2" transform="rotate(285 618.6 105.6)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="628.9" cy="110.7" rx="2.6" ry="2.2" transform="rotate(307 628.9 110.7)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="636.9" cy="120.0" rx="2.6" ry="2.2" transform="rotate(332 636.9 120.0)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<ellipse cx="639.4" cy="126.6" rx="2.6" ry="2.2" transform="rotate(345 639.4 126.6)" fill="#5b3a8e" stroke="#3d2466" stroke-width=".5"/>
+<line x1="635.0" y1="134.0" x2="629.0" y2="134.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="634.9" y1="136.5" x2="628.9" y2="135.9" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="634.5" y1="139.0" x2="628.6" y2="137.7" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="633.8" y1="141.4" x2="628.1" y2="139.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="632.9" y1="143.8" x2="627.4" y2="141.3" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="631.8" y1="146.0" x2="626.6" y2="143.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="630.4" y1="148.1" x2="625.6" y2="144.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="628.8" y1="150.1" x2="624.4" y2="146.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="627.1" y1="151.8" x2="623.0" y2="147.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="625.1" y1="153.4" x2="621.6" y2="148.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="623.0" y1="154.8" x2="620.0" y2="149.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="620.8" y1="155.9" x2="618.3" y2="150.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="618.4" y1="156.8" x2="616.6" y2="151.1" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="616.0" y1="157.5" x2="614.7" y2="151.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="613.5" y1="157.9" x2="612.9" y2="151.9" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="611.0" y1="158.0" x2="611.0" y2="152.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="608.5" y1="157.9" x2="609.1" y2="151.9" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="606.0" y1="157.5" x2="607.3" y2="151.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="603.6" y1="156.8" x2="605.4" y2="151.1" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="601.2" y1="155.9" x2="603.7" y2="150.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="599.0" y1="154.8" x2="602.0" y2="149.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="596.9" y1="153.4" x2="600.4" y2="148.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="594.9" y1="151.8" x2="599.0" y2="147.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="593.2" y1="150.1" x2="597.6" y2="146.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="591.6" y1="148.1" x2="596.4" y2="144.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="590.2" y1="146.0" x2="595.4" y2="143.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="589.1" y1="143.8" x2="594.6" y2="141.3" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="588.2" y1="141.4" x2="593.9" y2="139.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="587.5" y1="139.0" x2="593.4" y2="137.7" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="587.1" y1="136.5" x2="593.1" y2="135.9" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="587.0" y1="134.0" x2="593.0" y2="134.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="587.1" y1="131.5" x2="593.1" y2="132.1" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="587.5" y1="129.0" x2="593.4" y2="130.3" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="588.2" y1="126.6" x2="593.9" y2="128.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="589.1" y1="124.2" x2="594.6" y2="126.7" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="590.2" y1="122.0" x2="595.4" y2="125.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="591.6" y1="119.9" x2="596.4" y2="123.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="593.2" y1="117.9" x2="597.6" y2="122.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="594.9" y1="116.2" x2="599.0" y2="120.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="596.9" y1="114.6" x2="600.4" y2="119.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="599.0" y1="113.2" x2="602.0" y2="118.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="601.2" y1="112.1" x2="603.7" y2="117.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="603.6" y1="111.2" x2="605.4" y2="116.9" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="606.0" y1="110.5" x2="607.3" y2="116.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="608.5" y1="110.1" x2="609.1" y2="116.1" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="611.0" y1="110.0" x2="611.0" y2="116.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="613.5" y1="110.1" x2="612.9" y2="116.1" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="616.0" y1="110.5" x2="614.7" y2="116.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="618.4" y1="111.2" x2="616.6" y2="116.9" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="620.8" y1="112.1" x2="618.3" y2="117.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="623.0" y1="113.2" x2="620.0" y2="118.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="625.1" y1="114.6" x2="621.6" y2="119.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="627.1" y1="116.2" x2="623.0" y2="120.6" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="628.8" y1="117.9" x2="624.4" y2="122.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="630.4" y1="119.9" x2="625.6" y2="123.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="631.8" y1="122.0" x2="626.6" y2="125.0" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="632.9" y1="124.2" x2="627.4" y2="126.7" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="633.8" y1="126.6" x2="628.1" y2="128.4" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="634.5" y1="129.0" x2="628.6" y2="130.3" stroke="#2b8a3e" stroke-width=".6"/>
+<line x1="634.9" y1="131.5" x2="628.9" y2="132.1" stroke="#2b8a3e" stroke-width=".6"/>
+<circle cx="612.3" cy="123.5" r="1.5" fill="#3d2466"/>
+<circle cx="599.4" cy="126.9" r="1.5" fill="#3d2466"/>
+<circle cx="615.8" cy="132.3" r="1.5" fill="#3d2466"/>
+<circle cx="606.1" cy="136.1" r="1.5" fill="#3d2466"/>
+<circle cx="609.8" cy="129.2" r="1.5" fill="#3d2466"/>
+<circle cx="618.8" cy="138.8" r="1.5" fill="#3d2466"/>
+<circle cx="604.2" cy="135.8" r="1.5" fill="#3d2466"/>
+<circle cx="611.7" cy="143.0" r="1.5" fill="#3d2466"/>
+<circle cx="617.1" cy="128.9" r="1.5" fill="#3d2466"/>
+<circle cx="623.7" cy="124.8" r="1.5" fill="#3d2466"/>
+<circle cx="608.8" cy="140.2" r="1.5" fill="#3d2466"/>
+<circle cx="601.8" cy="133.7" r="1.5" fill="#3d2466"/>
+<circle cx="598.8" cy="138.0" r="1.5" fill="#3d2466"/>
+<circle cx="618.0" cy="135.8" r="1.5" fill="#3d2466"/>
+<circle cx="620.9" cy="129.5" r="1.5" fill="#3d2466"/>
+<circle cx="616.2" cy="136.3" r="1.5" fill="#3d2466"/>
+<text x="567" y="206.0" font-size="8.8" font-weight="700" fill="#212529" text-anchor="middle">Epitélio alto e regular,</text>
+<text x="567" y="218.4" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">luz redonda e lisa com estereocílios</text>
+<text x="567" y="230.8" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">e espermatozoides; fina camada</text>
+<text x="567" y="243.2" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">de músculo liso; vários cortes juntos</text>
+<rect x="7" y="278" width="212" height="170" rx="10" fill="#fff5f8" stroke="#f1c7d6"/>
+<rect x="29" y="259" width="168" height="19" rx="9.5" fill="#1c7ed6"/><text x="113" y="273" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">Ducto deferente</text>
+<circle cx="113" cy="362" r="70" fill="#fbe3ec" stroke="#e7a3bd"/>
+<circle cx="113" cy="362" r="64" fill="#f5b8cd"/>
+<circle cx="113" cy="362" r="48" fill="#ee9bba"/>
+<circle cx="113" cy="362" r="30" fill="#f5b8cd"/>
+<circle cx="169.6" cy="365.3" r="1.3" fill="#5b3a8e"/>
+<circle cx="171.8" cy="376.5" r="1.3" fill="#5b3a8e"/>
+<circle cx="167.5" cy="382.6" r="1.3" fill="#5b3a8e"/>
+<circle cx="165.1" cy="388.9" r="1.3" fill="#5b3a8e"/>
+<circle cx="159.9" cy="400.9" r="1.3" fill="#5b3a8e"/>
+<circle cx="148.7" cy="404.2" r="1.3" fill="#5b3a8e"/>
+<circle cx="145.5" cy="410.5" r="1.3" fill="#5b3a8e"/>
+<circle cx="138.6" cy="412.6" r="1.3" fill="#5b3a8e"/>
+<circle cx="128.8" cy="413.6" r="1.3" fill="#5b3a8e"/>
+<circle cx="121.9" cy="420.5" r="1.3" fill="#5b3a8e"/>
+<circle cx="112.3" cy="417.0" r="1.3" fill="#5b3a8e"/>
+<circle cx="101.3" cy="420.8" r="1.3" fill="#5b3a8e"/>
+<circle cx="95.1" cy="415.7" r="1.3" fill="#5b3a8e"/>
+<circle cx="82.8" cy="413.9" r="1.3" fill="#5b3a8e"/>
+<circle cx="73.9" cy="407.4" r="1.3" fill="#5b3a8e"/>
+<circle cx="72.1" cy="400.7" r="1.3" fill="#5b3a8e"/>
+<circle cx="63.2" cy="395.5" r="1.3" fill="#5b3a8e"/>
+<circle cx="62.6" cy="381.9" r="1.3" fill="#5b3a8e"/>
+<circle cx="60.5" cy="378.0" r="1.3" fill="#5b3a8e"/>
+<circle cx="56.6" cy="369.6" r="1.3" fill="#5b3a8e"/>
+<circle cx="58.0" cy="358.8" r="1.3" fill="#5b3a8e"/>
+<circle cx="57.3" cy="353.2" r="1.3" fill="#5b3a8e"/>
+<circle cx="59.0" cy="342.2" r="1.3" fill="#5b3a8e"/>
+<circle cx="63.6" cy="330.6" r="1.3" fill="#5b3a8e"/>
+<circle cx="67.9" cy="325.6" r="1.3" fill="#5b3a8e"/>
+<circle cx="77.9" cy="321.8" r="1.3" fill="#5b3a8e"/>
+<circle cx="82.6" cy="311.1" r="1.3" fill="#5b3a8e"/>
+<circle cx="90.8" cy="306.9" r="1.3" fill="#5b3a8e"/>
+<circle cx="97.7" cy="307.9" r="1.3" fill="#5b3a8e"/>
+<circle cx="104.5" cy="304.5" r="1.3" fill="#5b3a8e"/>
+<circle cx="113.3" cy="308.5" r="1.3" fill="#5b3a8e"/>
+<circle cx="122.6" cy="308.6" r="1.3" fill="#5b3a8e"/>
+<circle cx="131.2" cy="311.8" r="1.3" fill="#5b3a8e"/>
+<circle cx="137.6" cy="313.7" r="1.3" fill="#5b3a8e"/>
+<circle cx="146.3" cy="317.1" r="1.3" fill="#5b3a8e"/>
+<circle cx="155.5" cy="319.7" r="1.3" fill="#5b3a8e"/>
+<circle cx="158.7" cy="332.9" r="1.3" fill="#5b3a8e"/>
+<circle cx="163.3" cy="337.9" r="1.3" fill="#5b3a8e"/>
+<circle cx="164.9" cy="347.2" r="1.3" fill="#5b3a8e"/>
+<circle cx="173.8" cy="357.6" r="1.3" fill="#5b3a8e"/>
+<ellipse cx="151.8" cy="363.8" rx="3.6" ry="1" transform="rotate(93 151.8 363.8)" fill="#5b3a8e"/>
+<ellipse cx="148.1" cy="368.9" rx="3.6" ry="1" transform="rotate(101 148.1 368.9)" fill="#5b3a8e"/>
+<ellipse cx="147.1" cy="376.6" rx="3.6" ry="1" transform="rotate(113 147.1 376.6)" fill="#5b3a8e"/>
+<ellipse cx="142.2" cy="383.6" rx="3.6" ry="1" transform="rotate(127 142.2 383.6)" fill="#5b3a8e"/>
+<ellipse cx="144.4" cy="390.8" rx="3.6" ry="1" transform="rotate(132 144.4 390.8)" fill="#5b3a8e"/>
+<ellipse cx="133.2" cy="392.0" rx="3.6" ry="1" transform="rotate(146 133.2 392.0)" fill="#5b3a8e"/>
+<ellipse cx="127.0" cy="394.3" rx="3.6" ry="1" transform="rotate(157 127.0 394.3)" fill="#5b3a8e"/>
+<ellipse cx="122.5" cy="403.8" rx="3.6" ry="1" transform="rotate(167 122.5 403.8)" fill="#5b3a8e"/>
+<ellipse cx="113.2" cy="402.6" rx="3.6" ry="1" transform="rotate(180 113.2 402.6)" fill="#5b3a8e"/>
+<ellipse cx="108.5" cy="399.7" rx="3.6" ry="1" transform="rotate(187 108.5 399.7)" fill="#5b3a8e"/>
+<ellipse cx="101.1" cy="401.4" rx="3.6" ry="1" transform="rotate(197 101.1 401.4)" fill="#5b3a8e"/>
+<ellipse cx="92.7" cy="397.9" rx="3.6" ry="1" transform="rotate(210 92.7 397.9)" fill="#5b3a8e"/>
+<ellipse cx="89.9" cy="390.6" rx="3.6" ry="1" transform="rotate(219 89.9 390.6)" fill="#5b3a8e"/>
+<ellipse cx="79.1" cy="388.2" rx="3.6" ry="1" transform="rotate(232 79.1 388.2)" fill="#5b3a8e"/>
+<ellipse cx="76.0" cy="380.7" rx="3.6" ry="1" transform="rotate(243 76.0 380.7)" fill="#5b3a8e"/>
+<ellipse cx="73.8" cy="373.6" rx="3.6" ry="1" transform="rotate(254 73.8 373.6)" fill="#5b3a8e"/>
+<ellipse cx="74.4" cy="368.3" rx="3.6" ry="1" transform="rotate(261 74.4 368.3)" fill="#5b3a8e"/>
+<ellipse cx="77.8" cy="360.7" rx="3.6" ry="1" transform="rotate(272 77.8 360.7)" fill="#5b3a8e"/>
+<ellipse cx="76.4" cy="355.1" rx="3.6" ry="1" transform="rotate(281 76.4 355.1)" fill="#5b3a8e"/>
+<ellipse cx="75.6" cy="346.4" rx="3.6" ry="1" transform="rotate(293 75.6 346.4)" fill="#5b3a8e"/>
+<ellipse cx="82.3" cy="338.7" rx="3.6" ry="1" transform="rotate(307 82.3 338.7)" fill="#5b3a8e"/>
+<ellipse cx="84.1" cy="330.3" rx="3.6" ry="1" transform="rotate(318 84.1 330.3)" fill="#5b3a8e"/>
+<ellipse cx="93.1" cy="329.7" rx="3.6" ry="1" transform="rotate(328 93.1 329.7)" fill="#5b3a8e"/>
+<ellipse cx="97.3" cy="328.7" rx="3.6" ry="1" transform="rotate(335 97.3 328.7)" fill="#5b3a8e"/>
+<ellipse cx="103.7" cy="326.6" rx="3.6" ry="1" transform="rotate(345 103.7 326.6)" fill="#5b3a8e"/>
+<ellipse cx="111.7" cy="319.8" rx="3.6" ry="1" transform="rotate(358 111.7 319.8)" fill="#5b3a8e"/>
+<ellipse cx="119.8" cy="323.8" rx="3.6" ry="1" transform="rotate(370 119.8 323.8)" fill="#5b3a8e"/>
+<ellipse cx="126.9" cy="323.0" rx="3.6" ry="1" transform="rotate(380 126.9 323.0)" fill="#5b3a8e"/>
+<ellipse cx="131.3" cy="326.1" rx="3.6" ry="1" transform="rotate(387 131.3 326.1)" fill="#5b3a8e"/>
+<ellipse cx="140.8" cy="331.5" rx="3.6" ry="1" transform="rotate(402 140.8 331.5)" fill="#5b3a8e"/>
+<ellipse cx="143.6" cy="338.1" rx="3.6" ry="1" transform="rotate(412 143.6 338.1)" fill="#5b3a8e"/>
+<ellipse cx="148.5" cy="340.9" rx="3.6" ry="1" transform="rotate(419 148.5 340.9)" fill="#5b3a8e"/>
+<ellipse cx="152.1" cy="348.3" rx="3.6" ry="1" transform="rotate(431 152.1 348.3)" fill="#5b3a8e"/>
+<ellipse cx="151.0" cy="358.7" rx="3.6" ry="1" transform="rotate(445 151.0 358.7)" fill="#5b3a8e"/>
+<circle cx="140.6" cy="363.1" r="1.3" fill="#5b3a8e"/>
+<circle cx="133.0" cy="369.5" r="1.3" fill="#5b3a8e"/>
+<circle cx="130.7" cy="373.7" r="1.3" fill="#5b3a8e"/>
+<circle cx="128.4" cy="383.5" r="1.3" fill="#5b3a8e"/>
+<circle cx="123.7" cy="386.4" r="1.3" fill="#5b3a8e"/>
+<circle cx="114.1" cy="387.2" r="1.3" fill="#5b3a8e"/>
+<circle cx="108.7" cy="386.0" r="1.3" fill="#5b3a8e"/>
+<circle cx="104.4" cy="380.2" r="1.3" fill="#5b3a8e"/>
+<circle cx="94.7" cy="379.4" r="1.3" fill="#5b3a8e"/>
+<circle cx="89.1" cy="375.6" r="1.3" fill="#5b3a8e"/>
+<circle cx="86.8" cy="368.5" r="1.3" fill="#5b3a8e"/>
+<circle cx="91.4" cy="360.2" r="1.3" fill="#5b3a8e"/>
+<circle cx="91.7" cy="355.2" r="1.3" fill="#5b3a8e"/>
+<circle cx="92.6" cy="348.2" r="1.3" fill="#5b3a8e"/>
+<circle cx="98.2" cy="344.0" r="1.3" fill="#5b3a8e"/>
+<circle cx="102.0" cy="337.0" r="1.3" fill="#5b3a8e"/>
+<circle cx="110.5" cy="338.5" r="1.3" fill="#5b3a8e"/>
+<circle cx="118.4" cy="335.3" r="1.3" fill="#5b3a8e"/>
+<circle cx="125.4" cy="337.6" r="1.3" fill="#5b3a8e"/>
+<circle cx="129.8" cy="344.5" r="1.3" fill="#5b3a8e"/>
+<circle cx="130.5" cy="352.0" r="1.3" fill="#5b3a8e"/>
+<circle cx="133.8" cy="356.9" r="1.3" fill="#5b3a8e"/>
+<path d="M129.0 362.0 L119.1 365.5 L121.0 375.9 L113.0 369.0 L105.0 375.9 L106.9 365.5 L97.0 362.0 L106.9 358.5 L105.0 348.1 L113.0 355.0 L121.0 348.1 L119.1 358.5 Z" fill="#c9a0b6" stroke="#5b3a8e" stroke-width="3.2" stroke-linejoin="round"/>
+<path d="M129.0 362.0 L119.1 365.5 L121.0 375.9 L113.0 369.0 L105.0 375.9 L106.9 365.5 L97.0 362.0 L106.9 358.5 L105.0 348.1 L113.0 355.0 L121.0 348.1 L119.1 358.5 Z" fill="#ffffff" stroke="none" transform="translate(28.2 90.5) scale(.75)"/>
+<text x="113" y="466.0" font-size="8.8" font-weight="700" fill="#212529" text-anchor="middle">Luz pequena e estrelada,</text>
+<text x="113" y="478.4" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">muscular MUITO espessa:</text>
+<text x="113" y="490.8" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">longitudinal interna, circular média</text>
+<text x="113" y="503.2" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">e longitudinal externa</text>
+<rect x="234" y="278" width="212" height="170" rx="10" fill="#fff5f8" stroke="#f1c7d6"/>
+<rect x="256" y="259" width="168" height="19" rx="9.5" fill="#7048e8"/><text x="340" y="273" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">Vesícula seminal</text>
+<ellipse cx="340" cy="362" rx="88" ry="68" fill="#f5b8cd"/>
+<ellipse cx="340" cy="362" rx="76" ry="56" fill="#fde2ec"/>
+<path d="M415.8 357.6 Q395.3 363.7 374.6 361.3" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M415.8 357.6 Q395.3 363.7 374.6 361.3" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M395.3 363.7 L389.6 372.1" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M374.6 361.3 Q375.6 361.1 376.5 370.9" fill="none" stroke="#9c36b5" stroke-width="2"/>
+<path d="M411.6 380.7 Q387.1 379.2 367.0 370.2" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M411.6 380.7 Q387.1 379.2 367.0 370.2" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M387.1 379.2 L377.6 384.9" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M391.8 403.0 Q371.4 393.7 359.7 379.2" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M391.8 403.0 Q371.4 393.7 359.7 379.2" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M371.4 393.7 L359.2 395.6" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M371.0 413.1 Q355.7 399.3 350.8 382.6" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M371.0 413.1 Q355.7 399.3 350.8 382.6" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M355.7 399.3 L343.5 398.1" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M350.8 382.6 Q345.8 379.7 340.7 386.9" fill="none" stroke="#9c36b5" stroke-width="2"/>
+<path d="M339.3 418.0 Q332.9 402.3 338.0 387.3" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M339.3 418.0 Q332.9 402.3 338.0 387.3" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M332.9 402.3 L321.9 397.5" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M315.4 415.0 Q316.8 397.4 328.6 383.0" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M315.4 415.0 Q316.8 397.4 328.6 383.0" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M316.8 397.4 L308.9 390.4" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M288.5 403.2 Q301.2 386.3 321.5 375.4" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M288.5 403.2 Q301.2 386.3 321.5 375.4" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M301.2 386.3 L298.1 377.9" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M321.5 375.4 Q317.2 368.2 312.9 371.0" fill="none" stroke="#9c36b5" stroke-width="2"/>
+<path d="M268.6 381.2 Q288.5 370.9 311.6 368.5" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M268.6 381.2 Q288.5 370.9 311.6 368.5" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M288.5 370.9 L290.9 362.0" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M264.0 361.4 Q285.5 356.8 306.1 360.5" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M264.0 361.4 Q285.5 356.8 306.1 360.5" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M285.5 356.8 L292.1 348.7" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M271.9 337.2 Q296.2 340.9 314.9 351.7" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M271.9 337.2 Q296.2 340.9 314.9 351.7" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M296.2 340.9 L306.5 336.1" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M314.9 351.7 Q316.9 342.8 318.8 343.9" fill="none" stroke="#9c36b5" stroke-width="2"/>
+<path d="M287.2 321.7 Q308.1 330.9 320.5 345.5" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M287.2 321.7 Q308.1 330.9 320.5 345.5" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M308.1 330.9 L320.1 328.9" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M311.1 310.2 Q325.4 323.4 329.0 339.2" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M311.1 310.2 Q325.4 323.4 329.0 339.2" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M325.4 323.4 L337.9 324.7" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M339.4 306.0 Q346.0 323.1 341.3 339.8" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M339.4 306.0 Q346.0 323.1 341.3 339.8" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M346.0 323.1 L356.6 327.8" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M341.3 339.8 Q347.1 334.3 353.0 338.9" fill="none" stroke="#9c36b5" stroke-width="2"/>
+<path d="M368.8 310.2 Q367.5 325.6 355.7 337.3" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M368.8 310.2 Q367.5 325.6 355.7 337.3" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M367.5 325.6 L375.5 333.3" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M395.4 323.7 Q385.1 337.6 367.4 344.9" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M395.4 323.7 Q385.1 337.6 367.4 344.9" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M385.1 337.6 L388.0 346.9" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M412.1 344.3 Q389.8 354.5 364.7 356.9" fill="none" stroke="#9c36b5" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M412.1 344.3 Q389.8 354.5 364.7 356.9" fill="none" stroke="#f3d9fa" stroke-width="1"/>
+<path d="M389.8 354.5 L387.0 363.0" stroke="#9c36b5" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M364.7 356.9 Q367.0 355.3 369.3 363.7" fill="none" stroke="#9c36b5" stroke-width="2"/>
+<ellipse cx="340" cy="362" rx="76" ry="56" fill="none" stroke="#9c36b5" stroke-width="3"/>
+<text x="340" y="466.0" font-size="8.8" font-weight="700" fill="#212529" text-anchor="middle">Mucosa com pregas finas e</text>
+<text x="340" y="478.4" font-size="8.8" font-weight="700" fill="#212529" text-anchor="middle">ramificadas (“favo de mel”);</text>
+<text x="340" y="490.8" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">secreção rosa na luz; músculo liso</text>
+<text x="340" y="503.2" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">em volta (sem slide de lâmina na aula)</text>
+<rect x="461" y="278" width="212" height="170" rx="10" fill="#fff5f8" stroke="#f1c7d6"/>
+<rect x="483" y="259" width="168" height="19" rx="9.5" fill="#e8590c"/><text x="567" y="273" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">Próstata</text>
+<rect x="469" y="286" width="196" height="150" rx="8" fill="#f3b6cd"/>
+<ellipse cx="578.0" cy="422.2" rx="3.4" ry="1" transform="rotate(151 578.0 422.2)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="500.2" cy="308.8" rx="3.4" ry="1" transform="rotate(80 500.2 308.8)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="488.3" cy="325.2" rx="3.4" ry="1" transform="rotate(13 488.3 325.2)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="598.2" cy="400.2" rx="3.4" ry="1" transform="rotate(161 598.2 400.2)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="503.4" cy="390.8" rx="3.4" ry="1" transform="rotate(119 503.4 390.8)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="501.3" cy="413.8" rx="3.4" ry="1" transform="rotate(174 501.3 413.8)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="515.4" cy="423.4" rx="3.4" ry="1" transform="rotate(72 515.4 423.4)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="564.7" cy="428.6" rx="3.4" ry="1" transform="rotate(150 564.7 428.6)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="504.7" cy="351.6" rx="3.4" ry="1" transform="rotate(93 504.7 351.6)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="537.4" cy="319.0" rx="3.4" ry="1" transform="rotate(57 537.4 319.0)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="607.9" cy="294.7" rx="3.4" ry="1" transform="rotate(100 607.9 294.7)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="556.0" cy="294.5" rx="3.4" ry="1" transform="rotate(60 556.0 294.5)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="589.8" cy="362.7" rx="3.4" ry="1" transform="rotate(12 589.8 362.7)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="656.3" cy="400.8" rx="3.4" ry="1" transform="rotate(175 656.3 400.8)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="494.3" cy="328.6" rx="3.4" ry="1" transform="rotate(7 494.3 328.6)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="618.3" cy="329.3" rx="3.4" ry="1" transform="rotate(23 618.3 329.3)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="552.7" cy="417.8" rx="3.4" ry="1" transform="rotate(147 552.7 417.8)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="522.6" cy="312.6" rx="3.4" ry="1" transform="rotate(165 522.6 312.6)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="580.0" cy="388.7" rx="3.4" ry="1" transform="rotate(16 580.0 388.7)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="485.6" cy="387.0" rx="3.4" ry="1" transform="rotate(77 485.6 387.0)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="488.3" cy="421.5" rx="3.4" ry="1" transform="rotate(114 488.3 421.5)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="622.5" cy="303.6" rx="3.4" ry="1" transform="rotate(154 622.5 303.6)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="487.3" cy="411.1" rx="3.4" ry="1" transform="rotate(82 487.3 411.1)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="537.4" cy="368.3" rx="3.4" ry="1" transform="rotate(167 537.4 368.3)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="524.3" cy="309.8" rx="3.4" ry="1" transform="rotate(95 524.3 309.8)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="518.9" cy="307.1" rx="3.4" ry="1" transform="rotate(29 518.9 307.1)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="484.3" cy="319.8" rx="3.4" ry="1" transform="rotate(56 484.3 319.8)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="531.1" cy="396.8" rx="3.4" ry="1" transform="rotate(52 531.1 396.8)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="567.0" cy="316.6" rx="3.4" ry="1" transform="rotate(62 567.0 316.6)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="478.3" cy="326.6" rx="3.4" ry="1" transform="rotate(3 478.3 326.6)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="609.9" cy="368.0" rx="3.4" ry="1" transform="rotate(34 609.9 368.0)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="562.4" cy="421.0" rx="3.4" ry="1" transform="rotate(19 562.4 421.0)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="625.7" cy="351.6" rx="3.4" ry="1" transform="rotate(89 625.7 351.6)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="628.6" cy="346.2" rx="3.4" ry="1" transform="rotate(91 628.6 346.2)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="601.5" cy="427.6" rx="3.4" ry="1" transform="rotate(62 601.5 427.6)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="628.1" cy="389.5" rx="3.4" ry="1" transform="rotate(114 628.1 389.5)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="549.5" cy="340.0" rx="3.4" ry="1" transform="rotate(10 549.5 340.0)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="498.9" cy="301.8" rx="3.4" ry="1" transform="rotate(133 498.9 301.8)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="522.0" cy="314.5" rx="3.4" ry="1" transform="rotate(15 522.0 314.5)" fill="#5b3a8e" opacity=".7"/>
+<ellipse cx="629.8" cy="412.1" rx="3.4" ry="1" transform="rotate(121 629.8 412.1)" fill="#5b3a8e" opacity=".7"/>
+<path d="M555.9 334.0 L547.8 340.1 L552.2 349.3 L542.6 351.3 L541.5 360.7 L532.3 358.4 L527.0 366.6 L519.7 361.3 L510.5 367.0 L508.0 355.7 L498.5 355.7 L498.7 346.8 L490.9 341.9 L497.1 334.0 L492.0 326.4 L500.0 321.9 L497.9 311.7 L508.1 312.4 L511.4 303.5 L519.8 307.9 L526.9 302.3 L532.1 310.0 L541.3 307.4 L542.5 316.8 L551.4 319.1 L547.3 328.0 Z" fill="#ffffff" stroke="#7a3b9a" stroke-width="3.4" stroke-linejoin="round"/>
+<path d="M632.2 328.0 L625.7 333.5 L628.8 342.0 L620.2 343.2 L618.0 352.0 L609.9 348.2 L603.3 354.0 L598.3 347.0 L590.3 347.2 L590.4 338.7 L581.1 335.6 L587.6 328.0 L581.7 320.6 L589.9 317.0 L590.9 309.4 L598.4 309.1 L603.2 301.5 L609.9 307.9 L617.9 304.0 L620.6 312.3 L627.9 314.6 L626.3 322.3 Z" fill="#ffffff" stroke="#7a3b9a" stroke-width="3.4" stroke-linejoin="round"/>
+<path d="M552.8 402.0 L546.9 407.8 L549.3 416.3 L540.6 417.7 L537.8 425.6 L530.0 422.7 L523.3 427.9 L518.5 420.6 L510.6 420.9 L510.9 412.3 L503.2 409.0 L507.2 402.0 L503.3 395.0 L509.5 390.8 L510.0 382.4 L518.6 383.5 L523.3 376.2 L529.9 381.8 L537.7 378.6 L539.5 387.6 L549.3 387.7 L546.7 396.2 Z" fill="#ffffff" stroke="#7a3b9a" stroke-width="3.4" stroke-linejoin="round"/>
+<path d="M642.7 396.0 L635.0 402.4 L638.9 412.1 L627.7 412.7 L627.2 424.1 L617.2 419.3 L611.0 426.3 L604.8 419.3 L594.8 424.1 L594.0 413.0 L582.9 412.2 L586.0 402.7 L579.3 396.0 L587.4 389.7 L583.6 380.2 L593.2 378.2 L594.7 367.8 L604.5 371.8 L611.0 363.9 L617.1 373.2 L626.3 369.5 L628.0 379.0 L639.1 379.8 L634.4 389.7 Z" fill="#ffffff" stroke="#7a3b9a" stroke-width="3.4" stroke-linejoin="round"/>
+<ellipse cx="523" cy="334" rx="13" ry="9" fill="#f783ac" stroke="#c2255c"/><ellipse cx="523" cy="334" rx="8" ry="5" fill="none" stroke="#c2255c"/><ellipse cx="523" cy="334" rx="3.5" ry="2" fill="none" stroke="#c2255c"/>
+<text x="523" y="354" font-size="7.8" font-weight="700" fill="#a61e4d" text-anchor="middle">concreção</text>
+<text x="567" y="466.0" font-size="8.8" font-weight="700" fill="#212529" text-anchor="middle">Glândulas de tamanhos variados,</text>
+<text x="567" y="478.4" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">com pregas; concreções na luz;</text>
+<text x="567" y="490.8" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">estroma fibromuscular abundante</text>
+<text x="567" y="503.2" font-size="8.8" font-weight="400" fill="#495057" text-anchor="middle">(músculo liso + fibras elásticas)</text>
+</svg><figcaption><b>Figura 25.</b> Como reconhecer os órgãos do aparelho reprodutor masculino na lâmina (HE).</figcaption></figure>
+<table class="dense">
+<thead><tr><th>Órgão</th><th>Epitélio</th><th>Luz</th><th>Parede</th><th>Pegadinha</th></tr></thead>
+<tbody>
+<tr><td class="g-hte">Túbulo seminífero</td><td>Seminífero: Sertoli + germinativas, muitas camadas</td><td>Pequena, com flagelos</td><td>Lâmina basal com mioides; Leydig entre os túbulos</td><td>Leydig não é do epitélio</td></tr>
+<tr><td class="g-hdu">Ductos eferentes</td><td>Cúbicas e colunares ciliadas alternadas</td><td><b>Serrilhada</b></td><td>Fina camada de músculo liso</td><td>Cílios verdadeiros (os estereocílios são do epidídimo)</td></tr>
+<tr><td class="g-hdu">Epidídimo</td><td>Pseudoestratificado colunar com estereocílios</td><td><b>Redonda e lisa</b>, com espermatozoides</td><td>Músculo liso fino</td><td>Mesmo ducto cortado muitas vezes</td></tr>
+<tr><td class="g-hdu">Ducto deferente</td><td>Pseudoestratificado com estereocílios</td><td><b>Pequena e estrelada</b></td><td><b>Muscular muito espessa</b>: LI, CM, LE</td><td>Mesmo epitélio do epidídimo; muda a parede</td></tr>
+<tr><td class="g-hgl">Vesícula seminal</td><td>Pseudoestratificado colunar ou cúbico</td><td>Pregas finas e ramificadas</td><td>Músculo liso</td><td>Pode lembrar a próstata, mas sem estroma abundante nem concreções</td></tr>
+<tr><td class="g-hgl">Próstata</td><td>Cilíndrico simples, com pregas</td><td>Glândulas de tamanhos variados, <b>concreções</b></td><td><b>Estroma fibromuscular</b> abundante</td><td>Concreção = idade, não doença</td></tr>
+<tr><td class="g-hpe">Pênis</td><td>Uretra pseudoestratificada colunar</td><td>Uretra em fenda no corpo esponjoso</td><td>Espaços vasculares entre trabéculas</td><td>Albugínea grossa nos cavernosos</td></tr>
+</tbody></table>
+<div class="box prova"><div class="tag">Cai na prova · prova prática (gincana e revisão)</div>
+As lâminas pedem: <b>túnica albugínea</b> (conjuntivo denso); <b>célula mioide</b> (peritubular); <b>interstício com Leydig</b> (testosterona); <b>Sertoli</b> (duas funções: barreira, nutrição, fagocitose, ABP, inibina, AMH); <b>espermatogônia</b> (mitose; vira espermatócito), <b>espermatócito</b> (meiose), <b>espermátide</b> (vira espermatozoide); <b>epidídimo</b> (maturação; vem do ducto mesonéfrico); <b>pseudoestratificado colunar com estereocílios</b> (células principais e basais); <b>músculo liso do epidídimo</b> (peristaltismo); <b>ducto deferente</b> (as três camadas musculares); <b>zona periférica da próstata</b> (câncer; tecido funcional do endoderma do seio urogenital); <b>glândula prostática</b> (túbuloalveolar; citrato, fosfatase ácida, PSA); <b>concreção prostática</b> (glicoproteínas).
+</div>
+</section>
+
+<!-- ============================== 10 REVISÃO ============================== -->
+<section class="sec flow">
+<h2><span class="num">10</span>Revisão final</h2>
+<h3>10.1 Mapa-mestre</h3>
+<table class="dense master">
+<thead><tr><th>Estrutura</th><th>Onde fica</th><th>Epitélio ou células</th><th>Como reconhecer</th><th>Função</th></tr></thead>
+<tbody>
+<tr><td class="g-hte">Túnica albugínea</td><td>Cápsula do testículo</td><td>Conjuntivo denso</td><td>Faixa rosa grossa com septos</td><td>Divide o testículo em lóbulos</td></tr>
+<tr><td class="g-hte">Túbulo seminífero</td><td>Lóbulos</td><td>Sertoli + linhagem espermatogênica</td><td>Epitélio grosso de células redondas</td><td>Espermatogênese</td></tr>
+<tr><td class="g-hse">Sertoli</td><td>Da base à luz</td><td>Colunar, núcleo claro com nucléolo</td><td>Núcleo triangular na base</td><td>Nutre, fagocita, ABP, inibina, AMH, barreira</td></tr>
+<tr><td class="g-hle">Leydig</td><td>Interstício</td><td>Poliédricas, acidófilas</td><td>Grupos entre os túbulos</td><td>Testosterona (LH)</td></tr>
+<tr><td class="g-hte">Mioides</td><td>Em volta do túbulo</td><td>Achatadas, contráteis</td><td>Núcleos alongados na lâmina basal</td><td>Empurram o conteúdo</td></tr>
+<tr><td class="g-hdu">Túbulos retos e rede</td><td>Mediastino</td><td>Sertoli → cúbico simples</td><td>Canais no conjuntivo</td><td>Condução</td></tr>
+<tr><td class="g-hdu">Ductos eferentes</td><td>Testículo → cabeça do epidídimo</td><td>Cúbico + colunar ciliado</td><td>Luz serrilhada</td><td>Absorvem fluido</td></tr>
+<tr><td class="g-hdu">Epidídimo</td><td>Sobre o testículo</td><td>Pseudoestratificado estereociliado</td><td>Luz redonda e lisa, cheia de espermatozoides</td><td>Maturação, motilidade, armazenamento</td></tr>
+<tr><td class="g-hdu">Ducto deferente</td><td>Funículo espermático</td><td>Pseudoestratificado estereociliado</td><td>Luz estrelada, muscular grossa</td><td>Expulsão na ejaculação</td></tr>
+<tr><td class="g-hgl">Vesícula seminal</td><td>Atrás da bexiga</td><td>Pseudoestratificado colunar</td><td>Pregas ramificadas</td><td>~70% do volume; frutose</td></tr>
+<tr><td class="g-hgl">Próstata</td><td>Em volta da uretra prostática</td><td>Cilíndrico simples; estroma fibromuscular</td><td>Concreções na luz</td><td>Citrato, zinco, fosfatase ácida, PSA</td></tr>
+<tr><td class="g-hgl">Bulbouretrais</td><td>Uretra membranosa</td><td>Cúbico simples mucoso</td><td>—</td><td>Muco lubrificante</td></tr>
+<tr><td class="g-hpe">Pênis</td><td>—</td><td>Corpos cavernosos e esponjoso</td><td>Espaços vasculares entre trabéculas</td><td>Ereção</td></tr>
+</tbody></table>
+
+<h3>10.2 Vinte pontos de prova</h3>
+<ol class="cols2">
+<li>Testículos, ductos genitais, glândulas acessórias e pênis.</li>
+<li>Albugínea de conjuntivo denso → septos incompletos → ~250 lóbulos.</li>
+<li>Cada lóbulo: 1 a 4 túbulos seminíferos.</li>
+<li>Epitélio seminífero: complexo e estratificado (Sertoli + germinativas).</li>
+<li>Espermatogônia (mitose) na base; espermatócito (meiose); espermátide perto da luz.</li>
+<li>Espermatócito primário: o maior e o mais visto; o secundário é raro.</li>
+<li>Espermiogênese: acrossomo, núcleo condensado, flagelo, corpos residuais.</li>
+<li>Corpos residuais são fagocitados pela Sertoli.</li>
+<li>Sertoli: da base à luz; não se dividem depois da puberdade.</li>
+<li>Barreira: junções de oclusão entre Sertoli; compartimentos basal e adluminal.</li>
+<li>O espermatócito primário atravessa a barreira.</li>
+<li>Sertoli: ABP, inibina, AMH, fluido; responde ao FSH.</li>
+<li>Leydig no interstício: testosterona sob LH; REL abundante.</li>
+<li>Mioides por fora da lâmina basal, contráteis.</li>
+<li>Túbulos retos → rede testicular (mediastino) → 12 a 20 eferentes.</li>
+<li>Eferentes: luz serrilhada; epidídimo: luz lisa e estereocílios.</li>
+<li>Motilidade e maturação: epidídimo.</li>
+<li>Deferente: luz estrelada, muscular LI, CM e LE; ampola + vesícula = ejaculatório.</li>
+<li>Próstata: 30 a 50 glândulas túbuloalveolares, estroma fibromuscular, concreções; periférica = câncer, transição = HPB.</li>
+<li>Uretra: prostática de transição; membranosa e esponjosa pseudoestratificadas.</li>
+</ol>
+
+<h3>10.3 Mnemônicos</h3>
+<div class="grid2">
+<div class="box mnem"><div class="tag">Testículo</div>
+<b>“Gônia na base, Cito no meio, Tide na luz”</b>: espermato<b>gônia</b>, espermato<b>cito</b>, esperma<b>tide</b>, de baixo para cima.<br>
+<b>L de Leydig, L de LH, L de lá fora</b> (no interstício). <b>S de Sertoli, S de FSH, S de sustentar</b> (dentro do túbulo).<br>
+<b>Sertoli = ABC + AIF</b>: <b>A</b>BP, <b>B</b>arreira, <b>C</b>omida (nutrição); <b>A</b>MH, <b>I</b>nibina, <b>F</b>agocitose.
+</div>
+<div class="box mnem"><div class="tag">Ductos e glândulas</div>
+<b>Eferente Engrenagem</b> (luz serrilhada); <b>Epidídimo Escova</b> (estereocílios, luz lisa); <b>Deferente Duro</b> (músculo grosso, luz em estrela).<br>
+<b>Vesícula = Volume</b> (e frutose); <b>Próstata = Pedrinhas</b> (concreções) e <b>Periférica = Perigo</b> (câncer); <b>Transição = Trava a uretra</b> (HPB).<br>
+<b>Cowper = Cola</b> (muco lubrificante).
+</div>
+</div>
+<p class="refs-compact"><b>Referências.</b> Junqueira LC, Carneiro J. <i>Histologia Básica</i> · Ross MH, Pawlina W. <i>Histologia: texto e atlas</i> · Slides da aula <i>Histologia do Aparelho Reprodutor Masculino</i>, Profa. Renata Leitão · Questões da T137, da T136 e dos compilados do módulo Gênito-Urinário · Lâminas da gincana de 2018 e da revisão 2025.1.</p>
+</section>
+
+<!-- ============================== 11 QUESTÕES ============================== -->
+<section class="sec flow">
+<h2><span class="num">11</span>Questões com gabarito comentado</h2>
+<ol class="questions">
+<li>Descreva os envoltórios do testículo e como ele é dividido em lóbulos.</li>
+<li>Quais células formam o epitélio seminífero e como elas se distribuem da base à luz?</li>
+<li>Por que o espermatócito primário é a célula da linhagem mais vista no corte, e o secundário quase não aparece?</li>
+<li>O que acontece na espermiogênese? Qual é o destino dos corpos residuais?</li>
+<li>Cite seis funções das células de Sertoli.</li>
+<li>O que é a barreira hematotesticular, onde fica e para que serve?</li>
+<li>Onde ficam as células de Leydig, como reconhecê-las e o que produzem?</li>
+<li>Explique o controle hormonal da espermatogênese e por que o uso de testosterona exógena causa infertilidade.</li>
+<li>Descreva o trajeto do espermatozoide do túbulo seminífero até a uretra. Em que ponto ele ganha motilidade?</li>
+<li>Como diferenciar, na lâmina, ductos eferentes, epidídimo e ducto deferente?</li>
+<li>Descreva a histologia da próstata e diga em que zona surgem a HPB e o câncer.</li>
+<li>O que são as concreções prostáticas? Elas indicam doença?</li>
+<li>Qual glândula contribui com o maior volume do sêmen? Por que o volume ejaculado quase não muda depois da vasectomia?</li>
+<li>Descreva o tecido erétil e o epitélio das partes da uretra masculina.</li>
+</ol>
+
+<h3>Gabarito comentado</h3>
+<ol class="answers">
+<li>Por fora, a <b>túnica vaginal</b> (lâminas parietal e visceral de peritônio); depois, a <b>túnica albugínea</b>, de conjuntivo denso, que se espessa atrás no <b>mediastino testicular</b>; por dentro, a túnica vasculosa. Do mediastino saem <b>septos incompletos</b> que dividem o testículo em cerca de 250 lóbulos, cada um com 1 a 4 túbulos seminíferos.</li>
+<li><b>Células de Sertoli</b>, da lâmina basal à luz, e as da <b>linhagem espermatogênica</b>: espermatogônias sobre a lâmina basal, espermatócitos primários acima, secundários (raros), espermátides perto da luz e espermatozoides soltos na luz. É um epitélio complexo e estratificado, apoiado numa lâmina basal com células mioides por fora.</li>
+<li>Porque a <b>prófase da meiose I é longa</b> (cerca de três semanas): em qualquer momento há muitos espermatócitos primários, grandes e com a cromatina em fios. A <b>meiose II é muito rápida</b>, e o espermatócito secundário logo vira duas espermátides.</li>
+<li>A espermátide vira espermatozoide <b>sem se dividir</b>: forma o <b>acrossomo</b> a partir do Golgi, <b>condensa e alonga o núcleo</b>, desenvolve o <b>flagelo</b> e junta as mitocôndrias na peça intermediária, e perde a maior parte do citoplasma. Esse excesso, os <b>corpos residuais</b>, é <b>fagocitado pelas células de Sertoli</b>.</li>
+<li>Suporte, proteção e nutrição das germinativas; fagocitose dos corpos residuais; secreção do fluido testicular; produção de ABP; barreira hematotesticular; produção de AMH (no embrião). Também: inibina, resposta ao FSH.</li>
+<li>São as <b>junções de oclusão entre células de Sertoli vizinhas</b>, perto da base do epitélio. Dividem o túbulo em compartimento <b>basal</b> (espermatogônias) e <b>adluminal</b> (espermatócitos, espermátides, espermatozoides). Isolam as células haploides, com antígenos que o sistema imune não conhece, e controlam o meio em que a meiose acontece; por isso essas células dependem das Sertoli para receber nutrientes. O espermatócito primário atravessa enquanto as junções se refazem embaixo dele.</li>
+<li>No <b>interstício</b>, entre os túbulos, em grupos junto aos capilares. São poliédricas, de <b>núcleo redondo</b> e citoplasma <b>acidófilo</b>, ricas em REL, mitocôndrias e lipídio, como toda célula que faz esteroide. Produzem <b>testosterona</b> sob estímulo do <b>LH</b>.</li>
+<li>O GnRH faz a hipófise liberar <b>LH</b>, que estimula as <b>Leydig</b> a fazer testosterona, e <b>FSH</b>, que estimula as <b>Sertoli</b> a fazer ABP e inibina; a ABP mantém a testosterona alta no túbulo. Testosterona e inibina freiam a hipófise. A testosterona de fora baixa o LH e o FSH: as Leydig param, a testosterona dentro do testículo cai e a espermatogênese também.</li>
+<li>Túbulo seminífero → túbulos retos → rede testicular (mediastino) → ductos eferentes → ducto do epidídimo → ducto deferente → ampola → ducto ejaculatório (atravessa a próstata) → uretra prostática, membranosa e esponjosa. Até o epidídimo o transporte é passivo; a motilidade surge no <b>epidídimo</b>.</li>
+<li><b>Eferentes</b>: grupos de células cúbicas e colunares ciliadas alternados, luz <b>serrilhada</b>. <b>Epidídimo</b>: pseudoestratificado alto e regular com estereocílios, luz <b>redonda e lisa</b> com espermatozoides, músculo fino, o mesmo ducto cortado várias vezes. <b>Deferente</b>: mesmo epitélio, mas luz <b>pequena e estrelada</b> e <b>muscular muito espessa</b> em três camadas.</li>
+<li>Conjunto de <b>30 a 50 glândulas túbuloalveolares ramificadas</b> de epitélio cilíndrico simples com pregas, em <b>estroma fibromuscular</b> (músculo liso e fibras elásticas), envolvido por cápsula fibroelástica; concreções na luz. A <b>HPB</b> nasce na <b>zona de transição</b>, em volta da uretra; o <b>adenocarcinoma</b>, na <b>zona periférica</b>, a que se toca no exame retal.</li>
+<li>Corpos esféricos e lamelados de <b>glicoproteínas</b> na luz das glândulas, que podem calcificar (corpos amiláceos). <b>Aumentam com a idade</b> e <b>não</b> indicam doença; servem para reconhecer a próstata na lâmina.</li>
+<li>A <b>vesícula seminal</b> (cerca de 70% do volume). A vasectomia só interrompe o ducto deferente: os espermatozoides deixam de chegar, mas as glândulas continuam secretando, e o volume do sêmen quase não muda.</li>
+<li>Espaços vasculares revestidos por endotélio, separados por <b>trabéculas de conjuntivo e músculo liso</b>, nos dois corpos cavernosos e no corpo esponjoso, cada um com túnica albugínea. Uretra <b>prostática</b>: transição; <b>membranosa</b>: pseudoestratificado cilíndrico; <b>esponjosa</b>: pseudoestratificado cilíndrico com estratificado pavimentoso perto da glande.</li>
+</ol>
+</section>
+
+</template>
+<template id="tpl-huri">
 <!-- ============================== CAPA ============================== -->
 <section class="cover">
   <div class="kicker">Resumo de estudo · Histologia · Medicina</div>
@@ -5143,7 +6506,8 @@ const MAT=[
 {"id": "masc", "t": "Sistema Genital Masculino", "av": "AV1", "area": "Anatomia", "c": "#6d5bd0", "profs": "Aulas do Prof. Miguel Leitão e do Prof. Erivan Façanha Barreto", "d": "Escroto e camadas, testículo, epidídimo, funículo, ductos, vesículas seminais, próstata, uretra e pênis.", "pdf": "res/Resumo_Sistema_Genital_Masculino.pdf", "pdfName": "Resumo - Sistema Genital Masculino.pdf", "figs": 16, "slides": 44, "ana": [["masc", "Fotos: pênis, próstata e uretra"], ["escroto", "Fotos: escroto e funículo"]], "teo": [0, 1, 2, 4, 8, 32, 33, 34, 35, 36, 37, 38, 39, 44, 45, 46, 62, 64, 65, 66, 68, 70, 71, 72, 73, 99, 100, 101, 102, 107, 108, 109, 110, 111, 112, 113, 116, 129, 130, 131, 132, 133, 138, 139, 140, 141, 160, 161, 163, 202, 204, 205, 206, 207, 211, 212, 214, 215, 216, 217, 233, 235, 238, 239, 245, 246], "sn": "com as suas anotações"},
 {"id": "uri", "t": "Sistema Urinário", "av": "AV1", "area": "Anatomia", "c": "#e64980", "profs": "Aula Sistema Urinário (slides de Medicina 2026)", "d": "Rins, fáscia e relações, segmentos e vasos renais, ureteres, bexiga, micção, uretra e assoalho pélvico.", "pdf": "res/Resumo_Sistema_Urinario.pdf", "pdfName": "Resumo - Sistema Urinario.pdf", "figs": 22, "slides": 95, "sn": "", "ana": [["rim", "Fotos: rim"], ["ureter", "Fotos: ureter"], ["bexiga", "Fotos: bexiga"], ["vasos", "Fotos: veias renais"]], "teo": [7, 9, 37, 46, 47, 49, 67, 69, 103, 104, 105, 106, 134, 135, 136, 137, 138, 142, 164, 165, 166, 186, 192, 208, 211, 218, 231, 232, 281, 364, 375, 463, 498, 500, 501, 522, 537, 548, 556, 569, 570, 571, 589, 600, 601, 615, 640]},
 {"id": "fem", "t": "Sistema Genital Feminino", "av": "AV1", "area": "Anatomia", "c": "#c2255c", "profs": "Aula 2, Anatomia Genital Feminina (fotos dos slides projetados)", "d": "Ovários, tubas, útero, ligamentos e escavações, vasos e o ureter, vagina, vulva, períneo e mamas.", "pdf": "res/Resumo_Sistema_Genital_Feminino.pdf", "pdfName": "Resumo - Sistema Genital Feminino.pdf", "figs": 12, "slides": 40, "sn": "fotografados na aula", "ar": "1000/884", "ana": [["utero", "Fotos: útero e vagina"], ["anexos", "Fotos: ovário, tuba e ligamentos"], ["perit", "Fotos: escavações"], ["vulva", "Fotos: vulva"]], "teo": [3, 4, 7, 21, 40, 41, 42, 44, 49, 57, 74, 75, 76, 209, 232, 256, 259, 372, 373, 374, 387, 418, 421, 442, 444, 461, 467, 474, 559, 562, 592, 616, 638]},
-{"id": "huri", "t": "Histologia do Sistema Urinário", "av": "AV1", "area": "Histologia", "c": "#1098ad", "profs": "Aula da Profa. Renata Leitão (Departamento de Morfologia)", "d": "Organização do rim, néfron, corpúsculo renal e barreira de filtração, aparelho justaglomerular, túbulos e ductos coletores, urotélio, ureter, bexiga e uretra.", "pdf": "res/Resumo_Histologia_Sistema_Urinario.pdf", "pdfName": "Resumo - Histologia do Sistema Urinario.pdf", "figs": 24, "slides": 48, "sn": "", "ana": [], "his": [["rim", "Lâminas: rim"], ["vias", "Lâminas: ureter e bexiga"]], "teo": [12, 13, 14, 16, 50, 51, 55, 77, 78, 79, 86, 87, 91, 118, 119, 120, 121, 122, 123, 143, 144, 145, 152, 158, 171, 174, 177, 178, 179, 182, 183, 184, 185, 189, 195, 197, 199, 200, 228, 229, 244, 263, 268, 271, 300, 306, 307, 466, 520, 549, 581, 582]}
+{"id": "huri", "t": "Histologia do Sistema Urinário", "av": "AV1", "area": "Histologia", "c": "#1098ad", "profs": "Aula da Profa. Renata Leitão (Departamento de Morfologia)", "d": "Organização do rim, néfron, corpúsculo renal e barreira de filtração, aparelho justaglomerular, túbulos e ductos coletores, urotélio, ureter, bexiga e uretra.", "pdf": "res/Resumo_Histologia_Sistema_Urinario.pdf", "pdfName": "Resumo - Histologia do Sistema Urinario.pdf", "figs": 24, "slides": 48, "sn": "", "ana": [], "his": [["rim", "Lâminas: rim"], ["vias", "Lâminas: ureter e bexiga"]], "teo": [12, 13, 14, 16, 50, 51, 55, 77, 78, 79, 86, 87, 91, 118, 119, 120, 121, 122, 123, 143, 144, 145, 152, 158, 171, 174, 177, 178, 179, 182, 183, 184, 185, 189, 195, 197, 199, 200, 228, 229, 244, 263, 268, 271, 300, 306, 307, 466, 520, 549, 581, 582]},
+{"id": "hmasc", "t": "Histologia do Aparelho Reprodutor Masculino", "av": "AV1", "area": "Histologia", "c": "#5f3dc4", "profs": "Aula da Profa. Renata Leitão (Departamento de Morfologia)", "d": "Testículo, espermatogênese, células de Sertoli e barreira hematotesticular, células de Leydig e controle hormonal, ductos genitais, vesícula seminal, próstata, bulbouretrais, uretra e pênis.", "pdf": "res/Resumo_Histologia_Aparelho_Reprodutor_Masculino.pdf", "pdfName": "Resumo - Histologia do Aparelho Reprodutor Masculino.pdf", "figs": 25, "slides": 41, "sn": "", "ana": [], "his": [["testic", "Lâminas: testículo"], ["ductos", "Lâminas: epidídimo, deferente e próstata"]], "teo": [0, 1, 15, 17, 18, 31, 35, 52, 53, 54, 71, 80, 81, 82, 93, 94, 114, 115, 116, 117, 140, 141, 146, 147, 148, 205, 206, 223, 226, 227, 236, 239, 242, 243, 253, 260, 261, 262, 287, 290, 321, 326]}
 ];
 GR.mat={};MAT.forEach(m=>GR.mat[m.id]={n:m.t,c:m.c});
 IT.mat=MAT.map(m=>({grp:m.id,label:m.t}));
@@ -5156,8 +6520,9 @@ function pdfBytes(m){const s=atob(window.PDFDATA[m.id]);const u=new Uint8Array(s
 const PDFURL={};
 function hasPdf(m){return !!(window.PDFDATA&&window.PDFDATA[m.id])}
 function pdfUrl(m){if(!PDFURL[m.id]&&hasPdf(m))PDFURL[m.id]=URL.createObjectURL(new Blob([pdfBytes(m)],{type:"application/pdf"}));return PDFURL[m.id]||m.pdf}
-function pdfPrep(m){if(PDFURL[m.id]||hasPdf(m)||INFRAME)return;fetch(m.pdf).then(r=>r.ok?r.blob():null).then(b=>{if(b&&!PDFURL[m.id])PDFURL[m.id]=URL.createObjectURL(new Blob([b],{type:"application/pdf"}))}).catch(()=>{})}
-async function pdfBlob(m){if(window.PDFDATA&&window.PDFDATA[m.id])return new Blob([pdfBytes(m)],{type:"application/pdf"});const r=await fetch(m.pdf);if(!r.ok)throw new Error("fetch");return await r.blob()}
+function pdfPrep(m){if(INFRAME){loadPdfData(m);return}if(PDFURL[m.id]||hasPdf(m))return;fetch(m.pdf).then(r=>r.ok?r.blob():null).then(b=>{if(b&&!PDFURL[m.id])PDFURL[m.id]=URL.createObjectURL(new Blob([b],{type:"application/pdf"}))}).catch(()=>{})}
+function loadPdfData(m){return new Promise(res=>{if(hasPdf(m)||!INFRAME)return res();const s=document.createElement("script");s.src="pdfdata/"+m.id+".js";s.async=true;s.onload=s.onerror=()=>res();document.head.appendChild(s)})}
+async function pdfBlob(m){await loadPdfData(m);if(hasPdf(m))return new Blob([pdfBytes(m)],{type:"application/pdf"});const r=await fetch(m.pdf);if(!r.ok)throw new Error("fetch");return await r.blob()}
 function linkDownload(m){const a=document.createElement("a");a.href=pdfUrl(m);a.download=m.pdfName;document.body.appendChild(a);a.click();a.remove()}
 async function downloadPdf(m,btn,alt){const lab=btn.querySelector("span");const old=lab.textContent;btn.disabled=true;lab.textContent="Preparando…";let msg="PDF baixado",fail=false;
   try{const blob=await pdfBlob(m);const dl=await Promise.race([DLP,new Promise(r=>setTimeout(()=>r(null),4000))]);
@@ -5356,7 +6721,7 @@ render();
 <script>
 (function(){
 if(!("serviceWorker" in navigator)||location.protocol==="file:")return;
-var FILES=["./", "index.html", "manifest.json", "icone-180.png", "icone-192.png", "icone-512.png", "img/art_aorta.jpg", "img/art_iliaca_comum.jpg", "img/art_ilinterna.jpg", "img/bexiga_trigono.jpg", "img/bx_modelo.jpg", "img/bx_puboprostatico.jpg", "img/bx_pubovesical.jpg", "img/colo_utero.jpg", "img/esc_camadas.jpg", "img/esc_funiculo_anel.jpg", "img/esc_testiculo.jpg", "img/escavacoes.jpg", "img/ligamento_largo.jpg", "img/m_modelo.jpg", "img/m_penis_dorsal.jpg", "img/m_perineo.jpg", "img/m_prepucio.jpg", "img/m_prostata_sagital.jpg", "img/m_sagital.jpg", "img/mesos.jpg", "img/ovario_fornices.jpg", "img/ovario_ligamentos.jpg", "img/rim_aberto.jpg", "img/rim_capsula.jpg", "img/rim_colunas.jpg", "img/rim_corte.jpg", "img/rim_hilo.jpg", "img/rim_pediculo.jpg", "img/rim_vasos.jpg", "img/tuba_uterina.jpg", "img/ureter_iliaca.jpg", "img/ureter_jup.jpg", "img/ureter_partes.jpg", "img/utero_camadas.jpg", "img/utero_partes.jpg", "img/utero_posterior.jpg", "img/utero_sagital.jpg", "img/vagina_fornices.jpg", "img/vasos_gonadais.jpg", "img/vasos_testicular.jpg", "img/vulva_externa.jpg", "img/vulva_partes.jpg", "histo/g01.jpg", "histo/g02.jpg", "histo/g03.jpg", "histo/g04.jpg", "histo/g05.jpg", "histo/g06.jpg", "histo/g07.jpg", "histo/g08.jpg", "histo/g09.jpg", "histo/g10.jpg", "histo/g11.jpg", "histo/g12.jpg", "histo/g13.jpg", "histo/g14.jpg", "histo/g15.jpg", "histo/g16.jpg", "histo/g17.jpg", "histo/g18.jpg", "histo/g19.jpg", "histo/g20.jpg", "histo/g21.jpg", "histo/g22.jpg", "histo/g23.jpg", "histo/g24.jpg", "histo/g25.jpg", "histo/g26.jpg", "histo/g27.jpg", "histo/g28.jpg", "histo/g29.jpg", "histo/g30.jpg", "histo/g31.jpg", "histo/g32.jpg", "histo/g33.jpg", "histo/g34.jpg", "histo/g35.jpg", "histo/g36.jpg", "histo/g37.jpg", "histo/g38.jpg", "histo/g39.jpg", "histo/g40.jpg", "histo/g41.jpg", "histo/g42.jpg", "histo/g43.jpg", "histo/g44.jpg", "histo/g45.jpg", "histo/g46.jpg", "histo/g47.jpg", "histo/g48.jpg", "histo/g49.jpg", "histo/g50.jpg", "histo/g51.jpg", "histo/rev01.jpg", "histo/rev02.jpg", "histo/rev03.jpg", "histo/rev04.jpg", "histo/rev05.jpg", "histo/rev06.jpg", "histo/rev07.jpg", "histo/rev08.jpg", "histo/rev09.jpg", "histo/rev10.jpg", "teo/c1_14.webp", "teo/c1b_23.webp", "teo/c1e_4.webp", "teo/c1e_5.webp", "teo/c2q_11.webp", "teo/c2q_3.webp", "teo/c2q_8.webp", "teo/c2s_12.webp", "teo/c2s_2.webp", "teo/c2s_30.webp", "teo/c2s_7.webp", "teo/c3b_10.webp", "teo/c3b_18.webp", "teo/c3b_7.webp", "teo/c3b_8.webp", "teo/c3b_9.webp", "teo/c3c_18.webp", "teo/c3c_19.webp", "teo/c3d_24.webp", "teo/c3e_11.webp", "teo/c3e_6.webp", "res/Resumo_Histologia_Sistema_Urinario.pdf", "res/Resumo_Sistema_Genital_Feminino.pdf", "res/Resumo_Sistema_Genital_Masculino.pdf", "res/Resumo_Sistema_Urinario.pdf", "res/fem/camadas.webp", "res/fem/episiotomia.webp", "res/fem/ligamentos.webp", "res/fem/mama.webp", "res/fem/ovario_corte.webp", "res/fem/perineo.webp", "res/fem/sagital.webp", "res/fem/tuba_frontal.webp", "res/fem/utero_idades.webp", "res/fem/vulva.webp", "res/huri/alca_coletor.webp", "res/huri/barreira_diag.webp", "res/huri/bexiga_camadas.webp", "res/huri/bexiga_urotelio.webp", "res/huri/corpusculo.webp", "res/huri/corpusculo_jga.webp", "res/huri/cortex_medula.webp", "res/huri/diafragma.webp", "res/huri/glomerulo.webp", "res/huri/macula_densa.webp", "res/huri/papila.webp", "res/huri/podocitos.webp", "res/huri/raio_medular.webp", "res/huri/rim_lamina.webp", "res/huri/tcp.webp", "res/huri/tcp_tcd.webp", "res/huri/ureter.webp", "res/huri/ureter_ab.webp", "res/huri/uretra_fem.webp", "res/huri/vascularizacao.webp", "res/masc/camadas_diag.webp", "res/masc/descida.webp", "res/masc/epididimo_frontal.webp", "res/masc/escroto_netter.webp", "res/masc/irrigacao.webp", "res/masc/penis_face.webp", "res/masc/penis_vasos.webp", "res/masc/posterior_bexiga.webp", "res/masc/prostata_cortes.webp", "res/masc/prostata_frontal.webp", "res/masc/vesiculas_netter.webp", "res/masc/visao.webp", "res/slides/fem_01.webp", "res/slides/fem_02.webp", "res/slides/fem_03.webp", "res/slides/fem_04.webp", "res/slides/fem_05.webp", "res/slides/fem_06.webp", "res/slides/fem_07.webp", "res/slides/fem_08.webp", "res/slides/fem_09.webp", "res/slides/fem_10.webp", "res/slides/fem_11.webp", "res/slides/fem_12.webp", "res/slides/fem_13.webp", "res/slides/fem_14.webp", "res/slides/fem_15.webp", "res/slides/fem_16.webp", "res/slides/fem_17.webp", "res/slides/fem_18.webp", "res/slides/fem_19.webp", "res/slides/fem_20.webp", "res/slides/fem_21.webp", "res/slides/fem_22.webp", "res/slides/fem_23.webp", "res/slides/fem_24.webp", "res/slides/fem_25.webp", "res/slides/fem_26.webp", "res/slides/fem_27.webp", "res/slides/fem_28.webp", "res/slides/fem_29.webp", "res/slides/fem_30.webp", "res/slides/fem_31.webp", "res/slides/fem_32.webp", "res/slides/fem_33.webp", "res/slides/fem_34.webp", "res/slides/fem_35.webp", "res/slides/fem_36.webp", "res/slides/fem_37.webp", "res/slides/fem_38.webp", "res/slides/fem_39.webp", "res/slides/fem_40.webp", "res/slides/huri_01.webp", "res/slides/huri_02.webp", "res/slides/huri_03.webp", "res/slides/huri_04.webp", "res/slides/huri_05.webp", "res/slides/huri_06.webp", "res/slides/huri_07.webp", "res/slides/huri_08.webp", "res/slides/huri_09.webp", "res/slides/huri_10.webp", "res/slides/huri_11.webp", "res/slides/huri_12.webp", "res/slides/huri_13.webp", "res/slides/huri_14.webp", "res/slides/huri_15.webp", "res/slides/huri_16.webp", "res/slides/huri_17.webp", "res/slides/huri_18.webp", "res/slides/huri_19.webp", "res/slides/huri_20.webp", "res/slides/huri_21.webp", "res/slides/huri_22.webp", "res/slides/huri_23.webp", "res/slides/huri_24.webp", "res/slides/huri_25.webp", "res/slides/huri_26.webp", "res/slides/huri_27.webp", "res/slides/huri_28.webp", "res/slides/huri_29.webp", "res/slides/huri_30.webp", "res/slides/huri_31.webp", "res/slides/huri_32.webp", "res/slides/huri_33.webp", "res/slides/huri_34.webp", "res/slides/huri_35.webp", "res/slides/huri_36.webp", "res/slides/huri_37.webp", "res/slides/huri_38.webp", "res/slides/huri_39.webp", "res/slides/huri_40.webp", "res/slides/huri_41.webp", "res/slides/huri_42.webp", "res/slides/huri_43.webp", "res/slides/huri_44.webp", "res/slides/huri_45.webp", "res/slides/huri_46.webp", "res/slides/huri_47.webp", "res/slides/huri_48.webp", "res/slides/masc_01.webp", "res/slides/masc_02.webp", "res/slides/masc_03.webp", "res/slides/masc_04.webp", "res/slides/masc_05.webp", "res/slides/masc_06.webp", "res/slides/masc_07.webp", "res/slides/masc_08.webp", "res/slides/masc_09.webp", "res/slides/masc_10.webp", "res/slides/masc_11.webp", "res/slides/masc_12.webp", "res/slides/masc_13.webp", "res/slides/masc_14.webp", "res/slides/masc_15.webp", "res/slides/masc_16.webp", "res/slides/masc_17.webp", "res/slides/masc_18.webp", "res/slides/masc_19.webp", "res/slides/masc_20.webp", "res/slides/masc_21.webp", "res/slides/masc_22.webp", "res/slides/masc_23.webp", "res/slides/masc_24.webp", "res/slides/masc_25.webp", "res/slides/masc_26.webp", "res/slides/masc_27.webp", "res/slides/masc_28.webp", "res/slides/masc_29.webp", "res/slides/masc_30.webp", "res/slides/masc_31.webp", "res/slides/masc_32.webp", "res/slides/masc_33.webp", "res/slides/masc_34.webp", "res/slides/masc_35.webp", "res/slides/masc_36.webp", "res/slides/masc_37.webp", "res/slides/masc_38.webp", "res/slides/masc_39.webp", "res/slides/masc_40.webp", "res/slides/masc_41.webp", "res/slides/masc_42.webp", "res/slides/masc_43.webp", "res/slides/masc_44.webp", "res/slides/uri_01.webp", "res/slides/uri_02.webp", "res/slides/uri_03.webp", "res/slides/uri_04.webp", "res/slides/uri_05.webp", "res/slides/uri_06.webp", "res/slides/uri_07.webp", "res/slides/uri_08.webp", "res/slides/uri_09.webp", "res/slides/uri_10.webp", "res/slides/uri_11.webp", "res/slides/uri_12.webp", "res/slides/uri_13.webp", "res/slides/uri_14.webp", "res/slides/uri_15.webp", "res/slides/uri_16.webp", "res/slides/uri_17.webp", "res/slides/uri_18.webp", "res/slides/uri_19.webp", "res/slides/uri_20.webp", "res/slides/uri_21.webp", "res/slides/uri_22.webp", "res/slides/uri_23.webp", "res/slides/uri_24.webp", "res/slides/uri_25.webp", "res/slides/uri_26.webp", "res/slides/uri_27.webp", "res/slides/uri_28.webp", "res/slides/uri_29.webp", "res/slides/uri_30.webp", "res/slides/uri_31.webp", "res/slides/uri_32.webp", "res/slides/uri_33.webp", "res/slides/uri_34.webp", "res/slides/uri_35.webp", "res/slides/uri_36.webp", "res/slides/uri_37.webp", "res/slides/uri_38.webp", "res/slides/uri_39.webp", "res/slides/uri_40.webp", "res/slides/uri_41.webp", "res/slides/uri_42.webp", "res/slides/uri_43.webp", "res/slides/uri_44.webp", "res/slides/uri_45.webp", "res/slides/uri_46.webp", "res/slides/uri_47.webp", "res/slides/uri_48.webp", "res/slides/uri_49.webp", "res/slides/uri_50.webp", "res/slides/uri_51.webp", "res/slides/uri_52.webp", "res/slides/uri_53.webp", "res/slides/uri_54.webp", "res/slides/uri_55.webp", "res/slides/uri_56.webp", "res/slides/uri_57.webp", "res/slides/uri_58.webp", "res/slides/uri_59.webp", "res/slides/uri_60.webp", "res/slides/uri_61.webp", "res/slides/uri_62.webp", "res/slides/uri_63.webp", "res/slides/uri_64.webp", "res/slides/uri_65.webp", "res/slides/uri_66.webp", "res/slides/uri_67.webp", "res/slides/uri_68.webp", "res/slides/uri_69.webp", "res/slides/uri_70.webp", "res/slides/uri_71.webp", "res/slides/uri_72.webp", "res/slides/uri_73.webp", "res/slides/uri_74.webp", "res/slides/uri_75.webp", "res/slides/uri_76.webp", "res/slides/uri_77.webp", "res/slides/uri_78.webp", "res/slides/uri_79.webp", "res/slides/uri_80.webp", "res/slides/uri_81.webp", "res/slides/uri_82.webp", "res/slides/uri_83.webp", "res/slides/uri_84.webp", "res/slides/uri_85.webp", "res/slides/uri_86.webp", "res/slides/uri_87.webp", "res/slides/uri_88.webp", "res/slides/uri_89.webp", "res/slides/uri_90.webp", "res/slides/uri_91.webp", "res/slides/uri_92.webp", "res/slides/uri_93.webp", "res/slides/uri_94.webp", "res/slides/uri_95.webp", "res/uri/acessorias.webp", "res/uri/bexiga_config.webp", "res/uri/bexiga_frontal.webp", "res/uri/caso.webp", "res/uri/diaf_urogenital.webp", "res/uri/faces.webp", "res/uri/fascia.webp", "res/uri/levantador.webp", "res/uri/necrose.webp", "res/uri/nutcracker.webp", "res/uri/segmentos.webp", "res/uri/skene.webp", "res/uri/ureter_mulher.webp", "res/uri/uretra_frontal.webp", "res/uri/urografia.webp", "res/uri/vasos_insitu.webp", "res/uri/vasos_intra.webp", "res/uri/visao.webp"],CACHE="gu-f6b697868f",had=!!navigator.serviceWorker.controller,say=window.__guSay,pill=document.getElementById("gu-pill");
+var FILES=["./", "index.html", "manifest.json", "icone-180.png", "icone-192.png", "icone-512.png", "img/art_aorta.jpg", "img/art_iliaca_comum.jpg", "img/art_ilinterna.jpg", "img/bexiga_trigono.jpg", "img/bx_modelo.jpg", "img/bx_puboprostatico.jpg", "img/bx_pubovesical.jpg", "img/colo_utero.jpg", "img/esc_camadas.jpg", "img/esc_funiculo_anel.jpg", "img/esc_testiculo.jpg", "img/escavacoes.jpg", "img/ligamento_largo.jpg", "img/m_modelo.jpg", "img/m_penis_dorsal.jpg", "img/m_perineo.jpg", "img/m_prepucio.jpg", "img/m_prostata_sagital.jpg", "img/m_sagital.jpg", "img/mesos.jpg", "img/ovario_fornices.jpg", "img/ovario_ligamentos.jpg", "img/rim_aberto.jpg", "img/rim_capsula.jpg", "img/rim_colunas.jpg", "img/rim_corte.jpg", "img/rim_hilo.jpg", "img/rim_pediculo.jpg", "img/rim_vasos.jpg", "img/tuba_uterina.jpg", "img/ureter_iliaca.jpg", "img/ureter_jup.jpg", "img/ureter_partes.jpg", "img/utero_camadas.jpg", "img/utero_partes.jpg", "img/utero_posterior.jpg", "img/utero_sagital.jpg", "img/vagina_fornices.jpg", "img/vasos_gonadais.jpg", "img/vasos_testicular.jpg", "img/vulva_externa.jpg", "img/vulva_partes.jpg", "histo/g01.jpg", "histo/g02.jpg", "histo/g03.jpg", "histo/g04.jpg", "histo/g05.jpg", "histo/g06.jpg", "histo/g07.jpg", "histo/g08.jpg", "histo/g09.jpg", "histo/g10.jpg", "histo/g11.jpg", "histo/g12.jpg", "histo/g13.jpg", "histo/g14.jpg", "histo/g15.jpg", "histo/g16.jpg", "histo/g17.jpg", "histo/g18.jpg", "histo/g19.jpg", "histo/g20.jpg", "histo/g21.jpg", "histo/g22.jpg", "histo/g23.jpg", "histo/g24.jpg", "histo/g25.jpg", "histo/g26.jpg", "histo/g27.jpg", "histo/g28.jpg", "histo/g29.jpg", "histo/g30.jpg", "histo/g31.jpg", "histo/g32.jpg", "histo/g33.jpg", "histo/g34.jpg", "histo/g35.jpg", "histo/g36.jpg", "histo/g37.jpg", "histo/g38.jpg", "histo/g39.jpg", "histo/g40.jpg", "histo/g41.jpg", "histo/g42.jpg", "histo/g43.jpg", "histo/g44.jpg", "histo/g45.jpg", "histo/g46.jpg", "histo/g47.jpg", "histo/g48.jpg", "histo/g49.jpg", "histo/g50.jpg", "histo/g51.jpg", "histo/rev01.jpg", "histo/rev02.jpg", "histo/rev03.jpg", "histo/rev04.jpg", "histo/rev05.jpg", "histo/rev06.jpg", "histo/rev07.jpg", "histo/rev08.jpg", "histo/rev09.jpg", "histo/rev10.jpg", "teo/c1_14.webp", "teo/c1b_23.webp", "teo/c1e_4.webp", "teo/c1e_5.webp", "teo/c2q_11.webp", "teo/c2q_3.webp", "teo/c2q_8.webp", "teo/c2s_12.webp", "teo/c2s_2.webp", "teo/c2s_30.webp", "teo/c2s_7.webp", "teo/c3b_10.webp", "teo/c3b_18.webp", "teo/c3b_7.webp", "teo/c3b_8.webp", "teo/c3b_9.webp", "teo/c3c_18.webp", "teo/c3c_19.webp", "teo/c3d_24.webp", "teo/c3e_11.webp", "teo/c3e_6.webp", "res/Resumo_Histologia_Aparelho_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Sistema_Urinario.pdf", "res/Resumo_Sistema_Genital_Feminino.pdf", "res/Resumo_Sistema_Genital_Masculino.pdf", "res/Resumo_Sistema_Urinario.pdf", "res/fem/camadas.webp", "res/fem/episiotomia.webp", "res/fem/ligamentos.webp", "res/fem/mama.webp", "res/fem/ovario_corte.webp", "res/fem/perineo.webp", "res/fem/sagital.webp", "res/fem/tuba_frontal.webp", "res/fem/utero_idades.webp", "res/fem/vulva.webp", "res/hmasc/albuginea_leydig.webp", "res/hmasc/barreira_ht.webp", "res/hmasc/concrecoes.webp", "res/hmasc/controle.webp", "res/hmasc/deferente.webp", "res/hmasc/ductos.webp", "res/hmasc/ejaculatorios.webp", "res/hmasc/epididimo.webp", "res/hmasc/epididimo_det.webp", "res/hmasc/epitelio_esq.webp", "res/hmasc/epitelio_germ.webp", "res/hmasc/epitelio_leydig.webp", "res/hmasc/eretil.webp", "res/hmasc/espermiogenese.webp", "res/hmasc/penis_corte.webp", "res/hmasc/penis_esq.webp", "res/hmasc/prostata_gland.webp", "res/hmasc/prostata_lam.webp", "res/hmasc/prostata_zonas.webp", "res/hmasc/testiculo.webp", "res/hmasc/testiculo_esq.webp", "res/hmasc/tubulos_sem.webp", "res/huri/alca_coletor.webp", "res/huri/barreira_diag.webp", "res/huri/bexiga_camadas.webp", "res/huri/bexiga_urotelio.webp", "res/huri/corpusculo.webp", "res/huri/corpusculo_jga.webp", "res/huri/cortex_medula.webp", "res/huri/diafragma.webp", "res/huri/glomerulo.webp", "res/huri/macula_densa.webp", "res/huri/papila.webp", "res/huri/podocitos.webp", "res/huri/raio_medular.webp", "res/huri/rim_lamina.webp", "res/huri/tcp.webp", "res/huri/tcp_tcd.webp", "res/huri/ureter.webp", "res/huri/ureter_ab.webp", "res/huri/uretra_fem.webp", "res/huri/vascularizacao.webp", "res/masc/camadas_diag.webp", "res/masc/descida.webp", "res/masc/epididimo_frontal.webp", "res/masc/escroto_netter.webp", "res/masc/irrigacao.webp", "res/masc/penis_face.webp", "res/masc/penis_vasos.webp", "res/masc/posterior_bexiga.webp", "res/masc/prostata_cortes.webp", "res/masc/prostata_frontal.webp", "res/masc/vesiculas_netter.webp", "res/masc/visao.webp", "res/slides/fem_01.webp", "res/slides/fem_02.webp", "res/slides/fem_03.webp", "res/slides/fem_04.webp", "res/slides/fem_05.webp", "res/slides/fem_06.webp", "res/slides/fem_07.webp", "res/slides/fem_08.webp", "res/slides/fem_09.webp", "res/slides/fem_10.webp", "res/slides/fem_11.webp", "res/slides/fem_12.webp", "res/slides/fem_13.webp", "res/slides/fem_14.webp", "res/slides/fem_15.webp", "res/slides/fem_16.webp", "res/slides/fem_17.webp", "res/slides/fem_18.webp", "res/slides/fem_19.webp", "res/slides/fem_20.webp", "res/slides/fem_21.webp", "res/slides/fem_22.webp", "res/slides/fem_23.webp", "res/slides/fem_24.webp", "res/slides/fem_25.webp", "res/slides/fem_26.webp", "res/slides/fem_27.webp", "res/slides/fem_28.webp", "res/slides/fem_29.webp", "res/slides/fem_30.webp", "res/slides/fem_31.webp", "res/slides/fem_32.webp", "res/slides/fem_33.webp", "res/slides/fem_34.webp", "res/slides/fem_35.webp", "res/slides/fem_36.webp", "res/slides/fem_37.webp", "res/slides/fem_38.webp", "res/slides/fem_39.webp", "res/slides/fem_40.webp", "res/slides/hmasc_01.webp", "res/slides/hmasc_02.webp", "res/slides/hmasc_03.webp", "res/slides/hmasc_04.webp", "res/slides/hmasc_05.webp", "res/slides/hmasc_06.webp", "res/slides/hmasc_07.webp", "res/slides/hmasc_08.webp", "res/slides/hmasc_09.webp", "res/slides/hmasc_10.webp", "res/slides/hmasc_11.webp", "res/slides/hmasc_12.webp", "res/slides/hmasc_13.webp", "res/slides/hmasc_14.webp", "res/slides/hmasc_15.webp", "res/slides/hmasc_16.webp", "res/slides/hmasc_17.webp", "res/slides/hmasc_18.webp", "res/slides/hmasc_19.webp", "res/slides/hmasc_20.webp", "res/slides/hmasc_21.webp", "res/slides/hmasc_22.webp", "res/slides/hmasc_23.webp", "res/slides/hmasc_24.webp", "res/slides/hmasc_25.webp", "res/slides/hmasc_26.webp", "res/slides/hmasc_27.webp", "res/slides/hmasc_28.webp", "res/slides/hmasc_29.webp", "res/slides/hmasc_30.webp", "res/slides/hmasc_31.webp", "res/slides/hmasc_32.webp", "res/slides/hmasc_33.webp", "res/slides/hmasc_34.webp", "res/slides/hmasc_35.webp", "res/slides/hmasc_36.webp", "res/slides/hmasc_37.webp", "res/slides/hmasc_38.webp", "res/slides/hmasc_39.webp", "res/slides/hmasc_40.webp", "res/slides/hmasc_41.webp", "res/slides/huri_01.webp", "res/slides/huri_02.webp", "res/slides/huri_03.webp", "res/slides/huri_04.webp", "res/slides/huri_05.webp", "res/slides/huri_06.webp", "res/slides/huri_07.webp", "res/slides/huri_08.webp", "res/slides/huri_09.webp", "res/slides/huri_10.webp", "res/slides/huri_11.webp", "res/slides/huri_12.webp", "res/slides/huri_13.webp", "res/slides/huri_14.webp", "res/slides/huri_15.webp", "res/slides/huri_16.webp", "res/slides/huri_17.webp", "res/slides/huri_18.webp", "res/slides/huri_19.webp", "res/slides/huri_20.webp", "res/slides/huri_21.webp", "res/slides/huri_22.webp", "res/slides/huri_23.webp", "res/slides/huri_24.webp", "res/slides/huri_25.webp", "res/slides/huri_26.webp", "res/slides/huri_27.webp", "res/slides/huri_28.webp", "res/slides/huri_29.webp", "res/slides/huri_30.webp", "res/slides/huri_31.webp", "res/slides/huri_32.webp", "res/slides/huri_33.webp", "res/slides/huri_34.webp", "res/slides/huri_35.webp", "res/slides/huri_36.webp", "res/slides/huri_37.webp", "res/slides/huri_38.webp", "res/slides/huri_39.webp", "res/slides/huri_40.webp", "res/slides/huri_41.webp", "res/slides/huri_42.webp", "res/slides/huri_43.webp", "res/slides/huri_44.webp", "res/slides/huri_45.webp", "res/slides/huri_46.webp", "res/slides/huri_47.webp", "res/slides/huri_48.webp", "res/slides/masc_01.webp", "res/slides/masc_02.webp", "res/slides/masc_03.webp", "res/slides/masc_04.webp", "res/slides/masc_05.webp", "res/slides/masc_06.webp", "res/slides/masc_07.webp", "res/slides/masc_08.webp", "res/slides/masc_09.webp", "res/slides/masc_10.webp", "res/slides/masc_11.webp", "res/slides/masc_12.webp", "res/slides/masc_13.webp", "res/slides/masc_14.webp", "res/slides/masc_15.webp", "res/slides/masc_16.webp", "res/slides/masc_17.webp", "res/slides/masc_18.webp", "res/slides/masc_19.webp", "res/slides/masc_20.webp", "res/slides/masc_21.webp", "res/slides/masc_22.webp", "res/slides/masc_23.webp", "res/slides/masc_24.webp", "res/slides/masc_25.webp", "res/slides/masc_26.webp", "res/slides/masc_27.webp", "res/slides/masc_28.webp", "res/slides/masc_29.webp", "res/slides/masc_30.webp", "res/slides/masc_31.webp", "res/slides/masc_32.webp", "res/slides/masc_33.webp", "res/slides/masc_34.webp", "res/slides/masc_35.webp", "res/slides/masc_36.webp", "res/slides/masc_37.webp", "res/slides/masc_38.webp", "res/slides/masc_39.webp", "res/slides/masc_40.webp", "res/slides/masc_41.webp", "res/slides/masc_42.webp", "res/slides/masc_43.webp", "res/slides/masc_44.webp", "res/slides/uri_01.webp", "res/slides/uri_02.webp", "res/slides/uri_03.webp", "res/slides/uri_04.webp", "res/slides/uri_05.webp", "res/slides/uri_06.webp", "res/slides/uri_07.webp", "res/slides/uri_08.webp", "res/slides/uri_09.webp", "res/slides/uri_10.webp", "res/slides/uri_11.webp", "res/slides/uri_12.webp", "res/slides/uri_13.webp", "res/slides/uri_14.webp", "res/slides/uri_15.webp", "res/slides/uri_16.webp", "res/slides/uri_17.webp", "res/slides/uri_18.webp", "res/slides/uri_19.webp", "res/slides/uri_20.webp", "res/slides/uri_21.webp", "res/slides/uri_22.webp", "res/slides/uri_23.webp", "res/slides/uri_24.webp", "res/slides/uri_25.webp", "res/slides/uri_26.webp", "res/slides/uri_27.webp", "res/slides/uri_28.webp", "res/slides/uri_29.webp", "res/slides/uri_30.webp", "res/slides/uri_31.webp", "res/slides/uri_32.webp", "res/slides/uri_33.webp", "res/slides/uri_34.webp", "res/slides/uri_35.webp", "res/slides/uri_36.webp", "res/slides/uri_37.webp", "res/slides/uri_38.webp", "res/slides/uri_39.webp", "res/slides/uri_40.webp", "res/slides/uri_41.webp", "res/slides/uri_42.webp", "res/slides/uri_43.webp", "res/slides/uri_44.webp", "res/slides/uri_45.webp", "res/slides/uri_46.webp", "res/slides/uri_47.webp", "res/slides/uri_48.webp", "res/slides/uri_49.webp", "res/slides/uri_50.webp", "res/slides/uri_51.webp", "res/slides/uri_52.webp", "res/slides/uri_53.webp", "res/slides/uri_54.webp", "res/slides/uri_55.webp", "res/slides/uri_56.webp", "res/slides/uri_57.webp", "res/slides/uri_58.webp", "res/slides/uri_59.webp", "res/slides/uri_60.webp", "res/slides/uri_61.webp", "res/slides/uri_62.webp", "res/slides/uri_63.webp", "res/slides/uri_64.webp", "res/slides/uri_65.webp", "res/slides/uri_66.webp", "res/slides/uri_67.webp", "res/slides/uri_68.webp", "res/slides/uri_69.webp", "res/slides/uri_70.webp", "res/slides/uri_71.webp", "res/slides/uri_72.webp", "res/slides/uri_73.webp", "res/slides/uri_74.webp", "res/slides/uri_75.webp", "res/slides/uri_76.webp", "res/slides/uri_77.webp", "res/slides/uri_78.webp", "res/slides/uri_79.webp", "res/slides/uri_80.webp", "res/slides/uri_81.webp", "res/slides/uri_82.webp", "res/slides/uri_83.webp", "res/slides/uri_84.webp", "res/slides/uri_85.webp", "res/slides/uri_86.webp", "res/slides/uri_87.webp", "res/slides/uri_88.webp", "res/slides/uri_89.webp", "res/slides/uri_90.webp", "res/slides/uri_91.webp", "res/slides/uri_92.webp", "res/slides/uri_93.webp", "res/slides/uri_94.webp", "res/slides/uri_95.webp", "res/uri/acessorias.webp", "res/uri/bexiga_config.webp", "res/uri/bexiga_frontal.webp", "res/uri/caso.webp", "res/uri/diaf_urogenital.webp", "res/uri/faces.webp", "res/uri/fascia.webp", "res/uri/levantador.webp", "res/uri/necrose.webp", "res/uri/nutcracker.webp", "res/uri/segmentos.webp", "res/uri/skene.webp", "res/uri/ureter_mulher.webp", "res/uri/uretra_frontal.webp", "res/uri/urografia.webp", "res/uri/vasos_insitu.webp", "res/uri/vasos_intra.webp", "res/uri/visao.webp"],CACHE="gu-53ce1dc11a",had=!!navigator.serviceWorker.controller,say=window.__guSay,pill=document.getElementById("gu-pill");
 function check(){caches.open(CACHE).then(function(c){return Promise.all(FILES.map(function(u){return c.match(u)}))}).then(function(r){
   var ok=r.filter(Boolean).length;
   if(ok===FILES.length){var k="gu-off-"+CACHE,seen=false;try{seen=!!localStorage.getItem(k);localStorage.setItem(k,"1")}catch(e){}if(!seen)say("✓ Pronto para usar sem internet","#2b8a3e",5000)}
