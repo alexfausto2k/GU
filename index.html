@@ -256,6 +256,9 @@ ol.roman li{padding-left:2px;line-height:1.45}
 .res .n-hte{background:#c2255c;color:#fff}.res .n-hse{background:#e8590c;color:#fff}.res .n-hle{background:#b08900;color:#fff}.res .n-hdu{background:#2b8a3e;color:#fff}.res .n-hgl{background:#7048e8;color:#fff}.res .n-hpe{background:#1c7ed6;color:#fff}
 .res td.g-hte,.res td.g-hse,.res td.g-hle,.res td.g-hdu,.res td.g-hgl,.res td.g-hpe{font-weight:700;color:var(--gtx)}
 .res td.g-hte{background:var(--gesc)}.res td.g-hse{background:var(--gvias)}.res td.g-hle{background:var(--gure)}.res td.g-hdu{background:var(--gglan)}.res td.g-hgl{background:var(--gpen)}.res td.g-hpe{background:var(--gtest)}
+.res .n-fov{background:#c2255c;color:#fff}.res .n-ffo{background:#e8590c;color:#fff}.res .n-flu{background:#b08900;color:#fff}.res .n-ftu{background:#2b8a3e;color:#fff}.res .n-fut{background:#7048e8;color:#fff}.res .n-fco{background:#1c7ed6;color:#fff}
+.res td.g-fov,.res td.g-ffo,.res td.g-flu,.res td.g-ftu,.res td.g-fut,.res td.g-fco{font-weight:700;color:var(--gtx)}
+.res td.g-fov{background:var(--gesc)}.res td.g-ffo{background:var(--gvias)}.res td.g-flu{background:var(--gure)}.res td.g-ftu{background:var(--gglan)}.res td.g-fut{background:var(--gpen)}.res td.g-fco{background:var(--gtest)}
 .res .note{font-size:14px;color:var(--muted)}
 .res .tag{font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
 .res .tag.plain{color:var(--muted)}
@@ -362,7 +365,1683 @@ a.btn.hl{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc-soft)}
 
   <main id="main"></main>
 
-  <template id="tpl-hmasc">
+  <template id="tpl-hfem">
+<!-- ============================== CAPA ============================== -->
+<section class="cover">
+  <div class="kicker">Resumo de estudo · Histologia · Medicina</div>
+  <h1>Histologia do Sistema<br>Genital Feminino</h1>
+  <div class="rainbow hfem"></div>
+  <p class="sub">Origem das gônadas, ovário e folículos, foliculogênese, ovulação e corpo lúteo, tuba uterina, útero e ciclo endometrial, colo uterino e zona de transformação, vagina e glândula mamária</p>
+  <p class="meta">Baseado nos slides da aula 5, <em>Histologia do Sistema Reprodutor Feminino</em> (Profa. Beatriz Duarte, Departamento de Morfologia). As figuras são as dos slides; o texto foi completado com Junqueira e Carneiro <em>Histologia Básica</em> e Ross e Pawlina <em>Histologia: texto e atlas</em>. Os boxes “Cai na prova” foram montados com as questões da T137, da T136 e dos compilados, e as perguntas da prova prática saíram das lâminas da gincana e da revisão.</p>
+
+  <div class="cover-grid">
+    <div class="box key">
+      <div class="tag">Como usar este resumo</div>
+      <ol>
+        <li>Grave a <b>sequência dos folículos</b> (primordial → primário → secundário → antral → de Graaf → corpo lúteo → corpo albicans) e o que aparece em cada um. Atenção aos <b>dois jeitos de nomear</b> (seção 3).</li>
+        <li>Ligue <b>cada célula ao seu hormônio</b>: teca (LH, andrógeno), granulosa (FSH, aromatase, estradiol), corpo lúteo (progesterona).</li>
+        <li>No útero, saiba o endométrio de <b>cada fase do ciclo</b> e qual camada se perde na menstruação.</li>
+        <li>Na véspera, revise o <b>mapa-mestre</b> (seção 11), os vinte pontos e os mnemônicos, depois faça as questões.</li>
+      </ol>
+    </div>
+    <div class="legend">
+      <div class="tag plain">Código de cores dos esquemas</div>
+      <div class="chips">
+        <span class="chip o" style="--c:#c2255c;--f:#ffdeeb">Ovário</span>
+        <span class="chip o" style="--c:#e8590c;--f:#ffe8cc">Folículos</span>
+        <span class="chip o" style="--c:#b08900;--f:#fff3bf">Corpo lúteo e hormônios</span>
+        <span class="chip o" style="--c:#2b8a3e;--f:#d3f9d8">Tuba uterina</span>
+        <span class="chip o" style="--c:#7048e8;--f:#e5dbff">Útero e endométrio</span>
+        <span class="chip o" style="--c:#1c7ed6;--f:#d0ebff">Colo, vagina e mama</span>
+      </div>
+      <div class="boxlegend">
+        <span class="mini key">Em uma frase</span>
+        <span class="mini prova">Cai na prova</span>
+        <span class="mini clin">Correlação clínica</span>
+        <span class="mini deep">Aprofundamento</span>
+        <span class="mini mnem">Mnemônico</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ideias"><div class="tag plain">As cinco ideias que organizam toda a matéria</div>
+  <ol class="tight">
+    <li><b>O folículo é a unidade funcional do ovário</b> (aula): um ovócito cercado por células somáticas. Ele cresce, ganha camadas e um antro, e só um por ciclo ovula.</li>
+    <li><b>Duas células, duas gonadotrofinas</b>: a <b>teca interna</b> (LH) faz andrógeno; a <b>granulosa</b> (FSH) usa a aromatase para transformá-lo em <b>estradiol</b>.</li>
+    <li><b>O pico de LH dispara a ovulação</b>: o ovócito termina a meiose I, o folículo rompe no estigma e o que sobra vira <b>corpo lúteo</b>, que faz <b>progesterona</b>.</li>
+    <li><b>O endométrio segue o ovário</b>: o estrogênio faz a camada funcional crescer (proliferativa); a progesterona a prepara para o embrião (secretora); a queda dos dois faz a funcional descamar. A <b>basal</b> fica e regenera tudo.</li>
+    <li><b>No colo há uma fronteira de epitélios</b>: colunar mucoso na endocérvice, pavimentoso estratificado na ectocérvice. Entre eles fica a <b>zona de transformação</b>, onde age o HPV e onde se colhe o Papanicolau.</li>
+  </ol></div>
+
+  <div class="toc">
+    <div class="tag plain">Sumário</div>
+    <ol class="toc2">
+      <li><b>Visão geral</b> e origem das gônadas</li>
+      <li><b>Ovário</b>: córtex, medula e reserva</li>
+      <li><b>Folículos</b> e foliculogênese</li>
+      <li><b>Ovulação</b> e corpo lúteo</li>
+      <li><b>Tuba uterina</b></li>
+      <li><b>Útero</b>: miométrio e endométrio</li>
+      <li><b>Ciclo endometrial</b></li>
+      <li><b>Colo uterino</b> e vagina</li>
+      <li><b>Glândula mamária</b></li>
+      <li><b>Reconhecer na lâmina</b></li>
+      <li><b>Revisão final</b></li>
+      <li><b>Questões</b> com gabarito comentado</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================== 1 VISÃO GERAL ============================== -->
+<section class="sec">
+<h2><span class="num n-fov">1</span>Visão geral e origem das gônadas</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+O sistema reprodutor feminino tem a <b>gônada</b> (ovários), os <b>ductos genitais</b> (tubas uterinas, útero e vagina), a <b>genitália externa</b> (lábios maiores e menores, clitóris) e, como anexos, as <b>glândulas mamárias</b> (aula). Os hormônios do ovário agem também fora dele: o estrogênio, por exemplo, participa da <b>remodelação óssea</b>, e sua falta favorece a osteoporose (aula).
+</div>
+<div class="grid2">
+<div>
+<h4>Origem: cristas gonadais (aula)</h4>
+<ul class="tight">
+<li>A gônada primitiva vem do <b>epitélio celômico</b> (que forma os cordões sexuais), do <b>mesênquima</b> e das <b>células germinativas primordiais</b>, que têm origem <b>extraembrionária</b> (saco vitelino) e migram até a crista.</li>
+<li>Há uma <b>fase indiferenciada</b>. Sem o gene SRY e sem o fator determinante do testículo, a gônada vira ovário.</li>
+<li><b>Córtex</b>: os <b>cordões sexuais secundários</b> envolvem as ovogônias e formam as <b>células foliculares</b>.</li>
+<li><b>Medula</b>: o <b>mesênquima</b> forma o estroma ovariano.</li>
+<li>Sem AMH, os <b>ductos de Müller</b> formam tubas, útero e a parte superior da vagina; os de Wolff regridem.</li>
+</ul>
+</div>
+<div class="box prova"><div class="tag">Cai na prova · origem (T137, T136, compilados)</div>
+“Ductos paramesonéfricos (de Müller) formam tubas, útero e a parte superior da vagina; os mesonéfricos (de Wolff) regridem” (T137). Gônada pequena, com córtex e medula mal definidos: <b>defeito na formação da crista gonadal e dos cordões gonadais primitivos</b> (T136). Agenesia do ducto de Wolff numa menina: <b>agenesia renal</b> (o broto ureteral sai dele). Na prática: útero vem dos <b>ductos de Müller</b>.
+</div>
+</div>
+</section>
+
+<!-- ============================== 2 OVÁRIO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-fov">2</span>Ovário: córtex, medula e reserva</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+O ovário é coberto por um <b>mesotélio</b> (epitélio simples, de pavimentoso a cúbico), tem logo abaixo a <b>túnica albugínea</b> e se divide em <b>córtex</b>, por fora, com os <b>folículos</b> no estroma, e <b>medula</b>, no centro, com <b>vasos grandes</b> (aula).
+</div>
+<div class="grid2">
+<table class="dense">
+<thead><tr><th>Parte</th><th>O que tem</th></tr></thead>
+<tbody>
+<tr><td class="g-fov">Epitélio superficial</td><td>Mesotélio simples pavimentoso a cúbico; o nome antigo “epitélio germinativo” é enganoso: ele <b>não</b> forma gametas</td></tr>
+<tr><td class="g-fov">Túnica albugínea</td><td>Camada fina de conjuntivo denso logo abaixo do epitélio</td></tr>
+<tr><td class="g-ffo">Córtex</td><td><b>Folículos</b> em todas as fases, corpos lúteos e albicans, num <b>estroma</b> de células fusiformes muito juntas</td></tr>
+<tr><td class="g-fov">Medula</td><td>Conjuntivo frouxo com a <b>artéria ovariana enovelada</b> (tortuosa) e seus ramos, veias, linfáticos e nervos, que entram pelo hilo</td></tr>
+</tbody></table>
+<figure class="img sm"><img src="res/hfem/ovario_corte.webp" alt="ovario_corte"><figcaption><b>Figura 1.</b> O ovário em corte (aula): mesotélio, córtex com folículos primordiais e primários, folículo de Graaf e corpo lúteo; a túnica albugínea na periferia; a medula com a artéria ovariana enovelada, a veia ovariana, vasos linfáticos e nervos, chegando pelo hilo.</figcaption></figure>
+</div>
+<div class="grid2">
+<div>
+<h4>Funções (aula)</h4>
+<ul class="tight">
+<li>Produção de <b>gametas</b>.</li>
+<li>Secreção de <b>hormônios esteroides</b> (estrógenos e progesterona).</li>
+<li>Regulação do crescimento dos órgãos reprodutores depois do nascimento.</li>
+<li>Desenvolvimento das características sexuais secundárias.</li>
+</ul>
+<h4>A reserva de folículos (aula)</h4>
+<ul class="tight">
+<li><b>Vida fetal</b>: cerca de <b>7 milhões</b> de ovogônias (o pico, por volta do 5º mês).</li>
+<li><b>Nascimento</b>: cerca de <b>1 milhão</b> de folículos primordiais.</li>
+<li><b>Puberdade</b>: <b>300 a 500 mil</b>.</li>
+<li>Só cerca de 400 ovulam na vida inteira; o resto sofre <b>atresia</b>. Não se formam folículos novos depois do nascimento.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hfem/ciclo_ovario.webp" alt="ciclo_ovario"><figcaption><b>Figura 2.</b> Ovário com todas as fases (aula): folículos primordial e primário (imaturo e maduro), secundário, de Graaf maduro, atrésico; o óvócito liberado na ovulação, o folículo roto, o corpo hemorrágico, o corpo lúteo e o corpo albicans; vasos entrando pelo mesovário.</figcaption></figure>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/hfem/cortex_ov.webp" alt="cortex_ov"><figcaption><b>Figura 3.</b> Córtex ovariano (aula): o epitélio de superfície (germinal epithelium), o estroma cortical e, nele, os folículos primordiais, um folículo primário e um folículo atrésico.</figcaption></figure>
+<figure class="img sm"><img src="res/hfem/primordiais.webp" alt="primordiais"><figcaption><b>Figura 4.</b> Folículos primordiais (aula): ovócitos grandes, de citoplasma claro e núcleo com nucléolo evidente, cada um cercado por uma camada de células foliculares achatadas, no estroma ovariano.</figcaption></figure>
+</div>
+<div class="box prova"><div class="tag">Cai na prova · ovário (T137, compilados)</div>
+“O folículo é a estrutura endócrina do ovário: ovócito cercado por <b>granulosa</b> (epitelial, faz estradiol) e <b>teca</b> (vem do estroma)” e “os primordiais são a <b>reserva</b>, formados na vida embrionária, e crescem só depois da puberdade”: <b>corretas</b>. Os erros: “a teca vem da granulosa e produz o estradiol” (a teca vem do <b>estroma</b> e faz <b>andrógeno</b>); “a <u>medula</u> abriga os folículos” (é o <b>córtex</b>); “o estroma não responde a hormônios” (responde: forma as tecas). Ovário de quem já ovulou: <b>superfície cheia de cicatrizes</b>; antes da menarca, lisa (T136).
+</div>
+</section>
+
+<!-- ============================== 3 FOLÍCULOS ============================== -->
+<section class="sec flow">
+<h2><span class="num n-ffo">3</span>Folículos e foliculogênese</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+O <b>folículo ovariano</b>, um <b>ovócito cercado por células somáticas</b>, é a unidade funcional do ovário (aula). A <b>foliculogênese</b> tem recrutamento, crescimento, seleção e ovulação: muitos folículos começam a crescer, mas só um, o <b>dominante</b>, chega à ovulação.
+</div>
+<figure class="fig"><svg role="img" aria-label="foliculos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 456" font-family="Inter, Helvetica, Arial, sans-serif">
+<defs><pattern id="foliculos-estroma" width="14" height="10" patternUnits="userSpaceOnUse"><ellipse cx="7" cy="5" rx="4" ry="1" fill="#d6a3bd"/></pattern></defs>
+<rect x="7" y="20" width="212" height="150" rx="10" fill="#fff5f8" stroke="#f1c7d6"/>
+<rect x="7" y="20" width="212" height="150" rx="10" fill="url(#foliculos-estroma)" opacity=".5"/>
+<rect x="21" y="1" width="184" height="19" rx="9.5" fill="#c2255c"/><text x="113" y="15" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">1 · Primordial</text>
+<circle cx="63" cy="96" r="15" fill="#fff0f6" stroke="#c2255c" stroke-width="1"/>
+<circle cx="63" cy="96" r="5.7" fill="#e5dbff" stroke="#3d2466" stroke-width=".8"/><circle cx="63" cy="96" r="1.5" fill="#3d2466"/>
+<ellipse cx="80.0" cy="96.0" rx="5.5" ry="1.8" transform="rotate(90 80.0 96.0)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="76.0" cy="106.9" rx="5.5" ry="1.8" transform="rotate(130 76.0 106.9)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="66.0" cy="112.7" rx="5.5" ry="1.8" transform="rotate(170 66.0 112.7)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="54.5" cy="110.7" rx="5.5" ry="1.8" transform="rotate(210 54.5 110.7)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="47.0" cy="101.8" rx="5.5" ry="1.8" transform="rotate(250 47.0 101.8)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="47.0" cy="90.2" rx="5.5" ry="1.8" transform="rotate(290 47.0 90.2)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="54.5" cy="81.3" rx="5.5" ry="1.8" transform="rotate(330 54.5 81.3)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="66.0" cy="79.3" rx="5.5" ry="1.8" transform="rotate(370 66.0 79.3)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="76.0" cy="85.1" rx="5.5" ry="1.8" transform="rotate(410 76.0 85.1)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<circle cx="113" cy="112" r="15" fill="#fff0f6" stroke="#c2255c" stroke-width="1"/>
+<circle cx="113" cy="112" r="5.7" fill="#e5dbff" stroke="#3d2466" stroke-width=".8"/><circle cx="113" cy="112" r="1.5" fill="#3d2466"/>
+<ellipse cx="130.0" cy="112.0" rx="5.5" ry="1.8" transform="rotate(90 130.0 112.0)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="126.0" cy="122.9" rx="5.5" ry="1.8" transform="rotate(130 126.0 122.9)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="116.0" cy="128.7" rx="5.5" ry="1.8" transform="rotate(170 116.0 128.7)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="104.5" cy="126.7" rx="5.5" ry="1.8" transform="rotate(210 104.5 126.7)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="97.0" cy="117.8" rx="5.5" ry="1.8" transform="rotate(250 97.0 117.8)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="97.0" cy="106.2" rx="5.5" ry="1.8" transform="rotate(290 97.0 106.2)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="104.5" cy="97.3" rx="5.5" ry="1.8" transform="rotate(330 104.5 97.3)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="116.0" cy="95.3" rx="5.5" ry="1.8" transform="rotate(370 116.0 95.3)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="126.0" cy="101.1" rx="5.5" ry="1.8" transform="rotate(410 126.0 101.1)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<circle cx="161" cy="126" r="15" fill="#fff0f6" stroke="#c2255c" stroke-width="1"/>
+<circle cx="161" cy="126" r="5.7" fill="#e5dbff" stroke="#3d2466" stroke-width=".8"/><circle cx="161" cy="126" r="1.5" fill="#3d2466"/>
+<ellipse cx="178.0" cy="126.0" rx="5.5" ry="1.8" transform="rotate(90 178.0 126.0)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="174.0" cy="136.9" rx="5.5" ry="1.8" transform="rotate(130 174.0 136.9)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="164.0" cy="142.7" rx="5.5" ry="1.8" transform="rotate(170 164.0 142.7)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="152.5" cy="140.7" rx="5.5" ry="1.8" transform="rotate(210 152.5 140.7)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="145.0" cy="131.8" rx="5.5" ry="1.8" transform="rotate(250 145.0 131.8)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="145.0" cy="120.2" rx="5.5" ry="1.8" transform="rotate(290 145.0 120.2)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="152.5" cy="111.3" rx="5.5" ry="1.8" transform="rotate(330 152.5 111.3)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="164.0" cy="109.3" rx="5.5" ry="1.8" transform="rotate(370 164.0 109.3)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="174.0" cy="115.1" rx="5.5" ry="1.8" transform="rotate(410 174.0 115.1)" fill="#e9b8cc" stroke="#a3577a" stroke-width=".5"/>
+<text x="113" y="186.0" font-size="8.7" font-weight="700" fill="#212529" text-anchor="middle">Ovócito I + uma camada</text>
+<text x="113" y="198.2" font-size="8.7" font-weight="400" fill="#495057" text-anchor="middle">de células foliculares PAVIMENTOSAS</text>
+<text x="113" y="210.4" font-size="8.7" font-weight="400" fill="#495057" text-anchor="middle">a reserva, logo abaixo da albugínea</text>
+<rect x="234" y="20" width="212" height="150" rx="10" fill="#fff5f8" stroke="#f1c7d6"/>
+<rect x="234" y="20" width="212" height="150" rx="10" fill="url(#foliculos-estroma)" opacity=".5"/>
+<rect x="248" y="1" width="184" height="19" rx="9.5" fill="#e8590c"/><text x="340" y="15" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">2 · Primário (unilaminar)</text>
+<circle cx="340" cy="106" r="26.5" fill="#f783ac" opacity=".55"/>
+<circle cx="340" cy="106" r="24" fill="#fff0f6" stroke="#c2255c" stroke-width="1"/>
+<circle cx="340" cy="106" r="9.1" fill="#e5dbff" stroke="#3d2466" stroke-width=".8"/><circle cx="340" cy="106" r="2.4" fill="#3d2466"/>
+<circle cx="371.5" cy="106.0" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="371.5" cy="106.0" r="2.3" fill="#5b3a8e"/>
+<circle cx="369.6" cy="116.8" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="369.6" cy="116.8" r="2.3" fill="#5b3a8e"/>
+<circle cx="364.1" cy="126.2" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="364.1" cy="126.2" r="2.3" fill="#5b3a8e"/>
+<circle cx="355.8" cy="133.3" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="355.8" cy="133.3" r="2.3" fill="#5b3a8e"/>
+<circle cx="345.5" cy="137.0" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="345.5" cy="137.0" r="2.3" fill="#5b3a8e"/>
+<circle cx="334.5" cy="137.0" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="334.5" cy="137.0" r="2.3" fill="#5b3a8e"/>
+<circle cx="324.2" cy="133.3" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="324.2" cy="133.3" r="2.3" fill="#5b3a8e"/>
+<circle cx="315.9" cy="126.2" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="315.9" cy="126.2" r="2.3" fill="#5b3a8e"/>
+<circle cx="310.4" cy="116.8" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="310.4" cy="116.8" r="2.3" fill="#5b3a8e"/>
+<circle cx="308.5" cy="106.0" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="308.5" cy="106.0" r="2.3" fill="#5b3a8e"/>
+<circle cx="310.4" cy="95.2" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="310.4" cy="95.2" r="2.3" fill="#5b3a8e"/>
+<circle cx="315.9" cy="85.8" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="315.9" cy="85.8" r="2.3" fill="#5b3a8e"/>
+<circle cx="324.2" cy="78.7" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="324.2" cy="78.7" r="2.3" fill="#5b3a8e"/>
+<circle cx="334.5" cy="75.0" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="334.5" cy="75.0" r="2.3" fill="#5b3a8e"/>
+<circle cx="345.5" cy="75.0" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="345.5" cy="75.0" r="2.3" fill="#5b3a8e"/>
+<circle cx="355.8" cy="78.7" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="355.8" cy="78.7" r="2.3" fill="#5b3a8e"/>
+<circle cx="364.1" cy="85.8" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="364.1" cy="85.8" r="2.3" fill="#5b3a8e"/>
+<circle cx="369.6" cy="95.2" r="5.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="369.6" cy="95.2" r="2.3" fill="#5b3a8e"/>
+<text x="340" y="186.0" font-size="8.7" font-weight="700" fill="#212529" text-anchor="middle">Uma camada de células CÚBICAS</text>
+<text x="340" y="198.2" font-size="8.7" font-weight="400" fill="#495057" text-anchor="middle">o ovócito cresce e começa</text>
+<text x="340" y="210.4" font-size="8.7" font-weight="400" fill="#495057" text-anchor="middle">a zona pelúcida</text>
+<rect x="461" y="20" width="212" height="150" rx="10" fill="#fff5f8" stroke="#f1c7d6"/>
+<rect x="461" y="20" width="212" height="150" rx="10" fill="url(#foliculos-estroma)" opacity=".5"/>
+<rect x="475" y="1" width="184" height="19" rx="9.5" fill="#b08900"/><text x="567" y="15" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">3 · Secundário (multilaminar)</text>
+<text x="567" y="40" font-size="8.2" font-weight="700" fill="#868e96" text-anchor="middle">Junqueira: “primário multilaminar”</text>
+<circle cx="567" cy="110" r="56" fill="none" stroke="#ffd8a8" stroke-width="8"/>
+<circle cx="623.0" cy="110.0" r="2.2" fill="#e8590c"/>
+<circle cx="620.9" cy="125.1" r="2.2" fill="#e8590c"/>
+<circle cx="614.8" cy="139.1" r="2.2" fill="#e8590c"/>
+<circle cx="605.2" cy="150.9" r="2.2" fill="#e8590c"/>
+<circle cx="592.8" cy="159.7" r="2.2" fill="#e8590c"/>
+<circle cx="578.4" cy="164.8" r="2.2" fill="#e8590c"/>
+<circle cx="563.2" cy="165.9" r="2.2" fill="#e8590c"/>
+<circle cx="548.2" cy="162.8" r="2.2" fill="#e8590c"/>
+<circle cx="534.7" cy="155.8" r="2.2" fill="#e8590c"/>
+<circle cx="523.6" cy="145.3" r="2.2" fill="#e8590c"/>
+<circle cx="515.6" cy="132.3" r="2.2" fill="#e8590c"/>
+<circle cx="511.5" cy="117.6" r="2.2" fill="#e8590c"/>
+<circle cx="511.5" cy="102.4" r="2.2" fill="#e8590c"/>
+<circle cx="515.6" cy="87.7" r="2.2" fill="#e8590c"/>
+<circle cx="523.6" cy="74.7" r="2.2" fill="#e8590c"/>
+<circle cx="534.7" cy="64.2" r="2.2" fill="#e8590c"/>
+<circle cx="548.2" cy="57.2" r="2.2" fill="#e8590c"/>
+<circle cx="563.2" cy="54.1" r="2.2" fill="#e8590c"/>
+<circle cx="578.4" cy="55.2" r="2.2" fill="#e8590c"/>
+<circle cx="592.8" cy="60.3" r="2.2" fill="#e8590c"/>
+<circle cx="605.2" cy="69.1" r="2.2" fill="#e8590c"/>
+<circle cx="614.8" cy="80.9" r="2.2" fill="#e8590c"/>
+<circle cx="620.9" cy="94.9" r="2.2" fill="#e8590c"/>
+<circle cx="622.4" cy="127.1" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="567.8" cy="168.0" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="512.1" cy="128.7" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="532.2" cy="63.6" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="600.4" cy="62.6" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="535.1" cy="108.1" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="535.1" cy="108.1" r="2.0" fill="#5b3a8e"/>
+<circle cx="537.6" cy="97.3" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="537.6" cy="97.3" r="2.0" fill="#5b3a8e"/>
+<circle cx="543.7" cy="88.0" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="543.7" cy="88.0" r="2.0" fill="#5b3a8e"/>
+<circle cx="552.6" cy="81.4" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="552.6" cy="81.4" r="2.0" fill="#5b3a8e"/>
+<circle cx="563.3" cy="78.2" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="563.3" cy="78.2" r="2.0" fill="#5b3a8e"/>
+<circle cx="574.4" cy="78.9" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="574.4" cy="78.9" r="2.0" fill="#5b3a8e"/>
+<circle cx="584.6" cy="83.3" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="584.6" cy="83.3" r="2.0" fill="#5b3a8e"/>
+<circle cx="592.7" cy="90.9" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="592.7" cy="90.9" r="2.0" fill="#5b3a8e"/>
+<circle cx="597.7" cy="100.8" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="597.7" cy="100.8" r="2.0" fill="#5b3a8e"/>
+<circle cx="598.9" cy="111.9" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="598.9" cy="111.9" r="2.0" fill="#5b3a8e"/>
+<circle cx="596.4" cy="122.7" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="596.4" cy="122.7" r="2.0" fill="#5b3a8e"/>
+<circle cx="590.3" cy="132.0" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="590.3" cy="132.0" r="2.0" fill="#5b3a8e"/>
+<circle cx="581.4" cy="138.6" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="581.4" cy="138.6" r="2.0" fill="#5b3a8e"/>
+<circle cx="570.7" cy="141.8" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="570.7" cy="141.8" r="2.0" fill="#5b3a8e"/>
+<circle cx="559.6" cy="141.1" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="559.6" cy="141.1" r="2.0" fill="#5b3a8e"/>
+<circle cx="549.4" cy="136.7" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="549.4" cy="136.7" r="2.0" fill="#5b3a8e"/>
+<circle cx="541.3" cy="129.1" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="541.3" cy="129.1" r="2.0" fill="#5b3a8e"/>
+<circle cx="536.3" cy="119.2" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="536.3" cy="119.2" r="2.0" fill="#5b3a8e"/>
+<circle cx="540.9" cy="79.7" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="540.9" cy="79.7" r="2.0" fill="#5b3a8e"/>
+<circle cx="549.6" cy="74.0" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="549.6" cy="74.0" r="2.0" fill="#5b3a8e"/>
+<circle cx="559.5" cy="70.7" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="559.5" cy="70.7" r="2.0" fill="#5b3a8e"/>
+<circle cx="569.9" cy="70.1" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="569.9" cy="70.1" r="2.0" fill="#5b3a8e"/>
+<circle cx="580.1" cy="72.2" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="580.1" cy="72.2" r="2.0" fill="#5b3a8e"/>
+<circle cx="589.5" cy="76.9" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="589.5" cy="76.9" r="2.0" fill="#5b3a8e"/>
+<circle cx="597.3" cy="83.9" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="597.3" cy="83.9" r="2.0" fill="#5b3a8e"/>
+<circle cx="603.0" cy="92.6" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="603.0" cy="92.6" r="2.0" fill="#5b3a8e"/>
+<circle cx="606.3" cy="102.5" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="606.3" cy="102.5" r="2.0" fill="#5b3a8e"/>
+<circle cx="606.9" cy="112.9" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="606.9" cy="112.9" r="2.0" fill="#5b3a8e"/>
+<circle cx="604.8" cy="123.1" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="604.8" cy="123.1" r="2.0" fill="#5b3a8e"/>
+<circle cx="600.1" cy="132.5" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="600.1" cy="132.5" r="2.0" fill="#5b3a8e"/>
+<circle cx="593.1" cy="140.3" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="593.1" cy="140.3" r="2.0" fill="#5b3a8e"/>
+<circle cx="584.4" cy="146.0" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="584.4" cy="146.0" r="2.0" fill="#5b3a8e"/>
+<circle cx="574.5" cy="149.3" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="574.5" cy="149.3" r="2.0" fill="#5b3a8e"/>
+<circle cx="564.1" cy="149.9" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="564.1" cy="149.9" r="2.0" fill="#5b3a8e"/>
+<circle cx="553.9" cy="147.8" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="553.9" cy="147.8" r="2.0" fill="#5b3a8e"/>
+<circle cx="544.5" cy="143.1" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="544.5" cy="143.1" r="2.0" fill="#5b3a8e"/>
+<circle cx="536.7" cy="136.1" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="536.7" cy="136.1" r="2.0" fill="#5b3a8e"/>
+<circle cx="531.0" cy="127.4" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="531.0" cy="127.4" r="2.0" fill="#5b3a8e"/>
+<circle cx="527.7" cy="117.5" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="527.7" cy="117.5" r="2.0" fill="#5b3a8e"/>
+<circle cx="527.1" cy="107.1" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="527.1" cy="107.1" r="2.0" fill="#5b3a8e"/>
+<circle cx="529.2" cy="96.9" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="529.2" cy="96.9" r="2.0" fill="#5b3a8e"/>
+<circle cx="533.9" cy="87.5" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="533.9" cy="87.5" r="2.0" fill="#5b3a8e"/>
+<circle cx="571.2" cy="62.2" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="571.2" cy="62.2" r="2.0" fill="#5b3a8e"/>
+<circle cx="581.0" cy="64.1" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="581.0" cy="64.1" r="2.0" fill="#5b3a8e"/>
+<circle cx="590.3" cy="68.0" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="590.3" cy="68.0" r="2.0" fill="#5b3a8e"/>
+<circle cx="598.5" cy="73.8" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="598.5" cy="73.8" r="2.0" fill="#5b3a8e"/>
+<circle cx="605.3" cy="81.1" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="605.3" cy="81.1" r="2.0" fill="#5b3a8e"/>
+<circle cx="610.5" cy="89.7" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="610.5" cy="89.7" r="2.0" fill="#5b3a8e"/>
+<circle cx="613.8" cy="99.2" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="613.8" cy="99.2" r="2.0" fill="#5b3a8e"/>
+<circle cx="615.0" cy="109.2" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="615.0" cy="109.2" r="2.0" fill="#5b3a8e"/>
+<circle cx="614.1" cy="119.2" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="614.1" cy="119.2" r="2.0" fill="#5b3a8e"/>
+<circle cx="611.2" cy="128.8" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="611.2" cy="128.8" r="2.0" fill="#5b3a8e"/>
+<circle cx="606.3" cy="137.5" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="606.3" cy="137.5" r="2.0" fill="#5b3a8e"/>
+<circle cx="599.7" cy="145.1" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="599.7" cy="145.1" r="2.0" fill="#5b3a8e"/>
+<circle cx="591.7" cy="151.2" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="591.7" cy="151.2" r="2.0" fill="#5b3a8e"/>
+<circle cx="582.6" cy="155.4" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="582.6" cy="155.4" r="2.0" fill="#5b3a8e"/>
+<circle cx="572.8" cy="157.6" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="572.8" cy="157.6" r="2.0" fill="#5b3a8e"/>
+<circle cx="562.8" cy="157.8" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="562.8" cy="157.8" r="2.0" fill="#5b3a8e"/>
+<circle cx="553.0" cy="155.9" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="553.0" cy="155.9" r="2.0" fill="#5b3a8e"/>
+<circle cx="543.7" cy="152.0" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="543.7" cy="152.0" r="2.0" fill="#5b3a8e"/>
+<circle cx="535.5" cy="146.2" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="535.5" cy="146.2" r="2.0" fill="#5b3a8e"/>
+<circle cx="528.7" cy="138.9" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="528.7" cy="138.9" r="2.0" fill="#5b3a8e"/>
+<circle cx="523.5" cy="130.3" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="523.5" cy="130.3" r="2.0" fill="#5b3a8e"/>
+<circle cx="520.2" cy="120.8" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="520.2" cy="120.8" r="2.0" fill="#5b3a8e"/>
+<circle cx="519.0" cy="110.8" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="519.0" cy="110.8" r="2.0" fill="#5b3a8e"/>
+<circle cx="519.9" cy="100.8" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="519.9" cy="100.8" r="2.0" fill="#5b3a8e"/>
+<circle cx="522.8" cy="91.2" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="522.8" cy="91.2" r="2.0" fill="#5b3a8e"/>
+<circle cx="527.7" cy="82.5" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="527.7" cy="82.5" r="2.0" fill="#5b3a8e"/>
+<circle cx="534.3" cy="74.9" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="534.3" cy="74.9" r="2.0" fill="#5b3a8e"/>
+<circle cx="542.3" cy="68.8" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="542.3" cy="68.8" r="2.0" fill="#5b3a8e"/>
+<circle cx="551.4" cy="64.6" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="551.4" cy="64.6" r="2.0" fill="#5b3a8e"/>
+<circle cx="561.2" cy="62.4" r="4.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="561.2" cy="62.4" r="2.0" fill="#5b3a8e"/>
+<circle cx="567" cy="110" r="26" fill="#f783ac" opacity=".55"/>
+<circle cx="567" cy="110" r="22" fill="#fff0f6" stroke="#c2255c" stroke-width="1"/>
+<circle cx="567" cy="110" r="8.4" fill="#e5dbff" stroke="#3d2466" stroke-width=".8"/><circle cx="567" cy="110" r="2.2" fill="#3d2466"/>
+<text x="567" y="186.0" font-size="8.7" font-weight="700" fill="#212529" text-anchor="middle">Várias camadas de granulosa,</text>
+<text x="567" y="198.2" font-size="8.7" font-weight="400" fill="#495057" text-anchor="middle">zona pelúcida organizada</text>
+<text x="567" y="210.4" font-size="8.7" font-weight="400" fill="#495057" text-anchor="middle">e a teca interna começando</text>
+<rect x="7" y="260" width="212" height="150" rx="10" fill="#fff5f8" stroke="#f1c7d6"/>
+<rect x="7" y="260" width="212" height="150" rx="10" fill="url(#foliculos-estroma)" opacity=".5"/>
+<rect x="21" y="241" width="184" height="19" rx="9.5" fill="#2b8a3e"/><text x="113" y="255" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">4 · Terciário (antral)</text>
+<text x="113" y="280" font-size="8.2" font-weight="700" fill="#868e96" text-anchor="middle">Junqueira: “secundário”</text>
+<circle cx="113" cy="350" r="63" fill="none" stroke="#d0bfa8" stroke-width="6"/>
+<ellipse cx="176.0" cy="350.0" rx="5.5" ry="1.8" transform="rotate(90 176.0 350.0)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="174.0" cy="365.7" rx="5.5" ry="1.8" transform="rotate(104 174.0 365.7)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="168.2" cy="380.4" rx="5.5" ry="1.8" transform="rotate(119 168.2 380.4)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="158.9" cy="393.1" rx="5.5" ry="1.8" transform="rotate(133 158.9 393.1)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="146.8" cy="403.2" rx="5.5" ry="1.8" transform="rotate(148 146.8 403.2)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="132.5" cy="409.9" rx="5.5" ry="1.8" transform="rotate(162 132.5 409.9)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="117.0" cy="412.9" rx="5.5" ry="1.8" transform="rotate(176 117.0 412.9)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="101.2" cy="411.9" rx="5.5" ry="1.8" transform="rotate(191 101.2 411.9)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="86.2" cy="407.0" rx="5.5" ry="1.8" transform="rotate(205 86.2 407.0)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="72.8" cy="398.5" rx="5.5" ry="1.8" transform="rotate(220 72.8 398.5)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="62.0" cy="387.0" rx="5.5" ry="1.8" transform="rotate(234 62.0 387.0)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="54.4" cy="373.2" rx="5.5" ry="1.8" transform="rotate(248 54.4 373.2)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="50.5" cy="357.9" rx="5.5" ry="1.8" transform="rotate(263 50.5 357.9)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="50.5" cy="342.1" rx="5.5" ry="1.8" transform="rotate(277 50.5 342.1)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="54.4" cy="326.8" rx="5.5" ry="1.8" transform="rotate(292 54.4 326.8)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="62.0" cy="313.0" rx="5.5" ry="1.8" transform="rotate(306 62.0 313.0)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="72.8" cy="301.5" rx="5.5" ry="1.8" transform="rotate(320 72.8 301.5)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="86.2" cy="293.0" rx="5.5" ry="1.8" transform="rotate(335 86.2 293.0)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="101.2" cy="288.1" rx="5.5" ry="1.8" transform="rotate(349 101.2 288.1)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="117.0" cy="287.1" rx="5.5" ry="1.8" transform="rotate(364 117.0 287.1)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="132.5" cy="290.1" rx="5.5" ry="1.8" transform="rotate(378 132.5 290.1)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="146.8" cy="296.8" rx="5.5" ry="1.8" transform="rotate(392 146.8 296.8)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="158.9" cy="306.9" rx="5.5" ry="1.8" transform="rotate(407 158.9 306.9)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="168.2" cy="319.6" rx="5.5" ry="1.8" transform="rotate(421 168.2 319.6)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="174.0" cy="334.3" rx="5.5" ry="1.8" transform="rotate(436 174.0 334.3)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<circle cx="113" cy="350" r="58" fill="none" stroke="#ffd8a8" stroke-width="8"/>
+<circle cx="171.0" cy="350.0" r="2.2" fill="#e8590c"/>
+<circle cx="169.0" cy="365.0" r="2.2" fill="#e8590c"/>
+<circle cx="163.2" cy="379.0" r="2.2" fill="#e8590c"/>
+<circle cx="154.0" cy="391.0" r="2.2" fill="#e8590c"/>
+<circle cx="142.0" cy="400.2" r="2.2" fill="#e8590c"/>
+<circle cx="128.0" cy="406.0" r="2.2" fill="#e8590c"/>
+<circle cx="113.0" cy="408.0" r="2.2" fill="#e8590c"/>
+<circle cx="98.0" cy="406.0" r="2.2" fill="#e8590c"/>
+<circle cx="84.0" cy="400.2" r="2.2" fill="#e8590c"/>
+<circle cx="72.0" cy="391.0" r="2.2" fill="#e8590c"/>
+<circle cx="62.8" cy="379.0" r="2.2" fill="#e8590c"/>
+<circle cx="57.0" cy="365.0" r="2.2" fill="#e8590c"/>
+<circle cx="55.0" cy="350.0" r="2.2" fill="#e8590c"/>
+<circle cx="57.0" cy="335.0" r="2.2" fill="#e8590c"/>
+<circle cx="62.8" cy="321.0" r="2.2" fill="#e8590c"/>
+<circle cx="72.0" cy="309.0" r="2.2" fill="#e8590c"/>
+<circle cx="84.0" cy="299.8" r="2.2" fill="#e8590c"/>
+<circle cx="98.0" cy="294.0" r="2.2" fill="#e8590c"/>
+<circle cx="113.0" cy="292.0" r="2.2" fill="#e8590c"/>
+<circle cx="128.0" cy="294.0" r="2.2" fill="#e8590c"/>
+<circle cx="142.0" cy="299.8" r="2.2" fill="#e8590c"/>
+<circle cx="154.0" cy="309.0" r="2.2" fill="#e8590c"/>
+<circle cx="163.2" cy="321.0" r="2.2" fill="#e8590c"/>
+<circle cx="169.0" cy="335.0" r="2.2" fill="#e8590c"/>
+<circle cx="170.3" cy="367.7" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="113.8" cy="410.0" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="56.2" cy="369.3" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="77.0" cy="302.0" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="147.6" cy="301.0" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="113" cy="350" r="54" fill="#f9d5e3"/>
+<circle cx="161.2" cy="336.9" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="161.2" cy="336.9" r="1.5" fill="#5b3a8e"/>
+<circle cx="162.8" cy="345.5" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="162.8" cy="345.5" r="1.5" fill="#5b3a8e"/>
+<circle cx="162.8" cy="354.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="162.8" cy="354.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="161.3" cy="362.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="161.3" cy="362.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="158.4" cy="371.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="158.4" cy="371.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="154.1" cy="378.5" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="154.1" cy="378.5" r="1.5" fill="#5b3a8e"/>
+<circle cx="148.5" cy="385.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="148.5" cy="385.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="141.8" cy="390.9" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="141.8" cy="390.9" r="1.5" fill="#5b3a8e"/>
+<circle cx="134.3" cy="395.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="134.3" cy="395.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="126.1" cy="398.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="126.1" cy="398.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="117.5" cy="399.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="117.5" cy="399.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="108.8" cy="399.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="108.8" cy="399.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="100.2" cy="398.3" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="100.2" cy="398.3" r="1.5" fill="#5b3a8e"/>
+<circle cx="92.0" cy="395.4" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="92.0" cy="395.4" r="1.5" fill="#5b3a8e"/>
+<circle cx="84.5" cy="391.1" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="84.5" cy="391.1" r="1.5" fill="#5b3a8e"/>
+<circle cx="77.8" cy="385.5" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="77.8" cy="385.5" r="1.5" fill="#5b3a8e"/>
+<circle cx="72.1" cy="378.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="72.1" cy="378.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="67.8" cy="371.3" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="67.8" cy="371.3" r="1.5" fill="#5b3a8e"/>
+<circle cx="64.8" cy="363.1" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="64.8" cy="363.1" r="1.5" fill="#5b3a8e"/>
+<circle cx="63.2" cy="354.5" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="63.2" cy="354.5" r="1.5" fill="#5b3a8e"/>
+<circle cx="63.2" cy="345.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="63.2" cy="345.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="64.7" cy="337.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="64.7" cy="337.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="67.6" cy="329.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="67.6" cy="329.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="71.9" cy="321.5" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="71.9" cy="321.5" r="1.5" fill="#5b3a8e"/>
+<circle cx="77.5" cy="314.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="77.5" cy="314.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="84.2" cy="309.1" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="84.2" cy="309.1" r="1.5" fill="#5b3a8e"/>
+<circle cx="91.7" cy="304.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="91.7" cy="304.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="99.9" cy="301.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="99.9" cy="301.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="108.5" cy="300.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="108.5" cy="300.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="117.2" cy="300.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="117.2" cy="300.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="125.8" cy="301.7" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="125.8" cy="301.7" r="1.5" fill="#5b3a8e"/>
+<circle cx="134.0" cy="304.6" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="134.0" cy="304.6" r="1.5" fill="#5b3a8e"/>
+<circle cx="141.5" cy="308.9" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="141.5" cy="308.9" r="1.5" fill="#5b3a8e"/>
+<circle cx="148.2" cy="314.5" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="148.2" cy="314.5" r="1.5" fill="#5b3a8e"/>
+<circle cx="153.9" cy="321.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="153.9" cy="321.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="158.2" cy="328.7" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="158.2" cy="328.7" r="1.5" fill="#5b3a8e"/>
+<circle cx="136.9" cy="314.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="136.9" cy="314.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="143.8" cy="320.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="143.8" cy="320.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="149.4" cy="327.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="149.4" cy="327.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="153.3" cy="335.1" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="153.3" cy="335.1" r="1.5" fill="#5b3a8e"/>
+<circle cx="155.6" cy="343.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="155.6" cy="343.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="155.9" cy="352.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="155.9" cy="352.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="154.4" cy="361.6" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="154.4" cy="361.6" r="1.5" fill="#5b3a8e"/>
+<circle cx="151.1" cy="370.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="151.1" cy="370.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="146.1" cy="377.5" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="146.1" cy="377.5" r="1.5" fill="#5b3a8e"/>
+<circle cx="139.6" cy="383.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="139.6" cy="383.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="132.0" cy="388.6" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="132.0" cy="388.6" r="1.5" fill="#5b3a8e"/>
+<circle cx="123.6" cy="391.7" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="123.6" cy="391.7" r="1.5" fill="#5b3a8e"/>
+<circle cx="114.7" cy="393.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="114.7" cy="393.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="105.7" cy="392.4" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="105.7" cy="392.4" r="1.5" fill="#5b3a8e"/>
+<circle cx="97.1" cy="389.9" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="97.1" cy="389.9" r="1.5" fill="#5b3a8e"/>
+<circle cx="89.1" cy="385.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="89.1" cy="385.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="82.2" cy="380.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="82.2" cy="380.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="76.6" cy="373.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="76.6" cy="373.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="72.7" cy="364.9" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="72.7" cy="364.9" r="1.5" fill="#5b3a8e"/>
+<circle cx="70.4" cy="356.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="70.4" cy="356.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="70.1" cy="347.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="70.1" cy="347.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="71.6" cy="338.4" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="71.6" cy="338.4" r="1.5" fill="#5b3a8e"/>
+<circle cx="74.9" cy="330.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="74.9" cy="330.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="79.9" cy="322.5" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="79.9" cy="322.5" r="1.5" fill="#5b3a8e"/>
+<circle cx="86.4" cy="316.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="86.4" cy="316.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="94.0" cy="311.4" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="94.0" cy="311.4" r="1.5" fill="#5b3a8e"/>
+<circle cx="102.4" cy="308.3" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="102.4" cy="308.3" r="1.5" fill="#5b3a8e"/>
+<circle cx="111.3" cy="307.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="111.3" cy="307.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="120.3" cy="307.6" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="120.3" cy="307.6" r="1.5" fill="#5b3a8e"/>
+<circle cx="128.9" cy="310.1" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="128.9" cy="310.1" r="1.5" fill="#5b3a8e"/>
+<circle cx="108.4" cy="314.3" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="108.4" cy="314.3" r="1.5" fill="#5b3a8e"/>
+<circle cx="117.1" cy="314.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="117.1" cy="314.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="125.5" cy="316.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="125.5" cy="316.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="133.2" cy="320.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="133.2" cy="320.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="139.8" cy="325.9" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="139.8" cy="325.9" r="1.5" fill="#5b3a8e"/>
+<circle cx="144.8" cy="333.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="144.8" cy="333.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="147.9" cy="341.1" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="147.9" cy="341.1" r="1.5" fill="#5b3a8e"/>
+<circle cx="149.0" cy="349.7" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="149.0" cy="349.7" r="1.5" fill="#5b3a8e"/>
+<circle cx="148.0" cy="358.4" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="148.0" cy="358.4" r="1.5" fill="#5b3a8e"/>
+<circle cx="145.0" cy="366.5" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="145.0" cy="366.5" r="1.5" fill="#5b3a8e"/>
+<circle cx="140.1" cy="373.7" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="140.1" cy="373.7" r="1.5" fill="#5b3a8e"/>
+<circle cx="133.7" cy="379.5" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="133.7" cy="379.5" r="1.5" fill="#5b3a8e"/>
+<circle cx="126.0" cy="383.6" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="126.0" cy="383.6" r="1.5" fill="#5b3a8e"/>
+<circle cx="117.6" cy="385.7" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="117.6" cy="385.7" r="1.5" fill="#5b3a8e"/>
+<circle cx="108.9" cy="385.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="108.9" cy="385.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="100.5" cy="383.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="100.5" cy="383.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="92.8" cy="379.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="92.8" cy="379.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="86.2" cy="374.1" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="86.2" cy="374.1" r="1.5" fill="#5b3a8e"/>
+<circle cx="81.2" cy="367.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="81.2" cy="367.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="78.1" cy="358.9" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="78.1" cy="358.9" r="1.5" fill="#5b3a8e"/>
+<circle cx="77.0" cy="350.3" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="77.0" cy="350.3" r="1.5" fill="#5b3a8e"/>
+<circle cx="78.0" cy="341.6" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="78.0" cy="341.6" r="1.5" fill="#5b3a8e"/>
+<circle cx="81.0" cy="333.5" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="81.0" cy="333.5" r="1.5" fill="#5b3a8e"/>
+<circle cx="85.9" cy="326.3" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="85.9" cy="326.3" r="1.5" fill="#5b3a8e"/>
+<circle cx="92.3" cy="320.5" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="92.3" cy="320.5" r="1.5" fill="#5b3a8e"/>
+<circle cx="100.0" cy="316.4" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="100.0" cy="316.4" r="1.5" fill="#5b3a8e"/>
+<circle cx="91.3" cy="330.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="91.3" cy="330.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="98.3" cy="325.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="98.3" cy="325.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="106.8" cy="321.7" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="106.8" cy="321.7" r="1.5" fill="#5b3a8e"/>
+<circle cx="115.8" cy="321.1" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="115.8" cy="321.1" r="1.5" fill="#5b3a8e"/>
+<circle cx="124.6" cy="323.4" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="124.6" cy="323.4" r="1.5" fill="#5b3a8e"/>
+<circle cx="132.2" cy="328.3" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="132.2" cy="328.3" r="1.5" fill="#5b3a8e"/>
+<circle cx="138.0" cy="335.3" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="138.0" cy="335.3" r="1.5" fill="#5b3a8e"/>
+<circle cx="141.3" cy="343.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="141.3" cy="343.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="141.9" cy="352.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="141.9" cy="352.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="139.6" cy="361.6" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="139.6" cy="361.6" r="1.5" fill="#5b3a8e"/>
+<circle cx="134.7" cy="369.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="134.7" cy="369.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="127.7" cy="375.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="127.7" cy="375.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="119.2" cy="378.3" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="119.2" cy="378.3" r="1.5" fill="#5b3a8e"/>
+<circle cx="110.2" cy="378.9" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="110.2" cy="378.9" r="1.5" fill="#5b3a8e"/>
+<circle cx="101.4" cy="376.6" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="101.4" cy="376.6" r="1.5" fill="#5b3a8e"/>
+<circle cx="93.8" cy="371.7" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="93.8" cy="371.7" r="1.5" fill="#5b3a8e"/>
+<circle cx="88.0" cy="364.7" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="88.0" cy="364.7" r="1.5" fill="#5b3a8e"/>
+<circle cx="84.7" cy="356.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="84.7" cy="356.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="84.1" cy="347.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="84.1" cy="347.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="86.4" cy="338.4" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="86.4" cy="338.4" r="1.5" fill="#5b3a8e"/>
+<circle cx="91.0" cy="349.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="91.0" cy="349.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="92.7" cy="341.4" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="92.7" cy="341.4" r="1.5" fill="#5b3a8e"/>
+<circle cx="97.6" cy="334.3" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="97.6" cy="334.3" r="1.5" fill="#5b3a8e"/>
+<circle cx="104.8" cy="329.6" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="104.8" cy="329.6" r="1.5" fill="#5b3a8e"/>
+<circle cx="113.2" cy="328.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="113.2" cy="328.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="121.6" cy="329.7" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="121.6" cy="329.7" r="1.5" fill="#5b3a8e"/>
+<circle cx="128.7" cy="334.6" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="128.7" cy="334.6" r="1.5" fill="#5b3a8e"/>
+<circle cx="133.4" cy="341.8" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="133.4" cy="341.8" r="1.5" fill="#5b3a8e"/>
+<circle cx="135.0" cy="350.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="135.0" cy="350.2" r="1.5" fill="#5b3a8e"/>
+<circle cx="133.3" cy="358.6" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="133.3" cy="358.6" r="1.5" fill="#5b3a8e"/>
+<circle cx="128.4" cy="365.7" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="128.4" cy="365.7" r="1.5" fill="#5b3a8e"/>
+<circle cx="121.2" cy="370.4" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="121.2" cy="370.4" r="1.5" fill="#5b3a8e"/>
+<circle cx="112.8" cy="372.0" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="112.8" cy="372.0" r="1.5" fill="#5b3a8e"/>
+<circle cx="104.4" cy="370.3" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="104.4" cy="370.3" r="1.5" fill="#5b3a8e"/>
+<circle cx="97.3" cy="365.4" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="97.3" cy="365.4" r="1.5" fill="#5b3a8e"/>
+<circle cx="92.6" cy="358.2" r="3.4" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="92.6" cy="358.2" r="1.5" fill="#5b3a8e"/>
+<ellipse cx="95" cy="326" rx="9" ry="6.3" fill="#fff9db" stroke="#e9d8a6"/>
+<ellipse cx="135" cy="336" rx="7" ry="4.9" fill="#fff9db" stroke="#e9d8a6"/>
+<ellipse cx="87" cy="364" rx="6" ry="4.2" fill="#fff9db" stroke="#e9d8a6"/>
+<ellipse cx="129" cy="372" rx="8" ry="5.6" fill="#fff9db" stroke="#e9d8a6"/>
+<circle cx="113" cy="350" r="16" fill="#f783ac" opacity=".55"/>
+<circle cx="113" cy="350" r="13" fill="#fff0f6" stroke="#c2255c" stroke-width="1"/>
+<circle cx="113" cy="350" r="4.9" fill="#e5dbff" stroke="#3d2466" stroke-width=".8"/><circle cx="113" cy="350" r="1.3" fill="#3d2466"/>
+<text x="113" y="426.0" font-size="8.7" font-weight="700" fill="#212529" text-anchor="middle">Espaços com líquido folicular</text>
+<text x="113" y="438.2" font-size="8.7" font-weight="400" fill="#495057" text-anchor="middle">que se juntam no ANTRO; tecas</text>
+<text x="113" y="450.4" font-size="8.7" font-weight="400" fill="#495057" text-anchor="middle">interna e externa formadas</text>
+<rect x="234" y="260" width="212" height="150" rx="10" fill="#fff5f8" stroke="#f1c7d6"/>
+<rect x="234" y="260" width="212" height="150" rx="10" fill="url(#foliculos-estroma)" opacity=".5"/>
+<rect x="248" y="241" width="184" height="19" rx="9.5" fill="#1c7ed6"/><text x="340" y="255" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">5 · De Graaf (pré-ovulatório)</text>
+<text x="340" y="280" font-size="8.2" font-weight="700" fill="#868e96" text-anchor="middle">maduro: ~2 cm, faz saliência no ovário</text>
+<circle cx="340" cy="352" r="67" fill="none" stroke="#d0bfa8" stroke-width="6"/>
+<ellipse cx="407.0" cy="352.0" rx="5.5" ry="1.8" transform="rotate(90 407.0 352.0)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="405.1" cy="368.0" rx="5.5" ry="1.8" transform="rotate(104 405.1 368.0)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="399.3" cy="383.1" rx="5.5" ry="1.8" transform="rotate(118 399.3 383.1)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="390.2" cy="396.4" rx="5.5" ry="1.8" transform="rotate(132 390.2 396.4)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="378.1" cy="407.1" rx="5.5" ry="1.8" transform="rotate(145 378.1 407.1)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="363.8" cy="414.6" rx="5.5" ry="1.8" transform="rotate(159 363.8 414.6)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="348.1" cy="418.5" rx="5.5" ry="1.8" transform="rotate(173 348.1 418.5)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="331.9" cy="418.5" rx="5.5" ry="1.8" transform="rotate(187 331.9 418.5)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="316.2" cy="414.6" rx="5.5" ry="1.8" transform="rotate(201 316.2 414.6)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="301.9" cy="407.1" rx="5.5" ry="1.8" transform="rotate(215 301.9 407.1)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="289.8" cy="396.4" rx="5.5" ry="1.8" transform="rotate(228 289.8 396.4)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="280.7" cy="383.1" rx="5.5" ry="1.8" transform="rotate(242 280.7 383.1)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="274.9" cy="368.0" rx="5.5" ry="1.8" transform="rotate(256 274.9 368.0)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="273.0" cy="352.0" rx="5.5" ry="1.8" transform="rotate(270 273.0 352.0)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="274.9" cy="336.0" rx="5.5" ry="1.8" transform="rotate(284 274.9 336.0)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="280.7" cy="320.9" rx="5.5" ry="1.8" transform="rotate(298 280.7 320.9)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="289.8" cy="307.6" rx="5.5" ry="1.8" transform="rotate(312 289.8 307.6)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="301.9" cy="296.9" rx="5.5" ry="1.8" transform="rotate(325 301.9 296.9)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="316.2" cy="289.4" rx="5.5" ry="1.8" transform="rotate(339 316.2 289.4)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="331.9" cy="285.5" rx="5.5" ry="1.8" transform="rotate(353 331.9 285.5)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="348.1" cy="285.5" rx="5.5" ry="1.8" transform="rotate(367 348.1 285.5)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="363.8" cy="289.4" rx="5.5" ry="1.8" transform="rotate(381 363.8 289.4)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="378.1" cy="296.9" rx="5.5" ry="1.8" transform="rotate(395 378.1 296.9)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="390.2" cy="307.6" rx="5.5" ry="1.8" transform="rotate(408 390.2 307.6)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="399.3" cy="320.9" rx="5.5" ry="1.8" transform="rotate(422 399.3 320.9)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<ellipse cx="405.1" cy="336.0" rx="5.5" ry="1.8" transform="rotate(436 405.1 336.0)" fill="#e6d5bd" stroke="#a3577a" stroke-width=".5"/>
+<circle cx="340" cy="352" r="64" fill="none" stroke="#ffd8a8" stroke-width="8"/>
+<circle cx="404.0" cy="352.0" r="2.2" fill="#e8590c"/>
+<circle cx="402.3" cy="366.8" r="2.2" fill="#e8590c"/>
+<circle cx="397.2" cy="380.7" r="2.2" fill="#e8590c"/>
+<circle cx="389.0" cy="393.1" r="2.2" fill="#e8590c"/>
+<circle cx="378.2" cy="403.3" r="2.2" fill="#e8590c"/>
+<circle cx="365.3" cy="410.8" r="2.2" fill="#e8590c"/>
+<circle cx="351.1" cy="415.0" r="2.2" fill="#e8590c"/>
+<circle cx="336.3" cy="415.9" r="2.2" fill="#e8590c"/>
+<circle cx="321.6" cy="413.3" r="2.2" fill="#e8590c"/>
+<circle cx="308.0" cy="407.4" r="2.2" fill="#e8590c"/>
+<circle cx="296.1" cy="398.6" r="2.2" fill="#e8590c"/>
+<circle cx="286.5" cy="387.2" r="2.2" fill="#e8590c"/>
+<circle cx="279.9" cy="373.9" r="2.2" fill="#e8590c"/>
+<circle cx="276.4" cy="359.4" r="2.2" fill="#e8590c"/>
+<circle cx="276.4" cy="344.6" r="2.2" fill="#e8590c"/>
+<circle cx="279.9" cy="330.1" r="2.2" fill="#e8590c"/>
+<circle cx="286.5" cy="316.8" r="2.2" fill="#e8590c"/>
+<circle cx="296.1" cy="305.4" r="2.2" fill="#e8590c"/>
+<circle cx="308.0" cy="296.6" r="2.2" fill="#e8590c"/>
+<circle cx="321.6" cy="290.7" r="2.2" fill="#e8590c"/>
+<circle cx="336.3" cy="288.1" r="2.2" fill="#e8590c"/>
+<circle cx="351.1" cy="289.0" r="2.2" fill="#e8590c"/>
+<circle cx="365.3" cy="293.2" r="2.2" fill="#e8590c"/>
+<circle cx="378.2" cy="300.7" r="2.2" fill="#e8590c"/>
+<circle cx="389.0" cy="310.9" r="2.2" fill="#e8590c"/>
+<circle cx="397.2" cy="323.3" r="2.2" fill="#e8590c"/>
+<circle cx="402.3" cy="337.2" r="2.2" fill="#e8590c"/>
+<circle cx="403.1" cy="371.5" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="340.9" cy="418.0" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="277.5" cy="373.3" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="300.5" cy="299.2" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="378.0" cy="298.1" r="2.6" fill="#fff" stroke="#e03131" stroke-width="1.2"/>
+<circle cx="340" cy="352" r="60" fill="#f9d5e3"/>
+<circle cx="396.0" cy="352.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="396.0" cy="352.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="395.4" cy="360.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="395.4" cy="360.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="393.7" cy="367.8" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="393.7" cy="367.8" r="1.4" fill="#5b3a8e"/>
+<circle cx="390.9" cy="375.3" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="390.9" cy="375.3" r="1.4" fill="#5b3a8e"/>
+<circle cx="387.1" cy="382.3" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="387.1" cy="382.3" r="1.4" fill="#5b3a8e"/>
+<circle cx="382.3" cy="388.7" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="382.3" cy="388.7" r="1.4" fill="#5b3a8e"/>
+<circle cx="376.7" cy="394.3" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="376.7" cy="394.3" r="1.4" fill="#5b3a8e"/>
+<circle cx="370.3" cy="399.1" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="370.3" cy="399.1" r="1.4" fill="#5b3a8e"/>
+<circle cx="363.3" cy="402.9" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="363.3" cy="402.9" r="1.4" fill="#5b3a8e"/>
+<circle cx="355.8" cy="405.7" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="355.8" cy="405.7" r="1.4" fill="#5b3a8e"/>
+<circle cx="348.0" cy="407.4" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="348.0" cy="407.4" r="1.4" fill="#5b3a8e"/>
+<circle cx="340.0" cy="408.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="340.0" cy="408.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="332.0" cy="407.4" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="332.0" cy="407.4" r="1.4" fill="#5b3a8e"/>
+<circle cx="324.2" cy="405.7" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="324.2" cy="405.7" r="1.4" fill="#5b3a8e"/>
+<circle cx="316.7" cy="402.9" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="316.7" cy="402.9" r="1.4" fill="#5b3a8e"/>
+<circle cx="309.7" cy="399.1" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="309.7" cy="399.1" r="1.4" fill="#5b3a8e"/>
+<circle cx="303.3" cy="394.3" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="303.3" cy="394.3" r="1.4" fill="#5b3a8e"/>
+<circle cx="297.7" cy="388.7" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="297.7" cy="388.7" r="1.4" fill="#5b3a8e"/>
+<circle cx="292.9" cy="382.3" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="292.9" cy="382.3" r="1.4" fill="#5b3a8e"/>
+<circle cx="289.1" cy="375.3" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="289.1" cy="375.3" r="1.4" fill="#5b3a8e"/>
+<circle cx="286.3" cy="367.8" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="286.3" cy="367.8" r="1.4" fill="#5b3a8e"/>
+<circle cx="284.6" cy="360.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="284.6" cy="360.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="284.0" cy="352.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="284.0" cy="352.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="284.6" cy="344.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="284.6" cy="344.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="286.3" cy="336.2" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="286.3" cy="336.2" r="1.4" fill="#5b3a8e"/>
+<circle cx="289.1" cy="328.7" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="289.1" cy="328.7" r="1.4" fill="#5b3a8e"/>
+<circle cx="292.9" cy="321.7" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="292.9" cy="321.7" r="1.4" fill="#5b3a8e"/>
+<circle cx="297.7" cy="315.3" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="297.7" cy="315.3" r="1.4" fill="#5b3a8e"/>
+<circle cx="303.3" cy="309.7" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="303.3" cy="309.7" r="1.4" fill="#5b3a8e"/>
+<circle cx="309.7" cy="304.9" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="309.7" cy="304.9" r="1.4" fill="#5b3a8e"/>
+<circle cx="316.7" cy="301.1" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="316.7" cy="301.1" r="1.4" fill="#5b3a8e"/>
+<circle cx="324.2" cy="298.3" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="324.2" cy="298.3" r="1.4" fill="#5b3a8e"/>
+<circle cx="332.0" cy="296.6" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="332.0" cy="296.6" r="1.4" fill="#5b3a8e"/>
+<circle cx="340.0" cy="296.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="340.0" cy="296.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="348.0" cy="296.6" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="348.0" cy="296.6" r="1.4" fill="#5b3a8e"/>
+<circle cx="355.8" cy="298.3" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="355.8" cy="298.3" r="1.4" fill="#5b3a8e"/>
+<circle cx="363.3" cy="301.1" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="363.3" cy="301.1" r="1.4" fill="#5b3a8e"/>
+<circle cx="370.3" cy="304.9" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="370.3" cy="304.9" r="1.4" fill="#5b3a8e"/>
+<circle cx="376.7" cy="309.7" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="376.7" cy="309.7" r="1.4" fill="#5b3a8e"/>
+<circle cx="382.3" cy="315.3" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="382.3" cy="315.3" r="1.4" fill="#5b3a8e"/>
+<circle cx="387.1" cy="321.7" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="387.1" cy="321.7" r="1.4" fill="#5b3a8e"/>
+<circle cx="390.9" cy="328.7" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="390.9" cy="328.7" r="1.4" fill="#5b3a8e"/>
+<circle cx="393.7" cy="336.2" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="393.7" cy="336.2" r="1.4" fill="#5b3a8e"/>
+<circle cx="395.4" cy="344.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="395.4" cy="344.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="389.9" cy="354.5" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="389.9" cy="354.5" r="1.4" fill="#5b3a8e"/>
+<circle cx="388.8" cy="362.7" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="388.8" cy="362.7" r="1.4" fill="#5b3a8e"/>
+<circle cx="386.4" cy="370.6" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="386.4" cy="370.6" r="1.4" fill="#5b3a8e"/>
+<circle cx="382.7" cy="378.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="382.7" cy="378.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="377.9" cy="384.6" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="377.9" cy="384.6" r="1.4" fill="#5b3a8e"/>
+<circle cx="372.0" cy="390.4" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="372.0" cy="390.4" r="1.4" fill="#5b3a8e"/>
+<circle cx="365.2" cy="395.2" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="365.2" cy="395.2" r="1.4" fill="#5b3a8e"/>
+<circle cx="357.8" cy="398.7" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="357.8" cy="398.7" r="1.4" fill="#5b3a8e"/>
+<circle cx="349.8" cy="401.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="349.8" cy="401.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="341.6" cy="402.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="341.6" cy="402.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="333.4" cy="401.6" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="333.4" cy="401.6" r="1.4" fill="#5b3a8e"/>
+<circle cx="325.3" cy="399.8" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="325.3" cy="399.8" r="1.4" fill="#5b3a8e"/>
+<circle cx="317.7" cy="396.7" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="317.7" cy="396.7" r="1.4" fill="#5b3a8e"/>
+<circle cx="310.6" cy="392.4" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="310.6" cy="392.4" r="1.4" fill="#5b3a8e"/>
+<circle cx="304.3" cy="387.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="304.3" cy="387.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="299.1" cy="380.7" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="299.1" cy="380.7" r="1.4" fill="#5b3a8e"/>
+<circle cx="294.9" cy="373.6" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="294.9" cy="373.6" r="1.4" fill="#5b3a8e"/>
+<circle cx="292.0" cy="365.9" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="292.0" cy="365.9" r="1.4" fill="#5b3a8e"/>
+<circle cx="290.3" cy="357.8" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="290.3" cy="357.8" r="1.4" fill="#5b3a8e"/>
+<circle cx="290.1" cy="349.5" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="290.1" cy="349.5" r="1.4" fill="#5b3a8e"/>
+<circle cx="291.2" cy="341.3" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="291.2" cy="341.3" r="1.4" fill="#5b3a8e"/>
+<circle cx="293.6" cy="333.4" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="293.6" cy="333.4" r="1.4" fill="#5b3a8e"/>
+<circle cx="297.3" cy="326.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="297.3" cy="326.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="302.1" cy="319.4" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="302.1" cy="319.4" r="1.4" fill="#5b3a8e"/>
+<circle cx="308.0" cy="313.6" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="308.0" cy="313.6" r="1.4" fill="#5b3a8e"/>
+<circle cx="314.8" cy="308.8" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="314.8" cy="308.8" r="1.4" fill="#5b3a8e"/>
+<circle cx="322.2" cy="305.3" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="322.2" cy="305.3" r="1.4" fill="#5b3a8e"/>
+<circle cx="330.2" cy="303.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="330.2" cy="303.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="338.4" cy="302.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="338.4" cy="302.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="346.6" cy="302.4" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="346.6" cy="302.4" r="1.4" fill="#5b3a8e"/>
+<circle cx="354.7" cy="304.2" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="354.7" cy="304.2" r="1.4" fill="#5b3a8e"/>
+<circle cx="362.3" cy="307.3" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="362.3" cy="307.3" r="1.4" fill="#5b3a8e"/>
+<circle cx="369.4" cy="311.6" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="369.4" cy="311.6" r="1.4" fill="#5b3a8e"/>
+<circle cx="375.7" cy="317.0" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="375.7" cy="317.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="380.9" cy="323.3" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="380.9" cy="323.3" r="1.4" fill="#5b3a8e"/>
+<circle cx="385.1" cy="330.4" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="385.1" cy="330.4" r="1.4" fill="#5b3a8e"/>
+<circle cx="388.0" cy="338.1" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="388.0" cy="338.1" r="1.4" fill="#5b3a8e"/>
+<circle cx="389.7" cy="346.2" r="3.2" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="389.7" cy="346.2" r="1.4" fill="#5b3a8e"/>
+<circle cx="340" cy="352" r="46" fill="#fff9db" stroke="#e9d8a6"/>
+<path d="M314 392 Q316 358 346 358 Q370 362 362 394 Z" fill="#f9d5e3"/>
+<circle cx="322" cy="372" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="322" cy="372" r="1.3" fill="#5b3a8e"/>
+<circle cx="329" cy="372" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="329" cy="372" r="1.3" fill="#5b3a8e"/>
+<circle cx="336" cy="372" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="336" cy="372" r="1.3" fill="#5b3a8e"/>
+<circle cx="343" cy="372" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="343" cy="372" r="1.3" fill="#5b3a8e"/>
+<circle cx="350" cy="372" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="350" cy="372" r="1.3" fill="#5b3a8e"/>
+<circle cx="357" cy="372" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="357" cy="372" r="1.3" fill="#5b3a8e"/>
+<circle cx="322" cy="379" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="322" cy="379" r="1.3" fill="#5b3a8e"/>
+<circle cx="329" cy="379" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="329" cy="379" r="1.3" fill="#5b3a8e"/>
+<circle cx="336" cy="379" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="336" cy="379" r="1.3" fill="#5b3a8e"/>
+<circle cx="343" cy="379" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="343" cy="379" r="1.3" fill="#5b3a8e"/>
+<circle cx="350" cy="379" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="350" cy="379" r="1.3" fill="#5b3a8e"/>
+<circle cx="357" cy="379" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="357" cy="379" r="1.3" fill="#5b3a8e"/>
+<circle cx="322" cy="386" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="322" cy="386" r="1.3" fill="#5b3a8e"/>
+<circle cx="329" cy="386" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="329" cy="386" r="1.3" fill="#5b3a8e"/>
+<circle cx="336" cy="386" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="336" cy="386" r="1.3" fill="#5b3a8e"/>
+<circle cx="343" cy="386" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="343" cy="386" r="1.3" fill="#5b3a8e"/>
+<circle cx="350" cy="386" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="350" cy="386" r="1.3" fill="#5b3a8e"/>
+<circle cx="357" cy="386" r="3" fill="#f9d5e3" stroke="#c88aa2" stroke-width=".5"/><circle cx="357" cy="386" r="1.3" fill="#5b3a8e"/>
+<circle cx="356.0" cy="356.0" r="3" fill="#fde2ec" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="356.0" cy="356.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="354.4" cy="362.9" r="3" fill="#fde2ec" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="354.4" cy="362.9" r="1.4" fill="#5b3a8e"/>
+<circle cx="350.0" cy="368.5" r="3" fill="#fde2ec" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="350.0" cy="368.5" r="1.4" fill="#5b3a8e"/>
+<circle cx="343.6" cy="371.6" r="3" fill="#fde2ec" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="343.6" cy="371.6" r="1.4" fill="#5b3a8e"/>
+<circle cx="336.4" cy="371.6" r="3" fill="#fde2ec" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="336.4" cy="371.6" r="1.4" fill="#5b3a8e"/>
+<circle cx="330.0" cy="368.5" r="3" fill="#fde2ec" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="330.0" cy="368.5" r="1.4" fill="#5b3a8e"/>
+<circle cx="325.6" cy="362.9" r="3" fill="#fde2ec" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="325.6" cy="362.9" r="1.4" fill="#5b3a8e"/>
+<circle cx="324.0" cy="356.0" r="3" fill="#fde2ec" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="324.0" cy="356.0" r="1.4" fill="#5b3a8e"/>
+<circle cx="325.6" cy="349.1" r="3" fill="#fde2ec" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="325.6" cy="349.1" r="1.4" fill="#5b3a8e"/>
+<circle cx="330.0" cy="343.5" r="3" fill="#fde2ec" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="330.0" cy="343.5" r="1.4" fill="#5b3a8e"/>
+<circle cx="336.4" cy="340.4" r="3" fill="#fde2ec" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="336.4" cy="340.4" r="1.4" fill="#5b3a8e"/>
+<circle cx="343.6" cy="340.4" r="3" fill="#fde2ec" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="343.6" cy="340.4" r="1.4" fill="#5b3a8e"/>
+<circle cx="350.0" cy="343.5" r="3" fill="#fde2ec" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="350.0" cy="343.5" r="1.4" fill="#5b3a8e"/>
+<circle cx="354.4" cy="349.1" r="3" fill="#fde2ec" stroke="#c88aa2" stroke-width=".6"/>
+<circle cx="354.4" cy="349.1" r="1.4" fill="#5b3a8e"/>
+<circle cx="340" cy="356" r="11.5" fill="#f783ac" opacity=".55"/>
+<circle cx="340" cy="356" r="9" fill="#fff0f6" stroke="#c2255c" stroke-width="1"/>
+<circle cx="340" cy="356" r="3.4" fill="#e5dbff" stroke="#3d2466" stroke-width=".8"/><circle cx="340" cy="356" r="0.9" fill="#3d2466"/>
+<text x="366" y="334" font-size="8" font-weight="700" fill="#7a5a00" text-anchor="start">antro</text>
+<text x="310" y="382" font-size="7.6" font-weight="700" fill="#a61e4d" text-anchor="end">cumulus</text>
+<text x="340" y="426.0" font-size="8.7" font-weight="700" fill="#212529" text-anchor="middle">Antro enorme; ovócito no cumulus</text>
+<text x="340" y="438.2" font-size="8.7" font-weight="400" fill="#495057" text-anchor="middle">oophorus, cercado pela corona radiata;</text>
+<text x="340" y="450.4" font-size="8.7" font-weight="400" fill="#495057" text-anchor="middle">granulosa mural na parede</text>
+<rect x="461" y="260" width="212" height="150" rx="10" fill="#fff5f8" stroke="#f1c7d6"/>
+<rect x="461" y="260" width="212" height="150" rx="10" fill="url(#foliculos-estroma)" opacity=".5"/>
+<rect x="475" y="241" width="184" height="19" rx="9.5" fill="#7048e8"/><text x="567" y="255" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">6 · Corpo lúteo</text>
+<text x="567" y="280" font-size="8.2" font-weight="700" fill="#868e96" text-anchor="middle">depois da ovulação</text>
+<circle cx="567" cy="352" r="62" fill="#ffe8cc" stroke="#e8590c" stroke-width="1"/>
+<path d="M621.0 352.0 L609.9 361.8 L615.7 375.4 L601.4 379.4 L600.7 394.2 L586.1 391.6 L579.0 404.6 L567.0 396.0 L555.0 404.6 L547.9 391.6 L533.3 394.2 L532.6 379.4 L518.3 375.4 L524.1 361.8 L513.0 352.0 L524.1 342.2 L518.3 328.6 L532.6 324.6 L533.3 309.8 L547.9 312.4 L555.0 299.4 L567.0 308.0 L579.0 299.4 L586.1 312.4 L600.7 309.8 L601.4 324.6 L615.7 328.6 L609.9 342.2 Z" fill="#ffd43b" stroke="#e8590c" stroke-width="1.2" stroke-linejoin="round"/>
+<circle cx="567" cy="352" r="24" fill="#fff4e6" stroke="#f08c00"/>
+<circle cx="567" cy="352" r="10" fill="#ffc9c9"/>
+<circle cx="569.9" cy="389.7" r="1.6" fill="#5b3a8e"/>
+<circle cx="540.4" cy="380.4" r="1.6" fill="#5b3a8e"/>
+<circle cx="546.4" cy="331.3" r="1.6" fill="#5b3a8e"/>
+<circle cx="609.9" cy="355.6" r="1.6" fill="#5b3a8e"/>
+<circle cx="565.1" cy="384.2" r="1.6" fill="#5b3a8e"/>
+<circle cx="603.4" cy="350.9" r="1.6" fill="#5b3a8e"/>
+<circle cx="585.8" cy="320.6" r="1.6" fill="#5b3a8e"/>
+<circle cx="547.2" cy="328.5" r="1.6" fill="#5b3a8e"/>
+<circle cx="538.1" cy="319.4" r="1.6" fill="#5b3a8e"/>
+<circle cx="526.1" cy="346.1" r="1.6" fill="#5b3a8e"/>
+<circle cx="553.1" cy="326.4" r="1.6" fill="#5b3a8e"/>
+<circle cx="568.9" cy="313.4" r="1.6" fill="#5b3a8e"/>
+<circle cx="558.0" cy="379.1" r="1.6" fill="#5b3a8e"/>
+<circle cx="591.2" cy="324.6" r="1.6" fill="#5b3a8e"/>
+<circle cx="558.4" cy="309.0" r="1.6" fill="#5b3a8e"/>
+<circle cx="556.9" cy="308.6" r="1.6" fill="#5b3a8e"/>
+<circle cx="533.5" cy="378.0" r="1.6" fill="#5b3a8e"/>
+<circle cx="524.9" cy="367.3" r="1.6" fill="#5b3a8e"/>
+<circle cx="588.5" cy="331.4" r="1.6" fill="#5b3a8e"/>
+<circle cx="588.0" cy="376.1" r="1.6" fill="#5b3a8e"/>
+<circle cx="602.0" cy="344.2" r="1.6" fill="#5b3a8e"/>
+<circle cx="543.6" cy="328.2" r="1.6" fill="#5b3a8e"/>
+<circle cx="532.1" cy="350.5" r="1.6" fill="#5b3a8e"/>
+<circle cx="544.2" cy="383.1" r="1.6" fill="#5b3a8e"/>
+<circle cx="528.7" cy="329.7" r="1.6" fill="#5b3a8e"/>
+<circle cx="548.4" cy="311.3" r="1.6" fill="#5b3a8e"/>
+<circle cx="595.3" cy="316.0" r="1.6" fill="#5b3a8e"/>
+<circle cx="552.3" cy="324.8" r="1.6" fill="#5b3a8e"/>
+<circle cx="596.0" cy="317.1" r="1.6" fill="#5b3a8e"/>
+<circle cx="598.5" cy="330.4" r="1.6" fill="#5b3a8e"/>
+<circle cx="559.8" cy="321.0" r="1.6" fill="#5b3a8e"/>
+<circle cx="585.7" cy="318.6" r="1.6" fill="#5b3a8e"/>
+<circle cx="560.7" cy="380.4" r="1.6" fill="#5b3a8e"/>
+<circle cx="594.7" cy="315.5" r="1.6" fill="#5b3a8e"/>
+<circle cx="603.0" cy="374.4" r="1.6" fill="#5b3a8e"/>
+<circle cx="541.0" cy="368.4" r="1.6" fill="#5b3a8e"/>
+<circle cx="555.6" cy="392.3" r="1.6" fill="#5b3a8e"/>
+<circle cx="587.0" cy="331.3" r="1.6" fill="#5b3a8e"/>
+<circle cx="545.3" cy="333.1" r="1.6" fill="#5b3a8e"/>
+<circle cx="560.2" cy="318.7" r="1.6" fill="#5b3a8e"/>
+<text x="637" y="306" font-size="7.6" font-weight="700" fill="#d9480f" text-anchor="end">tecoluteínicas</text>
+<text x="527" y="400" font-size="7.6" font-weight="700" fill="#8a6d00" text-anchor="middle">granulosoluteínicas</text>
+<text x="567" y="426.0" font-size="8.7" font-weight="700" fill="#212529" text-anchor="middle">Granulosa e teca viram células</text>
+<text x="567" y="438.2" font-size="8.7" font-weight="400" fill="#495057" text-anchor="middle">luteínicas; secreta PROGESTERONA</text>
+<text x="567" y="450.4" font-size="8.7" font-weight="400" fill="#495057" text-anchor="middle">e estradiol; regride em corpo albicans</text>
+</svg><figcaption><b>Figura 5.</b> As fases do folículo, do primordial ao corpo lúteo, com o que aparece em cada uma. Os nomes seguem a aula; quando o Junqueira usa outro, ele aparece em cinza.</figcaption></figure>
+<div class="box deep"><div class="tag">Atenção · dois jeitos de nomear os folículos</div>
+A aula (e o Ross) usa: <b>primordial → primário (unilaminar) → secundário (multilaminar) → terciário (antral) → de Graaf</b>. O Junqueira chama o multilaminar de <b>“primário multilaminar”</b> e o antral de <b>“secundário”</b>. Uma questão dos compilados seguiu o Junqueira: “a característica principal do folículo <u>secundário</u> é a <b>presença do antro</b>”. Na prova, olhe a característica pedida: <b>antro = folículo antral</b>, seja qual for o nome.
+</div>
+<table class="dense">
+<thead><tr><th>Folículo</th><th>Células foliculares</th><th>Ovócito e zona pelúcida</th><th>Tecas e antro</th></tr></thead>
+<tbody>
+<tr><td class="g-ffo">Primordial</td><td>Uma camada <b>pavimentosa</b></td><td>Ovócito primário parado na prófase I; sem zona pelúcida</td><td>—</td></tr>
+<tr><td class="g-ffo">Primário (unilaminar)</td><td>Uma camada <b>cúbica</b></td><td>O ovócito cresce; a zona pelúcida <b>começa</b> a se organizar</td><td>—</td></tr>
+<tr><td class="g-ffo">Secundário (multilaminar)</td><td>Várias camadas: a <b>granulosa</b></td><td>Zona pelúcida <b>organizada</b> (ZP1, ZP2, ZP3, feitas pelo ovócito)</td><td>Começa a <b>teca interna</b></td></tr>
+<tr><td class="g-ffo">Terciário (antral)</td><td>Granulosa espessa</td><td>Ovócito grande</td><td>Espaços com <b>líquido folicular</b> que se juntam no <b>antro</b>; <b>teca interna</b> e <b>externa</b></td></tr>
+<tr><td class="g-ffo">De Graaf</td><td>Granulosa <b>mural</b> e <b>cumulus oophorus</b></td><td>Ovócito no cumulus, cercado pela <b>corona radiata</b></td><td>Antro enorme; ~2 cm, faz saliência na superfície</td></tr>
+</tbody></table>
+<div class="grid2">
+<figure class="img sm"><img src="res/hfem/classif.webp" alt="classif"><figcaption><b>Figura 6.</b> Desenvolvimento folicular (aula): o primordial, com células granulosas pavimentosas; o primário (unilaminar), em que a zona pelúcida começa a se organizar, produzida pelo ovócito primário; e o secundário (multilaminar), com várias camadas de células foliculares, zona pelúcida organizada e células da teca interna.</figcaption></figure>
+<figure class="img sm"><img src="res/hfem/primarios_he.webp" alt="primarios_he"><figcaption><b>Figura 7.</b> Folículos primários em corte (aula): o ovócito com núcleo e citoplasma, a zona pelúcida rosa em volta e a camada de células foliculares (zona granulosa).</figcaption></figure>
+</div>
+<div class="grid2">
+<div>
+<h4>As camadas do folículo maduro (aula)</h4>
+<ul class="tight">
+<li><b>Cumulus oophorus</b>: células da granulosa que formam o pedúnculo onde fica o ovócito.</li>
+<li><b>Granulosa mural</b>: reveste a parede do antro.</li>
+<li><b>Corona radiata</b>: células da granulosa presas à zona pelúcida; saem com o ovócito na ovulação.</li>
+<li><b>Teca interna</b>: camada <b>celular e vascularizada</b>; células que fazem esteroides, com <b>receptores de LH</b>, e secretam <b>androstenediona</b>.</li>
+<li><b>Teca externa</b>: camada <b>fibrosa</b> de conjuntivo, contínua com o estroma.</li>
+<li>Entre a granulosa e a teca fica a <b>lâmina basal</b>: a granulosa não tem vasos. Na granulosa aparecem os <b>corpúsculos de Call-Exner</b>.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hfem/tecas.webp" alt="tecas"><figcaption><b>Figura 8.</b> Folículo antral (aula): no detalhe, teca externa, teca interna (células produtoras de esteroides, com receptores de LH, e vasos), lâmina basal e células da granulosa com corpúsculos de Call-Exner; no corte, o antro (A), a granulosa (EG) e as tecas interna (TI) e externa (TE).</figcaption></figure>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/hfem/antral_he.webp" alt="antral_he"><figcaption><b>Figura 9.</b> Folículos antrais (aula): teca interna, zona granulosa, zona pelúcida, ovócito e o antro se formando.</figcaption></figure>
+<figure class="img sm"><img src="res/hfem/graaf.webp" alt="graaf"><figcaption><b>Figura 10.</b> Folículo de Graaf, maduro ou pré-ovulatório (aula): o antro, o ovócito primário no cúmulo oóforo, a corona radiata, a zona pelúcida, as tecas interna e externa e os vasos da teca interna.</figcaption></figure>
+</div>
+<div class="grid2">
+<div>
+<h4>Modelo das duas células (aula)</h4>
+<ol class="tight">
+<li>O <b>LH</b> estimula a <b>teca interna</b> a transformar o colesterol (que chega do sangue, na LDL) em <b>androstenediona</b>.</li>
+<li>A androstenediona atravessa a lâmina basal até a <b>granulosa</b>, onde o <b>FSH</b> estimula a <b>aromatase</b>, que a converte em <b>estradiol</b>.</li>
+</ol>
+<h4>Seleção e dominância</h4>
+<p>O <b>FSH</b> recruta vários folículos antrais. O que tem mais receptores de FSH e mais aromatase faz mais estradiol e inibina; esses dois baixam o FSH, e os outros, que dependiam dele, sofrem <b>atresia</b>. Só o <b>dominante</b> chega a Graaf (T137).</p>
+<p>Junções comunicantes ligam a granulosa ao ovócito através da zona pelúcida. Por elas passa o <b>inibidor da maturação do ovócito</b>, que o mantém parado na <b>prófase I</b> até o pico de LH.</p>
+</div>
+<figure class="img sm"><img src="res/hfem/duas_celulas.webp" alt="duas_celulas"><figcaption><b>Figura 11.</b> Duas células, duas gonadotrofinas (aula): na célula da teca interna, o LH estimula a síntese de androstenediona a partir do colesterol trazido pela lipoproteína de baixa densidade; na célula folicular (granulosa), o FSH estimula a aromatase, que converte a androstenediona em estradiol.</figcaption></figure>
+</div>
+<div class="box prova"><div class="tag">Cai na prova · folículos e hormônios (T137, compilados)</div>
+Modelo de duas células: “as células da <b>teca</b> têm receptores para <b>LH</b> e fazem andrógenos, que passam à <b>granulosa</b>, onde a <b>aromatase</b> os converte em estradiol sob ação do <b>FSH</b>” (T137). Erros comuns: teca com receptor de FSH; aromatase na teca. Dominância: “o FSH recruta vários antrais, mas só um domina, porque faz mais estradiol, que suprime o FSH” (T137). A secreção de GnRH precisa ser <b>pulsátil</b> (T137). Folículo “secundário” (Junqueira) = <b>antro</b>. Na prática: <b>antro</b> (líquido folicular: hialuronato, esteroides, fatores de crescimento), <b>granulosa</b> (estradiol), <b>cumulus oophorus</b>, <b>corona radiata</b>, <b>folículo primário unilaminar</b>, <b>ovócito primário</b> (forma o folículo).
+</div>
+</section>
+
+<!-- ============================== 4 OVULAÇÃO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-flu">4</span>Ovulação e corpo lúteo</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+O <b>pico de LH</b> faz o ovócito terminar a meiose I e o folículo de Graaf romper num ponto da superfície, o <b>estigma</b>. O que sobra do folículo é invadido por vasos e vira o <b>corpo lúteo</b>, que produz <b>progesterona</b>; sem gravidez, ele regride em cerca de 14 dias.
+</div>
+<table class="dense">
+<thead><tr><th>Fase do ciclo ovariano (aula)</th><th>O que acontece</th></tr></thead>
+<tbody>
+<tr><td class="g-ffo">1. Folicular</td><td>Do folículo primordial ao maduro; aquisição de <b>receptores de FSH</b>, de estrógenos e de andrógenos</td></tr>
+<tr><td class="g-flu">2. Ovulatória</td><td><b>Pico de LH</b> e amadurecimento do ovócito I; <b>proteases</b> degradam a teca externa e a túnica albugínea; formação do <b>estigma</b> e liberação do gameta</td></tr>
+<tr><td class="g-flu">3. Lútea</td><td><b>Invasão de vasos</b>; as células <b>murais da granulosa</b> e da <b>teca interna</b> se transformam em células luteínicas; <b>luteólise</b>, ou o corpo lúteo continua se houver fecundação</td></tr>
+</tbody></table>
+<div class="grid2">
+<div>
+<h4>O ovócito na ovulação</h4>
+<ul class="tight">
+<li>Com o pico de LH, o ovócito primário completa a <b>meiose I</b>: vira <b>ovócito secundário</b> e solta o <b>primeiro corpúsculo polar</b>.</li>
+<li>Ele para de novo na <b>metáfase II</b> e só termina a meiose se for fecundado.</li>
+<li>Sai cercado pela zona pelúcida e pela <b>corona radiata</b> e é captado pelas fímbrias.</li>
+<li>Depois da ruptura, a granulosa se pregueia e o antro se enche de sangue: o <b>corpo hemorrágico</b>.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hfem/ovulacao.webp" alt="ovulacao"><figcaption><b>Figura 12.</b> Ovulação (aula): no estigma, proteases dos fibroblastos, induzidas pelo pico de LH, degradam as fibras colágenas da túnica albugínea e da teca externa; sai o ovócito secundário com a zona pelúcida, a corona radiata e o primeiro corpúsculo polar; depois os vasos da teca interna invadem a granulosa e o antro se enche de sangue (corpo hemorrágico).</figcaption></figure>
+</div>
+<figure class="img"><img src="res/hfem/eixo.webp" alt="eixo"><figcaption><b>Figura 13.</b> Eixo hipotálamo-hipófise-ovário (aula): os picos de FSH e LH antes da ovulação; o folículo amadurecendo, a ovulação, o corpo lúteo e sua degeneração; embaixo, o estrogênio e a progesterona e o endométrio nas fases menstrual, proliferativa e secretora.</figcaption></figure>
+<div class="grid2">
+<div>
+<h4>Corpo lúteo (aula)</h4>
+<ul class="tight">
+<li><b>Células granulosoluteínicas</b>: vêm da granulosa; grandes, claras, no centro das pregas. Fazem <b>progesterona</b> e, com a aromatase, <b>estradiol</b> a partir da androstenediona.</li>
+<li><b>Células tecoluteínicas</b>: vêm da teca interna; menores, mais coradas, na periferia e nas reentrâncias. Fazem <b>androstenediona</b> e progesterona, sob LH.</li>
+<li>É uma glândula endócrina temporária, muito vascularizada.</li>
+<li><b>Luteólise</b>: sem gravidez, regride em cerca de 14 dias (falta de LH, baixa de oxigênio, citocinas de células T e macrófagos) e vira o <b>corpo albicans</b>, uma cicatriz de conjuntivo.</li>
+<li><b>Gravidez</b>: o hCG do embrião mantém o corpo lúteo, que sustenta o endométrio nos primeiros meses.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hfem/luteinicas.webp" alt="luteinicas"><figcaption><b>Figura 14.</b> Corpo lúteo (aula): no esquema, as células granulosoluteínicas (grandes, claras) e as tecoluteínicas (na periferia), o tecido conjuntivo e o estroma; no corte, as duas populações (setas).</figcaption></figure>
+</div>
+<figure class="img"><img src="res/hfem/corpo_luteo.webp" alt="corpo_luteo"><figcaption><b>Figura 15.</b> Formação e função do corpo lúteo (aula): no corte, o corpo lúteo ocupando o ovário; no esquema, as células granulosoluteínicas, estimuladas pelo FSH, fazem progesterona e estradiol a partir da androstenediona feita pelas tecoluteínicas sob LH; a prolactina potencializa os efeitos do estradiol.</figcaption></figure>
+<div class="box prova"><div class="tag">Cai na prova · ciclo ovariano (T137, T136, compilados)</div>
+A menstruação é desencadeada pela <b>queda simultânea de estradiol e progesterona</b> no fim da fase lútea (T137). Ordem dos eventos do ciclo: crescimento folicular e estradiol → <b>feedback positivo</b> do estradiol → pico de LH → ovulação → progesterona do corpo lúteo → regressão (T136 e compilados). Para saber se houve ovulação, biópsia do endométrio no <b>22º dia</b>: o endométrio secretor prova que houve progesterona, logo, corpo lúteo.
+</div>
+</section>
+
+<!-- ============================== 5 TUBA ============================== -->
+<section class="sec flow">
+<h2><span class="num n-ftu">5</span>Tuba uterina</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+A tuba é o <b>local da fertilização e da clivagem</b> (aula), com quatro regiões: <b>infundíbulo com fímbrias, ampola, istmo e parte intramural</b>, que se abre no útero. A parede tem <b>três camadas</b>: mucosa, muscular e serosa. <b>Não há submucosa.</b>
+</div>
+<div class="grid2">
+<div>
+<ul class="tight">
+<li><b>Mucosa</b> com <b>pregas</b> longitudinais, muito altas e ramificadas na <b>ampola</b> (a luz parece um labirinto) e menores no istmo.</li>
+<li><b>Epitélio cilíndrico simples</b> com <b>células ciliadas</b>, cujos cílios batem em direção ao útero, e <b>células secretoras não ciliadas</b>, que nutrem os gametas e o embrião inicial (aula).</li>
+<li>O estrogênio aumenta os cílios e a altura do epitélio; a progesterona aumenta a secreção.</li>
+<li><b>Lâmina própria</b> de conjuntivo frouxo.</li>
+<li><b>Muscular</b>: <b>circular interna e longitudinal externa</b> (aula); faz o peristaltismo.</li>
+<li><b>Serosa</b>: mesotélio (peritônio).</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hfem/tuba_he.webp" alt="tuba_he"><figcaption><b>Figura 16.</b> Tuba uterina (aula): a mucosa com pregas altas e ramificadas, revestida por epitélio cilíndrico simples, e a camada muscular embaixo.</figcaption></figure>
+</div>
+<div class="grid2">
+<div class="box clin"><div class="tag">Correlação clínica · salpingite e gravidez ectópica</div>
+A inflamação da tuba (salpingite, como na doença inflamatória pélvica) destrói cílios e funde pregas: o embrião fica preso e implanta na própria tuba, sobretudo na <b>ampola</b> (<b>gravidez ectópica</b>). Se a tuba fecha e se enche de líquido (<b>hidrossalpinge</b>), há infertilidade. Como a tuba se abre na cavidade peritoneal, infecções genitais podem chegar ao peritônio.
+</div>
+<div class="box prova"><div class="tag">Cai na prova · tuba (T137, T136, compilados)</div>
+Mucosa muito pregueada com <b>epitélio cilíndrico simples de células ciliadas e secretoras</b> (T137). Células ciliadas transportam o ovócito, e a lesão delas favorece ectópica; as secretoras nutrem: <b>corretas</b>; “a tuba tem submucosa” é <b>falso</b> (T136). “Epitélio pavimentoso simples com glândulas tubulares” é <b>falso</b> (compilados). Fecundação: <b>ampola</b> (T136). Peritonite mais comum na mulher: a tuba se abre na cavidade peritoneal. Na prática: <b>tuba</b> (diagnóstico pelo labirinto de pregas), <b>epitélio cilíndrico simples ciliado e secretor</b>.
+</div>
+</div>
+</section>
+
+<!-- ============================== 6 ÚTERO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-fut">6</span>Útero: miométrio e endométrio</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+A parede do útero tem o <b>perimétrio</b> (serosa ou adventícia), o <b>miométrio</b> (músculo liso, a camada mais grossa) e o <b>endométrio</b> (a mucosa), com uma camada <b>funcional</b> que muda e descama a cada ciclo e uma <b>basal</b> que fica.
+</div>
+<div class="grid2">
+<div>
+<h4>Miométrio (aula)</h4>
+<ul class="tight">
+<li><b>Músculo liso</b>, involuntário, em <b>três camadas</b> mal delimitadas: externa e interna (longitudinais ou oblíquas) e a <b>central, circular</b>, com muitos vasos grandes, o <b>estrato vascular</b>.</li>
+<li>Na <b>gestação</b>: <b>hipertrofia e hiperplasia</b> das fibras musculares.</li>
+<li><b>Relaxina</b> amolece o colo e relaxa a pelve; <b>ocitocina</b> faz o útero contrair no parto.</li>
+</ul>
+<h4>Endométrio (aula)</h4>
+<ul class="tight">
+<li><b>Epitélio cilíndrico simples</b> (células secretoras e algumas ciliadas).</li>
+<li><b>Glândulas tubulosas simples</b>, que se abrem na superfície.</li>
+<li><b>Lâmina própria</b>, o <b>estroma endometrial</b>: conjuntivo muito celular.</li>
+<li><b>Duas camadas</b>: a <b>funcional</b>, junto à luz, e a <b>basal</b>, junto ao miométrio.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hfem/endometrio_esq.webp" alt="endometrio_esq"><figcaption><b>Figura 17.</b> Endométrio (aula): a camada funcional e a basal, as glândulas secretoras, a artéria basal reta, que só irriga a basal, e a artéria espiralada, que sobe na funcional, ramos da artéria uterina no miométrio.</figcaption></figure>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/hfem/miometrio.webp" alt="miometrio"><figcaption><b>Figura 18.</b> Miométrio (aula): feixes de músculo liso em várias direções, com vasos; no canto, glândulas do endométrio.</figcaption></figure>
+<figure class="img sm"><img src="res/hfem/funcional.webp" alt="funcional"><figcaption><b>Figura 19.</b> Camada funcional do endométrio (aula): as glândulas tubulosas simples, longas e paralelas, no estroma, abrindo na superfície.</figcaption></figure>
+</div>
+<table class="dense">
+<thead><tr><th></th><th>Camada funcional</th><th>Camada basal</th></tr></thead>
+<tbody>
+<tr><td class="g-fut">Posição</td><td>Junto à luz, a maior parte da espessura</td><td>Junto ao miométrio</td></tr>
+<tr><td class="g-fut">Vasos</td><td><b>Artérias espiraladas</b>, sensíveis aos hormônios</td><td><b>Artérias retas (basais)</b>, que não respondem aos hormônios</td></tr>
+<tr><td class="g-fut">No ciclo</td><td>Mais afetada pelos <b>estrógenos e progesterona</b> e pelo fluxo das espiraladas; <b>perdida na menstruação</b> (aula)</td><td><b>Preservada</b>: os fundos das glândulas e o estroma regeneram a funcional</td></tr>
+</tbody></table>
+<div class="grid2">
+<div class="box clin"><div class="tag">Correlação clínica · curetagem e infertilidade</div>
+Se a curetagem raspa até a <b>camada basal</b>, não sobra de onde regenerar o endométrio: formam-se aderências na cavidade (síndrome de Asherman), e o embrião não consegue implantar. É a principal causa de esterilidade depois de uma curetagem pós-aborto (T137).
+</div>
+<div class="box prova"><div class="tag">Cai na prova · útero (T137, T136, compilados)</div>
+“Endométrio revestido por epitélio colunar simples com glândulas tubulares que mudam com o ciclo”: <b>correta</b> (T136). “Miométrio de músculo <u>estriado</u> voluntário”: <b>falso</b>, é liso. “Endométrio é a camada muscular”: <b>falso</b> (T137 e compilados). “Na menstruação a camada <u>basal</u> é perdida”: <b>falso</b>, é a funcional. Na prática: <b>útero</b> (vem dos ductos de Müller), <b>miométrio</b> (músculo liso), <b>glândula uterina</b> (tubulosa simples).
+</div>
+</div>
+</section>
+
+<!-- ============================== 7 CICLO ENDOMETRIAL ============================== -->
+<section class="sec flow">
+<h2><span class="num n-fut">7</span>Ciclo endometrial</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+O endométrio acompanha os hormônios do ovário: <b>estrogênio</b> do folículo faz a funcional <b>proliferar</b>; <b>progesterona</b> do corpo lúteo a torna <b>secretora</b>; quando o corpo lúteo regride, as artérias espiraladas se contraem, a funcional fica isquêmica e <b>descama</b> na menstruação (aula).
+</div>
+<figure class="fig"><svg role="img" aria-label="endometrio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" font-family="Inter, Helvetica, Arial, sans-serif">
+<rect x="29" y="5" width="170" height="19" rx="9.5" fill="#2b8a3e"/><text x="114.0" y="19" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">Fase proliferativa</text>
+<text x="114.0" y="38" font-size="8.6" font-weight="700" fill="#2b8a3e" text-anchor="middle">dias 5–14 · ESTROGÊNIO</text>
+<rect x="14" y="226" width="200" height="26" fill="#f08cad"/>
+<ellipse cx="24" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="44" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="64" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="84" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="104" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="124" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="144" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="164" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="184" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="204" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<rect x="14" y="196" width="200" height="30" fill="#f5c2d6"/>
+<rect x="14" y="104" width="200" height="92" fill="#fbe3ec"/>
+<circle cx="137.6" cy="170.8" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="170.7" cy="187.3" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="160.1" cy="185.6" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="23.6" cy="148.2" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="199.1" cy="163.2" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="191.0" cy="119.3" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="108.1" cy="130.2" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="122.4" cy="157.1" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="20.5" cy="127.8" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="71.7" cy="185.1" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="165.0" cy="123.1" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="171.1" cy="121.4" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="136.6" cy="120.4" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="18.3" cy="181.5" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="58.2" cy="127.7" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="206.6" cy="181.5" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="73.5" cy="188.8" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="121.5" cy="165.6" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="57.3" cy="187.2" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="150.6" cy="189.3" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="189.6" cy="134.5" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="87.3" cy="123.6" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="46.0" cy="115.3" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="75.9" cy="159.5" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="18.6" cy="165.6" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="82.9" cy="135.4" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="175.2" cy="149.4" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="78.6" cy="149.5" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="153.3" cy="114.7" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="205.2" cy="111.9" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="162.0" cy="179.3" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="21.5" cy="174.6" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="88.3" cy="157.4" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="19.7" cy="113.8" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="52.7" cy="188.3" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="55.7" cy="172.0" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="196.5" cy="187.2" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="84.1" cy="139.1" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="118.7" cy="173.6" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="38.7" cy="171.4" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="171.1" cy="180.5" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="25.0" cy="187.6" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="35.5" cy="137.9" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="135.3" cy="185.3" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="83.3" cy="185.8" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="122.7" cy="135.6" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="78.8" cy="124.6" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="33.0" cy="122.2" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="150.3" cy="191.7" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="49.0" cy="114.0" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="207.4" cy="153.7" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="95.9" cy="129.5" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="132.0" cy="177.8" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="105.5" cy="144.6" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="28.7" cy="185.1" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="24.3" cy="150.5" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="179.0" cy="120.7" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="158.5" cy="187.9" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="139.0" cy="174.6" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<circle cx="38.5" cy="145.6" r="1.4" fill="#5b3a8e" opacity="0.75"/>
+<line x1="14" y1="104" x2="214" y2="104" stroke="#7a3b5a" stroke-width="2.4"/>
+<path d="M36 106 L36 210" stroke="#7a3b5a" stroke-width="8" stroke-linecap="round"/><path d="M36 106 L36 210" stroke="#ffffff" stroke-width="3"/>
+<path d="M75 106 L75 210" stroke="#7a3b5a" stroke-width="8" stroke-linecap="round"/><path d="M75 106 L75 210" stroke="#ffffff" stroke-width="3"/>
+<path d="M114 106 L114 210" stroke="#7a3b5a" stroke-width="8" stroke-linecap="round"/><path d="M114 106 L114 210" stroke="#ffffff" stroke-width="3"/>
+<path d="M153 106 L153 210" stroke="#7a3b5a" stroke-width="8" stroke-linecap="round"/><path d="M153 106 L153 210" stroke="#ffffff" stroke-width="3"/>
+<path d="M192 106 L192 210" stroke="#7a3b5a" stroke-width="8" stroke-linecap="round"/><path d="M192 106 L192 210" stroke="#ffffff" stroke-width="3"/>
+<path d="M94 234 Q101 229 94 224 Q87 219 94 214 Q101 209 94 204 Q87 199 94 194 Q101 189 94 184 Q87 179 94 174 Q101 169 94 164 Q87 159 94 154 Q101 149 94 144 Q87 140 94 136" fill="none" stroke="#c92a2a" stroke-width="2.4"/>
+<text x="210" y="214" font-size="8" font-weight="800" fill="#7a3b5a" text-anchor="end">basal</text>
+<text x="210" y="244" font-size="8" font-weight="800" fill="#ffffff" text-anchor="end">miométrio</text>
+<rect x="255" y="5" width="170" height="19" rx="9.5" fill="#7048e8"/><text x="340.0" y="19" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">Fase secretora</text>
+<text x="340.0" y="38" font-size="8.6" font-weight="700" fill="#7048e8" text-anchor="middle">dias 15–28 · PROGESTERONA</text>
+<rect x="240" y="226" width="200" height="26" fill="#f08cad"/>
+<ellipse cx="250" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="270" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="290" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="310" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="330" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="350" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="370" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="390" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="410" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="430" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<rect x="240" y="196" width="200" height="30" fill="#f5c2d6"/>
+<rect x="240" y="44" width="200" height="152" fill="#fdf0f5"/>
+<circle cx="272.7" cy="170.0" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="300.6" cy="114.3" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="435.9" cy="171.0" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="431.4" cy="114.4" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="337.7" cy="153.6" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="336.0" cy="91.3" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="321.5" cy="70.8" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="316.4" cy="190.4" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="428.3" cy="139.0" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="339.9" cy="98.1" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="261.1" cy="88.7" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="394.1" cy="173.2" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="313.4" cy="161.6" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="392.8" cy="148.6" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="371.5" cy="157.9" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="313.8" cy="150.0" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="297.9" cy="119.0" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="391.8" cy="148.1" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="300.4" cy="184.3" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="368.7" cy="132.5" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="246.2" cy="127.7" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="292.1" cy="145.4" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="332.9" cy="166.0" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="368.3" cy="163.3" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="310.8" cy="141.5" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="385.7" cy="167.6" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="311.2" cy="169.7" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="411.0" cy="147.7" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="431.4" cy="185.8" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<circle cx="343.5" cy="125.2" r="2.2" fill="#5b3a8e" opacity="0.5"/>
+<line x1="240" y1="44" x2="440" y2="44" stroke="#7a3b5a" stroke-width="2.4"/>
+<path d="M262 46 Q272 52 262 58 Q252 64 262 70 Q272 76 262 82 Q252 88 262 94 Q272 100 262 106 Q252 112 262 118 Q272 124 262 130 Q252 136 262 142 Q272 148 262 154 Q252 160 262 166 Q272 172 262 178 Q252 184 262 190 Q272 196 262 202 Q252 206 262 210" fill="none" stroke="#7a3b5a" stroke-width="13" stroke-linecap="round"/><path d="M262 46 Q272 52 262 58 Q252 64 262 70 Q272 76 262 82 Q252 88 262 94 Q272 100 262 106 Q252 112 262 118 Q272 124 262 130 Q252 136 262 142 Q272 148 262 154 Q252 160 262 166 Q272 172 262 178 Q252 184 262 190 Q272 196 262 202 Q252 206 262 210" fill="none" stroke="#fff9db" stroke-width="7"/>
+<circle cx="260.0" cy="64" r="2" fill="#ffd43b"/>
+<circle cx="264.0" cy="98" r="2" fill="#ffd43b"/>
+<circle cx="264.6" cy="132" r="2" fill="#ffd43b"/>
+<circle cx="261.9" cy="166" r="2" fill="#ffd43b"/>
+<path d="M301 46 Q311 52 301 58 Q291 64 301 70 Q311 76 301 82 Q291 88 301 94 Q311 100 301 106 Q291 112 301 118 Q311 124 301 130 Q291 136 301 142 Q311 148 301 154 Q291 160 301 166 Q311 172 301 178 Q291 184 301 190 Q311 196 301 202 Q291 206 301 210" fill="none" stroke="#7a3b5a" stroke-width="13" stroke-linecap="round"/><path d="M301 46 Q311 52 301 58 Q291 64 301 70 Q311 76 301 82 Q291 88 301 94 Q311 100 301 106 Q291 112 301 118 Q311 124 301 130 Q291 136 301 142 Q311 148 301 154 Q291 160 301 166 Q311 172 301 178 Q291 184 301 190 Q311 196 301 202 Q291 206 301 210" fill="none" stroke="#fff9db" stroke-width="7"/>
+<circle cx="302.1" cy="64" r="2" fill="#ffd43b"/>
+<circle cx="302.3" cy="98" r="2" fill="#ffd43b"/>
+<circle cx="302.4" cy="132" r="2" fill="#ffd43b"/>
+<circle cx="299.0" cy="166" r="2" fill="#ffd43b"/>
+<path d="M340 46 Q350 52 340 58 Q330 64 340 70 Q350 76 340 82 Q330 88 340 94 Q350 100 340 106 Q330 112 340 118 Q350 124 340 130 Q330 136 340 142 Q350 148 340 154 Q330 160 340 166 Q350 172 340 178 Q330 184 340 190 Q350 196 340 202 Q330 206 340 210" fill="none" stroke="#7a3b5a" stroke-width="13" stroke-linecap="round"/><path d="M340 46 Q350 52 340 58 Q330 64 340 70 Q350 76 340 82 Q330 88 340 94 Q350 100 340 106 Q330 112 340 118 Q350 124 340 130 Q330 136 340 142 Q350 148 340 154 Q330 160 340 166 Q350 172 340 178 Q330 184 340 190 Q350 196 340 202 Q330 206 340 210" fill="none" stroke="#fff9db" stroke-width="7"/>
+<circle cx="341.7" cy="64" r="2" fill="#ffd43b"/>
+<circle cx="340.5" cy="98" r="2" fill="#ffd43b"/>
+<circle cx="341.0" cy="132" r="2" fill="#ffd43b"/>
+<circle cx="339.5" cy="166" r="2" fill="#ffd43b"/>
+<path d="M379 46 Q389 52 379 58 Q369 64 379 70 Q389 76 379 82 Q369 88 379 94 Q389 100 379 106 Q369 112 379 118 Q389 124 379 130 Q369 136 379 142 Q389 148 379 154 Q369 160 379 166 Q389 172 379 178 Q369 184 379 190 Q389 196 379 202 Q369 206 379 210" fill="none" stroke="#7a3b5a" stroke-width="13" stroke-linecap="round"/><path d="M379 46 Q389 52 379 58 Q369 64 379 70 Q389 76 379 82 Q369 88 379 94 Q389 100 379 106 Q369 112 379 118 Q389 124 379 130 Q369 136 379 142 Q389 148 379 154 Q369 160 379 166 Q389 172 379 178 Q369 184 379 190 Q389 196 379 202 Q369 206 379 210" fill="none" stroke="#fff9db" stroke-width="7"/>
+<circle cx="379.7" cy="64" r="2" fill="#ffd43b"/>
+<circle cx="380.6" cy="98" r="2" fill="#ffd43b"/>
+<circle cx="379.8" cy="132" r="2" fill="#ffd43b"/>
+<circle cx="380.3" cy="166" r="2" fill="#ffd43b"/>
+<path d="M418 46 Q428 52 418 58 Q408 64 418 70 Q428 76 418 82 Q408 88 418 94 Q428 100 418 106 Q408 112 418 118 Q428 124 418 130 Q408 136 418 142 Q428 148 418 154 Q408 160 418 166 Q428 172 418 178 Q408 184 418 190 Q428 196 418 202 Q408 206 418 210" fill="none" stroke="#7a3b5a" stroke-width="13" stroke-linecap="round"/><path d="M418 46 Q428 52 418 58 Q408 64 418 70 Q428 76 418 82 Q408 88 418 94 Q428 100 418 106 Q408 112 418 118 Q428 124 418 130 Q408 136 418 142 Q428 148 418 154 Q408 160 418 166 Q428 172 418 178 Q408 184 418 190 Q428 196 418 202 Q408 206 418 210" fill="none" stroke="#fff9db" stroke-width="7"/>
+<circle cx="415.2" cy="64" r="2" fill="#ffd43b"/>
+<circle cx="416.0" cy="98" r="2" fill="#ffd43b"/>
+<circle cx="417.6" cy="132" r="2" fill="#ffd43b"/>
+<circle cx="418.9" cy="166" r="2" fill="#ffd43b"/>
+<path d="M320 234 Q327 229 320 224 Q313 219 320 214 Q327 209 320 204 Q313 199 320 194 Q327 189 320 184 Q313 179 320 174 Q327 169 320 164 Q313 159 320 154 Q327 149 320 144 Q313 139 320 134 Q327 129 320 124 Q313 119 320 114 Q327 109 320 104 Q313 99 320 94 Q327 89 320 84 Q313 79 320 74 Q327 69 320 64 Q313 59 320 54" fill="none" stroke="#c92a2a" stroke-width="2.4"/>
+<text x="436" y="214" font-size="8" font-weight="800" fill="#7a3b5a" text-anchor="end">basal</text>
+<text x="436" y="244" font-size="8" font-weight="800" fill="#ffffff" text-anchor="end">miométrio</text>
+<rect x="481" y="5" width="170" height="19" rx="9.5" fill="#c92a2a"/><text x="566.0" y="19" text-anchor="middle" font-size="10.4" font-weight="800" fill="#fff">Fase menstrual</text>
+<text x="566.0" y="38" font-size="8.6" font-weight="700" fill="#c92a2a" text-anchor="middle">dias 1–4 · queda dos dois</text>
+<rect x="466" y="226" width="200" height="26" fill="#f08cad"/>
+<ellipse cx="476" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="496" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="516" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="536" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="556" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="576" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="596" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="616" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="636" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<ellipse cx="656" cy="239.0" rx="7" ry="1.4" fill="#5b3a8e" opacity=".6"/>
+<rect x="466" y="196" width="200" height="30" fill="#f5c2d6"/>
+<path d="M466 196 L466 168 Q496 150 516 172 Q546 140 576 166 Q606 146 626 170 Q651 152 666 164 L666 196 Z" fill="#fbe3ec"/>
+<circle cx="513.2" cy="124.9" r="2.5" fill="#e03131" opacity=".8"/>
+<circle cx="479.9" cy="107.7" r="1.9" fill="#e03131" opacity=".8"/>
+<circle cx="482.2" cy="80.7" r="2.0" fill="#e03131" opacity=".8"/>
+<circle cx="506.1" cy="85.5" r="1.6" fill="#e03131" opacity=".8"/>
+<circle cx="559.5" cy="100.4" r="2.5" fill="#e03131" opacity=".8"/>
+<circle cx="583.0" cy="89.0" r="2.9" fill="#e03131" opacity=".8"/>
+<circle cx="472.1" cy="102.4" r="2.0" fill="#e03131" opacity=".8"/>
+<circle cx="549.1" cy="79.2" r="2.8" fill="#e03131" opacity=".8"/>
+<circle cx="542.3" cy="72.9" r="2.5" fill="#e03131" opacity=".8"/>
+<circle cx="489.8" cy="113.6" r="2.1" fill="#e03131" opacity=".8"/>
+<circle cx="581.2" cy="146.7" r="2.7" fill="#e03131" opacity=".8"/>
+<circle cx="550.8" cy="135.0" r="2.5" fill="#e03131" opacity=".8"/>
+<circle cx="541.5" cy="81.4" r="2.4" fill="#e03131" opacity=".8"/>
+<circle cx="578.0" cy="146.6" r="3.0" fill="#e03131" opacity=".8"/>
+<circle cx="586.4" cy="98.1" r="2.9" fill="#e03131" opacity=".8"/>
+<circle cx="472.2" cy="78.6" r="2.4" fill="#e03131" opacity=".8"/>
+<circle cx="587.7" cy="81.3" r="2.5" fill="#e03131" opacity=".8"/>
+<circle cx="639.6" cy="100.1" r="2.2" fill="#e03131" opacity=".8"/>
+<circle cx="514.6" cy="93.3" r="3.0" fill="#e03131" opacity=".8"/>
+<circle cx="543.4" cy="146.9" r="2.9" fill="#e03131" opacity=".8"/>
+<circle cx="584.0" cy="90.8" r="3.0" fill="#e03131" opacity=".8"/>
+<circle cx="565.3" cy="103.2" r="2.0" fill="#e03131" opacity=".8"/>
+<circle cx="657.0" cy="109.3" r="2.0" fill="#e03131" opacity=".8"/>
+<circle cx="561.7" cy="79.8" r="2.5" fill="#e03131" opacity=".8"/>
+<circle cx="555.4" cy="93.4" r="2.7" fill="#e03131" opacity=".8"/>
+<circle cx="627.4" cy="71.1" r="2.3" fill="#e03131" opacity=".8"/>
+<path d="M519.8 136.1 l14 -4 l6 10 l-12 6 Z" fill="#fbe3ec" stroke="#c88aa2"/>
+<path d="M601.1 94.7 l14 -4 l6 10 l-12 6 Z" fill="#fbe3ec" stroke="#c88aa2"/>
+<path d="M518.8 89.3 l14 -4 l6 10 l-12 6 Z" fill="#fbe3ec" stroke="#c88aa2"/>
+<path d="M634.2 97.6 l14 -4 l6 10 l-12 6 Z" fill="#fbe3ec" stroke="#c88aa2"/>
+<path d="M573.3 108.5 l14 -4 l6 10 l-12 6 Z" fill="#fbe3ec" stroke="#c88aa2"/>
+<path d="M579.2 116.2 l14 -4 l6 10 l-12 6 Z" fill="#fbe3ec" stroke="#c88aa2"/>
+<path d="M595.0 87.1 l14 -4 l6 10 l-12 6 Z" fill="#fbe3ec" stroke="#c88aa2"/>
+<path d="M488 182 L488 210" stroke="#7a3b5a" stroke-width="8" stroke-linecap="round"/><path d="M488 182 L488 210" stroke="#ffffff" stroke-width="3"/>
+<path d="M527 182 L527 210" stroke="#7a3b5a" stroke-width="8" stroke-linecap="round"/><path d="M527 182 L527 210" stroke="#ffffff" stroke-width="3"/>
+<path d="M566 182 L566 210" stroke="#7a3b5a" stroke-width="8" stroke-linecap="round"/><path d="M566 182 L566 210" stroke="#ffffff" stroke-width="3"/>
+<path d="M605 182 L605 210" stroke="#7a3b5a" stroke-width="8" stroke-linecap="round"/><path d="M605 182 L605 210" stroke="#ffffff" stroke-width="3"/>
+<path d="M644 182 L644 210" stroke="#7a3b5a" stroke-width="8" stroke-linecap="round"/><path d="M644 182 L644 210" stroke="#ffffff" stroke-width="3"/>
+<path d="M546 234 q 6 -8 0 -16 q -6 -8 0 -16" fill="none" stroke="#c92a2a" stroke-width="2.4"/><path d="M546 200 l 6 -8" stroke="#c92a2a" stroke-width="2.4" stroke-dasharray="2 2"/>
+<text x="662" y="214" font-size="8" font-weight="800" fill="#7a3b5a" text-anchor="end">basal</text>
+<text x="662" y="244" font-size="8" font-weight="800" fill="#ffffff" text-anchor="end">miométrio</text>
+<text x="18" y="100" font-size="8" font-weight="800" fill="#7a3b5a" text-anchor="start">funcional</text>
+<text x="114.0" y="272" font-size="8.8" font-weight="400" fill="#343a40" text-anchor="middle">Funcional cresce de novo a partir da</text>
+<text x="114.0" y="285" font-size="8.8" font-weight="400" fill="#343a40" text-anchor="middle">basal; glândulas RETAS e estreitas;</text>
+<text x="114.0" y="298" font-size="8.8" font-weight="400" fill="#343a40" text-anchor="middle">estroma denso com mitoses; artérias</text>
+<text x="114.0" y="311" font-size="8.8" font-weight="400" fill="#343a40" text-anchor="middle">espiraladas curtas</text>
+<text x="340.0" y="272" font-size="8.8" font-weight="400" fill="#343a40" text-anchor="middle">Funcional mais alta; glândulas</text>
+<text x="340.0" y="285" font-size="8.8" font-weight="400" fill="#343a40" text-anchor="middle">TORTUOSAS, serrilhadas, com secreção</text>
+<text x="340.0" y="298" font-size="8.8" font-weight="400" fill="#343a40" text-anchor="middle">e GLICOGÊNIO; estroma edemaciado</text>
+<text x="340.0" y="311" font-size="8.8" font-weight="400" fill="#343a40" text-anchor="middle">(pré-decidual); espiraladas longas</text>
+<text x="566.0" y="272" font-size="8.8" font-weight="400" fill="#343a40" text-anchor="middle">As espiraladas se contraem (isquemia):</text>
+<text x="566.0" y="285" font-size="8.8" font-weight="400" fill="#343a40" text-anchor="middle">a camada FUNCIONAL descama com</text>
+<text x="566.0" y="298" font-size="8.8" font-weight="400" fill="#343a40" text-anchor="middle">sangue; a BASAL fica e regenera</text>
+<text x="566.0" y="311" font-size="8.8" font-weight="400" fill="#343a40" text-anchor="middle">tudo no ciclo seguinte</text>
+</svg><figcaption><b>Figura 20.</b> O endométrio em cada fase do ciclo: a forma das glândulas, o estroma e as artérias espiraladas.</figcaption></figure>
+<table class="dense">
+<thead><tr><th>Fase</th><th>Dias</th><th>Hormônio</th><th>Endométrio</th></tr></thead>
+<tbody>
+<tr><td class="g-fco">Menstrual</td><td>1 a 4</td><td>Queda de estradiol e progesterona</td><td>Funcional perdida com sangue; sobra a basal</td></tr>
+<tr><td class="g-ftu">Proliferativa (estrogênica)</td><td>5 a 14</td><td><b>Estradiol</b> (folículo)</td><td>Funcional se refaz a partir da basal; glândulas <b>retas e estreitas</b>; muitas <b>mitoses</b>; estroma denso</td></tr>
+<tr><td class="g-fut">Secretora (progestacional)</td><td>15 a 28</td><td><b>Progesterona</b> (corpo lúteo)</td><td>Glândulas <b>tortuosas</b> (serrilhadas), com <b>glicogênio</b> e secreção; estroma <b>edemaciado</b>, células pré-deciduais; artérias espiraladas longas</td></tr>
+<tr><td class="g-fco">Isquêmica</td><td>~27 a 28</td><td>Corpo lúteo regride</td><td>As espiraladas se contraem; a funcional fica sem sangue (aula)</td></tr>
+</tbody></table>
+<figure class="img"><img src="res/hfem/ciclo_endo.webp" alt="ciclo_endo"><figcaption><b>Figura 21.</b> Ciclo endometrial (aula): em cima, o endométrio na fase proliferativa (glândulas retilíneas, lâmina própria compacta) e na secretora (glândulas enoveladas, lâmina própria edemaciada), com as curvas de estradiol e progesterona; embaixo, as glândulas, a atividade mitótica, o glicogênio e as artérias espiraladas envolvidas por células semelhantes às deciduais, dia a dia.</figcaption></figure>
+<div class="box prova"><div class="tag">Cai na prova · ciclo endometrial (T137, compilados)</div>
+“Na fase secretora observa-se <b>desenvolvimento secretório das glândulas endometriais sob influência da progesterona</b>” (T137). “Fase secretora: glândulas <b>tortuosas</b> que acumulam <b>glicogênio</b>, artérias espiraladas, estroma <b>edemaciado</b> com células volumosas ou deciduais” (compilados). Biópsia para confirmar ovulação: <b>22º dia</b>. Na menstruação se perde a camada <b>funcional</b>.
+</div>
+</section>
+
+<!-- ============================== 8 COLO E VAGINA ============================== -->
+<section class="sec flow">
+<h2><span class="num n-fco">8</span>Colo uterino e vagina</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+O colo tem pouco músculo e muito conjuntivo denso. A <b>endocérvice</b>, o canal, tem <b>epitélio cilíndrico simples secretor de muco</b> e glândulas; a <b>ectocérvice</b>, a parte que aparece na vagina, tem <b>epitélio estratificado pavimentoso não queratinizado</b>. A fronteira entre os dois é a <b>zona de transformação</b> (aula).
+</div>
+<figure class="img"><img src="res/hfem/cervice.webp" alt="cervice"><figcaption><b>Figura 22.</b> Cérvice ou colo uterino (aula): o canal endocervical com epitélio simples cilíndrico secretor de muco e as criptas glandulares (glândulas cervicais); um cisto de Naboth; a ectocérvice com epitélio estratificado pavimentoso não queratinizado; a zona de transformação entre os dois; a vagina e o fórnice lateral.</figcaption></figure>
+<div class="grid2">
+<div>
+<h4>Endocérvice (aula)</h4>
+<ul class="tight">
+<li><b>Epitélio cilíndrico simples secretor de muco.</b></li>
+<li><b>Glândulas cervicais</b> (criptas) grandes e ramificadas. O muco é <b>fluido</b> perto da ovulação (estrogênio), facilitando a passagem dos espermatozoides, e <b>espesso</b> na fase lútea (progesterona).</li>
+<li>Quando o ducto de uma glândula entope, ela se enche de muco e vira um <b>cisto de Naboth</b>.</li>
+</ul>
+<h4>Ectocérvice e zona de transformação (aula)</h4>
+<ul class="tight">
+<li><b>Ectocérvice</b>: segmento externo, com <b>epitélio estratificado pavimentoso não queratinizado</b>.</li>
+<li><b>Zona de transformação</b> (junção escamocolunar): onde o epitélio colunar é substituído por pavimentoso (<b>metaplasia escamosa</b>). É o alvo do <b>HPV</b>.</li>
+<li>Sequência das lesões: <b>displasia</b> (células desorganizadas que descamam) → <b>carcinoma in situ</b> (intraepitelial) → <b>carcinoma invasivo</b> (aula).</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hfem/jec.webp" alt="jec"><figcaption><b>Figura 23.</b> Zona de transformação (junção escamocolunar) (aula): à esquerda, a endocérvice com epitélio simples cilíndrico secretor de muco; à direita, a ectocérvice com epitélio estratificado pavimentoso não queratinizado.</figcaption></figure>
+</div>
+<div class="grid2">
+<div>
+<h4>Vagina (aula)</h4>
+<ul class="tight">
+<li><b>Mucosa</b>: <b>epitélio estratificado pavimentoso não queratinizado</b>, rico em <b>glicogênio</b>, que no HE aparece como células claras (“imagem negativa”); lactobacilos transformam o glicogênio em ácido lático e deixam o pH ácido.</li>
+<li><b>Lâmina própria</b> rica em fibras elásticas e vasos, <b>sem glândulas</b>: a lubrificação vem do muco do colo e das <b>glândulas de Bartholin</b>, no vestíbulo (aula).</li>
+<li><b>Muscular</b>: camadas <b>circular e longitudinal</b> de músculo liso.</li>
+<li><b>Adventícia</b> de conjuntivo denso.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/hfem/vagina.webp" alt="vagina"><figcaption><b>Figura 24.</b> Vagina (aula): o epitélio estratificado pavimentoso não queratinizado, de células claras pela imagem negativa dos depósitos de glicogênio, sobre a lâmina própria.</figcaption></figure>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/hfem/endocervice.webp" alt="endocervice"><figcaption><b>Figura 25.</b> Endocérvice com glândulas endocervicais (aula): as glândulas ramificadas no estroma do colo, cheias de muco.</figcaption></figure>
+<div class="box prova"><div class="tag">Cai na prova · colo (T137, T136, compilados)</div>
+“A zona de transformação fica entre o <b>epitélio colunar simples da endocérvice</b> e o <b>pavimentoso estratificado não queratinizado da ectocérvice</b>; é local de metaplasia e de lesões precursoras” (T137). A JEC é área sensível a inflamação e metaplasia (T136). Papanicolau: interesse na <b>junção do colunar simples da endocérvice com o estratificado pavimentoso ectocervical</b>. HPV 16 e 18 são as principais cepas oncogênicas; a infecção atinge as células basais do epitélio metaplásico da JEC. Na prática: <b>junção escamocolunar</b> (patologia: câncer do colo), <b>glândula cervical</b> (muco), <b>cisto de Naboth</b> (glândula obstruída).
+</div>
+</div>
+</section>
+
+<!-- ============================== 9 MAMA ============================== -->
+<section class="sec flow">
+<h2><span class="num n-fco">9</span>Glândula mamária</h2>
+<div class="box deep"><div class="tag">Fora dos slides, mas cai na prova prática</div>
+A aula só cita a mama como anexo; esta parte vem do Junqueira e do Ross, porque há uma lâmina de mama na prática (“o mesmo órgão em dois estados”).
+</div>
+<table class="dense">
+<thead><tr><th></th><th>Inativa (não lactante)</th><th>Lactante</th></tr></thead>
+<tbody>
+<tr><td class="g-fco">Predomina</td><td><b>Tecido conjuntivo e gordura</b>, com poucos ductos e alvéolos pequenos</td><td><b>Alvéolos</b> grandes e dilatados; pouco estroma</td></tr>
+<tr><td class="g-fco">Luz</td><td>Pequena, vazia</td><td>Cheia de secreção, com gotas de lipídio</td></tr>
+<tr><td class="g-fco">Hormônios</td><td>Estrogênio faz os ductos crescerem na puberdade</td><td>Gestação: estrogênio e progesterona fazem os alvéolos proliferarem; <b>prolactina</b> faz o leite; <b>ocitocina</b> contrai as <b>células mioepiteliais</b> e ejeta o leite</td></tr>
+</tbody></table>
+<p>A mama é uma glândula <b>túbuloalveolar composta</b>, com 15 a 25 lobos, cada um drenado por um ducto lactífero que se abre no mamilo. Os alvéolos têm epitélio cúbico ou colunar baixo, envolvido por células mioepiteliais. Os lipídios do leite saem por secreção <b>apócrina</b>, e as proteínas por secreção <b>merócrina</b>.</p>
+</section>
+
+<!-- ============================== 10 RECONHECER ============================== -->
+<section class="sec flow">
+<h2><span class="num n-fov">10</span>Reconhecer na lâmina</h2>
+<table class="dense">
+<thead><tr><th>Órgão</th><th>Epitélio</th><th>O que entrega</th><th>Pegadinha</th></tr></thead>
+<tbody>
+<tr><td class="g-fov">Ovário</td><td>Mesotélio simples na superfície</td><td><b>Folículos</b> em várias fases e corpo lúteo no córtex; vasos grossos na medula</td><td>Folículos ficam no córtex, não na medula</td></tr>
+<tr><td class="g-ftu">Tuba uterina</td><td>Cilíndrico simples, ciliado e secretor</td><td>Luz em <b>labirinto</b> de pregas finas</td><td>Sem submucosa; sem glândulas</td></tr>
+<tr><td class="g-fut">Útero (corpo)</td><td>Cilíndrico simples</td><td><b>Glândulas tubulosas</b> no estroma celular; miométrio grosso</td><td>Glândula reta = proliferativa; tortuosa = secretora</td></tr>
+<tr><td class="g-fco">Endocérvice</td><td>Cilíndrico simples mucoso</td><td>Glândulas ramificadas cheias de muco; cistos de Naboth</td><td>Não confundir com o corpo: muco claro e conjuntivo denso</td></tr>
+<tr><td class="g-fco">Ectocérvice e vagina</td><td>Estratificado pavimentoso não queratinizado</td><td>Células claras (glicogênio)</td><td>A vagina não tem glândulas</td></tr>
+<tr><td class="g-fco">Junção escamocolunar</td><td>Colunar → pavimentoso</td><td>A troca brusca de epitélio no colo</td><td>Onde age o HPV</td></tr>
+<tr><td class="g-fco">Mama</td><td>Alvéolos cúbicos com mioepiteliais</td><td>Inativa: gordura; lactante: alvéolos cheios</td><td>Comparar os dois estados</td></tr>
+</tbody></table>
+<div class="box prova"><div class="tag">Cai na prova · prova prática (gincana e revisão)</div>
+As lâminas pedem: <b>ovário</b> (diagnóstico pelos folículos); <b>ovócito primário</b> (forma o folículo); <b>folículo primário unilaminar</b>; <b>antro</b> (líquido folicular); <b>célula da granulosa</b> (estradiol); <b>cumulus oophorus</b>; <b>corona radiata</b>; <b>tuba uterina</b> (função: captar o ovócito, local da fecundação; lesão: ectópica, infertilidade); <b>epitélio cilíndrico simples ciliado e secretor</b>; <b>útero</b> (ductos de Müller); <b>miométrio</b> (músculo liso); <b>glândula uterina</b>; <b>glândula cervical</b> (muco); <b>cisto de Naboth</b>; <b>junção escamocolunar</b> (câncer do colo); <b>mama</b> inativa e lactante.
+</div>
+</section>
+
+<!-- ============================== 11 REVISÃO ============================== -->
+<section class="sec flow newpage">
+<h2><span class="num">11</span>Revisão final</h2>
+<h3>11.1 Mapa-mestre</h3>
+<table class="dense master">
+<thead><tr><th>Estrutura</th><th>Onde fica</th><th>Células ou epitélio</th><th>Como reconhecer</th><th>Função</th></tr></thead>
+<tbody>
+<tr><td class="g-fov">Córtex ovariano</td><td>Periferia do ovário</td><td>Estroma de células fusiformes</td><td>Folículos e corpos lúteos</td><td>Gametas e hormônios</td></tr>
+<tr><td class="g-ffo">Folículo primordial</td><td>Logo abaixo da albugínea</td><td>Ovócito I + pavimentosas</td><td>Pequeno, uma camada achatada</td><td>Reserva</td></tr>
+<tr><td class="g-ffo">Folículo primário</td><td>Córtex</td><td>Ovócito + cúbicas</td><td>Uma camada cúbica; ZP começando</td><td>Crescimento</td></tr>
+<tr><td class="g-ffo">Folículo antral</td><td>Córtex</td><td>Granulosa, tecas</td><td>Antro com líquido</td><td>Estradiol (duas células)</td></tr>
+<tr><td class="g-ffo">Folículo de Graaf</td><td>Faz saliência na superfície</td><td>Cumulus, corona, granulosa mural</td><td>Antro enorme</td><td>Ovulação</td></tr>
+<tr><td class="g-flu">Teca interna</td><td>Em volta da granulosa</td><td>Células de esteroide com receptor de LH</td><td>Camada celular vascularizada</td><td>Androstenediona</td></tr>
+<tr><td class="g-flu">Corpo lúteo</td><td>No lugar do folículo roto</td><td>Granulosoluteínicas e tecoluteínicas</td><td>Massa amarela pregueada</td><td>Progesterona e estradiol</td></tr>
+<tr><td class="g-ftu">Tuba uterina</td><td>Do ovário ao útero</td><td>Cilíndrico simples ciliado e secretor</td><td>Labirinto de pregas</td><td>Captação, fecundação, transporte</td></tr>
+<tr><td class="g-fut">Miométrio</td><td>Parede do útero</td><td>Músculo liso (3 camadas)</td><td>Feixes grossos com estrato vascular</td><td>Contração; cresce na gestação</td></tr>
+<tr><td class="g-fut">Endométrio</td><td>Mucosa do útero</td><td>Cilíndrico simples, glândulas tubulosas</td><td>Funcional + basal</td><td>Implantação; menstruação</td></tr>
+<tr><td class="g-fco">Endocérvice</td><td>Canal do colo</td><td>Cilíndrico simples mucoso</td><td>Glândulas ramificadas, Naboth</td><td>Muco</td></tr>
+<tr><td class="g-fco">Ectocérvice e vagina</td><td>Colo externo e vagina</td><td>Estratificado pavimentoso não queratinizado</td><td>Células claras de glicogênio</td><td>Proteção; pH ácido</td></tr>
+</tbody></table>
+
+<h3>11.2 Vinte pontos de prova</h3>
+<ol class="cols2">
+<li>Gônada: epitélio celômico, mesênquima e células germinativas primordiais (saco vitelino).</li>
+<li>Müller → tubas, útero, parte superior da vagina.</li>
+<li>Ovário: mesotélio, albugínea, córtex (folículos) e medula (vasos).</li>
+<li>7 milhões (feto) → 1 milhão (nascimento) → 300 a 500 mil (puberdade).</li>
+<li>Primordial: uma camada pavimentosa; primário: uma camada cúbica.</li>
+<li>Secundário (multilaminar): granulosa, zona pelúcida, teca interna.</li>
+<li>Antral: antro com líquido folicular; tecas interna e externa.</li>
+<li>Graaf: cumulus oophorus, corona radiata, granulosa mural.</li>
+<li>Zona pelúcida: ZP1, ZP2, ZP3, feitas pelo ovócito.</li>
+<li>Teca interna: LH → androstenediona.</li>
+<li>Granulosa: FSH → aromatase → estradiol.</li>
+<li>Dominante: mais FSH-receptor e aromatase; os outros, atresia.</li>
+<li>Pico de LH: meiose I termina; ovócito II para em metáfase II.</li>
+<li>Estigma: proteases na albugínea e na teca externa.</li>
+<li>Corpo lúteo: granulosoluteínicas e tecoluteínicas; progesterona.</li>
+<li>Sem gravidez: luteólise em ~14 dias → corpo albicans.</li>
+<li>Tuba: ciliadas e secretoras; muscular circular interna e longitudinal externa; sem submucosa.</li>
+<li>Miométrio liso; endométrio funcional (espiraladas) e basal (retas).</li>
+<li>Proliferativa: glândulas retas; secretora: tortuosas com glicogênio; menstruação perde a funcional.</li>
+<li>Endocérvice colunar mucosa; ectocérvice e vagina pavimentosas; JEC = HPV.</li>
+</ol>
+
+<h3>11.3 Mnemônicos</h3>
+<div class="grid2">
+<div class="box mnem"><div class="tag">Folículos e hormônios</div>
+<b>P-P-S-T-G</b>: <b>P</b>rimordial (Pavimentosa), <b>P</b>rimário (Pequeno cubo: uma camada cúbica), <b>S</b>ecundário (Sobreposta, várias camadas), <b>T</b>erciário (Tem antro), <b>G</b>raaf (Grande).<br>
+<b>“Teca Toma LH, Granulosa Gira em estradiol”</b>: teca = LH = andrógeno; granulosa = FSH = aromatase.<br>
+<b>Lúteo = Leva progesterona</b>; albicans = branco = cicatriz.
+</div>
+<div class="box mnem"><div class="tag">Útero, colo e vagina</div>
+<b>Estrogênio Estica</b> (prolifera, glândula reta); <b>Progesterona Prepara</b> (secreta, glândula tortuosa).<br>
+<b>Funcional Foge, Basal Barra</b>: a funcional sai na menstruação, a basal fica.<br>
+<b>Endo = dentro = colunar mucoso; Ecto = fora = pavimentoso.</b> A fronteira é a JEC, onde o HPV mora.
+</div>
+</div>
+<p class="refs-compact"><b>Referências.</b> Junqueira LC, Carneiro J. <i>Histologia Básica</i> · Ross MH, Pawlina W. <i>Histologia: texto e atlas</i> · Slides da aula 5, <i>Histologia do Sistema Reprodutor Feminino</i>, Profa. Beatriz Duarte · Questões da T137, da T136 e dos compilados do módulo Gênito-Urinário · Lâminas da gincana de 2018 e da revisão 2025.1.</p>
+</section>
+
+<!-- ============================== 12 QUESTÕES ============================== -->
+<section class="sec flow">
+<h2><span class="num">12</span>Questões com gabarito comentado</h2>
+<ol class="questions">
+<li>De que tecidos embrionários se forma o ovário, e o que cada um origina?</li>
+<li>Descreva o córtex e a medula do ovário.</li>
+<li>Como diferenciar no corte os folículos primordial, primário, secundário (multilaminar), antral e de Graaf?</li>
+<li>Por que a mesma questão pode chamar o folículo antral de “secundário”?</li>
+<li>Explique o modelo das duas células na produção de estradiol.</li>
+<li>Por que só um folículo costuma ovular por ciclo?</li>
+<li>O que acontece com o ovócito e com o folículo no pico de LH?</li>
+<li>Descreva o corpo lúteo, suas células e o seu destino com e sem gravidez.</li>
+<li>Descreva a parede da tuba uterina e explique a relação entre salpingite e gravidez ectópica.</li>
+<li>Descreva as camadas do útero e as duas camadas do endométrio, com seus vasos.</li>
+<li>Compare o endométrio nas fases proliferativa e secretora.</li>
+<li>Por que uma curetagem pode causar infertilidade?</li>
+<li>O que é a zona de transformação e por que ela é importante no Papanicolau?</li>
+<li>Descreva a vagina e diga de onde vem a sua lubrificação.</li>
+</ol>
+
+<h3>Gabarito comentado</h3>
+<ol class="answers">
+<li>Do <b>epitélio celômico</b>, que forma os cordões sexuais (os secundários, no córtex, envolvem as ovogônias e viram células foliculares); do <b>mesênquima</b>, que forma o estroma da medula; e das <b>células germinativas primordiais</b>, que vêm do saco vitelino e viram ovogônias.</li>
+<li>O <b>córtex</b>, por fora, sob o mesotélio e a túnica albugínea, tem os folículos em todas as fases, corpos lúteos e albicans, num estroma de células fusiformes. A <b>medula</b>, no centro, tem conjuntivo frouxo com a artéria ovariana enovelada, veias, linfáticos e nervos, que entram pelo hilo.</li>
+<li><b>Primordial</b>: ovócito com uma camada de células achatadas. <b>Primário</b>: uma camada cúbica, zona pelúcida começando. <b>Secundário (multilaminar)</b>: várias camadas de granulosa, zona pelúcida nítida, teca interna começando. <b>Antral</b>: espaços de líquido ou um antro, tecas interna e externa. <b>De Graaf</b>: antro enorme, ovócito no cumulus oophorus com a corona radiata.</li>
+<li>Porque o Junqueira chama o multilaminar de “primário multilaminar” e o antral de “secundário”, enquanto a aula e o Ross usam secundário para o multilaminar e terciário para o antral. O que decide é a característica: <b>antro = folículo antral</b>.</li>
+<li>A <b>teca interna</b>, com receptores de <b>LH</b>, transforma colesterol em <b>androstenediona</b>, que passa para a <b>granulosa</b>; ali o <b>FSH</b> estimula a <b>aromatase</b>, que converte o andrógeno em <b>estradiol</b>.</li>
+<li>O FSH recruta vários folículos antrais. O que tem mais receptores de FSH e mais aromatase produz mais estradiol e inibina, que baixam o FSH; os outros, mais dependentes dele, entram em <b>atresia</b>, e só o dominante ovula.</li>
+<li>O ovócito primário termina a <b>meiose I</b>, vira ovócito secundário com o primeiro corpúsculo polar e para na <b>metáfase II</b>. No folículo, proteases degradam a túnica albugínea e a teca externa no <b>estigma</b>, o folículo rompe e libera o ovócito com a corona radiata; depois o antro se enche de sangue (corpo hemorrágico).</li>
+<li>É o folículo roto invadido por vasos. As <b>granulosoluteínicas</b> (da granulosa, grandes e claras) fazem progesterona e estradiol; as <b>tecoluteínicas</b> (da teca interna, menores, periféricas) fazem androstenediona e progesterona. Sem gravidez, regride em cerca de 14 dias e vira o <b>corpo albicans</b>; com gravidez, o <b>hCG</b> o mantém.</li>
+<li><b>Mucosa</b> com pregas (enormes na ampola), epitélio cilíndrico simples com células ciliadas e secretoras e lâmina própria; <b>muscular</b> circular interna e longitudinal externa; <b>serosa</b>. Não há submucosa. A salpingite destrói os cílios e funde as pregas: o embrião não avança e implanta na tuba (ectópica, quase sempre na ampola).</li>
+<li><b>Perimétrio</b>, <b>miométrio</b> (músculo liso em três camadas, com o estrato vascular na média) e <b>endométrio</b> (epitélio cilíndrico simples, glândulas tubulosas simples e estroma). A camada <b>funcional</b>, irrigada pelas <b>artérias espiraladas</b>, muda e descama; a <b>basal</b>, irrigada pelas <b>artérias retas</b>, fica e regenera.</li>
+<li><b>Proliferativa</b> (estrogênio): funcional crescendo, glândulas retas e estreitas, muitas mitoses, estroma denso. <b>Secretora</b> (progesterona): funcional mais alta, glândulas tortuosas e serrilhadas com glicogênio e secreção, estroma edemaciado, artérias espiraladas longas.</li>
+<li>Porque, se a cureta remove a <b>camada basal</b>, não sobra de onde regenerar a funcional: formam-se aderências (síndrome de Asherman) e o embrião não implanta.</li>
+<li>É a junção entre o <b>epitélio colunar simples mucoso da endocérvice</b> e o <b>estratificado pavimentoso não queratinizado da ectocérvice</b>, onde o colunar é substituído por pavimentoso (metaplasia). As células basais desse epitélio em transformação são o alvo do HPV, e é ali que começam as displasias; por isso o Papanicolau precisa colher essa região.</li>
+<li>Mucosa com epitélio estratificado pavimentoso não queratinizado rico em glicogênio (células claras), lâmina própria elástica e vascular <b>sem glândulas</b>, muscular lisa circular e longitudinal e adventícia. A lubrificação vem do muco do colo e das glândulas de Bartholin, no vestíbulo, além da transudação dos vasos.</li>
+</ol>
+</section>
+
+</template>
+<template id="tpl-hmasc">
 <!-- ============================== CAPA ============================== -->
 <section class="cover">
   <div class="kicker">Resumo de estudo · Histologia · Medicina</div>
@@ -6507,7 +8186,8 @@ const MAT=[
 {"id": "uri", "t": "Sistema Urinário", "av": "AV1", "area": "Anatomia", "c": "#e64980", "profs": "Aula Sistema Urinário (slides de Medicina 2026)", "d": "Rins, fáscia e relações, segmentos e vasos renais, ureteres, bexiga, micção, uretra e assoalho pélvico.", "pdf": "res/Resumo_Sistema_Urinario.pdf", "pdfName": "Resumo - Sistema Urinario.pdf", "figs": 22, "slides": 95, "sn": "", "ana": [["rim", "Fotos: rim"], ["ureter", "Fotos: ureter"], ["bexiga", "Fotos: bexiga"], ["vasos", "Fotos: veias renais"]], "teo": [7, 9, 37, 46, 47, 49, 67, 69, 103, 104, 105, 106, 134, 135, 136, 137, 138, 142, 164, 165, 166, 186, 192, 208, 211, 218, 231, 232, 281, 364, 375, 463, 498, 500, 501, 522, 537, 548, 556, 569, 570, 571, 589, 600, 601, 615, 640]},
 {"id": "fem", "t": "Sistema Genital Feminino", "av": "AV1", "area": "Anatomia", "c": "#c2255c", "profs": "Aula 2, Anatomia Genital Feminina (fotos dos slides projetados)", "d": "Ovários, tubas, útero, ligamentos e escavações, vasos e o ureter, vagina, vulva, períneo e mamas.", "pdf": "res/Resumo_Sistema_Genital_Feminino.pdf", "pdfName": "Resumo - Sistema Genital Feminino.pdf", "figs": 12, "slides": 40, "sn": "fotografados na aula", "ar": "1000/884", "ana": [["utero", "Fotos: útero e vagina"], ["anexos", "Fotos: ovário, tuba e ligamentos"], ["perit", "Fotos: escavações"], ["vulva", "Fotos: vulva"]], "teo": [3, 4, 7, 21, 40, 41, 42, 44, 49, 57, 74, 75, 76, 209, 232, 256, 259, 372, 373, 374, 387, 418, 421, 442, 444, 461, 467, 474, 559, 562, 592, 616, 638]},
 {"id": "huri", "t": "Histologia do Sistema Urinário", "av": "AV1", "area": "Histologia", "c": "#1098ad", "profs": "Aula da Profa. Renata Leitão (Departamento de Morfologia)", "d": "Organização do rim, néfron, corpúsculo renal e barreira de filtração, aparelho justaglomerular, túbulos e ductos coletores, urotélio, ureter, bexiga e uretra.", "pdf": "res/Resumo_Histologia_Sistema_Urinario.pdf", "pdfName": "Resumo - Histologia do Sistema Urinario.pdf", "figs": 24, "slides": 48, "sn": "", "ana": [], "his": [["rim", "Lâminas: rim"], ["vias", "Lâminas: ureter e bexiga"]], "teo": [12, 13, 14, 16, 50, 51, 55, 77, 78, 79, 86, 87, 91, 118, 119, 120, 121, 122, 123, 143, 144, 145, 152, 158, 171, 174, 177, 178, 179, 182, 183, 184, 185, 189, 195, 197, 199, 200, 228, 229, 244, 263, 268, 271, 300, 306, 307, 466, 520, 549, 581, 582]},
-{"id": "hmasc", "t": "Histologia do Aparelho Reprodutor Masculino", "av": "AV1", "area": "Histologia", "c": "#5f3dc4", "profs": "Aula da Profa. Renata Leitão (Departamento de Morfologia)", "d": "Testículo, espermatogênese, células de Sertoli e barreira hematotesticular, células de Leydig e controle hormonal, ductos genitais, vesícula seminal, próstata, bulbouretrais, uretra e pênis.", "pdf": "res/Resumo_Histologia_Aparelho_Reprodutor_Masculino.pdf", "pdfName": "Resumo - Histologia do Aparelho Reprodutor Masculino.pdf", "figs": 25, "slides": 41, "sn": "", "ana": [], "his": [["testic", "Lâminas: testículo"], ["ductos", "Lâminas: epidídimo, deferente e próstata"]], "teo": [0, 1, 15, 17, 18, 31, 35, 52, 53, 54, 71, 80, 81, 82, 93, 94, 114, 115, 116, 117, 140, 141, 146, 147, 148, 205, 206, 223, 226, 227, 236, 239, 242, 243, 253, 260, 261, 262, 287, 290, 321, 326]}
+{"id": "hmasc", "t": "Histologia do Aparelho Reprodutor Masculino", "av": "AV1", "area": "Histologia", "c": "#5f3dc4", "profs": "Aula da Profa. Renata Leitão (Departamento de Morfologia)", "d": "Testículo, espermatogênese, células de Sertoli e barreira hematotesticular, células de Leydig e controle hormonal, ductos genitais, vesícula seminal, próstata, bulbouretrais, uretra e pênis.", "pdf": "res/Resumo_Histologia_Aparelho_Reprodutor_Masculino.pdf", "pdfName": "Resumo - Histologia do Aparelho Reprodutor Masculino.pdf", "figs": 25, "slides": 41, "sn": "", "ana": [], "his": [["testic", "Lâminas: testículo"], ["ductos", "Lâminas: epidídimo, deferente e próstata"]], "teo": [0, 1, 15, 17, 18, 31, 35, 52, 53, 54, 71, 80, 81, 82, 93, 94, 114, 115, 116, 117, 140, 141, 146, 147, 148, 205, 206, 223, 226, 227, 236, 239, 242, 243, 253, 260, 261, 262, 287, 290, 321, 326]},
+{"id": "hfem", "t": "Histologia do Sistema Genital Feminino", "av": "AV1", "area": "Histologia", "c": "#a61e4d", "profs": "Aula 5 da Profa. Beatriz Duarte (Departamento de Morfologia)", "d": "Origem das gônadas, ovário e folículos, foliculogênese, ovulação e corpo lúteo, tuba uterina, útero e ciclo endometrial, colo uterino, vagina e glândula mamária.", "pdf": "res/Resumo_Histologia_Sistema_Genital_Feminino.pdf", "pdfName": "Resumo - Histologia do Sistema Genital Feminino.pdf", "figs": 25, "slides": 50, "sn": "", "ar": "1000/562", "ana": [], "his": [["ovario", "Lâminas: ovário"], ["utero", "Lâminas: útero, tuba e colo"], ["mama", "Lâmina: mama"]], "teo": [3, 19, 20, 21, 24, 25, 26, 27, 28, 29, 42, 43, 56, 57, 58, 60, 63, 83, 84, 85, 128, 162, 210, 292, 425, 465, 565]}
 ];
 GR.mat={};MAT.forEach(m=>GR.mat[m.id]={n:m.t,c:m.c});
 IT.mat=MAT.map(m=>({grp:m.id,label:m.t}));
@@ -6521,6 +8201,9 @@ const PDFURL={};
 function hasPdf(m){return !!(window.PDFDATA&&window.PDFDATA[m.id])}
 function pdfUrl(m){if(!PDFURL[m.id]&&hasPdf(m))PDFURL[m.id]=URL.createObjectURL(new Blob([pdfBytes(m)],{type:"application/pdf"}));return PDFURL[m.id]||m.pdf}
 function pdfPrep(m){if(INFRAME){loadPdfData(m);return}if(PDFURL[m.id]||hasPdf(m))return;fetch(m.pdf).then(r=>r.ok?r.blob():null).then(b=>{if(b&&!PDFURL[m.id])PDFURL[m.id]=URL.createObjectURL(new Blob([b],{type:"application/pdf"}))}).catch(()=>{})}
+// no artifact do Claude os slides chegam em slidesdata/<id>.js (limite de arquivos por versão)
+function loadScriptOnce(src){loadScriptOnce.d=loadScriptOnce.d||{};if(loadScriptOnce.d[src])return;loadScriptOnce.d[src]=1;const s=document.createElement("script");s.src=src;s.async=true;document.head.appendChild(s)}
+window.__guAdd=function(o){window.IMGDATA=window.IMGDATA||{};for(const k in o)window.IMGDATA[k]=o[k];document.querySelectorAll("img[data-k]").forEach(im=>{const v=o[im.dataset.k];if(v)im.src=v})};
 function loadPdfData(m){return new Promise(res=>{if(hasPdf(m)||!INFRAME)return res();const s=document.createElement("script");s.src="pdfdata/"+m.id+".js";s.async=true;s.onload=s.onerror=()=>res();document.head.appendChild(s)})}
 async function pdfBlob(m){await loadPdfData(m);if(hasPdf(m))return new Blob([pdfBytes(m)],{type:"application/pdf"});const r=await fetch(m.pdf);if(!r.ok)throw new Error("fetch");return await r.blob()}
 function linkDownload(m){const a=document.createElement("a");a.href=pdfUrl(m);a.download=m.pdfName;document.body.appendChild(a);a.click();a.remove()}
@@ -6551,8 +8234,8 @@ function matView(main){const m=MAT.find(x=>x.id===C().r)||MAT[0];
   art.querySelectorAll("ol.answers").forEach(ol=>{const prev=ol.previousElementSibling;const d=document.createElement("details");d.className="gab";const s=document.createElement("summary");s.textContent="Ver o gabarito comentado";d.appendChild(s);ol.parentNode.insertBefore(d,ol);if(prev&&prev.tagName==="H3")prev.remove();d.appendChild(ol)});
   main.appendChild(art);
   if(m.slides){const d=document.createElement("details");d.className="slidegal";d.id="slidegal";const s=document.createElement("summary");s.appendChild(document.createTextNode("Slides da aula"));s.appendChild(el("span","",m.slides+" slides"+(m.sn?", "+m.sn:"")+" · toque para ampliar"));d.appendChild(s);
-    const g=el("div","sgal");if(m.ar)g.style.setProperty("--ar",m.ar);let built=false;d.addEventListener("toggle",()=>{if(!d.open||built)return;built=true;
-      for(let i=1;i<=m.slides;i++){const b=document.createElement("button");b.type="button";b.setAttribute("aria-label","Slide "+i);const im=document.createElement("img");im.src=IMGSRC("res/slides/"+m.id+"_"+String(i).padStart(2,"0")+".webp");im.alt="Slide "+i;im.loading="lazy";im.decoding="async";b.appendChild(im);b.onclick=()=>b.classList.toggle("big");g.appendChild(b)}});
+    const g=el("div","sgal");if(m.ar)g.style.setProperty("--ar",m.ar);let built=false;d.addEventListener("toggle",()=>{if(!d.open||built)return;built=true;if(INFRAME)loadScriptOnce("slidesdata/"+m.id+".js");
+      for(let i=1;i<=m.slides;i++){const b=document.createElement("button");b.type="button";b.setAttribute("aria-label","Slide "+i);const im=document.createElement("img");const sk="res/slides/"+m.id+"_"+String(i).padStart(2,"0")+".webp";im.dataset.k=sk;im.src=IMGSRC(sk);im.alt="Slide "+i;im.loading="lazy";im.decoding="async";b.appendChild(im);b.onclick=()=>b.classList.toggle("big");g.appendChild(b)}});
     d.appendChild(g);main.appendChild(d)}}
 function matChrome(){document.querySelectorAll(".subj").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.subj===S.subj)));
   const t=TXT.mat;$("lede").innerHTML=t.lede;const st=$("stats");st.innerHTML="";t.stats().forEach(([n,l])=>{const d=el("div","stat");d.appendChild(el("b","",String(n)));d.appendChild(el("span","",l));st.appendChild(d)});
@@ -6721,7 +8404,7 @@ render();
 <script>
 (function(){
 if(!("serviceWorker" in navigator)||location.protocol==="file:")return;
-var FILES=["./", "index.html", "manifest.json", "icone-180.png", "icone-192.png", "icone-512.png", "img/art_aorta.jpg", "img/art_iliaca_comum.jpg", "img/art_ilinterna.jpg", "img/bexiga_trigono.jpg", "img/bx_modelo.jpg", "img/bx_puboprostatico.jpg", "img/bx_pubovesical.jpg", "img/colo_utero.jpg", "img/esc_camadas.jpg", "img/esc_funiculo_anel.jpg", "img/esc_testiculo.jpg", "img/escavacoes.jpg", "img/ligamento_largo.jpg", "img/m_modelo.jpg", "img/m_penis_dorsal.jpg", "img/m_perineo.jpg", "img/m_prepucio.jpg", "img/m_prostata_sagital.jpg", "img/m_sagital.jpg", "img/mesos.jpg", "img/ovario_fornices.jpg", "img/ovario_ligamentos.jpg", "img/rim_aberto.jpg", "img/rim_capsula.jpg", "img/rim_colunas.jpg", "img/rim_corte.jpg", "img/rim_hilo.jpg", "img/rim_pediculo.jpg", "img/rim_vasos.jpg", "img/tuba_uterina.jpg", "img/ureter_iliaca.jpg", "img/ureter_jup.jpg", "img/ureter_partes.jpg", "img/utero_camadas.jpg", "img/utero_partes.jpg", "img/utero_posterior.jpg", "img/utero_sagital.jpg", "img/vagina_fornices.jpg", "img/vasos_gonadais.jpg", "img/vasos_testicular.jpg", "img/vulva_externa.jpg", "img/vulva_partes.jpg", "histo/g01.jpg", "histo/g02.jpg", "histo/g03.jpg", "histo/g04.jpg", "histo/g05.jpg", "histo/g06.jpg", "histo/g07.jpg", "histo/g08.jpg", "histo/g09.jpg", "histo/g10.jpg", "histo/g11.jpg", "histo/g12.jpg", "histo/g13.jpg", "histo/g14.jpg", "histo/g15.jpg", "histo/g16.jpg", "histo/g17.jpg", "histo/g18.jpg", "histo/g19.jpg", "histo/g20.jpg", "histo/g21.jpg", "histo/g22.jpg", "histo/g23.jpg", "histo/g24.jpg", "histo/g25.jpg", "histo/g26.jpg", "histo/g27.jpg", "histo/g28.jpg", "histo/g29.jpg", "histo/g30.jpg", "histo/g31.jpg", "histo/g32.jpg", "histo/g33.jpg", "histo/g34.jpg", "histo/g35.jpg", "histo/g36.jpg", "histo/g37.jpg", "histo/g38.jpg", "histo/g39.jpg", "histo/g40.jpg", "histo/g41.jpg", "histo/g42.jpg", "histo/g43.jpg", "histo/g44.jpg", "histo/g45.jpg", "histo/g46.jpg", "histo/g47.jpg", "histo/g48.jpg", "histo/g49.jpg", "histo/g50.jpg", "histo/g51.jpg", "histo/rev01.jpg", "histo/rev02.jpg", "histo/rev03.jpg", "histo/rev04.jpg", "histo/rev05.jpg", "histo/rev06.jpg", "histo/rev07.jpg", "histo/rev08.jpg", "histo/rev09.jpg", "histo/rev10.jpg", "teo/c1_14.webp", "teo/c1b_23.webp", "teo/c1e_4.webp", "teo/c1e_5.webp", "teo/c2q_11.webp", "teo/c2q_3.webp", "teo/c2q_8.webp", "teo/c2s_12.webp", "teo/c2s_2.webp", "teo/c2s_30.webp", "teo/c2s_7.webp", "teo/c3b_10.webp", "teo/c3b_18.webp", "teo/c3b_7.webp", "teo/c3b_8.webp", "teo/c3b_9.webp", "teo/c3c_18.webp", "teo/c3c_19.webp", "teo/c3d_24.webp", "teo/c3e_11.webp", "teo/c3e_6.webp", "res/Resumo_Histologia_Aparelho_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Sistema_Urinario.pdf", "res/Resumo_Sistema_Genital_Feminino.pdf", "res/Resumo_Sistema_Genital_Masculino.pdf", "res/Resumo_Sistema_Urinario.pdf", "res/fem/camadas.webp", "res/fem/episiotomia.webp", "res/fem/ligamentos.webp", "res/fem/mama.webp", "res/fem/ovario_corte.webp", "res/fem/perineo.webp", "res/fem/sagital.webp", "res/fem/tuba_frontal.webp", "res/fem/utero_idades.webp", "res/fem/vulva.webp", "res/hmasc/albuginea_leydig.webp", "res/hmasc/barreira_ht.webp", "res/hmasc/concrecoes.webp", "res/hmasc/controle.webp", "res/hmasc/deferente.webp", "res/hmasc/ductos.webp", "res/hmasc/ejaculatorios.webp", "res/hmasc/epididimo.webp", "res/hmasc/epididimo_det.webp", "res/hmasc/epitelio_esq.webp", "res/hmasc/epitelio_germ.webp", "res/hmasc/epitelio_leydig.webp", "res/hmasc/eretil.webp", "res/hmasc/espermiogenese.webp", "res/hmasc/penis_corte.webp", "res/hmasc/penis_esq.webp", "res/hmasc/prostata_gland.webp", "res/hmasc/prostata_lam.webp", "res/hmasc/prostata_zonas.webp", "res/hmasc/testiculo.webp", "res/hmasc/testiculo_esq.webp", "res/hmasc/tubulos_sem.webp", "res/huri/alca_coletor.webp", "res/huri/barreira_diag.webp", "res/huri/bexiga_camadas.webp", "res/huri/bexiga_urotelio.webp", "res/huri/corpusculo.webp", "res/huri/corpusculo_jga.webp", "res/huri/cortex_medula.webp", "res/huri/diafragma.webp", "res/huri/glomerulo.webp", "res/huri/macula_densa.webp", "res/huri/papila.webp", "res/huri/podocitos.webp", "res/huri/raio_medular.webp", "res/huri/rim_lamina.webp", "res/huri/tcp.webp", "res/huri/tcp_tcd.webp", "res/huri/ureter.webp", "res/huri/ureter_ab.webp", "res/huri/uretra_fem.webp", "res/huri/vascularizacao.webp", "res/masc/camadas_diag.webp", "res/masc/descida.webp", "res/masc/epididimo_frontal.webp", "res/masc/escroto_netter.webp", "res/masc/irrigacao.webp", "res/masc/penis_face.webp", "res/masc/penis_vasos.webp", "res/masc/posterior_bexiga.webp", "res/masc/prostata_cortes.webp", "res/masc/prostata_frontal.webp", "res/masc/vesiculas_netter.webp", "res/masc/visao.webp", "res/slides/fem_01.webp", "res/slides/fem_02.webp", "res/slides/fem_03.webp", "res/slides/fem_04.webp", "res/slides/fem_05.webp", "res/slides/fem_06.webp", "res/slides/fem_07.webp", "res/slides/fem_08.webp", "res/slides/fem_09.webp", "res/slides/fem_10.webp", "res/slides/fem_11.webp", "res/slides/fem_12.webp", "res/slides/fem_13.webp", "res/slides/fem_14.webp", "res/slides/fem_15.webp", "res/slides/fem_16.webp", "res/slides/fem_17.webp", "res/slides/fem_18.webp", "res/slides/fem_19.webp", "res/slides/fem_20.webp", "res/slides/fem_21.webp", "res/slides/fem_22.webp", "res/slides/fem_23.webp", "res/slides/fem_24.webp", "res/slides/fem_25.webp", "res/slides/fem_26.webp", "res/slides/fem_27.webp", "res/slides/fem_28.webp", "res/slides/fem_29.webp", "res/slides/fem_30.webp", "res/slides/fem_31.webp", "res/slides/fem_32.webp", "res/slides/fem_33.webp", "res/slides/fem_34.webp", "res/slides/fem_35.webp", "res/slides/fem_36.webp", "res/slides/fem_37.webp", "res/slides/fem_38.webp", "res/slides/fem_39.webp", "res/slides/fem_40.webp", "res/slides/hmasc_01.webp", "res/slides/hmasc_02.webp", "res/slides/hmasc_03.webp", "res/slides/hmasc_04.webp", "res/slides/hmasc_05.webp", "res/slides/hmasc_06.webp", "res/slides/hmasc_07.webp", "res/slides/hmasc_08.webp", "res/slides/hmasc_09.webp", "res/slides/hmasc_10.webp", "res/slides/hmasc_11.webp", "res/slides/hmasc_12.webp", "res/slides/hmasc_13.webp", "res/slides/hmasc_14.webp", "res/slides/hmasc_15.webp", "res/slides/hmasc_16.webp", "res/slides/hmasc_17.webp", "res/slides/hmasc_18.webp", "res/slides/hmasc_19.webp", "res/slides/hmasc_20.webp", "res/slides/hmasc_21.webp", "res/slides/hmasc_22.webp", "res/slides/hmasc_23.webp", "res/slides/hmasc_24.webp", "res/slides/hmasc_25.webp", "res/slides/hmasc_26.webp", "res/slides/hmasc_27.webp", "res/slides/hmasc_28.webp", "res/slides/hmasc_29.webp", "res/slides/hmasc_30.webp", "res/slides/hmasc_31.webp", "res/slides/hmasc_32.webp", "res/slides/hmasc_33.webp", "res/slides/hmasc_34.webp", "res/slides/hmasc_35.webp", "res/slides/hmasc_36.webp", "res/slides/hmasc_37.webp", "res/slides/hmasc_38.webp", "res/slides/hmasc_39.webp", "res/slides/hmasc_40.webp", "res/slides/hmasc_41.webp", "res/slides/huri_01.webp", "res/slides/huri_02.webp", "res/slides/huri_03.webp", "res/slides/huri_04.webp", "res/slides/huri_05.webp", "res/slides/huri_06.webp", "res/slides/huri_07.webp", "res/slides/huri_08.webp", "res/slides/huri_09.webp", "res/slides/huri_10.webp", "res/slides/huri_11.webp", "res/slides/huri_12.webp", "res/slides/huri_13.webp", "res/slides/huri_14.webp", "res/slides/huri_15.webp", "res/slides/huri_16.webp", "res/slides/huri_17.webp", "res/slides/huri_18.webp", "res/slides/huri_19.webp", "res/slides/huri_20.webp", "res/slides/huri_21.webp", "res/slides/huri_22.webp", "res/slides/huri_23.webp", "res/slides/huri_24.webp", "res/slides/huri_25.webp", "res/slides/huri_26.webp", "res/slides/huri_27.webp", "res/slides/huri_28.webp", "res/slides/huri_29.webp", "res/slides/huri_30.webp", "res/slides/huri_31.webp", "res/slides/huri_32.webp", "res/slides/huri_33.webp", "res/slides/huri_34.webp", "res/slides/huri_35.webp", "res/slides/huri_36.webp", "res/slides/huri_37.webp", "res/slides/huri_38.webp", "res/slides/huri_39.webp", "res/slides/huri_40.webp", "res/slides/huri_41.webp", "res/slides/huri_42.webp", "res/slides/huri_43.webp", "res/slides/huri_44.webp", "res/slides/huri_45.webp", "res/slides/huri_46.webp", "res/slides/huri_47.webp", "res/slides/huri_48.webp", "res/slides/masc_01.webp", "res/slides/masc_02.webp", "res/slides/masc_03.webp", "res/slides/masc_04.webp", "res/slides/masc_05.webp", "res/slides/masc_06.webp", "res/slides/masc_07.webp", "res/slides/masc_08.webp", "res/slides/masc_09.webp", "res/slides/masc_10.webp", "res/slides/masc_11.webp", "res/slides/masc_12.webp", "res/slides/masc_13.webp", "res/slides/masc_14.webp", "res/slides/masc_15.webp", "res/slides/masc_16.webp", "res/slides/masc_17.webp", "res/slides/masc_18.webp", "res/slides/masc_19.webp", "res/slides/masc_20.webp", "res/slides/masc_21.webp", "res/slides/masc_22.webp", "res/slides/masc_23.webp", "res/slides/masc_24.webp", "res/slides/masc_25.webp", "res/slides/masc_26.webp", "res/slides/masc_27.webp", "res/slides/masc_28.webp", "res/slides/masc_29.webp", "res/slides/masc_30.webp", "res/slides/masc_31.webp", "res/slides/masc_32.webp", "res/slides/masc_33.webp", "res/slides/masc_34.webp", "res/slides/masc_35.webp", "res/slides/masc_36.webp", "res/slides/masc_37.webp", "res/slides/masc_38.webp", "res/slides/masc_39.webp", "res/slides/masc_40.webp", "res/slides/masc_41.webp", "res/slides/masc_42.webp", "res/slides/masc_43.webp", "res/slides/masc_44.webp", "res/slides/uri_01.webp", "res/slides/uri_02.webp", "res/slides/uri_03.webp", "res/slides/uri_04.webp", "res/slides/uri_05.webp", "res/slides/uri_06.webp", "res/slides/uri_07.webp", "res/slides/uri_08.webp", "res/slides/uri_09.webp", "res/slides/uri_10.webp", "res/slides/uri_11.webp", "res/slides/uri_12.webp", "res/slides/uri_13.webp", "res/slides/uri_14.webp", "res/slides/uri_15.webp", "res/slides/uri_16.webp", "res/slides/uri_17.webp", "res/slides/uri_18.webp", "res/slides/uri_19.webp", "res/slides/uri_20.webp", "res/slides/uri_21.webp", "res/slides/uri_22.webp", "res/slides/uri_23.webp", "res/slides/uri_24.webp", "res/slides/uri_25.webp", "res/slides/uri_26.webp", "res/slides/uri_27.webp", "res/slides/uri_28.webp", "res/slides/uri_29.webp", "res/slides/uri_30.webp", "res/slides/uri_31.webp", "res/slides/uri_32.webp", "res/slides/uri_33.webp", "res/slides/uri_34.webp", "res/slides/uri_35.webp", "res/slides/uri_36.webp", "res/slides/uri_37.webp", "res/slides/uri_38.webp", "res/slides/uri_39.webp", "res/slides/uri_40.webp", "res/slides/uri_41.webp", "res/slides/uri_42.webp", "res/slides/uri_43.webp", "res/slides/uri_44.webp", "res/slides/uri_45.webp", "res/slides/uri_46.webp", "res/slides/uri_47.webp", "res/slides/uri_48.webp", "res/slides/uri_49.webp", "res/slides/uri_50.webp", "res/slides/uri_51.webp", "res/slides/uri_52.webp", "res/slides/uri_53.webp", "res/slides/uri_54.webp", "res/slides/uri_55.webp", "res/slides/uri_56.webp", "res/slides/uri_57.webp", "res/slides/uri_58.webp", "res/slides/uri_59.webp", "res/slides/uri_60.webp", "res/slides/uri_61.webp", "res/slides/uri_62.webp", "res/slides/uri_63.webp", "res/slides/uri_64.webp", "res/slides/uri_65.webp", "res/slides/uri_66.webp", "res/slides/uri_67.webp", "res/slides/uri_68.webp", "res/slides/uri_69.webp", "res/slides/uri_70.webp", "res/slides/uri_71.webp", "res/slides/uri_72.webp", "res/slides/uri_73.webp", "res/slides/uri_74.webp", "res/slides/uri_75.webp", "res/slides/uri_76.webp", "res/slides/uri_77.webp", "res/slides/uri_78.webp", "res/slides/uri_79.webp", "res/slides/uri_80.webp", "res/slides/uri_81.webp", "res/slides/uri_82.webp", "res/slides/uri_83.webp", "res/slides/uri_84.webp", "res/slides/uri_85.webp", "res/slides/uri_86.webp", "res/slides/uri_87.webp", "res/slides/uri_88.webp", "res/slides/uri_89.webp", "res/slides/uri_90.webp", "res/slides/uri_91.webp", "res/slides/uri_92.webp", "res/slides/uri_93.webp", "res/slides/uri_94.webp", "res/slides/uri_95.webp", "res/uri/acessorias.webp", "res/uri/bexiga_config.webp", "res/uri/bexiga_frontal.webp", "res/uri/caso.webp", "res/uri/diaf_urogenital.webp", "res/uri/faces.webp", "res/uri/fascia.webp", "res/uri/levantador.webp", "res/uri/necrose.webp", "res/uri/nutcracker.webp", "res/uri/segmentos.webp", "res/uri/skene.webp", "res/uri/ureter_mulher.webp", "res/uri/uretra_frontal.webp", "res/uri/urografia.webp", "res/uri/vasos_insitu.webp", "res/uri/vasos_intra.webp", "res/uri/visao.webp"],CACHE="gu-53ce1dc11a",had=!!navigator.serviceWorker.controller,say=window.__guSay,pill=document.getElementById("gu-pill");
+var FILES=["./", "index.html", "manifest.json", "icone-180.png", "icone-192.png", "icone-512.png", "img/art_aorta.jpg", "img/art_iliaca_comum.jpg", "img/art_ilinterna.jpg", "img/bexiga_trigono.jpg", "img/bx_modelo.jpg", "img/bx_puboprostatico.jpg", "img/bx_pubovesical.jpg", "img/colo_utero.jpg", "img/esc_camadas.jpg", "img/esc_funiculo_anel.jpg", "img/esc_testiculo.jpg", "img/escavacoes.jpg", "img/ligamento_largo.jpg", "img/m_modelo.jpg", "img/m_penis_dorsal.jpg", "img/m_perineo.jpg", "img/m_prepucio.jpg", "img/m_prostata_sagital.jpg", "img/m_sagital.jpg", "img/mesos.jpg", "img/ovario_fornices.jpg", "img/ovario_ligamentos.jpg", "img/rim_aberto.jpg", "img/rim_capsula.jpg", "img/rim_colunas.jpg", "img/rim_corte.jpg", "img/rim_hilo.jpg", "img/rim_pediculo.jpg", "img/rim_vasos.jpg", "img/tuba_uterina.jpg", "img/ureter_iliaca.jpg", "img/ureter_jup.jpg", "img/ureter_partes.jpg", "img/utero_camadas.jpg", "img/utero_partes.jpg", "img/utero_posterior.jpg", "img/utero_sagital.jpg", "img/vagina_fornices.jpg", "img/vasos_gonadais.jpg", "img/vasos_testicular.jpg", "img/vulva_externa.jpg", "img/vulva_partes.jpg", "histo/g01.jpg", "histo/g02.jpg", "histo/g03.jpg", "histo/g04.jpg", "histo/g05.jpg", "histo/g06.jpg", "histo/g07.jpg", "histo/g08.jpg", "histo/g09.jpg", "histo/g10.jpg", "histo/g11.jpg", "histo/g12.jpg", "histo/g13.jpg", "histo/g14.jpg", "histo/g15.jpg", "histo/g16.jpg", "histo/g17.jpg", "histo/g18.jpg", "histo/g19.jpg", "histo/g20.jpg", "histo/g21.jpg", "histo/g22.jpg", "histo/g23.jpg", "histo/g24.jpg", "histo/g25.jpg", "histo/g26.jpg", "histo/g27.jpg", "histo/g28.jpg", "histo/g29.jpg", "histo/g30.jpg", "histo/g31.jpg", "histo/g32.jpg", "histo/g33.jpg", "histo/g34.jpg", "histo/g35.jpg", "histo/g36.jpg", "histo/g37.jpg", "histo/g38.jpg", "histo/g39.jpg", "histo/g40.jpg", "histo/g41.jpg", "histo/g42.jpg", "histo/g43.jpg", "histo/g44.jpg", "histo/g45.jpg", "histo/g46.jpg", "histo/g47.jpg", "histo/g48.jpg", "histo/g49.jpg", "histo/g50.jpg", "histo/g51.jpg", "histo/rev01.jpg", "histo/rev02.jpg", "histo/rev03.jpg", "histo/rev04.jpg", "histo/rev05.jpg", "histo/rev06.jpg", "histo/rev07.jpg", "histo/rev08.jpg", "histo/rev09.jpg", "histo/rev10.jpg", "teo/c1_14.webp", "teo/c1b_23.webp", "teo/c1e_4.webp", "teo/c1e_5.webp", "teo/c2q_11.webp", "teo/c2q_3.webp", "teo/c2q_8.webp", "teo/c2s_12.webp", "teo/c2s_2.webp", "teo/c2s_30.webp", "teo/c2s_7.webp", "teo/c3b_10.webp", "teo/c3b_18.webp", "teo/c3b_7.webp", "teo/c3b_8.webp", "teo/c3b_9.webp", "teo/c3c_18.webp", "teo/c3c_19.webp", "teo/c3d_24.webp", "teo/c3e_11.webp", "teo/c3e_6.webp", "res/Resumo_Histologia_Aparelho_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Sistema_Genital_Feminino.pdf", "res/Resumo_Histologia_Sistema_Urinario.pdf", "res/Resumo_Sistema_Genital_Feminino.pdf", "res/Resumo_Sistema_Genital_Masculino.pdf", "res/Resumo_Sistema_Urinario.pdf", "res/fem/camadas.webp", "res/fem/episiotomia.webp", "res/fem/ligamentos.webp", "res/fem/mama.webp", "res/fem/ovario_corte.webp", "res/fem/perineo.webp", "res/fem/sagital.webp", "res/fem/tuba_frontal.webp", "res/fem/utero_idades.webp", "res/fem/vulva.webp", "res/hfem/antral_he.webp", "res/hfem/cervice.webp", "res/hfem/ciclo_endo.webp", "res/hfem/ciclo_ovario.webp", "res/hfem/classif.webp", "res/hfem/corpo_luteo.webp", "res/hfem/cortex_ov.webp", "res/hfem/duas_celulas.webp", "res/hfem/eixo.webp", "res/hfem/endocervice.webp", "res/hfem/endometrio_esq.webp", "res/hfem/funcional.webp", "res/hfem/graaf.webp", "res/hfem/jec.webp", "res/hfem/luteinicas.webp", "res/hfem/miometrio.webp", "res/hfem/ovario_corte.webp", "res/hfem/ovulacao.webp", "res/hfem/primarios_he.webp", "res/hfem/primordiais.webp", "res/hfem/tecas.webp", "res/hfem/tuba_he.webp", "res/hfem/vagina.webp", "res/hmasc/albuginea_leydig.webp", "res/hmasc/barreira_ht.webp", "res/hmasc/concrecoes.webp", "res/hmasc/controle.webp", "res/hmasc/deferente.webp", "res/hmasc/ductos.webp", "res/hmasc/ejaculatorios.webp", "res/hmasc/epididimo.webp", "res/hmasc/epididimo_det.webp", "res/hmasc/epitelio_esq.webp", "res/hmasc/epitelio_germ.webp", "res/hmasc/epitelio_leydig.webp", "res/hmasc/eretil.webp", "res/hmasc/espermiogenese.webp", "res/hmasc/penis_corte.webp", "res/hmasc/penis_esq.webp", "res/hmasc/prostata_gland.webp", "res/hmasc/prostata_lam.webp", "res/hmasc/prostata_zonas.webp", "res/hmasc/testiculo.webp", "res/hmasc/testiculo_esq.webp", "res/hmasc/tubulos_sem.webp", "res/huri/alca_coletor.webp", "res/huri/barreira_diag.webp", "res/huri/bexiga_camadas.webp", "res/huri/bexiga_urotelio.webp", "res/huri/corpusculo.webp", "res/huri/corpusculo_jga.webp", "res/huri/cortex_medula.webp", "res/huri/diafragma.webp", "res/huri/glomerulo.webp", "res/huri/macula_densa.webp", "res/huri/papila.webp", "res/huri/podocitos.webp", "res/huri/raio_medular.webp", "res/huri/rim_lamina.webp", "res/huri/tcp.webp", "res/huri/tcp_tcd.webp", "res/huri/ureter.webp", "res/huri/ureter_ab.webp", "res/huri/uretra_fem.webp", "res/huri/vascularizacao.webp", "res/masc/camadas_diag.webp", "res/masc/descida.webp", "res/masc/epididimo_frontal.webp", "res/masc/escroto_netter.webp", "res/masc/irrigacao.webp", "res/masc/penis_face.webp", "res/masc/penis_vasos.webp", "res/masc/posterior_bexiga.webp", "res/masc/prostata_cortes.webp", "res/masc/prostata_frontal.webp", "res/masc/vesiculas_netter.webp", "res/masc/visao.webp", "res/slides/fem_01.webp", "res/slides/fem_02.webp", "res/slides/fem_03.webp", "res/slides/fem_04.webp", "res/slides/fem_05.webp", "res/slides/fem_06.webp", "res/slides/fem_07.webp", "res/slides/fem_08.webp", "res/slides/fem_09.webp", "res/slides/fem_10.webp", "res/slides/fem_11.webp", "res/slides/fem_12.webp", "res/slides/fem_13.webp", "res/slides/fem_14.webp", "res/slides/fem_15.webp", "res/slides/fem_16.webp", "res/slides/fem_17.webp", "res/slides/fem_18.webp", "res/slides/fem_19.webp", "res/slides/fem_20.webp", "res/slides/fem_21.webp", "res/slides/fem_22.webp", "res/slides/fem_23.webp", "res/slides/fem_24.webp", "res/slides/fem_25.webp", "res/slides/fem_26.webp", "res/slides/fem_27.webp", "res/slides/fem_28.webp", "res/slides/fem_29.webp", "res/slides/fem_30.webp", "res/slides/fem_31.webp", "res/slides/fem_32.webp", "res/slides/fem_33.webp", "res/slides/fem_34.webp", "res/slides/fem_35.webp", "res/slides/fem_36.webp", "res/slides/fem_37.webp", "res/slides/fem_38.webp", "res/slides/fem_39.webp", "res/slides/fem_40.webp", "res/slides/hfem_01.webp", "res/slides/hfem_02.webp", "res/slides/hfem_03.webp", "res/slides/hfem_04.webp", "res/slides/hfem_05.webp", "res/slides/hfem_06.webp", "res/slides/hfem_07.webp", "res/slides/hfem_08.webp", "res/slides/hfem_09.webp", "res/slides/hfem_10.webp", "res/slides/hfem_11.webp", "res/slides/hfem_12.webp", "res/slides/hfem_13.webp", "res/slides/hfem_14.webp", "res/slides/hfem_15.webp", "res/slides/hfem_16.webp", "res/slides/hfem_17.webp", "res/slides/hfem_18.webp", "res/slides/hfem_19.webp", "res/slides/hfem_20.webp", "res/slides/hfem_21.webp", "res/slides/hfem_22.webp", "res/slides/hfem_23.webp", "res/slides/hfem_24.webp", "res/slides/hfem_25.webp", "res/slides/hfem_26.webp", "res/slides/hfem_27.webp", "res/slides/hfem_28.webp", "res/slides/hfem_29.webp", "res/slides/hfem_30.webp", "res/slides/hfem_31.webp", "res/slides/hfem_32.webp", "res/slides/hfem_33.webp", "res/slides/hfem_34.webp", "res/slides/hfem_35.webp", "res/slides/hfem_36.webp", "res/slides/hfem_37.webp", "res/slides/hfem_38.webp", "res/slides/hfem_39.webp", "res/slides/hfem_40.webp", "res/slides/hfem_41.webp", "res/slides/hfem_42.webp", "res/slides/hfem_43.webp", "res/slides/hfem_44.webp", "res/slides/hfem_45.webp", "res/slides/hfem_46.webp", "res/slides/hfem_47.webp", "res/slides/hfem_48.webp", "res/slides/hfem_49.webp", "res/slides/hfem_50.webp", "res/slides/hmasc_01.webp", "res/slides/hmasc_02.webp", "res/slides/hmasc_03.webp", "res/slides/hmasc_04.webp", "res/slides/hmasc_05.webp", "res/slides/hmasc_06.webp", "res/slides/hmasc_07.webp", "res/slides/hmasc_08.webp", "res/slides/hmasc_09.webp", "res/slides/hmasc_10.webp", "res/slides/hmasc_11.webp", "res/slides/hmasc_12.webp", "res/slides/hmasc_13.webp", "res/slides/hmasc_14.webp", "res/slides/hmasc_15.webp", "res/slides/hmasc_16.webp", "res/slides/hmasc_17.webp", "res/slides/hmasc_18.webp", "res/slides/hmasc_19.webp", "res/slides/hmasc_20.webp", "res/slides/hmasc_21.webp", "res/slides/hmasc_22.webp", "res/slides/hmasc_23.webp", "res/slides/hmasc_24.webp", "res/slides/hmasc_25.webp", "res/slides/hmasc_26.webp", "res/slides/hmasc_27.webp", "res/slides/hmasc_28.webp", "res/slides/hmasc_29.webp", "res/slides/hmasc_30.webp", "res/slides/hmasc_31.webp", "res/slides/hmasc_32.webp", "res/slides/hmasc_33.webp", "res/slides/hmasc_34.webp", "res/slides/hmasc_35.webp", "res/slides/hmasc_36.webp", "res/slides/hmasc_37.webp", "res/slides/hmasc_38.webp", "res/slides/hmasc_39.webp", "res/slides/hmasc_40.webp", "res/slides/hmasc_41.webp", "res/slides/huri_01.webp", "res/slides/huri_02.webp", "res/slides/huri_03.webp", "res/slides/huri_04.webp", "res/slides/huri_05.webp", "res/slides/huri_06.webp", "res/slides/huri_07.webp", "res/slides/huri_08.webp", "res/slides/huri_09.webp", "res/slides/huri_10.webp", "res/slides/huri_11.webp", "res/slides/huri_12.webp", "res/slides/huri_13.webp", "res/slides/huri_14.webp", "res/slides/huri_15.webp", "res/slides/huri_16.webp", "res/slides/huri_17.webp", "res/slides/huri_18.webp", "res/slides/huri_19.webp", "res/slides/huri_20.webp", "res/slides/huri_21.webp", "res/slides/huri_22.webp", "res/slides/huri_23.webp", "res/slides/huri_24.webp", "res/slides/huri_25.webp", "res/slides/huri_26.webp", "res/slides/huri_27.webp", "res/slides/huri_28.webp", "res/slides/huri_29.webp", "res/slides/huri_30.webp", "res/slides/huri_31.webp", "res/slides/huri_32.webp", "res/slides/huri_33.webp", "res/slides/huri_34.webp", "res/slides/huri_35.webp", "res/slides/huri_36.webp", "res/slides/huri_37.webp", "res/slides/huri_38.webp", "res/slides/huri_39.webp", "res/slides/huri_40.webp", "res/slides/huri_41.webp", "res/slides/huri_42.webp", "res/slides/huri_43.webp", "res/slides/huri_44.webp", "res/slides/huri_45.webp", "res/slides/huri_46.webp", "res/slides/huri_47.webp", "res/slides/huri_48.webp", "res/slides/masc_01.webp", "res/slides/masc_02.webp", "res/slides/masc_03.webp", "res/slides/masc_04.webp", "res/slides/masc_05.webp", "res/slides/masc_06.webp", "res/slides/masc_07.webp", "res/slides/masc_08.webp", "res/slides/masc_09.webp", "res/slides/masc_10.webp", "res/slides/masc_11.webp", "res/slides/masc_12.webp", "res/slides/masc_13.webp", "res/slides/masc_14.webp", "res/slides/masc_15.webp", "res/slides/masc_16.webp", "res/slides/masc_17.webp", "res/slides/masc_18.webp", "res/slides/masc_19.webp", "res/slides/masc_20.webp", "res/slides/masc_21.webp", "res/slides/masc_22.webp", "res/slides/masc_23.webp", "res/slides/masc_24.webp", "res/slides/masc_25.webp", "res/slides/masc_26.webp", "res/slides/masc_27.webp", "res/slides/masc_28.webp", "res/slides/masc_29.webp", "res/slides/masc_30.webp", "res/slides/masc_31.webp", "res/slides/masc_32.webp", "res/slides/masc_33.webp", "res/slides/masc_34.webp", "res/slides/masc_35.webp", "res/slides/masc_36.webp", "res/slides/masc_37.webp", "res/slides/masc_38.webp", "res/slides/masc_39.webp", "res/slides/masc_40.webp", "res/slides/masc_41.webp", "res/slides/masc_42.webp", "res/slides/masc_43.webp", "res/slides/masc_44.webp", "res/slides/uri_01.webp", "res/slides/uri_02.webp", "res/slides/uri_03.webp", "res/slides/uri_04.webp", "res/slides/uri_05.webp", "res/slides/uri_06.webp", "res/slides/uri_07.webp", "res/slides/uri_08.webp", "res/slides/uri_09.webp", "res/slides/uri_10.webp", "res/slides/uri_11.webp", "res/slides/uri_12.webp", "res/slides/uri_13.webp", "res/slides/uri_14.webp", "res/slides/uri_15.webp", "res/slides/uri_16.webp", "res/slides/uri_17.webp", "res/slides/uri_18.webp", "res/slides/uri_19.webp", "res/slides/uri_20.webp", "res/slides/uri_21.webp", "res/slides/uri_22.webp", "res/slides/uri_23.webp", "res/slides/uri_24.webp", "res/slides/uri_25.webp", "res/slides/uri_26.webp", "res/slides/uri_27.webp", "res/slides/uri_28.webp", "res/slides/uri_29.webp", "res/slides/uri_30.webp", "res/slides/uri_31.webp", "res/slides/uri_32.webp", "res/slides/uri_33.webp", "res/slides/uri_34.webp", "res/slides/uri_35.webp", "res/slides/uri_36.webp", "res/slides/uri_37.webp", "res/slides/uri_38.webp", "res/slides/uri_39.webp", "res/slides/uri_40.webp", "res/slides/uri_41.webp", "res/slides/uri_42.webp", "res/slides/uri_43.webp", "res/slides/uri_44.webp", "res/slides/uri_45.webp", "res/slides/uri_46.webp", "res/slides/uri_47.webp", "res/slides/uri_48.webp", "res/slides/uri_49.webp", "res/slides/uri_50.webp", "res/slides/uri_51.webp", "res/slides/uri_52.webp", "res/slides/uri_53.webp", "res/slides/uri_54.webp", "res/slides/uri_55.webp", "res/slides/uri_56.webp", "res/slides/uri_57.webp", "res/slides/uri_58.webp", "res/slides/uri_59.webp", "res/slides/uri_60.webp", "res/slides/uri_61.webp", "res/slides/uri_62.webp", "res/slides/uri_63.webp", "res/slides/uri_64.webp", "res/slides/uri_65.webp", "res/slides/uri_66.webp", "res/slides/uri_67.webp", "res/slides/uri_68.webp", "res/slides/uri_69.webp", "res/slides/uri_70.webp", "res/slides/uri_71.webp", "res/slides/uri_72.webp", "res/slides/uri_73.webp", "res/slides/uri_74.webp", "res/slides/uri_75.webp", "res/slides/uri_76.webp", "res/slides/uri_77.webp", "res/slides/uri_78.webp", "res/slides/uri_79.webp", "res/slides/uri_80.webp", "res/slides/uri_81.webp", "res/slides/uri_82.webp", "res/slides/uri_83.webp", "res/slides/uri_84.webp", "res/slides/uri_85.webp", "res/slides/uri_86.webp", "res/slides/uri_87.webp", "res/slides/uri_88.webp", "res/slides/uri_89.webp", "res/slides/uri_90.webp", "res/slides/uri_91.webp", "res/slides/uri_92.webp", "res/slides/uri_93.webp", "res/slides/uri_94.webp", "res/slides/uri_95.webp", "res/uri/acessorias.webp", "res/uri/bexiga_config.webp", "res/uri/bexiga_frontal.webp", "res/uri/caso.webp", "res/uri/diaf_urogenital.webp", "res/uri/faces.webp", "res/uri/fascia.webp", "res/uri/levantador.webp", "res/uri/necrose.webp", "res/uri/nutcracker.webp", "res/uri/segmentos.webp", "res/uri/skene.webp", "res/uri/ureter_mulher.webp", "res/uri/uretra_frontal.webp", "res/uri/urografia.webp", "res/uri/vasos_insitu.webp", "res/uri/vasos_intra.webp", "res/uri/visao.webp"],CACHE="gu-acba48afd3",had=!!navigator.serviceWorker.controller,say=window.__guSay,pill=document.getElementById("gu-pill");
 function check(){caches.open(CACHE).then(function(c){return Promise.all(FILES.map(function(u){return c.match(u)}))}).then(function(r){
   var ok=r.filter(Boolean).length;
   if(ok===FILES.length){var k="gu-off-"+CACHE,seen=false;try{seen=!!localStorage.getItem(k);localStorage.setItem(k,"1")}catch(e){}if(!seen)say("✓ Pronto para usar sem internet","#2b8a3e",5000)}
