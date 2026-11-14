@@ -1,9 +1,9 @@
 // Módulo Gênito-Urinário · funciona sem internet depois da primeira abertura.
 // Gerado por oficina/ferramentas/construir_app.py — não edite à mão.
-const CACHE = "gu-e0c6047773";
+const CACHE = "gu-1893ca7f23";
 const FILES = {
-"./": "eeddb035ad",
-"index.html": "eeddb035ad",
+"./": "374baad04e",
+"index.html": "374baad04e",
 "manifest.json": "338042bdbe",
 "icone-180.png": "4901dc3e9a",
 "icone-192.png": "fc9453f590",
@@ -169,7 +169,7 @@ const FILES = {
 "res/Resumo_Histologia_Aparelho_Reprodutor_Masculino.pdf": "dd2a01a6bb",
 "res/Resumo_Histologia_Sistema_Genital_Feminino.pdf": "6334b67a92",
 "res/Resumo_Histologia_Sistema_Urinario.pdf": "85298823b0",
-"res/Resumo_Mecanismos_Tubulares.pdf": "7afb59de47",
+"res/Resumo_Mecanismos_Tubulares.pdf": "f3d717558b",
 "res/Resumo_Sistema_Genital_Feminino.pdf": "068bd107da",
 "res/Resumo_Sistema_Genital_Masculino.pdf": "52b7533aba",
 "res/Resumo_Sistema_Urinario.pdf": "7daf39e240",
