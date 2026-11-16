@@ -415,7 +415,673 @@ button.pri-it:hover{border-color:var(--acc);background:var(--acc-soft)}
 
   <main id="main"></main>
 
-  <template id="tpl-ftub">
+  <template id="tpl-ciclo">
+<!-- ============================== CAPA ============================== -->
+<section class="cover">
+  <div class="kicker">Resumo de estudo · Fisiologia · Medicina</div>
+  <h1>Fisiologia do<br>Ciclo Menstrual</h1>
+  <div class="rainbow huri"></div>
+  <p class="sub">Anatomia funcional do trato genital feminino, eixo hipotálamo-hipófise-ovário, GnRH pulsátil e gonadotrofinas ao longo da vida, kisspeptina (núcleo arqueado e AVPV), desenvolvimento folicular, recrutamento, seleção e dominância, modelo de duas células, feedback negativo e positivo, surto de LH e ovulação, corpo lúteo e fase lútea, ciclo uterino, muco cervical, temperatura basal, menopausa e bases fisiológicas da contracepção hormonal.</p>
+  <p class="meta">Baseado nos slides da aula <em>Fisiologia do ciclo menstrual</em> (Profa. Dra. Camila Ferreira Roncari, Departamento de Fisiologia e Farmacologia). As figuras são as dos slides (Berne &amp; Levy, Boron &amp; Boulpaep, Raff &amp; Levitzky, Vander, Guyton, Ganong, Fox), com dois esquemas próprios; o texto foi completado com Berne &amp; Levy e Guyton. Os destaques “Cai na prova” vêm das provas da T137 e da T136 e dos compilados.</p>
+
+  <div class="cover-grid">
+    <div class="box key">
+      <div class="tag">Como usar este resumo</div>
+      <ol>
+        <li>Comece pela <b>linha do tempo</b> da seção 8: ela junta ovário, endométrio, hormônios e GnRH em uma figura só. Quase toda questão é “o que acontece ao mesmo tempo”.</li>
+        <li>Grave o <b>feedback</b>: o estradiol é <b>negativo</b> quase o ciclo todo e vira <b>positivo</b> quando passa de <b>200 pg/mL por mais de 2 dias</b>.</li>
+        <li>Grave o <b>modelo de duas células</b>: <b>teca + LH = androgênio</b>; <b>granulosa + FSH + aromatase = estradiol</b>.</li>
+        <li>Na véspera, revise o mapa-mestre, os mnemônicos e faça as questões.</li>
+      </ol>
+    </div>
+    <div class="legend">
+      <div class="tag plain">Código de cores</div>
+      <div class="chips">
+        <span class="chip o" style="--c:#c92a2a;--f:#ffe3e3">Eixo e kisspeptina</span>
+        <span class="chip o" style="--c:#e8590c;--f:#ffe8cc">Folículos e fase folicular</span>
+        <span class="chip o" style="--c:#b08900;--f:#fff3bf">Esteroidogênese</span>
+        <span class="chip o" style="--c:#2b8a3e;--f:#d3f9d8">Ovulação e corpo lúteo</span>
+        <span class="chip o" style="--c:#1c7ed6;--f:#d0ebff">Ciclo uterino</span>
+        <span class="chip o" style="--c:#7048e8;--f:#e5dbff">Menopausa e fármacos</span>
+      </div>
+      <div class="boxlegend">
+        <span class="mini key">Em uma frase</span>
+        <span class="mini prova">Cai na prova</span>
+        <span class="mini clin">Correlação clínica</span>
+        <span class="mini deep">Aprofundamento</span>
+        <span class="mini mnem">Mnemônico</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ideias"><div class="tag plain">As cinco ideias que organizam toda a matéria</div>
+  <ol class="tight">
+    <li><b>O GnRH precisa ser pulsátil</b>: pulsos <b>lentos</b> favorecem o <b>FSH</b>, pulsos <b>rápidos</b> favorecem o <b>LH</b>; GnRH contínuo derruba os dois. Quem gera e ajusta os pulsos são os neurônios de <b>kisspeptina</b>.</li>
+    <li><b>O ciclo ovariano tem duas fases</b>: a <b>folicular</b> (FSH, folículo dominante, estradiol) e a <b>lútea</b> (corpo lúteo, <b>progesterona</b>), separadas pela <b>ovulação</b>. A lútea dura sempre <b>14 ± 2 dias</b>; é a folicular que varia.</li>
+    <li><b>O estradiol muda de sinal</b>: em níveis baixos faz <b>feedback negativo</b> (pelo núcleo arqueado); acima de <b>200 pg/mL por mais de 2 dias</b>, faz <b>feedback positivo</b> (pelo AVPV) e dispara o <b>pico de LH</b>, que leva à ovulação.</li>
+    <li><b>Teca faz androgênio, granulosa faz estradiol</b>: o LH estimula a teca, o FSH estimula a aromatase da granulosa. No corpo lúteo, a granulosa-luteínica passa a fazer <b>progesterona</b>.</li>
+    <li><b>O endométrio segue o ovário</b>: <b>proliferativa = folicular</b> (estradiol), <b>secretória = lútea</b> (progesterona), <b>menstrual</b> = queda simultânea de estradiol e progesterona quando o corpo lúteo regride.</li>
+  </ol></div>
+
+  <div class="toc">
+    <div class="tag plain">Sumário</div>
+    <ol class="toc2">
+      <li><b>Anatomia funcional</b> e o ciclo</li>
+      <li><b>Eixo hipotálamo-hipófise-ovário</b></li>
+      <li><b>Gonadotrofinas</b> ao longo da vida</li>
+      <li><b>Kisspeptina</b>: ARC e AVPV</li>
+      <li><b>Desenvolvimento folicular</b></li>
+      <li><b>Modelo de duas células</b></li>
+      <li><b>Fase folicular</b> e surto de LH</li>
+      <li><b>Linha do tempo</b> do ciclo</li>
+      <li><b>Ovulação</b> e corpo lúteo</li>
+      <li><b>Ciclo uterino</b>, muco e temperatura</li>
+      <li><b>Menopausa</b> e contracepção</li>
+      <li><b>Revisão final</b> e questões</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================== 1 ANATOMIA ============================== -->
+<section class="sec">
+<h2><span class="num n-corp">1</span>Anatomia funcional e o ciclo</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/anatomia.webp" alt="anatomia"><figcaption><b>Figura 1.</b> Anatomia funcional do trato genital feminino (aula, Seeley): ovário, tuba (infundíbulo, fímbrias, ampola), fundo e corpo do útero, endométrio, miométrio, perimétrio, colo e vagina, com os ligamentos.</figcaption></figure>
+<div>
+<table class="dense">
+<thead><tr><th>Órgão</th><th>Função (aula)</th></tr></thead>
+<tbody>
+<tr><td class="g-corp">Ovário</td><td><b>Folículos ovarianos</b>; produção de <b>estrogênio e progesterona</b> (função endócrina e exócrina)</td></tr>
+<tr><td class="g-corp">Tuba uterina</td><td><b>Captura</b> do complexo cumulus-oócito na ovulação (fímbrias); <b>armazenamento dos espermatozoides</b></td></tr>
+<tr><td class="g-corp">Endossalpinge</td><td>Células <b>ciliadas</b> (propulsão do cumulus-oócito para o útero) e <b>secretoras</b> (capacitação do espermatozoide, nutrição do embrião)</td></tr>
+<tr><td class="g-corp">Útero</td><td>Ajuda o movimento do espermatozoide; <b>adesão e implantação do blastocisto</b>; contrações para expelir o feto</td></tr>
+<tr><td class="g-corp">Colo do útero</td><td>Controla a entrada de substâncias no útero; <b>secreção do muco cervical</b></td></tr>
+</tbody></table>
+</div>
+</div>
+<div class="grid2">
+<div>
+<div class="box key"><div class="tag">Ciclo menstrual (aula)</div>
+Ciclo <b>espontâneo</b> regulado por interações funcionais cíclicas entre <b>hipotálamo, hipófise anterior e ovários</b>. Libera <b>um único óvulo por mês</b> e prepara o <b>endométrio</b> para a implantação do blastocisto. Duração média de <b>28 dias</b> (18 a 40 dias).
+</div>
+<p>O intervalo entre as menstruações é <b>mais irregular logo após a menarca e perto da menopausa</b>: nos dois extremos os ciclos costumam ser <b>anovulatórios</b>.</p>
+</div>
+<figure class="img sm"><img src="res/ciclo/intervalo.webp" alt="intervalo"><figcaption><b>Figura 2.</b> Intervalo intermenstrual ao longo da vida reprodutiva (aula, Yen &amp; Jaffe): a média fica em torno de 28 dias, mas o desvio é grande logo após a puberdade e perto dos 40 anos de vida reprodutiva.</figcaption></figure>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/endossalpinge.webp" alt="endossalpinge"><figcaption><b>Figura 3.</b> Endossalpinge (aula): microscopia eletrônica de varredura com células ciliadas e células secretoras.</figcaption></figure>
+<div class="box prova"><div class="tag">Cai na prova · T137, T136 e compilados</div>
+A <b>superfície do ovário</b> distingue a menina antes da menarca (lisa) da mulher que já ovulou várias vezes (<b>cicatrizes</b> das ovulações). A <b>curetagem</b> repetida causa infertilidade por retirar a <b>camada basal do endométrio</b>, de onde a camada funcional se regenera a cada ciclo.
+</div>
+</div>
+</section>
+
+<!-- ============================== 2 EIXO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-corp">2</span>Eixo hipotálamo-hipófise-ovário</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+O hipotálamo libera <b>GnRH</b> no sistema porta; a adeno-hipófise responde com <b>FSH</b> e <b>LH</b>, que estimulam o ovário. O ovário devolve <b>estradiol, progesterona e inibina</b>, que fazem <b>feedback negativo</b> no hipotálamo e na hipófise e, em um momento do ciclo, <b>feedback positivo</b>.
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/feedback_neg.webp" alt="feedback_neg"><figcaption><b>Figura 4.</b> Feedback negativo (aula): inibina, β-estradiol e progesterona inibem o hipotálamo e a hipófise.</figcaption></figure>
+<figure class="img sm"><img src="res/ciclo/pulsos_mua.webp" alt="pulsos_mua"><figcaption><b>Figura 5.</b> O GnRH sai em pulsos (aula, Guyton): cada salto de atividade elétrica dos neurônios hipotalâmicos (MUA, em azul) é seguido de um pulso de LH (em vermelho), a cada 1 a 2 horas.</figcaption></figure>
+</div>
+<h3>2.1 O padrão de secreção do GnRH</h3>
+<div class="grid2">
+<div>
+<ul>
+<li><b>Pulsátil</b>: o experimento de <b>Belchetz (1978)</b> em macacas sem hipotálamo mostrou que o GnRH dado em pulsos mantém LH e FSH; dado de forma <b>contínua</b>, LH e FSH <b>caem</b>; voltando aos pulsos, sobem de novo.</li>
+<li><b>Frequência</b>: 1 pulso de GnRH por hora mantém o <b>LH</b> alto; 1 pulso a cada 3 horas baixa o LH e <b>aumenta o FSH</b>. A pulsatilidade influencia a <b>dimerização</b> da subunidade α com a <b>β-FSH ou a β-LH</b>.</li>
+<li>No gonadotropo, o GnRH age por receptor acoplado à <b>Gq</b> → PLC → IP₃ e DAG → <b>Ca²⁺</b> e PKC → liberação e síntese das gonadotrofinas.</li>
+<li>LH e FSH são <b>dímeros αβ</b>: a subunidade α é igual (também no TSH e no hCG); a <b>β dá a especificidade</b>.</li>
+</ul>
+</div>
+<div>
+<figure class="img sm"><img src="res/ciclo/belchetz.webp" alt="belchetz"><figcaption><b>Figura 6.</b> GnRH pulsátil, contínuo e de novo pulsátil (aula, Belchetz e cols., Science 1978): LH e FSH só se mantêm com os pulsos.</figcaption></figure>
+<figure class="img sm"><img src="res/ciclo/pulsos_lh_fsh.webp" alt="pulsos_lh_fsh"><figcaption><b>Figura 7.</b> Frequência dos pulsos (aula, Berne &amp; Levy): com 1 pulso por hora o LH fica alto; com 1 pulso a cada 3 horas o LH cai e o FSH sobe.</figcaption></figure>
+</div>
+</div>
+<div class="grid2">
+<div class="box prova"><div class="tag">Cai na prova · T137</div>
+“A <b>secreção pulsátil de GnRH</b> é necessária para a manutenção da secreção normal de LH e FSH” (correta). Distratores: GnRH contínuo “aumenta” LH e FSH; kisspeptina “inibe” o GnRH; o estradiol faz “<b>exclusivamente</b>” feedback negativo; a progesterona “aumenta” a frequência dos pulsos na fase lútea (ela <b>diminui</b>).
+</div>
+<div class="box clin"><div class="tag">Correlação clínica · análogos do GnRH</div>
+Dados de forma <b>contínua</b> (leuprorrelina, gosserrelina), os análogos <b>dessensibilizam</b> o gonadotropo: LH, FSH e estradiol caem. É a base do tratamento da <b>endometriose</b>, de miomas, da puberdade precoce central e do bloqueio hipofisário na fertilização in vitro.
+</div>
+</div>
+</section>
+
+<!-- ============================== 3 GONADOTROFINAS AO LONGO DA VIDA ============================== -->
+<section class="sec flow">
+<h2><span class="num n-corp">3</span>Gonadotrofinas ao longo da vida</h2>
+<figure class="img"><img src="res/ciclo/idades.webp" alt="idades"><figcaption><b>Figura 8.</b> Gonadotrofinas do feto à vida adulta (aula, Boron &amp; Boulpaep): picos no feto e na primeira infância, níveis baixos na infância, pulsos noturnos na puberdade e surtos mensais nos anos reprodutivos. Abaixo, a sensibilidade do eixo à retroalimentação negativa dos esteroides: muito alta na infância, baixa no adulto.</figcaption></figure>
+<div class="grid2">
+<div>
+<table class="dense">
+<thead><tr><th>Fase</th><th>Gonadotrofinas</th><th>Por quê</th></tr></thead>
+<tbody>
+<tr><td class="g-corp">Feto e primeira infância</td><td><b>Altas</b> (FSH &gt; LH na menina), até ~6 meses (“minipuberdade”)</td><td>Eixo ativo, sem freio</td></tr>
+<tr><td class="g-corp">Infância</td><td><b>Muito baixas</b></td><td><b>Alta sensibilidade</b> ao feedback negativo e freio central: mesmo pouco esteroide bloqueia o GnRH</td></tr>
+<tr><td class="g-corp">Puberdade</td><td>Pulsos de LH primeiro <b>à noite</b>, depois o dia todo</td><td>Cai a sensibilidade ao feedback; sobe a kisspeptina</td></tr>
+<tr><td class="g-corp">Anos reprodutivos</td><td><b>Surtos mensais</b> de LH</td><td>Feedback positivo do estradiol</td></tr>
+<tr><td class="g-corp">Menopausa</td><td><b>FSH e LH muito altos</b> (FSH &gt; LH)</td><td>Fim dos folículos: sem estradiol e sem inibina</td></tr>
+</tbody></table>
+</div>
+<figure class="img sm"><img src="res/ciclo/menopausa_g.webp" alt="menopausa_g"><figcaption><b>Figura 9.</b> Na menopausa (aula, Boron &amp; Boulpaep) o FSH e o LH sobem e ficam altos: não há mais folículos para produzir o estradiol e a inibina que os freavam.</figcaption></figure>
+</div>
+</section>
+
+<!-- ============================== 4 KISSPEPTINA ============================== -->
+<section class="sec flow">
+<h2><span class="num n-corp">4</span>Kisspeptina: núcleo arqueado e AVPV</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+Os neurônios de <b>kisspeptina</b> (KISS1) estimulam os neurônios de GnRH pelo receptor <b>KISS1R</b>. Há dois grupos: no <b>núcleo arqueado</b> (ARC, núcleo infundibular no humano), o estradiol <b>inibe</b> a kisspeptina (feedback negativo); no <b>núcleo periventricular anteroventral</b> (AVPV, área pré-óptica no humano), o estradiol <b>estimula</b> a kisspeptina (feedback positivo).
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/nucleos.webp" alt="nucleos"><figcaption><b>Figura 10.</b> Núcleos hipotalâmicos em corte coronal (aula): o núcleo arqueado, junto à eminência média, e o núcleo periventricular anteroventral, junto ao 3º ventrículo.</figcaption></figure>
+<figure class="img sm"><img src="res/ciclo/kiss_arc_avpv.webp" alt="kiss_arc_avpv"><figcaption><b>Figura 11.</b> O experimento da ovariectomia (aula, Smith e cols., Endocrinology 2005): no ARC a expressão de KISS1 <b>sobe</b> sem ovário (OVX) e <b>cai</b> com reposição de estradiol (OVX+E2); no AVPV acontece o contrário.</figcaption></figure>
+</div>
+<div class="grid2">
+<div>
+<ul>
+<li>Os neurônios de kisspeptina expressam o <b>receptor de estrogênio α (ERα)</b>: é por eles que o estradiol chega ao GnRH, já que o neurônio de GnRH quase não tem receptor de estrogênio.</li>
+<li>No registro de um neurônio de GnRH, <b>10 nM de kisspeptina</b> faz o neurônio disparar intensamente por muitos minutos.</li>
+<li>A <b>leptina</b>, do tecido adiposo, estimula os neurônios do ARC: é a ligação entre o <b>estado nutricional</b> e a reprodução.</li>
+</ul>
+<figure class="img sm"><img src="res/ciclo/kiss_registro.webp" alt="kiss_registro"><figcaption><b>Figura 12.</b> Registro de um neurônio secretor de GnRH (aula, Liu &amp; Herbison 2016): a kisspeptina (10 nM) aumenta muito os disparos.</figcaption></figure>
+</div>
+<figure class="img sm"><img src="res/ciclo/kiss_leptina.webp" alt="kiss_leptina"><figcaption><b>Figura 13.</b> O circuito (aula, Matzuk &amp; Lamb, Nature Medicine 2008): leptina estimula o ARC; o estradiol inibe o ARC e estimula o AVPV; a kisspeptina age no KISS1R do neurônio de GnRH, que estimula FSH e LH.</figcaption></figure>
+</div>
+<figure class="fig"><svg role="img" aria-label="feedback" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" font-family="Inter, Helvetica, Arial, sans-serif">
+<defs><marker id="feedback-a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c92a2a"/></marker><marker id="feedback-a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e8590c"/></marker><marker id="feedback-a-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b08900"/></marker><marker id="feedback-a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2b8a3e"/></marker><marker id="feedback-a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1c7ed6"/></marker><marker id="feedback-a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7048e8"/></marker><marker id="feedback-a-pink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c2255c"/></marker><marker id="feedback-a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#495057"/></marker><marker id="feedback-a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0c8599"/></marker><marker id="feedback-a-stop" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M5 0V10" stroke="#c92a2a" stroke-width="3"/></marker></defs>
+<rect x="0" y="0" width="700" height="300" fill="#ffffff"/>
+<rect x="25.0" y="6.5" width="300" height="19" rx="9.5" fill="#1c7ed6"/><text x="175.0" y="19.4" text-anchor="middle" font-size="9.4" font-weight="800" fill="#ffffff">FEEDBACK NEGATIVO (quase todo o ciclo)</text>
+<rect x="375.0" y="6.5" width="300" height="19" rx="9.5" fill="#c92a2a"/><text x="525.0" y="19.4" text-anchor="middle" font-size="9.4" font-weight="800" fill="#ffffff">FEEDBACK POSITIVO (fim da fase folicular)</text>
+<line x1="350" y1="6" x2="350" y2="294" stroke="#dee2e6" stroke-width="1.4"/>
+<rect x="20" y="36" width="310" height="34" rx="7" fill="#d0ebff" stroke="#1c7ed6" stroke-width="1.4"/>
+<text x="175.0" y="52.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40">E2 <tspan font-weight="800" fill="#212529">baixo ou moderado</tspan>, P4 e inibina</text>
+<line x1="175" y1="71" x2="175" y2="83" stroke="#1c7ed6" stroke-width="1.5" marker-end="url(#feedback-a-blue)"/>
+<rect x="20" y="85" width="310" height="34" rx="7" fill="#d0ebff" stroke="#1c7ed6" stroke-width="1.4"/>
+<text x="175.0" y="101.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">Neurônios de kisspeptina do ARC</tspan></text>
+<text x="175.0" y="113.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40">(núcleo arqueado): o E2 <tspan font-weight="800" fill="#212529">inibe</tspan> a expressão de KISS1</text>
+<line x1="175" y1="120" x2="175" y2="132" stroke="#1c7ed6" stroke-width="1.5" marker-end="url(#feedback-a-blue)"/>
+<rect x="20" y="134" width="310" height="34" rx="7" fill="#d0ebff" stroke="#1c7ed6" stroke-width="1.4"/>
+<text x="175.0" y="150.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40">↓ pulsos de GnRH; na hipófise ↓ resposta</text>
+<line x1="175" y1="169" x2="175" y2="181" stroke="#1c7ed6" stroke-width="1.5" marker-end="url(#feedback-a-blue)"/>
+<rect x="20" y="183" width="310" height="40" rx="7" fill="#d0ebff" stroke="#1c7ed6" stroke-width="1.4"/>
+<text x="175.0" y="199.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40">↓ <tspan font-weight="800" fill="#212529">FSH</tspan> (sobretudo, junto com a <tspan font-weight="800" fill="#212529">inibina B</tspan>)</text>
+<text x="175.0" y="211.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40">e ↓ LH → seleção do folículo dominante</text>
+<rect x="370" y="36" width="310" height="40" rx="7" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<text x="525.0" y="52.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40">E2 <tspan font-weight="800" fill="#212529">> 200 pg/mL por mais de 2 dias</tspan></text>
+<text x="525.0" y="64.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40">(o folículo dominante produz muito E2)</text>
+<line x1="525" y1="77" x2="525" y2="89" stroke="#c92a2a" stroke-width="1.5" marker-end="url(#feedback-a-red)"/>
+<rect x="370" y="91" width="310" height="34" rx="7" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<text x="525.0" y="107.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">Neurônios de kisspeptina do AVPV</tspan></text>
+<text x="525.0" y="119.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40">(área pré-óptica): o E2 <tspan font-weight="800" fill="#212529">estimula</tspan> KISS1</text>
+<line x1="525" y1="126" x2="525" y2="138" stroke="#c92a2a" stroke-width="1.5" marker-end="url(#feedback-a-red)"/>
+<rect x="370" y="140" width="310" height="34" rx="7" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<text x="525.0" y="156.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40">↑ pulsos de GnRH (<tspan font-weight="800" fill="#212529">alta frequência</tspan>); hipófise</text>
+<text x="525.0" y="168.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40">com <tspan font-weight="800" fill="#212529">↑ receptores de GnRH</tspan>, mais sensível</text>
+<line x1="525" y1="175" x2="525" y2="187" stroke="#c92a2a" stroke-width="1.5" marker-end="url(#feedback-a-red)"/>
+<rect x="370" y="189" width="310" height="34" rx="7" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<text x="525.0" y="205.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">Pico de LH</tspan> (e menor de FSH) → ovulação</text>
+<rect x="20" y="246" width="660" height="46" rx="9" fill="#e5dbff" stroke="#7048e8" stroke-width="1.4"/>
+<text x="350.0" y="262.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">Kisspeptina sempre estimula</tspan> o neurônio de GnRH (receptor <tspan font-weight="800" fill="#212529">KISS1R</tspan>). O que muda é qual grupo o E2 liga ou desliga.</text>
+<text x="350.0" y="274.0" text-anchor="middle" font-size="9.1" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">Leptina</tspan> (tecido adiposo) estimula o ARC: pouca gordura → amenorreia. <tspan font-weight="800" fill="#212529">Progesterona</tspan> reduz a frequência dos pulsos.</text>
+</svg><figcaption><b>Figura 14.</b> Feedback negativo e positivo do estradiol (esquema próprio a partir da aula): os dois grupos de neurônios de kisspeptina.</figcaption></figure>
+<div class="grid2">
+<div class="box prova"><div class="tag">Cai na prova · T136 e compilados</div>
+“A kisspeptina <b>inibe</b> a secreção de GnRH” é sempre <b>falso</b>: ela <b>estimula</b>. Nos compilados: “a retroalimentação <b>negativa</b> do estradiol inibe a secreção de <b>FSH</b>; a retroalimentação <b>positiva</b> do estradiol estimula a secreção de <b>LH</b>”.
+</div>
+<div class="box clin"><div class="tag">Correlação clínica · amenorreia hipotalâmica</div>
+Atletas, transtornos alimentares e estresse intenso reduzem a <b>leptina</b> e a atividade do ARC: os pulsos de GnRH ficam lentos e fracos, LH e FSH caem e a menstruação para. A falta de kisspeptina ou do KISS1R causa <b>hipogonadismo hipogonadotrófico</b> (sem puberdade).
+</div>
+</div>
+</section>
+
+<!-- ============================== 5 DESENVOLVIMENTO FOLICULAR ============================== -->
+<section class="sec flow">
+<h2><span class="num n-tcp">5</span>Desenvolvimento folicular</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/primordial.webp" alt="primordial"><figcaption><b>Figura 15.</b> Formação do folículo primordial (aula): células germinativas primordiais migram e se dividem; viram oogônias e depois oócitos primários, que iniciam a meiose e param. Há ~6 a 7 milhões de oócitos na 20ª semana de gestação, 2 a 4 milhões ao nascimento e 200 a 400 mil na puberdade.</figcaption></figure>
+<div>
+<ul>
+<li>As <b>oogônias</b> se multiplicam por mitose só na vida fetal. Ao entrar em meiose viram <b>oócitos primários</b>, que <b>param na prófase I</b> e só retomam a meiose no pico de LH, anos depois.</li>
+<li>O <b>folículo primordial</b> é o oócito primário com uma camada de células foliculares achatadas; é a <b>reserva</b> que se esgota até a menopausa, quase toda por <b>atresia</b>.</li>
+<li>Só ~400 folículos ovulam na vida; os outros morrem por atresia.</li>
+</ul>
+<figure class="img sm"><img src="res/ciclo/reserva.webp" alt="reserva"><figcaption><b>Figura 16.</b> Número de folículos primordiais por ovário com a idade (aula, Ganong): queda constante e acelerada perto dos 40–50 anos.</figcaption></figure>
+</div>
+</div>
+<h3>5.1 Os estágios</h3>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/estagios_a.webp" alt="estagios_a"><figcaption><b>Figura 17.</b> Folículo primordial (oócito primário, lâmina basal, células pré-granulosas achatadas) e folículo pré-antral primário (zona pelúcida de glicoproteínas e células granulosas cuboides) (aula, Berne &amp; Levy).</figcaption></figure>
+<figure class="img sm"><img src="res/ciclo/estagios_b.webp" alt="estagios_b"><figcaption><b>Figura 18.</b> Folículo antral inicial e antral grande (aula, Vander): antro com ácido hialurônico e versicano, células do cumulus em volta do oócito, teca e vasos sanguíneos.</figcaption></figure>
+</div>
+<table class="dense">
+<thead><tr><th>Estágio (aula)</th><th>O que aparece</th><th>Tempo e controle</th></tr></thead>
+<tbody>
+<tr><td class="g-tcp">Primordial</td><td>Oócito primário + uma camada de células <b>pré-granulosas achatadas</b> + lâmina basal</td><td>Formado até a <b>20ª semana</b> de gestação; quiescente</td></tr>
+<tr><td class="g-tcp">Pré-antral primário</td><td>Células granulosas <b>cuboides</b>; <b>zona pelúcida</b> (glicoproteínas)</td><td>Ativação de primordial a primário: até os <b>50 anos</b></td></tr>
+<tr><td class="g-tcp">Pré-antral secundário</td><td>Granulosas <b>estratificadas</b>; aparece a <b>teca</b></td><td rowspan="2">De primário a antral grande: <b>vários meses</b>, <b>independente de gonadotrofinas</b></td></tr>
+<tr><td class="g-tcp">Antral inicial</td><td><b>Antro</b> (líquido), vasos sanguíneos na teca</td></tr>
+<tr><td class="g-tcp">Antral grande (2–5 mm)</td><td>Antro grande; oócito no <b>cumulus oophorus</b></td><td><b>Dependente de gonadotrofinas</b>: recrutado no ciclo</td></tr>
+<tr><td class="g-tcp">Dominante (pré-ovulatório)</td><td>Chega a ~20–25 mm</td><td>Selecionado; ovula</td></tr>
+</tbody></table>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/histo_folic.webp" alt="histo_folic"><figcaption><b>Figura 19.</b> Folículos no ovário (aula, Junqueira): primordiais na periferia, primário, antral, antral avançado e um folículo atrésico.</figcaption></figure>
+<div class="box deep"><div class="tag">Atenção · os nomes mudam de livro para livro</div>
+Na fisiologia (Berne &amp; Levy, da aula), o <b>secundário é pré-antral</b> (granulosas estratificadas, sem antro). Na histologia (Junqueira), <b>“folículo secundário” = folículo com antro</b>. Por isso os compilados de histologia dão como resposta “a característica do folículo secundário é a <b>presença do antro</b>” e “a zona pelúcida está totalmente formada no <b>primário multilaminar</b>”. Leia de qual disciplina é a questão.
+</div>
+</div>
+<h3>5.2 Recrutamento, seleção e dominância</h3>
+<div class="grid2">
+<div>
+<figure class="img sm"><img src="res/ciclo/independente.webp" alt="independente"><figcaption><b>Figura 20.</b> Do pré-antral ao antral grande o crescimento leva cerca de três ciclos e é independente de gonadotrofinas; só o antral grande depende do FSH (aula, Raff &amp; Levitzky).</figcaption></figure>
+</div>
+<div>
+<ol class="tight">
+<li><b>Recrutamento</b>: no fim da lútea anterior e no começo da folicular, o <b>FSH sobe</b> e recruta uma coorte de folículos antrais grandes para um crescimento <b>rápido e dependente de gonadotrofina</b>.</li>
+<li><b>Seleção</b>: redução do número de folículos à <b>cota proliferativa</b>. O estradiol e a inibina B que eles fazem <b>baixam o FSH</b>.</li>
+<li><b>Dominância</b>: sobrevive o folículo com <b>mais receptores de FSH e mais aromatase</b>, que continua crescendo com pouco FSH (e passa a ter receptores de LH na granulosa). Os outros sofrem <b>atresia</b> (ATR).</li>
+<li>O dominante ganha <b>competência para completar a 1ª divisão meiótica</b>.</li>
+</ol>
+</div>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/dominante.webp" alt="dominante"><figcaption><b>Figura 21.</b> Recrutamento, seleção, dominância inicial e tardia (aula, Raff &amp; Levitzky): o folículo dominante inibe os outros, que entram em atresia (ATR).</figcaption></figure>
+<div class="box prova"><div class="tag">Cai na prova · T137 e T136</div>
+<b>T137</b>: “O <b>FSH recruta</b> múltiplos folículos antrais, mas apenas um torna-se dominante devido à sua <b>maior capacidade de produzir estradiol</b>, que suprime o FSH.” Distratores: o LH recruta; todos ovulam juntos; a dominância depende só do tamanho. <b>T136</b>: “redução do número de folículos antrais à <b>cota proliferativa</b>” vem depois de “folículos antrais secretam estradiol sob influência do FSH”.
+</div>
+</div>
+</section>
+
+<!-- ============================== 6 DUAS CÉLULAS ============================== -->
+<section class="sec flow">
+<h2><span class="num n-alca">6</span>Modelo esteroidogênico de duas células</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+A <b>célula da teca</b> tem receptor de <b>LH</b>, a proteína <b>StAR</b> e a <b>CYP17</b>: faz <b>androgênios</b> (androstenediona) a partir do colesterol. A androstenediona <b>difunde</b> para a <b>célula da granulosa</b>, que tem receptor de <b>FSH</b> e a <b>aromatase (CYP19)</b>: converte androgênio em <b>estradiol</b>. Nenhuma das duas faz estradiol sozinha.
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/duas_simples.webp" alt="duas_simples"><figcaption><b>Figura 22.</b> O modelo resumido (aula, Vander): LH → células da teca (síntese de androgênios) → difusão → células da granulosa (FSH; conversão dos androgênios em estrogênio).</figcaption></figure>
+<figure class="img sm"><img src="res/ciclo/duas_celulas.webp" alt="duas_celulas"><figcaption><b>Figura 23.</b> O modelo completo (aula, Berne &amp; Levy): na teca, StAR, CYP11A1, 3β-HSD e CYP17 levam o colesterol a androstenediona; na granulosa, a CYP19 (aromatase) e a 17β-HSD formam o 17β-estradiol. A teca recebe o colesterol do sangue (LDL e HDL); a granulosa, antes da ovulação, fica isolada dos vasos pela lâmina basal.</figcaption></figure>
+</div>
+<table class="dense">
+<thead><tr><th></th><th>Célula da teca</th><th>Célula da granulosa</th></tr></thead>
+<tbody>
+<tr><td class="g-alca">Receptor</td><td><b>LH</b></td><td><b>FSH</b> (e, no folículo dominante, também <b>LH</b>, induzido pelo FSH)</td></tr>
+<tr><td class="g-alca">Enzimas-chave</td><td>StAR, CYP11A1, 3β-HSD, <b>CYP17</b> (17α-hidroxilase/17,20-desmolase)</td><td><b>CYP19 (aromatase)</b>, 17β-HSD</td></tr>
+<tr><td class="g-alca">Produto</td><td><b>Androstenediona</b> (e um pouco de testosterona)</td><td><b>17β-estradiol</b> (e inibina)</td></tr>
+<tr><td class="g-alca">Acesso ao sangue</td><td>Vascularizada: capta LDL e HDL</td><td>Avascular até a ovulação (lâmina basal)</td></tr>
+</tbody></table>
+<div class="grid2">
+<div class="box prova"><div class="tag">Cai na prova · T137, T136 e compilados</div>
+<b>T137</b>: “As células da <b>teca</b> expressam receptores para <b>LH</b>, sintetizam <b>androgênios</b> que são transferidos às células <b>granulosas</b>, onde a <b>aromatase</b> os converte em estradiol sob ação do FSH.” Os distratores trocam os receptores (teca com FSH) ou põem a aromatase na teca. <b>Compilados</b>: “as células da <b>granulosa</b> expressam receptores para FSH e a <b>aromatase</b>”.
+</div>
+<div class="box mnem"><div class="tag">Mnemônico · “Teca Testosterona, Granulosa Gera estradiol”</div>
+<b>T</b>eca ↔ <b>L</b>H ↔ androgênio (como a <b>L</b>eydig do homem).<br>
+<b>G</b>ranulosa ↔ <b>F</b>SH ↔ aromatase (como a Sertoli, que também tem aromatase e faz inibina).
+</div>
+</div>
+</section>
+
+<!-- ============================== 7 FASE FOLICULAR E SURTO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-tcp">7</span>Fase folicular e surto de LH</h2>
+<figure class="img"><img src="res/ciclo/hormonios.webp" alt="hormonios"><figcaption><b>Figura 24.</b> Eventos hormonais do ciclo ovariano (aula, Boron &amp; Boulpaep): LH, FSH, estradiol, progesterona e inibina dos dias 0 a 28, com a ovulação no dia 14.</figcaption></figure>
+<div class="grid2">
+<div>
+<h3>7.1 Fase folicular inicial e média</h3>
+<ul>
+<li>GnRH em pulsos de <b>baixa frequência</b> → sobretudo <b>FSH</b>.</li>
+<li>O FSH age na <b>granulosa</b> (aromatase, inibina); o LH, na <b>teca</b> (androgênios).</li>
+<li>O estradiol sobe aos poucos e, com a <b>inibina B</b>, faz <b>feedback negativo</b>: o FSH cai, o que seleciona o dominante.</li>
+<li>No endométrio: fase <b>proliferativa</b>.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/ciclo/folicular_ini.webp" alt="folicular_ini"><figcaption><b>Figura 25.</b> Fase folicular inicial e média (aula, Vander): GnRH → FSH e LH → granulosa e teca → estrogênio e inibina, com feedback negativo.</figcaption></figure>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/surto_lh.webp" alt="surto_lh"><figcaption><b>Figura 26.</b> O surto de LH (aula): com estradiol acima de 200 pg/mL por mais de 2 dias, o feedback vira positivo; a hipófise aumenta os receptores de GnRH e fica mais sensível à sinalização pelo GnRH.</figcaption></figure>
+<div>
+<h3>7.2 O feedback positivo</h3>
+<ul>
+<li>O folículo dominante faz <b>muito estradiol</b>. Quando ele passa de <b>200 pg/mL por mais de 2 dias</b>, o feedback se torna <b>positivo</b>.</li>
+<li>Os pulsos de GnRH passam a <b>alta frequência</b>, e os gonadotropos <b>aumentam os receptores de GnRH</b> e a sensibilidade a ele.</li>
+<li>Resultado: o <b>pico de LH</b> (e um pico menor de FSH), no dia ~13.</li>
+<li>Um pouco antes da ovulação a granulosa começa a fazer <b>progesterona</b>, que ajuda o pico.</li>
+</ul>
+<figure class="img sm"><img src="res/ciclo/folicular_fim.webp" alt="folicular_fim"><figcaption><b>Figura 27.</b> Fase folicular final (aula, Vander): ↑ GnRH → pico de LH → ovulação e início do corpo lúteo, que faz progesterona e estrogênio.</figcaption></figure>
+</div>
+</div>
+<div class="box prova"><div class="tag">Cai na prova · ordem dos eventos (T136 e compilados)</div>
+A sequência correta é <b>V, III, II, I, IV</b>: (V) folículos antrais secretam estradiol sob FSH → (III) redução à cota proliferativa → (II) <b>feedback positivo do estradiol</b> sobre a hipófise → (I) secreção de progesterona pelo corpo lúteo → (IV) queda simultânea de estradiol e progesterona.
+</div>
+</section>
+
+<!-- ============================== 8 LINHA DO TEMPO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-uro">8</span>A linha do tempo do ciclo</h2>
+<figure class="fig"><svg role="img" aria-label="tempo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" font-family="Inter, Helvetica, Arial, sans-serif">
+<defs><marker id="tempo-a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c92a2a"/></marker><marker id="tempo-a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e8590c"/></marker><marker id="tempo-a-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b08900"/></marker><marker id="tempo-a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2b8a3e"/></marker><marker id="tempo-a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1c7ed6"/></marker><marker id="tempo-a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7048e8"/></marker><marker id="tempo-a-pink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c2255c"/></marker><marker id="tempo-a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#495057"/></marker><marker id="tempo-a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0c8599"/></marker><marker id="tempo-a-stop" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M5 0V10" stroke="#c92a2a" stroke-width="3"/></marker></defs>
+<rect x="0" y="0" width="700" height="400" fill="#ffffff"/>
+<line x1="120.0" y1="30" x2="120.0" y2="34" stroke="#868e96"/>
+<text x="120.0" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057">1</text>
+<line x1="160.7" y1="30" x2="160.7" y2="34" stroke="#868e96"/>
+<text x="160.7" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057"></text>
+<line x1="201.4" y1="30" x2="201.4" y2="34" stroke="#868e96"/>
+<text x="201.4" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057">4</text>
+<line x1="242.1" y1="30" x2="242.1" y2="34" stroke="#868e96"/>
+<text x="242.1" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057"></text>
+<line x1="282.9" y1="30" x2="282.9" y2="34" stroke="#868e96"/>
+<text x="282.9" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057"></text>
+<line x1="323.6" y1="30" x2="323.6" y2="34" stroke="#868e96"/>
+<text x="323.6" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057"></text>
+<line x1="364.3" y1="30" x2="364.3" y2="34" stroke="#868e96"/>
+<text x="364.3" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057"></text>
+<line x1="405.0" y1="30" x2="405.0" y2="34" stroke="#868e96"/>
+<text x="405.0" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057">14</text>
+<line x1="445.7" y1="30" x2="445.7" y2="34" stroke="#868e96"/>
+<text x="445.7" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057"></text>
+<line x1="486.4" y1="30" x2="486.4" y2="34" stroke="#868e96"/>
+<text x="486.4" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057"></text>
+<line x1="527.1" y1="30" x2="527.1" y2="34" stroke="#868e96"/>
+<text x="527.1" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057"></text>
+<line x1="567.9" y1="30" x2="567.9" y2="34" stroke="#868e96"/>
+<text x="567.9" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057"></text>
+<line x1="608.6" y1="30" x2="608.6" y2="34" stroke="#868e96"/>
+<text x="608.6" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057"></text>
+<line x1="649.3" y1="30" x2="649.3" y2="34" stroke="#868e96"/>
+<text x="649.3" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057"></text>
+<line x1="690.0" y1="30" x2="690.0" y2="34" stroke="#868e96"/>
+<text x="690.0" y="26.0" text-anchor="middle" font-size="9" font-weight="600" fill="#495057">28</text>
+<text x="10.0" y="26.0" text-anchor="start" font-size="9.6" font-weight="800" fill="#495057">Dia do ciclo</text>
+<text x="10.0" y="57.0" text-anchor="start" font-size="9.6" font-weight="800" fill="#495057">Ovário</text>
+<rect x="120.0" y="38" width="285.0" height="30" fill="#ffe8cc" stroke="#e8590c" stroke-width="1.2"/>
+<text x="262.5" y="57.0" text-anchor="middle" font-size="9.4" font-weight="800" fill="#e8590c">FASE FOLICULAR (variável)</text>
+<rect x="405.0" y="38" width="285.0" height="30" fill="#e5dbff" stroke="#7048e8" stroke-width="1.2"/>
+<text x="547.5" y="57.0" text-anchor="middle" font-size="9.4" font-weight="800" fill="#7048e8">FASE LÚTEA (14 ± 2 dias)</text>
+<text x="10.0" y="91.0" text-anchor="start" font-size="9.6" font-weight="800" fill="#495057">Endométrio</text>
+<rect x="120.0" y="72" width="81.4" height="30" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.2"/>
+<text x="160.7" y="91.0" text-anchor="middle" font-size="9.4" font-weight="800" fill="#c92a2a">MENSTRUAL</text>
+<rect x="201.4" y="72" width="203.6" height="30" fill="#fff3bf" stroke="#b08900" stroke-width="1.2"/>
+<text x="303.2" y="91.0" text-anchor="middle" font-size="9.4" font-weight="800" fill="#b08900">PROLIFERATIVA</text>
+<rect x="405.0" y="72" width="285.0" height="30" fill="#d0ebff" stroke="#1c7ed6" stroke-width="1.2"/>
+<text x="547.5" y="91.0" text-anchor="middle" font-size="9.4" font-weight="800" fill="#1c7ed6">SECRETÓRIA</text>
+<text x="10.0" y="125.0" text-anchor="start" font-size="9.6" font-weight="800" fill="#495057">GnRH</text>
+<rect x="120.0" y="106" width="244.3" height="30" fill="#f1f3f5" stroke="#495057" stroke-width="1.2"/>
+<text x="242.1" y="125.0" text-anchor="middle" font-size="9.4" font-weight="800" fill="#495057">pulsos de BAIXA frequência</text>
+<rect x="364.3" y="106" width="50.9" height="30" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.2"/>
+<text x="389.7" y="125.0" text-anchor="middle" font-size="9.4" font-weight="800" fill="#c92a2a">ALTA</text>
+<rect x="415.2" y="106" width="274.8" height="30" fill="#f1f3f5" stroke="#495057" stroke-width="1.2"/>
+<text x="552.6" y="125.0" text-anchor="middle" font-size="9.4" font-weight="800" fill="#495057">pulsos de BAIXA frequência</text>
+<line x1="405.0" y1="34" x2="405.0" y2="392" stroke="#c92a2a" stroke-width="1.6" stroke-dasharray="5 4"/>
+<rect x="280.0" y="139.0" width="250" height="18" rx="9.0" fill="#c92a2a"/><text x="405.0" y="151.2" text-anchor="middle" font-size="9" font-weight="800" fill="#ffffff">OVULAÇÃO ~dia 14, cerca de 36 h após o pico de LH</text>
+<rect x="120.0" y="168" width="97.71428571428572" height="92" rx="7" fill="#ffe8cc" stroke="#e8590c" stroke-width="1.4"/>
+<text x="168.9" y="184.0" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">FSH sobe</tspan> um pouco</text>
+<text x="168.9" y="195.4" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">(a lútea anterior</text>
+<text x="168.9" y="206.7" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">acabou): recruta</text>
+<text x="168.9" y="218.1" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">vários folículos</text>
+<text x="168.9" y="229.4" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">antrais</text>
+<rect x="221.78571428571428" y="168" width="109.92857142857144" height="92" rx="7" fill="#fff3bf" stroke="#b08900" stroke-width="1.4"/>
+<text x="276.8" y="184.0" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">Seleção</tspan>: estradiol e</text>
+<text x="276.8" y="195.4" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">inibina B <tspan font-weight="800" fill="#212529">baixam o FSH</tspan>;</text>
+<text x="276.8" y="206.7" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">sobra o <tspan font-weight="800" fill="#212529">dominante</tspan></text>
+<text x="276.8" y="218.1" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">(mais receptor de FSH,</text>
+<text x="276.8" y="229.4" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">mais aromatase)</text>
+<rect x="335.7857142857143" y="168" width="67.17857142857144" height="92" rx="7" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<text x="369.4" y="184.0" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">E2 > 200</tspan></text>
+<text x="369.4" y="195.4" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">pg/mL</tspan> por</text>
+<text x="369.4" y="206.7" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">mais de 2 dias:</text>
+<text x="369.4" y="218.1" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">feedback +</tspan></text>
+<text x="369.4" y="229.4" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">→ <tspan font-weight="800" fill="#212529">pico de LH</tspan></text>
+<rect x="409.07142857142856" y="168" width="138.42857142857144" height="92" rx="7" fill="#e5dbff" stroke="#7048e8" stroke-width="1.4"/>
+<text x="478.3" y="184.0" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">Corpo lúteo</tspan>: muita</text>
+<text x="478.3" y="195.4" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">progesterona</tspan> + E2</text>
+<text x="478.3" y="206.7" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">e inibina A →</text>
+<text x="478.3" y="218.1" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">feedback negativo</tspan></text>
+<text x="478.3" y="229.4" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">(↓ LH e ↓ FSH)</text>
+<rect x="551.5714285714286" y="168" width="138.42857142857144" height="92" rx="7" fill="#d0ebff" stroke="#1c7ed6" stroke-width="1.4"/>
+<text x="620.8" y="184.0" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">Sem gravidez (sem hCG):</text>
+<text x="620.8" y="195.4" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">luteólise</tspan> → ↓ P4 e E2</text>
+<text x="620.8" y="206.7" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">→ <tspan font-weight="800" fill="#212529">menstruação</tspan></text>
+<text x="620.8" y="218.1" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">e ↑ FSH:</text>
+<text x="620.8" y="229.4" text-anchor="middle" font-size="8.6" font-weight="400" fill="#343a40">novo ciclo</text>
+<text x="10.0" y="214.0" text-anchor="start" font-size="9.6" font-weight="800" fill="#495057">Eventos</text>
+<rect x="10" y="272" width="392.9642857142857" height="54" rx="9" fill="#fff3bf" stroke="#b08900" stroke-width="1.4"/>
+<text x="206.5" y="288.0" text-anchor="middle" font-size="8.9" font-weight="400" fill="#343a40">Endométrio <tspan font-weight="800" fill="#212529">3 a 5 mm</tspan>: o E2 faz proliferar e</text>
+<text x="206.5" y="299.7" text-anchor="middle" font-size="8.9" font-weight="400" fill="#343a40">cria <tspan font-weight="800" fill="#212529">receptores de P4</tspan>; muco <tspan font-weight="800" fill="#212529">fino, aquoso, alcalino</tspan></text>
+<rect x="409.07142857142856" y="272" width="280.92857142857144" height="54" rx="9" fill="#d0ebff" stroke="#1c7ed6" stroke-width="1.4"/>
+<text x="549.5" y="288.0" text-anchor="middle" font-size="8.9" font-weight="400" fill="#343a40">P4: glândulas <tspan font-weight="800" fill="#212529">secretam</tspan>, artérias <tspan font-weight="800" fill="#212529">espiraladas</tspan>;</text>
+<text x="549.5" y="299.7" text-anchor="middle" font-size="8.9" font-weight="400" fill="#343a40">muco <tspan font-weight="800" fill="#212529">espesso, ácido</tspan>; temperatura basal <tspan font-weight="800" fill="#212529">↑ ~0,3–0,5 °C</tspan></text>
+<rect x="10" y="338" width="680" height="52" rx="9" fill="#f1f3f5" stroke="#495057" stroke-width="1.4"/>
+<text x="350.0" y="353.5" text-anchor="middle" font-size="9.6" font-weight="800" fill="#495057">Para cair na prova</text>
+<text x="350.0" y="366.5" text-anchor="middle" font-size="9" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">Fase proliferativa = fase folicular</tspan> · <tspan font-weight="800" fill="#212529">fase secretória = fase lútea</tspan> · a <tspan font-weight="800" fill="#212529">menstruação</tspan> vem da <tspan font-weight="800" fill="#212529">queda simultânea de E2 e P4</tspan></text>
+<text x="350.0" y="378.3" text-anchor="middle" font-size="9" font-weight="400" fill="#343a40">A <tspan font-weight="800" fill="#212529">fase lútea é fixa</tspan> (14 ± 2 dias): é a folicular que varia. <tspan font-weight="800" fill="#212529">Progesterona no dia 22</tspan> confirma que houve ovulação.</text>
+</svg><figcaption><b>Figura 28.</b> O ciclo de 28 dias em uma figura (esquema próprio a partir da aula): fases ovarianas e uterinas, frequência dos pulsos de GnRH e os eventos de cada momento.</figcaption></figure>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/linha_tempo.webp" alt="linha_tempo"><figcaption><b>Figura 29.</b> Eventos ovarianos (aula, Vander): desenvolvimento de múltiplos folículos (dias 1–7), um folículo se torna dominante (dia 7), amadurecimento do dominante, ovulação (dia 14), funcionamento do corpo lúteo e degeneração (dias 25–28).</figcaption></figure>
+<div class="box prova"><div class="tag">Cai na prova · “o que acontece ao mesmo tempo”</div>
+<b>Simultâneos</b>: regressão do corpo lúteo e queda do estradiol; fase secretória e secreção ovariana de progesterona; fase proliferativa e fase folicular.<br>
+<b>Não simultâneos</b>: ovulação e menstruação; pico de LH e menstruação; fase proliferativa e progesterona alta; recrutamento folicular e fase secretória.
+</div>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/ciclos.webp" alt="ciclos"><figcaption><b>Figura 30.</b> Os dois ciclos acontecem juntos (aula): o ciclo ovariano (folículos, ovulação, corpo lúteo, corpo albicans) comanda o ciclo uterino (o endométrio cresce, vira secretor e descama).</figcaption></figure>
+<figure class="img sm"><img src="res/ciclo/ovario_ciclo.webp" alt="ovario_ciclo"><figcaption><b>Figura 31.</b> O ciclo no ovário (aula, Fox): folículo primordial, primário, folículos em desenvolvimento, folículo dominante com o complexo cumulus-oócito, ovulação, corpo lúteo e corpo albicans.</figcaption></figure>
+</div>
+</section>
+
+<!-- ============================== 9 OVULAÇÃO E CORPO LÚTEO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-alca">9</span>Ovulação e corpo lúteo</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/ovulacao.webp" alt="ovulacao"><figcaption><b>Figura 32.</b> Ovulação (aula, Guyton e Berne &amp; Levy): LH → hormônios esteroides foliculares (progesterona) → enzimas proteolíticas (colagenase) e hiperemia com prostaglandinas → parede enfraquecida e inchaço folicular → degeneração do estigma → ruptura do folículo e evaginação do óvulo.</figcaption></figure>
+<div>
+<ul>
+<li>A ovulação ocorre <b>~36 horas após o início do pico de LH</b> (~10–12 h após o pico máximo).</li>
+<li>O LH faz o oócito <b>retomar a meiose</b>: termina a 1ª divisão (sai o 1º corpúsculo polar) e para na <b>metáfase II</b>, que só termina se houver fecundação.</li>
+<li>A parede do folículo é digerida (<b>colagenase</b>, plasmina) no <b>estigma</b>; as <b>prostaglandinas</b> causam hiperemia e contração; o complexo <b>cumulus-oócito</b> é expulso e capturado pelas fímbrias.</li>
+<li>O LH também inicia a <b>luteinização</b>: teca e granulosa viram células luteínicas.</li>
+</ul>
+</div>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/estigma.webp" alt="estigma"><figcaption><b>Figura 33.</b> O estigma ovulatório (aula, Aires): o ponto da parede folicular que se rompe.</figcaption></figure>
+<figure class="img sm"><img src="res/ciclo/corpo_luteo.webp" alt="corpo_luteo"><figcaption><b>Figura 34.</b> Corpo lúteo (aula, Berne &amp; Levy e Fox): duração média de 14 ± 2 dias.</figcaption></figure>
+</div>
+<h3>9.1 A fase lútea</h3>
+<div class="grid2">
+<div>
+<ul>
+<li>A <b>granulosa-luteínica</b> passa a ter acesso ao sangue (LDL) e expressa <b>StAR, CYP11A1 e 3β-HSD</b>: faz <b>progesterona</b> diretamente do colesterol.</li>
+<li>A <b>tecaluteínica</b> continua fazendo androstenediona, que a granulosa-luteínica aromatiza em estradiol (depois de uma <b>inibição transitória da CYP19</b> logo após a ovulação).</li>
+<li>Pico de <b>progesterona</b> e um segundo pico de <b>estradiol</b> em torno do dia <b>21–22</b>, com <b>inibina A</b>.</li>
+<li>Esses hormônios fazem <b>feedback negativo</b> forte: <b>↓ LH e ↓ FSH</b>; os pulsos de GnRH ficam <b>lentos</b> (efeito da progesterona).</li>
+<li>Sem gravidez, o corpo lúteo regride em <b>14 ± 2 dias</b> (<b>luteólise</b>) e vira <b>corpo albicans</b>. Com gravidez, o <b>hCG</b> do embrião o mantém.</li>
+</ul>
+</div>
+<figure class="img sm"><img src="res/ciclo/lutea_horm.webp" alt="lutea_horm"><figcaption><b>Figura 35.</b> Produção hormonal na fase lútea (aula, Berne &amp; Levy): as células granulosas-luteínicas passam a converter colesterol em progesterona; a aromatase (CYP19) tem inibição transitória logo após a ovulação.</figcaption></figure>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/lutea_ctrl.webp" alt="lutea_ctrl"><figcaption><b>Figura 36.</b> Fase lútea (aula, Vander): progesterona, estrogênio e inibina do corpo lúteo baixam o GnRH, o FSH e o LH.</figcaption></figure>
+<div class="box prova"><div class="tag">Cai na prova · T136 e compilados</div>
+“A produção de estradiol e progesterona pelo corpo lúteo <b>induz inibição</b> da secreção hipofisária de gonadotrofinas” (correta); o distrator diz que “<b>estimula</b>”. Sobre a progesterona, é <b>INCORRETO</b> dizer que “induz a ovulação” — ela é secretada pelo corpo lúteo, sobe após a ovulação, <b>aumenta a temperatura</b> e <b>reduz o LH</b>. As <b>granulosas-luteínicas</b> expressam as enzimas para converter colesterol em progesterona. O ovário secreta <b>progesterona e inibina</b> (FSH, LH e GnRH não).
+</div>
+</div>
+<div class="box clin"><div class="tag">Correlação clínica · como saber se houve ovulação</div>
+Dosar a <b>progesterona no 22º dia</b> do ciclo (meio da fase lútea, uma semana após a ovulação): alta = houve corpo lúteo, logo houve ovulação. É a resposta clássica dos compilados para a paciente com ovários micropolicísticos. A <b>biópsia do endométrio no 22º dia</b> (endométrio secretor) e a <b>temperatura basal</b> que sobe depois da ovulação dão a mesma informação.
+</div>
+</section>
+
+<!-- ============================== 10 CICLO UTERINO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-col">10</span>Ciclo uterino, muco e temperatura</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/utero_camadas.webp" alt="utero_camadas"><figcaption><b>Figura 37.</b> Endométrio (aula, Marieb &amp; Hoehn): camada funcional (epitélio, glândulas, artérias espiraladas, que se perdem na menstruação) e camada basal (artérias retas, base das glândulas, que regenera a funcional), sobre o miométrio.</figcaption></figure>
+<div>
+<table class="dense">
+<thead><tr><th>Fase (aula)</th><th>Hormônio</th><th>O que acontece</th></tr></thead>
+<tbody>
+<tr><td class="g-col">Menstrual (dias 1–4)</td><td>Queda de <b>E2 e P4</b></td><td><b>Descamação da camada funcional</b>; secreção de <b>prostaglandinas</b> (vasoconstrição das artérias espiraladas, cólica) e <b>fibrinolisina</b> (sangue não coagula); perda de ~<b>50 mL</b></td></tr>
+<tr><td class="g-col">Proliferativa (até ~14)</td><td><b>Estradiol</b></td><td><b>Reepitelização</b> do endométrio (até <b>3 a 5 mm</b>); glândulas retas; indução de <b>receptores de progesterona</b></td></tr>
+<tr><td class="g-col">Secretória (15–28)</td><td><b>Progesterona</b></td><td><b>Inibe a proliferação</b> das células epiteliais; <b>desenvolvimento secretório</b> das glândulas (tortuosas, glicogênio); <b>mais aporte sanguíneo</b> (artérias espiraladas)</td></tr>
+</tbody></table>
+</div>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/proliferativa.webp" alt="proliferativa"><figcaption><b>Figura 38.</b> O endométrio ao longo do ciclo (aula, Raff &amp; Levitzky): fase menstrual, proliferativa e secretória, com as glândulas e as artérias espiraladas.</figcaption></figure>
+<figure class="img sm"><img src="res/ciclo/histo_endo.webp" alt="histo_endo"><figcaption><b>Figura 39.</b> Histologia do endométrio (aula): fase menstrual, proliferativa e secretória.</figcaption></figure>
+</div>
+<div class="grid2">
+<div class="box prova"><div class="tag">Cai na prova · T137 e T136</div>
+<b>T137</b>: a fase menstrual é desencadeada pela <b>queda simultânea de estradiol e progesterona</b> ao final da fase lútea (não pelo pico de LH). Na fase secretória há <b>desenvolvimento secretório das glândulas sob progesterona</b>; “reepitelização” é da <b>proliferativa</b>. <b>T136</b>: “a fase proliferativa ocorre com a fase folicular” é <b>verdadeiro</b>; “a fase menstrual é estimulada pelo LH” é <b>falso</b>.
+</div>
+<div class="box mnem"><div class="tag">Mnemônico · “Estradiol Edifica, Progesterona Prepara”</div>
+O <b>E</b>stradiol <b>e</b>difica a parede (proliferativa); a <b>P</b>rogesterona <b>p</b>repara a casa para o embrião (secretória). Quando os dois caem juntos, a casa desaba (menstruação).
+</div>
+</div>
+<h3>10.1 Muco cervical, colo e temperatura</h3>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/muco_e2.webp" alt="muco_e2"><figcaption><b>Figura 40.</b> Estradiol (aula, Ganong): muco fino, aquoso e levemente alcalino; no 14º dia forma o padrão em “folha de samambaia” (filância), que facilita a passagem do espermatozoide.</figcaption></figure>
+<figure class="img sm"><img src="res/ciclo/muco_p4.webp" alt="muco_p4"><figcaption><b>Figura 41.</b> Progesterona (aula, Ganong): muco escasso, espesso, viscoso e levemente ácido, sem o padrão em samambaia, que dificulta a passagem do espermatozoide.</figcaption></figure>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/colo_dias.webp" alt="colo_dias"><figcaption><b>Figura 42.</b> Abertura do colo do útero dia a dia (aula): o óstio fica mais aberto e com muco claro perto da ovulação (dias 13–15).</figcaption></figure>
+<figure class="img sm"><img src="res/ciclo/temperatura.webp" alt="temperatura"><figcaption><b>Figura 43.</b> Temperatura basal (aula, Aires): cai um pouco no dia da ovulação e sobe ~0,3 a 0,5 °C na fase lútea, por ação da progesterona no centro termorregulador; volta ao basal na menstruação.</figcaption></figure>
+</div>
+</section>
+
+<!-- ============================== 11 MENOPAUSA E FÁRMACOS ============================== -->
+<section class="sec flow">
+<h2><span class="num n-uro">11</span>Menopausa e contracepção hormonal</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/ciclo/menopausa_e.webp" alt="menopausa_e"><figcaption><b>Figura 44.</b> Estrogênios secretados ao longo da vida (aula, Guyton): sobem na puberdade, oscilam a cada ciclo durante os anos reprodutivos e caem na menopausa.</figcaption></figure>
+<div>
+<ul>
+<li><b>Menopausa</b>: fim dos ciclos por <b>esgotamento dos folículos</b> (em média aos ~50 anos). Sem folículos, não há estradiol nem inibina, e o <b>FSH e o LH sobem muito</b> (o FSH mais).</li>
+<li>Consequências: ondas de calor, atrofia urogenital, <b>perda óssea</b> e aumento do risco cardiovascular.</li>
+<li><b>Falha ovariana prematura</b>: esgotamento folicular antes dos <b>40 anos</b> (quimioterapia, autoimune, genética), com FSH alto.</li>
+</ul>
+<p><b>Usos dos estrógenos exógenos (aula):</b></p>
+<ul class="tight">
+<li><b>Hipogonadismo primário</b>: desenvolver os caracteres sexuais secundários.</li>
+<li><b>Adultas</b>: contraceptivo.</li>
+<li><b>Amenorreia primária</b>: induzir o ciclo.</li>
+<li><b>Menopausa</b>: prevenir sintomas e perda óssea.</li>
+</ul>
+</div>
+</div>
+<h3>11.1 Bases fisiológicas da contracepção hormonal</h3>
+<table class="dense">
+<thead><tr><th>Tipo (aula)</th><th>Fármacos</th><th>Como evita a gravidez</th></tr></thead>
+<tbody>
+<tr><td class="g-uro">Combinado (estrogênio + progestagênio)</td><td><b>Etinilestradiol</b> + noretisterona, <b>levonorgestrel</b>, etinodiol, <b>desogestrel</b> ou <b>gestodeno</b></td><td>Feedback <b>negativo contínuo</b>: o estrogênio baixa o <b>FSH</b> (sem recrutamento e seleção) e o progestagênio baixa o <b>LH</b> e impede o feedback positivo: <b>sem pico de LH, sem ovulação</b>. O progestagênio também espessa o muco e deixa o endométrio impróprio. A pausa de 7 dias provoca o sangramento por privação.</td></tr>
+<tr><td class="g-uro">Só progestagênio (“minipílula”)</td><td><b>Noretisterona</b> 0,35 mg, <b>desogestrel</b> 75 mcg</td><td><b>Muco espesso</b> e endométrio atrófico; o desogestrel também <b>inibe a ovulação</b>. Uso contínuo, sem pausa; serve na amamentação e para quem não pode usar estrogênio.</td></tr>
+</tbody></table>
+<div class="grid2">
+<div class="box clin"><div class="tag">Correlação clínica · por que não usar estrogênio</div>
+O etinilestradiol aumenta a produção hepática de fatores de coagulação: é <b>contraindicado</b> em quem tem enxaqueca com aura, tabagismo após os 35 anos, trombose prévia, hipertensão descontrolada e no pós-parto recente. Nesses casos, usa-se o progestagênio isolado.
+</div>
+<div class="box mnem"><div class="tag">Mnemônico · a pílula imita a fase lútea</div>
+A pílula combinada mantém o eixo como se a mulher estivesse <b>sempre na fase lútea</b>: estradiol + progesterona em nível estável → feedback negativo → <b>nunca</b> há o estradiol alto e isolado que dispara o pico de LH.
+</div>
+</div>
+</section>
+
+<!-- ============================== 12 REVISÃO ============================== -->
+<section class="sec flow newpage">
+<h2><span class="num">12</span>Revisão final</h2>
+<h3>12.1 Mapa-mestre</h3>
+<table class="dense master">
+<thead><tr><th>Hormônio</th><th>De onde vem</th><th>Quando sobe</th><th>O que faz</th><th>Detalhe de prova</th></tr></thead>
+<tbody>
+<tr><td class="g-corp">GnRH</td><td>Hipotálamo</td><td>Pulsos lentos (folicular inicial e lútea), rápidos (antes do pico)</td><td>FSH (lento) e LH (rápido)</td><td>Precisa ser pulsátil</td></tr>
+<tr><td class="g-corp">Kisspeptina</td><td>ARC e AVPV</td><td>—</td><td><b>Estimula</b> o GnRH (KISS1R)</td><td>ARC = negativo; AVPV = positivo</td></tr>
+<tr><td class="g-tcp">FSH</td><td>Adeno-hipófise</td><td>Fim da lútea e começo da folicular</td><td>Recrutamento; aromatase da granulosa</td><td>Inibina B e E2 o baixam</td></tr>
+<tr><td class="g-tcp">LH</td><td>Adeno-hipófise</td><td><b>Pico</b> no dia ~13</td><td>Androgênio da teca; ovulação; luteinização</td><td>Ovulação ~36 h depois</td></tr>
+<tr><td class="g-alca">Estradiol</td><td>Granulosa (aromatase)</td><td>Fim da folicular; 2º pico na lútea</td><td>Proliferativa; muco fino; feedback − e +</td><td>&gt; 200 pg/mL por &gt; 2 dias = positivo</td></tr>
+<tr><td class="g-alca">Progesterona</td><td>Corpo lúteo (granulosa-luteínica)</td><td>Fase lútea (pico ~dia 22)</td><td>Secretória; muco espesso; ↑ temperatura; ↓ LH</td><td>Não induz a ovulação; dosagem no dia 22</td></tr>
+<tr><td class="g-alca">Inibina</td><td>Granulosa (B) e corpo lúteo (A)</td><td>Folicular (B), lútea (A)</td><td>Inibe o FSH</td><td>Produto do ovário</td></tr>
+<tr><td class="g-col">hCG</td><td>Embrião (sinciciotrofoblasto)</td><td>Gravidez</td><td>Mantém o corpo lúteo</td><td>Sem hCG: luteólise</td></tr>
+</tbody></table>
+
+<h3>12.2 Vinte pontos de prova</h3>
+<ol class="cols2">
+<li>Ciclo de 28 dias (18–40); 1 óvulo por mês.</li>
+<li>Tuba: captura do oócito, armazena espermatozoides; ciliadas e secretoras.</li>
+<li>GnRH pulsátil mantém LH e FSH; contínuo os derruba.</li>
+<li>Pulsos lentos → FSH; rápidos → LH.</li>
+<li>Infância: eixo freado pela alta sensibilidade ao feedback.</li>
+<li>Kisspeptina estimula o GnRH (KISS1R).</li>
+<li>ARC: E2 inibe kisspeptina (negativo). AVPV: E2 estimula (positivo).</li>
+<li>Leptina estimula o ARC; pouca gordura → amenorreia.</li>
+<li>Oócito primário parado na prófase I desde a vida fetal.</li>
+<li>Primordial → primário (zona pelúcida) → secundário (teca) → antral.</li>
+<li>Até o antral grande: independente de gonadotrofina.</li>
+<li>FSH recruta; dominante = mais receptor de FSH e mais aromatase.</li>
+<li>Teca: LH, CYP17, androgênio. Granulosa: FSH, aromatase, estradiol.</li>
+<li>E2 &gt; 200 pg/mL por &gt; 2 dias → feedback positivo → pico de LH.</li>
+<li>Ovulação ~36 h após o início do pico de LH.</li>
+<li>Corpo lúteo: progesterona; dura 14 ± 2 dias; hCG o mantém.</li>
+<li>Progesterona: secretória, muco espesso, ↑ temperatura, ↓ LH; não induz ovulação.</li>
+<li>Menstruação = queda simultânea de E2 e P4.</li>
+<li>Proliferativa = folicular; secretória = lútea.</li>
+<li>Menopausa: FSH e LH altos; pílula combinada = feedback negativo contínuo.</li>
+</ol>
+
+<h3>12.3 Mnemônicos</h3>
+<div class="grid2">
+<div class="box mnem"><div class="tag">Pulsos</div>
+<b>“Lento é FSH, Ligeiro é LH”</b>: pulsos lentos favorecem o FSH; pulsos rápidos (ligeiros) favorecem o LH.<br>
+<b>Contínuo = Cortado</b>: GnRH contínuo corta as gonadotrofinas.
+</div>
+<div class="box mnem"><div class="tag">Kisspeptina</div>
+<b>“ARCo para baixo, AVPV para o pico”</b>: no <b>ARC</b> o estradiol faz o eixo abaixar (negativo); no <b>AVPV</b> faz o pico de LH (positivo).
+</div>
+</div>
+<p class="refs-compact"><b>Referências.</b> Koeppen BM, Stanton BA. <i>Berne &amp; Levy: Fisiologia</i> · Boron WF, Boulpaep EL. <i>Fisiologia Médica</i> · Raff H, Levitzky M. <i>Fisiologia Médica</i> · Hall JE. <i>Guyton &amp; Hall</i> · Slides da aula <i>Fisiologia do ciclo menstrual</i>, Profa. Camila Ferreira Roncari · Questões da T137, da T136 e dos compilados do módulo Gênito-Urinário.</p>
+</section>
+
+<!-- ============================== 13 QUESTÕES ============================== -->
+<section class="sec flow">
+<h2><span class="num">13</span>Questões com gabarito comentado</h2>
+<ol class="questions">
+<li>Por que o GnRH precisa ser pulsátil? O que muda com a frequência dos pulsos?</li>
+<li>Por que as gonadotrofinas são baixas na infância e altas na menopausa?</li>
+<li>Explique o papel dos neurônios de kisspeptina do núcleo arqueado e do AVPV.</li>
+<li>Descreva os estágios do desenvolvimento folicular e quando ele passa a depender de gonadotrofinas.</li>
+<li>Como um único folículo se torna dominante?</li>
+<li>Descreva o modelo esteroidogênico de duas células.</li>
+<li>Quando e por que o estradiol passa a fazer feedback positivo?</li>
+<li>Descreva os eventos da ovulação.</li>
+<li>O que muda na esteroidogênese depois da ovulação?</li>
+<li>Relacione as fases do ciclo uterino com as do ciclo ovariano e os hormônios.</li>
+<li>Como estradiol e progesterona alteram o muco cervical e a temperatura basal?</li>
+<li>Como confirmar se uma paciente ovula?</li>
+<li>Explique como a pílula combinada impede a ovulação.</li>
+</ol>
+
+<h3>Gabarito comentado</h3>
+<ol class="answers">
+<li>Porque o gonadotropo só responde a estímulos intermitentes: GnRH contínuo dessensibiliza os receptores e LH e FSH caem (Belchetz, 1978; base do uso dos análogos). Pulsos de <b>baixa frequência</b> favorecem o <b>FSH</b> (fase folicular inicial e lútea); pulsos de <b>alta frequência</b> favorecem o <b>LH</b> (antes do pico). A frequência influencia a dimerização de α com β-FSH ou β-LH.</li>
+<li>Na infância o eixo é <b>muito sensível</b> ao feedback negativo (e há freio central): mesmo pouco esteroide bloqueia o GnRH. Na puberdade a sensibilidade cai e a kisspeptina sobe. Na menopausa os folículos acabaram: sem estradiol e sem inibina, não há feedback negativo, e FSH e LH sobem muito.</li>
+<li>Os dois grupos estimulam o neurônio de GnRH pelo KISS1R e têm receptor de estrogênio α. No <b>ARC</b> (núcleo infundibular), o estradiol <b>inibe</b> a kisspeptina: feedback negativo (na ovariectomia a expressão de KISS1 sobe). No <b>AVPV</b> (área pré-óptica), o estradiol alto <b>estimula</b> a kisspeptina: feedback positivo e pico de LH. A leptina estimula o ARC.</li>
+<li>Primordial (oócito primário + células achatadas) → pré-antral primário (granulosas cuboides, zona pelúcida) → pré-antral secundário (granulosas estratificadas, teca) → antral inicial → antral grande (cumulus) → dominante. Até o antral grande o crescimento é <b>independente de gonadotrofinas</b> e leva meses; a partir do antral grande, o folículo depende de <b>FSH</b>.</li>
+<li>O FSH do início do ciclo recruta vários folículos antrais. O estradiol e a inibina B que eles produzem baixam o FSH. Só sobrevive o folículo com <b>mais receptores de FSH e mais aromatase</b>, que produz mais estradiol e passa a ter receptores de LH; os outros sofrem atresia.</li>
+<li>A <b>teca</b> (receptor de LH, StAR, CYP11A1, 3β-HSD, CYP17) transforma colesterol em <b>androstenediona</b>, que difunde para a <b>granulosa</b> (receptor de FSH), onde a <b>aromatase (CYP19)</b> e a 17β-HSD a convertem em <b>17β-estradiol</b>. A teca não tem aromatase e a granulosa, antes da ovulação, não tem CYP17 nem acesso ao colesterol do sangue.</li>
+<li>No fim da fase folicular, quando o folículo dominante mantém o estradiol <b>acima de ~200 pg/mL por mais de 2 dias</b>. O estradiol estimula a kisspeptina do AVPV, os pulsos de GnRH ficam rápidos e os gonadotropos ganham mais receptores de GnRH: sai o <b>pico de LH</b>.</li>
+<li>O pico de LH faz o oócito retomar a meiose (termina a I, para na metáfase II), aumenta progesterona e prostaglandinas, ativa enzimas proteolíticas (colagenase) que enfraquecem a parede no estigma, causa hiperemia e edema do folículo; a parede se rompe e o complexo cumulus-oócito é expulso ~36 h depois do início do pico e captado pelas fímbrias.</li>
+<li>Teca e granulosa luteinizam. A <b>granulosa-luteínica</b> ganha acesso ao LDL e expressa StAR, CYP11A1 e 3β-HSD: faz <b>progesterona</b> diretamente do colesterol. A tecaluteínica segue fazendo androstenediona, que a granulosa-luteínica aromatiza em estradiol (após inibição transitória da CYP19). Sai também inibina A.</li>
+<li><b>Menstrual</b> (dias 1–4): queda simultânea de E2 e P4 no fim da lútea. <b>Proliferativa</b>: coincide com a <b>fase folicular</b>, sob estradiol (reepitelização, receptores de P4). <b>Secretória</b>: coincide com a <b>fase lútea</b>, sob progesterona (glândulas secretoras, artérias espiraladas, inibição da proliferação).</li>
+<li>Estradiol: muco <b>fino, aquoso, levemente alcalino</b>, com filância e padrão em samambaia, que facilita o espermatozoide. Progesterona: muco <b>escasso, espesso, viscoso e levemente ácido</b>. A progesterona também <b>eleva a temperatura basal</b> em ~0,3–0,5 °C após a ovulação.</li>
+<li>Dosando a <b>progesterona no 22º dia</b> do ciclo (meio da fase lútea): se alta, houve corpo lúteo e, portanto, ovulação. Também servem a biópsia do endométrio no 22º dia (endométrio secretor) e a curva de temperatura basal.</li>
+<li>O estrogênio e o progestagênio, dados de forma contínua, fazem <b>feedback negativo</b>: o estrogênio baixa o FSH (sem recrutamento) e o progestagênio baixa o LH e impede que o estradiol alto e isolado dispare o feedback positivo. Sem pico de LH, não há ovulação. O progestagênio também espessa o muco e altera o endométrio.</li>
+</ol>
+</section>
+
+</template>
+<template id="tpl-ftub">
 <!-- ============================== CAPA ============================== -->
 <section class="cover">
   <div class="kicker">Resumo de estudo · Fisiologia · Medicina</div>
@@ -10694,7 +11360,8 @@ const MAT=[
 {"id": "ejac", "t": "Tratamento Farmacológico da Ejaculação Precoce", "av": "AV2", "area": "Farmacologia", "c": "#d9480f", "profs": "Aula do Prof. Roberto César P. Lima Jr. (Departamento de Fisiologia e Farmacologia)", "d": "Fases e controle neural da ejaculação, definição e classificação da ejaculação precoce, alvos do tratamento, anestésicos locais, α1-bloqueadores, tramadol, serotonina e receptores 5-HT, IRS agudo e crônico, paroxetina e dapoxetina, efeitos adversos e síndrome serotoninérgica.", "pdf": "res/Resumo_Tratamento_Ejaculacao_Precoce.pdf", "pdfName": "Resumo - Tratamento Farmacologico da Ejaculacao Precoce.pdf", "figs": 19, "slides": 40, "sn": "", "ana": [], "his": [], "teo": [95, 96, 97, 273, 274, 275, 295, 296, 297, 396, 402, 416, 486, 566, 567, 568, 611, 614, 644, 655, 666, 668, 675]},
 {"id": "frmasc", "t": "Fisiologia do Sistema Reprodutor Masculino", "av": "AV2", "area": "Fisiologia", "c": "#2b8a3e", "profs": "Aula da Profa. Camila Ferreira Roncari (Departamento de Fisiologia e Farmacologia)", "d": "Eixo hipotálamo-hipófise-testículo e kisspeptina, espermatogênese, células de Sertoli e de Leydig, síntese, metabolismo e efeitos da testosterona, androgênios e antiandrogênios, ductos e sêmen, ereção, emissão, ejaculação, capacitação e fertilização.", "pdf": "res/Resumo_Fisiologia_Reprodutor_Masculino.pdf", "pdfName": "Resumo - Fisiologia do Sistema Reprodutor Masculino.pdf", "figs": 23, "slides": 40, "sn": "", "ana": [], "his": [["testic", "Lâminas: testículo"]], "teo": [28, 80, 93, 94, 114, 115, 223, 236, 242, 243, 253, 255, 260, 262, 287, 290, 353, 354, 355, 385, 394, 397, 410, 412, 440, 446, 487, 617]},
 {"id": "fglom", "t": "Fisiologia Renal: Filtração Glomerular", "av": "AV2", "area": "Fisiologia", "c": "#1c7ed6", "profs": "Aula 1 de Fisiologia Renal do módulo Sistema Gênito-Urinário", "d": "Funções do rim, vascularização e sistema capilar duplo, tipos de néfron, glomérulo e células mesangiais, barreira de filtração (tamanho, carga e nefrina), equação de Starling, autorregulação miogênica e feedback tubuloglomerular e regulação extrínseca.", "pdf": "res/Resumo_Fisiologia_Renal_Filtracao_Glomerular.pdf", "pdfName": "Resumo - Fisiologia Renal - Filtracao Glomerular.pdf", "figs": 32, "slides": 74, "sn": "", "ana": [], "his": [["rim", "Lâminas: rim"]], "teo": [13, 14, 50, 51, 77, 78, 79, 86, 87, 88, 89, 90, 91, 118, 119, 122, 123, 124, 125, 143, 144, 145, 152, 153, 154, 158, 159, 170, 171, 172, 174, 176, 177, 178, 179, 180, 185, 193, 195, 196, 197, 228, 234, 240, 244, 263, 265, 266, 267, 268, 271, 272, 276, 278, 300, 302, 303, 304, 305, 306, 307, 310, 311, 317, 332, 340, 376, 499, 503, 505, 517, 519, 520, 525, 534, 535, 538, 579, 585, 622, 624, 653, 677]},
-{"id": "ftub", "t": "Mecanismos Tubulares", "av": "AV2", "area": "Fisiologia", "c": "#7048e8", "profs": "Aula Mecanismos tubulares do módulo Sistema Gênito-Urinário", "d": "Transporte transepitelial e claudinas, reabsorção de sódio no túbulo proximal, água, glicose e transporte máximo, proteínas, secreção de ácidos orgânicos, alça de Henle e gradiente medular, NKCC2 e NCC, ADH e aquaporinas, aldosterona, ENaC, diuréticos e doença policística.", "pdf": "res/Resumo_Mecanismos_Tubulares.pdf", "pdfName": "Resumo - Mecanismos Tubulares.pdf", "figs": 35, "slides": 41, "sn": "", "ana": [], "his": [], "teo": [155, 156, 157, 175, 181, 190, 191, 224, 229, 264, 269, 270, 308, 309, 311, 312, 313, 314, 315, 328, 329, 330, 331, 333, 334, 335, 336, 357, 358, 359, 360, 480, 482, 483, 488, 489, 490, 493, 494, 495, 496, 497, 502, 504, 513, 514, 516, 521, 523, 526, 528, 536, 539, 540, 544, 546, 549, 553, 555, 572, 573, 580, 581, 582, 583, 588, 591, 593, 594, 595, 602, 603, 604, 605, 607, 627, 628, 629, 631, 633, 634, 635, 639, 641, 645, 648, 658, 659, 661, 662, 665, 669, 670, 673, 674, 676]}
+{"id": "ftub", "t": "Mecanismos Tubulares", "av": "AV2", "area": "Fisiologia", "c": "#7048e8", "profs": "Aula Mecanismos tubulares do módulo Sistema Gênito-Urinário", "d": "Transporte transepitelial e claudinas, reabsorção de sódio no túbulo proximal, água, glicose e transporte máximo, proteínas, secreção de ácidos orgânicos, alça de Henle e gradiente medular, NKCC2 e NCC, ADH e aquaporinas, aldosterona, ENaC, diuréticos e doença policística.", "pdf": "res/Resumo_Mecanismos_Tubulares.pdf", "pdfName": "Resumo - Mecanismos Tubulares.pdf", "figs": 35, "slides": 41, "sn": "", "ana": [], "his": [], "teo": [155, 156, 157, 175, 181, 190, 191, 224, 229, 264, 269, 270, 308, 309, 311, 312, 313, 314, 315, 328, 329, 330, 331, 333, 334, 335, 336, 357, 358, 359, 360, 480, 482, 483, 488, 489, 490, 493, 494, 495, 496, 497, 502, 504, 513, 514, 516, 521, 523, 526, 528, 536, 539, 540, 544, 546, 549, 553, 555, 572, 573, 580, 581, 582, 583, 588, 591, 593, 594, 595, 602, 603, 604, 605, 607, 627, 628, 629, 631, 633, 634, 635, 639, 641, 645, 648, 658, 659, 661, 662, 665, 669, 670, 673, 674, 676]},
+{"id": "ciclo", "t": "Fisiologia do Ciclo Menstrual", "av": "AV2", "area": "Fisiologia", "c": "#d6336c", "profs": "Aula da Profa. Camila Ferreira Roncari (Departamento de Fisiologia e Farmacologia)", "d": "Eixo hipotálamo-hipófise-ovário, pulsatilidade do GnRH e kisspeptina, desenvolvimento folicular, modelo de duas células, surto de LH e ovulação, corpo lúteo, ciclo uterino, muco cervical, menopausa e contraceptivos hormonais.", "pdf": "res/Resumo_Fisiologia_Ciclo_Menstrual.pdf", "pdfName": "Resumo - Fisiologia do Ciclo Menstrual.pdf", "figs": 44, "slides": 80, "sn": "", "ana": [["anexos", "Fotos: ovário, tuba e ligamentos"]], "his": [["ovario", "Lâminas: ovário"], ["utero", "Lâminas: útero, tuba e colo"]], "teo": [3, 25, 26, 27, 28, 29, 43, 56, 289, 291, 292, 293, 294, 370, 371, 392, 395, 413, 425, 426, 439, 443, 449, 455, 464, 465, 468, 473, 474, 475, 563, 564, 565]}
 ];
 GR.mat={};MAT.forEach(m=>GR.mat[m.id]={n:m.t,c:m.c});
 IT.mat=MAT.map(m=>({grp:m.id,label:m.t}));
@@ -10960,7 +11627,7 @@ render();
 <script>
 (function(){
 if(!("serviceWorker" in navigator)||location.protocol==="file:")return;
-var FILES=["./", "index.html", "manifest.json", "icone-180.png", "icone-192.png", "icone-512.png", "img/art_aorta.jpg", "img/art_iliaca_comum.jpg", "img/art_ilinterna.jpg", "img/bexiga_trigono.jpg", "img/bx_modelo.jpg", "img/bx_puboprostatico.jpg", "img/bx_pubovesical.jpg", "img/colo_utero.jpg", "img/esc_camadas.jpg", "img/esc_funiculo_anel.jpg", "img/esc_testiculo.jpg", "img/escavacoes.jpg", "img/f_hemipelve.jpg", "img/f_hemipelve_labios.jpg", "img/f_lig_redondo.jpg", "img/f_mesovario.jpg", "img/f_ovario_suspensor.jpg", "img/f_vulva_alfinetes.jpg", "img/ligamento_largo.jpg", "img/m_ampola_deferente.jpg", "img/m_arteria_dorsal.jpg", "img/m_escroto_aberto.jpg", "img/m_fascias_escroto.jpg", "img/m_frenulo.jpg", "img/m_frenulo_prepucio.jpg", "img/m_glande_frenulo.jpg", "img/m_modelo.jpg", "img/m_penis_corte.jpg", "img/m_penis_dorsal.jpg", "img/m_penis_transversal.jpg", "img/m_perineo.jpg", "img/m_perineo_alfinetes.jpg", "img/m_prepucio.jpg", "img/m_prostata_sagital.jpg", "img/m_sagital.jpg", "img/m_sagital_bexiga.jpg", "img/m_sagital_escavacoes.jpg", "img/m_sagital_penis.jpg", "img/m_sagital_prostata.jpg", "img/m_tunicas_testiculo.jpg", "img/m_veia_dorsal.jpg", "img/m_vesicula_isolada.jpg", "img/mesos.jpg", "img/ovario_fornices.jpg", "img/ovario_ligamentos.jpg", "img/rim_aberto.jpg", "img/rim_capsula.jpg", "img/rim_colunas.jpg", "img/rim_corte.jpg", "img/rim_hilo.jpg", "img/rim_pediculo.jpg", "img/rim_vasos.jpg", "img/tuba_uterina.jpg", "img/u_arteria_renal_dir.jpg", "img/u_arteria_renal_esq.jpg", "img/u_bexiga_trigono.jpg", "img/u_hilo.jpg", "img/u_rim_calices.jpg", "img/u_rim_papila.jpg", "img/u_rins_margens.jpg", "img/u_rins_vasos.jpg", "img/u_ureter_trajeto.jpg", "img/ureter_iliaca.jpg", "img/ureter_jup.jpg", "img/ureter_partes.jpg", "img/utero_camadas.jpg", "img/utero_partes.jpg", "img/utero_posterior.jpg", "img/utero_sagital.jpg", "img/vagina_fornices.jpg", "img/vasos_gonadais.jpg", "img/vasos_testicular.jpg", "img/vulva_externa.jpg", "img/vulva_partes.jpg", "histo/g01.jpg", "histo/g02.jpg", "histo/g03.jpg", "histo/g04.jpg", "histo/g05.jpg", "histo/g06.jpg", "histo/g07.jpg", "histo/g08.jpg", "histo/g09.jpg", "histo/g10.jpg", "histo/g11.jpg", "histo/g12.jpg", "histo/g13.jpg", "histo/g14.jpg", "histo/g15.jpg", "histo/g16.jpg", "histo/g17.jpg", "histo/g18.jpg", "histo/g19.jpg", "histo/g20.jpg", "histo/g21.jpg", "histo/g22.jpg", "histo/g23.jpg", "histo/g24.jpg", "histo/g25.jpg", "histo/g26.jpg", "histo/g27.jpg", "histo/g28.jpg", "histo/g29.jpg", "histo/g30.jpg", "histo/g31.jpg", "histo/g32.jpg", "histo/g33.jpg", "histo/g34.jpg", "histo/g35.jpg", "histo/g36.jpg", "histo/g37.jpg", "histo/g38.jpg", "histo/g39.jpg", "histo/g40.jpg", "histo/g41.jpg", "histo/g42.jpg", "histo/g43.jpg", "histo/g44.jpg", "histo/g45.jpg", "histo/g46.jpg", "histo/g47.jpg", "histo/g48.jpg", "histo/g49.jpg", "histo/g50.jpg", "histo/g51.jpg", "histo/rev01.jpg", "histo/rev02.jpg", "histo/rev03.jpg", "histo/rev04.jpg", "histo/rev05.jpg", "histo/rev06.jpg", "histo/rev07.jpg", "histo/rev08.jpg", "histo/rev09.jpg", "histo/rev10.jpg", "teo/c1_14.webp", "teo/c1b_23.webp", "teo/c1e_4.webp", "teo/c1e_5.webp", "teo/c2q_11.webp", "teo/c2q_3.webp", "teo/c2q_8.webp", "teo/c2s_12.webp", "teo/c2s_2.webp", "teo/c2s_30.webp", "teo/c2s_7.webp", "teo/c3b_10.webp", "teo/c3b_18.webp", "teo/c3b_7.webp", "teo/c3b_8.webp", "teo/c3b_9.webp", "teo/c3c_18.webp", "teo/c3c_19.webp", "teo/c3d_24.webp", "teo/c3e_11.webp", "teo/c3e_6.webp", "res/Resumo_Fisiologia_Renal_Filtracao_Glomerular.pdf", "res/Resumo_Fisiologia_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Aparelho_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Sistema_Genital_Feminino.pdf", "res/Resumo_Histologia_Sistema_Urinario.pdf", "res/Resumo_Mecanismos_Tubulares.pdf", "res/Resumo_Sistema_Genital_Feminino.pdf", "res/Resumo_Sistema_Genital_Masculino.pdf", "res/Resumo_Sistema_Urinario.pdf", "res/Resumo_Tratamento_Ejaculacao_Precoce.pdf", "res/ejac/alfa1.webp", "res/ejac/alvos.webp", "res/ejac/anestesicos.webp", "res/ejac/estagios.webp", "res/ejac/etiologia.webp", "res/ejac/fases.webp", "res/ejac/ielt.webp", "res/ejac/irs_agudo.webp", "res/ejac/irs_cronico.webp", "res/ejac/irs_fluxo.webp", "res/ejac/perspectivas.webp", "res/ejac/sindrome_ss.webp", "res/ejac/supraespinhal.webp", "res/ejac/tabela_isrs.webp", "res/ejac/tramadol.webp", "res/ejac/via_5ht.webp", "res/ejac/vias.webp", "res/fem/camadas.webp", "res/fem/episiotomia.webp", "res/fem/ligamentos.webp", "res/fem/mama.webp", "res/fem/ovario_corte.webp", "res/fem/perineo.webp", "res/fem/sagital.webp", "res/fem/tuba_frontal.webp", "res/fem/utero_idades.webp", "res/fem/vulva.webp", "res/fglom/autorregulacao.webp", "res/fglom/barreira_3d.webp", "res/fglom/camadas.webp", "res/fglom/capilar_duplo.webp", "res/fglom/carga.webp", "res/fglom/contratilidade.webp", "res/fglom/cortical_justa.webp", "res/fglom/doencas_fenda.webp", "res/fglom/efsr.webp", "res/fglom/extrinseca.webp", "res/fglom/fenestra.webp", "res/fglom/ftg.webp", "res/fglom/glomerulo_netter.webp", "res/fglom/hemorragia.webp", "res/fglom/macula_atp.webp", "res/fglom/mesangiais.webp", "res/fglom/miogenico_graf.webp", "res/fglom/nefrina_slit.webp", "res/fglom/peritubular.webp", "res/fglom/podocito_prot.webp", "res/fglom/regioes.webp", "res/fglom/renina_release.webp", "res/fglom/segmentos.webp", "res/fglom/segmentos_cel.webp", "res/fglom/starling_extra.webp", "res/fglom/starling_glom.webp", "res/fglom/tamanho.webp", "res/fglom/tipos_nefron.webp", "res/fglom/vasos_netter.webp", "res/fglom/vasos_retos.webp", "res/frmasc/barreira.webp", "res/frmasc/capacitacao.webp", "res/frmasc/circadiana.webp", "res/frmasc/compart.webp", "res/frmasc/efeitos_t.webp", "res/frmasc/eixo_berne.webp", "res/frmasc/epitelio.webp", "res/frmasc/esperm.webp", "res/frmasc/espermio.webp", "res/frmasc/fertilizacao.webp", "res/frmasc/glandulas.webp", "res/frmasc/kiss_fert.webp", "res/frmasc/kndy.webp", "res/frmasc/leydig_ester.webp", "res/frmasc/metab_t.webp", "res/frmasc/no_gmpc.webp", "res/frmasc/penis.webp", "res/frmasc/reflexo.webp", "res/frmasc/sertoli_func.webp", "res/frmasc/simpatico.webp", "res/frmasc/testiculo.webp", "res/ftub/aa_pept.webp", "res/ftub/adh_infusao.webp", "res/ftub/adh_valores.webp", "res/ftub/agua_tp.webp", "res/ftub/alca_carac.webp", "res/ftub/alca_valores.webp", "res/ftub/aldosterona.webp", "res/ftub/antiporte.webp", "res/ftub/aqp2.webp", "res/ftub/aqp_nefron.webp", "res/ftub/aqp_tipos.webp", "res/ftub/cilios.webp", "res/ftub/cl_dirigido.webp", "res/ftub/cl_formato.webp", "res/ftub/claudinas.webp", "res/ftub/glicose_tm.webp", "res/ftub/gradiente.webp", "res/ftub/hco3.webp", "res/ftub/intercaladas.webp", "res/ftub/na_tp.webp", "res/ftub/nacl_distal.webp", "res/ftub/nkcc.webp", "res/ftub/perfil_tp.webp", "res/ftub/policistica.webp", "res/ftub/poupadores.webp", "res/ftub/proteinas.webp", "res/ftub/rae_canais.webp", "res/ftub/secrecao_pah.webp", "res/ftub/sglt_na.webp", "res/ftub/simporte.webp", "res/ftub/tabela_tp.webp", "res/ftub/tres_processos.webp", "res/ftub/vias.webp", "res/hfem/antral_he.webp", "res/hfem/cervice.webp", "res/hfem/ciclo_endo.webp", "res/hfem/ciclo_ovario.webp", "res/hfem/classif.webp", "res/hfem/corpo_luteo.webp", "res/hfem/cortex_ov.webp", "res/hfem/duas_celulas.webp", "res/hfem/eixo.webp", "res/hfem/endocervice.webp", "res/hfem/endometrio_esq.webp", "res/hfem/funcional.webp", "res/hfem/graaf.webp", "res/hfem/jec.webp", "res/hfem/luteinicas.webp", "res/hfem/miometrio.webp", "res/hfem/ovario_corte.webp", "res/hfem/ovulacao.webp", "res/hfem/primarios_he.webp", "res/hfem/primordiais.webp", "res/hfem/tecas.webp", "res/hfem/tuba_he.webp", "res/hfem/vagina.webp", "res/hmasc/albuginea_leydig.webp", "res/hmasc/barreira_ht.webp", "res/hmasc/concrecoes.webp", "res/hmasc/controle.webp", "res/hmasc/deferente.webp", "res/hmasc/ductos.webp", "res/hmasc/ejaculatorios.webp", "res/hmasc/epididimo.webp", "res/hmasc/epididimo_det.webp", "res/hmasc/epitelio_esq.webp", "res/hmasc/epitelio_germ.webp", "res/hmasc/epitelio_leydig.webp", "res/hmasc/eretil.webp", "res/hmasc/espermiogenese.webp", "res/hmasc/penis_corte.webp", "res/hmasc/penis_esq.webp", "res/hmasc/prostata_gland.webp", "res/hmasc/prostata_lam.webp", "res/hmasc/prostata_zonas.webp", "res/hmasc/testiculo.webp", "res/hmasc/testiculo_esq.webp", "res/hmasc/tubulos_sem.webp", "res/huri/alca_coletor.webp", "res/huri/barreira_diag.webp", "res/huri/bexiga_camadas.webp", "res/huri/bexiga_urotelio.webp", "res/huri/corpusculo.webp", "res/huri/corpusculo_jga.webp", "res/huri/cortex_medula.webp", "res/huri/diafragma.webp", "res/huri/glomerulo.webp", "res/huri/macula_densa.webp", "res/huri/papila.webp", "res/huri/podocitos.webp", "res/huri/raio_medular.webp", "res/huri/rim_lamina.webp", "res/huri/tcp.webp", "res/huri/tcp_tcd.webp", "res/huri/ureter.webp", "res/huri/ureter_ab.webp", "res/huri/uretra_fem.webp", "res/huri/vascularizacao.webp", "res/masc/camadas_diag.webp", "res/masc/descida.webp", "res/masc/epididimo_frontal.webp", "res/masc/escroto_netter.webp", "res/masc/irrigacao.webp", "res/masc/penis_face.webp", "res/masc/penis_vasos.webp", "res/masc/posterior_bexiga.webp", "res/masc/prostata_cortes.webp", "res/masc/prostata_frontal.webp", "res/masc/vesiculas_netter.webp", "res/masc/visao.webp", "res/slides/ejac_01.webp", "res/slides/ejac_02.webp", "res/slides/ejac_03.webp", "res/slides/ejac_04.webp", "res/slides/ejac_05.webp", "res/slides/ejac_06.webp", "res/slides/ejac_07.webp", "res/slides/ejac_08.webp", "res/slides/ejac_09.webp", "res/slides/ejac_10.webp", "res/slides/ejac_11.webp", "res/slides/ejac_12.webp", "res/slides/ejac_13.webp", "res/slides/ejac_14.webp", "res/slides/ejac_15.webp", "res/slides/ejac_16.webp", "res/slides/ejac_17.webp", "res/slides/ejac_18.webp", "res/slides/ejac_19.webp", "res/slides/ejac_20.webp", "res/slides/ejac_21.webp", "res/slides/ejac_22.webp", "res/slides/ejac_23.webp", "res/slides/ejac_24.webp", "res/slides/ejac_25.webp", "res/slides/ejac_26.webp", "res/slides/ejac_27.webp", "res/slides/ejac_28.webp", "res/slides/ejac_29.webp", "res/slides/ejac_30.webp", "res/slides/ejac_31.webp", "res/slides/ejac_32.webp", "res/slides/ejac_33.webp", "res/slides/ejac_34.webp", "res/slides/ejac_35.webp", "res/slides/ejac_36.webp", "res/slides/ejac_37.webp", "res/slides/ejac_38.webp", "res/slides/ejac_39.webp", "res/slides/ejac_40.webp", "res/slides/fem_01.webp", "res/slides/fem_02.webp", "res/slides/fem_03.webp", "res/slides/fem_04.webp", "res/slides/fem_05.webp", "res/slides/fem_06.webp", "res/slides/fem_07.webp", "res/slides/fem_08.webp", "res/slides/fem_09.webp", "res/slides/fem_10.webp", "res/slides/fem_11.webp", "res/slides/fem_12.webp", "res/slides/fem_13.webp", "res/slides/fem_14.webp", "res/slides/fem_15.webp", "res/slides/fem_16.webp", "res/slides/fem_17.webp", "res/slides/fem_18.webp", "res/slides/fem_19.webp", "res/slides/fem_20.webp", "res/slides/fem_21.webp", "res/slides/fem_22.webp", "res/slides/fem_23.webp", "res/slides/fem_24.webp", "res/slides/fem_25.webp", "res/slides/fem_26.webp", "res/slides/fem_27.webp", "res/slides/fem_28.webp", "res/slides/fem_29.webp", "res/slides/fem_30.webp", "res/slides/fem_31.webp", "res/slides/fem_32.webp", "res/slides/fem_33.webp", "res/slides/fem_34.webp", "res/slides/fem_35.webp", "res/slides/fem_36.webp", "res/slides/fem_37.webp", "res/slides/fem_38.webp", "res/slides/fem_39.webp", "res/slides/fem_40.webp", "res/slides/fglom_01.webp", "res/slides/fglom_02.webp", "res/slides/fglom_03.webp", "res/slides/fglom_04.webp", "res/slides/fglom_05.webp", "res/slides/fglom_06.webp", "res/slides/fglom_07.webp", "res/slides/fglom_08.webp", "res/slides/fglom_09.webp", "res/slides/fglom_10.webp", "res/slides/fglom_11.webp", "res/slides/fglom_12.webp", "res/slides/fglom_13.webp", "res/slides/fglom_14.webp", "res/slides/fglom_15.webp", "res/slides/fglom_16.webp", "res/slides/fglom_17.webp", "res/slides/fglom_18.webp", "res/slides/fglom_19.webp", "res/slides/fglom_20.webp", "res/slides/fglom_21.webp", "res/slides/fglom_22.webp", "res/slides/fglom_23.webp", "res/slides/fglom_24.webp", "res/slides/fglom_25.webp", "res/slides/fglom_26.webp", "res/slides/fglom_27.webp", "res/slides/fglom_28.webp", "res/slides/fglom_29.webp", "res/slides/fglom_30.webp", "res/slides/fglom_31.webp", "res/slides/fglom_32.webp", "res/slides/fglom_33.webp", "res/slides/fglom_34.webp", "res/slides/fglom_35.webp", "res/slides/fglom_36.webp", "res/slides/fglom_37.webp", "res/slides/fglom_38.webp", "res/slides/fglom_39.webp", "res/slides/fglom_40.webp", "res/slides/fglom_41.webp", "res/slides/fglom_42.webp", "res/slides/fglom_43.webp", "res/slides/fglom_44.webp", "res/slides/fglom_45.webp", "res/slides/fglom_46.webp", "res/slides/fglom_47.webp", "res/slides/fglom_48.webp", "res/slides/fglom_49.webp", "res/slides/fglom_50.webp", "res/slides/fglom_51.webp", "res/slides/fglom_52.webp", "res/slides/fglom_53.webp", "res/slides/fglom_54.webp", "res/slides/fglom_55.webp", "res/slides/fglom_56.webp", "res/slides/fglom_57.webp", "res/slides/fglom_58.webp", "res/slides/fglom_59.webp", "res/slides/fglom_60.webp", "res/slides/fglom_61.webp", "res/slides/fglom_62.webp", "res/slides/fglom_63.webp", "res/slides/fglom_64.webp", "res/slides/fglom_65.webp", "res/slides/fglom_66.webp", "res/slides/fglom_67.webp", "res/slides/fglom_68.webp", "res/slides/fglom_69.webp", "res/slides/fglom_70.webp", "res/slides/fglom_71.webp", "res/slides/fglom_72.webp", "res/slides/fglom_73.webp", "res/slides/fglom_74.webp", "res/slides/frmasc_01.webp", "res/slides/frmasc_02.webp", "res/slides/frmasc_03.webp", "res/slides/frmasc_04.webp", "res/slides/frmasc_05.webp", "res/slides/frmasc_06.webp", "res/slides/frmasc_07.webp", "res/slides/frmasc_08.webp", "res/slides/frmasc_09.webp", "res/slides/frmasc_10.webp", "res/slides/frmasc_11.webp", "res/slides/frmasc_12.webp", "res/slides/frmasc_13.webp", "res/slides/frmasc_14.webp", "res/slides/frmasc_15.webp", "res/slides/frmasc_16.webp", "res/slides/frmasc_17.webp", "res/slides/frmasc_18.webp", "res/slides/frmasc_19.webp", "res/slides/frmasc_20.webp", "res/slides/frmasc_21.webp", "res/slides/frmasc_22.webp", "res/slides/frmasc_23.webp", "res/slides/frmasc_24.webp", "res/slides/frmasc_25.webp", "res/slides/frmasc_26.webp", "res/slides/frmasc_27.webp", "res/slides/frmasc_28.webp", "res/slides/frmasc_29.webp", "res/slides/frmasc_30.webp", "res/slides/frmasc_31.webp", "res/slides/frmasc_32.webp", "res/slides/frmasc_33.webp", "res/slides/frmasc_34.webp", "res/slides/frmasc_35.webp", "res/slides/frmasc_36.webp", "res/slides/frmasc_37.webp", "res/slides/frmasc_38.webp", "res/slides/frmasc_39.webp", "res/slides/frmasc_40.webp", "res/slides/ftub_01.webp", "res/slides/ftub_02.webp", "res/slides/ftub_03.webp", "res/slides/ftub_04.webp", "res/slides/ftub_05.webp", "res/slides/ftub_06.webp", "res/slides/ftub_07.webp", "res/slides/ftub_08.webp", "res/slides/ftub_09.webp", "res/slides/ftub_10.webp", "res/slides/ftub_11.webp", "res/slides/ftub_12.webp", "res/slides/ftub_13.webp", "res/slides/ftub_14.webp", "res/slides/ftub_15.webp", "res/slides/ftub_16.webp", "res/slides/ftub_17.webp", "res/slides/ftub_18.webp", "res/slides/ftub_19.webp", "res/slides/ftub_20.webp", "res/slides/ftub_21.webp", "res/slides/ftub_22.webp", "res/slides/ftub_23.webp", "res/slides/ftub_24.webp", "res/slides/ftub_25.webp", "res/slides/ftub_26.webp", "res/slides/ftub_27.webp", "res/slides/ftub_28.webp", "res/slides/ftub_29.webp", "res/slides/ftub_30.webp", "res/slides/ftub_31.webp", "res/slides/ftub_32.webp", "res/slides/ftub_33.webp", "res/slides/ftub_34.webp", "res/slides/ftub_35.webp", "res/slides/ftub_36.webp", "res/slides/ftub_37.webp", "res/slides/ftub_38.webp", "res/slides/ftub_39.webp", "res/slides/ftub_40.webp", "res/slides/ftub_41.webp", "res/slides/hfem_01.webp", "res/slides/hfem_02.webp", "res/slides/hfem_03.webp", "res/slides/hfem_04.webp", "res/slides/hfem_05.webp", "res/slides/hfem_06.webp", "res/slides/hfem_07.webp", "res/slides/hfem_08.webp", "res/slides/hfem_09.webp", "res/slides/hfem_10.webp", "res/slides/hfem_11.webp", "res/slides/hfem_12.webp", "res/slides/hfem_13.webp", "res/slides/hfem_14.webp", "res/slides/hfem_15.webp", "res/slides/hfem_16.webp", "res/slides/hfem_17.webp", "res/slides/hfem_18.webp", "res/slides/hfem_19.webp", "res/slides/hfem_20.webp", "res/slides/hfem_21.webp", "res/slides/hfem_22.webp", "res/slides/hfem_23.webp", "res/slides/hfem_24.webp", "res/slides/hfem_25.webp", "res/slides/hfem_26.webp", "res/slides/hfem_27.webp", "res/slides/hfem_28.webp", "res/slides/hfem_29.webp", "res/slides/hfem_30.webp", "res/slides/hfem_31.webp", "res/slides/hfem_32.webp", "res/slides/hfem_33.webp", "res/slides/hfem_34.webp", "res/slides/hfem_35.webp", "res/slides/hfem_36.webp", "res/slides/hfem_37.webp", "res/slides/hfem_38.webp", "res/slides/hfem_39.webp", "res/slides/hfem_40.webp", "res/slides/hfem_41.webp", "res/slides/hfem_42.webp", "res/slides/hfem_43.webp", "res/slides/hfem_44.webp", "res/slides/hfem_45.webp", "res/slides/hfem_46.webp", "res/slides/hfem_47.webp", "res/slides/hfem_48.webp", "res/slides/hfem_49.webp", "res/slides/hfem_50.webp", "res/slides/hmasc_01.webp", "res/slides/hmasc_02.webp", "res/slides/hmasc_03.webp", "res/slides/hmasc_04.webp", "res/slides/hmasc_05.webp", "res/slides/hmasc_06.webp", "res/slides/hmasc_07.webp", "res/slides/hmasc_08.webp", "res/slides/hmasc_09.webp", "res/slides/hmasc_10.webp", "res/slides/hmasc_11.webp", "res/slides/hmasc_12.webp", "res/slides/hmasc_13.webp", "res/slides/hmasc_14.webp", "res/slides/hmasc_15.webp", "res/slides/hmasc_16.webp", "res/slides/hmasc_17.webp", "res/slides/hmasc_18.webp", "res/slides/hmasc_19.webp", "res/slides/hmasc_20.webp", "res/slides/hmasc_21.webp", "res/slides/hmasc_22.webp", "res/slides/hmasc_23.webp", "res/slides/hmasc_24.webp", "res/slides/hmasc_25.webp", "res/slides/hmasc_26.webp", "res/slides/hmasc_27.webp", "res/slides/hmasc_28.webp", "res/slides/hmasc_29.webp", "res/slides/hmasc_30.webp", "res/slides/hmasc_31.webp", "res/slides/hmasc_32.webp", "res/slides/hmasc_33.webp", "res/slides/hmasc_34.webp", "res/slides/hmasc_35.webp", "res/slides/hmasc_36.webp", "res/slides/hmasc_37.webp", "res/slides/hmasc_38.webp", "res/slides/hmasc_39.webp", "res/slides/hmasc_40.webp", "res/slides/hmasc_41.webp", "res/slides/huri_01.webp", "res/slides/huri_02.webp", "res/slides/huri_03.webp", "res/slides/huri_04.webp", "res/slides/huri_05.webp", "res/slides/huri_06.webp", "res/slides/huri_07.webp", "res/slides/huri_08.webp", "res/slides/huri_09.webp", "res/slides/huri_10.webp", "res/slides/huri_11.webp", "res/slides/huri_12.webp", "res/slides/huri_13.webp", "res/slides/huri_14.webp", "res/slides/huri_15.webp", "res/slides/huri_16.webp", "res/slides/huri_17.webp", "res/slides/huri_18.webp", "res/slides/huri_19.webp", "res/slides/huri_20.webp", "res/slides/huri_21.webp", "res/slides/huri_22.webp", "res/slides/huri_23.webp", "res/slides/huri_24.webp", "res/slides/huri_25.webp", "res/slides/huri_26.webp", "res/slides/huri_27.webp", "res/slides/huri_28.webp", "res/slides/huri_29.webp", "res/slides/huri_30.webp", "res/slides/huri_31.webp", "res/slides/huri_32.webp", "res/slides/huri_33.webp", "res/slides/huri_34.webp", "res/slides/huri_35.webp", "res/slides/huri_36.webp", "res/slides/huri_37.webp", "res/slides/huri_38.webp", "res/slides/huri_39.webp", "res/slides/huri_40.webp", "res/slides/huri_41.webp", "res/slides/huri_42.webp", "res/slides/huri_43.webp", "res/slides/huri_44.webp", "res/slides/huri_45.webp", "res/slides/huri_46.webp", "res/slides/huri_47.webp", "res/slides/huri_48.webp", "res/slides/masc_01.webp", "res/slides/masc_02.webp", "res/slides/masc_03.webp", "res/slides/masc_04.webp", "res/slides/masc_05.webp", "res/slides/masc_06.webp", "res/slides/masc_07.webp", "res/slides/masc_08.webp", "res/slides/masc_09.webp", "res/slides/masc_10.webp", "res/slides/masc_11.webp", "res/slides/masc_12.webp", "res/slides/masc_13.webp", "res/slides/masc_14.webp", "res/slides/masc_15.webp", "res/slides/masc_16.webp", "res/slides/masc_17.webp", "res/slides/masc_18.webp", "res/slides/masc_19.webp", "res/slides/masc_20.webp", "res/slides/masc_21.webp", "res/slides/masc_22.webp", "res/slides/masc_23.webp", "res/slides/masc_24.webp", "res/slides/masc_25.webp", "res/slides/masc_26.webp", "res/slides/masc_27.webp", "res/slides/masc_28.webp", "res/slides/masc_29.webp", "res/slides/masc_30.webp", "res/slides/masc_31.webp", "res/slides/masc_32.webp", "res/slides/masc_33.webp", "res/slides/masc_34.webp", "res/slides/masc_35.webp", "res/slides/masc_36.webp", "res/slides/masc_37.webp", "res/slides/masc_38.webp", "res/slides/masc_39.webp", "res/slides/masc_40.webp", "res/slides/masc_41.webp", "res/slides/masc_42.webp", "res/slides/masc_43.webp", "res/slides/masc_44.webp", "res/slides/uri_01.webp", "res/slides/uri_02.webp", "res/slides/uri_03.webp", "res/slides/uri_04.webp", "res/slides/uri_05.webp", "res/slides/uri_06.webp", "res/slides/uri_07.webp", "res/slides/uri_08.webp", "res/slides/uri_09.webp", "res/slides/uri_10.webp", "res/slides/uri_11.webp", "res/slides/uri_12.webp", "res/slides/uri_13.webp", "res/slides/uri_14.webp", "res/slides/uri_15.webp", "res/slides/uri_16.webp", "res/slides/uri_17.webp", "res/slides/uri_18.webp", "res/slides/uri_19.webp", "res/slides/uri_20.webp", "res/slides/uri_21.webp", "res/slides/uri_22.webp", "res/slides/uri_23.webp", "res/slides/uri_24.webp", "res/slides/uri_25.webp", "res/slides/uri_26.webp", "res/slides/uri_27.webp", "res/slides/uri_28.webp", "res/slides/uri_29.webp", "res/slides/uri_30.webp", "res/slides/uri_31.webp", "res/slides/uri_32.webp", "res/slides/uri_33.webp", "res/slides/uri_34.webp", "res/slides/uri_35.webp", "res/slides/uri_36.webp", "res/slides/uri_37.webp", "res/slides/uri_38.webp", "res/slides/uri_39.webp", "res/slides/uri_40.webp", "res/slides/uri_41.webp", "res/slides/uri_42.webp", "res/slides/uri_43.webp", "res/slides/uri_44.webp", "res/slides/uri_45.webp", "res/slides/uri_46.webp", "res/slides/uri_47.webp", "res/slides/uri_48.webp", "res/slides/uri_49.webp", "res/slides/uri_50.webp", "res/slides/uri_51.webp", "res/slides/uri_52.webp", "res/slides/uri_53.webp", "res/slides/uri_54.webp", "res/slides/uri_55.webp", "res/slides/uri_56.webp", "res/slides/uri_57.webp", "res/slides/uri_58.webp", "res/slides/uri_59.webp", "res/slides/uri_60.webp", "res/slides/uri_61.webp", "res/slides/uri_62.webp", "res/slides/uri_63.webp", "res/slides/uri_64.webp", "res/slides/uri_65.webp", "res/slides/uri_66.webp", "res/slides/uri_67.webp", "res/slides/uri_68.webp", "res/slides/uri_69.webp", "res/slides/uri_70.webp", "res/slides/uri_71.webp", "res/slides/uri_72.webp", "res/slides/uri_73.webp", "res/slides/uri_74.webp", "res/slides/uri_75.webp", "res/slides/uri_76.webp", "res/slides/uri_77.webp", "res/slides/uri_78.webp", "res/slides/uri_79.webp", "res/slides/uri_80.webp", "res/slides/uri_81.webp", "res/slides/uri_82.webp", "res/slides/uri_83.webp", "res/slides/uri_84.webp", "res/slides/uri_85.webp", "res/slides/uri_86.webp", "res/slides/uri_87.webp", "res/slides/uri_88.webp", "res/slides/uri_89.webp", "res/slides/uri_90.webp", "res/slides/uri_91.webp", "res/slides/uri_92.webp", "res/slides/uri_93.webp", "res/slides/uri_94.webp", "res/slides/uri_95.webp", "res/uri/acessorias.webp", "res/uri/bexiga_config.webp", "res/uri/bexiga_frontal.webp", "res/uri/caso.webp", "res/uri/diaf_urogenital.webp", "res/uri/faces.webp", "res/uri/fascia.webp", "res/uri/levantador.webp", "res/uri/necrose.webp", "res/uri/nutcracker.webp", "res/uri/segmentos.webp", "res/uri/skene.webp", "res/uri/ureter_mulher.webp", "res/uri/uretra_frontal.webp", "res/uri/urografia.webp", "res/uri/vasos_insitu.webp", "res/uri/vasos_intra.webp", "res/uri/visao.webp"],CACHE="gu-1893ca7f23",had=!!navigator.serviceWorker.controller,say=window.__guSay,pill=document.getElementById("gu-pill");
+var FILES=["./", "index.html", "manifest.json", "icone-180.png", "icone-192.png", "icone-512.png", "img/art_aorta.jpg", "img/art_iliaca_comum.jpg", "img/art_ilinterna.jpg", "img/bexiga_trigono.jpg", "img/bx_modelo.jpg", "img/bx_puboprostatico.jpg", "img/bx_pubovesical.jpg", "img/colo_utero.jpg", "img/esc_camadas.jpg", "img/esc_funiculo_anel.jpg", "img/esc_testiculo.jpg", "img/escavacoes.jpg", "img/f_hemipelve.jpg", "img/f_hemipelve_labios.jpg", "img/f_lig_redondo.jpg", "img/f_mesovario.jpg", "img/f_ovario_suspensor.jpg", "img/f_vulva_alfinetes.jpg", "img/ligamento_largo.jpg", "img/m_ampola_deferente.jpg", "img/m_arteria_dorsal.jpg", "img/m_escroto_aberto.jpg", "img/m_fascias_escroto.jpg", "img/m_frenulo.jpg", "img/m_frenulo_prepucio.jpg", "img/m_glande_frenulo.jpg", "img/m_modelo.jpg", "img/m_penis_corte.jpg", "img/m_penis_dorsal.jpg", "img/m_penis_transversal.jpg", "img/m_perineo.jpg", "img/m_perineo_alfinetes.jpg", "img/m_prepucio.jpg", "img/m_prostata_sagital.jpg", "img/m_sagital.jpg", "img/m_sagital_bexiga.jpg", "img/m_sagital_escavacoes.jpg", "img/m_sagital_penis.jpg", "img/m_sagital_prostata.jpg", "img/m_tunicas_testiculo.jpg", "img/m_veia_dorsal.jpg", "img/m_vesicula_isolada.jpg", "img/mesos.jpg", "img/ovario_fornices.jpg", "img/ovario_ligamentos.jpg", "img/rim_aberto.jpg", "img/rim_capsula.jpg", "img/rim_colunas.jpg", "img/rim_corte.jpg", "img/rim_hilo.jpg", "img/rim_pediculo.jpg", "img/rim_vasos.jpg", "img/tuba_uterina.jpg", "img/u_arteria_renal_dir.jpg", "img/u_arteria_renal_esq.jpg", "img/u_bexiga_trigono.jpg", "img/u_hilo.jpg", "img/u_rim_calices.jpg", "img/u_rim_papila.jpg", "img/u_rins_margens.jpg", "img/u_rins_vasos.jpg", "img/u_ureter_trajeto.jpg", "img/ureter_iliaca.jpg", "img/ureter_jup.jpg", "img/ureter_partes.jpg", "img/utero_camadas.jpg", "img/utero_partes.jpg", "img/utero_posterior.jpg", "img/utero_sagital.jpg", "img/vagina_fornices.jpg", "img/vasos_gonadais.jpg", "img/vasos_testicular.jpg", "img/vulva_externa.jpg", "img/vulva_partes.jpg", "histo/g01.jpg", "histo/g02.jpg", "histo/g03.jpg", "histo/g04.jpg", "histo/g05.jpg", "histo/g06.jpg", "histo/g07.jpg", "histo/g08.jpg", "histo/g09.jpg", "histo/g10.jpg", "histo/g11.jpg", "histo/g12.jpg", "histo/g13.jpg", "histo/g14.jpg", "histo/g15.jpg", "histo/g16.jpg", "histo/g17.jpg", "histo/g18.jpg", "histo/g19.jpg", "histo/g20.jpg", "histo/g21.jpg", "histo/g22.jpg", "histo/g23.jpg", "histo/g24.jpg", "histo/g25.jpg", "histo/g26.jpg", "histo/g27.jpg", "histo/g28.jpg", "histo/g29.jpg", "histo/g30.jpg", "histo/g31.jpg", "histo/g32.jpg", "histo/g33.jpg", "histo/g34.jpg", "histo/g35.jpg", "histo/g36.jpg", "histo/g37.jpg", "histo/g38.jpg", "histo/g39.jpg", "histo/g40.jpg", "histo/g41.jpg", "histo/g42.jpg", "histo/g43.jpg", "histo/g44.jpg", "histo/g45.jpg", "histo/g46.jpg", "histo/g47.jpg", "histo/g48.jpg", "histo/g49.jpg", "histo/g50.jpg", "histo/g51.jpg", "histo/rev01.jpg", "histo/rev02.jpg", "histo/rev03.jpg", "histo/rev04.jpg", "histo/rev05.jpg", "histo/rev06.jpg", "histo/rev07.jpg", "histo/rev08.jpg", "histo/rev09.jpg", "histo/rev10.jpg", "teo/c1_14.webp", "teo/c1b_23.webp", "teo/c1e_4.webp", "teo/c1e_5.webp", "teo/c2q_11.webp", "teo/c2q_3.webp", "teo/c2q_8.webp", "teo/c2s_12.webp", "teo/c2s_2.webp", "teo/c2s_30.webp", "teo/c2s_7.webp", "teo/c3b_10.webp", "teo/c3b_18.webp", "teo/c3b_7.webp", "teo/c3b_8.webp", "teo/c3b_9.webp", "teo/c3c_18.webp", "teo/c3c_19.webp", "teo/c3d_24.webp", "teo/c3e_11.webp", "teo/c3e_6.webp", "res/Resumo_Fisiologia_Ciclo_Menstrual.pdf", "res/Resumo_Fisiologia_Renal_Filtracao_Glomerular.pdf", "res/Resumo_Fisiologia_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Aparelho_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Sistema_Genital_Feminino.pdf", "res/Resumo_Histologia_Sistema_Urinario.pdf", "res/Resumo_Mecanismos_Tubulares.pdf", "res/Resumo_Sistema_Genital_Feminino.pdf", "res/Resumo_Sistema_Genital_Masculino.pdf", "res/Resumo_Sistema_Urinario.pdf", "res/Resumo_Tratamento_Ejaculacao_Precoce.pdf", "res/ciclo/anatomia.webp", "res/ciclo/belchetz.webp", "res/ciclo/ciclos.webp", "res/ciclo/colo_dias.webp", "res/ciclo/corpo_luteo.webp", "res/ciclo/dominante.webp", "res/ciclo/duas_celulas.webp", "res/ciclo/duas_simples.webp", "res/ciclo/endossalpinge.webp", "res/ciclo/estagios_a.webp", "res/ciclo/estagios_b.webp", "res/ciclo/estigma.webp", "res/ciclo/feedback_neg.webp", "res/ciclo/folicular_fim.webp", "res/ciclo/folicular_ini.webp", "res/ciclo/histo_endo.webp", "res/ciclo/histo_folic.webp", "res/ciclo/hormonios.webp", "res/ciclo/idades.webp", "res/ciclo/independente.webp", "res/ciclo/intervalo.webp", "res/ciclo/kiss_arc_avpv.webp", "res/ciclo/kiss_leptina.webp", "res/ciclo/kiss_registro.webp", "res/ciclo/linha_tempo.webp", "res/ciclo/lutea_ctrl.webp", "res/ciclo/lutea_horm.webp", "res/ciclo/menopausa_e.webp", "res/ciclo/menopausa_g.webp", "res/ciclo/muco_e2.webp", "res/ciclo/muco_p4.webp", "res/ciclo/nucleos.webp", "res/ciclo/ovario_ciclo.webp", "res/ciclo/ovulacao.webp", "res/ciclo/primordial.webp", "res/ciclo/proliferativa.webp", "res/ciclo/pulsos_lh_fsh.webp", "res/ciclo/pulsos_mua.webp", "res/ciclo/reserva.webp", "res/ciclo/surto_lh.webp", "res/ciclo/temperatura.webp", "res/ciclo/utero_camadas.webp", "res/ejac/alfa1.webp", "res/ejac/alvos.webp", "res/ejac/anestesicos.webp", "res/ejac/estagios.webp", "res/ejac/etiologia.webp", "res/ejac/fases.webp", "res/ejac/ielt.webp", "res/ejac/irs_agudo.webp", "res/ejac/irs_cronico.webp", "res/ejac/irs_fluxo.webp", "res/ejac/perspectivas.webp", "res/ejac/sindrome_ss.webp", "res/ejac/supraespinhal.webp", "res/ejac/tabela_isrs.webp", "res/ejac/tramadol.webp", "res/ejac/via_5ht.webp", "res/ejac/vias.webp", "res/fem/camadas.webp", "res/fem/episiotomia.webp", "res/fem/ligamentos.webp", "res/fem/mama.webp", "res/fem/ovario_corte.webp", "res/fem/perineo.webp", "res/fem/sagital.webp", "res/fem/tuba_frontal.webp", "res/fem/utero_idades.webp", "res/fem/vulva.webp", "res/fglom/autorregulacao.webp", "res/fglom/barreira_3d.webp", "res/fglom/camadas.webp", "res/fglom/capilar_duplo.webp", "res/fglom/carga.webp", "res/fglom/contratilidade.webp", "res/fglom/cortical_justa.webp", "res/fglom/doencas_fenda.webp", "res/fglom/efsr.webp", "res/fglom/extrinseca.webp", "res/fglom/fenestra.webp", "res/fglom/ftg.webp", "res/fglom/glomerulo_netter.webp", "res/fglom/hemorragia.webp", "res/fglom/macula_atp.webp", "res/fglom/mesangiais.webp", "res/fglom/miogenico_graf.webp", "res/fglom/nefrina_slit.webp", "res/fglom/peritubular.webp", "res/fglom/podocito_prot.webp", "res/fglom/regioes.webp", "res/fglom/renina_release.webp", "res/fglom/segmentos.webp", "res/fglom/segmentos_cel.webp", "res/fglom/starling_extra.webp", "res/fglom/starling_glom.webp", "res/fglom/tamanho.webp", "res/fglom/tipos_nefron.webp", "res/fglom/vasos_netter.webp", "res/fglom/vasos_retos.webp", "res/frmasc/barreira.webp", "res/frmasc/capacitacao.webp", "res/frmasc/circadiana.webp", "res/frmasc/compart.webp", "res/frmasc/efeitos_t.webp", "res/frmasc/eixo_berne.webp", "res/frmasc/epitelio.webp", "res/frmasc/esperm.webp", "res/frmasc/espermio.webp", "res/frmasc/fertilizacao.webp", "res/frmasc/glandulas.webp", "res/frmasc/kiss_fert.webp", "res/frmasc/kndy.webp", "res/frmasc/leydig_ester.webp", "res/frmasc/metab_t.webp", "res/frmasc/no_gmpc.webp", "res/frmasc/penis.webp", "res/frmasc/reflexo.webp", "res/frmasc/sertoli_func.webp", "res/frmasc/simpatico.webp", "res/frmasc/testiculo.webp", "res/ftub/aa_pept.webp", "res/ftub/adh_infusao.webp", "res/ftub/adh_valores.webp", "res/ftub/agua_tp.webp", "res/ftub/alca_carac.webp", "res/ftub/alca_valores.webp", "res/ftub/aldosterona.webp", "res/ftub/antiporte.webp", "res/ftub/aqp2.webp", "res/ftub/aqp_nefron.webp", "res/ftub/aqp_tipos.webp", "res/ftub/cilios.webp", "res/ftub/cl_dirigido.webp", "res/ftub/cl_formato.webp", "res/ftub/claudinas.webp", "res/ftub/glicose_tm.webp", "res/ftub/gradiente.webp", "res/ftub/hco3.webp", "res/ftub/intercaladas.webp", "res/ftub/na_tp.webp", "res/ftub/nacl_distal.webp", "res/ftub/nkcc.webp", "res/ftub/perfil_tp.webp", "res/ftub/policistica.webp", "res/ftub/poupadores.webp", "res/ftub/proteinas.webp", "res/ftub/rae_canais.webp", "res/ftub/secrecao_pah.webp", "res/ftub/sglt_na.webp", "res/ftub/simporte.webp", "res/ftub/tabela_tp.webp", "res/ftub/tres_processos.webp", "res/ftub/vias.webp", "res/hfem/antral_he.webp", "res/hfem/cervice.webp", "res/hfem/ciclo_endo.webp", "res/hfem/ciclo_ovario.webp", "res/hfem/classif.webp", "res/hfem/corpo_luteo.webp", "res/hfem/cortex_ov.webp", "res/hfem/duas_celulas.webp", "res/hfem/eixo.webp", "res/hfem/endocervice.webp", "res/hfem/endometrio_esq.webp", "res/hfem/funcional.webp", "res/hfem/graaf.webp", "res/hfem/jec.webp", "res/hfem/luteinicas.webp", "res/hfem/miometrio.webp", "res/hfem/ovario_corte.webp", "res/hfem/ovulacao.webp", "res/hfem/primarios_he.webp", "res/hfem/primordiais.webp", "res/hfem/tecas.webp", "res/hfem/tuba_he.webp", "res/hfem/vagina.webp", "res/hmasc/albuginea_leydig.webp", "res/hmasc/barreira_ht.webp", "res/hmasc/concrecoes.webp", "res/hmasc/controle.webp", "res/hmasc/deferente.webp", "res/hmasc/ductos.webp", "res/hmasc/ejaculatorios.webp", "res/hmasc/epididimo.webp", "res/hmasc/epididimo_det.webp", "res/hmasc/epitelio_esq.webp", "res/hmasc/epitelio_germ.webp", "res/hmasc/epitelio_leydig.webp", "res/hmasc/eretil.webp", "res/hmasc/espermiogenese.webp", "res/hmasc/penis_corte.webp", "res/hmasc/penis_esq.webp", "res/hmasc/prostata_gland.webp", "res/hmasc/prostata_lam.webp", "res/hmasc/prostata_zonas.webp", "res/hmasc/testiculo.webp", "res/hmasc/testiculo_esq.webp", "res/hmasc/tubulos_sem.webp", "res/huri/alca_coletor.webp", "res/huri/barreira_diag.webp", "res/huri/bexiga_camadas.webp", "res/huri/bexiga_urotelio.webp", "res/huri/corpusculo.webp", "res/huri/corpusculo_jga.webp", "res/huri/cortex_medula.webp", "res/huri/diafragma.webp", "res/huri/glomerulo.webp", "res/huri/macula_densa.webp", "res/huri/papila.webp", "res/huri/podocitos.webp", "res/huri/raio_medular.webp", "res/huri/rim_lamina.webp", "res/huri/tcp.webp", "res/huri/tcp_tcd.webp", "res/huri/ureter.webp", "res/huri/ureter_ab.webp", "res/huri/uretra_fem.webp", "res/huri/vascularizacao.webp", "res/masc/camadas_diag.webp", "res/masc/descida.webp", "res/masc/epididimo_frontal.webp", "res/masc/escroto_netter.webp", "res/masc/irrigacao.webp", "res/masc/penis_face.webp", "res/masc/penis_vasos.webp", "res/masc/posterior_bexiga.webp", "res/masc/prostata_cortes.webp", "res/masc/prostata_frontal.webp", "res/masc/vesiculas_netter.webp", "res/masc/visao.webp", "res/slides/ciclo_01.webp", "res/slides/ciclo_02.webp", "res/slides/ciclo_03.webp", "res/slides/ciclo_04.webp", "res/slides/ciclo_05.webp", "res/slides/ciclo_06.webp", "res/slides/ciclo_07.webp", "res/slides/ciclo_08.webp", "res/slides/ciclo_09.webp", "res/slides/ciclo_10.webp", "res/slides/ciclo_11.webp", "res/slides/ciclo_12.webp", "res/slides/ciclo_13.webp", "res/slides/ciclo_14.webp", "res/slides/ciclo_15.webp", "res/slides/ciclo_16.webp", "res/slides/ciclo_17.webp", "res/slides/ciclo_18.webp", "res/slides/ciclo_19.webp", "res/slides/ciclo_20.webp", "res/slides/ciclo_21.webp", "res/slides/ciclo_22.webp", "res/slides/ciclo_23.webp", "res/slides/ciclo_24.webp", "res/slides/ciclo_25.webp", "res/slides/ciclo_26.webp", "res/slides/ciclo_27.webp", "res/slides/ciclo_28.webp", "res/slides/ciclo_29.webp", "res/slides/ciclo_30.webp", "res/slides/ciclo_31.webp", "res/slides/ciclo_32.webp", "res/slides/ciclo_33.webp", "res/slides/ciclo_34.webp", "res/slides/ciclo_35.webp", "res/slides/ciclo_36.webp", "res/slides/ciclo_37.webp", "res/slides/ciclo_38.webp", "res/slides/ciclo_39.webp", "res/slides/ciclo_40.webp", "res/slides/ciclo_41.webp", "res/slides/ciclo_42.webp", "res/slides/ciclo_43.webp", "res/slides/ciclo_44.webp", "res/slides/ciclo_45.webp", "res/slides/ciclo_46.webp", "res/slides/ciclo_47.webp", "res/slides/ciclo_48.webp", "res/slides/ciclo_49.webp", "res/slides/ciclo_50.webp", "res/slides/ciclo_51.webp", "res/slides/ciclo_52.webp", "res/slides/ciclo_53.webp", "res/slides/ciclo_54.webp", "res/slides/ciclo_55.webp", "res/slides/ciclo_56.webp", "res/slides/ciclo_57.webp", "res/slides/ciclo_58.webp", "res/slides/ciclo_59.webp", "res/slides/ciclo_60.webp", "res/slides/ciclo_61.webp", "res/slides/ciclo_62.webp", "res/slides/ciclo_63.webp", "res/slides/ciclo_64.webp", "res/slides/ciclo_65.webp", "res/slides/ciclo_66.webp", "res/slides/ciclo_67.webp", "res/slides/ciclo_68.webp", "res/slides/ciclo_69.webp", "res/slides/ciclo_70.webp", "res/slides/ciclo_71.webp", "res/slides/ciclo_72.webp", "res/slides/ciclo_73.webp", "res/slides/ciclo_74.webp", "res/slides/ciclo_75.webp", "res/slides/ciclo_76.webp", "res/slides/ciclo_77.webp", "res/slides/ciclo_78.webp", "res/slides/ciclo_79.webp", "res/slides/ciclo_80.webp", "res/slides/ejac_01.webp", "res/slides/ejac_02.webp", "res/slides/ejac_03.webp", "res/slides/ejac_04.webp", "res/slides/ejac_05.webp", "res/slides/ejac_06.webp", "res/slides/ejac_07.webp", "res/slides/ejac_08.webp", "res/slides/ejac_09.webp", "res/slides/ejac_10.webp", "res/slides/ejac_11.webp", "res/slides/ejac_12.webp", "res/slides/ejac_13.webp", "res/slides/ejac_14.webp", "res/slides/ejac_15.webp", "res/slides/ejac_16.webp", "res/slides/ejac_17.webp", "res/slides/ejac_18.webp", "res/slides/ejac_19.webp", "res/slides/ejac_20.webp", "res/slides/ejac_21.webp", "res/slides/ejac_22.webp", "res/slides/ejac_23.webp", "res/slides/ejac_24.webp", "res/slides/ejac_25.webp", "res/slides/ejac_26.webp", "res/slides/ejac_27.webp", "res/slides/ejac_28.webp", "res/slides/ejac_29.webp", "res/slides/ejac_30.webp", "res/slides/ejac_31.webp", "res/slides/ejac_32.webp", "res/slides/ejac_33.webp", "res/slides/ejac_34.webp", "res/slides/ejac_35.webp", "res/slides/ejac_36.webp", "res/slides/ejac_37.webp", "res/slides/ejac_38.webp", "res/slides/ejac_39.webp", "res/slides/ejac_40.webp", "res/slides/fem_01.webp", "res/slides/fem_02.webp", "res/slides/fem_03.webp", "res/slides/fem_04.webp", "res/slides/fem_05.webp", "res/slides/fem_06.webp", "res/slides/fem_07.webp", "res/slides/fem_08.webp", "res/slides/fem_09.webp", "res/slides/fem_10.webp", "res/slides/fem_11.webp", "res/slides/fem_12.webp", "res/slides/fem_13.webp", "res/slides/fem_14.webp", "res/slides/fem_15.webp", "res/slides/fem_16.webp", "res/slides/fem_17.webp", "res/slides/fem_18.webp", "res/slides/fem_19.webp", "res/slides/fem_20.webp", "res/slides/fem_21.webp", "res/slides/fem_22.webp", "res/slides/fem_23.webp", "res/slides/fem_24.webp", "res/slides/fem_25.webp", "res/slides/fem_26.webp", "res/slides/fem_27.webp", "res/slides/fem_28.webp", "res/slides/fem_29.webp", "res/slides/fem_30.webp", "res/slides/fem_31.webp", "res/slides/fem_32.webp", "res/slides/fem_33.webp", "res/slides/fem_34.webp", "res/slides/fem_35.webp", "res/slides/fem_36.webp", "res/slides/fem_37.webp", "res/slides/fem_38.webp", "res/slides/fem_39.webp", "res/slides/fem_40.webp", "res/slides/fglom_01.webp", "res/slides/fglom_02.webp", "res/slides/fglom_03.webp", "res/slides/fglom_04.webp", "res/slides/fglom_05.webp", "res/slides/fglom_06.webp", "res/slides/fglom_07.webp", "res/slides/fglom_08.webp", "res/slides/fglom_09.webp", "res/slides/fglom_10.webp", "res/slides/fglom_11.webp", "res/slides/fglom_12.webp", "res/slides/fglom_13.webp", "res/slides/fglom_14.webp", "res/slides/fglom_15.webp", "res/slides/fglom_16.webp", "res/slides/fglom_17.webp", "res/slides/fglom_18.webp", "res/slides/fglom_19.webp", "res/slides/fglom_20.webp", "res/slides/fglom_21.webp", "res/slides/fglom_22.webp", "res/slides/fglom_23.webp", "res/slides/fglom_24.webp", "res/slides/fglom_25.webp", "res/slides/fglom_26.webp", "res/slides/fglom_27.webp", "res/slides/fglom_28.webp", "res/slides/fglom_29.webp", "res/slides/fglom_30.webp", "res/slides/fglom_31.webp", "res/slides/fglom_32.webp", "res/slides/fglom_33.webp", "res/slides/fglom_34.webp", "res/slides/fglom_35.webp", "res/slides/fglom_36.webp", "res/slides/fglom_37.webp", "res/slides/fglom_38.webp", "res/slides/fglom_39.webp", "res/slides/fglom_40.webp", "res/slides/fglom_41.webp", "res/slides/fglom_42.webp", "res/slides/fglom_43.webp", "res/slides/fglom_44.webp", "res/slides/fglom_45.webp", "res/slides/fglom_46.webp", "res/slides/fglom_47.webp", "res/slides/fglom_48.webp", "res/slides/fglom_49.webp", "res/slides/fglom_50.webp", "res/slides/fglom_51.webp", "res/slides/fglom_52.webp", "res/slides/fglom_53.webp", "res/slides/fglom_54.webp", "res/slides/fglom_55.webp", "res/slides/fglom_56.webp", "res/slides/fglom_57.webp", "res/slides/fglom_58.webp", "res/slides/fglom_59.webp", "res/slides/fglom_60.webp", "res/slides/fglom_61.webp", "res/slides/fglom_62.webp", "res/slides/fglom_63.webp", "res/slides/fglom_64.webp", "res/slides/fglom_65.webp", "res/slides/fglom_66.webp", "res/slides/fglom_67.webp", "res/slides/fglom_68.webp", "res/slides/fglom_69.webp", "res/slides/fglom_70.webp", "res/slides/fglom_71.webp", "res/slides/fglom_72.webp", "res/slides/fglom_73.webp", "res/slides/fglom_74.webp", "res/slides/frmasc_01.webp", "res/slides/frmasc_02.webp", "res/slides/frmasc_03.webp", "res/slides/frmasc_04.webp", "res/slides/frmasc_05.webp", "res/slides/frmasc_06.webp", "res/slides/frmasc_07.webp", "res/slides/frmasc_08.webp", "res/slides/frmasc_09.webp", "res/slides/frmasc_10.webp", "res/slides/frmasc_11.webp", "res/slides/frmasc_12.webp", "res/slides/frmasc_13.webp", "res/slides/frmasc_14.webp", "res/slides/frmasc_15.webp", "res/slides/frmasc_16.webp", "res/slides/frmasc_17.webp", "res/slides/frmasc_18.webp", "res/slides/frmasc_19.webp", "res/slides/frmasc_20.webp", "res/slides/frmasc_21.webp", "res/slides/frmasc_22.webp", "res/slides/frmasc_23.webp", "res/slides/frmasc_24.webp", "res/slides/frmasc_25.webp", "res/slides/frmasc_26.webp", "res/slides/frmasc_27.webp", "res/slides/frmasc_28.webp", "res/slides/frmasc_29.webp", "res/slides/frmasc_30.webp", "res/slides/frmasc_31.webp", "res/slides/frmasc_32.webp", "res/slides/frmasc_33.webp", "res/slides/frmasc_34.webp", "res/slides/frmasc_35.webp", "res/slides/frmasc_36.webp", "res/slides/frmasc_37.webp", "res/slides/frmasc_38.webp", "res/slides/frmasc_39.webp", "res/slides/frmasc_40.webp", "res/slides/ftub_01.webp", "res/slides/ftub_02.webp", "res/slides/ftub_03.webp", "res/slides/ftub_04.webp", "res/slides/ftub_05.webp", "res/slides/ftub_06.webp", "res/slides/ftub_07.webp", "res/slides/ftub_08.webp", "res/slides/ftub_09.webp", "res/slides/ftub_10.webp", "res/slides/ftub_11.webp", "res/slides/ftub_12.webp", "res/slides/ftub_13.webp", "res/slides/ftub_14.webp", "res/slides/ftub_15.webp", "res/slides/ftub_16.webp", "res/slides/ftub_17.webp", "res/slides/ftub_18.webp", "res/slides/ftub_19.webp", "res/slides/ftub_20.webp", "res/slides/ftub_21.webp", "res/slides/ftub_22.webp", "res/slides/ftub_23.webp", "res/slides/ftub_24.webp", "res/slides/ftub_25.webp", "res/slides/ftub_26.webp", "res/slides/ftub_27.webp", "res/slides/ftub_28.webp", "res/slides/ftub_29.webp", "res/slides/ftub_30.webp", "res/slides/ftub_31.webp", "res/slides/ftub_32.webp", "res/slides/ftub_33.webp", "res/slides/ftub_34.webp", "res/slides/ftub_35.webp", "res/slides/ftub_36.webp", "res/slides/ftub_37.webp", "res/slides/ftub_38.webp", "res/slides/ftub_39.webp", "res/slides/ftub_40.webp", "res/slides/ftub_41.webp", "res/slides/hfem_01.webp", "res/slides/hfem_02.webp", "res/slides/hfem_03.webp", "res/slides/hfem_04.webp", "res/slides/hfem_05.webp", "res/slides/hfem_06.webp", "res/slides/hfem_07.webp", "res/slides/hfem_08.webp", "res/slides/hfem_09.webp", "res/slides/hfem_10.webp", "res/slides/hfem_11.webp", "res/slides/hfem_12.webp", "res/slides/hfem_13.webp", "res/slides/hfem_14.webp", "res/slides/hfem_15.webp", "res/slides/hfem_16.webp", "res/slides/hfem_17.webp", "res/slides/hfem_18.webp", "res/slides/hfem_19.webp", "res/slides/hfem_20.webp", "res/slides/hfem_21.webp", "res/slides/hfem_22.webp", "res/slides/hfem_23.webp", "res/slides/hfem_24.webp", "res/slides/hfem_25.webp", "res/slides/hfem_26.webp", "res/slides/hfem_27.webp", "res/slides/hfem_28.webp", "res/slides/hfem_29.webp", "res/slides/hfem_30.webp", "res/slides/hfem_31.webp", "res/slides/hfem_32.webp", "res/slides/hfem_33.webp", "res/slides/hfem_34.webp", "res/slides/hfem_35.webp", "res/slides/hfem_36.webp", "res/slides/hfem_37.webp", "res/slides/hfem_38.webp", "res/slides/hfem_39.webp", "res/slides/hfem_40.webp", "res/slides/hfem_41.webp", "res/slides/hfem_42.webp", "res/slides/hfem_43.webp", "res/slides/hfem_44.webp", "res/slides/hfem_45.webp", "res/slides/hfem_46.webp", "res/slides/hfem_47.webp", "res/slides/hfem_48.webp", "res/slides/hfem_49.webp", "res/slides/hfem_50.webp", "res/slides/hmasc_01.webp", "res/slides/hmasc_02.webp", "res/slides/hmasc_03.webp", "res/slides/hmasc_04.webp", "res/slides/hmasc_05.webp", "res/slides/hmasc_06.webp", "res/slides/hmasc_07.webp", "res/slides/hmasc_08.webp", "res/slides/hmasc_09.webp", "res/slides/hmasc_10.webp", "res/slides/hmasc_11.webp", "res/slides/hmasc_12.webp", "res/slides/hmasc_13.webp", "res/slides/hmasc_14.webp", "res/slides/hmasc_15.webp", "res/slides/hmasc_16.webp", "res/slides/hmasc_17.webp", "res/slides/hmasc_18.webp", "res/slides/hmasc_19.webp", "res/slides/hmasc_20.webp", "res/slides/hmasc_21.webp", "res/slides/hmasc_22.webp", "res/slides/hmasc_23.webp", "res/slides/hmasc_24.webp", "res/slides/hmasc_25.webp", "res/slides/hmasc_26.webp", "res/slides/hmasc_27.webp", "res/slides/hmasc_28.webp", "res/slides/hmasc_29.webp", "res/slides/hmasc_30.webp", "res/slides/hmasc_31.webp", "res/slides/hmasc_32.webp", "res/slides/hmasc_33.webp", "res/slides/hmasc_34.webp", "res/slides/hmasc_35.webp", "res/slides/hmasc_36.webp", "res/slides/hmasc_37.webp", "res/slides/hmasc_38.webp", "res/slides/hmasc_39.webp", "res/slides/hmasc_40.webp", "res/slides/hmasc_41.webp", "res/slides/huri_01.webp", "res/slides/huri_02.webp", "res/slides/huri_03.webp", "res/slides/huri_04.webp", "res/slides/huri_05.webp", "res/slides/huri_06.webp", "res/slides/huri_07.webp", "res/slides/huri_08.webp", "res/slides/huri_09.webp", "res/slides/huri_10.webp", "res/slides/huri_11.webp", "res/slides/huri_12.webp", "res/slides/huri_13.webp", "res/slides/huri_14.webp", "res/slides/huri_15.webp", "res/slides/huri_16.webp", "res/slides/huri_17.webp", "res/slides/huri_18.webp", "res/slides/huri_19.webp", "res/slides/huri_20.webp", "res/slides/huri_21.webp", "res/slides/huri_22.webp", "res/slides/huri_23.webp", "res/slides/huri_24.webp", "res/slides/huri_25.webp", "res/slides/huri_26.webp", "res/slides/huri_27.webp", "res/slides/huri_28.webp", "res/slides/huri_29.webp", "res/slides/huri_30.webp", "res/slides/huri_31.webp", "res/slides/huri_32.webp", "res/slides/huri_33.webp", "res/slides/huri_34.webp", "res/slides/huri_35.webp", "res/slides/huri_36.webp", "res/slides/huri_37.webp", "res/slides/huri_38.webp", "res/slides/huri_39.webp", "res/slides/huri_40.webp", "res/slides/huri_41.webp", "res/slides/huri_42.webp", "res/slides/huri_43.webp", "res/slides/huri_44.webp", "res/slides/huri_45.webp", "res/slides/huri_46.webp", "res/slides/huri_47.webp", "res/slides/huri_48.webp", "res/slides/masc_01.webp", "res/slides/masc_02.webp", "res/slides/masc_03.webp", "res/slides/masc_04.webp", "res/slides/masc_05.webp", "res/slides/masc_06.webp", "res/slides/masc_07.webp", "res/slides/masc_08.webp", "res/slides/masc_09.webp", "res/slides/masc_10.webp", "res/slides/masc_11.webp", "res/slides/masc_12.webp", "res/slides/masc_13.webp", "res/slides/masc_14.webp", "res/slides/masc_15.webp", "res/slides/masc_16.webp", "res/slides/masc_17.webp", "res/slides/masc_18.webp", "res/slides/masc_19.webp", "res/slides/masc_20.webp", "res/slides/masc_21.webp", "res/slides/masc_22.webp", "res/slides/masc_23.webp", "res/slides/masc_24.webp", "res/slides/masc_25.webp", "res/slides/masc_26.webp", "res/slides/masc_27.webp", "res/slides/masc_28.webp", "res/slides/masc_29.webp", "res/slides/masc_30.webp", "res/slides/masc_31.webp", "res/slides/masc_32.webp", "res/slides/masc_33.webp", "res/slides/masc_34.webp", "res/slides/masc_35.webp", "res/slides/masc_36.webp", "res/slides/masc_37.webp", "res/slides/masc_38.webp", "res/slides/masc_39.webp", "res/slides/masc_40.webp", "res/slides/masc_41.webp", "res/slides/masc_42.webp", "res/slides/masc_43.webp", "res/slides/masc_44.webp", "res/slides/uri_01.webp", "res/slides/uri_02.webp", "res/slides/uri_03.webp", "res/slides/uri_04.webp", "res/slides/uri_05.webp", "res/slides/uri_06.webp", "res/slides/uri_07.webp", "res/slides/uri_08.webp", "res/slides/uri_09.webp", "res/slides/uri_10.webp", "res/slides/uri_11.webp", "res/slides/uri_12.webp", "res/slides/uri_13.webp", "res/slides/uri_14.webp", "res/slides/uri_15.webp", "res/slides/uri_16.webp", "res/slides/uri_17.webp", "res/slides/uri_18.webp", "res/slides/uri_19.webp", "res/slides/uri_20.webp", "res/slides/uri_21.webp", "res/slides/uri_22.webp", "res/slides/uri_23.webp", "res/slides/uri_24.webp", "res/slides/uri_25.webp", "res/slides/uri_26.webp", "res/slides/uri_27.webp", "res/slides/uri_28.webp", "res/slides/uri_29.webp", "res/slides/uri_30.webp", "res/slides/uri_31.webp", "res/slides/uri_32.webp", "res/slides/uri_33.webp", "res/slides/uri_34.webp", "res/slides/uri_35.webp", "res/slides/uri_36.webp", "res/slides/uri_37.webp", "res/slides/uri_38.webp", "res/slides/uri_39.webp", "res/slides/uri_40.webp", "res/slides/uri_41.webp", "res/slides/uri_42.webp", "res/slides/uri_43.webp", "res/slides/uri_44.webp", "res/slides/uri_45.webp", "res/slides/uri_46.webp", "res/slides/uri_47.webp", "res/slides/uri_48.webp", "res/slides/uri_49.webp", "res/slides/uri_50.webp", "res/slides/uri_51.webp", "res/slides/uri_52.webp", "res/slides/uri_53.webp", "res/slides/uri_54.webp", "res/slides/uri_55.webp", "res/slides/uri_56.webp", "res/slides/uri_57.webp", "res/slides/uri_58.webp", "res/slides/uri_59.webp", "res/slides/uri_60.webp", "res/slides/uri_61.webp", "res/slides/uri_62.webp", "res/slides/uri_63.webp", "res/slides/uri_64.webp", "res/slides/uri_65.webp", "res/slides/uri_66.webp", "res/slides/uri_67.webp", "res/slides/uri_68.webp", "res/slides/uri_69.webp", "res/slides/uri_70.webp", "res/slides/uri_71.webp", "res/slides/uri_72.webp", "res/slides/uri_73.webp", "res/slides/uri_74.webp", "res/slides/uri_75.webp", "res/slides/uri_76.webp", "res/slides/uri_77.webp", "res/slides/uri_78.webp", "res/slides/uri_79.webp", "res/slides/uri_80.webp", "res/slides/uri_81.webp", "res/slides/uri_82.webp", "res/slides/uri_83.webp", "res/slides/uri_84.webp", "res/slides/uri_85.webp", "res/slides/uri_86.webp", "res/slides/uri_87.webp", "res/slides/uri_88.webp", "res/slides/uri_89.webp", "res/slides/uri_90.webp", "res/slides/uri_91.webp", "res/slides/uri_92.webp", "res/slides/uri_93.webp", "res/slides/uri_94.webp", "res/slides/uri_95.webp", "res/uri/acessorias.webp", "res/uri/bexiga_config.webp", "res/uri/bexiga_frontal.webp", "res/uri/caso.webp", "res/uri/diaf_urogenital.webp", "res/uri/faces.webp", "res/uri/fascia.webp", "res/uri/levantador.webp", "res/uri/necrose.webp", "res/uri/nutcracker.webp", "res/uri/segmentos.webp", "res/uri/skene.webp", "res/uri/ureter_mulher.webp", "res/uri/uretra_frontal.webp", "res/uri/urografia.webp", "res/uri/vasos_insitu.webp", "res/uri/vasos_intra.webp", "res/uri/visao.webp"],CACHE="gu-f4b37ea5a7",had=!!navigator.serviceWorker.controller,say=window.__guSay,pill=document.getElementById("gu-pill");
 function check(){caches.open(CACHE).then(function(c){return Promise.all(FILES.map(function(u){return c.match(u)}))}).then(function(r){
   var ok=r.filter(Boolean).length;
   if(ok===FILES.length){var k="gu-off-"+CACHE,seen=false;try{seen=!!localStorage.getItem(k);localStorage.setItem(k,"1")}catch(e){}if(!seen)say("✓ Pronto para usar sem internet","#2b8a3e",5000)}
