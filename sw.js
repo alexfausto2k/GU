@@ -1,9 +1,9 @@
 // Módulo Gênito-Urinário · funciona sem internet depois da primeira abertura.
 // Gerado por oficina/ferramentas/construir_app.py — não edite à mão.
-const CACHE = "gu-ea0543f1b2";
+const CACHE = "gu-8d51a1fe21";
 const FILES = {
-"./": "8d569357f8",
-"index.html": "8d569357f8",
+"./": "87ad3e92fa",
+"index.html": "87ad3e92fa",
 "manifest.json": "338042bdbe",
 "icone-180.png": "4901dc3e9a",
 "icone-192.png": "fc9453f590",
