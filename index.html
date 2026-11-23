@@ -425,7 +425,917 @@ button.pri-it:hover{border-color:var(--acc);background:var(--acc-soft)}
 
   <main id="main"></main>
 
-  <template id="tpl-ahnd">
+  <template id="tpl-hidro">
+<!-- ============================== CAPA ============================== -->
+<section class="cover">
+  <div class="kicker">Resumo de estudo · Fisiologia · Medicina</div>
+  <h1>Regulação da<br>Água e do Sódio</h1>
+  <div class="rainbow huri"></div>
+  <p class="sub">Água corporal e compartimentos líquidos, composição eletrolítica e osmótica, permeabilidade das membranas e tonicidade, o sódio como medida da osmolaridade, o balanço hídrico, os sensores de volume (cardiopulmonares, arteriais, renais), o peptídeo natriurético atrial, o controle da liberação de renina, o sistema renina-angiotensina-aldosterona, o hormônio antidiurético (osmorreceptores e barorreceptores) e a resposta à desidratação.</p>
+  <p class="meta">Baseado nos slides das aulas 18 e 19, <em>Fisiologia do Sistema Urinário VI e VII: regulação hidroeletrolítica e homeostase</em> (Prof. Pedro Magalhães). As figuras são as dos slides (Guyton, Koeppen &amp; Stanton, Greger &amp; Windhorst, Brenner &amp; Rector), com dois esquemas próprios; o texto foi completado com Guyton e Berne &amp; Levy. Os destaques “Cai na prova” vêm das provas da T137 e da T136 e dos compilados.</p>
+
+  <div class="cover-grid">
+    <div class="box key">
+      <div class="tag">Como usar este resumo</div>
+      <ol>
+        <li>Separe dois problemas: a <b>osmolaridade</b> se corrige com <b>água</b> (ADH e sede); o <b>volume</b> se corrige com <b>sódio</b> (SRAA, simpático, ANP).</li>
+        <li>Grave o modelo de dois compartimentos da seção 4: ele explica hiponatremia, hipernatremia e edema cerebral.</li>
+        <li>Para a renina, decore os três estímulos (pressão, mácula densa, simpático) e quem inibe (angiotensina II, adenosina, ADH).</li>
+        <li>Na véspera, revise a tabela da seção 11 e faça as questões.</li>
+      </ol>
+    </div>
+    <div class="legend">
+      <div class="tag plain">Código de cores</div>
+      <div class="chips">
+        <span class="chip o" style="--c:#1c7ed6;--f:#d0ebff">Água e compartimentos</span>
+        <span class="chip o" style="--c:#2b8a3e;--f:#d3f9d8">Sensores de volume e ANP</span>
+        <span class="chip o" style="--c:#c92a2a;--f:#ffe3e3">Renina e SRAA</span>
+        <span class="chip o" style="--c:#7048e8;--f:#e5dbff">ADH e sede</span>
+      </div>
+      <div class="boxlegend">
+        <span class="mini key">Em uma frase</span>
+        <span class="mini prova">Cai na prova</span>
+        <span class="mini clin">Correlação clínica</span>
+        <span class="mini deep">Aprofundamento</span>
+        <span class="mini mnem">Mnemônico</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ideias"><div class="tag plain">As cinco ideias que organizam toda a matéria</div>
+  <ol class="tight">
+    <li><b>Dois terços da água estão dentro das células</b>: num adulto de 70 kg são ~42 L, 28 no LIC e 14 no LEC. O Na⁺ fica fora, o K⁺ dentro, e a osmolaridade é igual nos dois lados.</li>
+    <li><b>A água segue o sódio</b>: a membrana deixa a água passar e o Na⁺ não. Se o Na⁺ do LEC sobe, as células murcham; se cai, incham. O <b>Na⁺ plasmático mede a água</b>, não o sódio total.</li>
+    <li><b>Osmolaridade se corrige com água</b>: 1% de aumento já faz os osmorreceptores do hipotálamo liberarem <b>ADH</b> e dar <b>sede</b>.</li>
+    <li><b>Volume se corrige com sódio</b>: barorreceptores (átrios, aorta, carótidas, arteríola aferente) e a mácula densa comandam <b>renina → angiotensina II → aldosterona</b> e o simpático; a distensão atrial libera <b>ANP</b>, que faz o contrário.</li>
+    <li><b>Quando brigam, o volume vence</b>: uma queda de 5–10% do volume libera ADH mesmo com osmolaridade normal ou baixa.</li>
+  </ol></div>
+
+  <div class="toc">
+    <div class="tag plain">Sumário</div>
+    <ol class="toc2">
+      <li><b>Água corporal</b> e compartimentos</li>
+      <li><b>Composição</b> dos líquidos</li>
+      <li><b>Membranas</b> e tonicidade</li>
+      <li><b>O sódio</b> e a osmolaridade</li>
+      <li><b>Balanço</b> hídrico</li>
+      <li><b>Sensores</b> de volume e ANP</li>
+      <li><b>Renina</b>: o que controla</li>
+      <li><b>SRAA</b> e aldosterona</li>
+      <li><b>ADH</b>: osmo e baro</li>
+      <li><b>Desidratação</b> aguda</li>
+      <li><b>Revisão final</b></li>
+      <li><b>Questões</b> com gabarito comentado</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================== 1 ÁGUA CORPORAL ============================== -->
+<section class="sec flow">
+<h2><span class="num n-col">1</span>Água corporal e compartimentos</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/agua_corporal.webp" alt="agua_corporal"><figcaption><b>Figura 1.</b> Água corporal total (aula): 45 a 75% do peso; cerca de 80% no recém-nascido, 60% no homem adulto e 50% na mulher adulta; a tabela mostra a água de cada tecido, do rim (83%) ao tecido adiposo (10%).</figcaption></figure>
+<div>
+<ul class="tight">
+<li>A água é <b>45 a 75% do peso</b>: ~80% no recém-nascido, <b>~60% no homem</b> e <b>~50% na mulher</b>.</li>
+<li>Quem tem mais gordura tem menos água: o tecido adiposo tem só <b>10%</b> de água, contra 76% do músculo e 83% do rim. Por isso a mulher, o obeso e o idoso têm proporcionalmente menos água.</li>
+<li>Num adulto de 70 kg: <b>~42 L</b> de água, sendo <b>~28 L no LIC (2/3)</b> e <b>~14 L no LEC (1/3)</b> (aula).</li>
+</ul>
+</div>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/compartimentos.webp" alt="compartimentos"><figcaption><b>Figura 2.</b> Compartimentos líquidos (aula, Edelman e Leibman): intracelular 55% da água total (33% do peso no homem); extracelular 45%, dividido em intersticial 20%, plasma 7,5%, osso 7,5%, conjuntivo denso 7,5% e transcelular 2,5%.</figcaption></figure>
+<div>
+<table class="dense">
+<thead><tr><th>Compartimento</th><th>% da água total</th><th>% do peso (homem)</th></tr></thead>
+<tbody>
+<tr><td class="g-col">Intracelular</td><td>55</td><td>33</td></tr>
+<tr><td class="g-col">Extracelular</td><td>45</td><td>27</td></tr>
+<tr><td class="g-col">· intersticial</td><td>20</td><td>12</td></tr>
+<tr><td class="g-col">· plasma</td><td>7,5</td><td>4,5</td></tr>
+<tr><td class="g-col">· osso e conjuntivo denso</td><td>15</td><td>9</td></tr>
+<tr><td class="g-col">· transcelular</td><td>2,5</td><td>1,5</td></tr>
+</tbody></table>
+<p>A tabela da aula conta osso e conjuntivo denso no LEC, e por isso dá 55:45; o modelo simplificado, usado nas contas, é <b>2/3 dentro e 1/3 fora</b>. Transcelular = líquor, sinovial, pleural, sucos digestivos.</p>
+</div>
+</div>
+</section>
+
+<!-- ============================== 2 COMPOSIÇÃO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-col">2</span>Composição dos líquidos</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/eletrolitos.webp" alt="eletrolitos"><figcaption><b>Figura 3.</b> Composição eletrolítica (aula), em mEq/L: no plasma e no intersticial predominam Na⁺ e Cl⁻ (o plasma tem proteínas); no LIC predominam K⁺, Mg²⁺, fosfatos orgânicos e proteínas, com pouco Na⁺ e Cl⁻.</figcaption></figure>
+<figure class="img sm"><img src="res/hidro/osmotica.webp" alt="osmotica"><figcaption><b>Figura 4.</b> Composição osmótica (aula), em mOsm/kg H₂O: os três compartimentos ficam perto de 300; fora das células quem pesa é Na⁺ e Cl⁻, dentro é K⁺.</figcaption></figure>
+</div>
+<ul class="tight">
+<li><b>LEC</b> (plasma e intersticial): <b>Na⁺</b> (~140), <b>Cl⁻</b> e HCO₃⁻. O plasma tem <b>proteínas</b>; o intersticial quase não.</li>
+<li><b>LIC</b>: <b>K⁺</b> (~150), Mg²⁺, fosfatos orgânicos e proteínas; Na⁺ só ~10.</li>
+<li>A <b>osmolalidade é a mesma</b> nos compartimentos (~290 mOsm/kg): o que muda é quem a compõe. A Na⁺/K⁺-ATPase mantém essa separação.</li>
+</ul>
+</section>
+
+<!-- ============================== 3 MEMBRANAS ============================== -->
+<section class="sec flow">
+<h2><span class="num n-col">3</span>Membranas e tonicidade</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/membrana.webp" alt="membrana"><figcaption><b>Figura 5.</b> O que atravessa a bicamada lipídica (aula): moléculas hidrofóbicas (O₂, N₂) e pequenas polares sem carga (água, ureia, glicerol, CO₂) passam; grandes polares (glicose, sacarose) e íons (H⁺, Na⁺, K⁺, HCO₃⁻, Ca²⁺, Cl⁻, Mg²⁺) não passam.</figcaption></figure>
+<div>
+<ul class="tight">
+<li>A <b>água</b> atravessa a membrana (e há aquaporinas); os <b>íons e a glicose não</b>, a não ser por transportadores.</li>
+<li>Por isso a água vai para onde há mais partículas que <b>não atravessam</b>: são os <b>osmóis efetivos</b> (Na⁺, glicose, manitol). Eles definem a <b>tonicidade</b>.</li>
+</ul>
+</div>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/hemacias.webp" alt="hemacias"><figcaption><b>Figura 6.</b> Hemácia em três soluções (aula): na hipotônica a água entra e ela incha (e pode romper); na isotônica fica igual; na hipertônica a água sai e ela murcha.</figcaption></figure>
+<div>
+<ul class="tight">
+<li><b>Hipotônica</b> (menos osmóis efetivos que a célula): a água entra, a célula <b>incha</b> e pode romper (hemólise).</li>
+<li><b>Isotônica</b> (soro fisiológico 0,9%): nada se move.</li>
+<li><b>Hipertônica</b>: a água sai e a célula <b>murcha</b> (crenação).</li>
+<li>A <b>ureia</b> atravessa as membranas: soma na osmolalidade, mas <b>não move água</b> (osmol ineficaz).</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- ============================== 4 SÓDIO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-col">4</span>O sódio e a osmolaridade</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+O Na⁺ é o principal cátion do LEC, e sua concentração estima a osmolaridade: <b>Osm ≈ 2 × [Na⁺] + outros ≈ 285–290 mOsm/L</b>. Como a água passa entre os compartimentos e o Na⁺ não, mudar o Na⁺ do LEC muda o volume das células.
+</div>
+<figure class="fig"><svg role="img" aria-label="compartimentos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 250" font-family="Inter, Helvetica, Arial, sans-serif">
+<defs><marker id="compartimentos-a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c92a2a"/></marker><marker id="compartimentos-a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e8590c"/></marker><marker id="compartimentos-a-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b08900"/></marker><marker id="compartimentos-a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2b8a3e"/></marker><marker id="compartimentos-a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1c7ed6"/></marker><marker id="compartimentos-a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7048e8"/></marker><marker id="compartimentos-a-pink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c2255c"/></marker><marker id="compartimentos-a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#495057"/></marker><marker id="compartimentos-a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0c8599"/></marker><marker id="compartimentos-a-stop" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M5 0V10" stroke="#c92a2a" stroke-width="3"/></marker></defs>
+<rect x="0" y="0" width="700" height="250" fill="#ffffff"/>
+<rect x="70.0" y="6.5" width="560" height="19" rx="9.5" fill="#0c8599"/><text x="350.0" y="19.7" text-anchor="middle" font-size="10.2" font-weight="800" fill="#ffffff">A ÁGUA SEGUE O SÓDIO DO LEC · 42 L = 28 L NO LIC + 14 L NO LEC</text>
+<rect x="14.0" y="30.5" width="206" height="19" rx="9.5" fill="#2b8a3e"/><text x="117.0" y="43.4" text-anchor="middle" font-size="9.4" font-weight="800" fill="#ffffff">Normal</text>
+<rect x="10" y="66" width="142" height="96" fill="#ffc9c9" stroke="#495057" stroke-width="1"/>
+<rect x="152" y="66" width="72" height="96" fill="#b2f2bb" stroke="#495057" stroke-width="1"/>
+<text x="81.0" y="84.0" text-anchor="middle" font-size="9.5" font-weight="800" fill="#a61e4d">LIC</text>
+<text x="188.0" y="84.0" text-anchor="middle" font-size="9.5" font-weight="800" fill="#2b8a3e">LEC</text>
+<text x="81.0" y="118.0" text-anchor="middle" font-size="12" font-weight="800" fill="#212529">280</text>
+<text x="81.0" y="132.0" text-anchor="middle" font-size="8" font-weight="600" fill="#495057">mOsm/L</text>
+<text x="188.0" y="112.0" text-anchor="middle" font-size="10" font-weight="400" fill="#212529">Na⁺ <tspan font-weight="800" fill="#212529">140</tspan></text>
+<text x="188.0" y="128.0" text-anchor="middle" font-size="12" font-weight="800" fill="#212529">280</text>
+<text x="188.0" y="142.0" text-anchor="middle" font-size="8" font-weight="600" fill="#495057">mOsm/L</text>
+<text x="117.0" y="180.0" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">2 × Na⁺ ≈ osmolaridade do LEC</text>
+<text x="117.0" y="193.0" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">LIC e LEC em <tspan font-weight="800" fill="#212529">equilíbrio</tspan></text>
+<text x="117.0" y="206.0" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">a água passa, o Na⁺ não</text>
+<rect x="247.0" y="30.5" width="206" height="19" rx="9.5" fill="#c92a2a"/><text x="350.0" y="43.4" text-anchor="middle" font-size="9.4" font-weight="800" fill="#ffffff">Hipernatremia (Na⁺ 160)</text>
+<rect x="243" y="66" width="120" height="96" fill="#ffc9c9" stroke="#495057" stroke-width="1"/>
+<rect x="363" y="66" width="94" height="96" fill="#b2f2bb" stroke="#495057" stroke-width="1"/>
+<text x="303.0" y="84.0" text-anchor="middle" font-size="9.5" font-weight="800" fill="#a61e4d">LIC</text>
+<text x="410.0" y="84.0" text-anchor="middle" font-size="9.5" font-weight="800" fill="#2b8a3e">LEC</text>
+<text x="303.0" y="118.0" text-anchor="middle" font-size="12" font-weight="800" fill="#212529">↑</text>
+<text x="303.0" y="132.0" text-anchor="middle" font-size="8" font-weight="600" fill="#495057">mOsm/L</text>
+<text x="410.0" y="112.0" text-anchor="middle" font-size="10" font-weight="400" fill="#212529">Na⁺ <tspan font-weight="800" fill="#212529">160</tspan></text>
+<text x="410.0" y="128.0" text-anchor="middle" font-size="12" font-weight="800" fill="#212529">↑</text>
+<text x="410.0" y="142.0" text-anchor="middle" font-size="8" font-weight="600" fill="#495057">mOsm/L</text>
+<line x1="341" y1="150" x2="381" y2="150" stroke="#1c7ed6" stroke-width="2.2" marker-end="url(#compartimentos-a-blue)"/>
+<text x="361.0" y="138.0" text-anchor="middle" font-size="9" font-weight="800" fill="#1864ab">H₂O</text>
+<text x="350.0" y="180.0" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">o LEC fica <tspan font-weight="800" fill="#212529">hipertônico</tspan></text>
+<text x="350.0" y="193.0" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">a água <tspan font-weight="800" fill="#212529">sai das células</tspan></text>
+<text x="350.0" y="206.0" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">→ as células <tspan font-weight="800" fill="#212529">murcham</tspan></text>
+<rect x="480.0" y="30.5" width="206" height="19" rx="9.5" fill="#1c7ed6"/><text x="583.0" y="43.4" text-anchor="middle" font-size="9.4" font-weight="800" fill="#ffffff">Hiponatremia (Na⁺ 130)</text>
+<rect x="476" y="66" width="162" height="96" fill="#ffc9c9" stroke="#495057" stroke-width="1"/>
+<rect x="638" y="66" width="52" height="96" fill="#b2f2bb" stroke="#495057" stroke-width="1"/>
+<text x="557.0" y="84.0" text-anchor="middle" font-size="9.5" font-weight="800" fill="#a61e4d">LIC</text>
+<text x="664.0" y="84.0" text-anchor="middle" font-size="9.5" font-weight="800" fill="#2b8a3e">LEC</text>
+<text x="557.0" y="118.0" text-anchor="middle" font-size="12" font-weight="800" fill="#212529">↓</text>
+<text x="557.0" y="132.0" text-anchor="middle" font-size="8" font-weight="600" fill="#495057">mOsm/L</text>
+<text x="664.0" y="112.0" text-anchor="middle" font-size="10" font-weight="400" fill="#212529">Na⁺ <tspan font-weight="800" fill="#212529">130</tspan></text>
+<text x="664.0" y="128.0" text-anchor="middle" font-size="12" font-weight="800" fill="#212529">↓</text>
+<text x="664.0" y="142.0" text-anchor="middle" font-size="8" font-weight="600" fill="#495057">mOsm/L</text>
+<line x1="660" y1="150" x2="620" y2="150" stroke="#1c7ed6" stroke-width="2.2" marker-end="url(#compartimentos-a-blue)"/>
+<text x="640.0" y="138.0" text-anchor="middle" font-size="9" font-weight="800" fill="#1864ab">H₂O</text>
+<text x="583.0" y="180.0" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">o LEC fica <tspan font-weight="800" fill="#212529">hipotônico</tspan></text>
+<text x="583.0" y="193.0" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">a água <tspan font-weight="800" fill="#212529">entra nas células</tspan></text>
+<text x="583.0" y="206.0" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">→ as células <tspan font-weight="800" fill="#212529">incham</tspan> (cérebro!)</text>
+<text x="350.0" y="242.0" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">O Na⁺ do plasma mede a <tspan font-weight="800" fill="#212529">água</tspan>, não o sódio: hiponatremia é excesso de água, hipernatremia é falta de água.</text>
+</svg><figcaption><b>Figura 7.</b> O modelo de dois compartimentos (esquema próprio a partir da aula): com Na⁺ a 140 o LIC e o LEC estão em equilíbrio (280 = 2 × 140); com Na⁺ a 160 a água sai das células; com Na⁺ a 130 a água entra nelas.</figcaption></figure>
+<ul class="tight">
+<li><b>Normal</b>: LIC a 280 e LEC a 2 × 140 = 280: nenhuma água se move.</li>
+<li><b>Na⁺ do LEC sobe para 160</b> (ganho de sal ou perda de água): o LEC fica hipertônico, a água <b>sai das células</b>, o LEC cresce e o LIC encolhe até a osmolaridade se igualar num valor mais alto.</li>
+<li><b>Na⁺ do LEC cai para 130</b> (excesso de água): a água <b>entra nas células</b>, que incham. No cérebro isso é edema: cefaleia, confusão, convulsão.</li>
+<li>Fórmula da clínica: <b>Osm = 2 × Na⁺ + glicose/18 + ureia/6</b> (em mg/dL).</li>
+</ul>
+<div class="box prova"><div class="tag">Cai na prova · compilados</div>
+“A <b>hiposmolaridade</b> desloca água para as células, com inchaço, em especial das células cerebrais; na <b>hiperosmolaridade</b> as células perdem água para o LEC”. Estrutura que regula diretamente a osmolalidade plasmática: o <b>hipotálamo</b>.
+</div>
+</section>
+
+<!-- ============================== 5 BALANÇO ============================== -->
+<section class="sec flow newpage">
+<h2><span class="num n-col">5</span>Balanço hídrico</h2>
+<table class="dense">
+<thead><tr><th>Entradas</th><th>Saídas</th></tr></thead>
+<tbody>
+<tr><td>Ingestão de líquidos</td><td><b>Urina</b>: a única saída regulada</td></tr>
+<tr><td>Água dos alimentos</td><td><b>Perda insensível</b>: respiração e água que atravessa a pele</td></tr>
+<tr><td>Oxidação dos alimentos (água metabólica)</td><td>Suor e fezes</td></tr>
+</tbody></table>
+<ul class="tight">
+<li>Perda insensível, suor e fezes são <b>perdas obrigatórias</b>: acontecem mesmo na desidratação. Somam ~1 L/dia em repouso e sobem muito com febre e calor.</li>
+<li>A entrada é regulada pela <b>sede</b>; a saída, pela <b>urina</b> e pelo <b>ADH</b>.</li>
+<li>Quem coordena é o <b>hipotálamo</b>, com informação de dois tipos de sensores: os <b>osmorreceptores</b> hipotalâmicos e os <b>barorreceptores</b> (carótidas, aorta, átrios).</li>
+</ul>
+<div class="box prova"><div class="tag">Cai na prova · compilados</div>
+A regulação das perdas de água é feita principalmente pelo rim; as demais vias (pele, pulmão, trato gastrintestinal) são chamadas, em conjunto, de <b>perda insensível</b>.
+</div>
+</section>
+
+<!-- ============================== 6 SENSORES ============================== -->
+<section class="sec flow">
+<h2><span class="num n-tcd">6</span>Sensores de volume e ANP</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+O corpo não mede o volume diretamente: mede o <b>estiramento</b> das paredes. São quatro grupos de sensores: <b>cardiopulmonares</b> (enchimento cardíaco), <b>arteriais</b> (débito cardíaco), <b>renais</b> (perfusão renal) e do <b>sistema nervoso central</b>.
+</div>
+<table class="dense">
+<thead><tr><th>Sensor</th><th>Onde</th><th>O que dispara</th></tr></thead>
+<tbody>
+<tr><td class="g-tcd">Cardiopulmonares (baixa pressão)</td><td>Átrios, ventrículos e vasos pulmonares; terminações não mielinizadas do <b>glossofaríngeo e do vago</b></td><td>ADH, simpático; o átrio distendido libera <b>ANP</b></td></tr>
+<tr><td class="g-tcd">Arteriais (alta pressão)</td><td><b>Arco aórtico e seio carotídeo</b> (vago e glossofaríngeo)</td><td>Simpático, renina, ADH</td></tr>
+<tr><td class="g-tcd">Renais</td><td><b>Aparelho justaglomerular</b>: arteríola aferente e mácula densa</td><td><b>Renina</b></td></tr>
+<tr><td class="g-tcd">Sistema nervoso central</td><td>Hipotálamo e tronco</td><td>Integra tudo</td></tr>
+</tbody></table>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/atriais.webp" alt="atriais"><figcaption><b>Figura 8.</b> Receptores atriais (aula): os do tipo A disparam na contração do átrio (onda a), os do tipo B no enchimento (onda v), acompanhando o ECG e a pressão atrial.</figcaption></figure>
+<figure class="img sm"><img src="res/hidro/arteriais.webp" alt="arteriais"><figcaption><b>Figura 9.</b> Barorreceptores aórticos e carotídeos (aula): o disparo no seio carotídeo aumenta com a pressão arterial; as fibras sobem pelo vago (arco aórtico) e pelo glossofaríngeo (seio carotídeo).</figcaption></figure>
+</div>
+<h3>6.1 O peptídeo natriurético atrial</h3>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/anp.webp" alt="anp"><figcaption><b>Figura 10.</b> ANP (aula): grânulos eletrodensos nos miócitos atriais e o aumento do ANP plasmático durante a imersão até o pescoço, que desloca sangue para o tórax e distende os átrios.</figcaption></figure>
+<div>
+<ul class="tight">
+<li>Estímulo: <b>distensão dos átrios</b> (volume alto, imersão, insuficiência cardíaca).</li>
+<li>Rim: <b>dilata a aferente</b> e aumenta a TFG; <b>inibe a renina</b>, a <b>aldosterona</b> e o <b>ENaC</b> do coletor; reduz o ADH.</li>
+<li>Vasos: vasodilatação, queda da pressão.</li>
+<li>Resultado: <b>natriurese e diurese</b>. No interstício medular, aumenta o fluxo e pode lavar a papila.</li>
+</ul>
+</div>
+</div>
+<div class="box prova"><div class="tag">Cai na prova · T136 e compilados</div>
+O ANP é liberado pela <b>distensão dos miócitos atriais</b> (mais retorno venoso) e causa <b>vasodilatação e natriurese</b>. Ação-chave para a natriurese: <b>inibe a secreção de aldosterona e o ENaC das células principais</b> (T136). Alternativa INCORRETA de sempre: “o ANP aumenta a reabsorção de sódio e a volemia, em resposta à queda do volume”. Barorreceptores com pressão alta e disparo intenso: o centro vasomotor <b>inibe a liberação de ADH e a sede</b>.
+</div>
+</section>
+
+<!-- ============================== 7 RENINA ============================== -->
+<section class="sec flow">
+<h2><span class="num n-corp">7</span>Renina: o que controla a liberação</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/aparelho_jg.webp" alt="aparelho_jg"><figcaption><b>Figura 11.</b> Sensores renais (aula): o aparelho justaglomerular, com a mácula densa (MD) junto às células granulares da arteríola aferente, que guardam os grânulos de renina.</figcaption></figure>
+<div>
+<table class="dense">
+<thead><tr><th>Mecanismo</th><th>Como age</th></tr></thead>
+<tbody>
+<tr><td class="g-corp">Barorreceptor da aferente</td><td>A renina é <b>inversamente relacionada à pressão de perfusão</b> (varia pouco entre 95 e 160 mmHg)</td></tr>
+<tr><td class="g-corp">Mácula densa</td><td><b>Menos NaCl</b> na luz estimula a renina; mais NaCl a inibe (adenosina)</td></tr>
+<tr><td class="g-corp">Simpático</td><td>Receptores <b>β1</b> das células granulares → AMPc → <b>mais renina</b></td></tr>
+<tr><td class="g-corp">Sobem o AMPc</td><td><b>Aumentam</b>: PGE2, prostaciclina, dopamina, PTH</td></tr>
+<tr><td class="g-corp">Sobem o Ca²⁺ intracelular</td><td><b>Inibem</b>: angiotensina II, adenosina, vasopressina</td></tr>
+</tbody></table>
+</div>
+</div>
+<figure class="img sm"><img src="res/hidro/ftg.webp" alt="ftg"><figcaption><b>Figura 12.</b> Feedback tubuloglomerular (aula): pressão renal alta → TFG alta → mais fluxo e NaCl na mácula densa → vasoconstritor (adenosina) → mais resistência na aferente; a mácula densa fica no fim do ramo ascendente, junto à arteríola aferente e às células granulares.</figcaption></figure>
+<div class="box mnem"><div class="tag">Mnemônico</div>
+A renina sobe com <b>“pouco”</b>: <b>pouca pressão</b>, <b>pouco NaCl</b> na mácula densa e <b>muito simpático</b>. Cai com o que ela mesma produz (<b>angiotensina II</b>) e com o que sinaliza excesso (<b>adenosina</b>).
+</div>
+<div class="box prova"><div class="tag">Cai na prova · T137, T136 e compilados</div>
+Secreção de renina pelas células justaglomerulares: <b>baixa concentração de NaCl e baixa pressão sanguínea</b>. Estrutura que sinaliza a renina pela composição tubular: <b>mácula densa</b>. <b>Aumentam</b> a renina: queda da pressão de perfusão e estímulo simpático β; <b>diminuem</b>: angiotensina II e muito NaCl na mácula densa (adenosina) (T136). Situação que estimula o SRAA: <b>hemorragia severa</b> (T137). Estímulos do SRAA: queda da pressão, do volume ou da carga de Na⁺ na mácula densa, com vasoconstrição e retenção de sódio e água. Diuréticos de alça e tiazídicos usados por muito tempo ativam o <b>SRAA</b>, que limita o efeito deles (T136).
+</div>
+</section>
+
+<!-- ============================== 8 SRAA ============================== -->
+<section class="sec flow">
+<h2><span class="num n-corp">8</span>SRAA e aldosterona</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/sra.webp" alt="sra"><figcaption><b>Figura 13.</b> Visão clássica do sistema renina-angiotensina (aula): o angiotensinogênio do fígado vira angiotensina I pela renina do rim; no pulmão a ECA forma a angiotensina II, que estimula a aldosterona (adrenal), o ADH e a sede (cérebro) e reduz a excreção de Na⁺ e água; há também sistemas locais em vários órgãos, inclusive no rim.</figcaption></figure>
+<div>
+<ol class="tight">
+<li><b>Angiotensinogênio</b> (fígado) → <b>renina</b> (rim) → <b>angiotensina I</b>.</li>
+<li><b>ECA</b> (endotélio, sobretudo do pulmão) → <b>angiotensina II</b>.</li>
+<li>A angiotensina II, pelo receptor <b>AT1</b>:
+<ul class="tight">
+<li>contrai as arteríolas, <b>de preferência a eferente</b> (mantém a TFG quando a pressão cai);</li>
+<li>aumenta a reabsorção de Na⁺ e HCO₃⁻ no <b>proximal</b> e de Na⁺ no ramo espesso e no distal;</li>
+<li>reduz o fluxo nos vasos retos e contrai o mesângio (menor Kf);</li>
+<li>libera <b>aldosterona</b>, <b>ADH</b> e dá <b>sede</b>;</li>
+<li><b>inibe a própria renina</b>.</li>
+</ul></li>
+<li>O receptor <b>AT2</b> faz o oposto em vários pontos (vasodilatação da aferente).</li>
+</ol>
+</div>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/aldo_genomico.webp" alt="aldo_genomico"><figcaption><b>Figura 14.</b> Efeitos genômicos da aldosterona (aula): o complexo aldosterona-receptor mineralocorticoide vai ao núcleo e aumenta a síntese de canais de Na⁺ (ENaC), bombas Na⁺/K⁺ e enzimas mitocondriais; o número de canais abertos sobe com a aldosterona plasmática.</figcaption></figure>
+<div>
+<ul class="tight">
+<li>Estímulos: <b>angiotensina II</b> e <b>K⁺ alto</b>.</li>
+<li>Na célula principal: mais <b>ENaC</b>, mais <b>Na⁺/K⁺-ATPase</b> e mais enzimas mitocondriais: reabsorve Na⁺ e secreta K⁺.</li>
+<li>O efeito é <b>lento</b> (horas), porque depende de transcrição.</li>
+</ul>
+</div>
+</div>
+<div class="box clin"><div class="tag">Correlação clínica · bloquear o SRAA</div>
+<b>IECA</b> (captopril, enalapril) e <b>BRA</b> (losartana) baixam a pressão, retiram a constrição da eferente e reduzem a proteinúria; por isso protegem o rim no diabetes. Os riscos são <b>hipercalemia</b> (menos aldosterona) e queda da TFG quando a perfusão renal depende da angiotensina II (estenose bilateral de artéria renal, hipovolemia). <b>Espironolactona</b> bloqueia o receptor da aldosterona.
+</div>
+<div class="box prova"><div class="tag">Cai na prova · T137 e compilados</div>
+O <b>paradoxo da aldosterona</b>: na <b>hipovolemia</b>, a angiotensina II alta estimula a reabsorção de NaCl no túbulo distal e a aldosterona reabsorve Na⁺ sem perder K⁺; na <b>hipercalemia</b> ela secreta K⁺ sem reter tanto Na⁺ (T137). A aldosterona aumenta a reabsorção de sódio e, com ele, a de água, e eleva a pressão.
+</div>
+</section>
+
+<!-- ============================== 9 ADH ============================== -->
+<section class="sec flow">
+<h2><span class="num n-uro">9</span>ADH: osmorreceptores e barorreceptores</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+O ADH é feito nos núcleos <b>supraóptico e paraventricular</b> do hipotálamo e guardado na <b>neuro-hipófise</b>. Ele responde muito à <b>osmolaridade</b> (1% já basta) e pouco ao <b>volume</b> (precisa cair 5–10%), mas, quando o volume cai muito, é o volume que manda.
+</div>
+<figure class="fig"><svg role="img" aria-label="controle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" font-family="Inter, Helvetica, Arial, sans-serif">
+<defs><marker id="controle-a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c92a2a"/></marker><marker id="controle-a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e8590c"/></marker><marker id="controle-a-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b08900"/></marker><marker id="controle-a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2b8a3e"/></marker><marker id="controle-a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1c7ed6"/></marker><marker id="controle-a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7048e8"/></marker><marker id="controle-a-pink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c2255c"/></marker><marker id="controle-a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#495057"/></marker><marker id="controle-a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0c8599"/></marker><marker id="controle-a-stop" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M5 0V10" stroke="#c92a2a" stroke-width="3"/></marker></defs>
+<rect x="0" y="0" width="700" height="360" fill="#ffffff"/>
+<rect x="50.0" y="6.5" width="600" height="19" rx="9.5" fill="#0c8599"/><text x="350.0" y="19.7" text-anchor="middle" font-size="10.2" font-weight="800" fill="#ffffff">DOIS SISTEMAS: A OSMOLARIDADE SE CORRIGE COM ÁGUA, O VOLUME COM SÓDIO</text>
+<rect x="10" y="38" width="330" height="70" rx="9" fill="#e5dbff" stroke="#7048e8" stroke-width="1.4"/>
+<text x="175.0" y="53.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#7048e8">Osmolaridade plasmática ↑</text>
+<text x="175.0" y="67.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">basta <tspan font-weight="800" fill="#212529">1%</tspan> (≈ 3 mOsm) acima de ~280–285</text>
+<text x="175.0" y="79.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">osmorreceptores</tspan> do hipotálamo murcham</text>
+<text x="175.0" y="91.8" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">(a água sai deles por osmose)</text>
+<line x1="175" y1="110" x2="175" y2="126" stroke="#7048e8" stroke-width="1.8" marker-end="url(#controle-a-purple)"/>
+<rect x="10" y="128" width="330" height="62" rx="9" fill="#e5dbff" stroke="#7048e8" stroke-width="1.4"/>
+<text x="175.0" y="143.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#7048e8">Hipotálamo</text>
+<text x="175.0" y="157.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">ADH</tspan> (supraóptico e paraventricular → neuro-hipófise)</text>
+<text x="175.0" y="169.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">e <tspan font-weight="800" fill="#212529">sede</tspan></text>
+<line x1="175" y1="192" x2="175" y2="208" stroke="#7048e8" stroke-width="1.8" marker-end="url(#controle-a-purple)"/>
+<rect x="10" y="210" width="330" height="62" rx="9" fill="#e5dbff" stroke="#7048e8" stroke-width="1.4"/>
+<text x="175.0" y="225.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#7048e8">Resposta</text>
+<text x="175.0" y="239.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">AQP2</tspan> no coletor: retém <tspan font-weight="800" fill="#212529">água livre</tspan></text>
+<text x="175.0" y="251.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">bebe-se água: a osmolaridade volta ao normal</text>
+<rect x="360" y="38" width="330" height="70" rx="9" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<text x="525.0" y="53.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#c92a2a">Volume ou pressão ↓</text>
+<text x="525.0" y="67.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">é preciso cair <tspan font-weight="800" fill="#212529">5–10%</tspan> para mexer no ADH</text>
+<text x="525.0" y="79.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">barorreceptores</tspan>: átrios, aorta, carótidas</text>
+<text x="525.0" y="91.8" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">e <tspan font-weight="800" fill="#212529">rim</tspan> (arteríola aferente, mácula densa)</text>
+<line x1="525" y1="110" x2="525" y2="126" stroke="#c92a2a" stroke-width="1.8" marker-end="url(#controle-a-red)"/>
+<rect x="360" y="128" width="330" height="62" rx="9" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<text x="525.0" y="143.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#c92a2a">Efetores</text>
+<text x="525.0" y="157.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">renina → angiotensina II → aldosterona</tspan></text>
+<text x="525.0" y="169.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">simpático</tspan>; e ADH + sede quando a queda é grande</text>
+<line x1="525" y1="192" x2="525" y2="208" stroke="#c92a2a" stroke-width="1.8" marker-end="url(#controle-a-red)"/>
+<rect x="360" y="210" width="330" height="62" rx="9" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<text x="525.0" y="225.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#c92a2a">Resposta</text>
+<text x="525.0" y="239.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">rim retém <tspan font-weight="800" fill="#212529">Na⁺</tspan> (e a água vai junto)</text>
+<text x="525.0" y="251.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">vasoconstrição: a pressão volta</text>
+<rect x="10" y="284" width="680" height="66" rx="9" fill="#d3f9d8" stroke="#2b8a3e" stroke-width="1.4"/>
+<text x="350.0" y="299.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#2b8a3e">Volume ↑ e quando os dois brigam</text>
+<text x="350.0" y="313.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">Átrio distendido → <tspan font-weight="800" fill="#212529">ANP</tspan>: dilata a aferente, inibe renina, aldosterona e ADH → <tspan font-weight="800" fill="#212529">natriurese</tspan> e diurese.</text>
+<text x="350.0" y="325.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">Na hipovolemia a curva do ADH desvia para a esquerda e fica mais íngreme: <tspan font-weight="800" fill="#212529">o volume vence a osmolaridade</tspan>,</text>
+<text x="350.0" y="337.8" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">e o corpo aceita ficar hiponatrêmico para manter a circulação.</text>
+</svg><figcaption><b>Figura 15.</b> Os dois sistemas de controle (esquema próprio a partir da aula): a osmolaridade é corrigida com água, pelo ADH e pela sede; o volume é corrigido com sódio, pelo SRAA e pelo simpático; o ANP responde ao volume alto.</figcaption></figure>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/hipotalamo.webp" alt="hipotalamo"><figcaption><b>Figura 16.</b> Onde nasce o ADH (aula): osmorreceptores e neurônios supraópticos e paraventriculares do hipotálamo, com axônios até o lobo posterior da hipófise; os barorreceptores chegam pelo vago e pelo glossofaríngeo ao tronco.</figcaption></figure>
+<figure class="img sm"><img src="res/hidro/granulos_avp.webp" alt="granulos_avp"><figcaption><b>Figura 17.</b> Grânulos de neurossecreção na neuro-hipófise (aula) e a estrutura da arginina-vasopressina (AVP): nove aminoácidos com uma ponte dissulfeto.</figcaption></figure>
+</div>
+<h3>9.1 Osmolaridade: o controle fino</h3>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/adh_osm.webp" alt="adh_osm"><figcaption><b>Figura 18.</b> ADH plasmático e osmolalidade (aula): perto de zero abaixo de ~280 mOsm/kg e subindo em linha reta acima disso.</figcaption></figure>
+<div>
+<ul class="tight">
+<li>Osmolalidade normal ≈ <b>285 mOsm/kg</b>. <b>Subir 1%</b> estimula o ADH; <b>cair 1%</b> o inibe.</li>
+<li>Os <b>osmorreceptores</b> ficam no hipotálamo anterior, fora da barreira hematoencefálica (OVLT). Com o plasma hiperosmótico a água sai deles, eles <b>murcham</b>, e canais sensíveis ao estiramento despolarizam a célula.</li>
+<li>A mesma osmolaridade alta dá <b>sede</b> (o limiar da sede é um pouco mais alto que o do ADH).</li>
+<li>Injetar água na carótida faz os neurônios osmorreceptores pararem de disparar em segundos (aula).</li>
+</ul>
+</div>
+</div>
+<figure class="img sm"><img src="res/hidro/avp_osm.webp" alt="avp_osm"><figcaption><b>Figura 19.</b> ADH e sede contra a osmolalidade (aula, Baylis): o ADH e a escala de sede sobem juntos com a osmolalidade; à direita, o disparo de um osmorreceptor cai a zero depois de 1 mL de água na carótida.</figcaption></figure>
+<h3>9.2 Volume e pressão: o controle grosso</h3>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/adh_vol.webp" alt="adh_vol"><figcaption><b>Figura 20.</b> ADH plasmático e variação da pressão ou do volume (aula): praticamente nada até uma queda de ~5–10%; depois o ADH sobe de forma exponencial.</figcaption></figure>
+<div>
+<ul class="tight">
+<li>Sensores: <b>átrio esquerdo e vasos pulmonares</b> (baixa pressão) e <b>arco aórtico e seio carotídeo</b> (alta pressão), pelas fibras do <b>vago e do glossofaríngeo</b>.</li>
+<li>Normalmente esses sensores <b>inibem</b> o ADH de forma tônica. Quando a pressão cai, eles disparam menos e a inibição some.</li>
+<li>É preciso cair <b>5 a 10%</b> do volume ou da pressão; depois disso o ADH sobe muito mais do que com a osmolaridade.</li>
+</ul>
+</div>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/baro_osmo.webp" alt="baro_osmo"><figcaption><b>Figura 21.</b> Baro × osmo (aula): cada linha é a relação ADH × osmolalidade num volume plasmático; com volume menor (−10, −15, −20%) a reta se desloca para a esquerda e fica mais íngreme; com volume maior, para a direita e mais plana.</figcaption></figure>
+<div>
+<p><b>Baro × osmo</b>: o volume muda a <b>sensibilidade</b> do osmorreceptor. Na hipovolemia a reta se desloca para a esquerda e fica mais íngreme: o ADH sobe mesmo com osmolalidade normal ou baixa. É assim que a hemorragia e a insuficiência cardíaca causam <b>hiponatremia</b>: o corpo aceita diluir o plasma para manter a circulação.</p>
+</div>
+</div>
+<div class="box prova"><div class="tag">Cai na prova · T137, T136 e compilados</div>
+Papel dos osmorreceptores: <b>detectar aumentos da osmolaridade e estimular a liberação de ADH</b>. Mecanismo: a água sai por osmose, a célula <b>murcha</b> e canais catiônicos de estiramento a despolarizam (T137, T136). Na hemorragia, a queda da pressão <b>reduz o estiramento</b> do seio carotídeo e do arco aórtico, os disparos pelo glossofaríngeo e pelo vago diminuem e cai a inibição tônica sobre os núcleos supraóptico e paraventricular: sai ADH e vem a sede (T137). O hipotálamo responde ao <b>aumento da osmolaridade plasmática</b> liberando ADH. Hipervolemia: os barorreceptores inibem o centro vasomotor, cai o simpático renal e a renina, e vem natriurese e diurese (T136).
+</div>
+</section>
+
+<!-- ============================== 10 DESIDRATAÇÃO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-uro">10</span>Desidratação aguda</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/hidro/desidratacao.webp" alt="desidratacao"><figcaption><b>Figura 22.</b> Resposta à desidratação aguda (aula): menos volume inibe os barorreceptores e mais osmolalidade estimula os osmorreceptores; os dois levam à sede e ao ADH, que aumenta a reabsorção de água no coletor; bebe-se mais, urina-se menos, e o volume e a osmolalidade voltam ao normal.</figcaption></figure>
+<div>
+<ol class="tight">
+<li>Perde-se água: o <b>volume cai</b> e a <b>osmolalidade sobe</b>.</li>
+<li>Os barorreceptores param de inibir e os osmorreceptores são estimulados.</li>
+<li>Vêm a <b>sede</b> e o <b>ADH</b>.</li>
+<li>O ADH aumenta a permeabilidade do coletor à água: <b>urina menor e concentrada</b>.</li>
+<li>Com mais água ingerida e menos excretada, volume e osmolalidade voltam ao normal.</li>
+<li>Se o volume caiu muito, entram também a renina, a angiotensina II, a aldosterona e o simpático.</li>
+</ol>
+</div>
+</div>
+</section>
+
+<!-- ============================== 11 REVISÃO ============================== -->
+<section class="sec flow newpage">
+<h2><span class="num">11</span>Revisão final</h2>
+<table class="dense master">
+<thead><tr><th></th><th>Osmolaridade</th><th>Volume</th></tr></thead>
+<tbody>
+<tr><td class="g-uro">O que se mede</td><td>Concentração de partículas (Na⁺ ≈ metade)</td><td>Estiramento de átrios, artérias e aferente</td></tr>
+<tr><td class="g-uro">Sensores</td><td>Osmorreceptores do hipotálamo</td><td>Barorreceptores cardiopulmonares, arteriais e renais; mácula densa</td></tr>
+<tr><td class="g-uro">Sensibilidade</td><td><b>1%</b></td><td><b>5–10%</b></td></tr>
+<tr><td class="g-uro">Efetores</td><td><b>ADH e sede</b></td><td><b>SRAA, simpático, ANP</b> (e ADH se a queda é grande)</td></tr>
+<tr><td class="g-uro">O que o rim ajusta</td><td><b>Água livre</b></td><td><b>Sódio</b> (a água acompanha)</td></tr>
+</tbody></table>
+<h3>Quatro situações</h3>
+<table class="dense">
+<thead><tr><th>Situação</th><th>ADH</th><th>Renina e aldosterona</th><th>ANP</th><th>Urina</th></tr></thead>
+<tbody>
+<tr><td class="g-uro">Beber muita água</td><td>↓</td><td>≈</td><td>≈</td><td>Muita e diluída</td></tr>
+<tr><td class="g-uro">Privação de água</td><td>↑↑</td><td>↑</td><td>↓</td><td>Pouca e concentrada</td></tr>
+<tr><td class="g-uro">Hemorragia</td><td>↑ (pelo volume)</td><td>↑↑</td><td>↓</td><td>Pouca, pobre em Na⁺</td></tr>
+<tr><td class="g-uro">Excesso de soro fisiológico</td><td>≈</td><td>↓</td><td>↑</td><td>Mais Na⁺ e mais volume</td></tr>
+</tbody></table>
+<h3>Números para guardar</h3>
+<ol class="cols2">
+<li>Água: <b>60%</b> do peso no homem, 50% na mulher, 80% no recém-nascido.</li>
+<li>70 kg: <b>42 L</b> = 28 L no LIC + 14 L no LEC.</li>
+<li>Plasma: ~3 L (7,5% da água total).</li>
+<li>Osm ≈ <b>2 × Na⁺</b> ≈ 285–290 mOsm/L.</li>
+<li>Na⁺: <b>140</b> fora, 10 dentro; K⁺: 4 fora, <b>150</b> dentro.</li>
+<li>ADH: limiar ~280; sobe com <b>1%</b> de osmolalidade.</li>
+<li>Volume ou pressão: <b>5–10%</b> para liberar ADH.</li>
+<li>Renina quase não muda entre <b>95 e 160 mmHg</b>.</li>
+</ol>
+<div class="box prova"><div class="tag">Pegadinhas que se repetem</div>
+<ul class="tight">
+<li>“O ANP aumenta a reabsorção de Na⁺” → <b>falso</b>: faz natriurese.</li>
+<li>“Os osmorreceptores são ativados quando incham” → <b>falso</b>: quando murcham.</li>
+<li>“A angiotensina II estimula a renina” → <b>falso</b>: inibe.</li>
+<li>“Muito NaCl na mácula densa estimula a renina” → <b>falso</b>: inibe.</li>
+<li>“O ADH é produzido na neuro-hipófise” → <b>falso</b>: é produzido no hipotálamo e guardado lá.</li>
+<li>“O ADH responde mais ao volume que à osmolaridade” → <b>falso</b> no dia a dia (1% × 5–10%), mas o volume vence quando a queda é grande.</li>
+</ul>
+</div>
+<div class="box mnem"><div class="tag">Mnemônico</div>
+<b>Osmo → Água; Volume → Sódio.</b> Para a osmolaridade o rim mexe na água (ADH); para o volume, no sódio (aldosterona e ANP).
+</div>
+</section>
+
+<!-- ============================== 12 QUESTÕES ============================== -->
+<section class="sec flow">
+<h2><span class="num">12</span>Questões com gabarito comentado</h2>
+<ol class="questions">
+<li>Como se distribui a água num adulto de 70 kg? Por que a mulher tem menos água?</li>
+<li>O que diferencia a composição do LIC e do LEC? E a do plasma e do intersticial?</li>
+<li>Por que a ureia aumenta a osmolalidade mas não a tonicidade?</li>
+<li>O que acontece com as células quando o Na⁺ plasmático sobe para 160? E quando cai para 130?</li>
+<li>Quais são as entradas e as saídas de água? Quais são obrigatórias?</li>
+<li>Quais são os sensores de volume e onde ficam?</li>
+<li>O que libera o ANP e quais são seus efeitos renais?</li>
+<li>Quais estímulos aumentam e quais diminuem a liberação de renina?</li>
+<li>Quais são os efeitos da angiotensina II pelo receptor AT1?</li>
+<li>Como os osmorreceptores detectam a hiperosmolaridade?</li>
+<li>Compare a sensibilidade do ADH à osmolaridade e ao volume. O que acontece quando os dois brigam?</li>
+<li>Descreva a resposta à desidratação aguda.</li>
+</ol>
+
+<h3>Gabarito comentado</h3>
+<ol class="answers">
+<li>Cerca de <b>42 L</b> (60% do peso): <b>28 L no LIC</b> e <b>14 L no LEC</b> (intersticial, plasma ~3 L, transcelular). A mulher tem proporcionalmente mais gordura, e o tecido adiposo tem só ~10% de água (o músculo tem 76%): por isso ~50% do peso.</li>
+<li>No LEC predominam <b>Na⁺ e Cl⁻</b> (e HCO₃⁻); no LIC, <b>K⁺</b>, Mg²⁺, fosfatos orgânicos e proteínas. O plasma tem proteínas e o intersticial quase não. A osmolalidade é igual em todos (~290).</li>
+<li>Porque a ureia atravessa as membranas: ela se distribui dos dois lados e não cria diferença que puxe água. Osmóis efetivos são os que não atravessam (Na⁺, glicose, manitol).</li>
+<li>Com Na⁺ a 160 o LEC fica hipertônico e a água <b>sai das células</b>, que murcham, até a osmolaridade se igualar num valor mais alto. Com Na⁺ a 130 o LEC fica hipotônico e a água <b>entra nas células</b>, que incham; no cérebro isso dá edema, com cefaleia, confusão e convulsões.</li>
+<li>Entradas: ingestão de líquidos, água dos alimentos e da oxidação. Saídas: perda insensível (respiração e pele), suor, fezes e urina. São <b>obrigatórias</b> a perda insensível, o suor e as fezes; a <b>urina</b> é a saída regulada.</li>
+<li><b>Cardiopulmonares</b> (átrios, ventrículos e vasos pulmonares; fibras do glossofaríngeo e do vago), <b>arteriais</b> (arco aórtico e seio carotídeo), <b>renais</b> (aparelho justaglomerular) e os do <b>sistema nervoso central</b>. Todos medem estiramento.</li>
+<li>A <b>distensão dos átrios</b>. No rim, dilata a aferente (mais TFG), inibe a renina, a aldosterona e o ENaC do coletor e reduz o ADH: <b>natriurese e diurese</b>.</li>
+<li><b>Aumentam</b>: queda da pressão de perfusão (barorreceptor da aferente), pouco NaCl na mácula densa, simpático β1 e agonistas que sobem o AMPc (PGE2, prostaciclina, dopamina, PTH). <b>Diminuem</b>: angiotensina II, adenosina (NaCl alto na mácula densa) e vasopressina, que sobem o Ca²⁺ intracelular.</li>
+<li>Vasoconstrição (de preferência da eferente), mais reabsorção de Na⁺ no proximal, no ramo espesso e no distal, menor fluxo nos vasos retos, contração do mesângio, liberação de aldosterona e de ADH, sede e inibição da renina.</li>
+<li>Ficam no hipotálamo anterior, fora da barreira hematoencefálica. Com o plasma hiperosmótico, a água sai delas por osmose, elas <b>murcham</b>, canais de estiramento se abrem e a célula despolariza: sai ADH e vem a sede.</li>
+<li>Para a osmolaridade basta <b>1%</b>; para o volume, <b>5–10%</b>. Mas, quando o volume cai muito, a resposta ao volume é muito maior e desloca a curva osmótica para a esquerda: o ADH fica alto mesmo com o plasma diluído. <b>O volume vence</b>, e por isso hemorragia e insuficiência cardíaca podem dar hiponatremia.</li>
+<li>O volume cai e a osmolalidade sobe: os barorreceptores param de inibir e os osmorreceptores disparam; vêm a sede e o ADH; o coletor reabsorve água e a urina fica pouca e concentrada; com a ingestão, volume e osmolalidade voltam ao normal. Se a perda de volume é grande, o SRAA e o simpático também entram.</li>
+</ol>
+</section>
+
+</template>
+<template id="tpl-conc">
+<!-- ============================== CAPA ============================== -->
+<section class="cover">
+  <div class="kicker">Resumo de estudo · Fisiologia · Medicina</div>
+  <h1>Concentração e<br>Diluição Urinária</h1>
+  <div class="rainbow huri"></div>
+  <p class="sub">Os limites da urina (de 50 a 1.400 mOsm/kg), as três funções do rim que permitem concentrá-la, as proteínas de transporte envolvidas, o multiplicador de contracorrente da alça de Henle (efeito unitário, gradiente horizontal e vertical), o papel da ureia e dos seus transportadores, o ADH no ducto coletor, os vasos retos como permutador de contracorrente, a lavagem papilar e a depuração de água livre.</p>
+  <p class="meta">Baseado nos slides da aula 17, <em>Fisiologia do Sistema Urinário V: mecanismo de concentração urinária e sistema de contracorrente</em> (Prof. Pedro Magalhães). As figuras são as dos slides (Guyton, Koeppen &amp; Stanton, Netter), com um esquema próprio; o texto foi completado com Guyton e Berne &amp; Levy. Os destaques “Cai na prova” vêm das provas da T137 e da T136 e dos compilados. A alça e o ADH aparecem também nos resumos de Mecanismos Tubulares (AV2) e de Alça de Henle e Néfron Distal.</p>
+
+  <div class="cover-grid">
+    <div class="box key">
+      <div class="tag">Como usar este resumo</div>
+      <ol>
+        <li>Guarde a ideia que organiza a aula: concentrar a urina exige <b>formar</b> o gradiente (alça), <b>equilibrar</b> o coletor com ele (ADH) e <b>conservá-lo</b> (vasos retos).</li>
+        <li>Faça à mão o passo a passo da seção 3: é o jeito mais rápido de entender o multiplicador.</li>
+        <li>Não separe a ureia do ADH: metade da osmolaridade da papila é ureia, e quem a põe lá é o ADH.</li>
+        <li>Na véspera, revise a tabela da seção 9 e faça as questões.</li>
+      </ol>
+    </div>
+    <div class="legend">
+      <div class="tag plain">Código de cores</div>
+      <div class="chips">
+        <span class="chip o" style="--c:#e8590c;--f:#ffe8cc">Limites da urina</span>
+        <span class="chip o" style="--c:#b08900;--f:#fff3bf">Alça: formar o gradiente</span>
+        <span class="chip o" style="--c:#2b8a3e;--f:#d3f9d8">Ureia</span>
+        <span class="chip o" style="--c:#7048e8;--f:#e5dbff">Coletor e ADH: equilibrar</span>
+        <span class="chip o" style="--c:#c92a2a;--f:#ffe3e3">Vasos retos: conservar</span>
+        <span class="chip o" style="--c:#1c7ed6;--f:#d0ebff">Medidas e clínica</span>
+      </div>
+      <div class="boxlegend">
+        <span class="mini key">Em uma frase</span>
+        <span class="mini prova">Cai na prova</span>
+        <span class="mini clin">Correlação clínica</span>
+        <span class="mini deep">Aprofundamento</span>
+        <span class="mini mnem">Mnemônico</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ideias"><div class="tag plain">As cinco ideias que organizam toda a matéria</div>
+  <ol class="tight">
+    <li><b>A urina vai de 50 a 1.400 mOsm/kg</b>: sem ADH sai diluída e em grande volume (~20 L/dia); com ADH máximo sai concentrada e em pouco volume (~0,5 L/dia). Normalmente fica perto de 500 mOsm/kg e 1,5 L/dia.</li>
+    <li><b>Formar</b>: o ramo espesso tira NaCl sem água e cria uma diferença de ~200 mOsm em cada nível (<b>efeito unitário</b>). Como o líquido corre em sentidos opostos, esse efeito se <b>multiplica</b> e o interstício vai de 300 a 1.200.</li>
+    <li><b>A ureia completa o gradiente</b>: o ADH abre os transportadores de ureia do coletor medular interno, e a ureia passa para o interstício; na papila ela é metade da osmolaridade.</li>
+    <li><b>Equilibrar</b>: com ADH, o coletor fica permeável à água e a urina se iguala ao interstício. Sem gradiente, nem o ADH concentra a urina.</li>
+    <li><b>Conservar</b>: os vasos retos correm em U, ao lado das alças, e trocam água e soluto sem levar o gradiente embora (<b>permutador</b>). Fluxo medular alto <b>lava</b> a papila e a urina não se concentra.</li>
+  </ol></div>
+
+  <div class="toc">
+    <div class="tag plain">Sumário</div>
+    <ol class="toc2">
+      <li><b>Os limites</b> da urina</li>
+      <li><b>As proteínas</b> do mecanismo</li>
+      <li><b>Formar</b>: o multiplicador de contracorrente</li>
+      <li><b>A ureia</b> e seus transportadores</li>
+      <li><b>Equilibrar</b>: o ADH no coletor</li>
+      <li><b>Conservar</b>: os vasos retos</li>
+      <li><b>Lavagem papilar</b></li>
+      <li><b>Depuração</b> de água livre</li>
+      <li><b>Revisão final</b></li>
+      <li><b>Questões</b> com gabarito comentado</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================== 1 LIMITES ============================== -->
+<section class="sec flow">
+<h2><span class="num n-tcp">1</span>Os limites da urina</h2>
+<table class="dense">
+<thead><tr><th>Situação</th><th>Osmolalidade da urina</th><th>Volume</th></tr></thead>
+<tbody>
+<tr><td class="g-tcp">Sem ADH</td><td><b>~50 mOsm/kg</b></td><td>~<b>20 L/dia</b></td></tr>
+<tr><td class="g-tcp">ADH normal</td><td>~<b>500 mOsm/kg</b></td><td>~1,5 L/dia</td></tr>
+<tr><td class="g-tcp">ADH máximo</td><td><b>~1.400 mOsm/kg</b></td><td>~<b>0,5 L/dia</b></td></tr>
+</tbody></table>
+<p>Para ir de um extremo ao outro, o rim precisa de três coisas (aula): <b>formar a hipertonicidade medular</b>, permitir o <b>equilíbrio osmótico entre o coletor e o interstício</b> e <b>conservar a hipertonicidade medular</b>.</p>
+<figure class="fig"><svg role="img" aria-label="tres_funcoes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 330" font-family="Inter, Helvetica, Arial, sans-serif">
+<defs><marker id="tres_funcoes-a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c92a2a"/></marker><marker id="tres_funcoes-a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e8590c"/></marker><marker id="tres_funcoes-a-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b08900"/></marker><marker id="tres_funcoes-a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2b8a3e"/></marker><marker id="tres_funcoes-a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1c7ed6"/></marker><marker id="tres_funcoes-a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7048e8"/></marker><marker id="tres_funcoes-a-pink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c2255c"/></marker><marker id="tres_funcoes-a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#495057"/></marker><marker id="tres_funcoes-a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0c8599"/></marker><marker id="tres_funcoes-a-stop" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M5 0V10" stroke="#c92a2a" stroke-width="3"/></marker></defs>
+<rect x="0" y="0" width="700" height="330" fill="#ffffff"/>
+<rect x="90.0" y="6.5" width="520" height="19" rx="9.5" fill="#0c8599"/><text x="350.0" y="19.7" text-anchor="middle" font-size="10.2" font-weight="800" fill="#ffffff">CONCENTRAR A URINA EXIGE TRÊS COISAS</text>
+<rect x="10" y="40" width="218" height="196" rx="8" fill="#fff3bf" stroke="#b08900" stroke-width="1.4"/>
+<rect x="16.0" y="30.5" width="206" height="19" rx="9.5" fill="#b08900"/><text x="119.0" y="43.6" text-anchor="middle" font-size="10" font-weight="800" fill="#ffffff">1 · Formar</text>
+<text x="119.0" y="77.0" text-anchor="middle" font-size="13" font-weight="800" fill="#212529">Alça de Henle</text>
+<text x="119.0" y="92.0" text-anchor="middle" font-size="9.4" font-weight="600" fill="#495057" font-style="italic">multiplicador de contracorrente</text>
+<text x="119.0" y="113.0" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">o ramo espesso tira <tspan font-weight="800" fill="#212529">NaCl sem água</tspan></text>
+<text x="119.0" y="126.5" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">(NKCC2): <tspan font-weight="800" fill="#212529">efeito unitário</tspan></text>
+<text x="119.0" y="140.0" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">de ~200 mOsm em cada nível</text>
+<text x="119.0" y="153.5" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">o fluxo empurra o líquido e o</text>
+<text x="119.0" y="167.0" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">efeito se <tspan font-weight="800" fill="#212529">multiplica</tspan>: 300 → 1200</text>
+<text x="119.0" y="180.5" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">+ <tspan font-weight="800" fill="#212529">ureia</tspan> reciclada (ADH)</text>
+<text x="119.0" y="207.0" text-anchor="middle" font-size="9.2" font-weight="400" fill="#c92a2a"><tspan font-weight="800" fill="#212529">O que estraga:</tspan></text>
+<text x="119.0" y="220.0" text-anchor="middle" font-size="9" font-weight="400" fill="#343a40">furosemida, Bartter,</text>
+<text x="119.0" y="232.0" text-anchor="middle" font-size="9" font-weight="400" fill="#343a40">alça curta, dieta sem proteína</text>
+<line x1="229" y1="140" x2="240" y2="140" stroke="#495057" stroke-width="1.6" marker-end="url(#tres_funcoes-a-gray)"/>
+<rect x="241" y="40" width="218" height="196" rx="8" fill="#e5dbff" stroke="#7048e8" stroke-width="1.4"/>
+<rect x="247.0" y="30.5" width="206" height="19" rx="9.5" fill="#7048e8"/><text x="350.0" y="43.6" text-anchor="middle" font-size="10" font-weight="800" fill="#ffffff">2 · Equilibrar</text>
+<text x="350.0" y="77.0" text-anchor="middle" font-size="13" font-weight="800" fill="#212529">Ducto coletor</text>
+<text x="350.0" y="92.0" text-anchor="middle" font-size="9.4" font-weight="600" fill="#495057" font-style="italic">ADH → AQP2</text>
+<text x="350.0" y="113.0" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">com ADH a água do coletor</text>
+<text x="350.0" y="126.5" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">sai até igualar</tspan> o interstício</text>
+<text x="350.0" y="140.0" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">urina até <tspan font-weight="800" fill="#212529">1200–1400</tspan></text>
+<text x="350.0" y="153.5" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">sem ADH o coletor fica</text>
+<text x="350.0" y="167.0" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">impermeável: urina <tspan font-weight="800" fill="#212529">~50</tspan></text>
+<text x="350.0" y="180.5" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">(diabetes insípido)</text>
+<text x="350.0" y="207.0" text-anchor="middle" font-size="9.2" font-weight="400" fill="#c92a2a"><tspan font-weight="800" fill="#212529">O que estraga:</tspan></text>
+<text x="350.0" y="220.0" text-anchor="middle" font-size="9" font-weight="400" fill="#343a40">falta de ADH (central)</text>
+<text x="350.0" y="232.0" text-anchor="middle" font-size="9" font-weight="400" fill="#343a40">ou de resposta (nefrogênico)</text>
+<line x1="460" y1="140" x2="471" y2="140" stroke="#495057" stroke-width="1.6" marker-end="url(#tres_funcoes-a-gray)"/>
+<rect x="472" y="40" width="218" height="196" rx="8" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<rect x="478.0" y="30.5" width="206" height="19" rx="9.5" fill="#c92a2a"/><text x="581.0" y="43.6" text-anchor="middle" font-size="10" font-weight="800" fill="#ffffff">3 · Conservar</text>
+<text x="581.0" y="77.0" text-anchor="middle" font-size="13" font-weight="800" fill="#212529">Vasos retos</text>
+<text x="581.0" y="92.0" text-anchor="middle" font-size="9.4" font-weight="600" fill="#495057" font-style="italic">permutador de contracorrente</text>
+<text x="581.0" y="113.0" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">descem <tspan font-weight="800" fill="#212529">perdendo água</tspan></text>
+<text x="581.0" y="126.5" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">e <tspan font-weight="800" fill="#212529">ganhando soluto</tspan>; sobem</text>
+<text x="581.0" y="140.0" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">perdendo soluto</tspan> e ganhando água</text>
+<text x="581.0" y="153.5" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">saem a <tspan font-weight="800" fill="#212529">~325</tspan>: levam pouco</text>
+<text x="581.0" y="167.0" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">soluto e a água reabsorvida</text>
+<text x="581.0" y="180.5" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">fluxo medular <tspan font-weight="800" fill="#212529">baixo</tspan></text>
+<text x="581.0" y="207.0" text-anchor="middle" font-size="9.2" font-weight="400" fill="#c92a2a"><tspan font-weight="800" fill="#212529">O que estraga:</tspan></text>
+<text x="581.0" y="220.0" text-anchor="middle" font-size="9" font-weight="400" fill="#343a40">lavagem papilar: fluxo alto</text>
+<text x="581.0" y="232.0" text-anchor="middle" font-size="9" font-weight="400" fill="#343a40">(ANP, vasodilatador, VEC expandido)</text>
+<rect x="10" y="248" width="680" height="72" rx="9" fill="#f1f3f5" stroke="#495057" stroke-width="1.4"/>
+<text x="350.0" y="263.5" text-anchor="middle" font-size="10" font-weight="800" fill="#495057">A conta do volume mínimo de urina</text>
+<text x="350.0" y="277.0" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40">Por dia excretamos ~<tspan font-weight="800" fill="#212529">600 mOsm</tspan> de soluto. Se a urina chega a <tspan font-weight="800" fill="#212529">1200 mOsm/L</tspan>, precisamos de pelo menos <tspan font-weight="800" fill="#212529">0,5 L/dia</tspan></text>
+<text x="350.0" y="289.3" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40">para eliminá-lo (<tspan font-weight="800" fill="#212529">volume urinário obrigatório</tspan>). Sem ADH, a mesma carga sai em até <tspan font-weight="800" fill="#212529">~20 L/dia</tspan> de urina a ~50 mOsm/L.</text>
+<text x="350.0" y="301.6" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40">Normalmente a urina fica perto de <tspan font-weight="800" fill="#212529">500 mOsm/kg</tspan> e <tspan font-weight="800" fill="#212529">1,5 L/dia</tspan>.</text>
+</svg><figcaption><b>Figura 1.</b> As três funções que permitem concentrar a urina (esquema próprio a partir da aula): quem faz cada uma, como, e o que a estraga.</figcaption></figure>
+<figure class="img"><img src="res/conc/osmolaridade.webp" alt="osmolaridade"><figcaption><b>Figura 2.</b> Osmolaridade do líquido tubular ao longo do néfron (aula, Guyton): 300 no proximal, até 1.200 na ponta da alça, cerca de 100 no segmento diluidor; no coletor, até 1.200 com ADH (0,2 mL/min de urina) ou abaixo de 100 sem ADH (20 mL/min). A faixa amarela é o efeito do ADH.</figcaption></figure>
+<div class="box prova"><div class="tag">Cai na prova · compilados</div>
+Plasma a 300 mOsm/L e urina a 1.200 mOsm/L: a pessoa pode estar em <b>privação de água</b> (ADH no máximo). Urina bem mais concentrada que o plasma <b>descarta diabetes insípido</b>. Sem as ações do ADH, o parâmetro que cai é a <b>osmolaridade da urina</b>; um fármaco que deixa a urina em 100 mOsm/L <b>inibe a ação do ADH</b>.
+</div>
+</section>
+
+<!-- ============================== 2 PROTEÍNAS ============================== -->
+<section class="sec flow">
+<h2><span class="num n-alca">2</span>As proteínas do mecanismo</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/conc/transportadores.webp" alt="transportadores"><figcaption><b>Figura 3.</b> As proteínas de transporte do mecanismo de concentração (aula): AQP1 e UT-A2 no ramo descendente; NKCC2 e ROMK no ramo espesso; ClC-K1 no ramo ascendente delgado; AQP2, AQP3 e AQP4 e os transportadores de ureia UT-A1 e UT-A3 no coletor medular interno; AQP1 e UT-B no vaso reto descendente.</figcaption></figure>
+<div>
+<table class="dense">
+<thead><tr><th>Onde</th><th>Proteína</th><th>O que passa</th></tr></thead>
+<tbody>
+<tr><td class="g-alca">Ramo descendente delgado</td><td><b>AQP1</b>; UT-A2</td><td>Água sai; um pouco de ureia entra</td></tr>
+<tr><td class="g-alca">Ramo ascendente delgado</td><td><b>ClC-K1</b> (canal de Cl⁻)</td><td>NaCl sai <b>passivo</b>; não passa água</td></tr>
+<tr><td class="g-alca">Ramo ascendente espesso</td><td><b>NKCC2</b>, ROMK</td><td>NaCl sai <b>ativo</b>; não passa água</td></tr>
+<tr><td class="g-tcd">Coletor medular interno</td><td><b>AQP2</b> (ADH), AQP3/4; <b>UT-A1, UT-A3</b> (ADH)</td><td>Água e <b>ureia</b> saem, com ADH</td></tr>
+<tr><td class="g-hte">Vaso reto descendente</td><td>AQP1, <b>UT-B</b></td><td>Água sai; soluto e ureia entram</td></tr>
+</tbody></table>
+</div>
+</div>
+</section>
+
+<!-- ============================== 3 MULTIPLICADOR ============================== -->
+<section class="sec flow newpage">
+<h2><span class="num n-alca">3</span>Formar: o multiplicador de contracorrente</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+Em cada nível, o ramo ascendente consegue manter o interstício só <b>~200 mOsm</b> acima do seu líquido (<b>efeito unitário</b>). Como o líquido desce por um ramo e sobe pelo outro, esse pequeno efeito se repete e se soma ao longo da alça: é a <b>multiplicação do efeito unitário</b>.
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/conc/efeito_unitario.webp" alt="efeito_unitario"><figcaption><b>Figura 4.</b> O efeito unitário (aula): o ramo ascendente tira Na⁺ e Cl⁻ e cai para 300, o interstício sobe para 500, e o ramo descendente, que só deixa a água passar, entra em equilíbrio com o interstício.</figcaption></figure>
+<div>
+<ul class="tight">
+<li><b>Ramo ascendente</b>: impermeável à água; reabsorve NaCl pelo cotransporte <b>1 Na⁺ : 2 Cl⁻ : 1 K⁺</b>; mantém um gradiente transtubular de <b>200 mOsm</b>. Esse é o efeito unitário.</li>
+<li><b>Ramo descendente</b>: entra em <b>equilíbrio com o interstício</b> perdendo água (não troca soluto).</li>
+<li>A multiplicação acontece por causa de duas coisas (aula): o <b>fluxo de líquido</b> dentro do túbulo e o <b>efeito unitário ao longo de todo o ramo ascendente</b>.</li>
+</ul>
+</div>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/conc/multiplicador.webp" alt="multiplicador"><figcaption><b>Figura 5.</b> O sistema contracorrente multiplicador (aula): depois de muitas voltas, o ramo descendente e o interstício ficam iguais em cada nível (300, 500, 700… 1.300), e o ramo ascendente fica 200 abaixo (100, 300, 500… 1.100).</figcaption></figure>
+<div>
+<p>A alça cria <b>dois gradientes</b> (aula):</p>
+<ul class="tight">
+<li><b>Horizontal</b>: entre o ramo ascendente e o interstício (o ramo descendente fica em equilíbrio com o interstício). É sempre de ~200 mOsm.</li>
+<li><b>Vertical</b>: da junção corticomedular até a papila (300 → 1.200). É <b>maior quanto mais longa for a alça</b> e <b>depende do fluxo tubular</b>.</li>
+</ul>
+</div>
+</div>
+
+<h3>3.1 O passo a passo</h3>
+<figure class="img"><img src="res/conc/passos.webp" alt="passos"><figcaption><b>Figura 6.</b> Simulação no néfron cortical (aula), em quatro momentos: 1) o ramo ascendente bombeia soluto e cria o gradiente horizontal (400 × 200); 2) o fluxo empurra o líquido e a curva fica mais concentrada (500); 3) o processo se repete (600); 4) aparece o gradiente vertical (312 no topo, 700 no fundo) e o líquido sai da alça diluído (112).</figcaption></figure>
+<ol class="tight">
+<li>Tudo começa a <b>300</b>.</li>
+<li>O ramo ascendente bombeia soluto para o interstício até criar a diferença de 200: ascendente <b>200</b>, interstício e descendente <b>400</b> (o descendente perdeu água).</li>
+<li>O líquido <b>anda</b>: entra líquido novo a 300 no topo do descendente, e o líquido a 400 desce para a curva e sobe pelo ascendente.</li>
+<li>O ascendente bombeia de novo, o interstício acompanha, e o fundo fica cada vez mais concentrado: 500, 600, 700…</li>
+<li>Depois de muitas voltas, o fundo chega a <b>1.200</b> (nos néfrons justamedulares), e o líquido que sai da alça fica a <b>~100</b>.</li>
+</ol>
+<div class="box prova"><div class="tag">Cai na prova · T137, T136 e compilados</div>
+O gradiente medular é estabelecido pela <b>combinação</b> do transporte ativo de solutos para fora do <b>ramo ascendente espesso</b>, da alta permeabilidade à água do <b>ramo descendente</b> e do <b>fluxo em contracorrente</b> nos dois ramos (compilados). O que mais contribui para o gradiente de ~1.200 no ápice é o <b>transporte ativo de Na⁺ e Cl⁻ para fora do ramo ascendente espesso</b> (T136). Os <b>néfrons justamedulares</b>, com alças longas até a papila, são os que criam o gradiente (T137, T136). Com furosemida, o NKCC2 é bloqueado, a medula perde osmolaridade e a urina fica <b>perto de 300 mOsm/L</b> (T137).
+</div>
+</section>
+
+<!-- ============================== 4 UREIA ============================== -->
+<section class="sec flow">
+<h2><span class="num n-tcd">4</span>A ureia e seus transportadores</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+O coletor cortical e o medular externo são <b>impermeáveis à ureia</b>: com ADH a água sai e a ureia fica, se concentrando na luz. No coletor medular interno o ADH abre os transportadores <b>UT-A1 e UT-A3</b>, e a ureia passa para o interstício, onde chega a ser <b>metade da osmolaridade da papila</b>.
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/conc/justamedular.webp" alt="justamedular"><figcaption><b>Figura 7.</b> A ureia no néfron justamedular (aula): ao longo do túbulo distal e do coletor cortical a ureia vai se concentrando (de 20 para 100) enquanto a água sai; no coletor medular, com ADH, ela sai para o interstício, entra de novo na alça e é reciclada.</figcaption></figure>
+<div>
+<ul class="tight">
+<li>A ureia é <b>reabsorvida passivamente no coletor</b> medular interno, <b>se concentra no interstício</b> e é <b>secretada passivamente</b> para dentro da alça (aula): parte dela volta a circular (<b>reciclagem</b>).</li>
+<li>Com a ureia somando osmolaridade ao interstício, o ramo descendente perde mais água, o líquido chega à curva com muito NaCl, e o ramo ascendente delgado <b>reabsorve NaCl passivamente</b>, sem bomba.</li>
+<li>Como há ureia dos dois lados do coletor medular interno, ela não segura água na luz: o rim consegue <b>excretar muita ureia sem perder água</b>.</li>
+</ul>
+</div>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/conc/ureia_alca.webp" alt="ureia_alca"><figcaption><b>Figura 8.</b> Resumo da aula: o proximal entrega um líquido isotônico (300); o ramo descendente se concentra (reabsorção passiva de água e secreção passiva de ureia) até 1.400; o ramo ascendente se dilui (impermeável à água, NaCl passivo na porção fina e ativo na grossa) até 100; o coletor vai de 50 a 1.400.</figcaption></figure>
+<div>
+<table class="dense">
+<thead><tr><th>Segmento</th><th>O que faz com água, sal e ureia</th></tr></thead>
+<tbody>
+<tr><td class="g-tcp">Proximal</td><td>Líquido <b>isotônico</b>: reabsorve água e soluto juntos</td></tr>
+<tr><td class="g-alca">Ramo descendente</td><td><b>Se concentra</b>: perde água (passiva) e recebe ureia (passiva)</td></tr>
+<tr><td class="g-alca">Ramo ascendente</td><td><b>Se dilui</b>: impermeável à água; NaCl sai passivo na porção fina e ativo na grossa</td></tr>
+<tr><td class="g-uro">Coletor</td><td>Com ADH, perde água e, no fim, ureia: urina de <b>50 a 1.400</b></td></tr>
+</tbody></table>
+</div>
+</div>
+
+<h3>4.1 Os transportadores de ureia</h3>
+<div class="grid2">
+<figure class="img sm"><img src="res/conc/ut_celula.webp" alt="ut_celula"><figcaption><b>Figura 9.</b> Célula do coletor medular interno (aula): o ADH (AVP) liga o receptor V2, ativa Gs, a adenilato ciclase, o AMPc e a PKA, que fosforila e leva à membrana luminal o transportador de ureia (UT1, hoje UT-A1).</figcaption></figure>
+<div>
+<table class="dense">
+<thead><tr><th>Transportador</th><th>Onde</th><th>Responde ao ADH?</th></tr></thead>
+<tbody>
+<tr><td class="g-tcd">UT-A1</td><td>Coletor medular interno (apical)</td><td><b>Sim</b></td></tr>
+<tr><td class="g-tcd">UT-A3</td><td>Coletor medular interno (basolateral)</td><td>Sim (com o UT-A1)</td></tr>
+<tr><td class="g-tcd">UT-A2</td><td>Ramo descendente delgado</td><td>Não</td></tr>
+<tr><td class="g-tcd">UT-B</td><td>Vaso reto descendente e hemácias</td><td>Não</td></tr>
+</tbody></table>
+<p>A via é a mesma da AQP2: <b>V2 → Gs → adenilato ciclase → AMPc → PKA</b>, que fosforila o UT-A1.</p>
+</div>
+</div>
+<figure class="img sm"><img src="res/conc/ut_tabela.webp" alt="ut_tabela"><figcaption><b>Figura 10.</b> Famílias de transportadores de ureia (aula): genes Slc14a2 (UT-A1 a UT-A5) e Slc14a1 (UT-B), com a localização e a resposta à vasopressina (AVP).</figcaption></figure>
+<div class="box deep"><div class="tag">Aprofundamento · por que a dieta pobre em proteína atrapalha</div>
+Com pouca proteína na dieta, sai menos ureia do fígado e chega menos ureia à papila. O interstício fica menos concentrado e a capacidade máxima de concentrar a urina cai. Pelo mesmo raciocínio, sem ADH a ureia não vai para o interstício e o gradiente inteiro cai (de 1.200 para ~800 na papila).
+</div>
+<div class="box prova"><div class="tag">Cai na prova · T137 e compilados</div>
+A capacidade de concentrar a urina se relaciona diretamente com a <b>reabsorção de ureia no ducto coletor promovida pelo ADH</b>. O ADH aumenta a reabsorção de ureia no <b>coletor papilar</b>. Na falta de ADH, os <b>UT-A1 e UT-A3</b> não são ativados, a ureia não chega ao interstício e a <b>osmolalidade da medula profunda cai</b> (T137). O ramo ascendente delgado não precisa de transporte ativo <b>por causa do ADH, que aumenta a reabsorção de ureia</b> (T137). A ureia no interstício <b>aumenta a osmolaridade e ajuda a reabsorção de solutos na alça</b>.
+</div>
+</section>
+
+<!-- ============================== 5 ADH ============================== -->
+<section class="sec flow">
+<h2><span class="num n-uro">5</span>Equilibrar: o ADH no coletor</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/conc/aqp2.webp" alt="aqp2"><figcaption><b>Figura 11.</b> Ação do ADH no aumento da permeabilidade à água (aula): receptor V2, Gs, adenilato ciclase, AMPc e PKA; as vesículas com AQP2 se fundem à membrana luminal; a água sai pela AQP3 e pela AQP4 na basolateral.</figcaption></figure>
+<div>
+<ul class="tight">
+<li>O ADH liga o receptor <b>V2</b>, ativa <b>Gs → adenilato ciclase → AMPc → PKA</b> e leva a <b>AQP2</b> para a membrana luminal da célula principal.</li>
+<li>A água sai do coletor pelo gradiente que a alça criou, até a urina <b>se igualar ao interstício</b>: no córtex (~300) e depois na medula, até 1.200–1.400 na papila.</li>
+<li>Sem ADH o coletor fica impermeável à água e continua tirando sal: a urina sai a <b>~50 mOsm/kg</b>.</li>
+<li>O ADH não cria o gradiente: ele só deixa a água <b>usá-lo</b>. Por isso, sem gradiente (furosemida, lavagem papilar), a urina não se concentra mesmo com ADH alto.</li>
+</ul>
+</div>
+</div>
+<div class="box clin"><div class="tag">Correlação clínica · diabetes insípido e SIADH</div>
+No <b>diabetes insípido central</b> falta o ADH, mas o gradiente medular existe: a <b>AVP exógena (desmopressina) funciona</b>. No <b>nefrogênico</b> o rim não responde (receptor V2, AQP2, lítio) e a desmopressina não adianta. Na <b>SIADH</b> há ADH demais: <b>hiponatremia</b>, plasma hiposmolar e urina concentrada.
+</div>
+<div class="box prova"><div class="tag">Cai na prova · compilados</div>
+A eficácia da AVP exógena num paciente com diabetes insípido se explica porque <b>o gradiente osmótico da medula renal está presente</b>: falta só o hormônio. Excesso de ADH: <b>hiponatremia, menor osmolaridade plasmática e urina concentrada</b>.
+</div>
+</section>
+
+<!-- ============================== 6 VASOS RETOS ============================== -->
+<section class="sec flow">
+<h2><span class="num n-corp">6</span>Conservar: os vasos retos</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+Os vasos retos descem e sobem em U, ao lado das alças. No caminho, o sangue <b>troca</b> água e soluto com o interstício e sai quase como entrou (300 → 325): retira a água reabsorvida sem levar o gradiente embora. É um <b>permutador</b> de contracorrente, que não cria gradiente, só o conserva.
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/conc/vasa_anatomia.webp" alt="vasa_anatomia"><figcaption><b>Figura 12.</b> Os vasos retos (aula, Netter): as arteríolas eferentes dos glomérulos justamedulares descem como vasos retos ao lado das alças e dos coletores e voltam ao córtex.</figcaption></figure>
+<div>
+<ul class="tight">
+<li>Os vasos retos <b>caminham ao longo das estruturas tubulares medulares</b>, <b>removem soluto e água</b> do interstício e <b>se equilibram passivamente</b> com ele (aula).</li>
+<li><b>Ramo descendente</b>: <b>perde água e ganha soluto</b>, e fica cada vez mais concentrado (até 1.200 na curva).</li>
+<li><b>Ramo ascendente</b>: <b>perde soluto e ganha água</b>, e volta ao córtex a ~325.</li>
+<li>O fluxo medular é <b>pequeno</b> (1–2% do fluxo renal), o que também ajuda a preservar o gradiente.</li>
+</ul>
+</div>
+</div>
+<figure class="img sm"><img src="res/conc/vasa_permutador.webp" alt="vasa_permutador"><figcaption><b>Figura 13.</b> Vasos retos como permutador (aula): o sangue entra a 300; ao descer perde água (setas vermelhas) e ganha soluto (setas azuis) até 1.200; ao subir faz o contrário e sai a 325.</figcaption></figure>
+<table class="dense">
+<thead><tr><th></th><th>Multiplicador (alça de Henle)</th><th>Permutador (vasos retos)</th></tr></thead>
+<tbody>
+<tr><td class="g-corp">Gasta energia?</td><td><b>Sim</b>: NKCC2 do ramo espesso</td><td><b>Não</b>: trocas passivas</td></tr>
+<tr><td class="g-corp">O que faz</td><td><b>Cria</b> o gradiente</td><td><b>Conserva</b> o gradiente</td></tr>
+<tr><td class="g-corp">Ramo descendente</td><td>Perde água</td><td>Perde água e ganha soluto</td></tr>
+<tr><td class="g-corp">Ramo ascendente</td><td>Perde soluto, sem água</td><td>Perde soluto e ganha água</td></tr>
+</tbody></table>
+<div class="box prova"><div class="tag">Cai na prova · compilados</div>
+Função dos vasos retos na concentração da urina: <b>permitir a troca de solutos e água entre o sangue e o interstício medular sem dissipar o gradiente</b>, removendo a água reabsorvida.
+</div>
+</section>
+
+<!-- ============================== 7 LAVAGEM ============================== -->
+<section class="sec flow">
+<h2><span class="num n-corp">7</span>Lavagem papilar</h2>
+<p>Quando o <b>fluxo sanguíneo medular é elevado</b> (vasodilatadores como o <b>ANP</b>, expansão do volume extracelular), o permutador não dá conta (aula):</p>
+<ul class="tight">
+<li>O ramo descendente dos vasos retos <b>não atinge o equilíbrio</b> com o interstício.</li>
+<li>O ramo ascendente <b>perde menos soluto e ganha menos água</b>: o sangue leva soluto embora.</li>
+<li>O interstício fica <b>menos concentrado</b>: diminui a reabsorção de água no coletor, cai a capacidade de concentrar a urina e <b>aumenta o fluxo urinário</b>.</li>
+</ul>
+<div class="box clin"><div class="tag">Correlação clínica · quando o rim não concentra</div>
+Perdem a capacidade de concentrar: <b>diuréticos de alça</b> e <b>Bartter</b> (sem efeito unitário); <b>diurese osmótica</b> (glicose, manitol: muito fluxo pela alça); <b>lavagem papilar</b> (fluxo medular alto); <b>diabetes insípido</b>; dieta pobre em proteína (pouca ureia); doenças da medula renal e o envelhecimento. Em todas, o achado é uma urina incapaz de passar muito do plasma.
+</div>
+</section>
+
+<!-- ============================== 8 DEPURAÇÃO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-col">8</span>Depuração de água livre</h2>
+<div class="box deep"><div class="tag">Aprofundamento · como se mede o que o rim faz com a água</div>
+Separe a urina em duas partes: a que leva os solutos na osmolaridade do plasma e a que é <b>água pura</b>.
+<ul class="tight">
+<li><b>Depuração osmolar</b>: C<sub>osm</sub> = (U<sub>osm</sub> × V) / P<sub>osm</sub>.</li>
+<li><b>Depuração de água livre</b>: C<sub>H₂O</sub> = V − C<sub>osm</sub>.</li>
+<li><b>Positiva</b>: urina diluída, o rim está <b>jogando água fora</b> (pouco ou nenhum ADH).</li>
+<li><b>Negativa</b>: urina concentrada, o rim está <b>guardando água</b> (ADH presente).</li>
+<li>Exemplo: V = 2 mL/min, U<sub>osm</sub> = 100 e P<sub>osm</sub> = 300 → C<sub>osm</sub> = 0,67 mL/min e C<sub>H₂O</sub> = +1,33 mL/min.</li>
+</ul>
+</div>
+<div class="box prova"><div class="tag">Cai na prova · compilados</div>
+O clearance de água livre é o volume de urina <b>livre de solutos</b> excretado por unidade de tempo e mostra a capacidade de excretar água conforme o ADH: <b>positivo = ausência de ADH e urina diluída</b>; <b>negativo = presença de ADH e urina concentrada</b>.
+</div>
+</section>
+
+<!-- ============================== 9 REVISÃO ============================== -->
+<section class="sec flow">
+<h2><span class="num">9</span>Revisão final</h2>
+<table class="dense master">
+<thead><tr><th>Função</th><th>Quem faz</th><th>Como</th><th>O que estraga</th></tr></thead>
+<tbody>
+<tr><td class="g-alca">Formar o gradiente</td><td>Alça de Henle (justamedular)</td><td>Efeito unitário de 200 mOsm (NKCC2) multiplicado pelo fluxo em contracorrente; ureia completa</td><td>Furosemida, Bartter, diurese osmótica, alça curta, pouca ureia</td></tr>
+<tr><td class="g-uro">Equilibrar coletor e interstício</td><td>Ducto coletor</td><td>ADH → V2 → AMPc → AQP2 (água) e UT-A1/A3 (ureia)</td><td>Diabetes insípido central ou nefrogênico</td></tr>
+<tr><td class="g-corp">Conservar o gradiente</td><td>Vasos retos</td><td>Permutador: trocas passivas, fluxo baixo</td><td>Lavagem papilar (fluxo medular alto: ANP, VEC expandido)</td></tr>
+</tbody></table>
+<h3>Números para guardar</h3>
+<ol class="cols2">
+<li>Urina: <b>50</b> (sem ADH, ~20 L/dia) a <b>1.400</b> mOsm/kg (ADH máximo, ~0,5 L/dia).</li>
+<li>Normal: ~<b>500</b> mOsm/kg e 1,5 L/dia.</li>
+<li>Efeito unitário: <b>200 mOsm</b>.</li>
+<li>Gradiente vertical: <b>300 → 1.200</b> (papila).</li>
+<li>Papila: <b>metade ureia</b>, metade NaCl.</li>
+<li>Saída da alça: <b>~100</b> mOsm/L.</li>
+<li>Vasos retos: entram a 300, saem a <b>325</b>.</li>
+<li>Volume obrigatório: ~600 mOsm/dia ÷ 1.200 = <b>0,5 L/dia</b>.</li>
+</ol>
+<div class="box prova"><div class="tag">Pegadinhas que se repetem</div>
+<ul class="tight">
+<li>“Os vasos retos criam o gradiente” → <b>falso</b>: eles o conservam; quem cria é a alça.</li>
+<li>“O ADH cria o gradiente medular” → <b>falso</b>: ele permite usar o gradiente (e ajuda com a ureia).</li>
+<li>“O ramo ascendente delgado tem transporte ativo” → <b>falso</b>: o NaCl sai passivo.</li>
+<li>“O gradiente vertical independe do comprimento da alça” → <b>falso</b>: é maior quanto mais longa a alça.</li>
+<li>“Fluxo medular alto ajuda a concentrar” → <b>falso</b>: lava a papila.</li>
+</ul>
+</div>
+<div class="box mnem"><div class="tag">Mnemônico</div>
+<b>F-E-C</b>: <b>F</b>ormar (alça, gasta energia), <b>E</b>quilibrar (coletor, ADH), <b>C</b>onservar (vasos retos, de graça). <b>Multiplicador multiplica, permutador preserva.</b>
+</div>
+</section>
+
+<!-- ============================== 10 QUESTÕES ============================== -->
+<section class="sec flow">
+<h2><span class="num">10</span>Questões com gabarito comentado</h2>
+<ol class="questions">
+<li>Quais são os limites de osmolalidade e de volume da urina e de que dependem?</li>
+<li>Quais são as três funções do rim que permitem concentrar a urina?</li>
+<li>O que é o efeito unitário e por que ele se multiplica?</li>
+<li>Diferencie o gradiente horizontal do vertical. De que depende o vertical?</li>
+<li>Por que os néfrons justamedulares são os responsáveis pelo gradiente?</li>
+<li>Qual é o papel da ureia e quais transportadores participam?</li>
+<li>Por que o ramo ascendente delgado não precisa de transporte ativo?</li>
+<li>O que acontece com o gradiente e com a urina quando falta ADH?</li>
+<li>Como os vasos retos conservam o gradiente? Compare com a alça.</li>
+<li>O que é lavagem papilar e o que a provoca?</li>
+<li>Por que a desmopressina funciona no diabetes insípido central e não no nefrogênico?</li>
+<li>O que significa uma depuração de água livre positiva? E negativa?</li>
+</ol>
+
+<h3>Gabarito comentado</h3>
+<ol class="answers">
+<li>De <b>~50 mOsm/kg</b> (sem ADH, ~20 L/dia) a <b>~1.400 mOsm/kg</b> (ADH máximo, ~0,5 L/dia); o normal é ~500 mOsm/kg e 1,5 L/dia. Dependem do <b>ADH</b> e da existência de um <b>interstício medular hipertônico</b>.</li>
+<li><b>Formar</b> a hipertonicidade medular (alça de Henle), permitir o <b>equilíbrio osmótico entre o coletor e o interstício</b> (ADH) e <b>conservar</b> a hipertonicidade (vasos retos).</li>
+<li>É a diferença de ~<b>200 mOsm</b> que o ramo ascendente, impermeável à água, consegue criar em cada nível ao bombear NaCl para o interstício. Como o líquido entra por um ramo e sai pelo outro (contracorrente), o líquido mais concentrado da curva é bombeado de novo, e as diferenças se somam ao longo da alça até 1.200 na papila.</li>
+<li>O <b>horizontal</b> é a diferença, em cada nível, entre o ramo ascendente e o interstício (~200 mOsm). O <b>vertical</b> vai da junção corticomedular (300) à papila (1.200); é maior quanto mais <b>longa</b> a alça e depende do <b>fluxo tubular</b>.</li>
+<li>Porque têm <b>alças longas</b> que descem até a papila: quanto mais longa a alça, mais vezes o efeito unitário se multiplica. Os néfrons corticais, de alça curta, chegam só a ~600.</li>
+<li>No coletor cortical e medular externo a água sai e a ureia fica (são impermeáveis a ela). No coletor medular interno o ADH abre o <b>UT-A1</b> (apical) e o <b>UT-A3</b> (basolateral), e a ureia vai para o interstício, onde chega a metade da osmolaridade da papila. Ela entra de novo na alça (UT-A2) e é reciclada; o UT-B dos vasos retos e das hemácias também participa.</li>
+<li>Porque o líquido chega à curva muito rico em NaCl e o interstício em volta tem muita <b>ureia</b> (trazida pelo ADH): o NaCl sai a favor do gradiente. A explicação de prova é o <b>ADH, que aumenta a reabsorção de ureia</b>.</li>
+<li>O coletor fica impermeável à água e a urina sai diluída e abundante. Os UT-A1 e UT-A3 não são ativados, entra menos ureia na medula e a <b>osmolalidade da papila cai</b> (de 1.200 para ~800).</li>
+<li>Os vasos retos descem perdendo água e ganhando soluto e sobem perdendo soluto e ganhando água; trocam passivamente e saem quase como entraram (300 → 325). São um <b>permutador</b>: não gastam energia e não criam gradiente, só o preservam. A alça é um <b>multiplicador</b>: gasta energia (NKCC2) e cria o gradiente.</li>
+<li>É a perda do gradiente medular quando o <b>fluxo sanguíneo medular aumenta</b> (vasodilatadores como o ANP, expansão do VEC): o sangue leva soluto embora, o interstício fica menos concentrado, o coletor reabsorve menos água e o fluxo urinário aumenta.</li>
+<li>No central falta só o ADH: o gradiente medular e os receptores estão lá, e o hormônio exógeno restaura a AQP2. No nefrogênico o problema é a resposta (receptor V2, AQP2, lítio): dar o hormônio não muda nada.</li>
+<li><b>Positiva</b>: o rim está excretando água livre, a urina é diluída (pouco ou nenhum ADH). <b>Negativa</b>: o rim está guardando água, a urina é concentrada (ADH presente). Fórmula: C<sub>H₂O</sub> = V − (U<sub>osm</sub> × V / P<sub>osm</sub>).</li>
+</ol>
+</section>
+
+</template>
+<template id="tpl-ahnd">
 <!-- ============================== CAPA ============================== -->
 <section class="cover">
   <div class="kicker">Resumo de estudo · Fisiologia · Medicina</div>
@@ -14190,7 +15100,9 @@ const MAT=[
 {"id": "ciclo", "t": "Fisiologia do Ciclo Menstrual", "av": "AV2", "area": "Fisiologia", "c": "#d6336c", "profs": "Aula da Profa. Camila Ferreira Roncari (Departamento de Fisiologia e Farmacologia)", "d": "Eixo hipotálamo-hipófise-ovário, pulsatilidade do GnRH e kisspeptina, desenvolvimento folicular, modelo de duas células, surto de LH e ovulação, corpo lúteo, ciclo uterino, muco cervical, menopausa e contraceptivos hormonais.", "pdf": "res/Resumo_Fisiologia_Ciclo_Menstrual.pdf", "pdfName": "Resumo - Fisiologia do Ciclo Menstrual.pdf", "figs": 44, "slides": 80, "sn": "", "ana": [["anexos", "Fotos: ovário, tuba e ligamentos"]], "his": [["ovario", "Lâminas: ovário"], ["utero", "Lâminas: útero, tuba e colo"]], "teo": [3, 25, 26, 27, 28, 29, 43, 56, 289, 291, 292, 293, 294, 370, 371, 392, 395, 413, 425, 426, 439, 443, 449, 455, 464, 465, 468, 473, 474, 475, 563, 564, 565]},
 {"id": "eurin", "t": "Embriologia do Sistema Urinário", "av": "AV2", "area": "Embriologia", "c": "#0ca678", "profs": "Aula 12 da Profa. Renata Leitão (Departamento de Morfologia)", "d": "Pronefro, mesonefro e metanefro, broto ureteral e blastema, sistema coletor e néfron, trígono, duplicação ureteral e lei de Weigert-Meyer, ureterocele e ureter ectópico, cloaca e úraco, ascensão dos rins, artérias acessórias, rim em ferradura, sequência de Potter e válvula de uretra posterior.", "pdf": "res/Resumo_Embriologia_Sistema_Urinario.pdf", "pdfName": "Resumo - Embriologia do Sistema Urinario.pdf", "figs": 33, "slides": 46, "sn": "", "ana": [["rim", "Fotos: rim"], ["ureter", "Fotos: ureter"], ["bexiga", "Fotos: bexiga"]], "his": [["rim", "Lâminas: rim"], ["vias", "Lâminas: ureter e bexiga"]], "teo": [10, 11, 12, 149, 150, 151, 167, 168, 169, 194, 197, 231, 237, 241, 284, 285, 286, 321, 322, 323, 361, 362, 363, 364, 365, 428, 429, 431, 432, 433, 434, 435, 436, 437], "ar": "1000/562"},
 {"id": "egen", "t": "Embriologia do Sistema Reprodutor", "av": "AV2", "area": "Embriologia", "c": "#ae3ec9", "profs": "Aula 15 da Profa. Beatriz Duarte (Histologia e Embriologia Humanas, Departamento de Morfologia)", "d": "Estágio indiferenciado, cristas gonadais e células germinativas primordiais, SRY, AMH, testosterona e DHT, desenvolvimento do testículo e do ovário, ductos de Wolff e de Müller, útero e vagina, anomalias uterinas, genitália externa e homologias, hipospádia e desordens da diferenciação sexual.", "pdf": "res/Resumo_Embriologia_Sistema_Reprodutor.pdf", "pdfName": "Resumo - Embriologia do Sistema Reprodutor.pdf", "figs": 39, "slides": 63, "ar": "1000/562", "sn": "", "ana": [["masc", "Fotos: pênis, próstata e uretra"], ["escroto", "Fotos: escroto e funículo"], ["utero", "Fotos: útero e vagina"], ["anexos", "Fotos: ovário, tuba e ligamentos"], ["vulva", "Fotos: vulva"]], "his": [["testic", "Lâminas: testículo"], ["ductos", "Lâminas: epidídimo, deferente e próstata"], ["ovario", "Lâminas: ovário"], ["utero", "Lâminas: útero, tuba e colo"]], "teo": [22, 23, 24, 44, 59, 60, 61, 209, 220, 252, 253, 321, 324, 325, 326, 327, 366, 367, 368, 374, 393, 399, 400, 408, 409, 418, 430, 436, 448, 451, 460, 462, 470, 472, 559]},
-{"id": "ahnd", "t": "Alça de Henle e Néfron Distal", "av": "AV3", "area": "Fisiologia", "c": "#0c8599", "profs": "Prof. Pedro Magalhães · Aula 16, Fisiologia do Sistema Urinário IV", "d": "O que chega à alça, a osmolaridade ao longo do néfron, cada ramo da alça e o gradiente medular, o NKCC2 do ramo espesso (furosemida, Bartter), o NCC do túbulo distal (tiazídicos, Gitelman), as células do ducto coletor, ADH e aquaporinas, aldosterona e potássio (poupadores, Liddle) e os cílios na doença renal policística.", "pdf": "res/Resumo_Alca_de_Henle_e_Nefron_Distal.pdf", "pdfName": "Resumo - Alca de Henle e Nefron Distal.pdf", "figs": 21, "slides": 24, "sn": "", "ana": [], "his": [], "teo": [266, 270, 302, 309, 311, 312, 313, 314, 315, 333, 334, 335, 336, 341, 358, 359, 480, 482, 483, 488, 489, 490, 493, 494, 495, 496, 502, 504, 513, 514, 521, 526, 528, 536, 539, 540, 549, 552, 553, 555, 572, 573, 578, 580, 581, 582, 583, 591, 593, 594, 595, 596, 602, 603, 605, 607, 627, 628, 629, 631, 633, 634, 635, 636, 639, 645, 648, 657, 658, 659, 661, 662, 665, 669, 670, 673, 674, 676]}
+{"id": "ahnd", "t": "Alça de Henle e Néfron Distal", "av": "AV3", "area": "Fisiologia", "c": "#0c8599", "profs": "Prof. Pedro Magalhães · Aula 16, Fisiologia do Sistema Urinário IV", "d": "O que chega à alça, a osmolaridade ao longo do néfron, cada ramo da alça e o gradiente medular, o NKCC2 do ramo espesso (furosemida, Bartter), o NCC do túbulo distal (tiazídicos, Gitelman), as células do ducto coletor, ADH e aquaporinas, aldosterona e potássio (poupadores, Liddle) e os cílios na doença renal policística.", "pdf": "res/Resumo_Alca_de_Henle_e_Nefron_Distal.pdf", "pdfName": "Resumo - Alca de Henle e Nefron Distal.pdf", "figs": 21, "slides": 24, "sn": "", "ana": [], "his": [], "teo": [266, 270, 302, 309, 311, 312, 313, 314, 315, 333, 334, 335, 336, 341, 358, 359, 480, 482, 483, 488, 489, 490, 493, 494, 495, 496, 502, 504, 513, 514, 521, 526, 528, 536, 539, 540, 549, 552, 553, 555, 572, 573, 578, 580, 581, 582, 583, 591, 593, 594, 595, 596, 602, 603, 605, 607, 627, 628, 629, 631, 633, 634, 635, 636, 639, 645, 648, 657, 658, 659, 661, 662, 665, 669, 670, 673, 674, 676]},
+{"id": "conc", "t": "Concentração Urinária e Contracorrente", "av": "AV3", "area": "Fisiologia", "c": "#5f3dc4", "profs": "Prof. Pedro Magalhães · Aula 17, Fisiologia do Sistema Urinário V", "d": "Os limites da urina (50 a 1200 mOsm), as proteínas de cada segmento, o multiplicador de contracorrente passo a passo, a reciclagem da ureia (UT-A1, UT-A3, UT-A2, UT-B), o ADH e o equilíbrio no ducto coletor, os vasos retos como permutador, a lavagem papilar e a depuração de água livre.", "pdf": "res/Resumo_Concentracao_Urinaria.pdf", "pdfName": "Resumo - Concentracao Urinaria e Contracorrente.pdf", "figs": 13, "slides": 22, "sn": "", "ana": [], "his": [], "teo": [266, 302, 311, 312, 313, 314, 315, 335, 336, 337, 488, 489, 504, 547, 578, 583, 588, 591, 627, 629, 648, 661, 669]},
+{"id": "hidro", "t": "Regulação da Água e do Sódio", "av": "AV3", "area": "Fisiologia", "c": "#1c7ed6", "profs": "Prof. Pedro Magalhães · Aulas 18 e 19, Fisiologia do Sistema Urinário VI e VII", "d": "Água corporal e compartimentos, composição dos líquidos, membranas e tonicidade, o sódio como medida da osmolaridade, balanço hídrico, sensores de volume e ANP, o controle da renina, SRAA e aldosterona, ADH (osmorreceptores e barorreceptores) e a resposta à desidratação.", "pdf": "res/Resumo_Regulacao_Agua_e_Sodio.pdf", "pdfName": "Resumo - Regulacao da Agua e do Sodio.pdf", "figs": 22, "slides": 33, "sn": "", "ana": [], "his": [], "teo": [120, 173, 177, 265, 267, 298, 299, 338, 339, 340, 341, 491, 492, 496, 503, 516, 517, 518, 519, 520, 521, 538, 539, 547, 585, 588, 602, 605, 608, 632, 635, 641, 663, 669, 672]}
 ];
 GR.mat={};MAT.forEach(m=>GR.mat[m.id]={n:m.t,c:m.c});
 IT.mat=MAT.map(m=>({grp:m.id,label:m.t}));
@@ -14228,7 +15140,7 @@ function matView(main){const m=MAT.find(x=>x.id===C().r)||MAT[0];
   const bs=el("button","btn ghost");bs.type="button";bs.appendChild(el("span","","Slides da aula ↓"));bs.onclick=()=>{const d=$("slidegal");if(d){d.open=true;d.scrollIntoView({block:"start"})}};acts.appendChild(bs);
   hd.appendChild(acts);main.appendChild(hd);
   const tpl=$("tpl-"+m.id);const art=el("article","res");if(tpl)art.appendChild(tpl.content.cloneNode(true));
-  art.querySelectorAll("img").forEach(im=>{im.src=IMGSRC(im.getAttribute("src"));im.loading="lazy";im.decoding="async"});
+  const PK=window.GU_PACK||[];art.querySelectorAll("img").forEach(im=>{const p=im.getAttribute("src");const f=(p.match(/^res\/([^/]+)\//)||[])[1];if(INFRAME&&f&&PK.includes(f)&&!(window.IMGDATA&&window.IMGDATA[p])){im.dataset.k=p;im.src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";loadScriptOnce("imgdata/"+f+".js")}else im.src=IMGSRC(p);im.loading="lazy";im.decoding="async"});
   art.querySelectorAll("figure.img img").forEach(im=>{const w=el("div","ib");im.parentNode.insertBefore(w,im);w.appendChild(im)});
   art.querySelectorAll("figure.fig svg").forEach(sv=>{const w=el("div","sx");sv.parentNode.insertBefore(w,sv);w.appendChild(sv);w.after(el("p","swipe","← arraste para ver a figura inteira →"))});
   art.querySelectorAll("table").forEach(tb=>{const w=el("div","tw");tb.parentNode.insertBefore(w,tb);w.appendChild(tb)});
@@ -14456,7 +15368,7 @@ render();
 <script>
 (function(){
 if(!("serviceWorker" in navigator)||location.protocol==="file:")return;
-var FILES=["./", "index.html", "manifest.json", "icone-180.png", "icone-192.png", "icone-512.png", "img/art_aorta.jpg", "img/art_iliaca_comum.jpg", "img/art_ilinterna.jpg", "img/bexiga_trigono.jpg", "img/bx_modelo.jpg", "img/bx_puboprostatico.jpg", "img/bx_pubovesical.jpg", "img/colo_utero.jpg", "img/esc_camadas.jpg", "img/esc_funiculo_anel.jpg", "img/esc_testiculo.jpg", "img/escavacoes.jpg", "img/f_hemipelve.jpg", "img/f_hemipelve_labios.jpg", "img/f_lig_redondo.jpg", "img/f_mesovario.jpg", "img/f_ovario_suspensor.jpg", "img/f_vulva_alfinetes.jpg", "img/ligamento_largo.jpg", "img/m_ampola_deferente.jpg", "img/m_arteria_dorsal.jpg", "img/m_escroto_aberto.jpg", "img/m_fascias_escroto.jpg", "img/m_frenulo.jpg", "img/m_frenulo_prepucio.jpg", "img/m_glande_frenulo.jpg", "img/m_modelo.jpg", "img/m_penis_corte.jpg", "img/m_penis_dorsal.jpg", "img/m_penis_transversal.jpg", "img/m_perineo.jpg", "img/m_perineo_alfinetes.jpg", "img/m_prepucio.jpg", "img/m_prostata_sagital.jpg", "img/m_sagital.jpg", "img/m_sagital_bexiga.jpg", "img/m_sagital_escavacoes.jpg", "img/m_sagital_penis.jpg", "img/m_sagital_prostata.jpg", "img/m_tunicas_testiculo.jpg", "img/m_veia_dorsal.jpg", "img/m_vesicula_isolada.jpg", "img/mesos.jpg", "img/ovario_fornices.jpg", "img/ovario_ligamentos.jpg", "img/rim_aberto.jpg", "img/rim_capsula.jpg", "img/rim_colunas.jpg", "img/rim_corte.jpg", "img/rim_hilo.jpg", "img/rim_pediculo.jpg", "img/rim_vasos.jpg", "img/tuba_uterina.jpg", "img/u_arteria_renal_dir.jpg", "img/u_arteria_renal_esq.jpg", "img/u_bexiga_trigono.jpg", "img/u_hilo.jpg", "img/u_rim_calices.jpg", "img/u_rim_papila.jpg", "img/u_rins_margens.jpg", "img/u_rins_vasos.jpg", "img/u_ureter_trajeto.jpg", "img/ureter_iliaca.jpg", "img/ureter_jup.jpg", "img/ureter_partes.jpg", "img/utero_camadas.jpg", "img/utero_partes.jpg", "img/utero_posterior.jpg", "img/utero_sagital.jpg", "img/vagina_fornices.jpg", "img/vasos_gonadais.jpg", "img/vasos_testicular.jpg", "img/vulva_externa.jpg", "img/vulva_partes.jpg", "histo/g01.jpg", "histo/g02.jpg", "histo/g03.jpg", "histo/g04.jpg", "histo/g05.jpg", "histo/g06.jpg", "histo/g07.jpg", "histo/g08.jpg", "histo/g09.jpg", "histo/g10.jpg", "histo/g11.jpg", "histo/g12.jpg", "histo/g13.jpg", "histo/g14.jpg", "histo/g15.jpg", "histo/g16.jpg", "histo/g17.jpg", "histo/g18.jpg", "histo/g19.jpg", "histo/g20.jpg", "histo/g21.jpg", "histo/g22.jpg", "histo/g23.jpg", "histo/g24.jpg", "histo/g25.jpg", "histo/g26.jpg", "histo/g27.jpg", "histo/g28.jpg", "histo/g29.jpg", "histo/g30.jpg", "histo/g31.jpg", "histo/g32.jpg", "histo/g33.jpg", "histo/g34.jpg", "histo/g35.jpg", "histo/g36.jpg", "histo/g37.jpg", "histo/g38.jpg", "histo/g39.jpg", "histo/g40.jpg", "histo/g41.jpg", "histo/g42.jpg", "histo/g43.jpg", "histo/g44.jpg", "histo/g45.jpg", "histo/g46.jpg", "histo/g47.jpg", "histo/g48.jpg", "histo/g49.jpg", "histo/g50.jpg", "histo/g51.jpg", "histo/rev01.jpg", "histo/rev02.jpg", "histo/rev03.jpg", "histo/rev04.jpg", "histo/rev05.jpg", "histo/rev06.jpg", "histo/rev07.jpg", "histo/rev08.jpg", "histo/rev09.jpg", "histo/rev10.jpg", "teo/c1_14.webp", "teo/c1b_23.webp", "teo/c1e_4.webp", "teo/c1e_5.webp", "teo/c2q_11.webp", "teo/c2q_3.webp", "teo/c2q_8.webp", "teo/c2s_12.webp", "teo/c2s_2.webp", "teo/c2s_30.webp", "teo/c2s_7.webp", "teo/c3b_10.webp", "teo/c3b_18.webp", "teo/c3b_7.webp", "teo/c3b_8.webp", "teo/c3b_9.webp", "teo/c3c_18.webp", "teo/c3c_19.webp", "teo/c3d_24.webp", "teo/c3e_11.webp", "teo/c3e_6.webp", "res/Resumo_Alca_de_Henle_e_Nefron_Distal.pdf", "res/Resumo_Embriologia_Sistema_Reprodutor.pdf", "res/Resumo_Embriologia_Sistema_Urinario.pdf", "res/Resumo_Fisiologia_Ciclo_Menstrual.pdf", "res/Resumo_Fisiologia_Renal_Filtracao_Glomerular.pdf", "res/Resumo_Fisiologia_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Aparelho_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Sistema_Genital_Feminino.pdf", "res/Resumo_Histologia_Sistema_Urinario.pdf", "res/Resumo_Mecanismos_Tubulares.pdf", "res/Resumo_Sistema_Genital_Feminino.pdf", "res/Resumo_Sistema_Genital_Masculino.pdf", "res/Resumo_Sistema_Urinario.pdf", "res/Resumo_Tratamento_Ejaculacao_Precoce.pdf", "res/Super_Resumo_AV1.pdf", "res/Super_Resumo_AV2.pdf", "res/ciclo/anatomia.webp", "res/ciclo/belchetz.webp", "res/ciclo/ciclos.webp", "res/ciclo/colo_dias.webp", "res/ciclo/corpo_luteo.webp", "res/ciclo/dominante.webp", "res/ciclo/duas_celulas.webp", "res/ciclo/duas_simples.webp", "res/ciclo/endossalpinge.webp", "res/ciclo/estagios_a.webp", "res/ciclo/estagios_b.webp", "res/ciclo/estigma.webp", "res/ciclo/feedback_neg.webp", "res/ciclo/folicular_fim.webp", "res/ciclo/folicular_ini.webp", "res/ciclo/histo_endo.webp", "res/ciclo/histo_folic.webp", "res/ciclo/hormonios.webp", "res/ciclo/idades.webp", "res/ciclo/independente.webp", "res/ciclo/intervalo.webp", "res/ciclo/kiss_arc_avpv.webp", "res/ciclo/kiss_leptina.webp", "res/ciclo/kiss_registro.webp", "res/ciclo/linha_tempo.webp", "res/ciclo/lutea_ctrl.webp", "res/ciclo/lutea_horm.webp", "res/ciclo/menopausa_e.webp", "res/ciclo/menopausa_g.webp", "res/ciclo/muco_e2.webp", "res/ciclo/muco_p4.webp", "res/ciclo/nucleos.webp", "res/ciclo/ovario_ciclo.webp", "res/ciclo/ovulacao.webp", "res/ciclo/primordial.webp", "res/ciclo/proliferativa.webp", "res/ciclo/pulsos_lh_fsh.webp", "res/ciclo/pulsos_mua.webp", "res/ciclo/reserva.webp", "res/ciclo/surto_lh.webp", "res/ciclo/temperatura.webp", "res/ciclo/utero_camadas.webp", "res/egen/cgp_migracao.webp", "res/egen/cordao.webp", "res/egen/cordoes_primitivos.webp", "res/egen/cortex_medula.webp", "res/egen/crista_corte.webp", "res/egen/crista_meso.webp", "res/egen/crista_uro.webp", "res/egen/defeitos_uterinos.webp", "res/egen/ductos_cloaca.webp", "res/egen/ductos_indif.webp", "res/egen/ductos_masc.webp", "res/egen/ext_homem_mulher.webp", "res/egen/ext_indif.webp", "res/egen/ext_tabela.webp", "res/egen/glandulas_masc.webp", "res/egen/gonada_indif.webp", "res/egen/hipo_epi.webp", "res/egen/hipospadia.webp", "res/egen/histo_infantil_adulto.webp", "res/egen/lig_largo.webp", "res/egen/lig_largo_corte.webp", "res/egen/muller_utero.webp", "res/egen/ovario_ab.webp", "res/egen/ovario_gartner.webp", "res/egen/paramesonefrico.webp", "res/egen/penis_escroto.webp", "res/egen/prostata_ab.webp", "res/egen/seio_ductos.webp", "res/egen/septo_uterino.webp", "res/egen/sry_cascata.webp", "res/egen/sry_xy.webp", "res/egen/testiculo_ab.webp", "res/egen/testiculo_des.webp", "res/egen/testiculo_fluxo.webp", "res/egen/utero_vagina_sem.webp", "res/egen/vagina_abc.webp", "res/egen/vulva_ab.webp", "res/ejac/alfa1.webp", "res/ejac/alvos.webp", "res/ejac/anestesicos.webp", "res/ejac/estagios.webp", "res/ejac/etiologia.webp", "res/ejac/fases.webp", "res/ejac/ielt.webp", "res/ejac/irs_agudo.webp", "res/ejac/irs_cronico.webp", "res/ejac/irs_fluxo.webp", "res/ejac/perspectivas.webp", "res/ejac/sindrome_ss.webp", "res/ejac/supraespinhal.webp", "res/ejac/tabela_isrs.webp", "res/ejac/tramadol.webp", "res/ejac/via_5ht.webp", "res/ejac/vias.webp", "res/eurin/acessorias.webp", "res/eurin/ascensao.webp", "res/eurin/broto.webp", "res/eurin/caso_massa.webp", "res/eurin/caso_ureterocele.webp", "res/eurin/coletor.webp", "res/eurin/duplicidade.webp", "res/eurin/ectopia.webp", "res/eurin/ectopico.webp", "res/eurin/ferradura.webp", "res/eurin/geracoes.webp", "res/eurin/indiferente.webp", "res/eurin/liquido.webp", "res/eurin/meso_ductos.webp", "res/eurin/metanefro.webp", "res/eurin/nefrogenese.webp", "res/eurin/nefron.webp", "res/eurin/netter_uretra.webp", "res/eurin/posic_ureteres.webp", "res/eurin/potter.webp", "res/eurin/pro_meso.webp", "res/eurin/ramificacao.webp", "res/eurin/rotacao.webp", "res/eurin/seio_ug.webp", "res/eurin/uraco.webp", "res/eurin/ureterocele_foto.webp", "res/eurin/vup.webp", "res/eurin/vup_adapt.webp", "res/eurin/wolff_deriv.webp", "res/fem/camadas.webp", "res/fem/episiotomia.webp", "res/fem/ligamentos.webp", "res/fem/mama.webp", "res/fem/ovario_corte.webp", "res/fem/perineo.webp", "res/fem/sagital.webp", "res/fem/tuba_frontal.webp", "res/fem/utero_idades.webp", "res/fem/vulva.webp", "res/fglom/autorregulacao.webp", "res/fglom/barreira_3d.webp", "res/fglom/camadas.webp", "res/fglom/capilar_duplo.webp", "res/fglom/carga.webp", "res/fglom/contratilidade.webp", "res/fglom/cortical_justa.webp", "res/fglom/doencas_fenda.webp", "res/fglom/efsr.webp", "res/fglom/extrinseca.webp", "res/fglom/fenestra.webp", "res/fglom/ftg.webp", "res/fglom/glomerulo_netter.webp", "res/fglom/hemorragia.webp", "res/fglom/macula_atp.webp", "res/fglom/mesangiais.webp", "res/fglom/miogenico_graf.webp", "res/fglom/nefrina_slit.webp", "res/fglom/peritubular.webp", "res/fglom/podocito_prot.webp", "res/fglom/regioes.webp", "res/fglom/renina_release.webp", "res/fglom/segmentos.webp", "res/fglom/segmentos_cel.webp", "res/fglom/starling_extra.webp", "res/fglom/starling_glom.webp", "res/fglom/tamanho.webp", "res/fglom/tipos_nefron.webp", "res/fglom/vasos_netter.webp", "res/fglom/vasos_retos.webp", "res/frmasc/barreira.webp", "res/frmasc/capacitacao.webp", "res/frmasc/circadiana.webp", "res/frmasc/compart.webp", "res/frmasc/efeitos_t.webp", "res/frmasc/eixo_berne.webp", "res/frmasc/epitelio.webp", "res/frmasc/esperm.webp", "res/frmasc/espermio.webp", "res/frmasc/fertilizacao.webp", "res/frmasc/glandulas.webp", "res/frmasc/kiss_fert.webp", "res/frmasc/kndy.webp", "res/frmasc/leydig_ester.webp", "res/frmasc/metab_t.webp", "res/frmasc/no_gmpc.webp", "res/frmasc/penis.webp", "res/frmasc/reflexo.webp", "res/frmasc/sertoli_func.webp", "res/frmasc/simpatico.webp", "res/frmasc/testiculo.webp", "res/ftub/aa_pept.webp", "res/ftub/adh_infusao.webp", "res/ftub/adh_valores.webp", "res/ftub/agua_tp.webp", "res/ftub/alca_carac.webp", "res/ftub/alca_valores.webp", "res/ftub/aldosterona.webp", "res/ftub/antiporte.webp", "res/ftub/aqp2.webp", "res/ftub/aqp_nefron.webp", "res/ftub/aqp_tipos.webp", "res/ftub/cilios.webp", "res/ftub/cl_dirigido.webp", "res/ftub/cl_formato.webp", "res/ftub/claudinas.webp", "res/ftub/glicose_tm.webp", "res/ftub/gradiente.webp", "res/ftub/hco3.webp", "res/ftub/intercaladas.webp", "res/ftub/na_tp.webp", "res/ftub/nacl_distal.webp", "res/ftub/nkcc.webp", "res/ftub/osmolaridade.webp", "res/ftub/perfil_tp.webp", "res/ftub/policistica.webp", "res/ftub/poupadores.webp", "res/ftub/proteinas.webp", "res/ftub/rae_canais.webp", "res/ftub/secrecao_pah.webp", "res/ftub/sglt_na.webp", "res/ftub/simporte.webp", "res/ftub/tabela_tp.webp", "res/ftub/tres_processos.webp", "res/ftub/vias.webp", "res/hfem/antral_he.webp", "res/hfem/cervice.webp", "res/hfem/ciclo_endo.webp", "res/hfem/ciclo_ovario.webp", "res/hfem/classif.webp", "res/hfem/corpo_luteo.webp", "res/hfem/cortex_ov.webp", "res/hfem/duas_celulas.webp", "res/hfem/eixo.webp", "res/hfem/endocervice.webp", "res/hfem/endometrio_esq.webp", "res/hfem/funcional.webp", "res/hfem/graaf.webp", "res/hfem/jec.webp", "res/hfem/luteinicas.webp", "res/hfem/miometrio.webp", "res/hfem/ovario_corte.webp", "res/hfem/ovulacao.webp", "res/hfem/primarios_he.webp", "res/hfem/primordiais.webp", "res/hfem/tecas.webp", "res/hfem/tuba_he.webp", "res/hfem/vagina.webp", "res/hmasc/albuginea_leydig.webp", "res/hmasc/barreira_ht.webp", "res/hmasc/concrecoes.webp", "res/hmasc/controle.webp", "res/hmasc/deferente.webp", "res/hmasc/ductos.webp", "res/hmasc/ejaculatorios.webp", "res/hmasc/epididimo.webp", "res/hmasc/epididimo_det.webp", "res/hmasc/epitelio_esq.webp", "res/hmasc/epitelio_germ.webp", "res/hmasc/epitelio_leydig.webp", "res/hmasc/eretil.webp", "res/hmasc/espermiogenese.webp", "res/hmasc/penis_corte.webp", "res/hmasc/penis_esq.webp", "res/hmasc/prostata_gland.webp", "res/hmasc/prostata_lam.webp", "res/hmasc/prostata_zonas.webp", "res/hmasc/testiculo.webp", "res/hmasc/testiculo_esq.webp", "res/hmasc/tubulos_sem.webp", "res/huri/alca_coletor.webp", "res/huri/barreira_diag.webp", "res/huri/bexiga_camadas.webp", "res/huri/bexiga_urotelio.webp", "res/huri/corpusculo.webp", "res/huri/corpusculo_jga.webp", "res/huri/cortex_medula.webp", "res/huri/diafragma.webp", "res/huri/glomerulo.webp", "res/huri/macula_densa.webp", "res/huri/papila.webp", "res/huri/podocitos.webp", "res/huri/raio_medular.webp", "res/huri/rim_lamina.webp", "res/huri/tcp.webp", "res/huri/tcp_tcd.webp", "res/huri/ureter.webp", "res/huri/ureter_ab.webp", "res/huri/uretra_fem.webp", "res/huri/vascularizacao.webp", "res/masc/camadas_diag.webp", "res/masc/descida.webp", "res/masc/epididimo_frontal.webp", "res/masc/escroto_netter.webp", "res/masc/irrigacao.webp", "res/masc/penis_face.webp", "res/masc/penis_vasos.webp", "res/masc/posterior_bexiga.webp", "res/masc/prostata_cortes.webp", "res/masc/prostata_frontal.webp", "res/masc/vesiculas_netter.webp", "res/masc/visao.webp", "res/slides/ahnd_01.webp", "res/slides/ahnd_02.webp", "res/slides/ahnd_03.webp", "res/slides/ahnd_04.webp", "res/slides/ahnd_05.webp", "res/slides/ahnd_06.webp", "res/slides/ahnd_07.webp", "res/slides/ahnd_08.webp", "res/slides/ahnd_09.webp", "res/slides/ahnd_10.webp", "res/slides/ahnd_11.webp", "res/slides/ahnd_12.webp", "res/slides/ahnd_13.webp", "res/slides/ahnd_14.webp", "res/slides/ahnd_15.webp", "res/slides/ahnd_16.webp", "res/slides/ahnd_17.webp", "res/slides/ahnd_18.webp", "res/slides/ahnd_19.webp", "res/slides/ahnd_20.webp", "res/slides/ahnd_21.webp", "res/slides/ahnd_22.webp", "res/slides/ahnd_23.webp", "res/slides/ahnd_24.webp", "res/slides/ciclo_01.webp", "res/slides/ciclo_02.webp", "res/slides/ciclo_03.webp", "res/slides/ciclo_04.webp", "res/slides/ciclo_05.webp", "res/slides/ciclo_06.webp", "res/slides/ciclo_07.webp", "res/slides/ciclo_08.webp", "res/slides/ciclo_09.webp", "res/slides/ciclo_10.webp", "res/slides/ciclo_11.webp", "res/slides/ciclo_12.webp", "res/slides/ciclo_13.webp", "res/slides/ciclo_14.webp", "res/slides/ciclo_15.webp", "res/slides/ciclo_16.webp", "res/slides/ciclo_17.webp", "res/slides/ciclo_18.webp", "res/slides/ciclo_19.webp", "res/slides/ciclo_20.webp", "res/slides/ciclo_21.webp", "res/slides/ciclo_22.webp", "res/slides/ciclo_23.webp", "res/slides/ciclo_24.webp", "res/slides/ciclo_25.webp", "res/slides/ciclo_26.webp", "res/slides/ciclo_27.webp", "res/slides/ciclo_28.webp", "res/slides/ciclo_29.webp", "res/slides/ciclo_30.webp", "res/slides/ciclo_31.webp", "res/slides/ciclo_32.webp", "res/slides/ciclo_33.webp", "res/slides/ciclo_34.webp", "res/slides/ciclo_35.webp", "res/slides/ciclo_36.webp", "res/slides/ciclo_37.webp", "res/slides/ciclo_38.webp", "res/slides/ciclo_39.webp", "res/slides/ciclo_40.webp", "res/slides/ciclo_41.webp", "res/slides/ciclo_42.webp", "res/slides/ciclo_43.webp", "res/slides/ciclo_44.webp", "res/slides/ciclo_45.webp", "res/slides/ciclo_46.webp", "res/slides/ciclo_47.webp", "res/slides/ciclo_48.webp", "res/slides/ciclo_49.webp", "res/slides/ciclo_50.webp", "res/slides/ciclo_51.webp", "res/slides/ciclo_52.webp", "res/slides/ciclo_53.webp", "res/slides/ciclo_54.webp", "res/slides/ciclo_55.webp", "res/slides/ciclo_56.webp", "res/slides/ciclo_57.webp", "res/slides/ciclo_58.webp", "res/slides/ciclo_59.webp", "res/slides/ciclo_60.webp", "res/slides/ciclo_61.webp", "res/slides/ciclo_62.webp", "res/slides/ciclo_63.webp", "res/slides/ciclo_64.webp", "res/slides/ciclo_65.webp", "res/slides/ciclo_66.webp", "res/slides/ciclo_67.webp", "res/slides/ciclo_68.webp", "res/slides/ciclo_69.webp", "res/slides/ciclo_70.webp", "res/slides/ciclo_71.webp", "res/slides/ciclo_72.webp", "res/slides/ciclo_73.webp", "res/slides/ciclo_74.webp", "res/slides/ciclo_75.webp", "res/slides/ciclo_76.webp", "res/slides/ciclo_77.webp", "res/slides/ciclo_78.webp", "res/slides/ciclo_79.webp", "res/slides/ciclo_80.webp", "res/slides/egen_01.webp", "res/slides/egen_02.webp", "res/slides/egen_03.webp", "res/slides/egen_04.webp", "res/slides/egen_05.webp", "res/slides/egen_06.webp", "res/slides/egen_07.webp", "res/slides/egen_08.webp", "res/slides/egen_09.webp", "res/slides/egen_10.webp", "res/slides/egen_11.webp", "res/slides/egen_12.webp", "res/slides/egen_13.webp", "res/slides/egen_14.webp", "res/slides/egen_15.webp", "res/slides/egen_16.webp", "res/slides/egen_17.webp", "res/slides/egen_18.webp", "res/slides/egen_19.webp", "res/slides/egen_20.webp", "res/slides/egen_21.webp", "res/slides/egen_22.webp", "res/slides/egen_23.webp", "res/slides/egen_24.webp", "res/slides/egen_25.webp", "res/slides/egen_26.webp", "res/slides/egen_27.webp", "res/slides/egen_28.webp", "res/slides/egen_29.webp", "res/slides/egen_30.webp", "res/slides/egen_31.webp", "res/slides/egen_32.webp", "res/slides/egen_33.webp", "res/slides/egen_34.webp", "res/slides/egen_35.webp", "res/slides/egen_36.webp", "res/slides/egen_37.webp", "res/slides/egen_38.webp", "res/slides/egen_39.webp", "res/slides/egen_40.webp", "res/slides/egen_41.webp", "res/slides/egen_42.webp", "res/slides/egen_43.webp", "res/slides/egen_44.webp", "res/slides/egen_45.webp", "res/slides/egen_46.webp", "res/slides/egen_47.webp", "res/slides/egen_48.webp", "res/slides/egen_49.webp", "res/slides/egen_50.webp", "res/slides/egen_51.webp", "res/slides/egen_52.webp", "res/slides/egen_53.webp", "res/slides/egen_54.webp", "res/slides/egen_55.webp", "res/slides/egen_56.webp", "res/slides/egen_57.webp", "res/slides/egen_58.webp", "res/slides/egen_59.webp", "res/slides/egen_60.webp", "res/slides/egen_61.webp", "res/slides/egen_62.webp", "res/slides/egen_63.webp", "res/slides/ejac_01.webp", "res/slides/ejac_02.webp", "res/slides/ejac_03.webp", "res/slides/ejac_04.webp", "res/slides/ejac_05.webp", "res/slides/ejac_06.webp", "res/slides/ejac_07.webp", "res/slides/ejac_08.webp", "res/slides/ejac_09.webp", "res/slides/ejac_10.webp", "res/slides/ejac_11.webp", "res/slides/ejac_12.webp", "res/slides/ejac_13.webp", "res/slides/ejac_14.webp", "res/slides/ejac_15.webp", "res/slides/ejac_16.webp", "res/slides/ejac_17.webp", "res/slides/ejac_18.webp", "res/slides/ejac_19.webp", "res/slides/ejac_20.webp", "res/slides/ejac_21.webp", "res/slides/ejac_22.webp", "res/slides/ejac_23.webp", "res/slides/ejac_24.webp", "res/slides/ejac_25.webp", "res/slides/ejac_26.webp", "res/slides/ejac_27.webp", "res/slides/ejac_28.webp", "res/slides/ejac_29.webp", "res/slides/ejac_30.webp", "res/slides/ejac_31.webp", "res/slides/ejac_32.webp", "res/slides/ejac_33.webp", "res/slides/ejac_34.webp", "res/slides/ejac_35.webp", "res/slides/ejac_36.webp", "res/slides/ejac_37.webp", "res/slides/ejac_38.webp", "res/slides/ejac_39.webp", "res/slides/ejac_40.webp", "res/slides/eurin_01.webp", "res/slides/eurin_02.webp", "res/slides/eurin_03.webp", "res/slides/eurin_04.webp", "res/slides/eurin_05.webp", "res/slides/eurin_06.webp", "res/slides/eurin_07.webp", "res/slides/eurin_08.webp", "res/slides/eurin_09.webp", "res/slides/eurin_10.webp", "res/slides/eurin_11.webp", "res/slides/eurin_12.webp", "res/slides/eurin_13.webp", "res/slides/eurin_14.webp", "res/slides/eurin_15.webp", "res/slides/eurin_16.webp", "res/slides/eurin_17.webp", "res/slides/eurin_18.webp", "res/slides/eurin_19.webp", "res/slides/eurin_20.webp", "res/slides/eurin_21.webp", "res/slides/eurin_22.webp", "res/slides/eurin_23.webp", "res/slides/eurin_24.webp", "res/slides/eurin_25.webp", "res/slides/eurin_26.webp", "res/slides/eurin_27.webp", "res/slides/eurin_28.webp", "res/slides/eurin_29.webp", "res/slides/eurin_30.webp", "res/slides/eurin_31.webp", "res/slides/eurin_32.webp", "res/slides/eurin_33.webp", "res/slides/eurin_34.webp", "res/slides/eurin_35.webp", "res/slides/eurin_36.webp", "res/slides/eurin_37.webp", "res/slides/eurin_38.webp", "res/slides/eurin_39.webp", "res/slides/eurin_40.webp", "res/slides/eurin_41.webp", "res/slides/eurin_42.webp", "res/slides/eurin_43.webp", "res/slides/eurin_44.webp", "res/slides/eurin_45.webp", "res/slides/eurin_46.webp", "res/slides/fem_01.webp", "res/slides/fem_02.webp", "res/slides/fem_03.webp", "res/slides/fem_04.webp", "res/slides/fem_05.webp", "res/slides/fem_06.webp", "res/slides/fem_07.webp", "res/slides/fem_08.webp", "res/slides/fem_09.webp", "res/slides/fem_10.webp", "res/slides/fem_11.webp", "res/slides/fem_12.webp", "res/slides/fem_13.webp", "res/slides/fem_14.webp", "res/slides/fem_15.webp", "res/slides/fem_16.webp", "res/slides/fem_17.webp", "res/slides/fem_18.webp", "res/slides/fem_19.webp", "res/slides/fem_20.webp", "res/slides/fem_21.webp", "res/slides/fem_22.webp", "res/slides/fem_23.webp", "res/slides/fem_24.webp", "res/slides/fem_25.webp", "res/slides/fem_26.webp", "res/slides/fem_27.webp", "res/slides/fem_28.webp", "res/slides/fem_29.webp", "res/slides/fem_30.webp", "res/slides/fem_31.webp", "res/slides/fem_32.webp", "res/slides/fem_33.webp", "res/slides/fem_34.webp", "res/slides/fem_35.webp", "res/slides/fem_36.webp", "res/slides/fem_37.webp", "res/slides/fem_38.webp", "res/slides/fem_39.webp", "res/slides/fem_40.webp", "res/slides/fglom_01.webp", "res/slides/fglom_02.webp", "res/slides/fglom_03.webp", "res/slides/fglom_04.webp", "res/slides/fglom_05.webp", "res/slides/fglom_06.webp", "res/slides/fglom_07.webp", "res/slides/fglom_08.webp", "res/slides/fglom_09.webp", "res/slides/fglom_10.webp", "res/slides/fglom_11.webp", "res/slides/fglom_12.webp", "res/slides/fglom_13.webp", "res/slides/fglom_14.webp", "res/slides/fglom_15.webp", "res/slides/fglom_16.webp", "res/slides/fglom_17.webp", "res/slides/fglom_18.webp", "res/slides/fglom_19.webp", "res/slides/fglom_20.webp", "res/slides/fglom_21.webp", "res/slides/fglom_22.webp", "res/slides/fglom_23.webp", "res/slides/fglom_24.webp", "res/slides/fglom_25.webp", "res/slides/fglom_26.webp", "res/slides/fglom_27.webp", "res/slides/fglom_28.webp", "res/slides/fglom_29.webp", "res/slides/fglom_30.webp", "res/slides/fglom_31.webp", "res/slides/fglom_32.webp", "res/slides/fglom_33.webp", "res/slides/fglom_34.webp", "res/slides/fglom_35.webp", "res/slides/fglom_36.webp", "res/slides/fglom_37.webp", "res/slides/fglom_38.webp", "res/slides/fglom_39.webp", "res/slides/fglom_40.webp", "res/slides/fglom_41.webp", "res/slides/fglom_42.webp", "res/slides/fglom_43.webp", "res/slides/fglom_44.webp", "res/slides/fglom_45.webp", "res/slides/fglom_46.webp", "res/slides/fglom_47.webp", "res/slides/fglom_48.webp", "res/slides/fglom_49.webp", "res/slides/fglom_50.webp", "res/slides/fglom_51.webp", "res/slides/fglom_52.webp", "res/slides/fglom_53.webp", "res/slides/fglom_54.webp", "res/slides/fglom_55.webp", "res/slides/fglom_56.webp", "res/slides/fglom_57.webp", "res/slides/fglom_58.webp", "res/slides/fglom_59.webp", "res/slides/fglom_60.webp", "res/slides/fglom_61.webp", "res/slides/fglom_62.webp", "res/slides/fglom_63.webp", "res/slides/fglom_64.webp", "res/slides/fglom_65.webp", "res/slides/fglom_66.webp", "res/slides/fglom_67.webp", "res/slides/fglom_68.webp", "res/slides/fglom_69.webp", "res/slides/fglom_70.webp", "res/slides/fglom_71.webp", "res/slides/fglom_72.webp", "res/slides/fglom_73.webp", "res/slides/fglom_74.webp", "res/slides/frmasc_01.webp", "res/slides/frmasc_02.webp", "res/slides/frmasc_03.webp", "res/slides/frmasc_04.webp", "res/slides/frmasc_05.webp", "res/slides/frmasc_06.webp", "res/slides/frmasc_07.webp", "res/slides/frmasc_08.webp", "res/slides/frmasc_09.webp", "res/slides/frmasc_10.webp", "res/slides/frmasc_11.webp", "res/slides/frmasc_12.webp", "res/slides/frmasc_13.webp", "res/slides/frmasc_14.webp", "res/slides/frmasc_15.webp", "res/slides/frmasc_16.webp", "res/slides/frmasc_17.webp", "res/slides/frmasc_18.webp", "res/slides/frmasc_19.webp", "res/slides/frmasc_20.webp", "res/slides/frmasc_21.webp", "res/slides/frmasc_22.webp", "res/slides/frmasc_23.webp", "res/slides/frmasc_24.webp", "res/slides/frmasc_25.webp", "res/slides/frmasc_26.webp", "res/slides/frmasc_27.webp", "res/slides/frmasc_28.webp", "res/slides/frmasc_29.webp", "res/slides/frmasc_30.webp", "res/slides/frmasc_31.webp", "res/slides/frmasc_32.webp", "res/slides/frmasc_33.webp", "res/slides/frmasc_34.webp", "res/slides/frmasc_35.webp", "res/slides/frmasc_36.webp", "res/slides/frmasc_37.webp", "res/slides/frmasc_38.webp", "res/slides/frmasc_39.webp", "res/slides/frmasc_40.webp", "res/slides/ftub_01.webp", "res/slides/ftub_02.webp", "res/slides/ftub_03.webp", "res/slides/ftub_04.webp", "res/slides/ftub_05.webp", "res/slides/ftub_06.webp", "res/slides/ftub_07.webp", "res/slides/ftub_08.webp", "res/slides/ftub_09.webp", "res/slides/ftub_10.webp", "res/slides/ftub_11.webp", "res/slides/ftub_12.webp", "res/slides/ftub_13.webp", "res/slides/ftub_14.webp", "res/slides/ftub_15.webp", "res/slides/ftub_16.webp", "res/slides/ftub_17.webp", "res/slides/ftub_18.webp", "res/slides/ftub_19.webp", "res/slides/ftub_20.webp", "res/slides/ftub_21.webp", "res/slides/ftub_22.webp", "res/slides/ftub_23.webp", "res/slides/ftub_24.webp", "res/slides/ftub_25.webp", "res/slides/ftub_26.webp", "res/slides/ftub_27.webp", "res/slides/ftub_28.webp", "res/slides/ftub_29.webp", "res/slides/ftub_30.webp", "res/slides/ftub_31.webp", "res/slides/ftub_32.webp", "res/slides/ftub_33.webp", "res/slides/ftub_34.webp", "res/slides/ftub_35.webp", "res/slides/ftub_36.webp", "res/slides/ftub_37.webp", "res/slides/ftub_38.webp", "res/slides/ftub_39.webp", "res/slides/ftub_40.webp", "res/slides/ftub_41.webp", "res/slides/hfem_01.webp", "res/slides/hfem_02.webp", "res/slides/hfem_03.webp", "res/slides/hfem_04.webp", "res/slides/hfem_05.webp", "res/slides/hfem_06.webp", "res/slides/hfem_07.webp", "res/slides/hfem_08.webp", "res/slides/hfem_09.webp", "res/slides/hfem_10.webp", "res/slides/hfem_11.webp", "res/slides/hfem_12.webp", "res/slides/hfem_13.webp", "res/slides/hfem_14.webp", "res/slides/hfem_15.webp", "res/slides/hfem_16.webp", "res/slides/hfem_17.webp", "res/slides/hfem_18.webp", "res/slides/hfem_19.webp", "res/slides/hfem_20.webp", "res/slides/hfem_21.webp", "res/slides/hfem_22.webp", "res/slides/hfem_23.webp", "res/slides/hfem_24.webp", "res/slides/hfem_25.webp", "res/slides/hfem_26.webp", "res/slides/hfem_27.webp", "res/slides/hfem_28.webp", "res/slides/hfem_29.webp", "res/slides/hfem_30.webp", "res/slides/hfem_31.webp", "res/slides/hfem_32.webp", "res/slides/hfem_33.webp", "res/slides/hfem_34.webp", "res/slides/hfem_35.webp", "res/slides/hfem_36.webp", "res/slides/hfem_37.webp", "res/slides/hfem_38.webp", "res/slides/hfem_39.webp", "res/slides/hfem_40.webp", "res/slides/hfem_41.webp", "res/slides/hfem_42.webp", "res/slides/hfem_43.webp", "res/slides/hfem_44.webp", "res/slides/hfem_45.webp", "res/slides/hfem_46.webp", "res/slides/hfem_47.webp", "res/slides/hfem_48.webp", "res/slides/hfem_49.webp", "res/slides/hfem_50.webp", "res/slides/hmasc_01.webp", "res/slides/hmasc_02.webp", "res/slides/hmasc_03.webp", "res/slides/hmasc_04.webp", "res/slides/hmasc_05.webp", "res/slides/hmasc_06.webp", "res/slides/hmasc_07.webp", "res/slides/hmasc_08.webp", "res/slides/hmasc_09.webp", "res/slides/hmasc_10.webp", "res/slides/hmasc_11.webp", "res/slides/hmasc_12.webp", "res/slides/hmasc_13.webp", "res/slides/hmasc_14.webp", "res/slides/hmasc_15.webp", "res/slides/hmasc_16.webp", "res/slides/hmasc_17.webp", "res/slides/hmasc_18.webp", "res/slides/hmasc_19.webp", "res/slides/hmasc_20.webp", "res/slides/hmasc_21.webp", "res/slides/hmasc_22.webp", "res/slides/hmasc_23.webp", "res/slides/hmasc_24.webp", "res/slides/hmasc_25.webp", "res/slides/hmasc_26.webp", "res/slides/hmasc_27.webp", "res/slides/hmasc_28.webp", "res/slides/hmasc_29.webp", "res/slides/hmasc_30.webp", "res/slides/hmasc_31.webp", "res/slides/hmasc_32.webp", "res/slides/hmasc_33.webp", "res/slides/hmasc_34.webp", "res/slides/hmasc_35.webp", "res/slides/hmasc_36.webp", "res/slides/hmasc_37.webp", "res/slides/hmasc_38.webp", "res/slides/hmasc_39.webp", "res/slides/hmasc_40.webp", "res/slides/hmasc_41.webp", "res/slides/huri_01.webp", "res/slides/huri_02.webp", "res/slides/huri_03.webp", "res/slides/huri_04.webp", "res/slides/huri_05.webp", "res/slides/huri_06.webp", "res/slides/huri_07.webp", "res/slides/huri_08.webp", "res/slides/huri_09.webp", "res/slides/huri_10.webp", "res/slides/huri_11.webp", "res/slides/huri_12.webp", "res/slides/huri_13.webp", "res/slides/huri_14.webp", "res/slides/huri_15.webp", "res/slides/huri_16.webp", "res/slides/huri_17.webp", "res/slides/huri_18.webp", "res/slides/huri_19.webp", "res/slides/huri_20.webp", "res/slides/huri_21.webp", "res/slides/huri_22.webp", "res/slides/huri_23.webp", "res/slides/huri_24.webp", "res/slides/huri_25.webp", "res/slides/huri_26.webp", "res/slides/huri_27.webp", "res/slides/huri_28.webp", "res/slides/huri_29.webp", "res/slides/huri_30.webp", "res/slides/huri_31.webp", "res/slides/huri_32.webp", "res/slides/huri_33.webp", "res/slides/huri_34.webp", "res/slides/huri_35.webp", "res/slides/huri_36.webp", "res/slides/huri_37.webp", "res/slides/huri_38.webp", "res/slides/huri_39.webp", "res/slides/huri_40.webp", "res/slides/huri_41.webp", "res/slides/huri_42.webp", "res/slides/huri_43.webp", "res/slides/huri_44.webp", "res/slides/huri_45.webp", "res/slides/huri_46.webp", "res/slides/huri_47.webp", "res/slides/huri_48.webp", "res/slides/masc_01.webp", "res/slides/masc_02.webp", "res/slides/masc_03.webp", "res/slides/masc_04.webp", "res/slides/masc_05.webp", "res/slides/masc_06.webp", "res/slides/masc_07.webp", "res/slides/masc_08.webp", "res/slides/masc_09.webp", "res/slides/masc_10.webp", "res/slides/masc_11.webp", "res/slides/masc_12.webp", "res/slides/masc_13.webp", "res/slides/masc_14.webp", "res/slides/masc_15.webp", "res/slides/masc_16.webp", "res/slides/masc_17.webp", "res/slides/masc_18.webp", "res/slides/masc_19.webp", "res/slides/masc_20.webp", "res/slides/masc_21.webp", "res/slides/masc_22.webp", "res/slides/masc_23.webp", "res/slides/masc_24.webp", "res/slides/masc_25.webp", "res/slides/masc_26.webp", "res/slides/masc_27.webp", "res/slides/masc_28.webp", "res/slides/masc_29.webp", "res/slides/masc_30.webp", "res/slides/masc_31.webp", "res/slides/masc_32.webp", "res/slides/masc_33.webp", "res/slides/masc_34.webp", "res/slides/masc_35.webp", "res/slides/masc_36.webp", "res/slides/masc_37.webp", "res/slides/masc_38.webp", "res/slides/masc_39.webp", "res/slides/masc_40.webp", "res/slides/masc_41.webp", "res/slides/masc_42.webp", "res/slides/masc_43.webp", "res/slides/masc_44.webp", "res/slides/uri_01.webp", "res/slides/uri_02.webp", "res/slides/uri_03.webp", "res/slides/uri_04.webp", "res/slides/uri_05.webp", "res/slides/uri_06.webp", "res/slides/uri_07.webp", "res/slides/uri_08.webp", "res/slides/uri_09.webp", "res/slides/uri_10.webp", "res/slides/uri_11.webp", "res/slides/uri_12.webp", "res/slides/uri_13.webp", "res/slides/uri_14.webp", "res/slides/uri_15.webp", "res/slides/uri_16.webp", "res/slides/uri_17.webp", "res/slides/uri_18.webp", "res/slides/uri_19.webp", "res/slides/uri_20.webp", "res/slides/uri_21.webp", "res/slides/uri_22.webp", "res/slides/uri_23.webp", "res/slides/uri_24.webp", "res/slides/uri_25.webp", "res/slides/uri_26.webp", "res/slides/uri_27.webp", "res/slides/uri_28.webp", "res/slides/uri_29.webp", "res/slides/uri_30.webp", "res/slides/uri_31.webp", "res/slides/uri_32.webp", "res/slides/uri_33.webp", "res/slides/uri_34.webp", "res/slides/uri_35.webp", "res/slides/uri_36.webp", "res/slides/uri_37.webp", "res/slides/uri_38.webp", "res/slides/uri_39.webp", "res/slides/uri_40.webp", "res/slides/uri_41.webp", "res/slides/uri_42.webp", "res/slides/uri_43.webp", "res/slides/uri_44.webp", "res/slides/uri_45.webp", "res/slides/uri_46.webp", "res/slides/uri_47.webp", "res/slides/uri_48.webp", "res/slides/uri_49.webp", "res/slides/uri_50.webp", "res/slides/uri_51.webp", "res/slides/uri_52.webp", "res/slides/uri_53.webp", "res/slides/uri_54.webp", "res/slides/uri_55.webp", "res/slides/uri_56.webp", "res/slides/uri_57.webp", "res/slides/uri_58.webp", "res/slides/uri_59.webp", "res/slides/uri_60.webp", "res/slides/uri_61.webp", "res/slides/uri_62.webp", "res/slides/uri_63.webp", "res/slides/uri_64.webp", "res/slides/uri_65.webp", "res/slides/uri_66.webp", "res/slides/uri_67.webp", "res/slides/uri_68.webp", "res/slides/uri_69.webp", "res/slides/uri_70.webp", "res/slides/uri_71.webp", "res/slides/uri_72.webp", "res/slides/uri_73.webp", "res/slides/uri_74.webp", "res/slides/uri_75.webp", "res/slides/uri_76.webp", "res/slides/uri_77.webp", "res/slides/uri_78.webp", "res/slides/uri_79.webp", "res/slides/uri_80.webp", "res/slides/uri_81.webp", "res/slides/uri_82.webp", "res/slides/uri_83.webp", "res/slides/uri_84.webp", "res/slides/uri_85.webp", "res/slides/uri_86.webp", "res/slides/uri_87.webp", "res/slides/uri_88.webp", "res/slides/uri_89.webp", "res/slides/uri_90.webp", "res/slides/uri_91.webp", "res/slides/uri_92.webp", "res/slides/uri_93.webp", "res/slides/uri_94.webp", "res/slides/uri_95.webp", "res/uri/acessorias.webp", "res/uri/bexiga_config.webp", "res/uri/bexiga_frontal.webp", "res/uri/caso.webp", "res/uri/diaf_urogenital.webp", "res/uri/faces.webp", "res/uri/fascia.webp", "res/uri/levantador.webp", "res/uri/necrose.webp", "res/uri/nutcracker.webp", "res/uri/segmentos.webp", "res/uri/skene.webp", "res/uri/ureter_mulher.webp", "res/uri/uretra_frontal.webp", "res/uri/urografia.webp", "res/uri/vasos_insitu.webp", "res/uri/vasos_intra.webp", "res/uri/visao.webp"],CACHE="gu-ad1e1edc06",had=!!navigator.serviceWorker.controller,say=window.__guSay,pill=document.getElementById("gu-pill");
+var FILES=["./", "index.html", "manifest.json", "icone-180.png", "icone-192.png", "icone-512.png", "img/art_aorta.jpg", "img/art_iliaca_comum.jpg", "img/art_ilinterna.jpg", "img/bexiga_trigono.jpg", "img/bx_modelo.jpg", "img/bx_puboprostatico.jpg", "img/bx_pubovesical.jpg", "img/colo_utero.jpg", "img/esc_camadas.jpg", "img/esc_funiculo_anel.jpg", "img/esc_testiculo.jpg", "img/escavacoes.jpg", "img/f_hemipelve.jpg", "img/f_hemipelve_labios.jpg", "img/f_lig_redondo.jpg", "img/f_mesovario.jpg", "img/f_ovario_suspensor.jpg", "img/f_vulva_alfinetes.jpg", "img/ligamento_largo.jpg", "img/m_ampola_deferente.jpg", "img/m_arteria_dorsal.jpg", "img/m_escroto_aberto.jpg", "img/m_fascias_escroto.jpg", "img/m_frenulo.jpg", "img/m_frenulo_prepucio.jpg", "img/m_glande_frenulo.jpg", "img/m_modelo.jpg", "img/m_penis_corte.jpg", "img/m_penis_dorsal.jpg", "img/m_penis_transversal.jpg", "img/m_perineo.jpg", "img/m_perineo_alfinetes.jpg", "img/m_prepucio.jpg", "img/m_prostata_sagital.jpg", "img/m_sagital.jpg", "img/m_sagital_bexiga.jpg", "img/m_sagital_escavacoes.jpg", "img/m_sagital_penis.jpg", "img/m_sagital_prostata.jpg", "img/m_tunicas_testiculo.jpg", "img/m_veia_dorsal.jpg", "img/m_vesicula_isolada.jpg", "img/mesos.jpg", "img/ovario_fornices.jpg", "img/ovario_ligamentos.jpg", "img/rim_aberto.jpg", "img/rim_capsula.jpg", "img/rim_colunas.jpg", "img/rim_corte.jpg", "img/rim_hilo.jpg", "img/rim_pediculo.jpg", "img/rim_vasos.jpg", "img/tuba_uterina.jpg", "img/u_arteria_renal_dir.jpg", "img/u_arteria_renal_esq.jpg", "img/u_bexiga_trigono.jpg", "img/u_hilo.jpg", "img/u_rim_calices.jpg", "img/u_rim_papila.jpg", "img/u_rins_margens.jpg", "img/u_rins_vasos.jpg", "img/u_ureter_trajeto.jpg", "img/ureter_iliaca.jpg", "img/ureter_jup.jpg", "img/ureter_partes.jpg", "img/utero_camadas.jpg", "img/utero_partes.jpg", "img/utero_posterior.jpg", "img/utero_sagital.jpg", "img/vagina_fornices.jpg", "img/vasos_gonadais.jpg", "img/vasos_testicular.jpg", "img/vulva_externa.jpg", "img/vulva_partes.jpg", "histo/g01.jpg", "histo/g02.jpg", "histo/g03.jpg", "histo/g04.jpg", "histo/g05.jpg", "histo/g06.jpg", "histo/g07.jpg", "histo/g08.jpg", "histo/g09.jpg", "histo/g10.jpg", "histo/g11.jpg", "histo/g12.jpg", "histo/g13.jpg", "histo/g14.jpg", "histo/g15.jpg", "histo/g16.jpg", "histo/g17.jpg", "histo/g18.jpg", "histo/g19.jpg", "histo/g20.jpg", "histo/g21.jpg", "histo/g22.jpg", "histo/g23.jpg", "histo/g24.jpg", "histo/g25.jpg", "histo/g26.jpg", "histo/g27.jpg", "histo/g28.jpg", "histo/g29.jpg", "histo/g30.jpg", "histo/g31.jpg", "histo/g32.jpg", "histo/g33.jpg", "histo/g34.jpg", "histo/g35.jpg", "histo/g36.jpg", "histo/g37.jpg", "histo/g38.jpg", "histo/g39.jpg", "histo/g40.jpg", "histo/g41.jpg", "histo/g42.jpg", "histo/g43.jpg", "histo/g44.jpg", "histo/g45.jpg", "histo/g46.jpg", "histo/g47.jpg", "histo/g48.jpg", "histo/g49.jpg", "histo/g50.jpg", "histo/g51.jpg", "histo/rev01.jpg", "histo/rev02.jpg", "histo/rev03.jpg", "histo/rev04.jpg", "histo/rev05.jpg", "histo/rev06.jpg", "histo/rev07.jpg", "histo/rev08.jpg", "histo/rev09.jpg", "histo/rev10.jpg", "teo/c1_14.webp", "teo/c1b_23.webp", "teo/c1e_4.webp", "teo/c1e_5.webp", "teo/c2q_11.webp", "teo/c2q_3.webp", "teo/c2q_8.webp", "teo/c2s_12.webp", "teo/c2s_2.webp", "teo/c2s_30.webp", "teo/c2s_7.webp", "teo/c3b_10.webp", "teo/c3b_18.webp", "teo/c3b_7.webp", "teo/c3b_8.webp", "teo/c3b_9.webp", "teo/c3c_18.webp", "teo/c3c_19.webp", "teo/c3d_24.webp", "teo/c3e_11.webp", "teo/c3e_6.webp", "res/Resumo_Alca_de_Henle_e_Nefron_Distal.pdf", "res/Resumo_Concentracao_Urinaria.pdf", "res/Resumo_Embriologia_Sistema_Reprodutor.pdf", "res/Resumo_Embriologia_Sistema_Urinario.pdf", "res/Resumo_Fisiologia_Ciclo_Menstrual.pdf", "res/Resumo_Fisiologia_Renal_Filtracao_Glomerular.pdf", "res/Resumo_Fisiologia_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Aparelho_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Sistema_Genital_Feminino.pdf", "res/Resumo_Histologia_Sistema_Urinario.pdf", "res/Resumo_Mecanismos_Tubulares.pdf", "res/Resumo_Regulacao_Agua_e_Sodio.pdf", "res/Resumo_Sistema_Genital_Feminino.pdf", "res/Resumo_Sistema_Genital_Masculino.pdf", "res/Resumo_Sistema_Urinario.pdf", "res/Resumo_Tratamento_Ejaculacao_Precoce.pdf", "res/Super_Resumo_AV1.pdf", "res/Super_Resumo_AV2.pdf", "res/ciclo/anatomia.webp", "res/ciclo/belchetz.webp", "res/ciclo/ciclos.webp", "res/ciclo/colo_dias.webp", "res/ciclo/corpo_luteo.webp", "res/ciclo/dominante.webp", "res/ciclo/duas_celulas.webp", "res/ciclo/duas_simples.webp", "res/ciclo/endossalpinge.webp", "res/ciclo/estagios_a.webp", "res/ciclo/estagios_b.webp", "res/ciclo/estigma.webp", "res/ciclo/feedback_neg.webp", "res/ciclo/folicular_fim.webp", "res/ciclo/folicular_ini.webp", "res/ciclo/histo_endo.webp", "res/ciclo/histo_folic.webp", "res/ciclo/hormonios.webp", "res/ciclo/idades.webp", "res/ciclo/independente.webp", "res/ciclo/intervalo.webp", "res/ciclo/kiss_arc_avpv.webp", "res/ciclo/kiss_leptina.webp", "res/ciclo/kiss_registro.webp", "res/ciclo/linha_tempo.webp", "res/ciclo/lutea_ctrl.webp", "res/ciclo/lutea_horm.webp", "res/ciclo/menopausa_e.webp", "res/ciclo/menopausa_g.webp", "res/ciclo/muco_e2.webp", "res/ciclo/muco_p4.webp", "res/ciclo/nucleos.webp", "res/ciclo/ovario_ciclo.webp", "res/ciclo/ovulacao.webp", "res/ciclo/primordial.webp", "res/ciclo/proliferativa.webp", "res/ciclo/pulsos_lh_fsh.webp", "res/ciclo/pulsos_mua.webp", "res/ciclo/reserva.webp", "res/ciclo/surto_lh.webp", "res/ciclo/temperatura.webp", "res/ciclo/utero_camadas.webp", "res/conc/aqp2.webp", "res/conc/efeito_unitario.webp", "res/conc/justamedular.webp", "res/conc/multiplicador.webp", "res/conc/osmolaridade.webp", "res/conc/passos.webp", "res/conc/transportadores.webp", "res/conc/ureia_alca.webp", "res/conc/ut_celula.webp", "res/conc/ut_tabela.webp", "res/conc/vasa_anatomia.webp", "res/conc/vasa_permutador.webp", "res/egen/cgp_migracao.webp", "res/egen/cordao.webp", "res/egen/cordoes_primitivos.webp", "res/egen/cortex_medula.webp", "res/egen/crista_corte.webp", "res/egen/crista_meso.webp", "res/egen/crista_uro.webp", "res/egen/defeitos_uterinos.webp", "res/egen/ductos_cloaca.webp", "res/egen/ductos_indif.webp", "res/egen/ductos_masc.webp", "res/egen/ext_homem_mulher.webp", "res/egen/ext_indif.webp", "res/egen/ext_tabela.webp", "res/egen/glandulas_masc.webp", "res/egen/gonada_indif.webp", "res/egen/hipo_epi.webp", "res/egen/hipospadia.webp", "res/egen/histo_infantil_adulto.webp", "res/egen/lig_largo.webp", "res/egen/lig_largo_corte.webp", "res/egen/muller_utero.webp", "res/egen/ovario_ab.webp", "res/egen/ovario_gartner.webp", "res/egen/paramesonefrico.webp", "res/egen/penis_escroto.webp", "res/egen/prostata_ab.webp", "res/egen/seio_ductos.webp", "res/egen/septo_uterino.webp", "res/egen/sry_cascata.webp", "res/egen/sry_xy.webp", "res/egen/testiculo_ab.webp", "res/egen/testiculo_des.webp", "res/egen/testiculo_fluxo.webp", "res/egen/utero_vagina_sem.webp", "res/egen/vagina_abc.webp", "res/egen/vulva_ab.webp", "res/ejac/alfa1.webp", "res/ejac/alvos.webp", "res/ejac/anestesicos.webp", "res/ejac/estagios.webp", "res/ejac/etiologia.webp", "res/ejac/fases.webp", "res/ejac/ielt.webp", "res/ejac/irs_agudo.webp", "res/ejac/irs_cronico.webp", "res/ejac/irs_fluxo.webp", "res/ejac/perspectivas.webp", "res/ejac/sindrome_ss.webp", "res/ejac/supraespinhal.webp", "res/ejac/tabela_isrs.webp", "res/ejac/tramadol.webp", "res/ejac/via_5ht.webp", "res/ejac/vias.webp", "res/eurin/acessorias.webp", "res/eurin/ascensao.webp", "res/eurin/broto.webp", "res/eurin/caso_massa.webp", "res/eurin/caso_ureterocele.webp", "res/eurin/coletor.webp", "res/eurin/duplicidade.webp", "res/eurin/ectopia.webp", "res/eurin/ectopico.webp", "res/eurin/ferradura.webp", "res/eurin/geracoes.webp", "res/eurin/indiferente.webp", "res/eurin/liquido.webp", "res/eurin/meso_ductos.webp", "res/eurin/metanefro.webp", "res/eurin/nefrogenese.webp", "res/eurin/nefron.webp", "res/eurin/netter_uretra.webp", "res/eurin/posic_ureteres.webp", "res/eurin/potter.webp", "res/eurin/pro_meso.webp", "res/eurin/ramificacao.webp", "res/eurin/rotacao.webp", "res/eurin/seio_ug.webp", "res/eurin/uraco.webp", "res/eurin/ureterocele_foto.webp", "res/eurin/vup.webp", "res/eurin/vup_adapt.webp", "res/eurin/wolff_deriv.webp", "res/fem/camadas.webp", "res/fem/episiotomia.webp", "res/fem/ligamentos.webp", "res/fem/mama.webp", "res/fem/ovario_corte.webp", "res/fem/perineo.webp", "res/fem/sagital.webp", "res/fem/tuba_frontal.webp", "res/fem/utero_idades.webp", "res/fem/vulva.webp", "res/fglom/autorregulacao.webp", "res/fglom/barreira_3d.webp", "res/fglom/camadas.webp", "res/fglom/capilar_duplo.webp", "res/fglom/carga.webp", "res/fglom/contratilidade.webp", "res/fglom/cortical_justa.webp", "res/fglom/doencas_fenda.webp", "res/fglom/efsr.webp", "res/fglom/extrinseca.webp", "res/fglom/fenestra.webp", "res/fglom/ftg.webp", "res/fglom/glomerulo_netter.webp", "res/fglom/hemorragia.webp", "res/fglom/macula_atp.webp", "res/fglom/mesangiais.webp", "res/fglom/miogenico_graf.webp", "res/fglom/nefrina_slit.webp", "res/fglom/peritubular.webp", "res/fglom/podocito_prot.webp", "res/fglom/regioes.webp", "res/fglom/renina_release.webp", "res/fglom/segmentos.webp", "res/fglom/segmentos_cel.webp", "res/fglom/starling_extra.webp", "res/fglom/starling_glom.webp", "res/fglom/tamanho.webp", "res/fglom/tipos_nefron.webp", "res/fglom/vasos_netter.webp", "res/fglom/vasos_retos.webp", "res/frmasc/barreira.webp", "res/frmasc/capacitacao.webp", "res/frmasc/circadiana.webp", "res/frmasc/compart.webp", "res/frmasc/efeitos_t.webp", "res/frmasc/eixo_berne.webp", "res/frmasc/epitelio.webp", "res/frmasc/esperm.webp", "res/frmasc/espermio.webp", "res/frmasc/fertilizacao.webp", "res/frmasc/glandulas.webp", "res/frmasc/kiss_fert.webp", "res/frmasc/kndy.webp", "res/frmasc/leydig_ester.webp", "res/frmasc/metab_t.webp", "res/frmasc/no_gmpc.webp", "res/frmasc/penis.webp", "res/frmasc/reflexo.webp", "res/frmasc/sertoli_func.webp", "res/frmasc/simpatico.webp", "res/frmasc/testiculo.webp", "res/ftub/aa_pept.webp", "res/ftub/adh_infusao.webp", "res/ftub/adh_valores.webp", "res/ftub/agua_tp.webp", "res/ftub/alca_carac.webp", "res/ftub/alca_valores.webp", "res/ftub/aldosterona.webp", "res/ftub/antiporte.webp", "res/ftub/aqp2.webp", "res/ftub/aqp_nefron.webp", "res/ftub/aqp_tipos.webp", "res/ftub/cilios.webp", "res/ftub/cl_dirigido.webp", "res/ftub/cl_formato.webp", "res/ftub/claudinas.webp", "res/ftub/glicose_tm.webp", "res/ftub/gradiente.webp", "res/ftub/hco3.webp", "res/ftub/intercaladas.webp", "res/ftub/na_tp.webp", "res/ftub/nacl_distal.webp", "res/ftub/nkcc.webp", "res/ftub/osmolaridade.webp", "res/ftub/perfil_tp.webp", "res/ftub/policistica.webp", "res/ftub/poupadores.webp", "res/ftub/proteinas.webp", "res/ftub/rae_canais.webp", "res/ftub/secrecao_pah.webp", "res/ftub/sglt_na.webp", "res/ftub/simporte.webp", "res/ftub/tabela_tp.webp", "res/ftub/tres_processos.webp", "res/ftub/vias.webp", "res/hfem/antral_he.webp", "res/hfem/cervice.webp", "res/hfem/ciclo_endo.webp", "res/hfem/ciclo_ovario.webp", "res/hfem/classif.webp", "res/hfem/corpo_luteo.webp", "res/hfem/cortex_ov.webp", "res/hfem/duas_celulas.webp", "res/hfem/eixo.webp", "res/hfem/endocervice.webp", "res/hfem/endometrio_esq.webp", "res/hfem/funcional.webp", "res/hfem/graaf.webp", "res/hfem/jec.webp", "res/hfem/luteinicas.webp", "res/hfem/miometrio.webp", "res/hfem/ovario_corte.webp", "res/hfem/ovulacao.webp", "res/hfem/primarios_he.webp", "res/hfem/primordiais.webp", "res/hfem/tecas.webp", "res/hfem/tuba_he.webp", "res/hfem/vagina.webp", "res/hidro/adh_osm.webp", "res/hidro/adh_vol.webp", "res/hidro/agua_corporal.webp", "res/hidro/aldo_genomico.webp", "res/hidro/anp.webp", "res/hidro/aparelho_jg.webp", "res/hidro/arteriais.webp", "res/hidro/atriais.webp", "res/hidro/avp_osm.webp", "res/hidro/baro_osmo.webp", "res/hidro/compartimentos.webp", "res/hidro/desidratacao.webp", "res/hidro/eletrolitos.webp", "res/hidro/ftg.webp", "res/hidro/granulos_avp.webp", "res/hidro/hemacias.webp", "res/hidro/hipotalamo.webp", "res/hidro/membrana.webp", "res/hidro/osmotica.webp", "res/hidro/sra.webp", "res/hmasc/albuginea_leydig.webp", "res/hmasc/barreira_ht.webp", "res/hmasc/concrecoes.webp", "res/hmasc/controle.webp", "res/hmasc/deferente.webp", "res/hmasc/ductos.webp", "res/hmasc/ejaculatorios.webp", "res/hmasc/epididimo.webp", "res/hmasc/epididimo_det.webp", "res/hmasc/epitelio_esq.webp", "res/hmasc/epitelio_germ.webp", "res/hmasc/epitelio_leydig.webp", "res/hmasc/eretil.webp", "res/hmasc/espermiogenese.webp", "res/hmasc/penis_corte.webp", "res/hmasc/penis_esq.webp", "res/hmasc/prostata_gland.webp", "res/hmasc/prostata_lam.webp", "res/hmasc/prostata_zonas.webp", "res/hmasc/testiculo.webp", "res/hmasc/testiculo_esq.webp", "res/hmasc/tubulos_sem.webp", "res/huri/alca_coletor.webp", "res/huri/barreira_diag.webp", "res/huri/bexiga_camadas.webp", "res/huri/bexiga_urotelio.webp", "res/huri/corpusculo.webp", "res/huri/corpusculo_jga.webp", "res/huri/cortex_medula.webp", "res/huri/diafragma.webp", "res/huri/glomerulo.webp", "res/huri/macula_densa.webp", "res/huri/papila.webp", "res/huri/podocitos.webp", "res/huri/raio_medular.webp", "res/huri/rim_lamina.webp", "res/huri/tcp.webp", "res/huri/tcp_tcd.webp", "res/huri/ureter.webp", "res/huri/ureter_ab.webp", "res/huri/uretra_fem.webp", "res/huri/vascularizacao.webp", "res/masc/camadas_diag.webp", "res/masc/descida.webp", "res/masc/epididimo_frontal.webp", "res/masc/escroto_netter.webp", "res/masc/irrigacao.webp", "res/masc/penis_face.webp", "res/masc/penis_vasos.webp", "res/masc/posterior_bexiga.webp", "res/masc/prostata_cortes.webp", "res/masc/prostata_frontal.webp", "res/masc/vesiculas_netter.webp", "res/masc/visao.webp", "res/slides/ahnd_01.webp", "res/slides/ahnd_02.webp", "res/slides/ahnd_03.webp", "res/slides/ahnd_04.webp", "res/slides/ahnd_05.webp", "res/slides/ahnd_06.webp", "res/slides/ahnd_07.webp", "res/slides/ahnd_08.webp", "res/slides/ahnd_09.webp", "res/slides/ahnd_10.webp", "res/slides/ahnd_11.webp", "res/slides/ahnd_12.webp", "res/slides/ahnd_13.webp", "res/slides/ahnd_14.webp", "res/slides/ahnd_15.webp", "res/slides/ahnd_16.webp", "res/slides/ahnd_17.webp", "res/slides/ahnd_18.webp", "res/slides/ahnd_19.webp", "res/slides/ahnd_20.webp", "res/slides/ahnd_21.webp", "res/slides/ahnd_22.webp", "res/slides/ahnd_23.webp", "res/slides/ahnd_24.webp", "res/slides/ciclo_01.webp", "res/slides/ciclo_02.webp", "res/slides/ciclo_03.webp", "res/slides/ciclo_04.webp", "res/slides/ciclo_05.webp", "res/slides/ciclo_06.webp", "res/slides/ciclo_07.webp", "res/slides/ciclo_08.webp", "res/slides/ciclo_09.webp", "res/slides/ciclo_10.webp", "res/slides/ciclo_11.webp", "res/slides/ciclo_12.webp", "res/slides/ciclo_13.webp", "res/slides/ciclo_14.webp", "res/slides/ciclo_15.webp", "res/slides/ciclo_16.webp", "res/slides/ciclo_17.webp", "res/slides/ciclo_18.webp", "res/slides/ciclo_19.webp", "res/slides/ciclo_20.webp", "res/slides/ciclo_21.webp", "res/slides/ciclo_22.webp", "res/slides/ciclo_23.webp", "res/slides/ciclo_24.webp", "res/slides/ciclo_25.webp", "res/slides/ciclo_26.webp", "res/slides/ciclo_27.webp", "res/slides/ciclo_28.webp", "res/slides/ciclo_29.webp", "res/slides/ciclo_30.webp", "res/slides/ciclo_31.webp", "res/slides/ciclo_32.webp", "res/slides/ciclo_33.webp", "res/slides/ciclo_34.webp", "res/slides/ciclo_35.webp", "res/slides/ciclo_36.webp", "res/slides/ciclo_37.webp", "res/slides/ciclo_38.webp", "res/slides/ciclo_39.webp", "res/slides/ciclo_40.webp", "res/slides/ciclo_41.webp", "res/slides/ciclo_42.webp", "res/slides/ciclo_43.webp", "res/slides/ciclo_44.webp", "res/slides/ciclo_45.webp", "res/slides/ciclo_46.webp", "res/slides/ciclo_47.webp", "res/slides/ciclo_48.webp", "res/slides/ciclo_49.webp", "res/slides/ciclo_50.webp", "res/slides/ciclo_51.webp", "res/slides/ciclo_52.webp", "res/slides/ciclo_53.webp", "res/slides/ciclo_54.webp", "res/slides/ciclo_55.webp", "res/slides/ciclo_56.webp", "res/slides/ciclo_57.webp", "res/slides/ciclo_58.webp", "res/slides/ciclo_59.webp", "res/slides/ciclo_60.webp", "res/slides/ciclo_61.webp", "res/slides/ciclo_62.webp", "res/slides/ciclo_63.webp", "res/slides/ciclo_64.webp", "res/slides/ciclo_65.webp", "res/slides/ciclo_66.webp", "res/slides/ciclo_67.webp", "res/slides/ciclo_68.webp", "res/slides/ciclo_69.webp", "res/slides/ciclo_70.webp", "res/slides/ciclo_71.webp", "res/slides/ciclo_72.webp", "res/slides/ciclo_73.webp", "res/slides/ciclo_74.webp", "res/slides/ciclo_75.webp", "res/slides/ciclo_76.webp", "res/slides/ciclo_77.webp", "res/slides/ciclo_78.webp", "res/slides/ciclo_79.webp", "res/slides/ciclo_80.webp", "res/slides/conc_01.webp", "res/slides/conc_02.webp", "res/slides/conc_03.webp", "res/slides/conc_04.webp", "res/slides/conc_05.webp", "res/slides/conc_06.webp", "res/slides/conc_07.webp", "res/slides/conc_08.webp", "res/slides/conc_09.webp", "res/slides/conc_10.webp", "res/slides/conc_11.webp", "res/slides/conc_12.webp", "res/slides/conc_13.webp", "res/slides/conc_14.webp", "res/slides/conc_15.webp", "res/slides/conc_16.webp", "res/slides/conc_17.webp", "res/slides/conc_18.webp", "res/slides/conc_19.webp", "res/slides/conc_20.webp", "res/slides/conc_21.webp", "res/slides/conc_22.webp", "res/slides/egen_01.webp", "res/slides/egen_02.webp", "res/slides/egen_03.webp", "res/slides/egen_04.webp", "res/slides/egen_05.webp", "res/slides/egen_06.webp", "res/slides/egen_07.webp", "res/slides/egen_08.webp", "res/slides/egen_09.webp", "res/slides/egen_10.webp", "res/slides/egen_11.webp", "res/slides/egen_12.webp", "res/slides/egen_13.webp", "res/slides/egen_14.webp", "res/slides/egen_15.webp", "res/slides/egen_16.webp", "res/slides/egen_17.webp", "res/slides/egen_18.webp", "res/slides/egen_19.webp", "res/slides/egen_20.webp", "res/slides/egen_21.webp", "res/slides/egen_22.webp", "res/slides/egen_23.webp", "res/slides/egen_24.webp", "res/slides/egen_25.webp", "res/slides/egen_26.webp", "res/slides/egen_27.webp", "res/slides/egen_28.webp", "res/slides/egen_29.webp", "res/slides/egen_30.webp", "res/slides/egen_31.webp", "res/slides/egen_32.webp", "res/slides/egen_33.webp", "res/slides/egen_34.webp", "res/slides/egen_35.webp", "res/slides/egen_36.webp", "res/slides/egen_37.webp", "res/slides/egen_38.webp", "res/slides/egen_39.webp", "res/slides/egen_40.webp", "res/slides/egen_41.webp", "res/slides/egen_42.webp", "res/slides/egen_43.webp", "res/slides/egen_44.webp", "res/slides/egen_45.webp", "res/slides/egen_46.webp", "res/slides/egen_47.webp", "res/slides/egen_48.webp", "res/slides/egen_49.webp", "res/slides/egen_50.webp", "res/slides/egen_51.webp", "res/slides/egen_52.webp", "res/slides/egen_53.webp", "res/slides/egen_54.webp", "res/slides/egen_55.webp", "res/slides/egen_56.webp", "res/slides/egen_57.webp", "res/slides/egen_58.webp", "res/slides/egen_59.webp", "res/slides/egen_60.webp", "res/slides/egen_61.webp", "res/slides/egen_62.webp", "res/slides/egen_63.webp", "res/slides/ejac_01.webp", "res/slides/ejac_02.webp", "res/slides/ejac_03.webp", "res/slides/ejac_04.webp", "res/slides/ejac_05.webp", "res/slides/ejac_06.webp", "res/slides/ejac_07.webp", "res/slides/ejac_08.webp", "res/slides/ejac_09.webp", "res/slides/ejac_10.webp", "res/slides/ejac_11.webp", "res/slides/ejac_12.webp", "res/slides/ejac_13.webp", "res/slides/ejac_14.webp", "res/slides/ejac_15.webp", "res/slides/ejac_16.webp", "res/slides/ejac_17.webp", "res/slides/ejac_18.webp", "res/slides/ejac_19.webp", "res/slides/ejac_20.webp", "res/slides/ejac_21.webp", "res/slides/ejac_22.webp", "res/slides/ejac_23.webp", "res/slides/ejac_24.webp", "res/slides/ejac_25.webp", "res/slides/ejac_26.webp", "res/slides/ejac_27.webp", "res/slides/ejac_28.webp", "res/slides/ejac_29.webp", "res/slides/ejac_30.webp", "res/slides/ejac_31.webp", "res/slides/ejac_32.webp", "res/slides/ejac_33.webp", "res/slides/ejac_34.webp", "res/slides/ejac_35.webp", "res/slides/ejac_36.webp", "res/slides/ejac_37.webp", "res/slides/ejac_38.webp", "res/slides/ejac_39.webp", "res/slides/ejac_40.webp", "res/slides/eurin_01.webp", "res/slides/eurin_02.webp", "res/slides/eurin_03.webp", "res/slides/eurin_04.webp", "res/slides/eurin_05.webp", "res/slides/eurin_06.webp", "res/slides/eurin_07.webp", "res/slides/eurin_08.webp", "res/slides/eurin_09.webp", "res/slides/eurin_10.webp", "res/slides/eurin_11.webp", "res/slides/eurin_12.webp", "res/slides/eurin_13.webp", "res/slides/eurin_14.webp", "res/slides/eurin_15.webp", "res/slides/eurin_16.webp", "res/slides/eurin_17.webp", "res/slides/eurin_18.webp", "res/slides/eurin_19.webp", "res/slides/eurin_20.webp", "res/slides/eurin_21.webp", "res/slides/eurin_22.webp", "res/slides/eurin_23.webp", "res/slides/eurin_24.webp", "res/slides/eurin_25.webp", "res/slides/eurin_26.webp", "res/slides/eurin_27.webp", "res/slides/eurin_28.webp", "res/slides/eurin_29.webp", "res/slides/eurin_30.webp", "res/slides/eurin_31.webp", "res/slides/eurin_32.webp", "res/slides/eurin_33.webp", "res/slides/eurin_34.webp", "res/slides/eurin_35.webp", "res/slides/eurin_36.webp", "res/slides/eurin_37.webp", "res/slides/eurin_38.webp", "res/slides/eurin_39.webp", "res/slides/eurin_40.webp", "res/slides/eurin_41.webp", "res/slides/eurin_42.webp", "res/slides/eurin_43.webp", "res/slides/eurin_44.webp", "res/slides/eurin_45.webp", "res/slides/eurin_46.webp", "res/slides/fem_01.webp", "res/slides/fem_02.webp", "res/slides/fem_03.webp", "res/slides/fem_04.webp", "res/slides/fem_05.webp", "res/slides/fem_06.webp", "res/slides/fem_07.webp", "res/slides/fem_08.webp", "res/slides/fem_09.webp", "res/slides/fem_10.webp", "res/slides/fem_11.webp", "res/slides/fem_12.webp", "res/slides/fem_13.webp", "res/slides/fem_14.webp", "res/slides/fem_15.webp", "res/slides/fem_16.webp", "res/slides/fem_17.webp", "res/slides/fem_18.webp", "res/slides/fem_19.webp", "res/slides/fem_20.webp", "res/slides/fem_21.webp", "res/slides/fem_22.webp", "res/slides/fem_23.webp", "res/slides/fem_24.webp", "res/slides/fem_25.webp", "res/slides/fem_26.webp", "res/slides/fem_27.webp", "res/slides/fem_28.webp", "res/slides/fem_29.webp", "res/slides/fem_30.webp", "res/slides/fem_31.webp", "res/slides/fem_32.webp", "res/slides/fem_33.webp", "res/slides/fem_34.webp", "res/slides/fem_35.webp", "res/slides/fem_36.webp", "res/slides/fem_37.webp", "res/slides/fem_38.webp", "res/slides/fem_39.webp", "res/slides/fem_40.webp", "res/slides/fglom_01.webp", "res/slides/fglom_02.webp", "res/slides/fglom_03.webp", "res/slides/fglom_04.webp", "res/slides/fglom_05.webp", "res/slides/fglom_06.webp", "res/slides/fglom_07.webp", "res/slides/fglom_08.webp", "res/slides/fglom_09.webp", "res/slides/fglom_10.webp", "res/slides/fglom_11.webp", "res/slides/fglom_12.webp", "res/slides/fglom_13.webp", "res/slides/fglom_14.webp", "res/slides/fglom_15.webp", "res/slides/fglom_16.webp", "res/slides/fglom_17.webp", "res/slides/fglom_18.webp", "res/slides/fglom_19.webp", "res/slides/fglom_20.webp", "res/slides/fglom_21.webp", "res/slides/fglom_22.webp", "res/slides/fglom_23.webp", "res/slides/fglom_24.webp", "res/slides/fglom_25.webp", "res/slides/fglom_26.webp", "res/slides/fglom_27.webp", "res/slides/fglom_28.webp", "res/slides/fglom_29.webp", "res/slides/fglom_30.webp", "res/slides/fglom_31.webp", "res/slides/fglom_32.webp", "res/slides/fglom_33.webp", "res/slides/fglom_34.webp", "res/slides/fglom_35.webp", "res/slides/fglom_36.webp", "res/slides/fglom_37.webp", "res/slides/fglom_38.webp", "res/slides/fglom_39.webp", "res/slides/fglom_40.webp", "res/slides/fglom_41.webp", "res/slides/fglom_42.webp", "res/slides/fglom_43.webp", "res/slides/fglom_44.webp", "res/slides/fglom_45.webp", "res/slides/fglom_46.webp", "res/slides/fglom_47.webp", "res/slides/fglom_48.webp", "res/slides/fglom_49.webp", "res/slides/fglom_50.webp", "res/slides/fglom_51.webp", "res/slides/fglom_52.webp", "res/slides/fglom_53.webp", "res/slides/fglom_54.webp", "res/slides/fglom_55.webp", "res/slides/fglom_56.webp", "res/slides/fglom_57.webp", "res/slides/fglom_58.webp", "res/slides/fglom_59.webp", "res/slides/fglom_60.webp", "res/slides/fglom_61.webp", "res/slides/fglom_62.webp", "res/slides/fglom_63.webp", "res/slides/fglom_64.webp", "res/slides/fglom_65.webp", "res/slides/fglom_66.webp", "res/slides/fglom_67.webp", "res/slides/fglom_68.webp", "res/slides/fglom_69.webp", "res/slides/fglom_70.webp", "res/slides/fglom_71.webp", "res/slides/fglom_72.webp", "res/slides/fglom_73.webp", "res/slides/fglom_74.webp", "res/slides/frmasc_01.webp", "res/slides/frmasc_02.webp", "res/slides/frmasc_03.webp", "res/slides/frmasc_04.webp", "res/slides/frmasc_05.webp", "res/slides/frmasc_06.webp", "res/slides/frmasc_07.webp", "res/slides/frmasc_08.webp", "res/slides/frmasc_09.webp", "res/slides/frmasc_10.webp", "res/slides/frmasc_11.webp", "res/slides/frmasc_12.webp", "res/slides/frmasc_13.webp", "res/slides/frmasc_14.webp", "res/slides/frmasc_15.webp", "res/slides/frmasc_16.webp", "res/slides/frmasc_17.webp", "res/slides/frmasc_18.webp", "res/slides/frmasc_19.webp", "res/slides/frmasc_20.webp", "res/slides/frmasc_21.webp", "res/slides/frmasc_22.webp", "res/slides/frmasc_23.webp", "res/slides/frmasc_24.webp", "res/slides/frmasc_25.webp", "res/slides/frmasc_26.webp", "res/slides/frmasc_27.webp", "res/slides/frmasc_28.webp", "res/slides/frmasc_29.webp", "res/slides/frmasc_30.webp", "res/slides/frmasc_31.webp", "res/slides/frmasc_32.webp", "res/slides/frmasc_33.webp", "res/slides/frmasc_34.webp", "res/slides/frmasc_35.webp", "res/slides/frmasc_36.webp", "res/slides/frmasc_37.webp", "res/slides/frmasc_38.webp", "res/slides/frmasc_39.webp", "res/slides/frmasc_40.webp", "res/slides/ftub_01.webp", "res/slides/ftub_02.webp", "res/slides/ftub_03.webp", "res/slides/ftub_04.webp", "res/slides/ftub_05.webp", "res/slides/ftub_06.webp", "res/slides/ftub_07.webp", "res/slides/ftub_08.webp", "res/slides/ftub_09.webp", "res/slides/ftub_10.webp", "res/slides/ftub_11.webp", "res/slides/ftub_12.webp", "res/slides/ftub_13.webp", "res/slides/ftub_14.webp", "res/slides/ftub_15.webp", "res/slides/ftub_16.webp", "res/slides/ftub_17.webp", "res/slides/ftub_18.webp", "res/slides/ftub_19.webp", "res/slides/ftub_20.webp", "res/slides/ftub_21.webp", "res/slides/ftub_22.webp", "res/slides/ftub_23.webp", "res/slides/ftub_24.webp", "res/slides/ftub_25.webp", "res/slides/ftub_26.webp", "res/slides/ftub_27.webp", "res/slides/ftub_28.webp", "res/slides/ftub_29.webp", "res/slides/ftub_30.webp", "res/slides/ftub_31.webp", "res/slides/ftub_32.webp", "res/slides/ftub_33.webp", "res/slides/ftub_34.webp", "res/slides/ftub_35.webp", "res/slides/ftub_36.webp", "res/slides/ftub_37.webp", "res/slides/ftub_38.webp", "res/slides/ftub_39.webp", "res/slides/ftub_40.webp", "res/slides/ftub_41.webp", "res/slides/hfem_01.webp", "res/slides/hfem_02.webp", "res/slides/hfem_03.webp", "res/slides/hfem_04.webp", "res/slides/hfem_05.webp", "res/slides/hfem_06.webp", "res/slides/hfem_07.webp", "res/slides/hfem_08.webp", "res/slides/hfem_09.webp", "res/slides/hfem_10.webp", "res/slides/hfem_11.webp", "res/slides/hfem_12.webp", "res/slides/hfem_13.webp", "res/slides/hfem_14.webp", "res/slides/hfem_15.webp", "res/slides/hfem_16.webp", "res/slides/hfem_17.webp", "res/slides/hfem_18.webp", "res/slides/hfem_19.webp", "res/slides/hfem_20.webp", "res/slides/hfem_21.webp", "res/slides/hfem_22.webp", "res/slides/hfem_23.webp", "res/slides/hfem_24.webp", "res/slides/hfem_25.webp", "res/slides/hfem_26.webp", "res/slides/hfem_27.webp", "res/slides/hfem_28.webp", "res/slides/hfem_29.webp", "res/slides/hfem_30.webp", "res/slides/hfem_31.webp", "res/slides/hfem_32.webp", "res/slides/hfem_33.webp", "res/slides/hfem_34.webp", "res/slides/hfem_35.webp", "res/slides/hfem_36.webp", "res/slides/hfem_37.webp", "res/slides/hfem_38.webp", "res/slides/hfem_39.webp", "res/slides/hfem_40.webp", "res/slides/hfem_41.webp", "res/slides/hfem_42.webp", "res/slides/hfem_43.webp", "res/slides/hfem_44.webp", "res/slides/hfem_45.webp", "res/slides/hfem_46.webp", "res/slides/hfem_47.webp", "res/slides/hfem_48.webp", "res/slides/hfem_49.webp", "res/slides/hfem_50.webp", "res/slides/hidro_01.webp", "res/slides/hidro_02.webp", "res/slides/hidro_03.webp", "res/slides/hidro_04.webp", "res/slides/hidro_05.webp", "res/slides/hidro_06.webp", "res/slides/hidro_07.webp", "res/slides/hidro_08.webp", "res/slides/hidro_09.webp", "res/slides/hidro_10.webp", "res/slides/hidro_11.webp", "res/slides/hidro_12.webp", "res/slides/hidro_13.webp", "res/slides/hidro_14.webp", "res/slides/hidro_15.webp", "res/slides/hidro_16.webp", "res/slides/hidro_17.webp", "res/slides/hidro_18.webp", "res/slides/hidro_19.webp", "res/slides/hidro_20.webp", "res/slides/hidro_21.webp", "res/slides/hidro_22.webp", "res/slides/hidro_23.webp", "res/slides/hidro_24.webp", "res/slides/hidro_25.webp", "res/slides/hidro_26.webp", "res/slides/hidro_27.webp", "res/slides/hidro_28.webp", "res/slides/hidro_29.webp", "res/slides/hidro_30.webp", "res/slides/hidro_31.webp", "res/slides/hidro_32.webp", "res/slides/hidro_33.webp", "res/slides/hmasc_01.webp", "res/slides/hmasc_02.webp", "res/slides/hmasc_03.webp", "res/slides/hmasc_04.webp", "res/slides/hmasc_05.webp", "res/slides/hmasc_06.webp", "res/slides/hmasc_07.webp", "res/slides/hmasc_08.webp", "res/slides/hmasc_09.webp", "res/slides/hmasc_10.webp", "res/slides/hmasc_11.webp", "res/slides/hmasc_12.webp", "res/slides/hmasc_13.webp", "res/slides/hmasc_14.webp", "res/slides/hmasc_15.webp", "res/slides/hmasc_16.webp", "res/slides/hmasc_17.webp", "res/slides/hmasc_18.webp", "res/slides/hmasc_19.webp", "res/slides/hmasc_20.webp", "res/slides/hmasc_21.webp", "res/slides/hmasc_22.webp", "res/slides/hmasc_23.webp", "res/slides/hmasc_24.webp", "res/slides/hmasc_25.webp", "res/slides/hmasc_26.webp", "res/slides/hmasc_27.webp", "res/slides/hmasc_28.webp", "res/slides/hmasc_29.webp", "res/slides/hmasc_30.webp", "res/slides/hmasc_31.webp", "res/slides/hmasc_32.webp", "res/slides/hmasc_33.webp", "res/slides/hmasc_34.webp", "res/slides/hmasc_35.webp", "res/slides/hmasc_36.webp", "res/slides/hmasc_37.webp", "res/slides/hmasc_38.webp", "res/slides/hmasc_39.webp", "res/slides/hmasc_40.webp", "res/slides/hmasc_41.webp", "res/slides/huri_01.webp", "res/slides/huri_02.webp", "res/slides/huri_03.webp", "res/slides/huri_04.webp", "res/slides/huri_05.webp", "res/slides/huri_06.webp", "res/slides/huri_07.webp", "res/slides/huri_08.webp", "res/slides/huri_09.webp", "res/slides/huri_10.webp", "res/slides/huri_11.webp", "res/slides/huri_12.webp", "res/slides/huri_13.webp", "res/slides/huri_14.webp", "res/slides/huri_15.webp", "res/slides/huri_16.webp", "res/slides/huri_17.webp", "res/slides/huri_18.webp", "res/slides/huri_19.webp", "res/slides/huri_20.webp", "res/slides/huri_21.webp", "res/slides/huri_22.webp", "res/slides/huri_23.webp", "res/slides/huri_24.webp", "res/slides/huri_25.webp", "res/slides/huri_26.webp", "res/slides/huri_27.webp", "res/slides/huri_28.webp", "res/slides/huri_29.webp", "res/slides/huri_30.webp", "res/slides/huri_31.webp", "res/slides/huri_32.webp", "res/slides/huri_33.webp", "res/slides/huri_34.webp", "res/slides/huri_35.webp", "res/slides/huri_36.webp", "res/slides/huri_37.webp", "res/slides/huri_38.webp", "res/slides/huri_39.webp", "res/slides/huri_40.webp", "res/slides/huri_41.webp", "res/slides/huri_42.webp", "res/slides/huri_43.webp", "res/slides/huri_44.webp", "res/slides/huri_45.webp", "res/slides/huri_46.webp", "res/slides/huri_47.webp", "res/slides/huri_48.webp", "res/slides/masc_01.webp", "res/slides/masc_02.webp", "res/slides/masc_03.webp", "res/slides/masc_04.webp", "res/slides/masc_05.webp", "res/slides/masc_06.webp", "res/slides/masc_07.webp", "res/slides/masc_08.webp", "res/slides/masc_09.webp", "res/slides/masc_10.webp", "res/slides/masc_11.webp", "res/slides/masc_12.webp", "res/slides/masc_13.webp", "res/slides/masc_14.webp", "res/slides/masc_15.webp", "res/slides/masc_16.webp", "res/slides/masc_17.webp", "res/slides/masc_18.webp", "res/slides/masc_19.webp", "res/slides/masc_20.webp", "res/slides/masc_21.webp", "res/slides/masc_22.webp", "res/slides/masc_23.webp", "res/slides/masc_24.webp", "res/slides/masc_25.webp", "res/slides/masc_26.webp", "res/slides/masc_27.webp", "res/slides/masc_28.webp", "res/slides/masc_29.webp", "res/slides/masc_30.webp", "res/slides/masc_31.webp", "res/slides/masc_32.webp", "res/slides/masc_33.webp", "res/slides/masc_34.webp", "res/slides/masc_35.webp", "res/slides/masc_36.webp", "res/slides/masc_37.webp", "res/slides/masc_38.webp", "res/slides/masc_39.webp", "res/slides/masc_40.webp", "res/slides/masc_41.webp", "res/slides/masc_42.webp", "res/slides/masc_43.webp", "res/slides/masc_44.webp", "res/slides/uri_01.webp", "res/slides/uri_02.webp", "res/slides/uri_03.webp", "res/slides/uri_04.webp", "res/slides/uri_05.webp", "res/slides/uri_06.webp", "res/slides/uri_07.webp", "res/slides/uri_08.webp", "res/slides/uri_09.webp", "res/slides/uri_10.webp", "res/slides/uri_11.webp", "res/slides/uri_12.webp", "res/slides/uri_13.webp", "res/slides/uri_14.webp", "res/slides/uri_15.webp", "res/slides/uri_16.webp", "res/slides/uri_17.webp", "res/slides/uri_18.webp", "res/slides/uri_19.webp", "res/slides/uri_20.webp", "res/slides/uri_21.webp", "res/slides/uri_22.webp", "res/slides/uri_23.webp", "res/slides/uri_24.webp", "res/slides/uri_25.webp", "res/slides/uri_26.webp", "res/slides/uri_27.webp", "res/slides/uri_28.webp", "res/slides/uri_29.webp", "res/slides/uri_30.webp", "res/slides/uri_31.webp", "res/slides/uri_32.webp", "res/slides/uri_33.webp", "res/slides/uri_34.webp", "res/slides/uri_35.webp", "res/slides/uri_36.webp", "res/slides/uri_37.webp", "res/slides/uri_38.webp", "res/slides/uri_39.webp", "res/slides/uri_40.webp", "res/slides/uri_41.webp", "res/slides/uri_42.webp", "res/slides/uri_43.webp", "res/slides/uri_44.webp", "res/slides/uri_45.webp", "res/slides/uri_46.webp", "res/slides/uri_47.webp", "res/slides/uri_48.webp", "res/slides/uri_49.webp", "res/slides/uri_50.webp", "res/slides/uri_51.webp", "res/slides/uri_52.webp", "res/slides/uri_53.webp", "res/slides/uri_54.webp", "res/slides/uri_55.webp", "res/slides/uri_56.webp", "res/slides/uri_57.webp", "res/slides/uri_58.webp", "res/slides/uri_59.webp", "res/slides/uri_60.webp", "res/slides/uri_61.webp", "res/slides/uri_62.webp", "res/slides/uri_63.webp", "res/slides/uri_64.webp", "res/slides/uri_65.webp", "res/slides/uri_66.webp", "res/slides/uri_67.webp", "res/slides/uri_68.webp", "res/slides/uri_69.webp", "res/slides/uri_70.webp", "res/slides/uri_71.webp", "res/slides/uri_72.webp", "res/slides/uri_73.webp", "res/slides/uri_74.webp", "res/slides/uri_75.webp", "res/slides/uri_76.webp", "res/slides/uri_77.webp", "res/slides/uri_78.webp", "res/slides/uri_79.webp", "res/slides/uri_80.webp", "res/slides/uri_81.webp", "res/slides/uri_82.webp", "res/slides/uri_83.webp", "res/slides/uri_84.webp", "res/slides/uri_85.webp", "res/slides/uri_86.webp", "res/slides/uri_87.webp", "res/slides/uri_88.webp", "res/slides/uri_89.webp", "res/slides/uri_90.webp", "res/slides/uri_91.webp", "res/slides/uri_92.webp", "res/slides/uri_93.webp", "res/slides/uri_94.webp", "res/slides/uri_95.webp", "res/uri/acessorias.webp", "res/uri/bexiga_config.webp", "res/uri/bexiga_frontal.webp", "res/uri/caso.webp", "res/uri/diaf_urogenital.webp", "res/uri/faces.webp", "res/uri/fascia.webp", "res/uri/levantador.webp", "res/uri/necrose.webp", "res/uri/nutcracker.webp", "res/uri/segmentos.webp", "res/uri/skene.webp", "res/uri/ureter_mulher.webp", "res/uri/uretra_frontal.webp", "res/uri/urografia.webp", "res/uri/vasos_insitu.webp", "res/uri/vasos_intra.webp", "res/uri/visao.webp"],CACHE="gu-3eca22569d",had=!!navigator.serviceWorker.controller,say=window.__guSay,pill=document.getElementById("gu-pill");
 function check(){caches.open(CACHE).then(function(c){return Promise.all(FILES.map(function(u){return c.match(u)}))}).then(function(r){
   var ok=r.filter(Boolean).length;
   if(ok===FILES.length){var k="gu-off-"+CACHE,seen=false;try{seen=!!localStorage.getItem(k);localStorage.setItem(k,"1")}catch(e){}if(!seen)say("✓ Pronto para usar sem internet","#2b8a3e",5000)}
