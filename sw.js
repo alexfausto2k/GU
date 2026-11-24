@@ -1,13 +1,13 @@
 // Módulo Gênito-Urinário · funciona sem internet depois da primeira abertura.
 // Gerado por oficina/ferramentas/construir_app.py — não edite à mão.
-const CACHE = "gu-c183900684";
+const CACHE = "gu-9d0496bbb9";
 const FILES = {
-"./": "dd831deaee",
-"index.html": "dd831deaee",
-"manifest.json": "338042bdbe",
-"icone-180.png": "4901dc3e9a",
-"icone-192.png": "fc9453f590",
-"icone-512.png": "c236728b0a",
+"./": "a4b75ac0eb",
+"index.html": "a4b75ac0eb",
+"manifest.json": "690a92b97d",
+"icone-180.png": "d0a9fa7a1a",
+"icone-192.png": "67bba627f7",
+"icone-512.png": "bb1891fecd",
 "img/art_aorta.jpg": "f37aad371b",
 "img/art_iliaca_comum.jpg": "823a15ef71",
 "img/art_ilinterna.jpg": "ca6ed157ac",
@@ -1484,7 +1484,7 @@ const FILES = {
 "res/uri/vasos_intra.webp": "335c890f20",
 "res/uri/visao.webp": "581a381d43"
 }; // arquivo -> versão do conteúdo
-const FONT_CSS = "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@500&display=swap";
+const FONT_CSS = "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@500&display=swap";
 
 async function guardar(c, u, v, antigos) {
   if (await c.match(u)) return;
