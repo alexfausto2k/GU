@@ -425,7 +425,825 @@ button.pri-it:hover{border-color:var(--acc);background:var(--acc-soft)}
 
   <main id="main"></main>
 
-  <template id="tpl-eletro">
+  <template id="tpl-diur">
+<!-- ============================== CAPA ============================== -->
+<section class="cover">
+  <div class="kicker">Resumo de estudo · Farmacologia · Medicina</div>
+  <h1>Diuréticos</h1>
+  <div class="rainbow huri"></div>
+  <p class="sub">O objetivo dos diuréticos (natriurese), as classes e onde cada uma age no néfron, os diuréticos de alça, os tiazídicos, os poupadores de potássio e os osmóticos: mecanismo, farmacocinética, indicações e toxicidade; por que uns causam hipocalemia e alcalose e outros hipercalemia e acidose, o que acontece com o cálcio, e a resposta homeostática do corpo ao uso prolongado.</p>
+  <p class="meta">Baseado nos slides da aula 26, <em>Farmacologia III: bases farmacológicas dos diuréticos</em> (Prof. Dr. Roberto César P. Lima Jr.). As figuras são as dos slides (Rang &amp; Dale, Arq Bras Endocrinol Metab), com dois esquemas próprios; o texto foi completado com Rang &amp; Dale e Goodman &amp; Gilman. Os destaques “Cai na prova” vêm das provas da T137 e da T136 e dos compilados.</p>
+
+  <div class="cover-grid">
+    <div class="box key">
+      <div class="tag">Como usar este resumo</div>
+      <ol>
+        <li>Comece pela tabela da seção 2: classe, exemplo, local, alvo e potência.</li>
+        <li>Para cada classe, guarde três coisas: <b>alvo</b>, <b>indicações</b> e <b>toxicidade</b>. É o que a prova pergunta.</li>
+        <li>Entenda o esquema da seção 5: ele explica de uma vez o K⁺, o pH e o cálcio.</li>
+        <li>Na véspera, revise a seção 9 e faça as questões.</li>
+      </ol>
+    </div>
+    <div class="legend">
+      <div class="tag plain">Código de cores</div>
+      <div class="chips">
+        <span class="chip o" style="--c:#b08900;--f:#fff3bf">Alça de Henle</span>
+        <span class="chip o" style="--c:#2b8a3e;--f:#d3f9d8">Túbulo distal</span>
+        <span class="chip o" style="--c:#7048e8;--f:#e5dbff">Ducto coletor</span>
+        <span class="chip o" style="--c:#e8590c;--f:#ffe8cc">Proximal e osmóticos</span>
+      </div>
+      <div class="boxlegend">
+        <span class="mini key">Em uma frase</span>
+        <span class="mini prova">Cai na prova</span>
+        <span class="mini clin">Correlação clínica</span>
+        <span class="mini deep">Aprofundamento</span>
+        <span class="mini mnem">Mnemônico</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ideias"><div class="tag plain">As cinco ideias que organizam toda a matéria</div>
+  <ol class="tight">
+    <li><b>O objetivo é a natriurese</b>: o diurético faz o rim excretar mais Na⁺, e a água vai junto (diurese).</li>
+    <li><b>A potência depende do lugar</b>: quanto mais Na⁺ o segmento reabsorve, e quanto menos o néfron consegue recuperar depois, mais forte. <b>Alça</b> (até ~25% do Na⁺ filtrado) &gt; <b>tiazídicos</b> (~5%) &gt; <b>poupadores</b> (~2–3%).</li>
+    <li><b>Alça e tiazídicos perdem K⁺ e H⁺</b> (hipocalemia e alcalose); <b>poupadores retêm K⁺ e H⁺</b> (hipercalemia e acidose).</li>
+    <li><b>O cálcio vai em sentidos opostos</b>: a alça aumenta a excreção de Ca²⁺ (trata hipercalcemia); o tiazídico a diminui (trata hipercalciúria, bom na osteoporose).</li>
+    <li><b>O corpo reage</b>: a perda de volume ativa o <b>SRAA</b>, que freia o efeito e piora a perda de K⁺.</li>
+  </ol></div>
+
+  <div class="toc">
+    <div class="tag plain">Sumário</div>
+    <ol class="toc2">
+      <li><b>Por que</b> tratar a hipertensão</li>
+      <li><b>Classes</b> e onde agem</li>
+      <li><b>Diuréticos de alça</b></li>
+      <li><b>Tiazídicos</b> e correlatos</li>
+      <li><b>K⁺, pH e Ca²⁺</b>: o que cada um faz</li>
+      <li><b>Resposta homeostática</b> (SRAA)</li>
+      <li><b>Poupadores de K⁺</b></li>
+      <li><b>Osmóticos</b> e acetazolamida</li>
+      <li><b>Revisão final</b></li>
+      <li><b>Questões</b> com gabarito comentado</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================== 1 POR QUE ============================== -->
+<section class="sec flow">
+<h2><span class="num n-col">1</span>Por que tratar a hipertensão</h2>
+<ul class="tight">
+<li>As <b>doenças cardiovasculares</b> são ~26% dos óbitos no Brasil (386 mil mortes em 2023), e a <b>hipertensão</b> é a principal causa associada.</li>
+<li>Cerca de <b>45% dos brasileiros</b> têm hipertensão (OMS, 2019). Dos hipertensos, 67% são tratados e só <b>33%</b> têm a pressão controlada.</li>
+<li><b>Tratamento não farmacológico</b>: controle do peso (IMC &lt; 25 kg/m²), mudança da alimentação (menos sal), parar de fumar, reduzir o álcool, atividade física.</li>
+<li>Quando não basta, os <b>diuréticos</b> (sobretudo os tiazídicos) estão entre os fármacos de primeira linha.</li>
+</ul>
+<div class="box key"><div class="tag">Em uma frase</div>
+<b>Diurese</b> é o aumento do volume de urina; <b>natriurese</b> é o aumento da excreção renal de sódio. O objetivo do diurético é a <b>natriurese</b>, e a diurese vem como consequência.
+</div>
+<div class="box prova"><div class="tag">Cai na prova · compilados</div>
+“O objetivo do uso de diuréticos é aumentar a natriurese e, consequentemente, a diurese”: <b>verdadeiro</b>. “Os mais potentes diuréticos de uso clínico são os tiazídicos”: <b>falso</b> (são os de alça).
+</div>
+</section>
+
+<!-- ============================== 2 CLASSES ============================== -->
+<section class="sec flow">
+<h2><span class="num n-col">2</span>Classes e onde agem</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/diur/sitios.webp" alt="sitios"><figcaption><b>Figura 1.</b> Onde agem os diuréticos (aula, Rang &amp; Dale): osmóticos no proximal e no ramo descendente (modificam o conteúdo do filtrado); de alça no ramo ascendente espesso (NKCC2); tiazídicos no túbulo distal (NCC); amilorida no ENaC e espironolactona no receptor da aldosterona, no ducto coletor. Os quadros mostram quanto do Na⁺ filtrado ainda chega a cada segmento: 100%, 35%, 10%, 3% e 0,1 a 2% na urina.</figcaption></figure>
+<div>
+<p>Classificação da aula:</p>
+<ul class="tight">
+<li><b>Inibidores da anidrase carbônica</b> (acetazolamida): não são usados como diuréticos.</li>
+<li><b>Diuréticos de alça</b>.</li>
+<li><b>Tiazídicos e correlatos</b>.</li>
+<li><b>Poupadores de K⁺</b>.</li>
+<li><b>Osmóticos</b>.</li>
+</ul>
+<p>O que chega a cada segmento limita o efeito: o coletor só recebe ~3% do Na⁺ filtrado, e por isso o poupador é fraco.</p>
+</div>
+</div>
+<table class="dense">
+<thead><tr><th>Classe</th><th>Exemplos</th><th>Local</th><th>Alvo</th><th>Na⁺ excretado</th></tr></thead>
+<tbody>
+<tr><td class="g-tcp">Inibidores da anidrase carbônica</td><td>Acetazolamida</td><td>Proximal</td><td>Anidrase carbônica</td><td>Pouco (efeito some)</td></tr>
+<tr><td class="g-tcp">Osmóticos</td><td><b>Manitol</b></td><td>Proximal e ramo descendente</td><td>Retêm água na luz</td><td>Água mais que Na⁺</td></tr>
+<tr><td class="g-alca">De alça (“alto limiar”)</td><td><b>Furosemida</b>, bumetanida, torasemida, azosemida</td><td>Ramo ascendente espesso</td><td><b>NKCC2</b> (Na⁺/K⁺/2Cl⁻)</td><td><b>Até ~25%</b></td></tr>
+<tr><td class="g-tcd">Tiazídicos e correlatos</td><td><b>Hidroclorotiazida</b>, clorotiazida, clortalidona, indapamida</td><td>Túbulo contorcido distal</td><td><b>NCC</b> (Na⁺/Cl⁻)</td><td>~5%</td></tr>
+<tr><td class="g-uro">Poupadores de K⁺</td><td><b>Amilorida, triantereno</b>; <b>espironolactona</b>, eplerenona</td><td>Ducto coletor</td><td><b>ENaC</b>; receptor da aldosterona</td><td>~2–3%</td></tr>
+</tbody></table>
+<div class="box prova"><div class="tag">Cai na prova · T136 e compilados</div>
+Na figura do néfron: o número da alça é o da <b>furosemida</b> (elimina até ~25% do Na⁺ filtrado); o do distal são os <b>tiazídicos</b>; o que aparece em vários segmentos são os <b>osmóticos</b> (manitol: filtrado e não reabsorvido); o do coletor são os <b>poupadores</b>, que são <b>fracos</b>. Quem alcaliniza a urina por bloqueio da reabsorção de bicarbonato é a <b>acetazolamida</b>, não o tiazídico.
+</div>
+</section>
+
+<!-- ============================== 3 ALÇA ============================== -->
+<section class="sec flow newpage">
+<h2><span class="num n-alca">3</span>Diuréticos de alça</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/diur/alca_celula.webp" alt="alca_celula"><figcaption><b>Figura 2.</b> Diurético de alça na célula do ramo ascendente espesso (aula, Rang &amp; Dale): a furosemida bloqueia o NKCC2 apical; sem o K⁺ que volta à luz pelo ROMK, some a luz positiva (+ve) que empurrava Mg²⁺ e Ca²⁺ pela via paracelular (zona occludens).</figcaption></figure>
+<div>
+<p><b>Furosemida</b> (protótipo); também bumetanida, torasemida e azosemida.</p>
+<ul class="tight">
+<li><b>Mecanismo</b>: inibe o simporte <b>Na⁺/K⁺/2Cl⁻ (NKCC2)</b> na membrana luminal do ramo ascendente espesso: ↓ reabsorção de NaCl.</li>
+<li>Como o K⁺ não é mais reciclado para a luz, some a <b>luz positiva</b> que puxava Ca²⁺ e Mg²⁺ pela via paracelular: <b>↑ excreção de Mg²⁺ e Ca²⁺</b> (hipomagnesemia).</li>
+<li>Sem NaCl no interstício, o <b>gradiente medular se dissipa</b>: a urina não se concentra (diurese volumosa).</li>
+</ul>
+</div>
+</div>
+<h3>3.1 Farmacocinética</h3>
+<ul class="tight">
+<li><b>Boa absorção oral</b>; também por via intravenosa (efeito em minutos).</li>
+<li>Chega ao seu alvo, que fica do lado da <b>luz</b>, por <b>secreção tubular proximal</b> (transportadores de ânions orgânicos) e por filtração glomerular: <b>a atividade diurética acompanha a secreção</b>.</li>
+<li><b>AINEs e probenecida</b> reduzem a secreção da furosemida e o seu efeito.</li>
+<li><b>Duração da ação: 2–3 h</b> (aula).</li>
+</ul>
+<div class="grid2">
+<figure class="img sm"><img src="res/diur/dose_resposta.webp" alt="dose_resposta"><figcaption><b>Figura 3.</b> Capacidade de eliminar sódio (aula, Rang &amp; Dale): com doses crescentes, a furosemida chega a uma natriurese muito maior que a hidroclorotiazida, que para num platô baixo.</figcaption></figure>
+<div>
+<p><b>Alto limiar</b> (<em>high ceiling</em>): quanto mais dose, mais natriurese, até um efeito máximo muito alto. O tiazídico tem platô baixo: aumentar a dose não aumenta o efeito.</p>
+<p>Por isso a alça é a escolha quando é preciso tirar muito líquido rápido (edema agudo de pulmão).</p>
+</div>
+</div>
+<h3>3.2 Indicações</h3>
+<ol class="cols2">
+<li>Hipertensão.</li>
+<li><b>Edema agudo de pulmão</b>.</li>
+<li>Insuficiência cardíaca crônica.</li>
+<li><b>Hipercalcemia</b> (furosemida + soro fisiológico 0,9%).</li>
+<li>Edema da insuficiência renal crônica.</li>
+<li><b>Síndrome nefrótica</b>.</li>
+</ol>
+<h3>3.3 Toxicidade</h3>
+<table class="dense">
+<thead><tr><th>Efeito</th><th>Detalhe</th></tr></thead>
+<tbody>
+<tr><td class="g-alca">Alcalose metabólica hipocalêmica</td><td>Intensa secreção de K⁺ e H⁺; <b>potencializa a toxicidade digitálica</b>; revertida com reposição de K⁺ e correção da hipovolemia</td></tr>
+<tr><td class="g-alca"><b>Ototoxicidade</b></td><td>Perda auditiva dose-dependente e reversível; com administração IV rápida, função renal reduzida ou <b>aminoglicosídeos</b></td></tr>
+<tr><td class="g-alca">Hiperuricemia</td><td>Precipita crises de <b>gota</b>; reduzir a dose</td></tr>
+<tr><td class="g-alca">Hipomagnesemia</td><td>Repor magnésio por via oral</td></tr>
+<tr><td class="g-alca">Reações alérgicas</td><td>Erupções cutâneas, eosinofilia; regridem ao suspender</td></tr>
+<tr><td class="g-alca">Desidratação</td><td>Pode ser <b>intensa</b> (hipovolemia, hipotensão)</td></tr>
+</tbody></table>
+<div class="box clin"><div class="tag">Correlação clínica</div>
+A furosemida aumenta a perda de cálcio na urina: <b>agrava a osteoporose</b>, e no paciente com osteoporose se prefere o tiazídico. A <b>síndrome de Bartter</b> é a “furosemida genética”: defeito do NKCC2 ou do ROMK, com perda de sal, hipocalemia, alcalose e hipercalciúria.
+</div>
+<div class="box prova"><div class="tag">Cai na prova · T137, T136 e compilados (muito cobrado)</div>
+Mecanismo da furosemida: <b>inibição do cotransportador Na⁺/K⁺/2Cl⁻ no ramo ascendente espesso</b>, que também dissipa o gradiente osmótico medular (diurese rápida no edema agudo de pulmão). Indicações da furosemida: <b>insuficiência cardíaca crônica, hipertensão, síndrome nefrótica e edema agudo de pulmão</b> (todas). Interage com <b>aminoglicosídeos</b> causando <b>ototoxicidade</b>. Agrava a osteoporose por reduzir a reabsorção de Ca²⁺: <b>furosemida</b>. Hipocalemia da furosemida: mais Na⁺ e fluxo chegam ao ducto coletor, que secreta mais K⁺.
+</div>
+</section>
+
+<!-- ============================== 4 TIAZÍDICOS ============================== -->
+<section class="sec flow newpage">
+<h2><span class="num n-tcd">4</span>Tiazídicos e correlatos</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/diur/tiazidico_celula.webp" alt="tiazidico_celula"><figcaption><b>Figura 4.</b> Tiazídico na célula do túbulo distal (aula, Rang &amp; Dale): a hidroclorotiazida bloqueia o simporte Na⁺/Cl⁻ (NCC) apical; o filtrado que chega é hiposmótico.</figcaption></figure>
+<div>
+<ul class="tight">
+<li><b>Mecanismo</b>: inibem o transporte de NaCl (simporte <b>Na⁺/Cl⁻, NCC</b>) predominantemente no <b>túbulo contorcido distal</b>.</li>
+<li><b>Hidroclorotiazida</b>: a mais usada.</li>
+<li><b>Clorotiazida</b>: a única disponível por via parenteral.</li>
+<li><b>Clortalidona</b>: absorção lenta e <b>ação prolongada</b>.</li>
+<li><b>Indapamida</b>: parte sofre excreção biliar.</li>
+<li>Efeito moderado (~5% do Na⁺) e <b>platô baixo</b>.</li>
+<li><b>↓ excreção de Ca²⁺</b>: aumentam a reabsorção de cálcio no distal.</li>
+</ul>
+</div>
+</div>
+<h3>4.1 Indicações</h3>
+<ol class="cols2">
+<li><b>Hipertensão</b> (primeira linha).</li>
+<li>Insuficiência cardíaca.</li>
+<li><b>Nefrolitíase por hipercalciúria idiopática</b> (cálculo renal).</li>
+<li><b>Diabetes insípido nefrogênico</b> (dificuldade de concentrar a urina): paradoxalmente reduzem o volume urinário.</li>
+</ol>
+<div class="box deep"><div class="tag">Aprofundamento · por que o tiazídico reduz a urina no diabetes insípido</div>
+A perda de Na⁺ contrai o volume; o proximal passa a reabsorver mais Na⁺ e água, e chega menos líquido ao néfron distal, onde a urina seria diluída. Com menos água livre para excretar, o volume urinário cai.
+</div>
+<h3>4.2 Toxicidade</h3>
+<table class="dense">
+<thead><tr><th>Efeito</th><th>Detalhe</th></tr></thead>
+<tbody>
+<tr><td class="g-tcd">Alcalose metabólica hipocalêmica</td><td>↓ K⁺ sérico (como na alça)</td></tr>
+<tr><td class="g-tcd">Hiperuricemia</td><td>↑ ácido úrico sérico (gota)</td></tr>
+<tr><td class="g-tcd">Hiperglicemia</td><td><b>Compromete a liberação de insulina</b> e diminui a utilização tecidual de glicose; reversível corrigindo a hipocalemia</td></tr>
+<tr><td class="g-tcd">Hiperlipidemia</td><td>↑ 5–15% do colesterol e do LDL; pode voltar ao basal com o uso prolongado</td></tr>
+<tr><td class="g-tcd"><b>Hiponatremia</b></td><td>↓ Na⁺ sérico</td></tr>
+<tr><td class="g-tcd">Reações alérgicas (raras)</td><td>Fotossensibilidade, dermatite, anemia hemolítica, trombocitopenia, pancreatite necrosante aguda</td></tr>
+<tr><td class="g-tcd">Disfunção erétil</td><td>Os tiazídicos estão entre os fármacos que a causam (aula de iPDE5)</td></tr>
+</tbody></table>
+<div class="grid2">
+<figure class="img sm"><img src="res/diur/glicose_insulina.webp" alt="glicose_insulina"><figcaption><b>Figura 5.</b> Por que a hipocalemia reduz a insulina (aula, Arq Bras Endocrinol Metab 2000): na célula β, a glicose gera ATP, que fecha os canais de K⁺ sensíveis a ATP (SUR1/Kir6.2); a célula despolariza, abre canais de Ca²⁺ e libera insulina. O diazóxido abre esses canais e a tolbutamida os fecha.</figcaption></figure>
+<div>
+<p><b>Hiperglicemia do tiazídico</b>: a secreção de insulina depende da despolarização da célula β. Com o K⁺ baixo, a célula fica <b>hiperpolarizada</b>, entra menos Ca²⁺ e sai menos insulina. Corrigir o K⁺ reverte.</p>
+<p><b>Hiponatremia do tiazídico</b> (mais que com a alça): o tiazídico atrapalha a diluição no córtex, mas preserva o gradiente medular; com ADH, o coletor continua reabsorvendo água.</p>
+</div>
+</div>
+<div class="box prova"><div class="tag">Cai na prova · T136 e compilados</div>
+Mecanismo da hidroclorotiazida: <b>inibição do simportador Na⁺/Cl⁻ no túbulo contorcido distal</b>. Indicações: <b>hipertensão, insuficiência cardíaca, nefrolitíase por hipercalciúria idiopática e diabetes insípido nefrogênico</b> (edema agudo de pulmão é da furosemida). Na osteoporose se preferem os que agem no distal (<b>clorotiazida, clortalidona</b>), e não os de alça. Diuréticos tiazídicos podem causar <b>disfunção erétil</b>.
+</div>
+</section>
+
+<!-- ============================== 5 K, pH e Ca ============================== -->
+<section class="sec flow">
+<h2><span class="num n-corp">5</span>K⁺, pH e Ca²⁺: o que cada diurético faz</h2>
+<figure class="fig"><svg role="img" aria-label="k_acido" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 296" font-family="Inter, Helvetica, Arial, sans-serif">
+<defs><marker id="k_acido-a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c92a2a"/></marker><marker id="k_acido-a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e8590c"/></marker><marker id="k_acido-a-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b08900"/></marker><marker id="k_acido-a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2b8a3e"/></marker><marker id="k_acido-a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1c7ed6"/></marker><marker id="k_acido-a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7048e8"/></marker><marker id="k_acido-a-pink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c2255c"/></marker><marker id="k_acido-a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#495057"/></marker><marker id="k_acido-a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0c8599"/></marker><marker id="k_acido-a-stop" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M5 0V10" stroke="#c92a2a" stroke-width="3"/></marker></defs>
+<rect x="0" y="0" width="700" height="296" fill="#ffffff"/>
+<rect x="50.0" y="6.5" width="600" height="19" rx="9.5" fill="#0c8599"/><text x="350.0" y="19.7" text-anchor="middle" font-size="10.2" font-weight="800" fill="#ffffff">TUDO SE DECIDE NO DUCTO COLETOR: O QUE CHEGA E O QUE O ENaC FAZ</text>
+<rect x="10" y="38" width="335" height="160" rx="9" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<text x="177.5" y="53.5" text-anchor="middle" font-size="10.6" font-weight="800" fill="#c92a2a">Alça e tiazídicos</text>
+<text x="177.5" y="67.8" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">bloqueiam o Na⁺ <tspan font-weight="800" fill="#212529">antes</tspan> do coletor:</text>
+<text x="177.5" y="80.2" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">chega <tspan font-weight="800" fill="#212529">mais fluxo e mais Na⁺</tspan> ao ENaC</text>
+<text x="177.5" y="92.6" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">→ luz mais negativa → <tspan font-weight="800" fill="#212529">sai mais K⁺</tspan> (ROMK)</text>
+<text x="177.5" y="105.0" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">e a intercalada <tspan font-weight="800" fill="#212529">secreta mais H⁺</tspan></text>
+<text x="177.5" y="117.4" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">a perda de volume ativa o <tspan font-weight="800" fill="#212529">SRAA</tspan>:</text>
+<text x="177.5" y="129.9" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">a <tspan font-weight="800" fill="#212529">aldosterona</tspan> piora a perda de K⁺ e H⁺</text>
+<text x="177.5" y="142.3" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40"></text>
+<text x="177.5" y="154.7" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">→ <tspan font-weight="800" fill="#212529">hipocalemia</tspan> e <tspan font-weight="800" fill="#212529">alcalose metabólica</tspan></text>
+<text x="177.5" y="167.1" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">(potencializam a <tspan font-weight="800" fill="#212529">toxicidade digitálica</tspan>)</text>
+<rect x="355" y="38" width="335" height="160" rx="9" fill="#d0ebff" stroke="#1c7ed6" stroke-width="1.4"/>
+<text x="522.5" y="53.5" text-anchor="middle" font-size="10.6" font-weight="800" fill="#1c7ed6">Poupadores de K⁺</text>
+<text x="522.5" y="67.8" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">agem <tspan font-weight="800" fill="#212529">no próprio coletor</tspan>:</text>
+<text x="522.5" y="80.2" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">amilorida, triantereno</tspan>: bloqueiam o ENaC</text>
+<text x="522.5" y="92.6" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">espironolactona, eplerenona</tspan>: bloqueiam</text>
+<text x="522.5" y="105.0" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">o receptor da aldosterona</text>
+<text x="522.5" y="117.4" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">→ luz <tspan font-weight="800" fill="#212529">menos negativa</tspan> → sai <tspan font-weight="800" fill="#212529">menos K⁺</tspan></text>
+<text x="522.5" y="129.9" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">e a intercalada secreta <tspan font-weight="800" fill="#212529">menos H⁺</tspan></text>
+<text x="522.5" y="142.3" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40"></text>
+<text x="522.5" y="154.7" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">→ <tspan font-weight="800" fill="#212529">hipercalemia</tspan> e <tspan font-weight="800" fill="#212529">acidose metabólica</tspan></text>
+<text x="522.5" y="167.1" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">hiperclorêmica</tspan></text>
+<rect x="10" y="210" width="680" height="78" rx="9" fill="#f1f3f5" stroke="#495057" stroke-width="1.4"/>
+<text x="350.0" y="225.5" text-anchor="middle" font-size="10.2" font-weight="800" fill="#495057">Associar compensa, e o cálcio vai em sentidos opostos</text>
+<text x="350.0" y="239.3" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">Tiazídico + espironolactona</tspan>: um perde K⁺ e o outro retém, e a hipocalemia e a alcalose melhoram.</text>
+<text x="350.0" y="251.5" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">Alça</tspan>: tira o potencial positivo da luz que puxava Ca²⁺ e Mg²⁺ → <tspan font-weight="800" fill="#212529">↑ excreção de Ca²⁺ e Mg²⁺</tspan> (trata hipercalcemia; piora a osteoporose).</text>
+<text x="350.0" y="263.8" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">Tiazídico</tspan>: <tspan font-weight="800" fill="#212529">↓ excreção de Ca²⁺</tspan> (trata a hipercalciúria e os cálculos; é o preferido na osteoporose).</text>
+</svg><figcaption><b>Figura 6.</b> Esquema próprio a partir da aula: alça e tiazídicos aumentam o fluxo e o Na⁺ que chegam ao coletor (e ativam a aldosterona), com perda de K⁺ e H⁺; os poupadores bloqueiam o ENaC ou o receptor da aldosterona e retêm K⁺ e H⁺; o cálcio vai em sentidos opostos com alça e tiazídico.</figcaption></figure>
+<div class="grid2">
+<figure class="img sm"><img src="res/diur/alca_coletor.webp" alt="alca_coletor"><figcaption><b>Figura 7.</b> Diurético de alça → impacta o túbulo coletor → consequência: alcalose metabólica e hipocalemia (aula). Mais Na⁺ chega ao ENaC da célula principal, sai mais K⁺; a intercalada secreta mais H⁺.</figcaption></figure>
+<figure class="img sm"><img src="res/diur/intercalada.webp" alt="intercalada"><figcaption><b>Figura 8.</b> A célula intercalada (aula): a H⁺-ATPase e a H⁺/K⁺-ATPase apicais secretam H⁺; para cada H⁺ secretado, um HCO₃⁻ volta ao sangue. É por aí que a alça e o tiazídico produzem alcalose.</figcaption></figure>
+</div>
+<div class="box mnem"><div class="tag">Mnemônico</div>
+<b>Antes do coletor</b> (alça, tiazídico): o coletor recebe mais Na⁺ e <b>perde</b> K⁺ e H⁺: <b>hipo</b>calemia e <b>alcal</b>ose. <b>No coletor</b> (poupadores): o coletor <b>segura</b> K⁺ e H⁺: <b>hiper</b>calemia e <b>acid</b>ose.
+</div>
+</section>
+
+<!-- ============================== 6 HOMEOSTASE ============================== -->
+<section class="sec flow">
+<h2><span class="num n-corp">6</span>Resposta homeostática ao diurético</h2>
+<figure class="fig"><svg role="img" aria-label="freio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 250" font-family="Inter, Helvetica, Arial, sans-serif">
+<defs><marker id="freio-a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c92a2a"/></marker><marker id="freio-a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e8590c"/></marker><marker id="freio-a-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b08900"/></marker><marker id="freio-a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2b8a3e"/></marker><marker id="freio-a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1c7ed6"/></marker><marker id="freio-a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7048e8"/></marker><marker id="freio-a-pink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c2255c"/></marker><marker id="freio-a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#495057"/></marker><marker id="freio-a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0c8599"/></marker><marker id="freio-a-stop" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M5 0V10" stroke="#c92a2a" stroke-width="3"/></marker></defs>
+<rect x="0" y="0" width="700" height="250" fill="#ffffff"/>
+<rect x="50.0" y="6.5" width="600" height="19" rx="9.5" fill="#0c8599"/><text x="350.0" y="19.7" text-anchor="middle" font-size="10.2" font-weight="800" fill="#ffffff">O CORPO REAGE AO DIURÉTICO: A RESPOSTA HOMEOSTÁTICA</text>
+<rect x="10" y="40" width="160" height="92" rx="9" fill="#ffe8cc" stroke="#e8590c" stroke-width="1.4"/>
+<text x="90.0" y="55.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#e8590c">Diurético</text>
+<text x="90.0" y="69.5" text-anchor="middle" font-size="9.6" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">↑ natriurese</tspan></text>
+<text x="90.0" y="82.2" text-anchor="middle" font-size="9.6" font-weight="400" fill="#343a40">e diurese</text>
+<text x="90.0" y="94.9" text-anchor="middle" font-size="9.6" font-weight="400" fill="#343a40">→ <tspan font-weight="800" fill="#212529">↓ volume</tspan></text>
+<line x1="172" y1="86" x2="192" y2="86" stroke="#495057" stroke-width="2" marker-end="url(#freio-a-gray)"/>
+<rect x="194" y="40" width="220" height="92" rx="9" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<text x="304.0" y="55.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#c92a2a">Mais renina</text>
+<text x="304.0" y="69.5" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40">↓ pressão de perfusão renal</text>
+<text x="304.0" y="81.8" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40">↑ simpático renal (β1)</text>
+<text x="304.0" y="94.1" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">alça</tspan>: bloqueia o NKCC2 da <tspan font-weight="800" fill="#212529">mácula</tspan></text>
+<text x="304.0" y="106.4" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">densa</tspan>, que “lê” pouco NaCl</text>
+<line x1="416" y1="86" x2="436" y2="86" stroke="#495057" stroke-width="2" marker-end="url(#freio-a-gray)"/>
+<rect x="438" y="40" width="252" height="92" rx="9" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<text x="564.0" y="55.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#c92a2a">Angiotensina II e aldosterona</text>
+<text x="564.0" y="69.5" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">retêm Na⁺</tspan> no proximal, no distal</text>
+<text x="564.0" y="81.8" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40">e no coletor; vasoconstrição</text>
+<text x="564.0" y="94.1" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40">a aldosterona <tspan font-weight="800" fill="#212529">perde K⁺ e H⁺</tspan></text>
+<text x="564.0" y="106.4" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40">na urina</text>
+<rect x="10" y="146" width="680" height="94" rx="9" fill="#f1f3f5" stroke="#495057" stroke-width="1.4"/>
+<text x="350.0" y="161.5" text-anchor="middle" font-size="10.2" font-weight="800" fill="#495057">Consequências</text>
+<text x="350.0" y="175.3" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40">O efeito do diurético <tspan font-weight="800" fill="#212529">diminui com o tempo</tspan> (o rim passa a reter Na⁺ nos segmentos que o fármaco não bloqueia).</text>
+<text x="350.0" y="187.5" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40">Por isso o SRAA é o sistema de compensação ativado pelo uso prolongado de alça e tiazídicos (prova),</text>
+<text x="350.0" y="199.8" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40">e por isso se associam <tspan font-weight="800" fill="#212529">IECA, BRA ou espironolactona</tspan> na insuficiência cardíaca e na hipertensão.</text>
+<text x="350.0" y="212.1" text-anchor="middle" font-size="9.3" font-weight="400" fill="#343a40">Na mácula densa, a furosemida “cega” o sensor de NaCl: a renina sobe mesmo sem queda de volume.</text>
+</svg><figcaption><b>Figura 9.</b> Esquema próprio a partir da aula: o diurético reduz o volume; a queda da perfusão renal, o simpático e (com a alça) o bloqueio do NKCC2 da mácula densa liberam renina; a angiotensina II e a aldosterona retêm Na⁺ e perdem K⁺ e H⁺.</figcaption></figure>
+<div class="grid2">
+<figure class="img sm"><img src="res/diur/macula_densa.webp" alt="macula_densa"><figcaption><b>Figura 10.</b> Resposta homeostática (aula): o aparelho justaglomerular, com a mácula densa no túbulo distal junto à arteríola aferente e às células granulares, que liberam renina.</figcaption></figure>
+<figure class="img sm"><img src="res/diur/sraa_diur.webp" alt="sraa_diur"><figcaption><b>Figura 11.</b> O SRAA (aula): ↓ pressão de perfusão, ↑ simpático renal, ↓ filtração e agonistas β e PGI₂ aumentam a renina; o PNA a inibe; a angiotensina II, pelo receptor AT1, libera aldosterona, retém sódio e líquido, contrai os vasos (direto e via noradrenalina) e faz crescimento vascular.</figcaption></figure>
+</div>
+<ul class="tight">
+<li>A queda do volume e a ativação do <b>SRAA</b> fazem o rim reter Na⁺ nos segmentos que o fármaco não bloqueia: o efeito diminui com o tempo.</li>
+<li>A <b>aldosterona</b> agrava a perda de K⁺ e H⁺.</li>
+<li>Por isso se associam <b>IECA, BRA ou espironolactona</b>.</li>
+</ul>
+<div class="box prova"><div class="tag">Cai na prova · T136</div>
+O uso prolongado de diuréticos, especialmente os de alça e tiazídicos, ativa o <b>sistema renina-angiotensina-aldosterona</b>, que leva à retenção de sódio e água e reduz o efeito do diurético.
+</div>
+</section>
+
+<!-- ============================== 7 POUPADORES ============================== -->
+<section class="sec flow newpage">
+<h2><span class="num n-uro">7</span>Poupadores de K⁺</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/diur/poupadores_celula.webp" alt="poupadores_celula"><figcaption><b>Figura 12.</b> Ducto coletor (aula, Rang &amp; Dale): a amilorida e o triantereno bloqueiam o ENaC apical; a aldosterona (que a espironolactona bloqueia) estimula a síntese de canais e bombas; o ADH aumenta o número de aquaporinas.</figcaption></figure>
+<div>
+<ul class="tight">
+<li><b>Amilorida e triantereno</b>: <b>bloqueiam os canais de Na⁺ (ENaC)</b> do ducto coletor.</li>
+<li><b>Espironolactona e eplerenona</b>: <b>antagonistas do receptor da aldosterona</b> (mineralocorticoide). A eplerenona é mais seletiva e dá menos efeitos endócrinos.</li>
+<li>Diuréticos <b>fracos</b> (o coletor só recebe ~3% do Na⁺): usados sobretudo <b>associados</b>.</li>
+<li>Na <b>síndrome de Liddle</b> funciona a amilorida, e não a espironolactona.</li>
+</ul>
+</div>
+</div>
+<h3>7.1 Indicações</h3>
+<ul class="tight">
+<li><b>Aldosteronismo secundário</b> (SRAA alto): insuficiência cardíaca, cirrose hepática, síndrome nefrótica, condições com volume intravascular efetivo reduzido.</li>
+<li><b>Hiperaldosteronismo primário</b> (síndrome de Conn).</li>
+<li><b>Atenuar a perda de K⁺</b> causada por outros diuréticos.</li>
+<li>Edema e hipertensão (junto com outros diuréticos).</li>
+</ul>
+<h3>7.2 Toxicidade</h3>
+<table class="dense">
+<thead><tr><th>Efeito</th><th>Detalhe</th></tr></thead>
+<tbody>
+<tr><td class="g-uro"><b>Hipercalemia</b></td><td>O principal risco. Associar tiazídico com espironolactona melhora a hipocalemia e a alcalose</td></tr>
+<tr><td class="g-uro">Acidose metabólica hiperclorêmica</td><td>Inibição da secreção de H⁺ junto com a de K⁺</td></tr>
+<tr><td class="g-uro"><b>Ginecomastia</b></td><td>E impotência e outras alterações endócrinas: a espironolactona é um esteroide sintético com ação antiandrogênica (a aula cita também a hiperplasia prostática)</td></tr>
+<tr><td class="g-uro">Insuficiência renal aguda</td><td>Relatada com triantereno + indometacina</td></tr>
+<tr><td class="g-uro">Cálculos renais</td><td>Triantereno: pouco solúvel, precipita na urina</td></tr>
+</tbody></table>
+<div class="grid2">
+<figure class="img sm"><img src="res/diur/poupador_coletor.webp" alt="poupador_coletor"><figcaption><b>Figura 13.</b> Poupador de K⁺ → impacta o túbulo coletor → consequência: acidose metabólica e hipercalemia (aula).</figcaption></figure>
+<div>
+<p>Sem o Na⁺ entrando pelo ENaC, a luz fica <b>menos negativa</b>: sai menos K⁺ (hipercalemia) e a intercalada secreta menos H⁺ (acidose).</p>
+<p>Cuidado com a associação de poupador com <b>IECA, BRA</b>, suplementos de K⁺ ou insuficiência renal.</p>
+</div>
+</div>
+<div class="box clin"><div class="tag">Correlação clínica</div>
+Na <b>insuficiência cardíaca</b> a espironolactona é associada ao betabloqueador (por exemplo, carvedilol) e prolonga a vida. No <b>hiperaldosteronismo primário</b> é o tratamento clínico de escolha.
+</div>
+<div class="box prova"><div class="tag">Cai na prova · T137, T136 e compilados</div>
+Bloqueiam canais de Na⁺ no ducto coletor: <b>triantereno e amilorida</b>. Antagoniza a aldosterona no receptor: <b>espironolactona</b> (Conn, hiperaldosteronismo secundário da insuficiência cardíaca, paciente em uso de carvedilol). Atua nos dutos coletores: <b>triantereno</b>. Efeitos adversos dos poupadores: <b>hipercalemia e ginecomastia</b>.
+</div>
+</section>
+
+<!-- ============================== 8 OSMÓTICOS ============================== -->
+<section class="sec flow">
+<h2><span class="num n-tcp">8</span>Osmóticos e acetazolamida</h2>
+<h3>8.1 Manitol</h3>
+<ul class="tight">
+<li>É <b>filtrado</b>, <b>não é reabsorvido</b> e não é metabolizado. Fica na luz e, por osmose, <b>impede a reabsorção de água</b> no túbulo proximal e no ramo descendente da alça.</li>
+<li>Resultado: <b>diurese hídrica</b> (mais água que Na⁺).</li>
+<li>Pouco absorvido pelo intestino: dado por <b>via intravenosa</b>. Por via oral causa <b>diarreia osmótica</b>.</li>
+</ul>
+<table class="dense">
+<thead><tr><th>Indicações</th><th>Toxicidade</th></tr></thead>
+<tbody>
+<tr><td>Reduzir a <b>pressão intracraniana</b> (TCE, edema cerebral) e a <b>pressão intraocular</b>: puxa água do interstício</td><td><b>Expansão transitória do LEC</b>: antes da diurese ele se distribui no LEC e tira água das células; complica a <b>insuficiência cardíaca</b> (edema de pulmão)</td></tr>
+<tr><td>Aumentar o volume urinário; IRA por hemorragias</td><td><b>Desidratação e hipernatremia</b> se usado demais sem repor água</td></tr>
+</tbody></table>
+<h3>8.2 Acetazolamida</h3>
+<p>Inibe a <b>anidrase carbônica</b> do túbulo proximal: perde-se HCO₃⁻ na urina, a urina fica <b>alcalina</b> e o sangue vai para <b>acidose metabólica</b>. Como a acidose reduz o próprio efeito, não é usada como diurético; é usada no <b>glaucoma</b> e no mal das montanhas.</p>
+<div class="box prova"><div class="tag">Cai na prova · T137, T136 e compilados</div>
+TCE grave com edema cerebral e hipertensão intracraniana: <b>manitol</b>. Diurético osmótico: <b>manitol</b> (substância inerte, filtrada e não reabsorvida). Na prevenção da IRA se usam os osmóticos e a furosemida.
+</div>
+</section>
+
+<!-- ============================== 9 REVISÃO ============================== -->
+<section class="sec flow newpage">
+<h2><span class="num">9</span>Revisão final</h2>
+<table class="dense master">
+<thead><tr><th></th><th>Alça</th><th>Tiazídicos</th><th>Poupadores</th><th>Osmóticos</th></tr></thead>
+<tbody>
+<tr><td class="g-uro">Protótipo</td><td>Furosemida</td><td>Hidroclorotiazida</td><td>Espironolactona; amilorida</td><td>Manitol</td></tr>
+<tr><td class="g-uro">Local / alvo</td><td>RAE / NKCC2</td><td>TCD / NCC</td><td>Coletor / ENaC ou receptor</td><td>Proximal e descendente</td></tr>
+<tr><td class="g-uro">Potência</td><td><b>Alta</b> (até 25%)</td><td>Moderada (5%)</td><td>Fraca (2–3%)</td><td>Água</td></tr>
+<tr><td class="g-uro">K⁺</td><td>↓</td><td>↓</td><td><b>↑</b></td><td>≈</td></tr>
+<tr><td class="g-uro">pH</td><td>Alcalose</td><td>Alcalose</td><td><b>Acidose</b></td><td>≈</td></tr>
+<tr><td class="g-uro">Ca²⁺ na urina</td><td><b>↑</b></td><td><b>↓</b></td><td>≈</td><td>≈</td></tr>
+<tr><td class="g-uro">Marca</td><td>Ototoxicidade, hipomagnesemia, gota</td><td>Hiperglicemia, hiperlipidemia, hiponatremia</td><td>Ginecomastia (espironolactona)</td><td>Expansão do LEC</td></tr>
+<tr><td class="g-uro">Uso típico</td><td>Edema agudo de pulmão, hipercalcemia</td><td>Hipertensão, hipercalciúria, DI nefrogênico</td><td>IC, Conn, cirrose</td><td>Hipertensão intracraniana</td></tr>
+</tbody></table>
+<div class="box prova"><div class="tag">Pegadinhas que se repetem</div>
+<ul class="tight">
+<li>“Os tiazídicos são os diuréticos mais potentes” → <b>falso</b>: são os de alça.</li>
+<li>“Os poupadores de K⁺ são mais potentes que os de alça” → <b>falso</b>: são fracos.</li>
+<li>“A espironolactona age no túbulo distal bloqueando canais” → <b>falso</b>: bloqueia o receptor da aldosterona, no coletor.</li>
+<li>“O tiazídico alcaliniza a urina bloqueando a reabsorção de HCO₃⁻” → <b>falso</b>: é a acetazolamida.</li>
+<li>“Na osteoporose, prefira a furosemida” → <b>falso</b>: prefira o tiazídico.</li>
+<li>“Edema agudo de pulmão é indicação da hidroclorotiazida” → <b>falso</b>: é da furosemida.</li>
+</ul>
+</div>
+</section>
+
+<!-- ============================== 10 QUESTÕES ============================== -->
+<section class="sec flow">
+<h2><span class="num">10</span>Questões com gabarito comentado</h2>
+<ol class="questions">
+<li>Qual é a diferença entre diurese e natriurese? Qual é o objetivo do diurético?</li>
+<li>Por que a furosemida é mais potente que a hidroclorotiazida, e esta mais que a amilorida?</li>
+<li>Como a furosemida age e por que aumenta a excreção de Ca²⁺ e Mg²⁺?</li>
+<li>Por que AINEs reduzem o efeito da furosemida?</li>
+<li>Quais são as indicações e a toxicidade da furosemida?</li>
+<li>Quais são as indicações dos tiazídicos? Por que servem na hipercalciúria e no diabetes insípido nefrogênico?</li>
+<li>Por que o tiazídico pode causar hiperglicemia?</li>
+<li>Por que alça e tiazídicos causam hipocalemia e alcalose?</li>
+<li>Quais são os poupadores de K⁺, como agem e quais são suas indicações?</li>
+<li>Quais são os efeitos adversos dos poupadores?</li>
+<li>Como o manitol age, quando é indicado e qual é o seu risco?</li>
+<li>O que é a resposta homeostática ao diurético?</li>
+</ol>
+
+<h3>Gabarito comentado</h3>
+<ol class="answers">
+<li><b>Diurese</b> é mais volume de urina; <b>natriurese</b> é mais Na⁺ excretado. O objetivo é a natriurese; a água acompanha o Na⁺.</li>
+<li>Pelo lugar onde agem: o ramo espesso reabsorve ~25% do Na⁺ filtrado e o néfron depois dele recupera pouco; o distal reabsorve ~5%; o coletor só recebe ~3%. Além disso a alça tem “alto limiar” (o efeito cresce com a dose) e o tiazídico tem platô baixo.</li>
+<li>Inibe o <b>NKCC2</b> apical do ramo ascendente espesso. Sem a reciclagem do K⁺ pelo ROMK, some a luz positiva que empurrava Ca²⁺ e Mg²⁺ pela via paracelular: mais Ca²⁺ e Mg²⁺ na urina (hipomagnesemia; útil na hipercalcemia).</li>
+<li>Porque a furosemida chega ao alvo, na luz, por <b>secreção tubular proximal</b> (transportador de ânions orgânicos); AINEs e probenecida competem por essa secreção. Os AINEs também reduzem as prostaglandinas que ajudam a natriurese.</li>
+<li>Indicações: hipertensão, <b>edema agudo de pulmão</b>, insuficiência cardíaca crônica, <b>hipercalcemia</b> (com soro fisiológico), edema da IRC, síndrome nefrótica. Toxicidade: alcalose metabólica hipocalêmica (potencializa digitálicos), <b>ototoxicidade</b> (IV rápida, aminoglicosídeos), hiperuricemia, hipomagnesemia, alergia, desidratação.</li>
+<li>Hipertensão, insuficiência cardíaca, <b>nefrolitíase por hipercalciúria idiopática</b> e <b>diabetes insípido nefrogênico</b>. Na hipercalciúria, porque aumentam a reabsorção de Ca²⁺ no distal. No DI nefrogênico, a contração de volume aumenta a reabsorção proximal e chega menos água ao néfron distal: o volume urinário cai.</li>
+<li>A hipocalemia hiperpolariza a célula β: entra menos Ca²⁺ e sai menos insulina (a secreção depende do fechamento dos canais de K⁺ sensíveis a ATP e da despolarização). Também reduz a utilização de glicose pelos tecidos. Corrigir o K⁺ reverte.</li>
+<li>Bloqueiam o Na⁺ antes do coletor: chega mais fluxo e mais Na⁺ ao ENaC, a luz fica mais negativa e saem mais K⁺ (ROMK) e H⁺ (intercaladas). A perda de volume ativa o SRAA, e a aldosterona agrava. A hipocalemia ainda potencializa a toxicidade digitálica.</li>
+<li><b>Amilorida e triantereno</b> bloqueiam o ENaC; <b>espironolactona e eplerenona</b> bloqueiam o receptor da aldosterona. Indicações: aldosteronismo secundário (IC, cirrose, síndrome nefrótica), hiperaldosteronismo primário (Conn), atenuar a perda de K⁺ de outros diuréticos, edema e hipertensão em associação.</li>
+<li><b>Hipercalemia</b>, acidose metabólica hiperclorêmica, <b>ginecomastia</b> e impotência (espironolactona), IRA (triantereno + indometacina) e cálculos de triantereno.</li>
+<li>É filtrado e não reabsorvido; retém água na luz do proximal e do ramo descendente (diurese hídrica). Indicado para reduzir a <b>pressão intracraniana</b> e a intraocular e na IRA por hemorragia. Risco: <b>expansão transitória do LEC</b> (perigosa na insuficiência cardíaca), e desidratação com hipernatremia se não se repõe água.</li>
+<li>A perda de Na⁺ e de volume ativa o <b>SRAA</b> (menos perfusão renal, simpático e, com a alça, o bloqueio do NKCC2 da mácula densa): a angiotensina II e a aldosterona retêm Na⁺ nos outros segmentos, o efeito diminui e a perda de K⁺ e H⁺ piora. Daí a associação com IECA, BRA ou espironolactona.</li>
+</ol>
+</section>
+
+</template>
+<template id="tpl-pde5">
+<!-- ============================== CAPA ============================== -->
+<section class="cover">
+  <div class="kicker">Resumo de estudo · Farmacologia · Medicina</div>
+  <h1>Inibidores da<br>Fosfodiesterase 5</h1>
+  <div class="rainbow huri"></div>
+  <p class="sub">A fisiologia da ereção e o óxido nítrico, a disfunção erétil (definição, epidemiologia e fatores de risco, inclusive os fármacos que a causam), as opções de tratamento de primeira e segunda linha, o mecanismo dos inibidores da PDE5 na via NO-GMPc, a seletividade, a farmacocinética de sildenafil, vardenafil e tadalafil, os efeitos colaterais, a segurança cardiovascular e as interações com o CYP3A4 e com os nitratos.</p>
+  <p class="meta">Baseado nos slides da aula 21, <em>Farmacologia II: bases farmacológicas dos inibidores da fosfodiesterase tipo 5 (PDE-5)</em> (Prof. Dr. Roberto César P. Lima Jr.). As figuras são as dos slides (Burnett et al., Science 1992; Webb et al., JACC 2000), com um esquema próprio; o texto foi completado com Rang &amp; Dale e Goodman &amp; Gilman. Os destaques “Cai na prova” vêm das provas da T137 e da T136 e dos compilados.</p>
+
+  <div class="cover-grid">
+    <div class="box key">
+      <div class="tag">Como usar este resumo</div>
+      <ol>
+        <li>Entenda o esquema da seção 4: ele responde mecanismo, “precisa de estímulo sexual” e a interação com nitratos.</li>
+        <li>Decore os quatro fármacos e a tabela de farmacocinética (o tadalafil dura 36 h).</li>
+        <li>Guarde as listas de fatores de risco e de fármacos que causam disfunção erétil: caem em itens I a V.</li>
+        <li>Na véspera, revise a seção 8 e faça as questões.</li>
+      </ol>
+    </div>
+    <div class="legend">
+      <div class="tag plain">Código de cores</div>
+      <div class="chips">
+        <span class="chip o" style="--c:#1c7ed6;--f:#d0ebff">Fisiologia (NO-GMPc)</span>
+        <span class="chip o" style="--c:#7048e8;--f:#e5dbff">Disfunção erétil</span>
+        <span class="chip o" style="--c:#2b8a3e;--f:#d3f9d8">Fármacos</span>
+        <span class="chip o" style="--c:#c92a2a;--f:#ffe3e3">Efeitos adversos e interações</span>
+      </div>
+      <div class="boxlegend">
+        <span class="mini key">Em uma frase</span>
+        <span class="mini prova">Cai na prova</span>
+        <span class="mini clin">Correlação clínica</span>
+        <span class="mini deep">Aprofundamento</span>
+        <span class="mini mnem">Mnemônico</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ideias"><div class="tag plain">As cinco ideias que organizam toda a matéria</div>
+  <ol class="tight">
+    <li><b>A ereção é vascular</b>: o <b>NO</b> dos nervos e do endotélio ativa a guanilato ciclase, o <b>GMPc</b> relaxa o músculo liso e o sangue enche os corpos cavernosos.</li>
+    <li><b>A PDE5 acaba com a ereção</b> degradando o GMPc; os <b>iPDE5</b> impedem essa degradação.</li>
+    <li><b>Sem estímulo sexual não há efeito</b>: o iPDE5 não doa NO; ele só protege o GMPc que o NO formou.</li>
+    <li><b>São equivalentes em eficácia</b>; mudam na duração: sildenafil e vardenafil ~12 h, <b>tadalafil 36 h</b>.</li>
+    <li><b>Nunca com nitratos</b>: os dois juntos aumentam o GMPc em todos os vasos e causam <b>hipotensão grave</b>. O metabolismo é pelo <b>CYP3A4</b>.</li>
+  </ol></div>
+
+  <div class="toc">
+    <div class="tag plain">Sumário</div>
+    <ol class="toc2">
+      <li><b>Fisiologia</b> da ereção e o NO</li>
+      <li><b>Disfunção erétil</b>: definição e fatores de risco</li>
+      <li><b>Tratamento</b>: 1ª e 2ª linha</li>
+      <li><b>Mecanismo</b> dos iPDE5</li>
+      <li><b>Seletividade</b> e farmacocinética</li>
+      <li><b>Efeitos colaterais</b> e segurança</li>
+      <li><b>Interações</b>: CYP3A4 e nitratos</li>
+      <li><b>Revisão final</b></li>
+      <li><b>Questões</b> com gabarito comentado</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================== 1 FISIOLOGIA ============================== -->
+<section class="sec flow">
+<h2><span class="num n-col">1</span>Fisiologia da ereção e o óxido nítrico</h2>
+<ul class="tight">
+<li>A ereção depende de quatro componentes: <b>vascular</b>, <b>neural</b>, <b>hormonal</b> e <b>psicológico</b> (aula).</li>
+<li>O estímulo chega pelos <b>nervos cavernosos</b> (parassimpático, dos esplâncnicos pélvicos). Eles e o endotélio liberam <b>NO</b>.</li>
+<li>O NO relaxa o músculo liso das artérias e dos sinusoides: o sangue entra, os sinusoides se enchem e comprimem as veias contra a túnica albugínea (o sangue não sai).</li>
+</ul>
+<div class="grid2">
+<figure class="img sm"><img src="res/pde5/no_histologia.webp" alt="no_histologia"><figcaption><b>Figura 1.</b> NO como mediador fisiológico da ereção (aula, Burnett et al., Science 1992): a NOS aparece marcada nas fibras nervosas (NF) do corpo cavernoso (CS) e no endotélio.</figcaption></figure>
+<figure class="img sm"><img src="res/pde5/burnett.webp" alt="burnett"><figcaption><b>Figura 2.</b> O experimento de Burnett (aula): inibidores da NOS (L-nitroarginina metil éster, N-metil-L-arginina) reduzem a pressão intracavernosa da ereção de forma dose-dependente; a forma D (inativa) não tem efeito.</figcaption></figure>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/pde5/no_celula.webp" alt="no_celula"><figcaption><b>Figura 3.</b> Mecanismo de ação do NO (aula): na célula endotelial, a acetilcolina (ou outro estímulo) aumenta o Ca²⁺, a Ca²⁺-calmodulina ativa a NOS, que faz NO e citrulina a partir de L-arginina e O₂; na célula muscular lisa, o NO ativa a guanilato ciclase, que faz GMPc a partir de GTP, e o GMPc relaxa o músculo.</figcaption></figure>
+<div>
+<ol class="tight">
+<li>Estímulo (acetilcolina ou outros) → ↑ <b>Ca²⁺</b> no endotélio → Ca²⁺-calmodulina ativa a <b>NOS</b>.</li>
+<li>NOS: L-arginina + O₂ → <b>NO</b> + L-citrulina.</li>
+<li>O NO <b>difunde</b> para o músculo liso e ativa a <b>guanilato ciclase solúvel</b>.</li>
+<li>GTP → <b>GMPc</b> → proteína cinase G → ↓ Ca²⁺ → <b>relaxamento</b>.</li>
+<li>A <b>PDE5</b> degrada o GMPc em 5′-GMP: fim da ereção.</li>
+</ol>
+</div>
+</div>
+<div class="box prova"><div class="tag">Cai na prova · T137, T136 e compilados</div>
+O NO contribui para a ereção ao <b>ativar a guanilil ciclase e aumentar o GMPc</b>, que relaxa o músculo liso. O estudo de Burnett (Science, 1992) revolucionou o tratamento ao mostrar o papel do <b>óxido nítrico</b>. Incorreto: “a ereção é induzida pela ação vasodilatadora da acetilcolina nas células musculares” (o mediador é o NO).
+</div>
+</section>
+
+<!-- ============================== 2 DISFUNÇÃO ERÉTIL ============================== -->
+<section class="sec flow">
+<h2><span class="num n-uro">2</span>Disfunção erétil</h2>
+<div class="box key"><div class="tag">Em uma frase</div>
+<b>Incapacidade recorrente e persistente</b> de ter e/ou manter uma ereção com rigidez e duração suficientes para uma relação sexual satisfatória.
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/pde5/epidemiologia.webp" alt="epidemiologia"><figcaption><b>Figura 4.</b> Epidemiologia (aula): a prevalência de disfunção erétil sobe com a idade (de 8% aos 20 anos a 67% aos 70); abaixo dos 40 anos predomina a causa psicogênica, acima dos 40 a orgânica.</figcaption></figure>
+<div>
+<ul class="tight">
+<li>Prevalência: ~10% em 1948; <b>30 a 80%</b> em estudos longitudinais de 2016.</li>
+<li><b>Sobe com a idade</b>.</li>
+<li><b>&lt; 40 anos</b>: predomina a causa <b>psicogênica</b>. <b>&gt; 40 anos</b>: predomina a <b>orgânica</b>.</li>
+<li>Pode ser o primeiro sinal de doença vascular (as artérias penianas são pequenas e entopem antes).</li>
+</ul>
+</div>
+</div>
+<h3>2.1 Fatores de risco</h3>
+<table class="dense">
+<thead><tr><th>Grupo</th><th>Exemplos</th></tr></thead>
+<tbody>
+<tr><td class="g-uro">Doenças crônicas</td><td><b>Aterosclerose, diabetes, hipertensão, obesidade, dislipidemia</b></td></tr>
+<tr><td class="g-uro">Fármacos (25% dos casos)</td><td><b>ISRS</b> (fluoxetina), <b>espironolactona</b>, <b>diuréticos tiazídicos</b>, <b>cetoconazol</b>, cimetidina, <b>β-bloqueadores</b> e outros bloqueadores simpáticos, inibidores da 5α-redutase</td></tr>
+<tr><td class="g-uro">Psicogênicos (20%)</td><td>Depressão, estresse</td></tr>
+<tr><td class="g-uro">Neurológicos</td><td>Lesão medular, trauma pélvico (cirurgia pélvica lesa os nervos cavernosos), demência</td></tr>
+</tbody></table>
+<div class="box deep"><div class="tag">Aprofundamento · como os fármacos causam disfunção erétil</div>
+<b>Cetoconazol</b>: inibe a síntese de testosterona. <b>Espironolactona</b> e <b>cimetidina</b>: efeito antiandrogênico. <b>Inibidores da 5α-redutase</b>: menos di-hidrotestosterona. <b>ISRS</b>: a serotonina inibe a resposta sexual. <b>β-bloqueadores e tiazídicos</b>: menor pressão de perfusão e efeitos centrais. <b>Nitratos não causam</b> disfunção erétil (são vasodilatadores); o problema deles é a interação.
+</div>
+<div class="box prova"><div class="tag">Cai na prova · T137, T136 e compilados</div>
+Causam disfunção erétil: <b>ISRS, tiazídicos, β-bloqueadores e antifúngicos</b> (I, II, III e IV; nitratos não). O cetoconazol predispõe à DE por <b>inibição da síntese de testosterona</b>. Fatores de risco: <b>aterosclerose, obesidade, lesão medular e dislipidemia</b> (hipotensão não); em outra versão, aterosclerose, dislipidemia, depressão, lesão medular e diabetes: <b>todos</b>. “Diuréticos como a hidroclorotiazida estão associados à DE”: verdadeiro.
+</div>
+</section>
+
+<!-- ============================== 3 TRATAMENTO ============================== -->
+<section class="sec flow">
+<h2><span class="num n-tcd">3</span>Tratamento: primeira e segunda linha</h2>
+<table class="dense">
+<thead><tr><th>Linha</th><th>Opção</th><th>Detalhes</th></tr></thead>
+<tbody>
+<tr><td class="g-tcd"><b>1ª</b></td><td><b>Inibidores da PDE5</b></td><td><b>Sildenafil</b> (Viagra®), <b>vardenafil</b> (Levitra®), <b>tadalafil</b> (Cialis®), <b>avanafil</b> (Stendra®)</td></tr>
+<tr><td class="g-tcd">2ª</td><td>Farmacoterapia vasoativa <b>intracavernosa</b> (1995)</td><td><b>Alprostadil (PGE1)</b>: Caverject®, Prostavasin®; injetado no corpo cavernoso</td></tr>
+<tr><td class="g-tcd">2ª</td><td>Bomba de vácuo (1983)</td><td>Pressão negativa mantida por um anel na base do pênis; 67% de sucesso, 25–49% de satisfação</td></tr>
+<tr><td class="g-tcd">Última</td><td><b>Implantes penianos</b></td><td>Inflável, articulável ou semirrígido; inserção cirúrgica; quando as outras opções falham; satisfação de 90% (paciente e parceira)</td></tr>
+</tbody></table>
+<div class="grid2">
+<figure class="img sm"><img src="res/pde5/intracavernosa.webp" alt="intracavernosa"><figcaption><b>Figura 5.</b> Injeção intracavernosa de alprostadil (aula): a agulha entra no corpo cavernoso, lateralmente, longe da uretra e dos vasos dorsais.</figcaption></figure>
+<figure class="img sm"><img src="res/pde5/implantes.webp" alt="implantes"><figcaption><b>Figura 6.</b> Implantes penianos (aula): modelo inflável, com bomba no escroto, e modelo semirrígido.</figcaption></figure>
+</div>
+<div class="box prova"><div class="tag">Cai na prova · T137, T136 e compilados</div>
+Opção de escolha (primeira linha) para a DE: <b>inibidores da PDE5</b>. São iPDE5 de primeira linha: <b>vardenafil e avanafil</b> (sulfanilamida, triazolam e alprostadil não; o alprostadil é segunda linha). Avanafil: <b>inibidor da PDE5</b>. Tadalafil: <b>inibidor da PDE5</b>.
+</div>
+</section>
+
+<!-- ============================== 4 MECANISMO ============================== -->
+<section class="sec flow newpage">
+<h2><span class="num n-tcd">4</span>Mecanismo dos inibidores da PDE5</h2>
+<figure class="fig"><svg role="img" aria-label="via_no" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 372" font-family="Inter, Helvetica, Arial, sans-serif">
+<defs><marker id="via_no-a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c92a2a"/></marker><marker id="via_no-a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e8590c"/></marker><marker id="via_no-a-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b08900"/></marker><marker id="via_no-a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2b8a3e"/></marker><marker id="via_no-a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1c7ed6"/></marker><marker id="via_no-a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7048e8"/></marker><marker id="via_no-a-pink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c2255c"/></marker><marker id="via_no-a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#495057"/></marker><marker id="via_no-a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0c8599"/></marker><marker id="via_no-a-stop" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M5 0V10" stroke="#c92a2a" stroke-width="3"/></marker></defs>
+<rect x="0" y="0" width="700" height="372" fill="#ffffff"/>
+<rect x="50.0" y="6.5" width="600" height="19" rx="9.5" fill="#0c8599"/><text x="350.0" y="19.7" text-anchor="middle" font-size="10.2" font-weight="800" fill="#ffffff">EREÇÃO = NO → GMPc → RELAXAMENTO; O iPDE5 SÓ IMPEDE QUE O GMPc ACABE</text>
+<rect x="10" y="40" width="128" height="84" rx="9" fill="#f1f3f5" stroke="#495057" stroke-width="1.4"/>
+<text x="74.0" y="55.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#495057">Estímulo sexual</text>
+<text x="74.0" y="69.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">nervos <tspan font-weight="800" fill="#212529">cavernosos</tspan></text>
+<text x="74.0" y="81.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">(parassimpático,</text>
+<text x="74.0" y="93.8" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">NANC) e endotélio</text>
+<line x1="140" y1="82" x2="156" y2="82" stroke="#495057" stroke-width="2" marker-end="url(#via_no-a-gray)"/>
+<rect x="158" y="40" width="160" height="84" rx="9" fill="#d3f9d8" stroke="#2b8a3e" stroke-width="1.4"/>
+<text x="238.0" y="55.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#2b8a3e">NOS</text>
+<text x="238.0" y="69.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">L-arginina + O₂</text>
+<text x="238.0" y="81.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">→ <tspan font-weight="800" fill="#212529">NO</tspan> + citrulina</text>
+<text x="238.0" y="93.8" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">(Ca²⁺-calmodulina ativa)</text>
+<line x1="320" y1="82" x2="336" y2="82" stroke="#495057" stroke-width="2" marker-end="url(#via_no-a-gray)"/>
+<rect x="338" y="40" width="168" height="84" rx="9" fill="#d0ebff" stroke="#1c7ed6" stroke-width="1.4"/>
+<text x="422.0" y="55.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#1c7ed6">Guanilato ciclase</text>
+<text x="422.0" y="69.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">o NO difunde para o</text>
+<text x="422.0" y="81.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">músculo liso e ativa a GC:</text>
+<text x="422.0" y="93.8" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">GTP → <tspan font-weight="800" fill="#212529">GMPc</tspan></text>
+<line x1="508" y1="82" x2="524" y2="82" stroke="#495057" stroke-width="2" marker-end="url(#via_no-a-gray)"/>
+<rect x="526" y="40" width="164" height="84" rx="9" fill="#e5dbff" stroke="#7048e8" stroke-width="1.4"/>
+<text x="608.0" y="55.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#7048e8">Relaxamento</text>
+<text x="608.0" y="69.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">GMPc → PKG → <tspan font-weight="800" fill="#212529">↓ Ca²⁺</tspan></text>
+<text x="608.0" y="81.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">artérias e sinusoides</text>
+<text x="608.0" y="93.8" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">dilatam → <tspan font-weight="800" fill="#212529">ereção</tspan></text>
+<rect x="158" y="150" width="160" height="62" rx="9" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<text x="238.0" y="165.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#c92a2a">Inibem a NOS</text>
+<text x="238.0" y="179.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">L-NAME, L-NMMA,</text>
+<text x="238.0" y="191.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">L-NoArg, L-NIO</text>
+<line x1="238" y1="148" x2="238" y2="128" stroke="#c92a2a" stroke-width="1.8" marker-end="url(#via_no-a-red)"/>
+<rect x="338" y="150" width="168" height="62" rx="9" fill="#ffe8cc" stroke="#e8590c" stroke-width="1.4"/>
+<text x="422.0" y="165.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#e8590c">Doam NO</text>
+<text x="422.0" y="179.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40"><tspan font-weight="800" fill="#212529">nitratos</tspan>, nitroprussiato,</text>
+<text x="422.0" y="191.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">SNAP (azul de metileno</text>
+<text x="422.0" y="203.8" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">inibe a GC)</text>
+<line x1="422" y1="148" x2="422" y2="128" stroke="#e8590c" stroke-width="1.8" marker-end="url(#via_no-a-orange)"/>
+<rect x="526" y="150" width="164" height="62" rx="9" fill="#fff3bf" stroke="#b08900" stroke-width="1.4"/>
+<text x="608.0" y="165.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#b08900">PDE5</text>
+<text x="608.0" y="179.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">GMPc → <tspan font-weight="800" fill="#212529">5′-GMP</tspan></text>
+<text x="608.0" y="191.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">(fim da ereção)</text>
+<line x1="608" y1="148" x2="608" y2="128" stroke="#b08900" stroke-width="1.8" marker-end="url(#via_no-a-gold)"/>
+<rect x="526" y="226" width="164" height="62" rx="9" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<text x="608.0" y="241.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#c92a2a">iPDE5</text>
+<text x="608.0" y="255.5" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">sildenafil, vardenafil,</text>
+<text x="608.0" y="267.7" text-anchor="middle" font-size="9.2" font-weight="400" fill="#343a40">tadalafil, <tspan font-weight="800" fill="#212529">avanafil</tspan></text>
+<line x1="608" y1="224" x2="608" y2="214" stroke="#c92a2a" stroke-width="1.8" marker-end="url(#via_no-a-red)"/>
+<rect x="10" y="226" width="506" height="62" rx="9" fill="#f1f3f5" stroke="#495057" stroke-width="1.4"/>
+<text x="263.0" y="242.0" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">Os iPDE5 <tspan font-weight="800" fill="#212529">não doam NO</tspan> e <tspan font-weight="800" fill="#212529">não causam ereção sozinhos</tspan>: sem estímulo sexual não há</text>
+<text x="263.0" y="254.4" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">NO nem GMPc a proteger. Eles <tspan font-weight="800" fill="#212529">impedem a degradação</tspan> do GMPc que o NO já formou.</text>
+<rect x="10" y="300" width="680" height="62" rx="9" fill="#ffe3e3" stroke="#c92a2a" stroke-width="1.4"/>
+<text x="350.0" y="315.5" text-anchor="middle" font-size="10.4" font-weight="800" fill="#c92a2a">Por que nitrato + iPDE5 é proibido</text>
+<text x="350.0" y="329.5" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">O nitrato faz <tspan font-weight="800" fill="#212529">mais GMPc</tspan> em todos os vasos e o iPDE5 impede que ele seja degradado: vasodilatação</text>
+<text x="350.0" y="341.9" text-anchor="middle" font-size="9.4" font-weight="400" fill="#343a40">sistêmica e <tspan font-weight="800" fill="#212529">hipotensão grave</tspan> (síncope, isquemia). Com sildenafil, a PA cai muito mais com isossorbida (aula).</text>
+</svg><figcaption><b>Figura 7.</b> A via NO-GMPc e onde agem os fármacos (esquema próprio a partir da aula): os inibidores da NOS cortam a produção de NO; nitratos e nitroprussiato doam NO; o azul de metileno inibe a guanilato ciclase; a PDE5 degrada o GMPc e os iPDE5 a bloqueiam.</figcaption></figure>
+<div class="grid2">
+<figure class="img sm"><img src="res/pde5/modulacao.webp" alt="modulacao"><figcaption><b>Figura 8.</b> Modulação farmacológica da via NO-GMPc (aula): L-NAME, L-NoArg, L-NMMA e L-NIO inibem a NOS; SNAP, nitratos e nitroprussiato doam NO; o azul de metileno inibe a guanilato ciclase; avanafil, sildenafil, tadalafil e vardenafil inibem a PDE5.</figcaption></figure>
+<div>
+<ul class="tight">
+<li>Os iPDE5 <b>inibem a degradação do GMPc</b> dentro da célula muscular lisa do corpo cavernoso: o GMPc dura mais e o relaxamento se mantém.</li>
+<li>Para funcionar, <b>precisam de estímulo sexual</b> e de liberação de NO.</li>
+<li><b>Não doam NO</b> e <b>não agem em receptores adrenérgicos</b> (α1 ou outros).</li>
+</ul>
+</div>
+</div>
+<div class="grid2">
+<figure class="img sm"><img src="res/pde5/estrutura.webp" alt="estrutura"><figcaption><b>Figura 9.</b> Estrutura molecular (aula): sildenafil, vardenafil e tadalafil se parecem com o GMPc, o substrato da PDE5; por isso ocupam o sítio da enzima e a inibem de forma competitiva.</figcaption></figure>
+<div>
+<p>Os três têm um anel que imita a guanina do <b>GMPc</b>: competem com o substrato pelo sítio catalítico da PDE5.</p>
+</div>
+</div>
+<div class="box prova"><div class="tag">Cai na prova · T137, T136 e compilados (muito cobrado)</div>
+Sobre os iPDE5: <b>precisam de estímulo sexual e de NO</b>; agem pela <b>inibição da degradação do GMPc</b> no músculo liso; têm como eventos adversos <b>cefaleia, rubor facial e obstrução nasal</b>; têm metabolismo hepático pelo <b>citocromo P450</b>. Falsos: “agem pelo bloqueio adrenérgico” ou “pela via dos receptores α1”; “são bons doadores de NO”; “o rash cutâneo é um dos principais eventos adversos”. Mecanismo da ereção pelo iPDE5: a inibição da PDE5 <b>aumenta o GMPc</b>.
+</div>
+</section>
+
+<!-- ============================== 5 SELETIVIDADE E FARMACOCINÉTICA ============================== -->
+<section class="sec flow">
+<h2><span class="num n-tcd">5</span>Seletividade e farmacocinética</h2>
+<div class="grid2">
+<figure class="img sm"><img src="res/pde5/seletividade.webp" alt="seletividade"><figcaption><b>Figura 10.</b> Seletividade pelas PDEs (aula): IC₅₀ em nM de vardenafil, sildenafil e tadalafil para cada isoforma; destaque para a PDE5 (alvo), a PDE6 (retina) e a PDE11A (tadalafil, IC₅₀ de 67 nM).</figcaption></figure>
+<div>
+<ul class="tight">
+<li>Todos inibem a <b>PDE5</b> em concentrações muito baixas (vardenafil 0,89 nM, sildenafil 8,5 nM, tadalafil 9,4 nM).</li>
+<li><b>PDE6</b> (retina): o sildenafil a inibe em concentração só ~7 vezes maior que a da PDE5 (vardenafil ~15 vezes): <b>visão azulada</b>. O tadalafil quase não a inibe.</li>
+<li><b>PDE11</b> (músculo esquelético): o tadalafil a inibe (~7 vezes a PDE5), o que se associa à <b>dor lombar e mialgia</b>.</li>
+</ul>
+</div>
+</div>
+<table class="dense">
+<thead><tr><th>Parâmetro</th><th>Sildenafil</th><th>Vardenafil</th><th>Tadalafil</th></tr></thead>
+<tbody>
+<tr><td class="g-tcd">Doses (mg)</td><td>25, 50 e 100</td><td>5, 10 e 20</td><td>10, 20</td></tr>
+<tr><td class="g-tcd">Meia-vida (h)</td><td>4,0</td><td>4,1</td><td><b>17,5</b></td></tr>
+<tr><td class="g-tcd">Tmáx (min)</td><td>60</td><td>40</td><td>120</td></tr>
+<tr><td class="g-tcd">Início de ação (min)</td><td>12</td><td>15</td><td>20</td></tr>
+<tr><td class="g-tcd">Duração (h)</td><td>12</td><td>12</td><td><b>36</b></td></tr>
+</tbody></table>
+<h3>5.1 Eficácia e indicações</h3>
+<ul class="tight">
+<li><b>Não há evidência de maior eficácia</b> de um sobre o outro.</li>
+<li>Todos: DE de causa psicológica, diabetes tipo 1 e 2, <b>após prostatectomia radical</b>.</li>
+<li><b>Sildenafil</b>: pacientes com doença cardiovascular e com insuficiência renal em diálise.</li>
+<li><b>Vardenafil</b>: pacientes com dislipidemia.</li>
+</ul>
+<div class="box prova"><div class="tag">Cai na prova · compilados</div>
+“Os iPDE5 têm eficácia comparável”, “o tadalafil tem meia-vida mais longa (efeito até 36 h)”, “cefaleia, rubor e congestão nasal são comuns a todos” e “pacientes com IC podem usar sildenafil, com melhora no exercício”: <b>todas verdadeiras</b>. Falsos: “o sildenafil tem marcante superioridade de eficácia”; “todos têm meias-vidas iguais”; “o tadalafil tem a menor eficácia”.
+</div>
+</section>
+
+<!-- ============================== 6 EFEITOS COLATERAIS ============================== -->
+<section class="sec flow">
+<h2><span class="num n-corp">6</span>Efeitos colaterais e segurança</h2>
+<table class="dense">
+<thead><tr><th>Efeito colateral</th><th>Quem</th><th>Por quê</th></tr></thead>
+<tbody>
+<tr><td class="g-corp"><b>Cefaleia e rubor facial</b></td><td>Todos</td><td>Vasodilatação</td></tr>
+<tr><td class="g-corp">Epigastralgia</td><td>Todos</td><td>Relaxa o esfíncter esofágico inferior (refluxo)</td></tr>
+<tr><td class="g-corp"><b>Congestão nasal</b></td><td>Todos</td><td>Vasodilatação da mucosa</td></tr>
+<tr><td class="g-corp">Dor lombar e mialgia</td><td><b>Tadalafil</b></td><td>Inibição da PDE11</td></tr>
+<tr><td class="g-corp">Hipotensão</td><td>Todos</td><td>Vasodilatação sistêmica</td></tr>
+<tr><td class="g-corp">Distúrbios visuais (<b>visão azul</b>)</td><td>Sildenafil (e vardenafil)</td><td>Inibição da PDE6 da retina</td></tr>
+</tbody></table>
+<h3>6.1 Segurança cardiovascular</h3>
+<ul class="tight">
+<li>Seguros em pacientes com <b>insuficiência coronariana estável</b>.</li>
+<li>Não causam alterações significativas no <b>ECG</b>, não aumentam a incidência de <b>AVC</b> e não alteram <b>FC nem PA</b> (sistólica e diastólica) quando usados sozinhos.</li>
+<li><b>Insuficiência cardíaca</b>: o sildenafil <b>aumenta a capacidade durante o exercício</b> (Bocchi et al., 2002). Não piora o quadro.</li>
+</ul>
+<div class="box clin"><div class="tag">Correlação clínica</div>
+O sildenafil e o tadalafil também tratam a <b>hipertensão arterial pulmonar</b> (a PDE5 é abundante no pulmão), e o tadalafil em dose diária trata os sintomas urinários da hiperplasia prostática.
+</div>
+<div class="box prova"><div class="tag">Cai na prova · compilados</div>
+“Pacientes com insuficiência cardíaca congestiva têm piora quando usam iPDE5” → <b>falso</b>: eles <b>se beneficiam</b> (mais capacidade de exercício).
+</div>
+</section>
+
+<!-- ============================== 7 INTERAÇÕES ============================== -->
+<section class="sec flow">
+<h2><span class="num n-corp">7</span>Interações: CYP3A4 e nitratos</h2>
+<table class="dense">
+<thead><tr><th>Tipo</th><th>Fármacos</th><th>Efeito</th></tr></thead>
+<tbody>
+<tr><td class="g-corp">Inibidores do CYP3A4</td><td><b>Cetoconazol</b>, ritonavir, eritromicina</td><td>↑ nível e duração do iPDE5: usar doses menores (por exemplo, 25 mg de sildenafil)</td></tr>
+<tr><td class="g-corp">Indutores do CYP3A4</td><td>Rifampicina, fenitoína, fenobarbital, etanol</td><td>↓ nível e efeito</td></tr>
+<tr><td class="g-corp"><b>Nitratos orgânicos</b></td><td><b>Mononitrato e dinitrato de isossorbida</b>, nitroglicerina, nitroprussiato</td><td><b>Hipotensão grave</b>: contraindicação</td></tr>
+</tbody></table>
+<div class="grid2">
+<figure class="img sm"><img src="res/pde5/nitratos_via.webp" alt="nitratos_via"><figcaption><b>Figura 11.</b> Por que a interação com nitratos é perigosa (aula): os nitratos (e o nitroprussiato e o SNAP) doam NO e aumentam muito a produção de GMPc; o iPDE5 impede que ele seja degradado.</figcaption></figure>
+<figure class="img sm"><img src="res/pde5/isossorbida.webp" alt="isossorbida"><figcaption><b>Figura 12.</b> Sildenafil e mononitrato de isossorbida em homens com angina estável (aula, Webb et al., JACC 2000): a pressão sentado e em pé cai muito mais com isossorbida + sildenafil do que com isossorbida + placebo.</figcaption></figure>
+</div>
+<ul class="tight">
+<li>O nitrato faz <b>mais GMPc</b> em todos os vasos; o iPDE5 impede que ele seja degradado: <b>vasodilatação sistêmica</b>, queda grave da PA, síncope e isquemia.</li>
+<li>É a interação mais cobrada. Um paciente coronariano que usa nitrato <b>não pode</b> usar iPDE5, e quem tomou iPDE5 e tem dor no peito não deve receber nitrato (24 h para sildenafil, 48 h para tadalafil).</li>
+</ul>
+<div class="box prova"><div class="tag">Cai na prova · T137, T136 e compilados (cai sempre)</div>
+Interação prejudicial com doadores de NO, potencializando hipotensão: <b>nitratos orgânicos</b> (nitrato de isossorbida, dinitrato de isossorbida). Interação negativa com o tadalafil: <b>nitratos orgânicos</b>. Interação farmacocinética com o tadalafil por inibição enzimática (prolonga o efeito): <b>cetoconazol</b>.
+</div>
+</section>
+
+<!-- ============================== 8 REVISÃO ============================== -->
+<section class="sec flow newpage">
+<h2><span class="num">8</span>Revisão final</h2>
+<table class="dense master">
+<thead><tr><th></th><th>Resposta</th></tr></thead>
+<tbody>
+<tr><td class="g-tcd">Mediador da ereção</td><td><b>NO</b> → guanilato ciclase → <b>GMPc</b> → relaxamento</td></tr>
+<tr><td class="g-tcd">Alvo dos iPDE5</td><td><b>PDE5</b>, que degrada o GMPc em 5′-GMP</td></tr>
+<tr><td class="g-tcd">Precisa de estímulo sexual?</td><td><b>Sim</b></td></tr>
+<tr><td class="g-tcd">Fármacos</td><td>Sildenafil, vardenafil, tadalafil, avanafil</td></tr>
+<tr><td class="g-tcd">Mais longo</td><td><b>Tadalafil</b> (meia-vida 17,5 h, efeito 36 h)</td></tr>
+<tr><td class="g-tcd">Eficácia</td><td>Comparável entre eles</td></tr>
+<tr><td class="g-tcd">Efeitos comuns</td><td>Cefaleia, rubor, congestão nasal, epigastralgia, hipotensão</td></tr>
+<tr><td class="g-tcd">Específicos</td><td>Visão azul (sildenafil, PDE6); dor lombar (tadalafil, PDE11)</td></tr>
+<tr><td class="g-tcd">Metabolismo</td><td><b>CYP3A4</b>: cetoconazol, ritonavir e eritromicina aumentam o nível</td></tr>
+<tr><td class="g-tcd">Contraindicação</td><td><b>Nitratos orgânicos</b> (hipotensão grave)</td></tr>
+<tr><td class="g-tcd">Segunda linha</td><td>Alprostadil intracavernoso, bomba de vácuo; depois implante</td></tr>
+</tbody></table>
+<div class="box prova"><div class="tag">Pegadinhas que se repetem</div>
+<ul class="tight">
+<li>“Os iPDE5 são doadores de NO” → <b>falso</b>.</li>
+<li>“Agem bloqueando receptores adrenérgicos” → <b>falso</b>.</li>
+<li>“Funcionam sem estímulo sexual” → <b>falso</b>.</li>
+<li>“O sildenafil é mais eficaz que os outros” → <b>falso</b>.</li>
+<li>“Todos têm a mesma meia-vida” → <b>falso</b>: o tadalafil dura muito mais.</li>
+<li>“Pioram a insuficiência cardíaca” → <b>falso</b>.</li>
+<li>“Nitratos causam disfunção erétil” → <b>falso</b>: o problema é a interação.</li>
+<li>“Alprostadil é iPDE5 de primeira linha” → <b>falso</b>: é PGE1 intracavernosa, segunda linha.</li>
+</ul>
+</div>
+<div class="box mnem"><div class="tag">Mnemônico</div>
+Os quatro iPDE5 terminam em <b>-afil</b>: sild<b>enafil</b>, varden<b>afil</b>, tadal<b>afil</b>, avan<b>afil</b>. O <b>T</b>adalafil é o <b>T</b>ardio (36 h); o <b>S</b>ildenafil dá a vi<b>S</b>ão azul.
+</div>
+</section>
+
+<!-- ============================== 9 QUESTÕES ============================== -->
+<section class="sec flow">
+<h2><span class="num">9</span>Questões com gabarito comentado</h2>
+<ol class="questions">
+<li>Descreva a via do NO na ereção, da célula endotelial até o relaxamento.</li>
+<li>O que mostrou o estudo de Burnett (1992)?</li>
+<li>Defina disfunção erétil. Qual causa predomina antes e depois dos 40 anos?</li>
+<li>Quais fármacos causam disfunção erétil, e como o cetoconazol a causa?</li>
+<li>Quais são as opções de primeira e de segunda linha no tratamento?</li>
+<li>Como os iPDE5 agem? Por que precisam de estímulo sexual?</li>
+<li>Compare sildenafil, vardenafil e tadalafil na farmacocinética e na eficácia.</li>
+<li>Quais são os efeitos colaterais e de onde vêm a visão azul e a dor lombar?</li>
+<li>O iPDE5 é seguro no cardiopata? E na insuficiência cardíaca?</li>
+<li>Por que o iPDE5 não pode ser usado com nitratos?</li>
+<li>Quais fármacos alteram o metabolismo dos iPDE5?</li>
+</ol>
+
+<h3>Gabarito comentado</h3>
+<ol class="answers">
+<li>Acetilcolina (ou outro estímulo) → ↑ Ca²⁺ no endotélio → Ca²⁺-calmodulina ativa a NOS → L-arginina + O₂ → NO + citrulina. O NO difunde para o músculo liso, ativa a guanilato ciclase solúvel (GTP → GMPc), o GMPc ativa a PKG, o Ca²⁺ cai e o músculo relaxa: o sangue enche os corpos cavernosos. Os nervos cavernosos (nitrérgicos) também liberam NO.</li>
+<li>Que o <b>NO</b> é o mediador fisiológico da ereção: a NOS está nas fibras nervosas e no endotélio do corpo cavernoso, e os inibidores da NOS (L-NAME, L-NMMA) reduzem a pressão intracavernosa de forma dose-dependente.</li>
+<li>Incapacidade recorrente e persistente de ter e/ou manter uma ereção com rigidez e duração suficientes para uma relação satisfatória. Antes dos 40 anos predomina a causa <b>psicogênica</b>; depois, a <b>orgânica</b>.</li>
+<li>ISRS (fluoxetina), espironolactona, tiazídicos, cetoconazol, cimetidina, β-bloqueadores e inibidores da 5α-redutase (25% dos casos). O cetoconazol <b>inibe a síntese de testosterona</b>.</li>
+<li>Primeira linha: <b>iPDE5</b> (sildenafil, vardenafil, tadalafil, avanafil). Segunda: <b>alprostadil (PGE1) intracavernoso</b> e bomba de vácuo. Quando tudo falha: implante peniano.</li>
+<li>Inibem a PDE5, que degrada o GMPc em 5′-GMP no músculo liso do corpo cavernoso; o GMPc se acumula e o relaxamento se mantém. Não produzem NO: sem estímulo sexual não há NO nem GMPc para proteger, e não há ereção.</li>
+<li>Sildenafil (25–100 mg; meia-vida 4 h; início 12 min; 12 h), vardenafil (5–20 mg; 4,1 h; 15 min; 12 h) e tadalafil (10–20 mg; <b>17,5 h</b>; 20 min; <b>36 h</b>). A <b>eficácia é comparável</b>; não há superioridade de um sobre o outro.</li>
+<li>Cefaleia, rubor facial, epigastralgia, congestão nasal e hipotensão (todos, por vasodilatação e relaxamento do músculo liso); dor lombar e mialgia (tadalafil, PDE11); <b>visão azul</b> (sildenafil, inibição da PDE6 da retina).</li>
+<li>Sim, na coronariopatia <b>estável</b>: não alteram o ECG, não aumentam AVC e não mudam FC nem PA quando usados sozinhos. Na insuficiência cardíaca o sildenafil <b>melhora</b> a capacidade de exercício.</li>
+<li>Os nitratos doam NO e aumentam o GMPc em todos os vasos; o iPDE5 impede a degradação: vasodilatação sistêmica e <b>hipotensão grave</b> (a PA cai muito mais com isossorbida + sildenafil do que com isossorbida + placebo).</li>
+<li>São metabolizados pelo <b>CYP3A4</b>. Inibidores (cetoconazol, ritonavir, eritromicina) aumentam o nível: usar dose menor (25 mg de sildenafil). Indutores (rifampicina, fenitoína, fenobarbital, etanol) reduzem o efeito.</li>
+</ol>
+</section>
+
+</template>
+<template id="tpl-eletro">
 <!-- ============================== CAPA ============================== -->
 <section class="cover">
   <div class="kicker">Resumo de estudo · Fisiologia · Medicina</div>
@@ -15770,7 +16588,9 @@ const MAT=[
 {"id": "ahnd", "t": "Alça de Henle e Néfron Distal", "av": "AV3", "area": "Fisiologia", "c": "#0c8599", "profs": "Prof. Pedro Magalhães · Aula 16, Fisiologia do Sistema Urinário IV", "d": "O que chega à alça, a osmolaridade ao longo do néfron, cada ramo da alça e o gradiente medular, o NKCC2 do ramo espesso (furosemida, Bartter), o NCC do túbulo distal (tiazídicos, Gitelman), as células do ducto coletor, ADH e aquaporinas, aldosterona e potássio (poupadores, Liddle) e os cílios na doença renal policística.", "pdf": "res/Resumo_Alca_de_Henle_e_Nefron_Distal.pdf", "pdfName": "Resumo - Alca de Henle e Nefron Distal.pdf", "figs": 21, "slides": 24, "sn": "", "ana": [], "his": [], "teo": [266, 270, 302, 309, 311, 312, 313, 314, 315, 333, 334, 335, 336, 341, 358, 359, 480, 482, 483, 488, 489, 490, 493, 494, 495, 496, 502, 504, 513, 514, 521, 526, 528, 536, 539, 540, 549, 552, 553, 555, 572, 573, 578, 580, 581, 582, 583, 591, 593, 594, 595, 596, 602, 603, 605, 607, 627, 628, 629, 631, 633, 634, 635, 636, 639, 645, 648, 657, 658, 659, 661, 662, 665, 669, 670, 673, 674, 676]},
 {"id": "conc", "t": "Concentração Urinária e Contracorrente", "av": "AV3", "area": "Fisiologia", "c": "#5f3dc4", "profs": "Prof. Pedro Magalhães · Aula 17, Fisiologia do Sistema Urinário V", "d": "Os limites da urina (50 a 1200 mOsm), as proteínas de cada segmento, o multiplicador de contracorrente passo a passo, a reciclagem da ureia (UT-A1, UT-A3, UT-A2, UT-B), o ADH e o equilíbrio no ducto coletor, os vasos retos como permutador, a lavagem papilar e a depuração de água livre.", "pdf": "res/Resumo_Concentracao_Urinaria.pdf", "pdfName": "Resumo - Concentracao Urinaria e Contracorrente.pdf", "figs": 13, "slides": 22, "sn": "", "ana": [], "his": [], "teo": [266, 302, 311, 312, 313, 314, 315, 335, 336, 337, 488, 489, 504, 547, 578, 583, 588, 591, 627, 629, 648, 661, 669]},
 {"id": "hidro", "t": "Regulação da Água e do Sódio", "av": "AV3", "area": "Fisiologia", "c": "#1c7ed6", "profs": "Prof. Pedro Magalhães · Aula 18, Fisiologia do Sistema Urinário VI", "d": "Água corporal e compartimentos, composição dos líquidos, membranas e tonicidade, o sódio como medida da osmolaridade, balanço hídrico, sensores de volume e ANP, o controle da renina, SRAA e aldosterona, ADH (osmorreceptores e barorreceptores) e a resposta à desidratação.", "pdf": "res/Resumo_Regulacao_Agua_e_Sodio.pdf", "pdfName": "Resumo - Regulacao da Agua e do Sodio.pdf", "figs": 22, "slides": 33, "sn": "", "ana": [], "his": [], "teo": [120, 173, 177, 265, 267, 298, 299, 338, 339, 340, 341, 491, 492, 496, 503, 516, 517, 518, 519, 520, 521, 538, 539, 547, 585, 588, 602, 605, 608, 632, 635, 641, 663, 669, 672]},
-{"id": "eletro", "t": "Balanço de Sódio e Potássio", "av": "AV3", "area": "Fisiologia", "c": "#e67700", "profs": "Prof. Pedro Magalhães · Aula 19, Fisiologia do Sistema Urinário VII", "d": "Balanço de sódio e reabsorção por segmento, as três vias que excretam o excesso de Na⁺ (filtração glomerular, aldosterona e terceiro fator), PNA, células e cílios do ducto coletor, efeitos da aldosterona, ENaC e síndrome de Liddle, importância do potássio, balanço interno (insulina, adrenalina, pH), hipo e hipercalemia, manejo renal do K⁺, fatores da secreção de K⁺ e o paradoxo da aldosterona.", "pdf": "res/Resumo_Balanco_Sodio_e_Potassio.pdf", "pdfName": "Resumo - Balanco de Sodio e Potassio.pdf", "figs": 34, "slides": 51, "sn": "", "ana": [], "his": [], "teo": [609, 650, 339, 519, 538, 549, 582, 341, 521, 493, 495, 528, 540, 634, 645, 676, 602, 514, 482, 573, 595, 659, 636, 584, 541, 542, 610, 642, 526, 544, 658, 536, 670, 496, 539, 635]}
+{"id": "eletro", "t": "Balanço de Sódio e Potássio", "av": "AV3", "area": "Fisiologia", "c": "#e67700", "profs": "Prof. Pedro Magalhães · Aula 19, Fisiologia do Sistema Urinário VII", "d": "Balanço de sódio e reabsorção por segmento, as três vias que excretam o excesso de Na⁺ (filtração glomerular, aldosterona e terceiro fator), PNA, células e cílios do ducto coletor, efeitos da aldosterona, ENaC e síndrome de Liddle, importância do potássio, balanço interno (insulina, adrenalina, pH), hipo e hipercalemia, manejo renal do K⁺, fatores da secreção de K⁺ e o paradoxo da aldosterona.", "pdf": "res/Resumo_Balanco_Sodio_e_Potassio.pdf", "pdfName": "Resumo - Balanco de Sodio e Potassio.pdf", "figs": 34, "slides": 51, "sn": "", "ana": [], "his": [], "teo": [609, 650, 339, 519, 538, 549, 582, 341, 521, 493, 495, 528, 540, 634, 645, 676, 602, 514, 482, 573, 595, 659, 636, 584, 541, 542, 610, 642, 526, 544, 658, 536, 670, 496, 539, 635]},
+{"id": "pde5", "t": "Inibidores da Fosfodiesterase 5", "av": "AV3", "area": "Farmacologia", "c": "#862e9c", "profs": "Prof. Roberto César P. Lima Jr. · Aula 21, Farmacologia II", "d": "Fisiologia da ereção e o óxido nítrico, disfunção erétil (definição, epidemiologia, fatores de risco e fármacos que a causam), tratamento de primeira e segunda linha, mecanismo dos iPDE5 na via NO-GMPc, seletividade, farmacocinética, efeitos colaterais, segurança cardiovascular e interações com o CYP3A4 e com os nitratos.", "pdf": "res/Resumo_Inibidores_PDE5.pdf", "pdfName": "Resumo - Inibidores da PDE5.pdf", "figs": 12, "slides": 28, "sn": "", "ana": [], "his": [], "teo": [92, 288, 342, 343, 344, 382, 389, 390, 411, 414, 415, 416, 417, 450, 454, 459, 484, 485, 486, 487, 509, 510, 511, 512, 575, 576, 577, 660, 664, 671]},
+{"id": "diur", "t": "Diuréticos", "av": "AV3", "area": "Farmacologia", "c": "#d9480f", "profs": "Prof. Roberto César P. Lima Jr. · Aula 26, Farmacologia III", "d": "Natriurese e diurese, as classes e onde agem no néfron, diuréticos de alça (furosemida), tiazídicos (hidroclorotiazida), poupadores de K⁺ (amilorida, triantereno, espironolactona) e osmóticos (manitol): mecanismo, indicações e toxicidade; K⁺, pH e cálcio; e a resposta homeostática pelo SRAA.", "pdf": "res/Resumo_Diureticos.pdf", "pdfName": "Resumo - Diureticos.pdf", "figs": 13, "slides": 34, "sn": "", "ana": [], "his": [], "teo": [480, 481, 482, 483, 489, 494, 513, 514, 515, 516, 536, 552, 553, 554, 555, 572, 573, 574, 593, 594, 595, 596, 628, 633, 636, 646, 657, 659, 662, 665, 667]}
 ];
 GR.mat={};MAT.forEach(m=>GR.mat[m.id]={n:m.t,c:m.c});
 IT.mat=MAT.map(m=>({grp:m.id,label:m.t}));
@@ -16036,7 +16856,7 @@ render();
 <script>
 (function(){
 if(!("serviceWorker" in navigator)||location.protocol==="file:")return;
-var FILES=["./", "index.html", "manifest.json", "icone-180.png", "icone-192.png", "icone-512.png", "img/art_aorta.jpg", "img/art_iliaca_comum.jpg", "img/art_ilinterna.jpg", "img/bexiga_trigono.jpg", "img/bx_modelo.jpg", "img/bx_puboprostatico.jpg", "img/bx_pubovesical.jpg", "img/colo_utero.jpg", "img/esc_camadas.jpg", "img/esc_funiculo_anel.jpg", "img/esc_testiculo.jpg", "img/escavacoes.jpg", "img/f_hemipelve.jpg", "img/f_hemipelve_labios.jpg", "img/f_lig_redondo.jpg", "img/f_mesovario.jpg", "img/f_ovario_suspensor.jpg", "img/f_vulva_alfinetes.jpg", "img/ligamento_largo.jpg", "img/m_ampola_deferente.jpg", "img/m_arteria_dorsal.jpg", "img/m_escroto_aberto.jpg", "img/m_fascias_escroto.jpg", "img/m_frenulo.jpg", "img/m_frenulo_prepucio.jpg", "img/m_glande_frenulo.jpg", "img/m_modelo.jpg", "img/m_penis_corte.jpg", "img/m_penis_dorsal.jpg", "img/m_penis_transversal.jpg", "img/m_perineo.jpg", "img/m_perineo_alfinetes.jpg", "img/m_prepucio.jpg", "img/m_prostata_sagital.jpg", "img/m_sagital.jpg", "img/m_sagital_bexiga.jpg", "img/m_sagital_escavacoes.jpg", "img/m_sagital_penis.jpg", "img/m_sagital_prostata.jpg", "img/m_tunicas_testiculo.jpg", "img/m_veia_dorsal.jpg", "img/m_vesicula_isolada.jpg", "img/mesos.jpg", "img/ovario_fornices.jpg", "img/ovario_ligamentos.jpg", "img/rim_aberto.jpg", "img/rim_capsula.jpg", "img/rim_colunas.jpg", "img/rim_corte.jpg", "img/rim_hilo.jpg", "img/rim_pediculo.jpg", "img/rim_vasos.jpg", "img/tuba_uterina.jpg", "img/u_arteria_renal_dir.jpg", "img/u_arteria_renal_esq.jpg", "img/u_bexiga_trigono.jpg", "img/u_hilo.jpg", "img/u_rim_calices.jpg", "img/u_rim_papila.jpg", "img/u_rins_margens.jpg", "img/u_rins_vasos.jpg", "img/u_ureter_trajeto.jpg", "img/ureter_iliaca.jpg", "img/ureter_jup.jpg", "img/ureter_partes.jpg", "img/utero_camadas.jpg", "img/utero_partes.jpg", "img/utero_posterior.jpg", "img/utero_sagital.jpg", "img/vagina_fornices.jpg", "img/vasos_gonadais.jpg", "img/vasos_testicular.jpg", "img/vulva_externa.jpg", "img/vulva_partes.jpg", "histo/g01.jpg", "histo/g02.jpg", "histo/g03.jpg", "histo/g04.jpg", "histo/g05.jpg", "histo/g06.jpg", "histo/g07.jpg", "histo/g08.jpg", "histo/g09.jpg", "histo/g10.jpg", "histo/g11.jpg", "histo/g12.jpg", "histo/g13.jpg", "histo/g14.jpg", "histo/g15.jpg", "histo/g16.jpg", "histo/g17.jpg", "histo/g18.jpg", "histo/g19.jpg", "histo/g20.jpg", "histo/g21.jpg", "histo/g22.jpg", "histo/g23.jpg", "histo/g24.jpg", "histo/g25.jpg", "histo/g26.jpg", "histo/g27.jpg", "histo/g28.jpg", "histo/g29.jpg", "histo/g30.jpg", "histo/g31.jpg", "histo/g32.jpg", "histo/g33.jpg", "histo/g34.jpg", "histo/g35.jpg", "histo/g36.jpg", "histo/g37.jpg", "histo/g38.jpg", "histo/g39.jpg", "histo/g40.jpg", "histo/g41.jpg", "histo/g42.jpg", "histo/g43.jpg", "histo/g44.jpg", "histo/g45.jpg", "histo/g46.jpg", "histo/g47.jpg", "histo/g48.jpg", "histo/g49.jpg", "histo/g50.jpg", "histo/g51.jpg", "histo/rev01.jpg", "histo/rev02.jpg", "histo/rev03.jpg", "histo/rev04.jpg", "histo/rev05.jpg", "histo/rev06.jpg", "histo/rev07.jpg", "histo/rev08.jpg", "histo/rev09.jpg", "histo/rev10.jpg", "teo/c1_14.webp", "teo/c1b_23.webp", "teo/c1e_4.webp", "teo/c1e_5.webp", "teo/c2q_11.webp", "teo/c2q_3.webp", "teo/c2q_8.webp", "teo/c2s_12.webp", "teo/c2s_2.webp", "teo/c2s_30.webp", "teo/c2s_7.webp", "teo/c3b_10.webp", "teo/c3b_18.webp", "teo/c3b_7.webp", "teo/c3b_8.webp", "teo/c3b_9.webp", "teo/c3c_18.webp", "teo/c3c_19.webp", "teo/c3d_24.webp", "teo/c3e_11.webp", "teo/c3e_6.webp", "res/Resumo_Alca_de_Henle_e_Nefron_Distal.pdf", "res/Resumo_Balanco_Sodio_e_Potassio.pdf", "res/Resumo_Concentracao_Urinaria.pdf", "res/Resumo_Embriologia_Sistema_Reprodutor.pdf", "res/Resumo_Embriologia_Sistema_Urinario.pdf", "res/Resumo_Fisiologia_Ciclo_Menstrual.pdf", "res/Resumo_Fisiologia_Renal_Filtracao_Glomerular.pdf", "res/Resumo_Fisiologia_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Aparelho_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Sistema_Genital_Feminino.pdf", "res/Resumo_Histologia_Sistema_Urinario.pdf", "res/Resumo_Mecanismos_Tubulares.pdf", "res/Resumo_Regulacao_Agua_e_Sodio.pdf", "res/Resumo_Sistema_Genital_Feminino.pdf", "res/Resumo_Sistema_Genital_Masculino.pdf", "res/Resumo_Sistema_Urinario.pdf", "res/Resumo_Tratamento_Ejaculacao_Precoce.pdf", "res/Super_Resumo_AV1.pdf", "res/Super_Resumo_AV2.pdf", "res/ciclo/anatomia.webp", "res/ciclo/belchetz.webp", "res/ciclo/ciclos.webp", "res/ciclo/colo_dias.webp", "res/ciclo/corpo_luteo.webp", "res/ciclo/dominante.webp", "res/ciclo/duas_celulas.webp", "res/ciclo/duas_simples.webp", "res/ciclo/endossalpinge.webp", "res/ciclo/estagios_a.webp", "res/ciclo/estagios_b.webp", "res/ciclo/estigma.webp", "res/ciclo/feedback_neg.webp", "res/ciclo/folicular_fim.webp", "res/ciclo/folicular_ini.webp", "res/ciclo/histo_endo.webp", "res/ciclo/histo_folic.webp", "res/ciclo/hormonios.webp", "res/ciclo/idades.webp", "res/ciclo/independente.webp", "res/ciclo/intervalo.webp", "res/ciclo/kiss_arc_avpv.webp", "res/ciclo/kiss_leptina.webp", "res/ciclo/kiss_registro.webp", "res/ciclo/linha_tempo.webp", "res/ciclo/lutea_ctrl.webp", "res/ciclo/lutea_horm.webp", "res/ciclo/menopausa_e.webp", "res/ciclo/menopausa_g.webp", "res/ciclo/muco_e2.webp", "res/ciclo/muco_p4.webp", "res/ciclo/nucleos.webp", "res/ciclo/ovario_ciclo.webp", "res/ciclo/ovulacao.webp", "res/ciclo/primordial.webp", "res/ciclo/proliferativa.webp", "res/ciclo/pulsos_lh_fsh.webp", "res/ciclo/pulsos_mua.webp", "res/ciclo/reserva.webp", "res/ciclo/surto_lh.webp", "res/ciclo/temperatura.webp", "res/ciclo/utero_camadas.webp", "res/conc/aqp2.webp", "res/conc/efeito_unitario.webp", "res/conc/justamedular.webp", "res/conc/multiplicador.webp", "res/conc/osmolaridade.webp", "res/conc/passos.webp", "res/conc/transportadores.webp", "res/conc/ureia_alca.webp", "res/conc/ut_celula.webp", "res/conc/ut_tabela.webp", "res/conc/vasa_anatomia.webp", "res/conc/vasa_permutador.webp", "res/egen/cgp_migracao.webp", "res/egen/cordao.webp", "res/egen/cordoes_primitivos.webp", "res/egen/cortex_medula.webp", "res/egen/crista_corte.webp", "res/egen/crista_meso.webp", "res/egen/crista_uro.webp", "res/egen/defeitos_uterinos.webp", "res/egen/ductos_cloaca.webp", "res/egen/ductos_indif.webp", "res/egen/ductos_masc.webp", "res/egen/ext_homem_mulher.webp", "res/egen/ext_indif.webp", "res/egen/ext_tabela.webp", "res/egen/glandulas_masc.webp", "res/egen/gonada_indif.webp", "res/egen/hipo_epi.webp", "res/egen/hipospadia.webp", "res/egen/histo_infantil_adulto.webp", "res/egen/lig_largo.webp", "res/egen/lig_largo_corte.webp", "res/egen/muller_utero.webp", "res/egen/ovario_ab.webp", "res/egen/ovario_gartner.webp", "res/egen/paramesonefrico.webp", "res/egen/penis_escroto.webp", "res/egen/prostata_ab.webp", "res/egen/seio_ductos.webp", "res/egen/septo_uterino.webp", "res/egen/sry_cascata.webp", "res/egen/sry_xy.webp", "res/egen/testiculo_ab.webp", "res/egen/testiculo_des.webp", "res/egen/testiculo_fluxo.webp", "res/egen/utero_vagina_sem.webp", "res/egen/vagina_abc.webp", "res/egen/vulva_ab.webp", "res/ejac/alfa1.webp", "res/ejac/alvos.webp", "res/ejac/anestesicos.webp", "res/ejac/estagios.webp", "res/ejac/etiologia.webp", "res/ejac/fases.webp", "res/ejac/ielt.webp", "res/ejac/irs_agudo.webp", "res/ejac/irs_cronico.webp", "res/ejac/irs_fluxo.webp", "res/ejac/perspectivas.webp", "res/ejac/sindrome_ss.webp", "res/ejac/supraespinhal.webp", "res/ejac/tabela_isrs.webp", "res/ejac/tramadol.webp", "res/ejac/via_5ht.webp", "res/ejac/vias.webp", "res/eletro/acidose_k.webp", "res/eletro/adrenalina_k.webp", "res/eletro/alcalose_k.webp", "res/eletro/aldo_celula.webp", "res/eletro/aldo_liddle.webp", "res/eletro/anp_receptores.webp", "res/eletro/balanco_na.webp", "res/eletro/cascata_3fator.webp", "res/eletro/cascata_aldo.webp", "res/eletro/cascata_tfg.webp", "res/eletro/cilio.webp", "res/eletro/ducto_celulas.webp", "res/eletro/ducto_mev.webp", "res/eletro/enac.webp", "res/eletro/fator_aldo.webp", "res/eletro/fator_fluxo.webp", "res/eletro/fator_kp.webp", "res/eletro/fluxo_cilio.webp", "res/eletro/k_carga.webp", "res/eletro/k_corpo.webp", "res/eletro/k_hormonios.webp", "res/eletro/k_nefron.webp", "res/eletro/k_proximal_alca.webp", "res/eletro/liddle_mut.webp", "res/eletro/paradoxo.webp", "res/eletro/policistica.webp", "res/eletro/potencial_k.webp", "res/eletro/poupadores.webp", "res/eletro/pressoes_glom.webp", "res/eletro/pressoes_vasos.webp", "res/eletro/secrecao_k.webp", "res/eletro/segmentos_na.webp", "res/eurin/acessorias.webp", "res/eurin/ascensao.webp", "res/eurin/broto.webp", "res/eurin/caso_massa.webp", "res/eurin/caso_ureterocele.webp", "res/eurin/coletor.webp", "res/eurin/duplicidade.webp", "res/eurin/ectopia.webp", "res/eurin/ectopico.webp", "res/eurin/ferradura.webp", "res/eurin/geracoes.webp", "res/eurin/indiferente.webp", "res/eurin/liquido.webp", "res/eurin/meso_ductos.webp", "res/eurin/metanefro.webp", "res/eurin/nefrogenese.webp", "res/eurin/nefron.webp", "res/eurin/netter_uretra.webp", "res/eurin/posic_ureteres.webp", "res/eurin/potter.webp", "res/eurin/pro_meso.webp", "res/eurin/ramificacao.webp", "res/eurin/rotacao.webp", "res/eurin/seio_ug.webp", "res/eurin/uraco.webp", "res/eurin/ureterocele_foto.webp", "res/eurin/vup.webp", "res/eurin/vup_adapt.webp", "res/eurin/wolff_deriv.webp", "res/fem/camadas.webp", "res/fem/episiotomia.webp", "res/fem/ligamentos.webp", "res/fem/mama.webp", "res/fem/ovario_corte.webp", "res/fem/perineo.webp", "res/fem/sagital.webp", "res/fem/tuba_frontal.webp", "res/fem/utero_idades.webp", "res/fem/vulva.webp", "res/fglom/autorregulacao.webp", "res/fglom/barreira_3d.webp", "res/fglom/camadas.webp", "res/fglom/capilar_duplo.webp", "res/fglom/carga.webp", "res/fglom/contratilidade.webp", "res/fglom/cortical_justa.webp", "res/fglom/doencas_fenda.webp", "res/fglom/efsr.webp", "res/fglom/extrinseca.webp", "res/fglom/fenestra.webp", "res/fglom/ftg.webp", "res/fglom/glomerulo_netter.webp", "res/fglom/hemorragia.webp", "res/fglom/macula_atp.webp", "res/fglom/mesangiais.webp", "res/fglom/miogenico_graf.webp", "res/fglom/nefrina_slit.webp", "res/fglom/peritubular.webp", "res/fglom/podocito_prot.webp", "res/fglom/regioes.webp", "res/fglom/renina_release.webp", "res/fglom/segmentos.webp", "res/fglom/segmentos_cel.webp", "res/fglom/starling_extra.webp", "res/fglom/starling_glom.webp", "res/fglom/tamanho.webp", "res/fglom/tipos_nefron.webp", "res/fglom/vasos_netter.webp", "res/fglom/vasos_retos.webp", "res/frmasc/barreira.webp", "res/frmasc/capacitacao.webp", "res/frmasc/circadiana.webp", "res/frmasc/compart.webp", "res/frmasc/efeitos_t.webp", "res/frmasc/eixo_berne.webp", "res/frmasc/epitelio.webp", "res/frmasc/esperm.webp", "res/frmasc/espermio.webp", "res/frmasc/fertilizacao.webp", "res/frmasc/glandulas.webp", "res/frmasc/kiss_fert.webp", "res/frmasc/kndy.webp", "res/frmasc/leydig_ester.webp", "res/frmasc/metab_t.webp", "res/frmasc/no_gmpc.webp", "res/frmasc/penis.webp", "res/frmasc/reflexo.webp", "res/frmasc/sertoli_func.webp", "res/frmasc/simpatico.webp", "res/frmasc/testiculo.webp", "res/ftub/aa_pept.webp", "res/ftub/adh_infusao.webp", "res/ftub/adh_valores.webp", "res/ftub/agua_tp.webp", "res/ftub/alca_carac.webp", "res/ftub/alca_valores.webp", "res/ftub/aldosterona.webp", "res/ftub/antiporte.webp", "res/ftub/aqp2.webp", "res/ftub/aqp_nefron.webp", "res/ftub/aqp_tipos.webp", "res/ftub/cilios.webp", "res/ftub/cl_dirigido.webp", "res/ftub/cl_formato.webp", "res/ftub/claudinas.webp", "res/ftub/glicose_tm.webp", "res/ftub/gradiente.webp", "res/ftub/hco3.webp", "res/ftub/intercaladas.webp", "res/ftub/na_tp.webp", "res/ftub/nacl_distal.webp", "res/ftub/nkcc.webp", "res/ftub/osmolaridade.webp", "res/ftub/perfil_tp.webp", "res/ftub/policistica.webp", "res/ftub/poupadores.webp", "res/ftub/proteinas.webp", "res/ftub/rae_canais.webp", "res/ftub/secrecao_pah.webp", "res/ftub/sglt_na.webp", "res/ftub/simporte.webp", "res/ftub/tabela_tp.webp", "res/ftub/tres_processos.webp", "res/ftub/vias.webp", "res/hfem/antral_he.webp", "res/hfem/cervice.webp", "res/hfem/ciclo_endo.webp", "res/hfem/ciclo_ovario.webp", "res/hfem/classif.webp", "res/hfem/corpo_luteo.webp", "res/hfem/cortex_ov.webp", "res/hfem/duas_celulas.webp", "res/hfem/eixo.webp", "res/hfem/endocervice.webp", "res/hfem/endometrio_esq.webp", "res/hfem/funcional.webp", "res/hfem/graaf.webp", "res/hfem/jec.webp", "res/hfem/luteinicas.webp", "res/hfem/miometrio.webp", "res/hfem/ovario_corte.webp", "res/hfem/ovulacao.webp", "res/hfem/primarios_he.webp", "res/hfem/primordiais.webp", "res/hfem/tecas.webp", "res/hfem/tuba_he.webp", "res/hfem/vagina.webp", "res/hidro/adh_osm.webp", "res/hidro/adh_vol.webp", "res/hidro/agua_corporal.webp", "res/hidro/aldo_genomico.webp", "res/hidro/anp.webp", "res/hidro/aparelho_jg.webp", "res/hidro/arteriais.webp", "res/hidro/atriais.webp", "res/hidro/avp_osm.webp", "res/hidro/baro_osmo.webp", "res/hidro/compartimentos.webp", "res/hidro/desidratacao.webp", "res/hidro/eletrolitos.webp", "res/hidro/ftg.webp", "res/hidro/granulos_avp.webp", "res/hidro/hemacias.webp", "res/hidro/hipotalamo.webp", "res/hidro/membrana.webp", "res/hidro/osmotica.webp", "res/hidro/sra.webp", "res/hmasc/albuginea_leydig.webp", "res/hmasc/barreira_ht.webp", "res/hmasc/concrecoes.webp", "res/hmasc/controle.webp", "res/hmasc/deferente.webp", "res/hmasc/ductos.webp", "res/hmasc/ejaculatorios.webp", "res/hmasc/epididimo.webp", "res/hmasc/epididimo_det.webp", "res/hmasc/epitelio_esq.webp", "res/hmasc/epitelio_germ.webp", "res/hmasc/epitelio_leydig.webp", "res/hmasc/eretil.webp", "res/hmasc/espermiogenese.webp", "res/hmasc/penis_corte.webp", "res/hmasc/penis_esq.webp", "res/hmasc/prostata_gland.webp", "res/hmasc/prostata_lam.webp", "res/hmasc/prostata_zonas.webp", "res/hmasc/testiculo.webp", "res/hmasc/testiculo_esq.webp", "res/hmasc/tubulos_sem.webp", "res/huri/alca_coletor.webp", "res/huri/barreira_diag.webp", "res/huri/bexiga_camadas.webp", "res/huri/bexiga_urotelio.webp", "res/huri/corpusculo.webp", "res/huri/corpusculo_jga.webp", "res/huri/cortex_medula.webp", "res/huri/diafragma.webp", "res/huri/glomerulo.webp", "res/huri/macula_densa.webp", "res/huri/papila.webp", "res/huri/podocitos.webp", "res/huri/raio_medular.webp", "res/huri/rim_lamina.webp", "res/huri/tcp.webp", "res/huri/tcp_tcd.webp", "res/huri/ureter.webp", "res/huri/ureter_ab.webp", "res/huri/uretra_fem.webp", "res/huri/vascularizacao.webp", "res/masc/camadas_diag.webp", "res/masc/descida.webp", "res/masc/epididimo_frontal.webp", "res/masc/escroto_netter.webp", "res/masc/irrigacao.webp", "res/masc/penis_face.webp", "res/masc/penis_vasos.webp", "res/masc/posterior_bexiga.webp", "res/masc/prostata_cortes.webp", "res/masc/prostata_frontal.webp", "res/masc/vesiculas_netter.webp", "res/masc/visao.webp", "res/slides/ahnd_01.webp", "res/slides/ahnd_02.webp", "res/slides/ahnd_03.webp", "res/slides/ahnd_04.webp", "res/slides/ahnd_05.webp", "res/slides/ahnd_06.webp", "res/slides/ahnd_07.webp", "res/slides/ahnd_08.webp", "res/slides/ahnd_09.webp", "res/slides/ahnd_10.webp", "res/slides/ahnd_11.webp", "res/slides/ahnd_12.webp", "res/slides/ahnd_13.webp", "res/slides/ahnd_14.webp", "res/slides/ahnd_15.webp", "res/slides/ahnd_16.webp", "res/slides/ahnd_17.webp", "res/slides/ahnd_18.webp", "res/slides/ahnd_19.webp", "res/slides/ahnd_20.webp", "res/slides/ahnd_21.webp", "res/slides/ahnd_22.webp", "res/slides/ahnd_23.webp", "res/slides/ahnd_24.webp", "res/slides/ciclo_01.webp", "res/slides/ciclo_02.webp", "res/slides/ciclo_03.webp", "res/slides/ciclo_04.webp", "res/slides/ciclo_05.webp", "res/slides/ciclo_06.webp", "res/slides/ciclo_07.webp", "res/slides/ciclo_08.webp", "res/slides/ciclo_09.webp", "res/slides/ciclo_10.webp", "res/slides/ciclo_11.webp", "res/slides/ciclo_12.webp", "res/slides/ciclo_13.webp", "res/slides/ciclo_14.webp", "res/slides/ciclo_15.webp", "res/slides/ciclo_16.webp", "res/slides/ciclo_17.webp", "res/slides/ciclo_18.webp", "res/slides/ciclo_19.webp", "res/slides/ciclo_20.webp", "res/slides/ciclo_21.webp", "res/slides/ciclo_22.webp", "res/slides/ciclo_23.webp", "res/slides/ciclo_24.webp", "res/slides/ciclo_25.webp", "res/slides/ciclo_26.webp", "res/slides/ciclo_27.webp", "res/slides/ciclo_28.webp", "res/slides/ciclo_29.webp", "res/slides/ciclo_30.webp", "res/slides/ciclo_31.webp", "res/slides/ciclo_32.webp", "res/slides/ciclo_33.webp", "res/slides/ciclo_34.webp", "res/slides/ciclo_35.webp", "res/slides/ciclo_36.webp", "res/slides/ciclo_37.webp", "res/slides/ciclo_38.webp", "res/slides/ciclo_39.webp", "res/slides/ciclo_40.webp", "res/slides/ciclo_41.webp", "res/slides/ciclo_42.webp", "res/slides/ciclo_43.webp", "res/slides/ciclo_44.webp", "res/slides/ciclo_45.webp", "res/slides/ciclo_46.webp", "res/slides/ciclo_47.webp", "res/slides/ciclo_48.webp", "res/slides/ciclo_49.webp", "res/slides/ciclo_50.webp", "res/slides/ciclo_51.webp", "res/slides/ciclo_52.webp", "res/slides/ciclo_53.webp", "res/slides/ciclo_54.webp", "res/slides/ciclo_55.webp", "res/slides/ciclo_56.webp", "res/slides/ciclo_57.webp", "res/slides/ciclo_58.webp", "res/slides/ciclo_59.webp", "res/slides/ciclo_60.webp", "res/slides/ciclo_61.webp", "res/slides/ciclo_62.webp", "res/slides/ciclo_63.webp", "res/slides/ciclo_64.webp", "res/slides/ciclo_65.webp", "res/slides/ciclo_66.webp", "res/slides/ciclo_67.webp", "res/slides/ciclo_68.webp", "res/slides/ciclo_69.webp", "res/slides/ciclo_70.webp", "res/slides/ciclo_71.webp", "res/slides/ciclo_72.webp", "res/slides/ciclo_73.webp", "res/slides/ciclo_74.webp", "res/slides/ciclo_75.webp", "res/slides/ciclo_76.webp", "res/slides/ciclo_77.webp", "res/slides/ciclo_78.webp", "res/slides/ciclo_79.webp", "res/slides/ciclo_80.webp", "res/slides/conc_01.webp", "res/slides/conc_02.webp", "res/slides/conc_03.webp", "res/slides/conc_04.webp", "res/slides/conc_05.webp", "res/slides/conc_06.webp", "res/slides/conc_07.webp", "res/slides/conc_08.webp", "res/slides/conc_09.webp", "res/slides/conc_10.webp", "res/slides/conc_11.webp", "res/slides/conc_12.webp", "res/slides/conc_13.webp", "res/slides/conc_14.webp", "res/slides/conc_15.webp", "res/slides/conc_16.webp", "res/slides/conc_17.webp", "res/slides/conc_18.webp", "res/slides/conc_19.webp", "res/slides/conc_20.webp", "res/slides/conc_21.webp", "res/slides/conc_22.webp", "res/slides/egen_01.webp", "res/slides/egen_02.webp", "res/slides/egen_03.webp", "res/slides/egen_04.webp", "res/slides/egen_05.webp", "res/slides/egen_06.webp", "res/slides/egen_07.webp", "res/slides/egen_08.webp", "res/slides/egen_09.webp", "res/slides/egen_10.webp", "res/slides/egen_11.webp", "res/slides/egen_12.webp", "res/slides/egen_13.webp", "res/slides/egen_14.webp", "res/slides/egen_15.webp", "res/slides/egen_16.webp", "res/slides/egen_17.webp", "res/slides/egen_18.webp", "res/slides/egen_19.webp", "res/slides/egen_20.webp", "res/slides/egen_21.webp", "res/slides/egen_22.webp", "res/slides/egen_23.webp", "res/slides/egen_24.webp", "res/slides/egen_25.webp", "res/slides/egen_26.webp", "res/slides/egen_27.webp", "res/slides/egen_28.webp", "res/slides/egen_29.webp", "res/slides/egen_30.webp", "res/slides/egen_31.webp", "res/slides/egen_32.webp", "res/slides/egen_33.webp", "res/slides/egen_34.webp", "res/slides/egen_35.webp", "res/slides/egen_36.webp", "res/slides/egen_37.webp", "res/slides/egen_38.webp", "res/slides/egen_39.webp", "res/slides/egen_40.webp", "res/slides/egen_41.webp", "res/slides/egen_42.webp", "res/slides/egen_43.webp", "res/slides/egen_44.webp", "res/slides/egen_45.webp", "res/slides/egen_46.webp", "res/slides/egen_47.webp", "res/slides/egen_48.webp", "res/slides/egen_49.webp", "res/slides/egen_50.webp", "res/slides/egen_51.webp", "res/slides/egen_52.webp", "res/slides/egen_53.webp", "res/slides/egen_54.webp", "res/slides/egen_55.webp", "res/slides/egen_56.webp", "res/slides/egen_57.webp", "res/slides/egen_58.webp", "res/slides/egen_59.webp", "res/slides/egen_60.webp", "res/slides/egen_61.webp", "res/slides/egen_62.webp", "res/slides/egen_63.webp", "res/slides/ejac_01.webp", "res/slides/ejac_02.webp", "res/slides/ejac_03.webp", "res/slides/ejac_04.webp", "res/slides/ejac_05.webp", "res/slides/ejac_06.webp", "res/slides/ejac_07.webp", "res/slides/ejac_08.webp", "res/slides/ejac_09.webp", "res/slides/ejac_10.webp", "res/slides/ejac_11.webp", "res/slides/ejac_12.webp", "res/slides/ejac_13.webp", "res/slides/ejac_14.webp", "res/slides/ejac_15.webp", "res/slides/ejac_16.webp", "res/slides/ejac_17.webp", "res/slides/ejac_18.webp", "res/slides/ejac_19.webp", "res/slides/ejac_20.webp", "res/slides/ejac_21.webp", "res/slides/ejac_22.webp", "res/slides/ejac_23.webp", "res/slides/ejac_24.webp", "res/slides/ejac_25.webp", "res/slides/ejac_26.webp", "res/slides/ejac_27.webp", "res/slides/ejac_28.webp", "res/slides/ejac_29.webp", "res/slides/ejac_30.webp", "res/slides/ejac_31.webp", "res/slides/ejac_32.webp", "res/slides/ejac_33.webp", "res/slides/ejac_34.webp", "res/slides/ejac_35.webp", "res/slides/ejac_36.webp", "res/slides/ejac_37.webp", "res/slides/ejac_38.webp", "res/slides/ejac_39.webp", "res/slides/ejac_40.webp", "res/slides/eletro_01.webp", "res/slides/eletro_02.webp", "res/slides/eletro_03.webp", "res/slides/eletro_04.webp", "res/slides/eletro_05.webp", "res/slides/eletro_06.webp", "res/slides/eletro_07.webp", "res/slides/eletro_08.webp", "res/slides/eletro_09.webp", "res/slides/eletro_10.webp", "res/slides/eletro_11.webp", "res/slides/eletro_12.webp", "res/slides/eletro_13.webp", "res/slides/eletro_14.webp", "res/slides/eletro_15.webp", "res/slides/eletro_16.webp", "res/slides/eletro_17.webp", "res/slides/eletro_18.webp", "res/slides/eletro_19.webp", "res/slides/eletro_20.webp", "res/slides/eletro_21.webp", "res/slides/eletro_22.webp", "res/slides/eletro_23.webp", "res/slides/eletro_24.webp", "res/slides/eletro_25.webp", "res/slides/eletro_26.webp", "res/slides/eletro_27.webp", "res/slides/eletro_28.webp", "res/slides/eletro_29.webp", "res/slides/eletro_30.webp", "res/slides/eletro_31.webp", "res/slides/eletro_32.webp", "res/slides/eletro_33.webp", "res/slides/eletro_34.webp", "res/slides/eletro_35.webp", "res/slides/eletro_36.webp", "res/slides/eletro_37.webp", "res/slides/eletro_38.webp", "res/slides/eletro_39.webp", "res/slides/eletro_40.webp", "res/slides/eletro_41.webp", "res/slides/eletro_42.webp", "res/slides/eletro_43.webp", "res/slides/eletro_44.webp", "res/slides/eletro_45.webp", "res/slides/eletro_46.webp", "res/slides/eletro_47.webp", "res/slides/eletro_48.webp", "res/slides/eletro_49.webp", "res/slides/eletro_50.webp", "res/slides/eletro_51.webp", "res/slides/eurin_01.webp", "res/slides/eurin_02.webp", "res/slides/eurin_03.webp", "res/slides/eurin_04.webp", "res/slides/eurin_05.webp", "res/slides/eurin_06.webp", "res/slides/eurin_07.webp", "res/slides/eurin_08.webp", "res/slides/eurin_09.webp", "res/slides/eurin_10.webp", "res/slides/eurin_11.webp", "res/slides/eurin_12.webp", "res/slides/eurin_13.webp", "res/slides/eurin_14.webp", "res/slides/eurin_15.webp", "res/slides/eurin_16.webp", "res/slides/eurin_17.webp", "res/slides/eurin_18.webp", "res/slides/eurin_19.webp", "res/slides/eurin_20.webp", "res/slides/eurin_21.webp", "res/slides/eurin_22.webp", "res/slides/eurin_23.webp", "res/slides/eurin_24.webp", "res/slides/eurin_25.webp", "res/slides/eurin_26.webp", "res/slides/eurin_27.webp", "res/slides/eurin_28.webp", "res/slides/eurin_29.webp", "res/slides/eurin_30.webp", "res/slides/eurin_31.webp", "res/slides/eurin_32.webp", "res/slides/eurin_33.webp", "res/slides/eurin_34.webp", "res/slides/eurin_35.webp", "res/slides/eurin_36.webp", "res/slides/eurin_37.webp", "res/slides/eurin_38.webp", "res/slides/eurin_39.webp", "res/slides/eurin_40.webp", "res/slides/eurin_41.webp", "res/slides/eurin_42.webp", "res/slides/eurin_43.webp", "res/slides/eurin_44.webp", "res/slides/eurin_45.webp", "res/slides/eurin_46.webp", "res/slides/fem_01.webp", "res/slides/fem_02.webp", "res/slides/fem_03.webp", "res/slides/fem_04.webp", "res/slides/fem_05.webp", "res/slides/fem_06.webp", "res/slides/fem_07.webp", "res/slides/fem_08.webp", "res/slides/fem_09.webp", "res/slides/fem_10.webp", "res/slides/fem_11.webp", "res/slides/fem_12.webp", "res/slides/fem_13.webp", "res/slides/fem_14.webp", "res/slides/fem_15.webp", "res/slides/fem_16.webp", "res/slides/fem_17.webp", "res/slides/fem_18.webp", "res/slides/fem_19.webp", "res/slides/fem_20.webp", "res/slides/fem_21.webp", "res/slides/fem_22.webp", "res/slides/fem_23.webp", "res/slides/fem_24.webp", "res/slides/fem_25.webp", "res/slides/fem_26.webp", "res/slides/fem_27.webp", "res/slides/fem_28.webp", "res/slides/fem_29.webp", "res/slides/fem_30.webp", "res/slides/fem_31.webp", "res/slides/fem_32.webp", "res/slides/fem_33.webp", "res/slides/fem_34.webp", "res/slides/fem_35.webp", "res/slides/fem_36.webp", "res/slides/fem_37.webp", "res/slides/fem_38.webp", "res/slides/fem_39.webp", "res/slides/fem_40.webp", "res/slides/fglom_01.webp", "res/slides/fglom_02.webp", "res/slides/fglom_03.webp", "res/slides/fglom_04.webp", "res/slides/fglom_05.webp", "res/slides/fglom_06.webp", "res/slides/fglom_07.webp", "res/slides/fglom_08.webp", "res/slides/fglom_09.webp", "res/slides/fglom_10.webp", "res/slides/fglom_11.webp", "res/slides/fglom_12.webp", "res/slides/fglom_13.webp", "res/slides/fglom_14.webp", "res/slides/fglom_15.webp", "res/slides/fglom_16.webp", "res/slides/fglom_17.webp", "res/slides/fglom_18.webp", "res/slides/fglom_19.webp", "res/slides/fglom_20.webp", "res/slides/fglom_21.webp", "res/slides/fglom_22.webp", "res/slides/fglom_23.webp", "res/slides/fglom_24.webp", "res/slides/fglom_25.webp", "res/slides/fglom_26.webp", "res/slides/fglom_27.webp", "res/slides/fglom_28.webp", "res/slides/fglom_29.webp", "res/slides/fglom_30.webp", "res/slides/fglom_31.webp", "res/slides/fglom_32.webp", "res/slides/fglom_33.webp", "res/slides/fglom_34.webp", "res/slides/fglom_35.webp", "res/slides/fglom_36.webp", "res/slides/fglom_37.webp", "res/slides/fglom_38.webp", "res/slides/fglom_39.webp", "res/slides/fglom_40.webp", "res/slides/fglom_41.webp", "res/slides/fglom_42.webp", "res/slides/fglom_43.webp", "res/slides/fglom_44.webp", "res/slides/fglom_45.webp", "res/slides/fglom_46.webp", "res/slides/fglom_47.webp", "res/slides/fglom_48.webp", "res/slides/fglom_49.webp", "res/slides/fglom_50.webp", "res/slides/fglom_51.webp", "res/slides/fglom_52.webp", "res/slides/fglom_53.webp", "res/slides/fglom_54.webp", "res/slides/fglom_55.webp", "res/slides/fglom_56.webp", "res/slides/fglom_57.webp", "res/slides/fglom_58.webp", "res/slides/fglom_59.webp", "res/slides/fglom_60.webp", "res/slides/fglom_61.webp", "res/slides/fglom_62.webp", "res/slides/fglom_63.webp", "res/slides/fglom_64.webp", "res/slides/fglom_65.webp", "res/slides/fglom_66.webp", "res/slides/fglom_67.webp", "res/slides/fglom_68.webp", "res/slides/fglom_69.webp", "res/slides/fglom_70.webp", "res/slides/fglom_71.webp", "res/slides/fglom_72.webp", "res/slides/fglom_73.webp", "res/slides/fglom_74.webp", "res/slides/frmasc_01.webp", "res/slides/frmasc_02.webp", "res/slides/frmasc_03.webp", "res/slides/frmasc_04.webp", "res/slides/frmasc_05.webp", "res/slides/frmasc_06.webp", "res/slides/frmasc_07.webp", "res/slides/frmasc_08.webp", "res/slides/frmasc_09.webp", "res/slides/frmasc_10.webp", "res/slides/frmasc_11.webp", "res/slides/frmasc_12.webp", "res/slides/frmasc_13.webp", "res/slides/frmasc_14.webp", "res/slides/frmasc_15.webp", "res/slides/frmasc_16.webp", "res/slides/frmasc_17.webp", "res/slides/frmasc_18.webp", "res/slides/frmasc_19.webp", "res/slides/frmasc_20.webp", "res/slides/frmasc_21.webp", "res/slides/frmasc_22.webp", "res/slides/frmasc_23.webp", "res/slides/frmasc_24.webp", "res/slides/frmasc_25.webp", "res/slides/frmasc_26.webp", "res/slides/frmasc_27.webp", "res/slides/frmasc_28.webp", "res/slides/frmasc_29.webp", "res/slides/frmasc_30.webp", "res/slides/frmasc_31.webp", "res/slides/frmasc_32.webp", "res/slides/frmasc_33.webp", "res/slides/frmasc_34.webp", "res/slides/frmasc_35.webp", "res/slides/frmasc_36.webp", "res/slides/frmasc_37.webp", "res/slides/frmasc_38.webp", "res/slides/frmasc_39.webp", "res/slides/frmasc_40.webp", "res/slides/ftub_01.webp", "res/slides/ftub_02.webp", "res/slides/ftub_03.webp", "res/slides/ftub_04.webp", "res/slides/ftub_05.webp", "res/slides/ftub_06.webp", "res/slides/ftub_07.webp", "res/slides/ftub_08.webp", "res/slides/ftub_09.webp", "res/slides/ftub_10.webp", "res/slides/ftub_11.webp", "res/slides/ftub_12.webp", "res/slides/ftub_13.webp", "res/slides/ftub_14.webp", "res/slides/ftub_15.webp", "res/slides/ftub_16.webp", "res/slides/ftub_17.webp", "res/slides/ftub_18.webp", "res/slides/ftub_19.webp", "res/slides/ftub_20.webp", "res/slides/ftub_21.webp", "res/slides/ftub_22.webp", "res/slides/ftub_23.webp", "res/slides/ftub_24.webp", "res/slides/ftub_25.webp", "res/slides/ftub_26.webp", "res/slides/ftub_27.webp", "res/slides/ftub_28.webp", "res/slides/ftub_29.webp", "res/slides/ftub_30.webp", "res/slides/ftub_31.webp", "res/slides/ftub_32.webp", "res/slides/ftub_33.webp", "res/slides/ftub_34.webp", "res/slides/ftub_35.webp", "res/slides/ftub_36.webp", "res/slides/ftub_37.webp", "res/slides/ftub_38.webp", "res/slides/ftub_39.webp", "res/slides/ftub_40.webp", "res/slides/ftub_41.webp", "res/slides/hfem_01.webp", "res/slides/hfem_02.webp", "res/slides/hfem_03.webp", "res/slides/hfem_04.webp", "res/slides/hfem_05.webp", "res/slides/hfem_06.webp", "res/slides/hfem_07.webp", "res/slides/hfem_08.webp", "res/slides/hfem_09.webp", "res/slides/hfem_10.webp", "res/slides/hfem_11.webp", "res/slides/hfem_12.webp", "res/slides/hfem_13.webp", "res/slides/hfem_14.webp", "res/slides/hfem_15.webp", "res/slides/hfem_16.webp", "res/slides/hfem_17.webp", "res/slides/hfem_18.webp", "res/slides/hfem_19.webp", "res/slides/hfem_20.webp", "res/slides/hfem_21.webp", "res/slides/hfem_22.webp", "res/slides/hfem_23.webp", "res/slides/hfem_24.webp", "res/slides/hfem_25.webp", "res/slides/hfem_26.webp", "res/slides/hfem_27.webp", "res/slides/hfem_28.webp", "res/slides/hfem_29.webp", "res/slides/hfem_30.webp", "res/slides/hfem_31.webp", "res/slides/hfem_32.webp", "res/slides/hfem_33.webp", "res/slides/hfem_34.webp", "res/slides/hfem_35.webp", "res/slides/hfem_36.webp", "res/slides/hfem_37.webp", "res/slides/hfem_38.webp", "res/slides/hfem_39.webp", "res/slides/hfem_40.webp", "res/slides/hfem_41.webp", "res/slides/hfem_42.webp", "res/slides/hfem_43.webp", "res/slides/hfem_44.webp", "res/slides/hfem_45.webp", "res/slides/hfem_46.webp", "res/slides/hfem_47.webp", "res/slides/hfem_48.webp", "res/slides/hfem_49.webp", "res/slides/hfem_50.webp", "res/slides/hidro_01.webp", "res/slides/hidro_02.webp", "res/slides/hidro_03.webp", "res/slides/hidro_04.webp", "res/slides/hidro_05.webp", "res/slides/hidro_06.webp", "res/slides/hidro_07.webp", "res/slides/hidro_08.webp", "res/slides/hidro_09.webp", "res/slides/hidro_10.webp", "res/slides/hidro_11.webp", "res/slides/hidro_12.webp", "res/slides/hidro_13.webp", "res/slides/hidro_14.webp", "res/slides/hidro_15.webp", "res/slides/hidro_16.webp", "res/slides/hidro_17.webp", "res/slides/hidro_18.webp", "res/slides/hidro_19.webp", "res/slides/hidro_20.webp", "res/slides/hidro_21.webp", "res/slides/hidro_22.webp", "res/slides/hidro_23.webp", "res/slides/hidro_24.webp", "res/slides/hidro_25.webp", "res/slides/hidro_26.webp", "res/slides/hidro_27.webp", "res/slides/hidro_28.webp", "res/slides/hidro_29.webp", "res/slides/hidro_30.webp", "res/slides/hidro_31.webp", "res/slides/hidro_32.webp", "res/slides/hidro_33.webp", "res/slides/hmasc_01.webp", "res/slides/hmasc_02.webp", "res/slides/hmasc_03.webp", "res/slides/hmasc_04.webp", "res/slides/hmasc_05.webp", "res/slides/hmasc_06.webp", "res/slides/hmasc_07.webp", "res/slides/hmasc_08.webp", "res/slides/hmasc_09.webp", "res/slides/hmasc_10.webp", "res/slides/hmasc_11.webp", "res/slides/hmasc_12.webp", "res/slides/hmasc_13.webp", "res/slides/hmasc_14.webp", "res/slides/hmasc_15.webp", "res/slides/hmasc_16.webp", "res/slides/hmasc_17.webp", "res/slides/hmasc_18.webp", "res/slides/hmasc_19.webp", "res/slides/hmasc_20.webp", "res/slides/hmasc_21.webp", "res/slides/hmasc_22.webp", "res/slides/hmasc_23.webp", "res/slides/hmasc_24.webp", "res/slides/hmasc_25.webp", "res/slides/hmasc_26.webp", "res/slides/hmasc_27.webp", "res/slides/hmasc_28.webp", "res/slides/hmasc_29.webp", "res/slides/hmasc_30.webp", "res/slides/hmasc_31.webp", "res/slides/hmasc_32.webp", "res/slides/hmasc_33.webp", "res/slides/hmasc_34.webp", "res/slides/hmasc_35.webp", "res/slides/hmasc_36.webp", "res/slides/hmasc_37.webp", "res/slides/hmasc_38.webp", "res/slides/hmasc_39.webp", "res/slides/hmasc_40.webp", "res/slides/hmasc_41.webp", "res/slides/huri_01.webp", "res/slides/huri_02.webp", "res/slides/huri_03.webp", "res/slides/huri_04.webp", "res/slides/huri_05.webp", "res/slides/huri_06.webp", "res/slides/huri_07.webp", "res/slides/huri_08.webp", "res/slides/huri_09.webp", "res/slides/huri_10.webp", "res/slides/huri_11.webp", "res/slides/huri_12.webp", "res/slides/huri_13.webp", "res/slides/huri_14.webp", "res/slides/huri_15.webp", "res/slides/huri_16.webp", "res/slides/huri_17.webp", "res/slides/huri_18.webp", "res/slides/huri_19.webp", "res/slides/huri_20.webp", "res/slides/huri_21.webp", "res/slides/huri_22.webp", "res/slides/huri_23.webp", "res/slides/huri_24.webp", "res/slides/huri_25.webp", "res/slides/huri_26.webp", "res/slides/huri_27.webp", "res/slides/huri_28.webp", "res/slides/huri_29.webp", "res/slides/huri_30.webp", "res/slides/huri_31.webp", "res/slides/huri_32.webp", "res/slides/huri_33.webp", "res/slides/huri_34.webp", "res/slides/huri_35.webp", "res/slides/huri_36.webp", "res/slides/huri_37.webp", "res/slides/huri_38.webp", "res/slides/huri_39.webp", "res/slides/huri_40.webp", "res/slides/huri_41.webp", "res/slides/huri_42.webp", "res/slides/huri_43.webp", "res/slides/huri_44.webp", "res/slides/huri_45.webp", "res/slides/huri_46.webp", "res/slides/huri_47.webp", "res/slides/huri_48.webp", "res/slides/masc_01.webp", "res/slides/masc_02.webp", "res/slides/masc_03.webp", "res/slides/masc_04.webp", "res/slides/masc_05.webp", "res/slides/masc_06.webp", "res/slides/masc_07.webp", "res/slides/masc_08.webp", "res/slides/masc_09.webp", "res/slides/masc_10.webp", "res/slides/masc_11.webp", "res/slides/masc_12.webp", "res/slides/masc_13.webp", "res/slides/masc_14.webp", "res/slides/masc_15.webp", "res/slides/masc_16.webp", "res/slides/masc_17.webp", "res/slides/masc_18.webp", "res/slides/masc_19.webp", "res/slides/masc_20.webp", "res/slides/masc_21.webp", "res/slides/masc_22.webp", "res/slides/masc_23.webp", "res/slides/masc_24.webp", "res/slides/masc_25.webp", "res/slides/masc_26.webp", "res/slides/masc_27.webp", "res/slides/masc_28.webp", "res/slides/masc_29.webp", "res/slides/masc_30.webp", "res/slides/masc_31.webp", "res/slides/masc_32.webp", "res/slides/masc_33.webp", "res/slides/masc_34.webp", "res/slides/masc_35.webp", "res/slides/masc_36.webp", "res/slides/masc_37.webp", "res/slides/masc_38.webp", "res/slides/masc_39.webp", "res/slides/masc_40.webp", "res/slides/masc_41.webp", "res/slides/masc_42.webp", "res/slides/masc_43.webp", "res/slides/masc_44.webp", "res/slides/uri_01.webp", "res/slides/uri_02.webp", "res/slides/uri_03.webp", "res/slides/uri_04.webp", "res/slides/uri_05.webp", "res/slides/uri_06.webp", "res/slides/uri_07.webp", "res/slides/uri_08.webp", "res/slides/uri_09.webp", "res/slides/uri_10.webp", "res/slides/uri_11.webp", "res/slides/uri_12.webp", "res/slides/uri_13.webp", "res/slides/uri_14.webp", "res/slides/uri_15.webp", "res/slides/uri_16.webp", "res/slides/uri_17.webp", "res/slides/uri_18.webp", "res/slides/uri_19.webp", "res/slides/uri_20.webp", "res/slides/uri_21.webp", "res/slides/uri_22.webp", "res/slides/uri_23.webp", "res/slides/uri_24.webp", "res/slides/uri_25.webp", "res/slides/uri_26.webp", "res/slides/uri_27.webp", "res/slides/uri_28.webp", "res/slides/uri_29.webp", "res/slides/uri_30.webp", "res/slides/uri_31.webp", "res/slides/uri_32.webp", "res/slides/uri_33.webp", "res/slides/uri_34.webp", "res/slides/uri_35.webp", "res/slides/uri_36.webp", "res/slides/uri_37.webp", "res/slides/uri_38.webp", "res/slides/uri_39.webp", "res/slides/uri_40.webp", "res/slides/uri_41.webp", "res/slides/uri_42.webp", "res/slides/uri_43.webp", "res/slides/uri_44.webp", "res/slides/uri_45.webp", "res/slides/uri_46.webp", "res/slides/uri_47.webp", "res/slides/uri_48.webp", "res/slides/uri_49.webp", "res/slides/uri_50.webp", "res/slides/uri_51.webp", "res/slides/uri_52.webp", "res/slides/uri_53.webp", "res/slides/uri_54.webp", "res/slides/uri_55.webp", "res/slides/uri_56.webp", "res/slides/uri_57.webp", "res/slides/uri_58.webp", "res/slides/uri_59.webp", "res/slides/uri_60.webp", "res/slides/uri_61.webp", "res/slides/uri_62.webp", "res/slides/uri_63.webp", "res/slides/uri_64.webp", "res/slides/uri_65.webp", "res/slides/uri_66.webp", "res/slides/uri_67.webp", "res/slides/uri_68.webp", "res/slides/uri_69.webp", "res/slides/uri_70.webp", "res/slides/uri_71.webp", "res/slides/uri_72.webp", "res/slides/uri_73.webp", "res/slides/uri_74.webp", "res/slides/uri_75.webp", "res/slides/uri_76.webp", "res/slides/uri_77.webp", "res/slides/uri_78.webp", "res/slides/uri_79.webp", "res/slides/uri_80.webp", "res/slides/uri_81.webp", "res/slides/uri_82.webp", "res/slides/uri_83.webp", "res/slides/uri_84.webp", "res/slides/uri_85.webp", "res/slides/uri_86.webp", "res/slides/uri_87.webp", "res/slides/uri_88.webp", "res/slides/uri_89.webp", "res/slides/uri_90.webp", "res/slides/uri_91.webp", "res/slides/uri_92.webp", "res/slides/uri_93.webp", "res/slides/uri_94.webp", "res/slides/uri_95.webp", "res/uri/acessorias.webp", "res/uri/bexiga_config.webp", "res/uri/bexiga_frontal.webp", "res/uri/caso.webp", "res/uri/diaf_urogenital.webp", "res/uri/faces.webp", "res/uri/fascia.webp", "res/uri/levantador.webp", "res/uri/necrose.webp", "res/uri/nutcracker.webp", "res/uri/segmentos.webp", "res/uri/skene.webp", "res/uri/ureter_mulher.webp", "res/uri/uretra_frontal.webp", "res/uri/urografia.webp", "res/uri/vasos_insitu.webp", "res/uri/vasos_intra.webp", "res/uri/visao.webp"],CACHE="gu-d74ea939c5",had=!!navigator.serviceWorker.controller,say=window.__guSay,pill=document.getElementById("gu-pill");
+var FILES=["./", "index.html", "manifest.json", "icone-180.png", "icone-192.png", "icone-512.png", "img/art_aorta.jpg", "img/art_iliaca_comum.jpg", "img/art_ilinterna.jpg", "img/bexiga_trigono.jpg", "img/bx_modelo.jpg", "img/bx_puboprostatico.jpg", "img/bx_pubovesical.jpg", "img/colo_utero.jpg", "img/esc_camadas.jpg", "img/esc_funiculo_anel.jpg", "img/esc_testiculo.jpg", "img/escavacoes.jpg", "img/f_hemipelve.jpg", "img/f_hemipelve_labios.jpg", "img/f_lig_redondo.jpg", "img/f_mesovario.jpg", "img/f_ovario_suspensor.jpg", "img/f_vulva_alfinetes.jpg", "img/ligamento_largo.jpg", "img/m_ampola_deferente.jpg", "img/m_arteria_dorsal.jpg", "img/m_escroto_aberto.jpg", "img/m_fascias_escroto.jpg", "img/m_frenulo.jpg", "img/m_frenulo_prepucio.jpg", "img/m_glande_frenulo.jpg", "img/m_modelo.jpg", "img/m_penis_corte.jpg", "img/m_penis_dorsal.jpg", "img/m_penis_transversal.jpg", "img/m_perineo.jpg", "img/m_perineo_alfinetes.jpg", "img/m_prepucio.jpg", "img/m_prostata_sagital.jpg", "img/m_sagital.jpg", "img/m_sagital_bexiga.jpg", "img/m_sagital_escavacoes.jpg", "img/m_sagital_penis.jpg", "img/m_sagital_prostata.jpg", "img/m_tunicas_testiculo.jpg", "img/m_veia_dorsal.jpg", "img/m_vesicula_isolada.jpg", "img/mesos.jpg", "img/ovario_fornices.jpg", "img/ovario_ligamentos.jpg", "img/rim_aberto.jpg", "img/rim_capsula.jpg", "img/rim_colunas.jpg", "img/rim_corte.jpg", "img/rim_hilo.jpg", "img/rim_pediculo.jpg", "img/rim_vasos.jpg", "img/tuba_uterina.jpg", "img/u_arteria_renal_dir.jpg", "img/u_arteria_renal_esq.jpg", "img/u_bexiga_trigono.jpg", "img/u_hilo.jpg", "img/u_rim_calices.jpg", "img/u_rim_papila.jpg", "img/u_rins_margens.jpg", "img/u_rins_vasos.jpg", "img/u_ureter_trajeto.jpg", "img/ureter_iliaca.jpg", "img/ureter_jup.jpg", "img/ureter_partes.jpg", "img/utero_camadas.jpg", "img/utero_partes.jpg", "img/utero_posterior.jpg", "img/utero_sagital.jpg", "img/vagina_fornices.jpg", "img/vasos_gonadais.jpg", "img/vasos_testicular.jpg", "img/vulva_externa.jpg", "img/vulva_partes.jpg", "histo/g01.jpg", "histo/g02.jpg", "histo/g03.jpg", "histo/g04.jpg", "histo/g05.jpg", "histo/g06.jpg", "histo/g07.jpg", "histo/g08.jpg", "histo/g09.jpg", "histo/g10.jpg", "histo/g11.jpg", "histo/g12.jpg", "histo/g13.jpg", "histo/g14.jpg", "histo/g15.jpg", "histo/g16.jpg", "histo/g17.jpg", "histo/g18.jpg", "histo/g19.jpg", "histo/g20.jpg", "histo/g21.jpg", "histo/g22.jpg", "histo/g23.jpg", "histo/g24.jpg", "histo/g25.jpg", "histo/g26.jpg", "histo/g27.jpg", "histo/g28.jpg", "histo/g29.jpg", "histo/g30.jpg", "histo/g31.jpg", "histo/g32.jpg", "histo/g33.jpg", "histo/g34.jpg", "histo/g35.jpg", "histo/g36.jpg", "histo/g37.jpg", "histo/g38.jpg", "histo/g39.jpg", "histo/g40.jpg", "histo/g41.jpg", "histo/g42.jpg", "histo/g43.jpg", "histo/g44.jpg", "histo/g45.jpg", "histo/g46.jpg", "histo/g47.jpg", "histo/g48.jpg", "histo/g49.jpg", "histo/g50.jpg", "histo/g51.jpg", "histo/rev01.jpg", "histo/rev02.jpg", "histo/rev03.jpg", "histo/rev04.jpg", "histo/rev05.jpg", "histo/rev06.jpg", "histo/rev07.jpg", "histo/rev08.jpg", "histo/rev09.jpg", "histo/rev10.jpg", "teo/c1_14.webp", "teo/c1b_23.webp", "teo/c1e_4.webp", "teo/c1e_5.webp", "teo/c2q_11.webp", "teo/c2q_3.webp", "teo/c2q_8.webp", "teo/c2s_12.webp", "teo/c2s_2.webp", "teo/c2s_30.webp", "teo/c2s_7.webp", "teo/c3b_10.webp", "teo/c3b_18.webp", "teo/c3b_7.webp", "teo/c3b_8.webp", "teo/c3b_9.webp", "teo/c3c_18.webp", "teo/c3c_19.webp", "teo/c3d_24.webp", "teo/c3e_11.webp", "teo/c3e_6.webp", "res/Resumo_Alca_de_Henle_e_Nefron_Distal.pdf", "res/Resumo_Balanco_Sodio_e_Potassio.pdf", "res/Resumo_Concentracao_Urinaria.pdf", "res/Resumo_Diureticos.pdf", "res/Resumo_Embriologia_Sistema_Reprodutor.pdf", "res/Resumo_Embriologia_Sistema_Urinario.pdf", "res/Resumo_Fisiologia_Ciclo_Menstrual.pdf", "res/Resumo_Fisiologia_Renal_Filtracao_Glomerular.pdf", "res/Resumo_Fisiologia_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Aparelho_Reprodutor_Masculino.pdf", "res/Resumo_Histologia_Sistema_Genital_Feminino.pdf", "res/Resumo_Histologia_Sistema_Urinario.pdf", "res/Resumo_Inibidores_PDE5.pdf", "res/Resumo_Mecanismos_Tubulares.pdf", "res/Resumo_Regulacao_Agua_e_Sodio.pdf", "res/Resumo_Sistema_Genital_Feminino.pdf", "res/Resumo_Sistema_Genital_Masculino.pdf", "res/Resumo_Sistema_Urinario.pdf", "res/Resumo_Tratamento_Ejaculacao_Precoce.pdf", "res/Super_Resumo_AV1.pdf", "res/Super_Resumo_AV2.pdf", "res/ciclo/anatomia.webp", "res/ciclo/belchetz.webp", "res/ciclo/ciclos.webp", "res/ciclo/colo_dias.webp", "res/ciclo/corpo_luteo.webp", "res/ciclo/dominante.webp", "res/ciclo/duas_celulas.webp", "res/ciclo/duas_simples.webp", "res/ciclo/endossalpinge.webp", "res/ciclo/estagios_a.webp", "res/ciclo/estagios_b.webp", "res/ciclo/estigma.webp", "res/ciclo/feedback_neg.webp", "res/ciclo/folicular_fim.webp", "res/ciclo/folicular_ini.webp", "res/ciclo/histo_endo.webp", "res/ciclo/histo_folic.webp", "res/ciclo/hormonios.webp", "res/ciclo/idades.webp", "res/ciclo/independente.webp", "res/ciclo/intervalo.webp", "res/ciclo/kiss_arc_avpv.webp", "res/ciclo/kiss_leptina.webp", "res/ciclo/kiss_registro.webp", "res/ciclo/linha_tempo.webp", "res/ciclo/lutea_ctrl.webp", "res/ciclo/lutea_horm.webp", "res/ciclo/menopausa_e.webp", "res/ciclo/menopausa_g.webp", "res/ciclo/muco_e2.webp", "res/ciclo/muco_p4.webp", "res/ciclo/nucleos.webp", "res/ciclo/ovario_ciclo.webp", "res/ciclo/ovulacao.webp", "res/ciclo/primordial.webp", "res/ciclo/proliferativa.webp", "res/ciclo/pulsos_lh_fsh.webp", "res/ciclo/pulsos_mua.webp", "res/ciclo/reserva.webp", "res/ciclo/surto_lh.webp", "res/ciclo/temperatura.webp", "res/ciclo/utero_camadas.webp", "res/conc/aqp2.webp", "res/conc/efeito_unitario.webp", "res/conc/justamedular.webp", "res/conc/multiplicador.webp", "res/conc/osmolaridade.webp", "res/conc/passos.webp", "res/conc/transportadores.webp", "res/conc/ureia_alca.webp", "res/conc/ut_celula.webp", "res/conc/ut_tabela.webp", "res/conc/vasa_anatomia.webp", "res/conc/vasa_permutador.webp", "res/diur/alca_celula.webp", "res/diur/alca_coletor.webp", "res/diur/dose_resposta.webp", "res/diur/glicose_insulina.webp", "res/diur/intercalada.webp", "res/diur/macula_densa.webp", "res/diur/poupador_coletor.webp", "res/diur/poupadores_celula.webp", "res/diur/sitios.webp", "res/diur/sraa_diur.webp", "res/diur/tiazidico_celula.webp", "res/egen/cgp_migracao.webp", "res/egen/cordao.webp", "res/egen/cordoes_primitivos.webp", "res/egen/cortex_medula.webp", "res/egen/crista_corte.webp", "res/egen/crista_meso.webp", "res/egen/crista_uro.webp", "res/egen/defeitos_uterinos.webp", "res/egen/ductos_cloaca.webp", "res/egen/ductos_indif.webp", "res/egen/ductos_masc.webp", "res/egen/ext_homem_mulher.webp", "res/egen/ext_indif.webp", "res/egen/ext_tabela.webp", "res/egen/glandulas_masc.webp", "res/egen/gonada_indif.webp", "res/egen/hipo_epi.webp", "res/egen/hipospadia.webp", "res/egen/histo_infantil_adulto.webp", "res/egen/lig_largo.webp", "res/egen/lig_largo_corte.webp", "res/egen/muller_utero.webp", "res/egen/ovario_ab.webp", "res/egen/ovario_gartner.webp", "res/egen/paramesonefrico.webp", "res/egen/penis_escroto.webp", "res/egen/prostata_ab.webp", "res/egen/seio_ductos.webp", "res/egen/septo_uterino.webp", "res/egen/sry_cascata.webp", "res/egen/sry_xy.webp", "res/egen/testiculo_ab.webp", "res/egen/testiculo_des.webp", "res/egen/testiculo_fluxo.webp", "res/egen/utero_vagina_sem.webp", "res/egen/vagina_abc.webp", "res/egen/vulva_ab.webp", "res/ejac/alfa1.webp", "res/ejac/alvos.webp", "res/ejac/anestesicos.webp", "res/ejac/estagios.webp", "res/ejac/etiologia.webp", "res/ejac/fases.webp", "res/ejac/ielt.webp", "res/ejac/irs_agudo.webp", "res/ejac/irs_cronico.webp", "res/ejac/irs_fluxo.webp", "res/ejac/perspectivas.webp", "res/ejac/sindrome_ss.webp", "res/ejac/supraespinhal.webp", "res/ejac/tabela_isrs.webp", "res/ejac/tramadol.webp", "res/ejac/via_5ht.webp", "res/ejac/vias.webp", "res/eletro/acidose_k.webp", "res/eletro/adrenalina_k.webp", "res/eletro/alcalose_k.webp", "res/eletro/aldo_celula.webp", "res/eletro/aldo_liddle.webp", "res/eletro/anp_receptores.webp", "res/eletro/balanco_na.webp", "res/eletro/cascata_3fator.webp", "res/eletro/cascata_aldo.webp", "res/eletro/cascata_tfg.webp", "res/eletro/cilio.webp", "res/eletro/ducto_celulas.webp", "res/eletro/ducto_mev.webp", "res/eletro/enac.webp", "res/eletro/fator_aldo.webp", "res/eletro/fator_fluxo.webp", "res/eletro/fator_kp.webp", "res/eletro/fluxo_cilio.webp", "res/eletro/k_carga.webp", "res/eletro/k_corpo.webp", "res/eletro/k_hormonios.webp", "res/eletro/k_nefron.webp", "res/eletro/k_proximal_alca.webp", "res/eletro/liddle_mut.webp", "res/eletro/paradoxo.webp", "res/eletro/policistica.webp", "res/eletro/potencial_k.webp", "res/eletro/poupadores.webp", "res/eletro/pressoes_glom.webp", "res/eletro/pressoes_vasos.webp", "res/eletro/secrecao_k.webp", "res/eletro/segmentos_na.webp", "res/eurin/acessorias.webp", "res/eurin/ascensao.webp", "res/eurin/broto.webp", "res/eurin/caso_massa.webp", "res/eurin/caso_ureterocele.webp", "res/eurin/coletor.webp", "res/eurin/duplicidade.webp", "res/eurin/ectopia.webp", "res/eurin/ectopico.webp", "res/eurin/ferradura.webp", "res/eurin/geracoes.webp", "res/eurin/indiferente.webp", "res/eurin/liquido.webp", "res/eurin/meso_ductos.webp", "res/eurin/metanefro.webp", "res/eurin/nefrogenese.webp", "res/eurin/nefron.webp", "res/eurin/netter_uretra.webp", "res/eurin/posic_ureteres.webp", "res/eurin/potter.webp", "res/eurin/pro_meso.webp", "res/eurin/ramificacao.webp", "res/eurin/rotacao.webp", "res/eurin/seio_ug.webp", "res/eurin/uraco.webp", "res/eurin/ureterocele_foto.webp", "res/eurin/vup.webp", "res/eurin/vup_adapt.webp", "res/eurin/wolff_deriv.webp", "res/fem/camadas.webp", "res/fem/episiotomia.webp", "res/fem/ligamentos.webp", "res/fem/mama.webp", "res/fem/ovario_corte.webp", "res/fem/perineo.webp", "res/fem/sagital.webp", "res/fem/tuba_frontal.webp", "res/fem/utero_idades.webp", "res/fem/vulva.webp", "res/fglom/autorregulacao.webp", "res/fglom/barreira_3d.webp", "res/fglom/camadas.webp", "res/fglom/capilar_duplo.webp", "res/fglom/carga.webp", "res/fglom/contratilidade.webp", "res/fglom/cortical_justa.webp", "res/fglom/doencas_fenda.webp", "res/fglom/efsr.webp", "res/fglom/extrinseca.webp", "res/fglom/fenestra.webp", "res/fglom/ftg.webp", "res/fglom/glomerulo_netter.webp", "res/fglom/hemorragia.webp", "res/fglom/macula_atp.webp", "res/fglom/mesangiais.webp", "res/fglom/miogenico_graf.webp", "res/fglom/nefrina_slit.webp", "res/fglom/peritubular.webp", "res/fglom/podocito_prot.webp", "res/fglom/regioes.webp", "res/fglom/renina_release.webp", "res/fglom/segmentos.webp", "res/fglom/segmentos_cel.webp", "res/fglom/starling_extra.webp", "res/fglom/starling_glom.webp", "res/fglom/tamanho.webp", "res/fglom/tipos_nefron.webp", "res/fglom/vasos_netter.webp", "res/fglom/vasos_retos.webp", "res/frmasc/barreira.webp", "res/frmasc/capacitacao.webp", "res/frmasc/circadiana.webp", "res/frmasc/compart.webp", "res/frmasc/efeitos_t.webp", "res/frmasc/eixo_berne.webp", "res/frmasc/epitelio.webp", "res/frmasc/esperm.webp", "res/frmasc/espermio.webp", "res/frmasc/fertilizacao.webp", "res/frmasc/glandulas.webp", "res/frmasc/kiss_fert.webp", "res/frmasc/kndy.webp", "res/frmasc/leydig_ester.webp", "res/frmasc/metab_t.webp", "res/frmasc/no_gmpc.webp", "res/frmasc/penis.webp", "res/frmasc/reflexo.webp", "res/frmasc/sertoli_func.webp", "res/frmasc/simpatico.webp", "res/frmasc/testiculo.webp", "res/ftub/aa_pept.webp", "res/ftub/adh_infusao.webp", "res/ftub/adh_valores.webp", "res/ftub/agua_tp.webp", "res/ftub/alca_carac.webp", "res/ftub/alca_valores.webp", "res/ftub/aldosterona.webp", "res/ftub/antiporte.webp", "res/ftub/aqp2.webp", "res/ftub/aqp_nefron.webp", "res/ftub/aqp_tipos.webp", "res/ftub/cilios.webp", "res/ftub/cl_dirigido.webp", "res/ftub/cl_formato.webp", "res/ftub/claudinas.webp", "res/ftub/glicose_tm.webp", "res/ftub/gradiente.webp", "res/ftub/hco3.webp", "res/ftub/intercaladas.webp", "res/ftub/na_tp.webp", "res/ftub/nacl_distal.webp", "res/ftub/nkcc.webp", "res/ftub/osmolaridade.webp", "res/ftub/perfil_tp.webp", "res/ftub/policistica.webp", "res/ftub/poupadores.webp", "res/ftub/proteinas.webp", "res/ftub/rae_canais.webp", "res/ftub/secrecao_pah.webp", "res/ftub/sglt_na.webp", "res/ftub/simporte.webp", "res/ftub/tabela_tp.webp", "res/ftub/tres_processos.webp", "res/ftub/vias.webp", "res/hfem/antral_he.webp", "res/hfem/cervice.webp", "res/hfem/ciclo_endo.webp", "res/hfem/ciclo_ovario.webp", "res/hfem/classif.webp", "res/hfem/corpo_luteo.webp", "res/hfem/cortex_ov.webp", "res/hfem/duas_celulas.webp", "res/hfem/eixo.webp", "res/hfem/endocervice.webp", "res/hfem/endometrio_esq.webp", "res/hfem/funcional.webp", "res/hfem/graaf.webp", "res/hfem/jec.webp", "res/hfem/luteinicas.webp", "res/hfem/miometrio.webp", "res/hfem/ovario_corte.webp", "res/hfem/ovulacao.webp", "res/hfem/primarios_he.webp", "res/hfem/primordiais.webp", "res/hfem/tecas.webp", "res/hfem/tuba_he.webp", "res/hfem/vagina.webp", "res/hidro/adh_osm.webp", "res/hidro/adh_vol.webp", "res/hidro/agua_corporal.webp", "res/hidro/aldo_genomico.webp", "res/hidro/anp.webp", "res/hidro/aparelho_jg.webp", "res/hidro/arteriais.webp", "res/hidro/atriais.webp", "res/hidro/avp_osm.webp", "res/hidro/baro_osmo.webp", "res/hidro/compartimentos.webp", "res/hidro/desidratacao.webp", "res/hidro/eletrolitos.webp", "res/hidro/ftg.webp", "res/hidro/granulos_avp.webp", "res/hidro/hemacias.webp", "res/hidro/hipotalamo.webp", "res/hidro/membrana.webp", "res/hidro/osmotica.webp", "res/hidro/sra.webp", "res/hmasc/albuginea_leydig.webp", "res/hmasc/barreira_ht.webp", "res/hmasc/concrecoes.webp", "res/hmasc/controle.webp", "res/hmasc/deferente.webp", "res/hmasc/ductos.webp", "res/hmasc/ejaculatorios.webp", "res/hmasc/epididimo.webp", "res/hmasc/epididimo_det.webp", "res/hmasc/epitelio_esq.webp", "res/hmasc/epitelio_germ.webp", "res/hmasc/epitelio_leydig.webp", "res/hmasc/eretil.webp", "res/hmasc/espermiogenese.webp", "res/hmasc/penis_corte.webp", "res/hmasc/penis_esq.webp", "res/hmasc/prostata_gland.webp", "res/hmasc/prostata_lam.webp", "res/hmasc/prostata_zonas.webp", "res/hmasc/testiculo.webp", "res/hmasc/testiculo_esq.webp", "res/hmasc/tubulos_sem.webp", "res/huri/alca_coletor.webp", "res/huri/barreira_diag.webp", "res/huri/bexiga_camadas.webp", "res/huri/bexiga_urotelio.webp", "res/huri/corpusculo.webp", "res/huri/corpusculo_jga.webp", "res/huri/cortex_medula.webp", "res/huri/diafragma.webp", "res/huri/glomerulo.webp", "res/huri/macula_densa.webp", "res/huri/papila.webp", "res/huri/podocitos.webp", "res/huri/raio_medular.webp", "res/huri/rim_lamina.webp", "res/huri/tcp.webp", "res/huri/tcp_tcd.webp", "res/huri/ureter.webp", "res/huri/ureter_ab.webp", "res/huri/uretra_fem.webp", "res/huri/vascularizacao.webp", "res/masc/camadas_diag.webp", "res/masc/descida.webp", "res/masc/epididimo_frontal.webp", "res/masc/escroto_netter.webp", "res/masc/irrigacao.webp", "res/masc/penis_face.webp", "res/masc/penis_vasos.webp", "res/masc/posterior_bexiga.webp", "res/masc/prostata_cortes.webp", "res/masc/prostata_frontal.webp", "res/masc/vesiculas_netter.webp", "res/masc/visao.webp", "res/pde5/burnett.webp", "res/pde5/epidemiologia.webp", "res/pde5/estrutura.webp", "res/pde5/implantes.webp", "res/pde5/intracavernosa.webp", "res/pde5/isossorbida.webp", "res/pde5/modulacao.webp", "res/pde5/nitratos_via.webp", "res/pde5/no_celula.webp", "res/pde5/no_histologia.webp", "res/pde5/seletividade.webp", "res/slides/ahnd_01.webp", "res/slides/ahnd_02.webp", "res/slides/ahnd_03.webp", "res/slides/ahnd_04.webp", "res/slides/ahnd_05.webp", "res/slides/ahnd_06.webp", "res/slides/ahnd_07.webp", "res/slides/ahnd_08.webp", "res/slides/ahnd_09.webp", "res/slides/ahnd_10.webp", "res/slides/ahnd_11.webp", "res/slides/ahnd_12.webp", "res/slides/ahnd_13.webp", "res/slides/ahnd_14.webp", "res/slides/ahnd_15.webp", "res/slides/ahnd_16.webp", "res/slides/ahnd_17.webp", "res/slides/ahnd_18.webp", "res/slides/ahnd_19.webp", "res/slides/ahnd_20.webp", "res/slides/ahnd_21.webp", "res/slides/ahnd_22.webp", "res/slides/ahnd_23.webp", "res/slides/ahnd_24.webp", "res/slides/ciclo_01.webp", "res/slides/ciclo_02.webp", "res/slides/ciclo_03.webp", "res/slides/ciclo_04.webp", "res/slides/ciclo_05.webp", "res/slides/ciclo_06.webp", "res/slides/ciclo_07.webp", "res/slides/ciclo_08.webp", "res/slides/ciclo_09.webp", "res/slides/ciclo_10.webp", "res/slides/ciclo_11.webp", "res/slides/ciclo_12.webp", "res/slides/ciclo_13.webp", "res/slides/ciclo_14.webp", "res/slides/ciclo_15.webp", "res/slides/ciclo_16.webp", "res/slides/ciclo_17.webp", "res/slides/ciclo_18.webp", "res/slides/ciclo_19.webp", "res/slides/ciclo_20.webp", "res/slides/ciclo_21.webp", "res/slides/ciclo_22.webp", "res/slides/ciclo_23.webp", "res/slides/ciclo_24.webp", "res/slides/ciclo_25.webp", "res/slides/ciclo_26.webp", "res/slides/ciclo_27.webp", "res/slides/ciclo_28.webp", "res/slides/ciclo_29.webp", "res/slides/ciclo_30.webp", "res/slides/ciclo_31.webp", "res/slides/ciclo_32.webp", "res/slides/ciclo_33.webp", "res/slides/ciclo_34.webp", "res/slides/ciclo_35.webp", "res/slides/ciclo_36.webp", "res/slides/ciclo_37.webp", "res/slides/ciclo_38.webp", "res/slides/ciclo_39.webp", "res/slides/ciclo_40.webp", "res/slides/ciclo_41.webp", "res/slides/ciclo_42.webp", "res/slides/ciclo_43.webp", "res/slides/ciclo_44.webp", "res/slides/ciclo_45.webp", "res/slides/ciclo_46.webp", "res/slides/ciclo_47.webp", "res/slides/ciclo_48.webp", "res/slides/ciclo_49.webp", "res/slides/ciclo_50.webp", "res/slides/ciclo_51.webp", "res/slides/ciclo_52.webp", "res/slides/ciclo_53.webp", "res/slides/ciclo_54.webp", "res/slides/ciclo_55.webp", "res/slides/ciclo_56.webp", "res/slides/ciclo_57.webp", "res/slides/ciclo_58.webp", "res/slides/ciclo_59.webp", "res/slides/ciclo_60.webp", "res/slides/ciclo_61.webp", "res/slides/ciclo_62.webp", "res/slides/ciclo_63.webp", "res/slides/ciclo_64.webp", "res/slides/ciclo_65.webp", "res/slides/ciclo_66.webp", "res/slides/ciclo_67.webp", "res/slides/ciclo_68.webp", "res/slides/ciclo_69.webp", "res/slides/ciclo_70.webp", "res/slides/ciclo_71.webp", "res/slides/ciclo_72.webp", "res/slides/ciclo_73.webp", "res/slides/ciclo_74.webp", "res/slides/ciclo_75.webp", "res/slides/ciclo_76.webp", "res/slides/ciclo_77.webp", "res/slides/ciclo_78.webp", "res/slides/ciclo_79.webp", "res/slides/ciclo_80.webp", "res/slides/conc_01.webp", "res/slides/conc_02.webp", "res/slides/conc_03.webp", "res/slides/conc_04.webp", "res/slides/conc_05.webp", "res/slides/conc_06.webp", "res/slides/conc_07.webp", "res/slides/conc_08.webp", "res/slides/conc_09.webp", "res/slides/conc_10.webp", "res/slides/conc_11.webp", "res/slides/conc_12.webp", "res/slides/conc_13.webp", "res/slides/conc_14.webp", "res/slides/conc_15.webp", "res/slides/conc_16.webp", "res/slides/conc_17.webp", "res/slides/conc_18.webp", "res/slides/conc_19.webp", "res/slides/conc_20.webp", "res/slides/conc_21.webp", "res/slides/conc_22.webp", "res/slides/diur_01.webp", "res/slides/diur_02.webp", "res/slides/diur_03.webp", "res/slides/diur_04.webp", "res/slides/diur_05.webp", "res/slides/diur_06.webp", "res/slides/diur_07.webp", "res/slides/diur_08.webp", "res/slides/diur_09.webp", "res/slides/diur_10.webp", "res/slides/diur_11.webp", "res/slides/diur_12.webp", "res/slides/diur_13.webp", "res/slides/diur_14.webp", "res/slides/diur_15.webp", "res/slides/diur_16.webp", "res/slides/diur_17.webp", "res/slides/diur_18.webp", "res/slides/diur_19.webp", "res/slides/diur_20.webp", "res/slides/diur_21.webp", "res/slides/diur_22.webp", "res/slides/diur_23.webp", "res/slides/diur_24.webp", "res/slides/diur_25.webp", "res/slides/diur_26.webp", "res/slides/diur_27.webp", "res/slides/diur_28.webp", "res/slides/diur_29.webp", "res/slides/diur_30.webp", "res/slides/diur_31.webp", "res/slides/diur_32.webp", "res/slides/diur_33.webp", "res/slides/diur_34.webp", "res/slides/egen_01.webp", "res/slides/egen_02.webp", "res/slides/egen_03.webp", "res/slides/egen_04.webp", "res/slides/egen_05.webp", "res/slides/egen_06.webp", "res/slides/egen_07.webp", "res/slides/egen_08.webp", "res/slides/egen_09.webp", "res/slides/egen_10.webp", "res/slides/egen_11.webp", "res/slides/egen_12.webp", "res/slides/egen_13.webp", "res/slides/egen_14.webp", "res/slides/egen_15.webp", "res/slides/egen_16.webp", "res/slides/egen_17.webp", "res/slides/egen_18.webp", "res/slides/egen_19.webp", "res/slides/egen_20.webp", "res/slides/egen_21.webp", "res/slides/egen_22.webp", "res/slides/egen_23.webp", "res/slides/egen_24.webp", "res/slides/egen_25.webp", "res/slides/egen_26.webp", "res/slides/egen_27.webp", "res/slides/egen_28.webp", "res/slides/egen_29.webp", "res/slides/egen_30.webp", "res/slides/egen_31.webp", "res/slides/egen_32.webp", "res/slides/egen_33.webp", "res/slides/egen_34.webp", "res/slides/egen_35.webp", "res/slides/egen_36.webp", "res/slides/egen_37.webp", "res/slides/egen_38.webp", "res/slides/egen_39.webp", "res/slides/egen_40.webp", "res/slides/egen_41.webp", "res/slides/egen_42.webp", "res/slides/egen_43.webp", "res/slides/egen_44.webp", "res/slides/egen_45.webp", "res/slides/egen_46.webp", "res/slides/egen_47.webp", "res/slides/egen_48.webp", "res/slides/egen_49.webp", "res/slides/egen_50.webp", "res/slides/egen_51.webp", "res/slides/egen_52.webp", "res/slides/egen_53.webp", "res/slides/egen_54.webp", "res/slides/egen_55.webp", "res/slides/egen_56.webp", "res/slides/egen_57.webp", "res/slides/egen_58.webp", "res/slides/egen_59.webp", "res/slides/egen_60.webp", "res/slides/egen_61.webp", "res/slides/egen_62.webp", "res/slides/egen_63.webp", "res/slides/ejac_01.webp", "res/slides/ejac_02.webp", "res/slides/ejac_03.webp", "res/slides/ejac_04.webp", "res/slides/ejac_05.webp", "res/slides/ejac_06.webp", "res/slides/ejac_07.webp", "res/slides/ejac_08.webp", "res/slides/ejac_09.webp", "res/slides/ejac_10.webp", "res/slides/ejac_11.webp", "res/slides/ejac_12.webp", "res/slides/ejac_13.webp", "res/slides/ejac_14.webp", "res/slides/ejac_15.webp", "res/slides/ejac_16.webp", "res/slides/ejac_17.webp", "res/slides/ejac_18.webp", "res/slides/ejac_19.webp", "res/slides/ejac_20.webp", "res/slides/ejac_21.webp", "res/slides/ejac_22.webp", "res/slides/ejac_23.webp", "res/slides/ejac_24.webp", "res/slides/ejac_25.webp", "res/slides/ejac_26.webp", "res/slides/ejac_27.webp", "res/slides/ejac_28.webp", "res/slides/ejac_29.webp", "res/slides/ejac_30.webp", "res/slides/ejac_31.webp", "res/slides/ejac_32.webp", "res/slides/ejac_33.webp", "res/slides/ejac_34.webp", "res/slides/ejac_35.webp", "res/slides/ejac_36.webp", "res/slides/ejac_37.webp", "res/slides/ejac_38.webp", "res/slides/ejac_39.webp", "res/slides/ejac_40.webp", "res/slides/eletro_01.webp", "res/slides/eletro_02.webp", "res/slides/eletro_03.webp", "res/slides/eletro_04.webp", "res/slides/eletro_05.webp", "res/slides/eletro_06.webp", "res/slides/eletro_07.webp", "res/slides/eletro_08.webp", "res/slides/eletro_09.webp", "res/slides/eletro_10.webp", "res/slides/eletro_11.webp", "res/slides/eletro_12.webp", "res/slides/eletro_13.webp", "res/slides/eletro_14.webp", "res/slides/eletro_15.webp", "res/slides/eletro_16.webp", "res/slides/eletro_17.webp", "res/slides/eletro_18.webp", "res/slides/eletro_19.webp", "res/slides/eletro_20.webp", "res/slides/eletro_21.webp", "res/slides/eletro_22.webp", "res/slides/eletro_23.webp", "res/slides/eletro_24.webp", "res/slides/eletro_25.webp", "res/slides/eletro_26.webp", "res/slides/eletro_27.webp", "res/slides/eletro_28.webp", "res/slides/eletro_29.webp", "res/slides/eletro_30.webp", "res/slides/eletro_31.webp", "res/slides/eletro_32.webp", "res/slides/eletro_33.webp", "res/slides/eletro_34.webp", "res/slides/eletro_35.webp", "res/slides/eletro_36.webp", "res/slides/eletro_37.webp", "res/slides/eletro_38.webp", "res/slides/eletro_39.webp", "res/slides/eletro_40.webp", "res/slides/eletro_41.webp", "res/slides/eletro_42.webp", "res/slides/eletro_43.webp", "res/slides/eletro_44.webp", "res/slides/eletro_45.webp", "res/slides/eletro_46.webp", "res/slides/eletro_47.webp", "res/slides/eletro_48.webp", "res/slides/eletro_49.webp", "res/slides/eletro_50.webp", "res/slides/eletro_51.webp", "res/slides/eurin_01.webp", "res/slides/eurin_02.webp", "res/slides/eurin_03.webp", "res/slides/eurin_04.webp", "res/slides/eurin_05.webp", "res/slides/eurin_06.webp", "res/slides/eurin_07.webp", "res/slides/eurin_08.webp", "res/slides/eurin_09.webp", "res/slides/eurin_10.webp", "res/slides/eurin_11.webp", "res/slides/eurin_12.webp", "res/slides/eurin_13.webp", "res/slides/eurin_14.webp", "res/slides/eurin_15.webp", "res/slides/eurin_16.webp", "res/slides/eurin_17.webp", "res/slides/eurin_18.webp", "res/slides/eurin_19.webp", "res/slides/eurin_20.webp", "res/slides/eurin_21.webp", "res/slides/eurin_22.webp", "res/slides/eurin_23.webp", "res/slides/eurin_24.webp", "res/slides/eurin_25.webp", "res/slides/eurin_26.webp", "res/slides/eurin_27.webp", "res/slides/eurin_28.webp", "res/slides/eurin_29.webp", "res/slides/eurin_30.webp", "res/slides/eurin_31.webp", "res/slides/eurin_32.webp", "res/slides/eurin_33.webp", "res/slides/eurin_34.webp", "res/slides/eurin_35.webp", "res/slides/eurin_36.webp", "res/slides/eurin_37.webp", "res/slides/eurin_38.webp", "res/slides/eurin_39.webp", "res/slides/eurin_40.webp", "res/slides/eurin_41.webp", "res/slides/eurin_42.webp", "res/slides/eurin_43.webp", "res/slides/eurin_44.webp", "res/slides/eurin_45.webp", "res/slides/eurin_46.webp", "res/slides/fem_01.webp", "res/slides/fem_02.webp", "res/slides/fem_03.webp", "res/slides/fem_04.webp", "res/slides/fem_05.webp", "res/slides/fem_06.webp", "res/slides/fem_07.webp", "res/slides/fem_08.webp", "res/slides/fem_09.webp", "res/slides/fem_10.webp", "res/slides/fem_11.webp", "res/slides/fem_12.webp", "res/slides/fem_13.webp", "res/slides/fem_14.webp", "res/slides/fem_15.webp", "res/slides/fem_16.webp", "res/slides/fem_17.webp", "res/slides/fem_18.webp", "res/slides/fem_19.webp", "res/slides/fem_20.webp", "res/slides/fem_21.webp", "res/slides/fem_22.webp", "res/slides/fem_23.webp", "res/slides/fem_24.webp", "res/slides/fem_25.webp", "res/slides/fem_26.webp", "res/slides/fem_27.webp", "res/slides/fem_28.webp", "res/slides/fem_29.webp", "res/slides/fem_30.webp", "res/slides/fem_31.webp", "res/slides/fem_32.webp", "res/slides/fem_33.webp", "res/slides/fem_34.webp", "res/slides/fem_35.webp", "res/slides/fem_36.webp", "res/slides/fem_37.webp", "res/slides/fem_38.webp", "res/slides/fem_39.webp", "res/slides/fem_40.webp", "res/slides/fglom_01.webp", "res/slides/fglom_02.webp", "res/slides/fglom_03.webp", "res/slides/fglom_04.webp", "res/slides/fglom_05.webp", "res/slides/fglom_06.webp", "res/slides/fglom_07.webp", "res/slides/fglom_08.webp", "res/slides/fglom_09.webp", "res/slides/fglom_10.webp", "res/slides/fglom_11.webp", "res/slides/fglom_12.webp", "res/slides/fglom_13.webp", "res/slides/fglom_14.webp", "res/slides/fglom_15.webp", "res/slides/fglom_16.webp", "res/slides/fglom_17.webp", "res/slides/fglom_18.webp", "res/slides/fglom_19.webp", "res/slides/fglom_20.webp", "res/slides/fglom_21.webp", "res/slides/fglom_22.webp", "res/slides/fglom_23.webp", "res/slides/fglom_24.webp", "res/slides/fglom_25.webp", "res/slides/fglom_26.webp", "res/slides/fglom_27.webp", "res/slides/fglom_28.webp", "res/slides/fglom_29.webp", "res/slides/fglom_30.webp", "res/slides/fglom_31.webp", "res/slides/fglom_32.webp", "res/slides/fglom_33.webp", "res/slides/fglom_34.webp", "res/slides/fglom_35.webp", "res/slides/fglom_36.webp", "res/slides/fglom_37.webp", "res/slides/fglom_38.webp", "res/slides/fglom_39.webp", "res/slides/fglom_40.webp", "res/slides/fglom_41.webp", "res/slides/fglom_42.webp", "res/slides/fglom_43.webp", "res/slides/fglom_44.webp", "res/slides/fglom_45.webp", "res/slides/fglom_46.webp", "res/slides/fglom_47.webp", "res/slides/fglom_48.webp", "res/slides/fglom_49.webp", "res/slides/fglom_50.webp", "res/slides/fglom_51.webp", "res/slides/fglom_52.webp", "res/slides/fglom_53.webp", "res/slides/fglom_54.webp", "res/slides/fglom_55.webp", "res/slides/fglom_56.webp", "res/slides/fglom_57.webp", "res/slides/fglom_58.webp", "res/slides/fglom_59.webp", "res/slides/fglom_60.webp", "res/slides/fglom_61.webp", "res/slides/fglom_62.webp", "res/slides/fglom_63.webp", "res/slides/fglom_64.webp", "res/slides/fglom_65.webp", "res/slides/fglom_66.webp", "res/slides/fglom_67.webp", "res/slides/fglom_68.webp", "res/slides/fglom_69.webp", "res/slides/fglom_70.webp", "res/slides/fglom_71.webp", "res/slides/fglom_72.webp", "res/slides/fglom_73.webp", "res/slides/fglom_74.webp", "res/slides/frmasc_01.webp", "res/slides/frmasc_02.webp", "res/slides/frmasc_03.webp", "res/slides/frmasc_04.webp", "res/slides/frmasc_05.webp", "res/slides/frmasc_06.webp", "res/slides/frmasc_07.webp", "res/slides/frmasc_08.webp", "res/slides/frmasc_09.webp", "res/slides/frmasc_10.webp", "res/slides/frmasc_11.webp", "res/slides/frmasc_12.webp", "res/slides/frmasc_13.webp", "res/slides/frmasc_14.webp", "res/slides/frmasc_15.webp", "res/slides/frmasc_16.webp", "res/slides/frmasc_17.webp", "res/slides/frmasc_18.webp", "res/slides/frmasc_19.webp", "res/slides/frmasc_20.webp", "res/slides/frmasc_21.webp", "res/slides/frmasc_22.webp", "res/slides/frmasc_23.webp", "res/slides/frmasc_24.webp", "res/slides/frmasc_25.webp", "res/slides/frmasc_26.webp", "res/slides/frmasc_27.webp", "res/slides/frmasc_28.webp", "res/slides/frmasc_29.webp", "res/slides/frmasc_30.webp", "res/slides/frmasc_31.webp", "res/slides/frmasc_32.webp", "res/slides/frmasc_33.webp", "res/slides/frmasc_34.webp", "res/slides/frmasc_35.webp", "res/slides/frmasc_36.webp", "res/slides/frmasc_37.webp", "res/slides/frmasc_38.webp", "res/slides/frmasc_39.webp", "res/slides/frmasc_40.webp", "res/slides/ftub_01.webp", "res/slides/ftub_02.webp", "res/slides/ftub_03.webp", "res/slides/ftub_04.webp", "res/slides/ftub_05.webp", "res/slides/ftub_06.webp", "res/slides/ftub_07.webp", "res/slides/ftub_08.webp", "res/slides/ftub_09.webp", "res/slides/ftub_10.webp", "res/slides/ftub_11.webp", "res/slides/ftub_12.webp", "res/slides/ftub_13.webp", "res/slides/ftub_14.webp", "res/slides/ftub_15.webp", "res/slides/ftub_16.webp", "res/slides/ftub_17.webp", "res/slides/ftub_18.webp", "res/slides/ftub_19.webp", "res/slides/ftub_20.webp", "res/slides/ftub_21.webp", "res/slides/ftub_22.webp", "res/slides/ftub_23.webp", "res/slides/ftub_24.webp", "res/slides/ftub_25.webp", "res/slides/ftub_26.webp", "res/slides/ftub_27.webp", "res/slides/ftub_28.webp", "res/slides/ftub_29.webp", "res/slides/ftub_30.webp", "res/slides/ftub_31.webp", "res/slides/ftub_32.webp", "res/slides/ftub_33.webp", "res/slides/ftub_34.webp", "res/slides/ftub_35.webp", "res/slides/ftub_36.webp", "res/slides/ftub_37.webp", "res/slides/ftub_38.webp", "res/slides/ftub_39.webp", "res/slides/ftub_40.webp", "res/slides/ftub_41.webp", "res/slides/hfem_01.webp", "res/slides/hfem_02.webp", "res/slides/hfem_03.webp", "res/slides/hfem_04.webp", "res/slides/hfem_05.webp", "res/slides/hfem_06.webp", "res/slides/hfem_07.webp", "res/slides/hfem_08.webp", "res/slides/hfem_09.webp", "res/slides/hfem_10.webp", "res/slides/hfem_11.webp", "res/slides/hfem_12.webp", "res/slides/hfem_13.webp", "res/slides/hfem_14.webp", "res/slides/hfem_15.webp", "res/slides/hfem_16.webp", "res/slides/hfem_17.webp", "res/slides/hfem_18.webp", "res/slides/hfem_19.webp", "res/slides/hfem_20.webp", "res/slides/hfem_21.webp", "res/slides/hfem_22.webp", "res/slides/hfem_23.webp", "res/slides/hfem_24.webp", "res/slides/hfem_25.webp", "res/slides/hfem_26.webp", "res/slides/hfem_27.webp", "res/slides/hfem_28.webp", "res/slides/hfem_29.webp", "res/slides/hfem_30.webp", "res/slides/hfem_31.webp", "res/slides/hfem_32.webp", "res/slides/hfem_33.webp", "res/slides/hfem_34.webp", "res/slides/hfem_35.webp", "res/slides/hfem_36.webp", "res/slides/hfem_37.webp", "res/slides/hfem_38.webp", "res/slides/hfem_39.webp", "res/slides/hfem_40.webp", "res/slides/hfem_41.webp", "res/slides/hfem_42.webp", "res/slides/hfem_43.webp", "res/slides/hfem_44.webp", "res/slides/hfem_45.webp", "res/slides/hfem_46.webp", "res/slides/hfem_47.webp", "res/slides/hfem_48.webp", "res/slides/hfem_49.webp", "res/slides/hfem_50.webp", "res/slides/hidro_01.webp", "res/slides/hidro_02.webp", "res/slides/hidro_03.webp", "res/slides/hidro_04.webp", "res/slides/hidro_05.webp", "res/slides/hidro_06.webp", "res/slides/hidro_07.webp", "res/slides/hidro_08.webp", "res/slides/hidro_09.webp", "res/slides/hidro_10.webp", "res/slides/hidro_11.webp", "res/slides/hidro_12.webp", "res/slides/hidro_13.webp", "res/slides/hidro_14.webp", "res/slides/hidro_15.webp", "res/slides/hidro_16.webp", "res/slides/hidro_17.webp", "res/slides/hidro_18.webp", "res/slides/hidro_19.webp", "res/slides/hidro_20.webp", "res/slides/hidro_21.webp", "res/slides/hidro_22.webp", "res/slides/hidro_23.webp", "res/slides/hidro_24.webp", "res/slides/hidro_25.webp", "res/slides/hidro_26.webp", "res/slides/hidro_27.webp", "res/slides/hidro_28.webp", "res/slides/hidro_29.webp", "res/slides/hidro_30.webp", "res/slides/hidro_31.webp", "res/slides/hidro_32.webp", "res/slides/hidro_33.webp", "res/slides/hmasc_01.webp", "res/slides/hmasc_02.webp", "res/slides/hmasc_03.webp", "res/slides/hmasc_04.webp", "res/slides/hmasc_05.webp", "res/slides/hmasc_06.webp", "res/slides/hmasc_07.webp", "res/slides/hmasc_08.webp", "res/slides/hmasc_09.webp", "res/slides/hmasc_10.webp", "res/slides/hmasc_11.webp", "res/slides/hmasc_12.webp", "res/slides/hmasc_13.webp", "res/slides/hmasc_14.webp", "res/slides/hmasc_15.webp", "res/slides/hmasc_16.webp", "res/slides/hmasc_17.webp", "res/slides/hmasc_18.webp", "res/slides/hmasc_19.webp", "res/slides/hmasc_20.webp", "res/slides/hmasc_21.webp", "res/slides/hmasc_22.webp", "res/slides/hmasc_23.webp", "res/slides/hmasc_24.webp", "res/slides/hmasc_25.webp", "res/slides/hmasc_26.webp", "res/slides/hmasc_27.webp", "res/slides/hmasc_28.webp", "res/slides/hmasc_29.webp", "res/slides/hmasc_30.webp", "res/slides/hmasc_31.webp", "res/slides/hmasc_32.webp", "res/slides/hmasc_33.webp", "res/slides/hmasc_34.webp", "res/slides/hmasc_35.webp", "res/slides/hmasc_36.webp", "res/slides/hmasc_37.webp", "res/slides/hmasc_38.webp", "res/slides/hmasc_39.webp", "res/slides/hmasc_40.webp", "res/slides/hmasc_41.webp", "res/slides/huri_01.webp", "res/slides/huri_02.webp", "res/slides/huri_03.webp", "res/slides/huri_04.webp", "res/slides/huri_05.webp", "res/slides/huri_06.webp", "res/slides/huri_07.webp", "res/slides/huri_08.webp", "res/slides/huri_09.webp", "res/slides/huri_10.webp", "res/slides/huri_11.webp", "res/slides/huri_12.webp", "res/slides/huri_13.webp", "res/slides/huri_14.webp", "res/slides/huri_15.webp", "res/slides/huri_16.webp", "res/slides/huri_17.webp", "res/slides/huri_18.webp", "res/slides/huri_19.webp", "res/slides/huri_20.webp", "res/slides/huri_21.webp", "res/slides/huri_22.webp", "res/slides/huri_23.webp", "res/slides/huri_24.webp", "res/slides/huri_25.webp", "res/slides/huri_26.webp", "res/slides/huri_27.webp", "res/slides/huri_28.webp", "res/slides/huri_29.webp", "res/slides/huri_30.webp", "res/slides/huri_31.webp", "res/slides/huri_32.webp", "res/slides/huri_33.webp", "res/slides/huri_34.webp", "res/slides/huri_35.webp", "res/slides/huri_36.webp", "res/slides/huri_37.webp", "res/slides/huri_38.webp", "res/slides/huri_39.webp", "res/slides/huri_40.webp", "res/slides/huri_41.webp", "res/slides/huri_42.webp", "res/slides/huri_43.webp", "res/slides/huri_44.webp", "res/slides/huri_45.webp", "res/slides/huri_46.webp", "res/slides/huri_47.webp", "res/slides/huri_48.webp", "res/slides/masc_01.webp", "res/slides/masc_02.webp", "res/slides/masc_03.webp", "res/slides/masc_04.webp", "res/slides/masc_05.webp", "res/slides/masc_06.webp", "res/slides/masc_07.webp", "res/slides/masc_08.webp", "res/slides/masc_09.webp", "res/slides/masc_10.webp", "res/slides/masc_11.webp", "res/slides/masc_12.webp", "res/slides/masc_13.webp", "res/slides/masc_14.webp", "res/slides/masc_15.webp", "res/slides/masc_16.webp", "res/slides/masc_17.webp", "res/slides/masc_18.webp", "res/slides/masc_19.webp", "res/slides/masc_20.webp", "res/slides/masc_21.webp", "res/slides/masc_22.webp", "res/slides/masc_23.webp", "res/slides/masc_24.webp", "res/slides/masc_25.webp", "res/slides/masc_26.webp", "res/slides/masc_27.webp", "res/slides/masc_28.webp", "res/slides/masc_29.webp", "res/slides/masc_30.webp", "res/slides/masc_31.webp", "res/slides/masc_32.webp", "res/slides/masc_33.webp", "res/slides/masc_34.webp", "res/slides/masc_35.webp", "res/slides/masc_36.webp", "res/slides/masc_37.webp", "res/slides/masc_38.webp", "res/slides/masc_39.webp", "res/slides/masc_40.webp", "res/slides/masc_41.webp", "res/slides/masc_42.webp", "res/slides/masc_43.webp", "res/slides/masc_44.webp", "res/slides/pde5_01.webp", "res/slides/pde5_02.webp", "res/slides/pde5_03.webp", "res/slides/pde5_04.webp", "res/slides/pde5_05.webp", "res/slides/pde5_06.webp", "res/slides/pde5_07.webp", "res/slides/pde5_08.webp", "res/slides/pde5_09.webp", "res/slides/pde5_10.webp", "res/slides/pde5_11.webp", "res/slides/pde5_12.webp", "res/slides/pde5_13.webp", "res/slides/pde5_14.webp", "res/slides/pde5_15.webp", "res/slides/pde5_16.webp", "res/slides/pde5_17.webp", "res/slides/pde5_18.webp", "res/slides/pde5_19.webp", "res/slides/pde5_20.webp", "res/slides/pde5_21.webp", "res/slides/pde5_22.webp", "res/slides/pde5_23.webp", "res/slides/pde5_24.webp", "res/slides/pde5_25.webp", "res/slides/pde5_26.webp", "res/slides/pde5_27.webp", "res/slides/pde5_28.webp", "res/slides/uri_01.webp", "res/slides/uri_02.webp", "res/slides/uri_03.webp", "res/slides/uri_04.webp", "res/slides/uri_05.webp", "res/slides/uri_06.webp", "res/slides/uri_07.webp", "res/slides/uri_08.webp", "res/slides/uri_09.webp", "res/slides/uri_10.webp", "res/slides/uri_11.webp", "res/slides/uri_12.webp", "res/slides/uri_13.webp", "res/slides/uri_14.webp", "res/slides/uri_15.webp", "res/slides/uri_16.webp", "res/slides/uri_17.webp", "res/slides/uri_18.webp", "res/slides/uri_19.webp", "res/slides/uri_20.webp", "res/slides/uri_21.webp", "res/slides/uri_22.webp", "res/slides/uri_23.webp", "res/slides/uri_24.webp", "res/slides/uri_25.webp", "res/slides/uri_26.webp", "res/slides/uri_27.webp", "res/slides/uri_28.webp", "res/slides/uri_29.webp", "res/slides/uri_30.webp", "res/slides/uri_31.webp", "res/slides/uri_32.webp", "res/slides/uri_33.webp", "res/slides/uri_34.webp", "res/slides/uri_35.webp", "res/slides/uri_36.webp", "res/slides/uri_37.webp", "res/slides/uri_38.webp", "res/slides/uri_39.webp", "res/slides/uri_40.webp", "res/slides/uri_41.webp", "res/slides/uri_42.webp", "res/slides/uri_43.webp", "res/slides/uri_44.webp", "res/slides/uri_45.webp", "res/slides/uri_46.webp", "res/slides/uri_47.webp", "res/slides/uri_48.webp", "res/slides/uri_49.webp", "res/slides/uri_50.webp", "res/slides/uri_51.webp", "res/slides/uri_52.webp", "res/slides/uri_53.webp", "res/slides/uri_54.webp", "res/slides/uri_55.webp", "res/slides/uri_56.webp", "res/slides/uri_57.webp", "res/slides/uri_58.webp", "res/slides/uri_59.webp", "res/slides/uri_60.webp", "res/slides/uri_61.webp", "res/slides/uri_62.webp", "res/slides/uri_63.webp", "res/slides/uri_64.webp", "res/slides/uri_65.webp", "res/slides/uri_66.webp", "res/slides/uri_67.webp", "res/slides/uri_68.webp", "res/slides/uri_69.webp", "res/slides/uri_70.webp", "res/slides/uri_71.webp", "res/slides/uri_72.webp", "res/slides/uri_73.webp", "res/slides/uri_74.webp", "res/slides/uri_75.webp", "res/slides/uri_76.webp", "res/slides/uri_77.webp", "res/slides/uri_78.webp", "res/slides/uri_79.webp", "res/slides/uri_80.webp", "res/slides/uri_81.webp", "res/slides/uri_82.webp", "res/slides/uri_83.webp", "res/slides/uri_84.webp", "res/slides/uri_85.webp", "res/slides/uri_86.webp", "res/slides/uri_87.webp", "res/slides/uri_88.webp", "res/slides/uri_89.webp", "res/slides/uri_90.webp", "res/slides/uri_91.webp", "res/slides/uri_92.webp", "res/slides/uri_93.webp", "res/slides/uri_94.webp", "res/slides/uri_95.webp", "res/uri/acessorias.webp", "res/uri/bexiga_config.webp", "res/uri/bexiga_frontal.webp", "res/uri/caso.webp", "res/uri/diaf_urogenital.webp", "res/uri/faces.webp", "res/uri/fascia.webp", "res/uri/levantador.webp", "res/uri/necrose.webp", "res/uri/nutcracker.webp", "res/uri/segmentos.webp", "res/uri/skene.webp", "res/uri/ureter_mulher.webp", "res/uri/uretra_frontal.webp", "res/uri/urografia.webp", "res/uri/vasos_insitu.webp", "res/uri/vasos_intra.webp", "res/uri/visao.webp"],CACHE="gu-7fc39a0413",had=!!navigator.serviceWorker.controller,say=window.__guSay,pill=document.getElementById("gu-pill");
 function check(){caches.open(CACHE).then(function(c){return Promise.all(FILES.map(function(u){return c.match(u)}))}).then(function(r){
   var ok=r.filter(Boolean).length;
   if(ok===FILES.length){var k="gu-off-"+CACHE,seen=false;try{seen=!!localStorage.getItem(k);localStorage.setItem(k,"1")}catch(e){}if(!seen)say("✓ Pronto para usar sem internet","#2b8a3e",5000)}
