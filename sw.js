@@ -1,9 +1,9 @@
 // Módulo Gênito-Urinário · funciona sem internet depois da primeira abertura.
 // Gerado por oficina/ferramentas/construir_app.py — não edite à mão.
-const CACHE = "gu-564cb4ce61";
+const CACHE = "gu-c4c040940c";
 const FILES = {
-"./": "9de1052779",
-"index.html": "9de1052779",
+"./": "bfc7d5ce0c",
+"index.html": "bfc7d5ce0c",
 "manifest.json": "690a92b97d",
 "icone-180.png": "d0a9fa7a1a",
 "icone-192.png": "67bba627f7",
@@ -215,6 +215,7 @@ const FILES = {
 "res/Resumo_Tratamento_Ejaculacao_Precoce.pdf": "82c7ca77b5",
 "res/Super_Resumo_AV1.pdf": "ededf4cdeb",
 "res/Super_Resumo_AV2.pdf": "e1a4b979d1",
+"res/Super_Resumo_AV3.pdf": "afab26f18b",
 "res/acido/aberto.webp": "bc130bffd6",
 "res/acido/beta.webp": "bd306086eb",
 "res/acido/distal_alfa.webp": "84361a3d44",
